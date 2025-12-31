@@ -87,7 +87,11 @@ function __coreGameBootstrap() {
 
     if (clickedNpc) {
       console.log("🎯 Click acerto NPC:", clickedNpc.name, clickedNpc.id);
-      if (window.openChat) {
+      // Use interaction menu instead of opening chat directly
+      if (window.npcInteractionMenu && typeof window.npcInteractionMenu.show === 'function') {
+        window.npcInteractionMenu.show(clickedNpc);
+      } else if (window.openChat) {
+        // Fallback to direct chat if menu not loaded yet
         window.openChat(clickedNpc.id, clickedNpc.name || "NPC", state.mapId);
       }
     } else {
@@ -3178,7 +3182,7 @@ function __coreGameBootstrap() {
       return; // Cache valid
     }
 
-    console.time("MapCache");
+    // console.time("MapCache"); // Removed debug log
     const mapW = renderer.width;
     const mapH = renderer.height;
 
@@ -3397,7 +3401,7 @@ function __coreGameBootstrap() {
       state.cache.ready = true;
       state.cache.mapId = state.mapId;
     }
-    console.timeEnd("MapCache");
+    // console.timeEnd("MapCache"); // Removed debug log
   }
 
 

@@ -6,6 +6,7 @@
  */
 
 const movesDb = require("../core/data/moves_database");
+const battleEffects = require("./battleEffects");
 
 class FireRedBattleService {
   /**
@@ -55,8 +56,30 @@ class FireRedBattleService {
         };
       }
 
-      // 3. Determinar ordem de ataque (baseado em speed)
-      const playerGoesFirst = playerPokemon.stats.speed >= enemyPokemon.stats.speed;
+      // 3. Inicializar battle state se necessário
+      if (!playerPokemon.statStages) {
+        playerPokemon = battleEffects.initBattleState(playerPokemon);
+      }
+      if (!enemyPokemon.statStages) {
+        enemyPokemon = battleEffects.initBattleState(enemyPokemon);
+      }
+
+      // 4. Processar status antes do turno (sleep, freeze, paralysis)
+      const playerCanMove = battleEffects.processStatusBeforeTurn(playerPokemon, events);
+      const enemyCanMove = battleEffects.processStatusBeforeTurn(enemyPokemon, events);
+
+      // 5. Determinar ordem de ataque (baseado em speed e priority)
+      const playerSpeed = battleEffects.getModifiedStat(playerPokemon.stats.speed, playerPokemon.statStages.speed);
+      const enemySpeed = battleEffects.getModifiedStat(enemyPokemon.stats.speed, enemyPokemon.statStages.speed);
+      const playerPriority = moveData.priority || 0;
+      const enemyPriority = 0; // IA usa priority 0 por padrão
+
+      let playerGoesFirst;
+      if (playerPriority !== enemyPriority) {
+        playerGoesFirst = playerPriority > enemyPriority;
+      } else {
+        playerGoesFirst = playerSpeed >= enemySpeed;
+      }
 
       let playerDamage = 0;
       let enemyDamage = 0;
@@ -65,10 +88,11 @@ class FireRedBattleService {
       let battleOver = false;
       let result = null;
 
-      if (playerGoesFirst) {
+      if (playerGoesFirst && playerCanMove) {
         // Jogador ataca primeiro
         playerDamage = this._calculateDamage(playerPokemon, enemyPokemon, moveData);
         enemyNewHp = Math.max(0, enemyPokemon.hp - playerDamage);
+        enemyPokemon.hp = enemyNewHp;
 
         events.push({
           type: "PLAYER_ATTACK",
@@ -76,11 +100,34 @@ class FireRedBattleService {
           damage: playerDamage,
         });
 
-        if (moveData.power === 0) {
-          events.push({
-            type: "STATUS_EFFECT",
-            message: `Effect: ${moveData.effect}`,
-          });
+        // Aplicar efeito do golpe
+        if (moveData.effectId !== undefined) {
+          const effectResult = battleEffects.applyEffect(
+            moveData.effectId,
+            playerPokemon,
+            enemyPokemon,
+            moveData,
+            playerDamage,
+            events
+          );
+
+          // Aplicar dano adicional (ex: multi-hit)
+          if (effectResult.additionalDamage > 0) {
+            enemyNewHp = Math.max(0, enemyNewHp - effectResult.additionalDamage);
+            enemyPokemon.hp = enemyNewHp;
+          }
+
+          // Aplicar recoil damage
+          if (effectResult.recoilDamage > 0) {
+            playerNewHp = Math.max(0, playerNewHp - effectResult.recoilDamage);
+            playerPokemon.hp = playerNewHp;
+          }
+
+          // Aplicar healing
+          if (effectResult.healing > 0) {
+            playerNewHp = Math.min(playerPokemon.maxHp, playerNewHp + effectResult.healing);
+            playerPokemon.hp = playerNewHp;
+          }
         }
 
         // Verificar se inimigo caiu
@@ -91,8 +138,8 @@ class FireRedBattleService {
             type: "ENEMY_FAINTED",
             message: `${enemyPokemon.name} fainted!`,
           });
-        } else {
-          // Inimigo contra-ataca (ataque simples do IA)
+        } else if (enemyCanMove) {
+          // Inimigo contra-ataca
           const enemyMoveIndex = Math.floor(Math.random() * enemyPokemon.moves.length);
           const enemyMove = enemyPokemon.moves[enemyMoveIndex];
           const enemyMoveData = movesDb[enemyMove.moveId];
@@ -100,12 +147,25 @@ class FireRedBattleService {
           if (enemyMoveData) {
             enemyDamage = this._calculateDamage(enemyPokemon, playerPokemon, enemyMoveData);
             playerNewHp = Math.max(0, playerPokemon.hp - enemyDamage);
+            playerPokemon.hp = playerNewHp;
 
             events.push({
               type: "ENEMY_ATTACK",
               message: `${enemyPokemon.name} used ${enemyMoveData.name}!`,
               damage: enemyDamage,
             });
+
+            // Aplicar efeito do golpe inimigo
+            if (enemyMoveData.effectId !== undefined) {
+              battleEffects.applyEffect(
+                enemyMoveData.effectId,
+                enemyPokemon,
+                playerPokemon,
+                enemyMoveData,
+                enemyDamage,
+                events
+              );
+            }
 
             if (playerNewHp <= 0) {
               battleOver = true;
@@ -182,7 +242,30 @@ class FireRedBattleService {
         }
       }
 
-      // 4. Decrementar PP do jogador
+      // 6. Processar efeitos de status no fim do turno
+      if (!battleOver) {
+        battleEffects.processStatusAfterTurn(playerPokemon, events);
+        battleEffects.processStatusAfterTurn(enemyPokemon, events);
+
+        // Verificar se alguém desmaiou por dano de status
+        if (playerPokemon.currentHp <= 0) {
+          battleOver = true;
+          result = "LOSS";
+          events.push({
+            type: "PLAYER_FAINTED",
+            message: `${playerPokemon.name} fainted!`,
+          });
+        } else if (enemyPokemon.currentHp <= 0) {
+          battleOver = true;
+          result = "WIN";
+          events.push({
+            type: "ENEMY_FAINTED",
+            message: `${enemyPokemon.name} fainted!`,
+          });
+        }
+      }
+
+      // 7. Decrementar PP do jogador
       playerMove.pp--;
 
       return {
