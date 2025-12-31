@@ -336,6 +336,18 @@ app.use("/api/shop", requireAuth, shopApi);
 const battleRoutes = require("./routes/battleRoutes");
 app.use(battleRoutes); // Battle routes já incluem /api prefix
 
+// Pokemon list API (for admin encounters dropdown)
+app.get("/api/pokemon", requireAuth, (req, res) => {
+  try {
+    const db = require("./services/db").getDb();
+    const pokemon = db.prepare('SELECT id, name FROM pokemon ORDER BY id').all();
+    res.json({ ok: true, pokemon });
+  } catch (err) {
+    console.error('Error fetching Pokemon:', err);
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
 
 
 // ========================

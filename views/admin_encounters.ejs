@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Wild Encounters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 14px;
+        }
+
+        select,
+        input {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        select:focus,
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            padding: 0 30px;
+            gap: 10px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .tab {
+            padding: 15px 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            color: #6c757d;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            color: #495057;
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .encounter-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .encounter-slot {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 12px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 60px 1fr 120px 120px 100px 80px;
+            gap: 15px;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .encounter-slot:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+        }
+
+        .slot-number {
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .add-slot-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .add-slot-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .validation {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .validation.valid {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .validation.invalid {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        .save-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #dee2e6;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+
+        @media (max-width: 1024px) {
+            .encounter-slot {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 Wild Encounters Admin</h1>
+            <p>Gerencie os encontros selvagens de cada rota</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="mapSelect">Rota/Mapa:</label>
+                <select id="mapSelect" onchange="loadEncounters()">
+                    <option value="">Selecione uma rota...</option>
+                    <% maps.forEach(map=> { %>
+                        <option value="<%= map.map_id %>">
+                            <%= map.map_id %> (<%= map.total_encounters %> encontros)
+                        </option>
+                        <% }) %>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Status:</label>
+                <div id="mapStatus" style="padding: 10px; color: #6c757d;">
+                    Selecione uma rota
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('grass')">🌿 Grass</button>
+            <button class="tab" onclick="switchTab('water')">💧 Water</button>
+            <button class="tab" onclick="switchTab('fishing')">🎣 Fishing</button>
+            <button class="tab" onclick="switchTab('rock_smash')">🪨 Rock Smash</button>
+        </div>
+
+        <div class="content">
+            <div id="grass-content" class="tab-content active">
+                <div class="encounter-list" id="grass-list"></div>
+                <button class="add-slot-btn" onclick="addSlot('grass')">+ Adicionar Slot</button>
+                <div id="grass-validation" class="validation" style="display: none;"></div>
+            </div>
+
+            <div id="water-content" class="tab-content">
+                <div class="encounter-list" id="water-list"></div>
+                <button class="add-slot-btn" onclick="addSlot('water')">+ Adicionar Slot</button>
+                <div id="water-validation" class="validation" style="display: none;"></div>
+            </div>
+
+            <div id="fishing-content" class="tab-content">
+                <div class="encounter-list" id="fishing-list"></div>
+                <button class="add-slot-btn" onclick="addSlot('fishing')">+ Adicionar Slot</button>
+                <div id="fishing-validation" class="validation" style="display: none;"></div>
+            </div>
+
+            <div id="rock_smash-content" class="tab-content">
+                <div class="encounter-list" id="rock_smash-list"></div>
+                <button class="add-slot-btn" onclick="addSlot('rock_smash')">+ Adicionar Slot</button>
+                <div id="rock_smash-validation" class="validation" style="display: none;"></div>
+            </div>
+
+            <div class="save-section">
+                <button class="btn btn-success" onclick="saveAll()">💾 Salvar Alterações</button>
+                <button class="btn btn-primary" onclick="validateAll()">✓ Validar Probabilidades</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let POKEMON_LIST = [];
+        let currentMap = '';
+        let currentTab = 'grass';
+        let encounters = { grass: [], water: [], fishing: [], rock_smash: [] };
+
+        // Load Pokemon list from API
+        async function loadPokemonList() {
+            try {
+                const response = await fetch('/api/pokemon');
+                const data = await response.json();
+                if (data.ok) {
+                    POKEMON_LIST = data.pokemon || [];
+                    console.log(`✅ ${POKEMON_LIST.length} Pokemon carregados`);
+                    // Enable map select after Pokemon are loaded
+                    document.getElementById('mapSelect').disabled = false;
+                }
+            } catch (err) {
+                console.error('Error loading Pokemon:', err);
+            }
+        }
+
+        // Disable map select until Pokemon are loaded
+        document.getElementById('mapSelect').disabled = true;
+
+        // Load Pokemon on page load
+        loadPokemonList();
+
+        function switchTab(tab) {
+            currentTab = tab;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(tab + '-content').classList.add('active');
+        }
+
+        async function loadEncounters() {
+            const mapId = document.getElementById('mapSelect').value;
+            if (!mapId) return;
+
+            currentMap = mapId;
+            document.getElementById('mapStatus').textContent = `Carregando ${mapId}...`;
+
+            try {
+                const response = await fetch(`/admin/encounters/api/${mapId}`);
+                const data = await response.json();
+
+                if (data.ok) {
+                    encounters = { grass: [], water: [], fishing: [], rock_smash: [] };
+                    data.encounters.forEach(enc => {
+                        encounters[enc.encounter_type].push(enc);
+                    });
+
+                    renderEncounters('grass');
+                    renderEncounters('water');
+                    renderEncounters('fishing');
+                    renderEncounters('rock_smash');
+
+                    document.getElementById('mapStatus').textContent = `${data.encounters.length} encontros carregados`;
+                }
+            } catch (err) {
+                console.error('Error loading encounters:', err);
+                document.getElementById('mapStatus').textContent = 'Erro ao carregar';
+            }
+        }
+
+        function renderEncounters(type) {
+            const list = document.getElementById(type + '-list');
+            const encs = encounters[type] || [];
+
+            if (encs.length === 0) {
+                list.innerHTML = `
+          <div class="empty-state">
+            <p>Nenhum encontro configurado</p>
+            <p style="font-size: 14px; margin-top: 10px;">Clique em "Adicionar Slot" para começar</p>
+          </div>
+        `;
+                return;
+            }
+
+            // Add header row
+            const header = `
+        <div style="display: grid; grid-template-columns: 60px 1fr 120px 120px 100px 80px; gap: 15px; padding: 10px 20px; font-weight: 600; color: #495057; border-bottom: 2px solid #dee2e6; margin-bottom: 10px;">
+          <div style="text-align: center;">Slot</div>
+          <div>Pokémon</div>
+          <div style="text-align: center;">Nível Min</div>
+          <div style="text-align: center;">Nível Max</div>
+          <div style="text-align: center;">Prob. (%)</div>
+          <div style="text-align: center;">Ações</div>
+        </div>
+      `;
+
+            list.innerHTML = header + encs.map((enc, idx) => `
+        <div class="encounter-slot" data-id="${enc.id || ''}">
+          <div class="slot-number">${enc.slot_number}</div>
+          
+          <select class="pokemon-select" data-field="pokemon_id">
+            ${POKEMON_LIST.map(p => `
+              <option value="${p.id}" ${p.id === enc.pokemon_id ? 'selected' : ''}>
+                #${p.id} ${p.name}
+              </option>
+            `).join('')}
+          </select>
+          
+          <input type="number" class="level-input" placeholder="Min Lv" 
+                 value="${enc.min_level}" min="1" max="100" data-field="min_level">
+          
+          <input type="number" class="level-input" placeholder="Max Lv" 
+                 value="${enc.max_level}" min="1" max="100" data-field="max_level">
+          
+          <input type="number" class="prob-input" placeholder="%" 
+                 value="${enc.probability}" min="0" max="100" step="0.1" data-field="probability">
+          
+          <button class="btn btn-danger" onclick="removeSlot('${type}', ${idx})">🗑️</button>
+        </div>
+      `).join('');
+        }
+
+        function addSlot(type) {
+            if (!currentMap) {
+                alert('Selecione uma rota primeiro!');
+                return;
+            }
+
+            const encs = encounters[type];
+            const nextSlot = encs.length > 0 ? Math.max(...encs.map(e => e.slot_number)) + 1 : 1;
+
+            encs.push({
+                map_id: currentMap,
+                encounter_type: type,
+                slot_number: nextSlot,
+                pokemon_id: 1,
+                min_level: 5,
+                max_level: 10,
+                probability: 0
+            });
+
+            renderEncounters(type);
+        }
+
+        function removeSlot(type, idx) {
+            if (confirm('Remover este slot?')) {
+                encounters[type].splice(idx, 1);
+                renderEncounters(type);
+            }
+        }
+
+        async function validateAll() {
+            for (const type of ['grass', 'water', 'fishing', 'rock_smash']) {
+                await validateType(type);
+            }
+        }
+
+        async function validateType(type) {
+            const encs = encounters[type];
+            const total = encs.reduce((sum, e) => sum + parseFloat(e.probability || 0), 0);
+            const isValid = Math.abs(total - 100) < 0.01;
+
+            const validationDiv = document.getElementById(type + '-validation');
+            validationDiv.style.display = 'block';
+            validationDiv.className = `validation ${isValid ? 'valid' : 'invalid'}`;
+            validationDiv.textContent = isValid
+                ? `✓ Total: ${total.toFixed(1)}% - Válido!`
+                : `✗ Total: ${total.toFixed(1)}% - Deve somar 100%`;
+
+            return isValid;
+        }
+
+        async function saveAll() {
+            if (!currentMap) {
+                alert('Selecione uma rota primeiro!');
+                return;
+            }
+
+            const validations = await Promise.all([
+                validateType('grass'),
+                validateType('water'),
+                validateType('fishing'),
+                validateType('rock_smash')
+            ]);
+
+            if (!validations.every(v => v)) {
+                alert('Corrija as probabilidades antes de salvar!');
+                return;
+            }
+
+            const allEncounters = [];
+            for (const type of ['grass', 'water', 'fishing', 'rock_smash']) {
+                const list = document.getElementById(type + '-list');
+                const slots = list.querySelectorAll('.encounter-slot');
+
+                slots.forEach((slot, idx) => {
+                    const enc = encounters[type][idx];
+                    allEncounters.push({
+                        mapId: currentMap,
+                        encounterType: type,
+                        slotNumber: enc.slot_number,
+                        pokemonId: parseInt(slot.querySelector('[data-field="pokemon_id"]').value),
+                        minLevel: parseInt(slot.querySelector('[data-field="min_level"]').value),
+                        maxLevel: parseInt(slot.querySelector('[data-field="max_level"]').value),
+                        probability: parseFloat(slot.querySelector('[data-field="probability"]').value)
+                    });
+                });
+            }
+
+            try {
+                for (const enc of allEncounters) {
+                    const response = await fetch('/api/admin/encounters', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(enc)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to save encounter');
+                    }
+                }
+
+                alert('✅ Encontros salvos com sucesso!');
+                loadEncounters();
+            } catch (err) {
+                console.error('Error saving:', err);
+                alert('❌ Erro ao salvar: ' + err.message);
+            }
+        }
+    </script>
+</body>
+
+</html>

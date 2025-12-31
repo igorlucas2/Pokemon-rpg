@@ -4,6 +4,7 @@ const path = require("path");
 const router = express.Router();
 
 const mapStore = require("../store/mapStore");
+const encountersAdmin = require("./admin/encountersAdmin");
 
 // Se o seu server.js já aplica requireAuth/requireAdmin, pode remover esses dois,
 // mas deixar aqui não atrapalha.
@@ -194,5 +195,10 @@ router.put("/events/:id", requireAuth, requireAdmin, (req, res) => {
   if (!ev) return res.status(404).json({ ok: false, error: "not_found" });
   res.json({ ok: true, event: ev });
 });
+
+// ========================
+// Wild Encounters Admin
+// ========================
+router.use("/encounters", requireAuth, requireAdmin, encountersAdmin);
 
 module.exports = router;
