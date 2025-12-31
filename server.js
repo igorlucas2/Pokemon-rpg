@@ -333,6 +333,9 @@ app.use("/api/pokedex", requireAuth, pokedexApi);
 const shopApi = require("./routes/shopApi");
 app.use("/api/shop", requireAuth, shopApi);
 
+const battleRoutes = require("./routes/battleRoutes");
+app.use(battleRoutes); // Battle routes já incluem /api prefix
+
 
 
 // ========================

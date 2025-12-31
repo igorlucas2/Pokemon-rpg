@@ -25,9 +25,9 @@
   function setHpBar(fillEl, current, max) {
     const pct = hpPct(current, max);
     if (!fillEl) return;
-    
+
     fillEl.style.width = `${Math.round(pct * 100)}%`;
-    
+
     // Color coding: green > 50%, yellow 20-50%, red < 20%
     if (pct > 0.5) {
       fillEl.removeAttribute('data-percent');
@@ -75,7 +75,7 @@
   // ============================================================
 
   const battleModal = $("battleModal");
-  
+
   // Enemy
   const battleEnemyName = $("battleEnemyName");
   const battleEnemyLevel = $("battleEnemyLevel");
@@ -133,7 +133,7 @@
     // Remove aria-hidden primeiro para evitar warnings de acessibilidade
     modalEl.removeAttribute("aria-hidden");
     modalEl.classList.add("is-open");
-    
+
     // Pequeno delay para garantir que o modal está visível antes de focar
     requestAnimationFrame(() => {
       const firstButton = modalEl.querySelector("button:not(:disabled)");
@@ -145,16 +145,16 @@
 
   function closeModal(modalEl) {
     if (!modalEl) return;
-    
+
     // Remover foco de qualquer botão dentro do modal antes de fechar
     const focusedElement = document.activeElement;
     if (focusedElement && modalEl.contains(focusedElement)) {
       focusedElement.blur();
     }
-    
+
     modalEl.classList.remove("is-open");
     modalEl.setAttribute("aria-hidden", "true");
-    
+
     // Limpar typewriter se ainda estiver rodando
     if (typewriterInterval) {
       clearInterval(typewriterInterval);
@@ -169,7 +169,7 @@
     if (battleActionBag) battleActionBag.disabled = dis;
     if (battleActionPokemon) battleActionPokemon.disabled = dis;
     if (battleActionRun) battleActionRun.disabled = dis;
-    
+
     [battleMove0, battleMove1, battleMove2, battleMove3].forEach(btn => {
       if (btn) btn.disabled = dis;
     });
@@ -197,17 +197,17 @@
 
   function updateMessage(text) {
     if (!battleMessage) return;
-    
+
     // Cancelar efeito anterior se ainda estiver rodando
     if (typewriterInterval) {
       clearInterval(typewriterInterval);
       typewriterInterval = null;
     }
-    
+
     // Apply typewriter effect
     const fullText = String(text);
     battleMessage.textContent = "";
-    
+
     let charIndex = 0;
     typewriterInterval = setInterval(() => {
       if (charIndex < fullText.length) {
@@ -239,7 +239,7 @@
         const p = await fetchPokeApiPokemon(enemy.pokemonId);
         const url = pickSprite(p?.sprites, "front");
         if (url) battleEnemySprite.src = url;
-      } catch {}
+      } catch { }
     }
     const enemyCurHp = Number(enemy.currentHp ?? enemy.currentHP ?? 0);
     const enemyMaxHp = Number(enemy.maxHp ?? enemy.maxHP ?? 1);
@@ -255,12 +255,12 @@
         const p = await fetchPokeApiPokemon(player.pokemonId);
         const url = pickSprite(p?.sprites, "back");
         if (url) battlePlayerSprite.src = url;
-      } catch {}
+      } catch { }
     }
     const playerCurHp = Number(player.currentHp ?? player.currentHP ?? 0);
     const playerMaxHp = Number(player.maxHp ?? player.maxHP ?? 1);
     setHpBar(battlePlayerHpFill, playerCurHp, playerMaxHp);
-    
+
     // Atualizar texto numérico do HP
     if (battlePlayerHpCurrent) {
       battlePlayerHpCurrent.textContent = Math.max(0, Math.floor(playerCurHp));
@@ -268,7 +268,7 @@
     if (battlePlayerHpMax) {
       battlePlayerHpMax.textContent = Math.max(0, Math.floor(playerMaxHp));
     }
-    
+
     // Atualizar display de HP (se existir elemento combinado)
     const battlePlayerHpText = document.getElementById("battlePlayerHpText");
     if (battlePlayerHpText) {
@@ -287,17 +287,17 @@
   function renderMoves(moves) {
     const grid = document.getElementById("battleMovesGrid");
     if (!grid) return;
-    
+
     grid.innerHTML = "";
-    
+
     const moveList = Array.isArray(moves) ? moves : [];
-    
+
     for (let i = 0; i < 4; i++) {
       const move = moveList[i];
       const btn = document.createElement("button");
       btn.className = "battle-firered__btn";
       btn.type = "button";
-      
+
       if (!move) {
         btn.textContent = "—";
         btn.disabled = true;
@@ -310,11 +310,11 @@
       const type = String(move.type || "?").toUpperCase();
       const cat = String(move.category || "?").toUpperCase();
       btn.textContent = `${name}\n${type} • ${cat}\nPP: ${pp}`;
-      
+
       btn.addEventListener("click", () => {
         if (!isBusy) useMove(i);
       });
-      
+
       grid.appendChild(btn);
     }
   }
@@ -326,11 +326,11 @@
   async function startBattle(encounter) {
     console.log("=== Starting Battle ===");
     console.log("Encounter:", encounter);
-    
+
     try {
       setBusy(true);
       currentEncounter = encounter;
-      
+
       console.log("Fetching /api/battle/start...");
       const r = await fetch("/api/battle/start", {
         method: "POST",
@@ -338,14 +338,14 @@
         credentials: "include",
         body: JSON.stringify({ encounter }),
       });
-      
+
       console.log("Response status:", r.status);
       const data = await r.json().catch((err) => {
         console.error("JSON parse error:", err);
         return {};
       });
       console.log("Response data:", data);
-      
+
       if (!r.ok) {
         console.error("Response not OK. Status:", r.status);
         updateMessage(`Erro: HTTP ${r.status}`);
@@ -362,16 +362,16 @@
 
       battleState = data.state;
       console.log("Battle state:", battleState);
-      
+
       // 📌 Criar checkpoint automático antes de entrar na batalha
       if (window.SaveGameModal?.createAutoCheckpoint) {
         console.log("⚔️ Criando checkpoint automático de batalha...");
         await window.SaveGameModal.createAutoCheckpoint('battle');
       }
-      
+
       console.log("Opening modal...");
       openModal(battleModal);
-      
+
       // Background da batalha (mapeado por terreno)
       try {
         const arena = document.querySelector('.battle-firered__arena');
@@ -407,10 +407,10 @@
       } catch (e) {
         console.warn("Battle background fetch failed:", e);
       }
-      
+
       await renderBattle(battleState);
       setBusy(false);
-      
+
     } catch (err) {
       console.error("Battle start failed:", err);
       updateMessage("Erro ao iniciar batalha");
@@ -423,24 +423,32 @@
       console.log("useMove blocked: battleState=", battleState, "isBusy=", isBusy);
       return;
     }
-    
+
     console.log("=== useMove called ===");
     console.log("Move index:", moveIndex);
     console.log("Battle state:", battleState);
-    
+
     try {
       setBusy(true);
-      
+
       // Get the move name from the player's moves array
       const move = battleState?.player?.moves?.[moveIndex];
       console.log("Selected move:", move);
-      
+
       if (!move || !move.name) {
         updateMessage("Erro: Movimento não encontrado");
         setBusy(false);
         return;
       }
-      
+
+      // Check if this is an NPC battle
+      if (battleState.isNpcBattle && window.currentNpcBattle) {
+        console.log("Processing NPC battle turn...");
+        await processNpcBattleTurn(moveIndex, move);
+        return;
+      }
+
+      // Original wild pokemon battle logic
       console.log("Sending POST /api/battle/action with move:", move.name);
       const r = await fetch("/api/battle/action", {
         method: "POST",
@@ -451,11 +459,11 @@
           moveName: move.name
         }),
       });
-      
+
       console.log("Response status:", r.status);
       const data = await r.json().catch(() => ({}));
       console.log("Response data:", data);
-      
+
       if (!r.ok || !data?.ok) {
         updateMessage(data?.error || "Erro ao processar turno");
         setBusy(false);
@@ -480,7 +488,7 @@
         // Voltar ao menu de golpes para mostrar PP atualizado
         showMovesMenu();
       }
-      
+
     } catch (err) {
       console.error("Turn failed:", err);
       updateMessage("Erro ao processar turno");
@@ -489,13 +497,97 @@
     }
   }
 
+  // New function to process NPC battle turns
+  async function processNpcBattleTurn(moveIndex, move) {
+    try {
+      updateMessage(`${battleState.player.name} usou ${move.name}!`);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      // Call NPC battle turn API
+      const response = await fetch("/api/battle/turn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          battleState: window.currentNpcBattle,
+          moveIndex: moveIndex
+        })
+      });
+
+      const data = await response.json();
+      console.log("NPC battle turn response:", data);
+
+      if (!data.ok) {
+        updateMessage(data.error || "Erro ao processar turno");
+        setBusy(false);
+        return;
+      }
+
+      // Update global battle state
+      window.currentNpcBattle = data.battleState;
+
+      // Update UI state
+      battleState.player.currentHp = data.battleState.playerPokemon.currentHp;
+      battleState.player.currentHP = data.battleState.playerPokemon.currentHp;
+      battleState.enemy.currentHp = data.battleState.enemyPokemon.currentHp;
+      battleState.enemy.currentHP = data.battleState.enemyPokemon.currentHp;
+
+      // Show damage messages
+      if (data.result && data.result.events) {
+        for (const event of data.result.events) {
+          if (event.text) {
+            updateMessage(event.text);
+            await new Promise(resolve => setTimeout(resolve, 1200));
+          }
+        }
+      }
+
+      // Update HP bars
+      await renderBattle(battleState);
+
+      // Check if battle ended
+      if (data.battleOver) {
+        if (data.battleResult === 'WIN') {
+          updateMessage("Você venceu a batalha!");
+          await new Promise(resolve => setTimeout(resolve, 2000));
+
+          if (data.battleState.reward) {
+            updateMessage(`Ganhou ${data.battleState.reward.xp} XP e ₽${data.battleState.reward.money}!`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+          }
+        } else if (data.battleResult === 'LOSE') {
+          updateMessage("Você perdeu a batalha!");
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+
+        // Close battle
+        closeModal(battleModal);
+        battleState = null;
+        window.currentNpcBattle = null;
+
+        if (window.GAME?.setPaused) {
+          window.GAME.setPaused(false);
+        }
+      } else {
+        // Continue battle - show moves menu again
+        showMovesMenu();
+      }
+
+    } catch (err) {
+      console.error("NPC battle turn failed:", err);
+      updateMessage("Erro ao processar turno");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   async function runFromBattle() {
     if (isBusy) return;
-    
+
     try {
       setBusy(true);
       updateMessage("Tentando fugir...");
-      
+
       // Chamar API para encerrar a batalha
       const r = await fetch("/api/battle/action", {
         method: "POST",
@@ -504,19 +596,19 @@
         body: JSON.stringify({ type: "run" }),
       });
       const data = await r.json().catch(() => ({}));
-      
+
       if (r.ok && data?.ok) {
         updateMessage("Você fugiu com sucesso!");
         await new Promise(resolve => setTimeout(resolve, 1500));
-        
+
         closeModal(battleModal);
         battleState = null;
-        
+
         // Unpause game
         if (window.GAME?.setPaused) {
           window.GAME.setPaused(false);
         }
-        
+
         if (window.UI?.log) {
           window.UI.log("🏃 Você fugiu da batalha.");
         }
@@ -525,7 +617,7 @@
         await new Promise(resolve => setTimeout(resolve, 1500));
         showMainMenu();
       }
-      
+
     } catch (err) {
       console.error("Run failed:", err);
       updateMessage("Erro ao tentar fugir");
@@ -610,7 +702,7 @@
   async function handleBattleEnd(state) {
     if (state.winner === "player") {
       updateMessage("Você venceu a batalha!");
-      
+
       // EXP gain animation
       if (state.expGained) {
         await new Promise(resolve => setTimeout(resolve, 1500));
@@ -621,10 +713,10 @@
     }
 
     await new Promise(resolve => setTimeout(resolve, 3000));
-    
+
     closeModal(battleModal);
     battleState = null;
-    
+
     // Unpause game
     if (window.GAME?.setPaused) {
       window.GAME.setPaused(false);
@@ -708,6 +800,7 @@
 
   window.BattleModal = {
     open: startBattle,
+    renderBattle: renderBattle,  // Expose for NPC battles
     close: () => {
       closeModal(battleModal);
       battleState = null;

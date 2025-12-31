@@ -298,7 +298,8 @@ class NPCInteractionMenu {
       battleBtn.disabled = true;
 
       // Call battle API
-      const response = await fetch(`/api/battle/npc/${this.currentNPC.npc_id}`, {
+      const npcId = this.currentNPC.id || this.currentNPC.npc_id || 'unknown';
+      const response = await fetch(`/api/battle/npc/${npcId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -311,12 +312,62 @@ class NPCInteractionMenu {
         // Close menu
         this.close();
 
-        // Open battle UI
-        if (typeof window.openBattleUI === 'function') {
-          window.openBattleUI(data.battleState);
+        // Transform NPC battle data to modal format
+        const battleData = {
+          enemy: {
+            name: data.battleState.enemyPokemon.name,
+            level: data.battleState.enemyPokemon.level,
+            pokemonId: data.battleState.enemyPokemon.species,
+            currentHp: data.battleState.enemyPokemon.currentHp,
+            maxHp: data.battleState.enemyPokemon.maxHp,
+            currentHP: data.battleState.enemyPokemon.currentHp,
+            maxHP: data.battleState.enemyPokemon.maxHp
+          },
+          player: {
+            name: data.battleState.playerPokemon.name,
+            level: data.battleState.playerPokemon.level,
+            pokemonId: data.battleState.playerPokemon.species,
+            currentHp: data.battleState.playerPokemon.currentHp,
+            maxHp: data.battleState.playerPokemon.maxHp,
+            currentHP: data.battleState.playerPokemon.currentHp,
+            maxHP: data.battleState.playerPokemon.maxHp,
+            moves: data.battleState.playerPokemon.moves.map(m => ({
+              name: m.name,
+              currentPP: m.pp,
+              maxPP: m.pp,
+              type: 'Normal',
+              category: 'Physical'
+            }))
+          },
+          log: [`Um ${data.battleState.trainerClass} quer batalhar!`],
+          battleId: data.battleState.battleId,
+          isNpcBattle: true
+        };
+
+        // Store battle state globally for turn processing
+        window.currentNpcBattle = data.battleState;
+
+        // Pause game
+        if (window.GAME && typeof window.GAME.setPaused === 'function') {
+          window.GAME.setPaused(true);
+        }
+
+        // Open battle modal directly with state
+        if (window.BattleModal) {
+          const battleModal = document.getElementById('battleModal');
+          if (battleModal) {
+            // Render battle directly
+            const renderFunc = window.BattleModal.renderBattle || window.renderBattle;
+            if (typeof renderFunc === 'function') {
+              renderFunc(battleData);
+            }
+            // Open modal
+            battleModal.classList.add('is-open');
+            battleModal.removeAttribute('aria-hidden');
+          }
         } else {
-          console.log('Battle started:', data.battleState);
-          alert('Sistema de batalha em desenvolvimento!');
+          console.log('Battle started:', battleData);
+          alert('Modal de batalha não encontrado!');
         }
       } else {
         throw new Error(data.error || 'Failed to start battle');
