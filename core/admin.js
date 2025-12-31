@@ -689,6 +689,7 @@
   }
 
   function clearElement(el) {
+    if (!el) return; // Skip if element doesn't exist
     while (el.firstChild) {
       el.removeChild(el.firstChild);
     }

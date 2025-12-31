@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Admin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: calc(100vh - 140px);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .table-list {
+            list-style: none;
+        }
+
+        .table-item {
+            padding: 12px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .table-item:hover {
+            background: #e9ecef;
+        }
+
+        .table-item.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .table-count {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .search-box {
+            flex: 1;
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .data-table {
+            flex: 1;
+            overflow: auto;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .page-btn {
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .page-btn:hover {
+            background: #f8f9fa;
+        }
+
+        .page-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🗄️ Database Admin</h1>
+        <div class="nav-links">
+            <a href="/admin/map">🗺️ Map</a>
+            <a href="/admin/npcs">🤖 NPCs</a>
+            <a href="/admin/encounters">🎮 Encounters</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Tables</h3>
+            <ul class="table-list" id="tableList">
+                <% tables.forEach(table=> { %>
+                    <li class="table-item" onclick="loadTable('<%= table.name %>')">
+                        <span>
+                            <%= table.name %>
+                        </span>
+                        <span class="table-count">
+                            <%= table.rows %>
+                        </span>
+                    </li>
+                    <% }) %>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="toolbar">
+                <input type="text" class="search-box" id="searchBox" placeholder="Search..." onkeyup="handleSearch()">
+                <button class="btn btn-primary" onclick="showAddModal()">+ Add Record</button>
+            </div>
+
+            <div class="data-table" id="dataTable">
+                <div class="empty-state">
+                    <h3>Select a table to view data</h3>
+                </div>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <!-- Edit/Add Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Edit Record</h2>
+            <form id="editForm" onsubmit="saveRecord(event)">
+                <div id="formFields"></div>
+                <div style="display: flex; gap: 10px; margin-top: 20px;">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-danger" onclick="closeModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let currentTable = '';
+        let currentPage = 1;
+        let currentSchema = [];
+        let currentData = [];
+        let editingId = null;
+
+        async function loadTable(tableName, page = 1) {
+            currentTable = tableName;
+            currentPage = page;
+
+            // Update active state
+            document.querySelectorAll('.table-item').forEach(item => {
+                item.classList.toggle('active', item.textContent.includes(tableName));
+            });
+
+            try {
+                const response = await fetch(`/admin/database/api/table/${tableName}?page=${page}&limit=50`);
+                const data = await response.json();
+
+                if (data.ok) {
+                    currentSchema = data.schema;
+                    currentData = data.data;
+                    renderTable(data);
+                    renderPagination(data.pagination);
+                }
+            } catch (err) {
+                console.error('Error loading table:', err);
+            }
+        }
+
+        function renderTable(data) {
+            const tableDiv = document.getElementById('dataTable');
+
+            if (data.data.length === 0) {
+                tableDiv.innerHTML = '<div class="empty-state"><h3>No data found</h3></div>';
+                return;
+            }
+
+            const columns = data.schema.map(col => col.name);
+
+            let html = '<table><thead><tr>';
+            columns.forEach(col => {
+                html += `<th>${col}</th>`;
+            });
+            html += '<th>Actions</th></tr></thead><tbody>';
+
+            data.data.forEach(row => {
+                html += '<tr>';
+                columns.forEach(col => {
+                    html += `<td>${row[col] !== null ? row[col] : '<i>NULL</i>'}</td>`;
+                });
+                html += `<td>
+                    <button class="btn btn-primary" style="padding: 5px 10px; margin-right: 5px;" onclick="editRecord(${row.id})">Edit</button>
+                    <button class="btn btn-danger" style="padding: 5px 10px;" onclick="deleteRecord(${row.id})">Delete</button>
+                </td>`;
+                html += '</tr>';
+            });
+
+            html += '</tbody></table>';
+            tableDiv.innerHTML = html;
+        }
+
+        function renderPagination(pagination) {
+            const paginationDiv = document.getElementById('pagination');
+
+            if (pagination.pages <= 1) {
+                paginationDiv.innerHTML = '';
+                return;
+            }
+
+            let html = `<span>Page ${pagination.page} of ${pagination.pages}</span>`;
+
+            if (pagination.page > 1) {
+                html += `<button class="page-btn" onclick="loadTable('${currentTable}', ${pagination.page - 1})">Previous</button>`;
+            }
+
+            if (pagination.page < pagination.pages) {
+                html += `<button class="page-btn" onclick="loadTable('${currentTable}', ${pagination.page + 1})">Next</button>`;
+            }
+
+            paginationDiv.innerHTML = html;
+        }
+
+        function showAddModal() {
+            if (!currentTable) {
+                alert('Select a table first!');
+                return;
+            }
+
+            editingId = null;
+            document.getElementById('modalTitle').textContent = 'Add Record';
+            renderForm({});
+            document.getElementById('editModal').classList.add('show');
+        }
+
+        function editRecord(id) {
+            editingId = id;
+            const record = currentData.find(r => r.id === id);
+            document.getElementById('modalTitle').textContent = 'Edit Record';
+            renderForm(record);
+            document.getElementById('editModal').classList.add('show');
+        }
+
+        function renderForm(record) {
+            const formFields = document.getElementById('formFields');
+            let html = '';
+
+            currentSchema.forEach(col => {
+                if (col.name === 'id') return; // Skip ID field
+
+                html += `
+                    <div class="form-group">
+                        <label>${col.name} ${col.notnull ? '*' : ''}</label>
+                        <input type="text" name="${col.name}" value="${record[col.name] || ''}" ${col.notnull ? 'required' : ''}>
+                    </div>
+                `;
+            });
+
+            formFields.innerHTML = html;
+        }
+
+        async function saveRecord(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value || null;
+            });
+
+            try {
+                const url = editingId
+                    ? `/admin/database/api/table/${currentTable}/${editingId}`
+                    : `/admin/database/api/table/${currentTable}`;
+
+                const method = editingId ? 'PUT' : 'POST';
+
+                const response = await fetch(url, {
+                    method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.ok) {
+                    closeModal();
+                    loadTable(currentTable, currentPage);
+                    alert('Record saved successfully!');
+                } else {
+                    alert('Error: ' + result.error);
+                }
+            } catch (err) {
+                console.error('Error saving record:', err);
+                alert('Error saving record');
+            }
+        }
+
+        async function deleteRecord(id) {
+            if (!confirm('Are you sure you want to delete this record?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/admin/database/api/table/${currentTable}/${id}`, {
+                    method: 'DELETE'
+                });
+
+                const result = await response.json();
+
+                if (result.ok) {
+                    loadTable(currentTable, currentPage);
+                    alert('Record deleted successfully!');
+                } else {
+                    alert('Error: ' + result.error);
+                }
+            } catch (err) {
+                console.error('Error deleting record:', err);
+                alert('Error deleting record');
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('editModal').classList.remove('show');
+        }
+
+        let searchTimeout;
+        function handleSearch() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                if (currentTable) {
+                    const search = document.getElementById('searchBox').value;
+                    loadTableWithSearch(search);
+                }
+            }, 500);
+        }
+
+        async function loadTableWithSearch(search) {
+            try {
+                const response = await fetch(`/admin/database/api/table/${currentTable}?page=1&limit=50&search=${encodeURIComponent(search)}`);
+                const data = await response.json();
+
+                if (data.ok) {
+                    currentSchema = data.schema;
+                    currentData = data.data;
+                    renderTable(data);
+                    renderPagination(data.pagination);
+                }
+            } catch (err) {
+                console.error('Error searching:', err);
+            }
+        }
+    </script>
+</body>
+
+</html>

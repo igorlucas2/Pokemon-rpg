@@ -1,87 +1,191 @@
-const express = require("express");
+/**
+ * Shop API Routes
+ * 
+ * Handles Poké Mart buy/sell transactions
+ */
+
+const express = require('express');
 const router = express.Router();
-
-const cache = new Map(); // cache simples em memória
-
-// Itens clássicos de loja (preços base inspirados nos jogos)
-const CLASSIC_SHOP_ITEMS = [
-  { name: "poke-ball", price: 200 },
-  { name: "great-ball", price: 600 },
-  { name: "ultra-ball", price: 1200 },
-  { name: "potion", price: 300 },
-  { name: "super-potion", price: 700 },
-  { name: "hyper-potion", price: 1200 },
-  { name: "max-potion", price: 2500 },
-  { name: "revive", price: 1500 },
-  { name: "max-revive", price: 4000 },
-  { name: "antidote", price: 100 },
-  { name: "paralyze-heal", price: 200 },
-  { name: "burn-heal", price: 250 },
-  { name: "ice-heal", price: 250 },
-  { name: "awakening", price: 250 },
-  { name: "full-heal", price: 600 },
-  { name: "escape-rope", price: 550 },
-  { name: "repel", price: 350 },
-  { name: "super-repel", price: 500 },
-  { name: "max-repel", price: 700 },
-];
+const shopService = require('../services/shopService');
+const itemService = require('../services/itemService');
 
 function requireAuth(req, res, next) {
-  if (!req.session.user) return res.status(401).json({ error: "not_authenticated" });
+  if (!req.session.user) {
+    return res.status(401).json({ ok: false, error: 'not_authenticated' });
+  }
   next();
 }
 
-function pickEnglishText(arr, pick) {
-  if (!Array.isArray(arr)) return null;
-  const en = arr.find((x) => x?.language?.name === "en");
-  const val = en ? pick(en) : null;
-  if (!val) return null;
-  return String(val).replaceAll("\n", " ").replaceAll("\f", " ").trim();
-}
-
-router.get("/items", requireAuth, async (req, res) => {
-  const limit = Math.max(1, Math.min(Number(req.query.limit || 24), CLASSIC_SHOP_ITEMS.length));
-  const offset = Math.max(0, Number(req.query.offset || 0));
-
-  const key = `classic_items:${limit}:${offset}`;
-  if (cache.has(key)) return res.json(cache.get(key));
+/**
+ * GET /api/shop/inventory/:shopType
+ * Get shop inventory
+ */
+router.get('/inventory/:shopType', requireAuth, (req, res) => {
+  const shopType = req.params.shopType || 'pokemart';
 
   try {
-    const slice = CLASSIC_SHOP_ITEMS.slice(offset, offset + limit);
+    const items = shopService.getShopInventory(shopType);
+    return res.json({
+      ok: true,
+      shopType,
+      items: items.map(item => ({
+        itemId: item.item_id,
+        name: item.name,
+        price: item.price,
+        sellPrice: item.sell_price,
+        category: item.category,
+        description: item.description,
+        icon: item.icon_url
+      }))
+    });
+  } catch (error) {
+    console.error('Error getting shop inventory:', error);
+    return res.status(500).json({ ok: false, error: 'internal_error' });
+  }
+});
 
-    const details = await Promise.all(
-      slice.map(async (it) => {
-        const dResp = await fetch(`https://pokeapi.co/api/v2/item/${encodeURIComponent(it.name)}`);
-        if (!dResp.ok) return null;
-        const d = await dResp.json();
+/**
+ * GET /api/shop/inventory (default to pokemart)
+ */
+router.get('/inventory', requireAuth, (req, res) => {
+  try {
+    const items = shopService.getShopInventory('pokemart');
+    return res.json({
+      ok: true,
+      shopType: 'pokemart',
+      items: items.map(item => ({
+        itemId: item.item_id,
+        name: item.name,
+        price: item.price,
+        sellPrice: item.sell_price,
+        category: item.category,
+        description: item.description,
+        icon: item.icon_url
+      }))
+    });
+  } catch (error) {
+    console.error('Error getting shop inventory:', error);
+    return res.status(500).json({ ok: false, error: 'internal_error' });
+  }
+});
 
-        const description =
-          pickEnglishText(d.effect_entries, (x) => x.short_effect || x.effect) ||
-          pickEnglishText(d.flavor_text_entries, (x) => x.text) ||
-          "Sem descrição.";
+/**
+ * POST /api/shop/buy
+ * Buy items from shop
+ * Body: { items: [{ itemId, quantity }] }
+ */
+router.post('/buy', requireAuth, (req, res) => {
+  const userId = req.session.user.id;
+  const { items } = req.body;
 
-        return {
-          id: d.id,
-          name: d.name,
-          category: d.category?.name || null,
-          price: Number(it.price),
-          description,
-          icon: d.sprites?.default || null,
-        };
-      })
-    );
+  if (!items || !Array.isArray(items)) {
+    return res.status(400).json({ ok: false, error: 'invalid_request' });
+  }
 
-    const out = {
-      count: CLASSIC_SHOP_ITEMS.length,
-      nextOffset: Math.min(offset + limit, CLASSIC_SHOP_ITEMS.length),
-      prevOffset: Math.max(offset - limit, 0),
-      results: details.filter(Boolean),
-    };
+  const result = shopService.buyItems(userId, items);
 
-    cache.set(key, out);
-    res.json(out);
-  } catch {
-    res.status(500).json({ error: "internal_error" });
+  if (!result.ok) {
+    const status = result.error === 'insufficient_funds' ? 402 : 400;
+    return res.status(status).json(result);
+  }
+
+  return res.json(result);
+});
+
+/**
+ * POST /api/shop/sell
+ * Sell items to shop
+ * Body: { items: [{ itemId, quantity }] }
+ */
+router.post('/sell', requireAuth, (req, res) => {
+  const userId = req.session.user.id;
+  const { items } = req.body;
+
+  if (!items || !Array.isArray(items)) {
+    return res.status(400).json({ ok: false, error: 'invalid_request' });
+  }
+
+  const result = shopService.sellItems(userId, items);
+
+  if (!result.ok) {
+    const status = result.error === 'insufficient_quantity' ? 409 : 400;
+    return res.status(status).json(result);
+  }
+
+  return res.json(result);
+});
+
+/**
+ * POST /api/item/use
+ * Use an item on a Pokémon
+ * Body: { itemId, targetPokemonId }
+ */
+router.post('/use', requireAuth, (req, res) => {
+  const userId = req.session.user.id;
+  const { itemId, targetPokemonId } = req.body;
+
+  if (!itemId || !targetPokemonId) {
+    return res.status(400).json({ ok: false, error: 'missing_parameters' });
+  }
+
+  // Check if player has the item
+  const inventory = itemService.getPlayerInventory(userId);
+  const playerItem = inventory.find(i => i.item_id === itemId);
+
+  if (!playerItem || playerItem.quantity <= 0) {
+    return res.status(404).json({ ok: false, error: 'item_not_found' });
+  }
+
+  // Apply item effect
+  const result = itemService.applyItemEffect(userId, itemId, targetPokemonId);
+
+  if (!result.ok) {
+    return res.status(400).json(result);
+  }
+
+  // Remove item from inventory
+  const removeResult = itemService.removeItemFromInventory(userId, itemId, 1);
+  if (!removeResult.ok) {
+    return res.status(500).json({ ok: false, error: 'failed_to_remove_item' });
+  }
+
+  return res.json({
+    ok: true,
+    effect: result.effect,
+    healed: result.healed,
+    newHp: result.newHp,
+    statusCured: result.statusCured,
+    revived: result.revived,
+    remainingQuantity: removeResult.newQuantity || 0
+  });
+});
+
+/**
+ * GET /api/shop/player-inventory
+ * Get player's inventory
+ */
+router.get('/player-inventory', requireAuth, (req, res) => {
+  const userId = req.session.user.id;
+
+  try {
+    const inventory = itemService.getPlayerInventory(userId);
+    return res.json({
+      ok: true,
+      items: inventory.map(item => ({
+        id: item.id,
+        itemId: item.item_id,
+        name: item.name,
+        quantity: item.quantity,
+        price: item.price,
+        sellPrice: item.sell_price,
+        category: item.category,
+        description: item.description,
+        icon: item.icon_url
+      }))
+    });
+  } catch (error) {
+    console.error('Error getting inventory:', error);
+    return res.status(500).json({ ok: false, error: 'internal_error' });
   }
 });
 

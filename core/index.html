@@ -103,28 +103,39 @@
           <div class="status">Clique no mapa para posicionar quando um modo estiver ativo.</div>
         </section>
 
-        <section class="card">
-          <div class="card-head">
-            <h3>Dialogos</h3>
-          </div>
-          <form id="dialog-form" class="field-grid">
-            <label>Nome <input id="dialog-title" type="text" placeholder="Introducao"></label>
-            <label class="full">Texto <textarea id="dialog-text" rows="3"
-                placeholder="Texto do dialogo"></textarea></label>
-            <button class="full" type="submit">Adicionar dialogo</button>
-          </form>
-        </section>
 
         <section class="card">
           <div class="card-head">
             <h3>Colisores</h3>
+            <button id="toggle-collider-list" type="button"
+              style="padding: 4px 8px; background: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer;">▼
+              Lista</button>
           </div>
           <form id="collider-form" class="field-grid">
             <div class="status full">Use a selecao do mapa para definir a area do colisor.</div>
             <button class="full" type="submit">Adicionar colisor na selecao</button>
           </form>
-          <div id="collider-list" class="list"></div>
+          <div id="collider-list" class="list" style="display: none;"></div>
         </section>
+
+        <script>
+          // Toggle collider list visibility
+          (function () {
+            const toggleBtn = document.getElementById('toggle-collider-list');
+            const colliderList = document.getElementById('collider-list');
+            if (toggleBtn && colliderList) {
+              toggleBtn.addEventListener('click', function () {
+                if (colliderList.style.display === 'none') {
+                  colliderList.style.display = 'block';
+                  toggleBtn.textContent = '▲ Lista';
+                } else {
+                  colliderList.style.display = 'none';
+                  toggleBtn.textContent = '▼ Lista';
+                }
+              });
+            }
+          })();
+        </script>
 
         <section class="card">
           <div class="card-head">

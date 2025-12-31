@@ -201,4 +201,10 @@ router.put("/events/:id", requireAuth, requireAdmin, (req, res) => {
 // ========================
 router.use("/encounters", requireAuth, requireAdmin, encountersAdmin);
 
+// ========================
+// Database Admin
+// ========================
+const databaseAdmin = require("./admin/databaseAdmin");
+router.use("/database", requireAuth, requireAdmin, databaseAdmin);
+
 module.exports = router;

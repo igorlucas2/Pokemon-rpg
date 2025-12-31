@@ -32,6 +32,10 @@ class NPCInteractionMenu {
                 <span class="npc-menu-icon">⚔️</span>
                 <span class="npc-menu-text">Batalhar</span>
               </button>
+              <button class="npc-menu-btn npc-menu-btn--shop" id="npcMenuShopBtn" onclick="npcInteractionMenu.openShop()">
+                <span class="npc-menu-icon">🛍️</span>
+                <span class="npc-menu-text">Comprar</span>
+              </button>
             </div>
           </div>
         </div>
@@ -202,6 +206,14 @@ class NPCInteractionMenu {
           box-shadow: none;
         }
 
+        .npc-menu-btn--shop {
+          background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .npc-menu-btn--shop:hover {
+          background: linear-gradient(135deg, #5fbcff 0%, #10ffff 100%);
+        }
+
         .npc-menu-icon {
           font-size: 1.5rem;
         }
@@ -252,6 +264,16 @@ class NPCInteractionMenu {
       battleBtn.querySelector('.npc-menu-text').textContent = 'Batalhar';
     }
 
+    // Check if NPC has a shop
+    const shopBtn = document.getElementById('npcMenuShopBtn');
+    if (shopBtn) {
+      if (npc.shopType === 'pokemart' || npc.shop_type === 'pokemart') {
+        shopBtn.style.display = 'flex';
+      } else {
+        shopBtn.style.display = 'none';
+      }
+    }
+
     // Show menu
     this.menuElement.style.display = 'flex';
 
@@ -284,6 +306,20 @@ class NPCInteractionMenu {
       );
     } else {
       console.warn('openChat function not found');
+    }
+  }
+
+  openShop() {
+    if (!this.currentNPC) return;
+
+    // Close NPC menu
+    this.close();
+
+    // Open shop modal with NPC context
+    if (window.openShopModal) {
+      window.openShopModal(this.currentNPC);
+    } else {
+      console.warn('Shop modal not found');
     }
   }
 

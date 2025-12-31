@@ -112,9 +112,11 @@ router.post("/travel", requireAuth, (req, res) => {
 });
 
 // GET /api/bag
-// Inventário básico do jogador (MVP)
+// Inventário do jogador (integrado com novo sistema de itens)
 router.get("/bag", requireAuth, (req, res) => {
+  const itemService = require('../services/itemService');
   const trainer = trainerStore.getTrainerByUserId(req.session.user.id);
+
   if (!trainer) {
     return res.json({
       ok: true,
@@ -125,23 +127,43 @@ router.get("/bag", requireAuth, (req, res) => {
   }
 
   const items = [];
+
+  // Pokébolas do sistema antigo (trainer.pokeballs)
   const pokeballs = Number(trainer.pokeballs ?? 0);
   if (pokeballs > 0) {
     items.push({
       id: "poke-ball",
+      itemId: "ITEM_POKE_BALL",
       name: "Pokébola",
       qty: pokeballs,
       icon: "/assets/itens/pokebola.png",
     });
   }
 
+  // Itens do novo sistema (player_inventory)
+  try {
+    const inventory = itemService.getPlayerInventory(req.session.user.id);
+    for (const item of inventory) {
+      items.push({
+        id: item.item_id,
+        itemId: item.item_id,
+        name: item.name,
+        qty: item.quantity,
+        icon: item.icon_url || null,
+        description: item.description
+      });
+    }
+  } catch (error) {
+    console.error('Error loading player inventory:', error);
+  }
+
+  // Itens antigos do trainerStore (para compatibilidade)
   const extra = trainerStore.listTrainerItemsByUserId(req.session.user.id);
   for (const row of Array.isArray(extra) ? extra : []) {
     const id = String(row?.itemId || "").trim();
     const qty = Number(row?.qty ?? 0);
     if (!id || !Number.isFinite(qty) || qty <= 0) continue;
 
-    // Nome amigável (MVP)
     const nameMap = {
       potion: "Poção",
       "super-potion": "Super Poção",
@@ -153,9 +175,10 @@ router.get("/bag", requireAuth, (req, res) => {
 
     items.push({
       id,
+      itemId: id,
       name: nameMap[id] || id,
       qty: Math.trunc(qty),
-      icon: null,
+      icon: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${id}.png`,
     });
   }
 
@@ -192,11 +215,11 @@ router.post("/trainer/overworld-sprite", requireAuth, (req, res) => {
   const t = out.trainer;
   req.session.trainer = t
     ? {
-        name: t.name,
-        avatar: t.avatar,
-        overworldSprite: t.overworldSprite || "boy",
-        starterPokemonId: t.starterPokemonId,
-      }
+      name: t.name,
+      avatar: t.avatar,
+      overworldSprite: t.overworldSprite || "boy",
+      starterPokemonId: t.starterPokemonId,
+    }
     : null;
 
   return res.json({ ok: true, trainer: t });
@@ -466,11 +489,11 @@ router.post("/battle/start", requireAuth, async (req, res) => {
     const learnedOut = movesClean.length
       ? { moves: movesClean, learned: [] }
       : await battleService.applyLevelUpLearnset({
-          pokemonId: active.pokemonId,
-          oldLevel: 0,
-          newLevel: clampInt(active.level, 1, 100, 1),
-          currentMoves: [],
-        });
+        pokemonId: active.pokemonId,
+        oldLevel: 0,
+        newLevel: clampInt(active.level, 1, 100, 1),
+        currentMoves: [],
+      });
 
     const finalMoves = (Array.isArray(learnedOut.moves) ? learnedOut.moves : []).slice(0, 4);
 
@@ -872,7 +895,7 @@ router.post("/battle/action", requireAuth, async (req, res) => {
       if (localInfo?.effect) {
         events.push({ type: "message", text: `Efeito: ${localInfo.effect}` });
       }
-      
+
       const oldEnemyHp = state.enemy.currentHp;
       state.enemy.currentHp = Math.max(0, clampInt(state.enemy.currentHp, 0, 9999, 0) - pd);
       state.enemy.currentHP = state.enemy.currentHp; // compat frontend
@@ -1004,9 +1027,9 @@ router.post("/game/save", requireAuth, async (req, res) => {
     const { mapId, position, timestamp } = req.body || {};
 
     if (!mapId) {
-      return res.status(400).json({ 
-        ok: false, 
-        error: "missing_mapId" 
+      return res.status(400).json({
+        ok: false,
+        error: "missing_mapId"
       });
     }
 
@@ -1036,10 +1059,10 @@ router.post("/game/save", requireAuth, async (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao salvar jogo:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "save_failed",
-      message: error.message || "Falha ao salvar o jogo" 
+      message: error.message || "Falha ao salvar o jogo"
     });
   }
 });
@@ -1051,7 +1074,7 @@ router.get("/game/save", requireAuth, (req, res) => {
 
     // Tenta carregar do banco de dados primeiro
     const gameState = gameStore.loadGame(userId);
-    
+
     if (!gameState) {
       // Se não houver save, retorna informação
       return res.json({
@@ -1072,8 +1095,8 @@ router.get("/game/save", requireAuth, (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao carregar save:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "load_failed",
       message: error.message || "Falha ao carregar o save"
     });
@@ -1087,9 +1110,9 @@ router.post("/game/checkpoint", requireAuth, (req, res) => {
     const { mapId, position, state } = req.body || {};
 
     if (!mapId) {
-      return res.status(400).json({ 
-        ok: false, 
-        error: "missing_mapId" 
+      return res.status(400).json({
+        ok: false,
+        error: "missing_mapId"
       });
     }
 
@@ -1117,8 +1140,8 @@ router.post("/game/checkpoint", requireAuth, (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao criar checkpoint:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "checkpoint_failed",
       message: error.message
     });
@@ -1151,8 +1174,8 @@ router.get("/game/checkpoint", requireAuth, (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao carregar checkpoint:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "checkpoint_load_failed"
     });
   }
@@ -1180,8 +1203,8 @@ router.delete("/game/save", requireAuth, (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao deletar save:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "delete_failed"
     });
   }
@@ -1200,8 +1223,8 @@ router.get("/game/stats", requireAuth, (req, res) => {
     });
   } catch (error) {
     console.error("❌ Erro ao obter stats:", error);
-    return res.status(500).json({ 
-      ok: false, 
+    return res.status(500).json({
+      ok: false,
       error: "stats_failed"
     });
   }
