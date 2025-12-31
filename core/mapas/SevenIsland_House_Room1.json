@@ -1,0 +1,142 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_House_Room1",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_HOUSE_ROOM1",
+        "sourceMapId": "MAP_SEVEN_ISLAND_HOUSE_ROOM1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SeafoamIslands",
+        "height": 9
+    },
+    "start": {
+        "y": 0,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 5,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_House_Room1-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SEVEN_ISLAND_HOUSE_OLD_WOMAN",
+                "script": "SevenIsland_House_Room1_EventScript_OldWoman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SevenIsland_House_Room1-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland",
+                "x": 11,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SevenIsland_House_Room1-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_House_Room2",
+                "x": 3,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_HOUSE_ROOM2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SevenIsland_House_Room1",
+    "dialogs": [
+        {
+            "title": "SevenIsland_House_Room1_Text_SlightBreezeAroundBox",
+            "id": "SevenIsland_House_Room1_EventScript_Box",
+            "text": "There is a slight breeze blowing\naround the box."
+        },
+        {
+            "title": "SevenIsland_House_Room1_Text_OnlyEnjoymentWatchingBattles",
+            "id": "SevenIsland_House_Room1_EventScript_OldWoman",
+            "text": "I may not look like much now,\nbut when I was younger…\n\nI flew everywhere, challenging\nTRAINERS wherever I found them.\n\nNow, my only source of enjoyment\nis reminiscing about the past while\nwatching battles."
+        }
+    ],
+    "jumps": []
+}

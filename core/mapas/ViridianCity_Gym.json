@@ -1,0 +1,459 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ViridianCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_VIRIDIAN_CITY_GYM",
+        "sourceMapId": "MAP_VIRIDIAN_CITY_GYM",
+        "width": 20,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_ViridianGym",
+        "height": 24
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 20,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 4,
+            "x": 4
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 9,
+            "x": 17
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 10,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 4,
+            "x": 5
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 9,
+            "x": 2
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 15,
+            "w": 6,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 19,
+            "w": 10,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 23,
+            "w": 20,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ViridianCity_Gym-0",
+            "x": 10,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Takashi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-1",
+            "x": 12,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Yuji",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-2",
+            "x": 11,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Atsushi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-3",
+            "x": 10,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Jason",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-4",
+            "x": 2,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Cole",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-5",
+            "x": 3,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Kiyo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-6",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Samuel",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-7",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_GIOVANNI",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_VIRIDIAN_GIOVANNI",
+                "script": "ViridianCity_Gym_EventScript_Giovanni",
+                "flag": "FLAG_HIDE_VIRIDIAN_GIOVANNI"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-8",
+            "x": 13,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_Warren",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_Gym-9",
+            "x": 16,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ViridianCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 22,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 36,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 22,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 36,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 22,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 36,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ViridianCity_Gym",
+    "dialogs": [
+        {
+            "title": "ViridianCity_Gym_Text_AtsushiPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Atsushi",
+            "text": "I'm still not worthy!"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_ColePostBattle",
+            "id": "ViridianCity_Gym_EventScript_Cole",
+            "text": "Wait!\nI was just careless!"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_GiovanniPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Giovanni",
+            "text": "Having lost in this fashion, \nI can't face my followers.\nI have betrayed their trust.\n\nAs of today, TEAM ROCKET is\nfinished forever!\n\nAs for myself, I shall dedicate\nmy life to training again.\n\nLet us meet again someday!\nFarewell!"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_GymGuyAdvice",
+            "id": "ViridianCity_Gym_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nEven I don't know the VIRIDIAN\nLEADER's identity.\n\nBut one thing's certain.\nThis will be the toughest of all\nthe GYM LEADERS.\n\nAlso, I heard that the TRAINERS\nhere like GROUND-type POKéMON."
+        },
+        {
+            "title": "ViridianCity_Gym_Text_GymStatue",
+            "id": "ViridianCity_Gym_EventScript_GymStatue",
+            "text": "VIRIDIAN POKéMON GYM\nLEADER: ?\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_JasonPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Jason",
+            "text": "Do you know the identity of our\nGYM LEADER?"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_KiyoPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Kiyo",
+            "text": "If my POKéMON were as good at\nkarate as I…"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_SamuelPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Samuel",
+            "text": "You can go on to the POKéMON\nLEAGUE only by defeating our GYM\nLEADER!"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_TakashiPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Takashi",
+            "text": "The POKéMON LEAGUE?\nYou? Don't get cocky!"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_WarrenPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Warren",
+            "text": "The LEADER will scold me for\nlosing this way…"
+        },
+        {
+            "title": "ViridianCity_Gym_Text_YujiPostBattle",
+            "id": "ViridianCity_Gym_EventScript_Yuji",
+            "text": "You'll need power to keep up with\nour GYM LEADER."
+        }
+    ],
+    "jumps": []
+}

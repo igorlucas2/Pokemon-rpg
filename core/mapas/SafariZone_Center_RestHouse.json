@@ -1,0 +1,194 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SafariZone_Center_RestHouse",
+    "meta": {
+        "layoutId": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
+        "sourceMapId": "MAP_SAFARI_ZONE_CENTER_REST_HOUSE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SafariZoneBuilding",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SafariZone_Center_RestHouse-0",
+            "x": 3,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_Center_RestHouse_EventScript_Scientist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_Center_RestHouse-1",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_Center_RestHouse_EventScript_Sara",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SafariZone_Center_RestHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_Center",
+                "x": 29,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_CENTER",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center_RestHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_Center",
+                "x": 29,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_CENTER",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center_RestHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_Center",
+                "x": 29,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_CENTER",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SafariZone_Center_RestHouse",
+    "dialogs": [
+        {
+            "title": "SafariZone_Center_Text_WhereDidErikGo",
+            "id": "SafariZone_Center_RestHouse_EventScript_Sara",
+            "text": "SARA: Where did my boyfriend,\nERIK, go?"
+        },
+        {
+            "title": "SafariZone_Center_Text_CatchingMonsAsGifts",
+            "id": "SafariZone_Center_RestHouse_EventScript_Scientist",
+            "text": "I'm catching POKéMON to take home\nas gifts."
+        }
+    ],
+    "jumps": []
+}

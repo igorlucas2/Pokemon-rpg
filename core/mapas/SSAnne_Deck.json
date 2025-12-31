@@ -1,0 +1,327 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_Deck",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_DECK",
+        "sourceMapId": "MAP_SSANNE_DECK",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 19
+    },
+    "start": {
+        "y": 0,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 8,
+            "h": 5,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 7,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 11,
+            "x": 17
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 9,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 9,
+            "x": 16
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 9,
+            "x": 19
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 8,
+            "x": 3
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 7,
+            "x": 5
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 6,
+            "x": 14
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 5,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_Deck-0",
+            "x": 12,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Deck_EventScript_Trevor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Deck-1",
+            "x": 14,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Deck_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Deck-2",
+            "x": 13,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Deck_EventScript_Sailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Deck-3",
+            "x": 6,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Deck_EventScript_Edmond",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Deck-4",
+            "x": 11,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Deck_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_Deck-1",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_3F_Corridor",
+                "x": 1,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_3F_CORRIDOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_Deck-2",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_3F_Corridor",
+                "x": 1,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_3F_CORRIDOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_Deck",
+    "dialogs": [
+        {
+            "title": "SSAnne_Deck_Text_FeelSeasick",
+            "id": "SSAnne_Deck_EventScript_BaldingMan",
+            "text": "Urf… I feel ill…\n\nI got seasick, so I stepped out to\nget some air…"
+        },
+        {
+            "title": "SSAnne_Deck_Text_EdmondPostBattle",
+            "id": "SSAnne_Deck_EventScript_Edmond",
+            "text": "How many kinds of POKéMON do you\nthink there are in this big world?"
+        },
+        {
+            "title": "SSAnne_Deck_Text_ScrubbingDecksHardWork",
+            "id": "SSAnne_Deck_EventScript_Sailor",
+            "text": "Whew!\nScrubbing decks is hard work!"
+        },
+        {
+            "title": "SSAnne_Deck_Text_TrevorPostBattle",
+            "id": "SSAnne_Deck_EventScript_Trevor",
+            "text": "My pa said there are 100 kinds of\nPOKéMON. I think there are more."
+        },
+        {
+            "title": "SSAnne_Deck_Text_ShipDepartingSoon",
+            "id": "SSAnne_Deck_EventScript_Youngster",
+            "text": "The party's over.\nThe ship will be departing soon."
+        }
+    ],
+    "jumps": []
+}

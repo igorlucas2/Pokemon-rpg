@@ -1,0 +1,220 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_FOUR_ISLAND_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FOUR_ISLAND_NURSE",
+                "script": "FourIsland_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_PokemonCenter_1F-1",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_PokemonCenter_1F_EventScript_Man",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_PokemonCenter_1F-2",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_PokemonCenter_1F_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_PokemonCenter_1F-3",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland",
+                "x": 18,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FourIsland_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "FourIsland_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "FourIsland_PokemonCenter_1F_Text_NewPokemonJournalHasntArrived",
+            "id": "FourIsland_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "What's this?\n\nThe new POKéMON JOURNAL hasn't\narrived on this island?"
+        },
+        {
+            "title": "FourIsland_PokemonCenter_1F_Text_RareIceMonsInCave",
+            "id": "FourIsland_PokemonCenter_1F_EventScript_Man",
+            "text": "There's a rare kind of ICE POKéMON\nthat lives in the cave.\n\nWe get a lot of visitors hoping to\nsee that POKéMON."
+        },
+        {
+            "title": "FourIsland_PokemonCenter_1F_EventScript_Nurse",
+            "id": "FourIsland_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: FourIsland_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "FourIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+            "id": "FourIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+            "text": "TODO: FourIsland_PokemonCenter_1F_EventScript_PokemonJournal"
+        },
+        {
+            "title": "FourIsland_PokemonCenter_1F_Text_DayCarePeopleFoundEggBefore",
+            "id": "FourIsland_PokemonCenter_1F_EventScript_Woman",
+            "text": "Oh? A POKéMON EGG?\n…I have no idea.\n\n…Oh, wait. The DAY-CARE people\nin town were saying something.\n\nThey said that they'd found EGGS\nbefore on their property."
+        }
+    ],
+    "jumps": []
+}

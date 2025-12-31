@@ -1,0 +1,227 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "IndigoPlateau_Exterior",
+    "meta": {
+        "layoutId": "LAYOUT_INDIGO_PLATEAU_EXTERIOR",
+        "sourceMapId": "MAP_INDIGO_PLATEAU_EXTERIOR",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_IndigoPlateau",
+        "height": 20
+    },
+    "start": {
+        "y": 6,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 7,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 10,
+            "x": 19
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 8,
+            "x": 4
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 8,
+            "x": 17
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 7,
+            "x": 8
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 7,
+            "x": 13
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 6,
+            "x": 6
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 6,
+            "x": 15
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-IndigoPlateau_Exterior-0",
+            "x": 11,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BLUE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CREDITS_RIVAL",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_CREDITS_RIVAL"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_Exterior-1",
+            "x": 11,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PROF_OAK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CREDITS_PROF_OAK",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_CREDITS_OAK"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-IndigoPlateau_Exterior-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "IndigoPlateau_PokemonCenter_1F",
+                "x": 11,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-IndigoPlateau_Exterior-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 19,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route23",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_ROUTE23"
+            }
+        }
+    ],
+    "name": "IndigoPlateau_Exterior",
+    "dialogs": [],
+    "jumps": []
+}

@@ -1,0 +1,268 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_PokemonCenter_2F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_2F",
+        "sourceMapId": "MAP_THREE_ISLAND_POKEMON_CENTER_2F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 9,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_2F-0",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_CABLE_CLUB_RECEPTIONIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "Common_EventScript_UnionRoomAttendant",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_2F-1",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_CABLE_CLUB_RECEPTIONIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "Common_EventScript_WirelessClubAttendant",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_2F-2",
+            "x": 10,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_CABLE_CLUB_RECEPTIONIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "Common_EventScript_DirectCornerAttendant",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_2F-3",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CableClub_EventScript_MysteryGiftMan",
+                "flag": "FLAG_HIDE_MG_DELIVERYMEN"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_PokemonCenter_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_PokemonCenter_1F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 4
+            }
+        },
+        {
+            "id": "warp-ThreeIsland_PokemonCenter_2F-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UnionRoom",
+                "x": 7,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNION_ROOM",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland_PokemonCenter_2F-3",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TradeCenter",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRADE_CENTER",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "ThreeIsland_PokemonCenter_2F",
+    "dialogs": [
+        {
+            "title": "CableClub_EventScript_MysteryGiftMan",
+            "id": "CableClub_EventScript_MysteryGiftMan",
+            "text": "TODO: CableClub_EventScript_MysteryGiftMan"
+        },
+        {
+            "title": "Common_EventScript_DirectCornerAttendant",
+            "id": "Common_EventScript_DirectCornerAttendant",
+            "text": "TODO: Common_EventScript_DirectCornerAttendant"
+        },
+        {
+            "title": "Common_EventScript_UnionRoomAttendant",
+            "id": "Common_EventScript_UnionRoomAttendant",
+            "text": "TODO: Common_EventScript_UnionRoomAttendant"
+        },
+        {
+            "title": "Common_EventScript_WirelessClubAttendant",
+            "id": "Common_EventScript_WirelessClubAttendant",
+            "text": "TODO: Common_EventScript_WirelessClubAttendant"
+        }
+    ],
+    "jumps": []
+}

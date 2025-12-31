@@ -1,0 +1,343 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "OneIsland_KindleRoad_EmberSpa",
+    "meta": {
+        "layoutId": "LAYOUT_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA",
+        "sourceMapId": "MAP_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA",
+        "width": 27,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_MtEmber",
+        "height": 39
+    },
+    "start": {
+        "y": 5,
+        "x": 10
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 27,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 10,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 16,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 7,
+            "w": 8,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 32,
+            "x": 24
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 29,
+            "x": 22
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 11,
+            "w": 5,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 26,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 15,
+            "w": 5,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 22,
+            "x": 4
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 18,
+            "w": 6,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 18,
+            "x": 5
+        },
+        {
+            "y": 21,
+            "w": 4,
+            "h": 18,
+            "x": 18
+        },
+        {
+            "y": 22,
+            "w": 4,
+            "h": 17,
+            "x": 8
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 17,
+            "x": 15
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 13,
+            "x": 12
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 11,
+            "x": 14
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-0",
+            "x": 11,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-1",
+            "x": 15,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-2",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_BlackBelt",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-3",
+            "x": 20,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_OldWoman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-4",
+            "x": 10,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad_EmberSpa-5",
+            "x": 11,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan2",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-OneIsland_KindleRoad_EmberSpa-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 36,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "OneIsland_KindleRoad",
+                "x": 15,
+                "y": 58,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ONE_ISLAND_KINDLE_ROAD",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "OneIsland_KindleRoad_EmberSpa",
+    "dialogs": [
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_EnjoyBowlOfChowder",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan1",
+            "text": "My favorite part of bathing comes\nup right after this.\n\nI enjoy a bowl of chowder to\nwarm me from the inside, too!"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_HotSpringIsTherapeutic",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan2",
+            "text": "Soaking in a hot spring pool is\ntherapeutic, people say."
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_BrunoVisitsSpaOnOccasion",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_BlackBelt",
+            "text": "After an honest day of training,\nnothing beats a relaxing soak in\nthe hot spring pool.\n\nBRUNO, who's a senior ahead of me,\nvisits the SPA on occasion.\n\nHe comes to rehab injuries, both\nhis own and his POKéMON's."
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_WaterWarmsMeToCore",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_OldMan",
+            "text": "Hm!\nHaaaaaaaaaaah!\n\nAaaah! This is heavenly!\nThe water warms me to my core!\n\nYou should jump in, too.\n\nGo to the middle, relax, and get\ngood and warm!"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_SeeHowSmoothMySkinIs",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_OldWoman",
+            "text": "Have a look at my face.\nSee how smooth my skin is?\n\nThe hot spring's water keeps my\nskin younger than my age."
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_UsedThisToMakeEmberSpa",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan",
+            "text": "Hot springs go hand-in-hand with\nvolcanoes.\n\nThe EMBER SPA here, well,\nI made it years ago.\n\nI hewed the pool right out of a\ngigantic boulder by hand.\n\nI was using this at the time.\nI suppose I can part with it.\n\nThat shatters boulders as if they\nwere made of crackers."
+        },
+        {
+            "title": "OneIsland_KindleRoad_EmberSpa_Text_WaterExquisiteFullyRefreshed",
+            "id": "OneIsland_KindleRoad_EmberSpa_EventScript_SpaHeal",
+            "text": "The water is perfectly warm.\nIt feels exquisite…\n\n{PLAYER} and the POKéMON were\nfully refreshed!"
+        }
+    ],
+    "jumps": []
+}

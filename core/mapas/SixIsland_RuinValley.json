@@ -1,0 +1,791 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_RuinValley",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_RUIN_VALLEY",
+        "sourceMapId": "MAP_SIX_ISLAND_RUIN_VALLEY",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 40
+    },
+    "start": {
+        "y": 5,
+        "x": 18
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 18,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 15,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 6,
+            "w": 14,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 10,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 2,
+            "x": 42
+        },
+        {
+            "y": 9,
+            "w": 8,
+            "h": 5,
+            "x": 20
+        },
+        {
+            "y": 10,
+            "w": 11,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 2,
+            "x": 28
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 9,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 16,
+            "x": 36
+        },
+        {
+            "y": 12,
+            "w": 5,
+            "h": 28,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 8,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 12,
+            "w": 6,
+            "h": 12,
+            "x": 30
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 18,
+            "x": 42
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 17,
+            "x": 41
+        },
+        {
+            "y": 17,
+            "w": 11,
+            "h": 8,
+            "x": 19
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 13,
+            "x": 37
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 9,
+            "x": 13
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 18,
+            "x": 5
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 5,
+            "x": 16
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 24,
+            "w": 3,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 3,
+            "x": 35
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 6,
+            "x": 40
+        },
+        {
+            "y": 25,
+            "w": 4,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 25,
+            "w": 3,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 26,
+            "w": 3,
+            "h": 14,
+            "x": 8
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 13,
+            "x": 22
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 4,
+            "x": 26
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 10,
+            "x": 6
+        },
+        {
+            "y": 30,
+            "w": 8,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 9,
+            "x": 11
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 31,
+            "w": 4,
+            "h": 9,
+            "x": 18
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 9,
+            "x": 33
+        },
+        {
+            "y": 31,
+            "w": 5,
+            "h": 1,
+            "x": 43
+        },
+        {
+            "y": 32,
+            "w": 4,
+            "h": 8,
+            "x": 44
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 7,
+            "x": 37
+        },
+        {
+            "y": 34,
+            "w": 4,
+            "h": 6,
+            "x": 23
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 6,
+            "x": 36
+        },
+        {
+            "y": 34,
+            "w": 3,
+            "h": 6,
+            "x": 38
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 6,
+            "x": 43
+        },
+        {
+            "y": 35,
+            "w": 6,
+            "h": 5,
+            "x": 12
+        },
+        {
+            "y": 35,
+            "w": 2,
+            "h": 5,
+            "x": 41
+        },
+        {
+            "y": 37,
+            "w": 6,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 37,
+            "w": 2,
+            "h": 3,
+            "x": 34
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_RuinValley-0",
+            "x": 24,
+            "y": 25,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_RUIN_VALLEY_SCIENTIST",
+                "script": "SixIsland_RuinValley_EventScript_Scientist",
+                "flag": "FLAG_HIDE_RUIN_VALLEY_SCIENTIST"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-1",
+            "x": 32,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_Stanly",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-2",
+            "x": 33,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_Foster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-3",
+            "x": 31,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_Larry",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-4",
+            "x": 14,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_Daryl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-5",
+            "x": 21,
+            "y": 29,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_Hector",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-6",
+            "x": 17,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-7",
+            "x": 17,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-8",
+            "x": 18,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-9",
+            "x": 6,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-10",
+            "x": 6,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-11",
+            "x": 41,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-12",
+            "x": 41,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-13",
+            "x": 42,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-14",
+            "x": 5,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_ItemHPUp",
+                "flag": "FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_HP_UP"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-15",
+            "x": 19,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_ItemFullRestore",
+                "flag": "FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_FULL_RESTORE"
+            }
+        },
+        {
+            "id": "npc-SixIsland_RuinValley-16",
+            "x": 43,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_RuinValley_EventScript_ItemSunStone",
+                "flag": "FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_SUN_STONE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_RuinValley-1",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 24,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_1F",
+                "x": 6,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-SixIsland_RuinValley-right-1",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath",
+                "connection": {
+                    "direction": "right",
+                    "offset": -80
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -80,
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH"
+            }
+        }
+    ],
+    "name": "SixIsland_RuinValley",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_Daryl",
+            "id": "SixIsland_RuinValley_EventScript_Daryl",
+            "text": "TODO: SixIsland_RuinValley_EventScript_Daryl"
+        },
+        {
+            "title": "SixIsland_RuinValley_Text_CheckDoorMoreThoroughly",
+            "id": "SixIsland_RuinValley_EventScript_DottedHoleDoor",
+            "text": "The door doesn't budge at all.\nCheck it more thoroughly?\n\nOn closer inspection, there are\nseveral dots on the door…"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_Foster",
+            "id": "SixIsland_RuinValley_EventScript_Foster",
+            "text": "TODO: SixIsland_RuinValley_EventScript_Foster"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_Hector",
+            "id": "SixIsland_RuinValley_EventScript_Hector",
+            "text": "TODO: SixIsland_RuinValley_EventScript_Hector"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_ItemFullRestore",
+            "id": "SixIsland_RuinValley_EventScript_ItemFullRestore",
+            "text": "TODO: SixIsland_RuinValley_EventScript_ItemFullRestore"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_ItemHPUp",
+            "id": "SixIsland_RuinValley_EventScript_ItemHPUp",
+            "text": "TODO: SixIsland_RuinValley_EventScript_ItemHPUp"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_ItemSunStone",
+            "id": "SixIsland_RuinValley_EventScript_ItemSunStone",
+            "text": "TODO: SixIsland_RuinValley_EventScript_ItemSunStone"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_Larry",
+            "id": "SixIsland_RuinValley_EventScript_Larry",
+            "text": "TODO: SixIsland_RuinValley_EventScript_Larry"
+        },
+        {
+            "title": "SixIsland_RuinValley_Text_CantFigureOutHowToGetInside",
+            "id": "SixIsland_RuinValley_EventScript_Scientist",
+            "text": "I can't figure out how I'm supposed\nto get inside.\n\nLet me tell you, I found this\nplace.\n\nDon't look so envious, will you?"
+        },
+        {
+            "title": "SixIsland_RuinValley_EventScript_Stanly",
+            "id": "SixIsland_RuinValley_EventScript_Stanly",
+            "text": "TODO: SixIsland_RuinValley_EventScript_Stanly"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 33,
+            "y": 31,
+            "dir": "right"
+        },
+        {
+            "x": 33,
+            "y": 32,
+            "dir": "right"
+        },
+        {
+            "x": 33,
+            "y": 33,
+            "dir": "right"
+        },
+        {
+            "x": 33,
+            "y": 34,
+            "dir": "right"
+        },
+        {
+            "x": 33,
+            "y": 35,
+            "dir": "right"
+        },
+        {
+            "x": 33,
+            "y": 36,
+            "dir": "right"
+        }
+    ]
+}

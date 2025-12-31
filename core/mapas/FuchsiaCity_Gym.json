@@ -1,0 +1,379 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_FUCHSIA_CITY_GYM",
+        "sourceMapId": "MAP_FUCHSIA_CITY_GYM",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FuchsiaGym",
+        "height": 23
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 5,
+            "x": 11
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 4,
+            "x": 7
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 11,
+            "w": 7,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 4,
+            "x": 3
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 7,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 22,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity_Gym-0",
+            "x": 12,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Kayden",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-1",
+            "x": 2,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Shawn",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-2",
+            "x": 11,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Kirk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-3",
+            "x": 13,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Edgar",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-4",
+            "x": 4,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Phil",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-5",
+            "x": 2,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Nate",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-6",
+            "x": 7,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_KOGA",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_Koga",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_Gym-7",
+            "x": 11,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 9,
+                "y": 32,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 9,
+                "y": 32,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 9,
+                "y": 32,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FuchsiaCity_Gym",
+    "dialogs": [
+        {
+            "title": "FuchsiaCity_Gym_Text_EdgarPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Edgar",
+            "text": "I still have much to learn."
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_GymGuyAdvice",
+            "id": "FuchsiaCity_Gym_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nFUCHSIA GYM is a tricked-up place.\nIt's riddled with invisible walls!\n\nKOGA might appear close, but he's\nblocked off.\n\nYou have to find gaps in the walls\nto reach him."
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_GymStatue",
+            "id": "FuchsiaCity_Gym_EventScript_GymStatue",
+            "text": "FUCHSIA POKéMON GYM\nLEADER: KOGA\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_KaydenPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Kayden",
+            "text": "So, you mix brawn with brains?\nGood strategy!\n\nThat's remarkable for a child\nTRAINER."
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_KirkPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Kirk",
+            "text": "Even though I've lost, I will keep\ntraining according to the teachings\nof KOGA, my ninja master."
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_KogaPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Koga",
+            "text": "When afflicted by TOXIC, a POKéMON\nsuffers more and more.\n\nIt suffers worsening damage as the\nbattle wears on!\n\nIt will surely terrorize foes!"
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_NatePostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Nate",
+            "text": "I like poison and sleep techniques,\nas they linger after battle!"
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_PhilPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Phil",
+            "text": "You impressed me!\nHere's a hint!\n\nLook very closely for gaps in the\ninvisible walls!"
+        },
+        {
+            "title": "FuchsiaCity_Gym_Text_ShawnPostBattle",
+            "id": "FuchsiaCity_Gym_EventScript_Shawn",
+            "text": "Where there is light, there is\nshadow!\n\nLight and shadow!\nWhich do you choose?"
+        }
+    ],
+    "jumps": []
+}

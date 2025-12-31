@@ -1,0 +1,435 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity_Museum_1F",
+    "meta": {
+        "layoutId": "LAYOUT_PEWTER_CITY_MUSEUM_1F",
+        "sourceMapId": "MAP_PEWTER_CITY_MUSEUM_1F",
+        "width": 28,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Museum",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 28,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 15
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 27
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 6,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 2,
+            "x": 27
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 26
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity_Museum_1F-0",
+            "x": 16,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_MUSEUM_SCIENTIST1",
+                "script": "PewterCity_Museum_1F_EventScript_Scientist1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Museum_1F-1",
+            "x": 2,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Museum_1F_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Museum_1F-2",
+            "x": 21,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Museum_1F_EventScript_OldAmberScientist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Museum_1F-3",
+            "x": 22,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_OLD_AMBER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_OLD_AMBER",
+                "script": "PewterCity_Museum_1F_EventScript_OldAmber",
+                "flag": "FLAG_HIDE_OLD_AMBER"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Museum_1F-4",
+            "x": 26,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Museum_1F_EventScript_Scientist2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Museum_1F-5",
+            "x": 26,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Museum_1F_EventScript_SeismicTossTutor",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PewterCity_Museum_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Museum_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Museum_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Museum_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 21,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 25,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Museum_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 25,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Museum_1F-6",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_Museum_2F",
+                "x": 11,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_MUSEUM_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PewterCity_Museum_1F",
+    "dialogs": [
+        {
+            "title": "PewterCity_Museum_1F_Text_AerodactylFossil",
+            "id": "PewterCity_Museum_1F_EventScript_AerodactylFossil",
+            "text": "AERODACTYL Fossil\nA primitive and rare POKéMON."
+        },
+        {
+            "title": "PewterCity_Museum_1F_EventScript_EntranceTriggerLeft",
+            "id": "PewterCity_Museum_1F_EventScript_EntranceTriggerLeft",
+            "text": "TODO: PewterCity_Museum_1F_EventScript_EntranceTriggerLeft"
+        },
+        {
+            "title": "PewterCity_Museum_1F_EventScript_EntranceTriggerMid",
+            "id": "PewterCity_Museum_1F_EventScript_EntranceTriggerMid",
+            "text": "TODO: PewterCity_Museum_1F_EventScript_EntranceTriggerMid"
+        },
+        {
+            "title": "PewterCity_Museum_1F_EventScript_EntranceTriggerRight",
+            "id": "PewterCity_Museum_1F_EventScript_EntranceTriggerRight",
+            "text": "TODO: PewterCity_Museum_1F_EventScript_EntranceTriggerRight"
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_KabutopsFossil",
+            "id": "PewterCity_Museum_1F_EventScript_KabutopsFossil",
+            "text": "KABUTOPS Fossil\nA primitive and rare POKéMON."
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_BeautifulPieceOfAmber",
+            "id": "PewterCity_Museum_1F_EventScript_OldAmber",
+            "text": "There is a beautiful piece of\nAMBER in a clear gold color."
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_WantYouToGetAmberExamined",
+            "id": "PewterCity_Museum_1F_EventScript_OldAmberScientist",
+            "text": "Ssh! Listen, I need to share a\nsecret with someone.\n\nI think that this chunk of AMBER\ncontains POKéMON DNA!\n\nIt would be a shattering scientific\nbreakthrough if POKéMON could be\nresurrected from it.\n\nBut, my colleagues just ignore\nwhat I have to say.\n\nSo, I have a favor to ask!\n\nI want you to get this examined at\na POKéMON LAB somewhere."
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_ShouldBeGratefulForLongLife",
+            "id": "PewterCity_Museum_1F_EventScript_OldMan",
+            "text": "I should be grateful for my long\nlife.\n\nNever did I think I would get to\nsee the bones of a dragon!"
+        },
+        {
+            "title": "PewterCity_Museum_1F_EventScript_PokemonJournalBrock",
+            "id": "PewterCity_Museum_1F_EventScript_PokemonJournalBrock",
+            "text": "TODO: PewterCity_Museum_1F_EventScript_PokemonJournalBrock"
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_PleaseEnjoyYourself",
+            "id": "PewterCity_Museum_1F_EventScript_Scientist1",
+            "text": "Please enjoy yourself."
+        },
+        {
+            "title": "PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit",
+            "id": "PewterCity_Museum_1F_EventScript_Scientist2",
+            "text": "We have two fossils of rare,\nprehistoric POKéMON on exhibit."
+        },
+        {
+            "title": "PewterCity_Museum_1F_EventScript_SeismicTossTutor",
+            "id": "PewterCity_Museum_1F_EventScript_SeismicTossTutor",
+            "text": "TODO: PewterCity_Museum_1F_EventScript_SeismicTossTutor"
+        }
+    ],
+    "jumps": []
+}

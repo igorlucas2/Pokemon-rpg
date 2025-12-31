@@ -1,0 +1,323 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_Dojo",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_DOJO",
+        "sourceMapId": "MAP_SAFFRON_CITY_DOJO",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PewterGym",
+        "height": 16
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 4,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 13,
+            "x": 12
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 15,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_Dojo-0",
+            "x": 11,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_Hitoshi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-1",
+            "x": 1,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_Hideki",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-2",
+            "x": 11,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_Aaron",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-3",
+            "x": 1,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_Mike",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-4",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_KARATE_MASTER",
+                "script": "SaffronCity_Dojo_EventScript_MasterKoichi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-5",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_HitmonleeBall",
+                "flag": "FLAG_HIDE_DOJO_HITMONLEE_BALL"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Dojo-6",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Dojo_EventScript_HitmonchanBall",
+                "flag": "FLAG_HIDE_DOJO_HITMONCHAN_BALL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_Dojo-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_Dojo-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_Dojo-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_Dojo",
+    "dialogs": [
+        {
+            "title": "SaffronCity_Dojo_Text_AaronPostBattle",
+            "id": "SaffronCity_Dojo_EventScript_Aaron",
+            "text": "The only thing that frightens us is\npsychic power!"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_HidekiPostBattle",
+            "id": "SaffronCity_Dojo_EventScript_Hideki",
+            "text": "Our MASTER is a pro fighter.\nBe prepared to lose!"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_YouWantHitmonchan",
+            "id": "SaffronCity_Dojo_EventScript_HitmonchanBall",
+            "text": "You want the piston-punching\nHITMONCHAN?"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_YouWantHitmonlee",
+            "id": "SaffronCity_Dojo_EventScript_HitmonleeBall",
+            "text": "You want the hard-kicking\nHITMONLEE?"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_HitoshiPostBattle",
+            "id": "SaffronCity_Dojo_EventScript_Hitoshi",
+            "text": "The prime fighters across the land\ntrain here."
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_EnemiesOnEverySide",
+            "id": "SaffronCity_Dojo_EventScript_LeftScroll",
+            "text": "Enemies on every side!"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_ChoosePrizedFightingMon",
+            "id": "SaffronCity_Dojo_EventScript_MasterKoichi",
+            "text": "Indeed, I have lost!\n\nBut, I beseech you, do not take\nour emblem as your trophy!\n\nIn return, I will give you a prized\nFIGHTING POKéMON!\n\nChoose whichever one you like!"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_MikePostBattle",
+            "id": "SaffronCity_Dojo_EventScript_Mike",
+            "text": "You wait 'til you see our MASTER!\nI'm a small fry compared to him!"
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_GoesAroundComesAround",
+            "id": "SaffronCity_Dojo_EventScript_RightScroll",
+            "text": "What goes around comes around."
+        },
+        {
+            "title": "SaffronCity_Dojo_Text_FightingDojo",
+            "id": "SaffronCity_Dojo_EventScript_Statue",
+            "text": "FIGHTING DOJO"
+        },
+        {
+            "title": "SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft",
+            "id": "SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft",
+            "text": "TODO: SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft"
+        },
+        {
+            "title": "SaffronCity_Dojo_EventScript_TriggerMasterBattleRight",
+            "id": "SaffronCity_Dojo_EventScript_TriggerMasterBattleRight",
+            "text": "TODO: SaffronCity_Dojo_EventScript_TriggerMasterBattleRight"
+        }
+    ],
+    "jumps": []
+}

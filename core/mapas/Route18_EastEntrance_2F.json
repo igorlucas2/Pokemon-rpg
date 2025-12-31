@@ -1,0 +1,136 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route18_EastEntrance_2F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_2F",
+        "sourceMapId": "MAP_ROUTE18_EAST_ENTRANCE_2F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route18_EastEntrance_2F-0",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route18_EastEntrance_2F_EventScript_Haden",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route18_EastEntrance_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18_EastEntrance_1F",
+                "x": 9,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18_EAST_ENTRANCE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route18_EastEntrance_2F",
+    "dialogs": [
+        {
+            "title": "Trade_Text_LookingForMonWannaTradeForMon",
+            "id": "Route18_EastEntrance_2F_EventScript_Haden",
+            "text": "I'm looking for the POKéMON\n{STR_VAR_1}!\n\nWanna trade one for my\n{STR_VAR_2}?\n\nHey, thanks!"
+        },
+        {
+            "title": "Route18_EastEntrance_2F_Text_PalletTownInWest",
+            "id": "Route18_EastEntrance_2F_EventScript_LeftBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nPALLET TOWN is in the west."
+        },
+        {
+            "title": "Route18_EastEntrance_2F_Text_PeopleSwimming",
+            "id": "Route18_EastEntrance_2F_EventScript_RightBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nThere are people swimming."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,191 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ViridianCity_School",
+    "meta": {
+        "layoutId": "LAYOUT_VIRIDIAN_CITY_SCHOOL",
+        "sourceMapId": "MAP_VIRIDIAN_CITY_SCHOOL",
+        "width": 10,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_School",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 8,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ViridianCity_School-0",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SCHOOL_WOMAN",
+                "script": "ViridianCity_School_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_School-1",
+            "x": 4,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SCHOOL_LASS",
+                "script": "ViridianCity_School_EventScript_Lass",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ViridianCity_School-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ViridianCity_School-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ViridianCity_School-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ViridianCity_School",
+    "dialogs": [
+        {
+            "title": "ViridianCity_School_Text_BlackboardListsStatusProblems",
+            "id": "ViridianCity_School_EventScript_Blackboard",
+            "text": "The blackboard lists POKéMON\nSTATUS problems during battles."
+        },
+        {
+            "title": "ViridianCity_School_Text_TryingToMemorizeNotes",
+            "id": "ViridianCity_School_EventScript_Lass",
+            "text": "Whew! I'm trying to memorize all my\nnotes."
+        },
+        {
+            "title": "ViridianCity_School_Text_NotebookFirstPage",
+            "id": "ViridianCity_School_EventScript_Notebook",
+            "text": "Let's check out the notebook.\n\nFirst page…\n\nPOKé BALLS are used to catch\nPOKéMON.\n\nUp to six POKéMON can be carried\nin your party.\n\nPeople who raise and battle\nwith POKéMON are called TRAINERS.\n\nTurn the page?\n\nSecond page…\n\nA healthy POKéMON may be hard to\ncatch, so weaken it first.\n\nPoison, burn, or cause another\nstatus problem to weaken it.\n\nThird page…\n\nPOKéMON TRAINERS seek others to\nengage in POKéMON battles.\n\nTo TRAINERS, the taste of victory\nis sweet, indeed.\n\nBattles are constantly waged at\nPOKéMON GYMS everywhere.\n\nFourth page…\n\nThe ultimate goal for all POKéMON\nTRAINERS is simple.\n\nIt is to defeat the top eight\nPOKéMON GYM LEADERS.\n\nDo so to earn the right to face…\n\nThe ELITE FOUR of the POKéMON\nLEAGUE!\n\nGIRL: Hey!\nDon't look at my notes!"
+        },
+        {
+            "title": "ViridianCity_School_EventScript_PokemonJournal",
+            "id": "ViridianCity_School_EventScript_PokemonJournal",
+            "text": "TODO: ViridianCity_School_EventScript_PokemonJournal"
+        },
+        {
+            "title": "ViridianCity_School_Text_ReadBlackboardCarefully",
+            "id": "ViridianCity_School_EventScript_Woman",
+            "text": "Okay!\n\nBe sure to read what's on the\nblackboard carefully!"
+        }
+    ],
+    "jumps": []
+}

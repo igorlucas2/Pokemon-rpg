@@ -1,0 +1,192 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Condominiums_RoofRoom",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_CONDOMINIUMS_ROOF_ROOM",
+        "sourceMapId": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF_ROOM",
+        "width": 10,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_School",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 8,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Condominiums_RoofRoom-0",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_RoofRoom_EventScript_BlackBelt",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_RoofRoom-1",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_EEVEE_POKEBALL",
+                "script": "CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall",
+                "flag": "FLAG_HIDE_EEVEE_BALL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Condominiums_RoofRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_Roof",
+                "x": 2,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_RoofRoom-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_Roof",
+                "x": 2,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_RoofRoom-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_Roof",
+                "x": 2,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeladonCity_Condominiums_RoofRoom",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Condominiums_RoofRoom_Text_TheresNothingIDontKnow",
+            "id": "CeladonCity_Condominiums_RoofRoom_EventScript_BlackBelt",
+            "text": "There is nothing that I don't know,\nlike I wrote on the blackboard.\n\nI know about the world of POKéMON\nin your GAME BOY ADVANCE!\n\nGet together with your friends and\nenjoy trading POKéMON!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture",
+            "id": "CeladonCity_Condominiums_RoofRoom_EventScript_Blackboard",
+            "text": "POKéMON Lecture\n\nPlaying with the Wireless Adapter\n\nWhich heading do you want to read?"
+        },
+        {
+            "title": "CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall",
+            "id": "CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall",
+            "text": "TODO: CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall"
+        },
+        {
+            "title": "CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs",
+            "id": "CeladonCity_Condominiums_RoofRoom_EventScript_TMsPamphlet",
+            "text": "It's a pamphlet on TMs.\n\n… …\n\nThere are fifty TMs in all.\n\nThere are also seven HMs that\ncan be used repeatedly.\n\nSILPH CO."
+        }
+    ],
+    "jumps": []
+}

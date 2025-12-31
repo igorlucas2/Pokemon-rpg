@@ -1,0 +1,415 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_SevaultCanyon_Entrance",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE",
+        "sourceMapId": "MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 7,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 14,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 11,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 15,
+            "x": 17
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 19,
+            "w": 4,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 19,
+            "w": 5,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 25,
+            "w": 6,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 27,
+            "w": 4,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 3,
+            "x": 20
+        },
+        {
+            "y": 28,
+            "w": 2,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 11,
+            "x": 9
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 11,
+            "x": 16
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 11,
+            "x": 23
+        },
+        {
+            "y": 32,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 8
+        },
+        {
+            "y": 32,
+            "w": 6,
+            "h": 8,
+            "x": 10
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 17
+        },
+        {
+            "y": 33,
+            "w": 3,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 33,
+            "w": 5,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 35,
+            "w": 4,
+            "h": 5,
+            "x": 3
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-0",
+            "x": 12,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Miah",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-1",
+            "x": 3,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Eve",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-2",
+            "x": 4,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Jon",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-3",
+            "x": 11,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-4",
+            "x": 10,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-5",
+            "x": 11,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 5,
+            "movementType": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Mason",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_Entrance-6",
+            "x": 7,
+            "y": -2,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-SevenIsland_SevaultCanyon_Entrance-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_SEVEN_ISLAND"
+            }
+        },
+        {
+            "id": "conn-SevenIsland_SevaultCanyon_Entrance-right-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 20,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_SevaultCanyon",
+                "connection": {
+                    "direction": "right",
+                    "offset": 20
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 20,
+                "destMap": "MAP_SEVEN_ISLAND_SEVAULT_CANYON"
+            }
+        }
+    ],
+    "name": "SevenIsland_SevaultCanyon_Entrance",
+    "dialogs": [
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Eve",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Eve",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Eve"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Jon",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Jon",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Jon"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Mason",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Mason",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Mason"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Miah",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Miah",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Miah"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas",
+            "text": "TODO: SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Entrance_Text_RouteSign",
+            "id": "SevenIsland_SevaultCanyon_Entrance_EventScript_RouteSign",
+            "text": "SEVAULT CANYON ENTRANCE\n\nTRAINERS are asked to refrain from\ndamaging plants in the CANYON."
+        }
+    ],
+    "jumps": []
+}

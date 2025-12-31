@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "OneIsland_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_ONE_ISLAND_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-OneIsland_House1-0",
+            "x": 4,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_House1_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_House1-1",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_House1_EventScript_OldWoman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-OneIsland_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "OneIsland",
+                "x": 19,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ONE_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "OneIsland_House1",
+    "dialogs": [
+        {
+            "title": "OneIsland_House1_Text_GazeUponVolcanoOnSunnyDays",
+            "id": "OneIsland_House1_EventScript_OldMan",
+            "text": "On sunny days, I step out and gaze\nupon the volcano.\n\nThat's my daily routine."
+        },
+        {
+            "title": "OneIsland_House1_Text_LastTimeMtEmberErupted",
+            "id": "OneIsland_House1_EventScript_OldWoman",
+            "text": "Let me think… When was the last\ntime MT. EMBER erupted?"
+        }
+    ],
+    "jumps": []
+}

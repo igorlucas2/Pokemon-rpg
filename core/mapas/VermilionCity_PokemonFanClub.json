@@ -1,0 +1,292 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VermilionCity_PokemonFanClub",
+    "meta": {
+        "layoutId": "LAYOUT_VERMILION_CITY_POKEMON_FAN_CLUB",
+        "sourceMapId": "MAP_VERMILION_CITY_POKEMON_FAN_CLUB",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FanClubDaycare",
+        "height": 12
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 4,
+            "x": 5
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 5,
+            "x": 11
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 11,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-0",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_PokemonFanClub_EventScript_Chairman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-1",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_PokemonFanClub_EventScript_WorkerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-2",
+            "x": 7,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PIKACHU",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_PokemonFanClub_EventScript_Pikachu",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-3",
+            "x": 4,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SEEL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_PokemonFanClub_EventScript_Seel",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-4",
+            "x": 4,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEMON_FAN_CLUB_WOMAN",
+                "script": "VermilionCity_PokemonFanClub_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_PokemonFanClub-5",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEMON_FAN_CLUB_FAT_MAN",
+                "script": "VermilionCity_PokemonFanClub_EventScript_FatMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VermilionCity_PokemonFanClub-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 12,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_PokemonFanClub-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 12,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_PokemonFanClub-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 12,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "VermilionCity_PokemonFanClub",
+    "dialogs": [
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons",
+            "id": "VermilionCity_PokemonFanClub_EventScript_Chairman",
+            "text": "I chair the POKéMON Fan Club!\n\nI raise more than a hundred\nPOKéMON!\n\nI'm very fussy when it comes to\nPOKéMON! I surely am!\n\nSo…\n\nDid you come visit to hear about\nmy POKéMON?\n\nOh. Come back when you want to\nhear my story!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_AdmirePikachusTail",
+            "id": "VermilionCity_PokemonFanClub_EventScript_FatMan",
+            "text": "Won't you admire my PIKACHU's\nadorable tail?"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_Pikachu",
+            "id": "VermilionCity_PokemonFanClub_EventScript_Pikachu",
+            "text": "PIKACHU: Chu! Pikachu!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_ListenPolitelyToOtherTrainers",
+            "id": "VermilionCity_PokemonFanClub_EventScript_RulesSign1",
+            "text": "Let's all listen politely to other\nTRAINERS!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_SomeoneBragsBragBack",
+            "id": "VermilionCity_PokemonFanClub_EventScript_RulesSign2",
+            "text": "If someone brags, brag right back!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_Seel",
+            "id": "VermilionCity_PokemonFanClub_EventScript_Seel",
+            "text": "SEEL: Kyuoo!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_AdoreMySeel",
+            "id": "VermilionCity_PokemonFanClub_EventScript_Woman",
+            "text": "I just adore my SEEL!\nIt's so lovable!\n\nIt squeals, “Kyuuuh,” when I\nhug it!"
+        },
+        {
+            "title": "VermilionCity_PokemonFanClub_Text_ChairmanVeryVocalAboutPokemon",
+            "id": "VermilionCity_PokemonFanClub_EventScript_WorkerF",
+            "text": "Our CHAIRMAN is very vocal about\nPOKéMON."
+        }
+    ],
+    "jumps": []
+}

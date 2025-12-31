@@ -1,0 +1,136 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route15_WestEntrance_2F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_2F",
+        "sourceMapId": "MAP_ROUTE15_WEST_ENTRANCE_2F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route15_WestEntrance_2F-0",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_WestEntrance_2F_EventScript_Aide",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route15_WestEntrance_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route15_WestEntrance_1F",
+                "x": 9,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE15_WEST_ENTRANCE_1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route15_WestEntrance_2F",
+    "dialogs": [
+        {
+            "title": "Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough",
+            "id": "Route15_WestEntrance_2F_EventScript_Aide",
+            "text": "Hi! Remember me?\nI'm one of PROF. OAK's AIDES.\n\nIf your POKéDEX has complete data\non {STR_VAR_1} species, I'm supposed to\ngive you a reward.\n\nPROF. OAK entrusted me with the\n{STR_VAR_2} for you.\n\nSo, {PLAYER}, let me ask you.\n\nHave you gathered data on at least\n{STR_VAR_1} kinds of POKéMON?\n\nGreat! You have caught or owned\n{STR_VAR_3} kinds of POKéMON!\n\nCongratulations!\nHere you go!\n\nEXP. SHARE is an item to be held\nby a POKéMON.\n\nThe POKéMON will receive a share\nof the EXP. Points without having\nto battle."
+        },
+        {
+            "title": "Route15_WestEntrance_2F_Text_LargeShiningBird",
+            "id": "Route15_WestEntrance_2F_EventScript_LeftBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nA large, shining bird is flying\ntoward the sea."
+        },
+        {
+            "title": "Route15_WestEntrance_2F_Text_SmallIslandOnHorizon",
+            "id": "Route15_WestEntrance_2F_EventScript_RightBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nIt looks like a small island on\nthe horizon!"
+        }
+    ],
+    "jumps": []
+}

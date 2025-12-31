@@ -1,0 +1,210 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route7_EastEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_EAST_WEST_ENTRANCE",
+        "sourceMapId": "MAP_ROUTE7_EAST_ENTRANCE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 9,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 12
+        },
+        {
+            "y": 7,
+            "w": 9,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route7_EastEntrance-0",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route7_EastEntrance_EventScript_Guard",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route7_EastEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "x": 15,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route7_EastEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "x": 15,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route7_EastEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 8,
+                "y": 27,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route7_EastEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 8,
+                "y": 27,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route7_EastEntrance",
+    "dialogs": [
+        {
+            "title": "Route7_EastEntrance_Text_HiHowsItGoing",
+            "id": "Route7_EastEntrance_EventScript_Guard",
+            "text": "Hi, how's it going?"
+        },
+        {
+            "title": "Route7_EastEntrance_EventScript_GuardTriggerBottom",
+            "id": "Route7_EastEntrance_EventScript_GuardTriggerBottom",
+            "text": "TODO: Route7_EastEntrance_EventScript_GuardTriggerBottom"
+        },
+        {
+            "title": "Route7_EastEntrance_EventScript_GuardTriggerMid",
+            "id": "Route7_EastEntrance_EventScript_GuardTriggerMid",
+            "text": "TODO: Route7_EastEntrance_EventScript_GuardTriggerMid"
+        },
+        {
+            "title": "Route7_EastEntrance_EventScript_GuardTriggerTop",
+            "id": "Route7_EastEntrance_EventScript_GuardTriggerTop",
+            "text": "TODO: Route7_EastEntrance_EventScript_GuardTriggerTop"
+        }
+    ],
+    "jumps": []
+}

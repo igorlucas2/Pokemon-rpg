@@ -1,0 +1,192 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE5",
+        "sourceMapId": "MAP_CELADON_CITY_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_House1-0",
+            "x": 5,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_House1_EventScript_RocketChief",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_House1-1",
+            "x": 2,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 5,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_House1_EventScript_Rocket1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_House1-2",
+            "x": 8,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 5,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_House1_EventScript_Rocket2",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 41,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_House1-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 41,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_House1-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 41,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeladonCity_House1",
+    "dialogs": [
+        {
+            "title": "CeladonCity_House1_Text_ShippedMonsAsSlotPrizes",
+            "id": "CeladonCity_House1_EventScript_Rocket1",
+            "text": "CHIEF!\n\nWe just shipped two thousand\nmore POKéMON as slot prizes\nagain today!"
+        },
+        {
+            "title": "CeladonCity_House1_Text_DontTouchGameCornerPoster",
+            "id": "CeladonCity_House1_EventScript_Rocket2",
+            "text": "Don't touch the poster at the GAME\nCORNER!\n\nThere's no secret switch behind it!"
+        },
+        {
+            "title": "CeladonCity_House1_Text_SlotsReelInTheDough",
+            "id": "CeladonCity_House1_EventScript_RocketChief",
+            "text": "Hehehe!\n\nThe slots just reel in the dough,\nbig-time!"
+        }
+    ],
+    "jumps": []
+}

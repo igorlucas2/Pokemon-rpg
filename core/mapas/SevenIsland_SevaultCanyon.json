@@ -1,0 +1,842 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_SevaultCanyon",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_SEVAULT_CANYON",
+        "sourceMapId": "MAP_SEVEN_ISLAND_SEVAULT_CANYON",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 80
+    },
+    "start": {
+        "y": 4,
+        "x": 14
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 14,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 76,
+            "x": 19
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 9,
+            "x": 15
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 71,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 11,
+            "x": 13
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 71,
+            "x": 18
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 70,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 13,
+            "x": 17
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 69,
+            "x": 4
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 6,
+            "x": 15
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 5,
+            "x": 7
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 7,
+            "x": 10
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 56,
+            "x": 17
+        },
+        {
+            "y": 25,
+            "w": 2,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 25,
+            "w": 2,
+            "h": 6,
+            "x": 11
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 37,
+            "x": 16
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 6,
+            "x": 15
+        },
+        {
+            "y": 32,
+            "w": 4,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 36,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 39,
+            "w": 9,
+            "h": 9,
+            "x": 7
+        },
+        {
+            "y": 48,
+            "w": 3,
+            "h": 7,
+            "x": 7
+        },
+        {
+            "y": 48,
+            "w": 4,
+            "h": 5,
+            "x": 12
+        },
+        {
+            "y": 50,
+            "w": 2,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 53,
+            "w": 3,
+            "h": 10,
+            "x": 13
+        },
+        {
+            "y": 55,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 58,
+            "w": 1,
+            "h": 22,
+            "x": 7
+        },
+        {
+            "y": 59,
+            "w": 2,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 60,
+            "w": 1,
+            "h": 20,
+            "x": 8
+        },
+        {
+            "y": 62,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 63,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 64,
+            "w": 2,
+            "h": 16,
+            "x": 9
+        },
+        {
+            "y": 65,
+            "w": 1,
+            "h": 15,
+            "x": 11
+        },
+        {
+            "y": 68,
+            "w": 1,
+            "h": 12,
+            "x": 12
+        },
+        {
+            "y": 68,
+            "w": 2,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 69,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 73,
+            "w": 1,
+            "h": 7,
+            "x": 13
+        },
+        {
+            "y": 74,
+            "w": 1,
+            "h": 6,
+            "x": 14
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-0",
+            "x": 13,
+            "y": 43,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Cyndy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-1",
+            "x": 13,
+            "y": 36,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Evan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-2",
+            "x": 3,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Jackson",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-3",
+            "x": 3,
+            "y": 36,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Katelyn",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-4",
+            "x": 7,
+            "y": 56,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Leroy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-5",
+            "x": 11,
+            "y": 63,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Michelle",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-6",
+            "x": 14,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Lex",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-7",
+            "x": 14,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_Nya",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-8",
+            "x": 3,
+            "y": 41,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-9",
+            "x": 13,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-10",
+            "x": 7,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-11",
+            "x": 12,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-12",
+            "x": 15,
+            "y": 46,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_16"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-13",
+            "x": 16,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_17"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-14",
+            "x": 17,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-15",
+            "x": 11,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1B"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-16",
+            "x": 18,
+            "y": 45,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_ItemKingsRock",
+                "flag": "FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_KINGS_ROCK"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-17",
+            "x": 7,
+            "y": 38,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir",
+                "flag": "FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_MAX_ELIXIR"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-18",
+            "x": 17,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_ItemNugget",
+                "flag": "FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_NUGGET"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon-19",
+            "x": 8,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_SevaultCanyon_EventScript_BlackBelt",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SevenIsland_SevaultCanyon-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_SevaultCanyon_TanobyKey",
+                "x": 7,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY",
+                "destWarpId": "0",
+                "elevation": 5
+            }
+        },
+        {
+            "id": "warp-SevenIsland_SevaultCanyon-2",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 61,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_SevaultCanyon_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_SEVAULT_CANYON_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-SevenIsland_SevaultCanyon-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 79,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_TanobyRuins",
+                "connection": {
+                    "direction": "down",
+                    "offset": -48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": -48,
+                "destMap": "MAP_SEVEN_ISLAND_TANOBY_RUINS"
+            }
+        },
+        {
+            "id": "conn-SevenIsland_SevaultCanyon-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_SevaultCanyon_Entrance",
+                "connection": {
+                    "direction": "left",
+                    "offset": -20
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": -20,
+                "destMap": "MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE"
+            }
+        }
+    ],
+    "name": "SevenIsland_SevaultCanyon",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        },
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_BlackBelt",
+            "id": "SevenIsland_SevaultCanyon_EventScript_BlackBelt",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_BlackBelt"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Cyndy",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Cyndy",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Cyndy"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Evan",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Evan",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Evan"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_ItemKingsRock",
+            "id": "SevenIsland_SevaultCanyon_EventScript_ItemKingsRock",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_ItemKingsRock"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir",
+            "id": "SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_ItemNugget",
+            "id": "SevenIsland_SevaultCanyon_EventScript_ItemNugget",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_ItemNugget"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Jackson",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Jackson",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Jackson"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Katelyn",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Katelyn",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Katelyn"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Leroy",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Leroy",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Leroy"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Lex",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Lex",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Lex"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Michelle",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Michelle",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Michelle"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_EventScript_Nya",
+            "id": "SevenIsland_SevaultCanyon_EventScript_Nya",
+            "text": "TODO: SevenIsland_SevaultCanyon_EventScript_Nya"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_Text_RouteSign",
+            "id": "SevenIsland_SevaultCanyon_EventScript_RouteSign",
+            "text": "SEVAULT CANYON\nTANOBY RUINS AHEAD"
+        }
+    ],
+    "jumps": []
+}

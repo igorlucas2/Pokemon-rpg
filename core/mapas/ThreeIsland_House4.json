@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_House4",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_THREE_ISLAND_HOUSE4",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_House4-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_House4_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_House4-1",
+            "x": 6,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_House4_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_House4-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "x": 12,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ThreeIsland_House4",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_House4_Text_GhostsInBerryForest",
+            "id": "ThreeIsland_House4_EventScript_BaldingMan",
+            "text": "You must never, ever go out to\nthe BERRY FOREST alone.\n\nWhy?\nThere are ghosts there."
+        },
+        {
+            "title": "ThreeIsland_House4_Text_PapaKeepsLyingToMe",
+            "id": "ThreeIsland_House4_EventScript_LittleBoy",
+            "text": "Papa keeps lying to me, and won't\nlet me go out and play!"
+        }
+    ],
+    "jumps": []
+}

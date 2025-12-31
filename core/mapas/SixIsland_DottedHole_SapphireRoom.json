@@ -1,0 +1,207 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_DottedHole_SapphireRoom",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM",
+        "sourceMapId": "MAP_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM",
+        "width": 16,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 15
+    },
+    "start": {
+        "y": 3,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 16,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 5,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 6,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 6,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 6,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 4
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 4,
+            "x": 5
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 3,
+            "x": 6
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_DottedHole_SapphireRoom-0",
+            "x": 7,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SAPPHIRE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SAPPHIRE",
+                "script": "SixIsland_DottedHole_SapphireRoom_EventScript_Sapphire",
+                "flag": "FLAG_HIDE_SAPPHIRE"
+            }
+        },
+        {
+            "id": "npc-SixIsland_DottedHole_SapphireRoom-1",
+            "x": 5,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_DOTTED_HOLE_THIEF",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_DOTTED_HOLE_SCIENTIST"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_DottedHole_SapphireRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_1F",
+                "x": 13,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_DottedHole_SapphireRoom-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_B4F",
+                "x": 6,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_B4F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SixIsland_DottedHole_SapphireRoom",
+    "dialogs": [
+        {
+            "title": "SixIsland_DottedHole_SapphireRoom_EventScript_BrailleMessage",
+            "id": "SixIsland_DottedHole_SapphireRoom_EventScript_BrailleMessage",
+            "text": "TODO: SixIsland_DottedHole_SapphireRoom_EventScript_BrailleMessage"
+        },
+        {
+            "title": "SixIsland_DottedHole_SapphireRoom_Text_FoundSapphire",
+            "id": "SixIsland_DottedHole_SapphireRoom_EventScript_Sapphire",
+            "text": "{PLAYER} found a SAPPHIRE!\n\nFufu… Fufufufu…\nI guessed right.\n\nI was right in tailing you!\n\nI knew that there was a SAPPHIRE\nhere, so it belongs to me!\n\nI'll sell it to TEAM ROCKET for\nserious money.\n\n…D-don't glare at me like that!\n\nIf you want it back, why don't you\ngo get it after I sell it?\n\nI'll even tell you one of the\npasswords to TEAM ROCKET's\nWAREHOUSE.\n\nThe WAREHOUSE password I know is\n“Yes, nah, CHANSEY.”\n\nI'm done.\nDon't think badly of me!"
+        }
+    ],
+    "jumps": []
+}

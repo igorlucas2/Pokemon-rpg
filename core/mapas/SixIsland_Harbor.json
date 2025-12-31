@@ -1,0 +1,137 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_Harbor",
+    "meta": {
+        "layoutId": "LAYOUT_ISLAND_HARBOR",
+        "sourceMapId": "MAP_SIX_ISLAND_HARBOR",
+        "width": 17,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_IslandHarbor",
+        "height": 13
+    },
+    "start": {
+        "y": 2,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 8,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 9,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 7,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 7,
+            "x": 9
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 6,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_Harbor-0",
+            "x": 8,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_SEAGALLOP",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_Harbor-1",
+            "x": 8,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_Harbor_EventScript_Sailor",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_Harbor-1",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland",
+                "x": 11,
+                "y": 23,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SixIsland_Harbor",
+    "dialogs": [
+        {
+            "title": "Text_WhereDoYouWantToSail",
+            "id": "SixIsland_Harbor_EventScript_Sailor",
+            "text": "TODO: SixIsland_Harbor_EventScript_Sailor"
+        }
+    ],
+    "jumps": []
+}

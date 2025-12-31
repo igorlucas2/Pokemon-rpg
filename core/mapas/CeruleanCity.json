@@ -1,0 +1,1139 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CITY",
+        "sourceMapId": "MAP_CERULEAN_CITY",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeruleanCity",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 22
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 22,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 1,
+            "h": 8,
+            "x": 25
+        },
+        {
+            "y": 0,
+            "w": 19,
+            "h": 5,
+            "x": 29
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 7,
+            "x": 29
+        },
+        {
+            "y": 5,
+            "w": 9,
+            "h": 6,
+            "x": 39
+        },
+        {
+            "y": 6,
+            "w": 8,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 6,
+            "x": 21
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 4,
+            "x": 33
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 38
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 11,
+            "w": 7,
+            "h": 5,
+            "x": 41
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 9,
+            "x": 34
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 7,
+            "x": 4
+        },
+        {
+            "y": 15,
+            "w": 7,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 16,
+            "w": 5,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 41
+        },
+        {
+            "y": 17,
+            "w": 6,
+            "h": 1,
+            "x": 42
+        },
+        {
+            "y": 18,
+            "w": 9,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 19,
+            "w": 6,
+            "h": 2,
+            "x": 28
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 1,
+            "x": 35
+        },
+        {
+            "y": 20,
+            "w": 7,
+            "h": 1,
+            "x": 41
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 12,
+            "x": 38
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 19,
+            "x": 41
+        },
+        {
+            "y": 22,
+            "w": 6,
+            "h": 18,
+            "x": 42
+        },
+        {
+            "y": 23,
+            "w": 7,
+            "h": 17,
+            "x": 0
+        },
+        {
+            "y": 24,
+            "w": 4,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 26,
+            "w": 15,
+            "h": 3,
+            "x": 21
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 32,
+            "w": 19,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 32,
+            "w": 11,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 35,
+            "w": 8,
+            "h": 5,
+            "x": 7
+        },
+        {
+            "y": 35,
+            "w": 1,
+            "h": 5,
+            "x": 19
+        },
+        {
+            "y": 35,
+            "w": 1,
+            "h": 5,
+            "x": 28
+        },
+        {
+            "y": 35,
+            "w": 8,
+            "h": 5,
+            "x": 33
+        },
+        {
+            "y": 36,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity-0",
+            "x": 31,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_POLICEMAN",
+                "script": "CeruleanCity_EventScript_Policeman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-1",
+            "x": 33,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_GRUNT",
+                "script": "CeruleanCity_EventScript_Grunt",
+                "flag": "FLAG_HIDE_CERULEAN_ROCKET"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-2",
+            "x": 16,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-3",
+            "x": 9,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-4",
+            "x": 32,
+            "y": 29,
+            "sprite": "OBJ_EVENT_GFX_SLOWBRO",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_SLOWBRO",
+                "script": "CeruleanCity_EventScript_Slowbro",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-5",
+            "x": 33,
+            "y": 29,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_LASS",
+                "script": "CeruleanCity_EventScript_Lass",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-6",
+            "x": 34,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-7",
+            "x": 22,
+            "y": 0,
+            "sprite": "OBJ_EVENT_GFX_BLUE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_RIVAL",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_CERULEAN_RIVAL"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-8",
+            "x": 26,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-9",
+            "x": 50,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-10",
+            "x": 12,
+            "y": 30,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_WOMAN",
+                "script": "CeruleanCity_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity-11",
+            "x": 1,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_CAVE_GUARD",
+                "script": "CeruleanCity_EventScript_CeruleanCaveGuard",
+                "flag": "FLAG_HIDE_CERULEAN_CAVE_GUARD"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House1",
+                "x": 3,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-2",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House2",
+                "x": 3,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE2",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House3",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE3",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-4",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-5",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_Gym",
+                "x": 8,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-6",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_BikeShop",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_BIKE_SHOP",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-7",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-8",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_1F",
+                "x": 33,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-9",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House1",
+                "x": 3,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE1",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-10",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House2",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE2",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-11",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House2",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE2",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-12",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_BikeShop",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_BIKE_SHOP",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-13",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House4",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE4",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity-14",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_House5",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_HOUSE5",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-CeruleanCity-up-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route24",
+                "connection": {
+                    "direction": "up",
+                    "offset": 12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 12,
+                "destMap": "MAP_ROUTE24"
+            }
+        },
+        {
+            "id": "conn-CeruleanCity-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 39,
+                "w": 48,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_ROUTE5"
+            }
+        },
+        {
+            "id": "conn-CeruleanCity-left-3",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4",
+                "connection": {
+                    "direction": "left",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 10,
+                "destMap": "MAP_ROUTE4"
+            }
+        },
+        {
+            "id": "conn-CeruleanCity-right-4",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route9",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE9"
+            }
+        }
+    ],
+    "name": "CeruleanCity",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_BikeShop_EventScript_Bicycle",
+            "id": "CeruleanCity_BikeShop_EventScript_Bicycle",
+            "text": "TODO: CeruleanCity_BikeShop_EventScript_Bicycle"
+        },
+        {
+            "title": "CeruleanCity_Text_PokemonEncyclopediaAmusing",
+            "id": "CeruleanCity_EventScript_BaldingMan",
+            "text": "You're making an encyclopedia on\nPOKéMON? That sounds amusing."
+        },
+        {
+            "title": "CeruleanCity_Text_BikeShopSign",
+            "id": "CeruleanCity_EventScript_BikeShopSign",
+            "text": "Grass and caves handled easily!\nBIKE SHOP"
+        },
+        {
+            "title": "CeruleanCity_Text_ThisIsCeruleanCave",
+            "id": "CeruleanCity_EventScript_CeruleanCaveGuard",
+            "text": "This is CERULEAN CAVE.\n\nHorribly strong POKéMON live inside\nthere.\n\nIt takes a very special TRAINER to\nbe allowed inside there.\n\nYou'd have to be strong enough to\nbecome the POKéMON LEAGUE\nCHAMPION for starters.\n\nAnd, you would have to have\nmade a great achievement."
+        },
+        {
+            "title": "CeruleanCity_Text_CitySign",
+            "id": "CeruleanCity_EventScript_CitySign",
+            "text": "CERULEAN CITY\nA Mysterious, Blue Aura Surrounds\nIt"
+        },
+        {
+            "title": "CeruleanCity_Text_GruntIntro",
+            "id": "CeruleanCity_EventScript_Grunt",
+            "text": "Hey! Stay out!\nIt's not your yard!\n\n…Huh?\nMe?\n\nI'm an innocent bystander!\nDon't you believe me?{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}"
+        },
+        {
+            "title": "CeruleanCity_EventScript_GruntTriggerBottom",
+            "id": "CeruleanCity_EventScript_GruntTriggerBottom",
+            "text": "TODO: CeruleanCity_EventScript_GruntTriggerBottom"
+        },
+        {
+            "title": "CeruleanCity_EventScript_GruntTriggerTop",
+            "id": "CeruleanCity_EventScript_GruntTriggerTop",
+            "text": "TODO: CeruleanCity_EventScript_GruntTriggerTop"
+        },
+        {
+            "title": "CeruleanCity_Text_GymSign",
+            "id": "CeruleanCity_EventScript_GymSign",
+            "text": "CERULEAN CITY POKéMON GYM\nLEADER: MISTY\nThe Tomboyish Mermaid!"
+        },
+        {
+            "title": "CeruleanCity_EventScript_Lass",
+            "id": "CeruleanCity_EventScript_Lass",
+            "text": "TODO: CeruleanCity_EventScript_Lass"
+        },
+        {
+            "title": "CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree",
+            "id": "CeruleanCity_EventScript_LittleBoy",
+            "text": "If that SLOWBRO wasn't there, you\ncould CUT down the small tree.\n\nThat way, you could get to the\nother side.\n\nI think there's a way around it,\nthough."
+        },
+        {
+            "title": "CeruleanCity_Text_PeopleHereWereRobbed",
+            "id": "CeruleanCity_EventScript_Policeman",
+            "text": "The people here were robbed.\n\nIt's obvious that TEAM ROCKET is\nbehind this most heinous crime!\n\nEven our POLICE FORCE has\ntrouble with the ROCKETS!"
+        },
+        {
+            "title": "CeruleanCity_EventScript_RivalTriggerLeft",
+            "id": "CeruleanCity_EventScript_RivalTriggerLeft",
+            "text": "TODO: CeruleanCity_EventScript_RivalTriggerLeft"
+        },
+        {
+            "title": "CeruleanCity_EventScript_RivalTriggerMid",
+            "id": "CeruleanCity_EventScript_RivalTriggerMid",
+            "text": "TODO: CeruleanCity_EventScript_RivalTriggerMid"
+        },
+        {
+            "title": "CeruleanCity_EventScript_RivalTriggerRight",
+            "id": "CeruleanCity_EventScript_RivalTriggerRight",
+            "text": "TODO: CeruleanCity_EventScript_RivalTriggerRight"
+        },
+        {
+            "title": "CeruleanCity_EventScript_Slowbro",
+            "id": "CeruleanCity_EventScript_Slowbro",
+            "text": "TODO: CeruleanCity_EventScript_Slowbro"
+        },
+        {
+            "title": "CeruleanCity_Text_TrainerTipsHeldItems",
+            "id": "CeruleanCity_EventScript_TrainerTips",
+            "text": "TRAINER TIPS\n\nA POKéMON can be made to hold\nan item.\n\nSome items can even be used by\nthe holding POKéMON in battle."
+        },
+        {
+            "title": "CeruleanCity_Text_WantBrightRedBicycle",
+            "id": "CeruleanCity_EventScript_Woman",
+            "text": "I want a bright red bicycle.\n\nI'll keep it at home, so it won't\nget dirty."
+        },
+        {
+            "title": "CeruleanCity_Text_TrainerLifeIsToughIsntIt",
+            "id": "CeruleanCity_EventScript_Youngster",
+            "text": "You're a TRAINER, too?\n\nCollecting, battling…\nIt's a tough life, isn't it?"
+        },
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 26,
+            "y": 1,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 1,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 1,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 16,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 16,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 36,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 37,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 36,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 36,
+            "dir": "down"
+        }
+    ]
+}

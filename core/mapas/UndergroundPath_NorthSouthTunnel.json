@@ -1,0 +1,107 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "UndergroundPath_NorthSouthTunnel",
+    "meta": {
+        "layoutId": "LAYOUT_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL",
+        "sourceMapId": "MAP_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL",
+        "width": 8,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_UndergroundPath",
+        "height": 63
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 8,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 61,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 58,
+            "x": 7
+        },
+        {
+            "y": 59,
+            "w": 2,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 62,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-UndergroundPath_NorthSouthTunnel-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_NorthEntrance",
+                "x": 7,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_NorthSouthTunnel-2",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 60,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_SouthEntrance",
+                "x": 7,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "UndergroundPath_NorthSouthTunnel",
+    "dialogs": [],
+    "jumps": []
+}

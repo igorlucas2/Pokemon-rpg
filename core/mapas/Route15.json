@@ -1,0 +1,789 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route15",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE15",
+        "sourceMapId": "MAP_ROUTE15",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_FuchsiaCity",
+        "height": 20
+    },
+    "start": {
+        "y": 5,
+        "x": 17
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 55,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 41
+        },
+        {
+            "y": 13,
+            "w": 10,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 14,
+            "w": 6,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 10,
+            "h": 5,
+            "x": 6
+        },
+        {
+            "y": 15,
+            "w": 55,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 56,
+            "h": 3,
+            "x": 16
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route15-0",
+            "x": 22,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Yazmin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-1",
+            "x": 31,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Edwin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-2",
+            "x": 37,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Chester",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-3",
+            "x": 44,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Kindra",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-4",
+            "x": 50,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Olivia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-5",
+            "x": 59,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Alex",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-6",
+            "x": 63,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Ernest",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-7",
+            "x": 52,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Becky",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-8",
+            "x": 54,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Grace",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-9",
+            "x": 28,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Celia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-10",
+            "x": 20,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_ItemTM18",
+                "flag": "FLAG_HIDE_ROUTE15_TM18"
+            }
+        },
+        {
+            "id": "npc-Route15-11",
+            "x": 39,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Ron",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-12",
+            "x": 40,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route15_EventScript_Mya",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route15-13",
+            "x": 73,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route15-1",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route15_WestEntrance_1F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE15_WEST_ENTRANCE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route15-2",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route15_WestEntrance_1F",
+                "x": 11,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE15_WEST_ENTRANCE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route15-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "connection": {
+                    "direction": "left",
+                    "offset": -10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": -10,
+                "destMap": "MAP_FUCHSIA_CITY"
+            }
+        },
+        {
+            "id": "conn-Route15-right-2",
+            "type": "door",
+            "rect": {
+                "x": 71,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route14",
+                "connection": {
+                    "direction": "right",
+                    "offset": -40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -40,
+                "destMap": "MAP_ROUTE14"
+            }
+        }
+    ],
+    "name": "Route15",
+    "dialogs": [
+        {
+            "title": "Route15_EventScript_Alex",
+            "id": "Route15_EventScript_Alex",
+            "text": "TODO: Route15_EventScript_Alex"
+        },
+        {
+            "title": "Route15_EventScript_Becky",
+            "id": "Route15_EventScript_Becky",
+            "text": "TODO: Route15_EventScript_Becky"
+        },
+        {
+            "title": "Route15_EventScript_Celia",
+            "id": "Route15_EventScript_Celia",
+            "text": "TODO: Route15_EventScript_Celia"
+        },
+        {
+            "title": "Route15_EventScript_Chester",
+            "id": "Route15_EventScript_Chester",
+            "text": "TODO: Route15_EventScript_Chester"
+        },
+        {
+            "title": "Route15_EventScript_Edwin",
+            "id": "Route15_EventScript_Edwin",
+            "text": "TODO: Route15_EventScript_Edwin"
+        },
+        {
+            "title": "Route15_EventScript_Ernest",
+            "id": "Route15_EventScript_Ernest",
+            "text": "TODO: Route15_EventScript_Ernest"
+        },
+        {
+            "title": "Route15_EventScript_Grace",
+            "id": "Route15_EventScript_Grace",
+            "text": "TODO: Route15_EventScript_Grace"
+        },
+        {
+            "title": "Route15_EventScript_ItemTM18",
+            "id": "Route15_EventScript_ItemTM18",
+            "text": "TODO: Route15_EventScript_ItemTM18"
+        },
+        {
+            "title": "Route15_EventScript_Kindra",
+            "id": "Route15_EventScript_Kindra",
+            "text": "TODO: Route15_EventScript_Kindra"
+        },
+        {
+            "title": "Route15_EventScript_Mya",
+            "id": "Route15_EventScript_Mya",
+            "text": "TODO: Route15_EventScript_Mya"
+        },
+        {
+            "title": "Route15_EventScript_Olivia",
+            "id": "Route15_EventScript_Olivia",
+            "text": "TODO: Route15_EventScript_Olivia"
+        },
+        {
+            "title": "Route15_EventScript_Ron",
+            "id": "Route15_EventScript_Ron",
+            "text": "TODO: Route15_EventScript_Ron"
+        },
+        {
+            "title": "Route15_Text_RouteSign",
+            "id": "Route15_EventScript_RouteSign",
+            "text": "ROUTE 15\nWest to FUCHSIA CITY"
+        },
+        {
+            "title": "Route15_EventScript_Yazmin",
+            "id": "Route15_EventScript_Yazmin",
+            "text": "TODO: Route15_EventScript_Yazmin"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 17,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 29,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 30,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 31,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 32,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 33,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 34,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 36,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 37,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 38,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 39,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 40,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 41,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 42,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 43,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 44,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 45,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 46,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 47,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 48,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 49,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 50,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 51,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 52,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 53,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 54,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 55,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 56,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 57,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 58,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 59,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 60,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 61,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 62,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 63,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 64,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 65,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 66,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 67,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 68,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 69,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 70,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 71,
+            "y": 9,
+            "dir": "down"
+        }
+    ]
+}

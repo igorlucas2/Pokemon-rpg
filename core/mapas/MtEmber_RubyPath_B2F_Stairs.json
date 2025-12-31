@@ -1,0 +1,154 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtEmber_RubyPath_B2F_Stairs",
+    "meta": {
+        "layoutId": "LAYOUT_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+        "sourceMapId": "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+        "width": 8,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_MtEmber",
+        "height": 6
+    },
+    "start": {
+        "y": 1,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 5,
+            "x": 7
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 3,
+            "x": 6
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtEmber_RubyPath_B2F_Stairs-0",
+            "x": 4,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-MtEmber_RubyPath_B2F_Stairs-1",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtEmber_RubyPath_B2F_Stairs-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_B1F_Stairs",
+                "x": 1,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-MtEmber_RubyPath_B2F_Stairs-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_1F",
+                "x": 24,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_1F",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "MtEmber_RubyPath_B2F_Stairs",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        }
+    ],
+    "jumps": []
+}

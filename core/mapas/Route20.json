@@ -1,0 +1,614 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route20",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE20",
+        "sourceMapId": "MAP_ROUTE20",
+        "width": 120,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CinnabarIsland",
+        "height": 20
+    },
+    "start": {
+        "y": 3,
+        "x": 68
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 120,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 68,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 44,
+            "h": 1,
+            "x": 76
+        },
+        {
+            "y": 4,
+            "w": 23,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 42,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 4,
+            "w": 43,
+            "h": 1,
+            "x": 77
+        },
+        {
+            "y": 5,
+            "w": 22,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 40,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 5,
+            "w": 42,
+            "h": 15,
+            "x": 78
+        },
+        {
+            "y": 6,
+            "w": 39,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 8,
+            "x": 70
+        },
+        {
+            "y": 7,
+            "w": 15,
+            "h": 5,
+            "x": 26
+        },
+        {
+            "y": 7,
+            "w": 11,
+            "h": 1,
+            "x": 44
+        },
+        {
+            "y": 7,
+            "w": 9,
+            "h": 1,
+            "x": 56
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 8,
+            "x": 69
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 13,
+            "x": 75
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 12,
+            "x": 22
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 12,
+            "x": 45
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "x": 57
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 61
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 7,
+            "x": 68
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 12,
+            "x": 76
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 4,
+            "x": 67
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 11,
+            "x": 77
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 10,
+            "x": 41
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 10,
+            "x": 55
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 9,
+            "x": 43
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 9,
+            "x": 63
+        },
+        {
+            "y": 12,
+            "w": 6,
+            "h": 8,
+            "x": 26
+        },
+        {
+            "y": 12,
+            "w": 8,
+            "h": 8,
+            "x": 33
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 8,
+            "x": 56
+        },
+        {
+            "y": 13,
+            "w": 17,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 32
+        },
+        {
+            "y": 14,
+            "w": 16,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 6,
+            "x": 67
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 1,
+            "x": 70
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 1,
+            "x": 73
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 5,
+            "x": 16
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 4,
+            "x": 68
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 3,
+            "x": 71
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route20-0",
+            "x": 8,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Melissa",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-1",
+            "x": 16,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Missy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-2",
+            "x": 34,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Nora",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-3",
+            "x": 43,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Roger",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-4",
+            "x": 23,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+            "movementRangeX": 5,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Dean",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-5",
+            "x": 73,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Irene",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-6",
+            "x": 111,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
+            "movementRangeX": 5,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Barry",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-7",
+            "x": 106,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+            "movementRangeX": 5,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Darrin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-8",
+            "x": 93,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Shirley",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-9",
+            "x": 54,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Tiffany",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route20-10",
+            "x": 69,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route20_EventScript_Camper",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route20-1",
+            "type": "door",
+            "rect": {
+                "x": 60,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_1F",
+                "x": 6,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route20-2",
+            "type": "door",
+            "rect": {
+                "x": 72,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_1F",
+                "x": 32,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route20-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_CINNABAR_ISLAND"
+            }
+        },
+        {
+            "id": "conn-Route20-right-2",
+            "type": "door",
+            "rect": {
+                "x": 119,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route19",
+                "connection": {
+                    "direction": "right",
+                    "offset": -40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -40,
+                "destMap": "MAP_ROUTE19"
+            }
+        }
+    ],
+    "name": "Route20",
+    "dialogs": [
+        {
+            "title": "Route20_EventScript_Barry",
+            "id": "Route20_EventScript_Barry",
+            "text": "TODO: Route20_EventScript_Barry"
+        },
+        {
+            "title": "Route20_EventScript_Camper",
+            "id": "Route20_EventScript_Camper",
+            "text": "TODO: Route20_EventScript_Camper"
+        },
+        {
+            "title": "Route20_EventScript_Darrin",
+            "id": "Route20_EventScript_Darrin",
+            "text": "TODO: Route20_EventScript_Darrin"
+        },
+        {
+            "title": "Route20_EventScript_Dean",
+            "id": "Route20_EventScript_Dean",
+            "text": "TODO: Route20_EventScript_Dean"
+        },
+        {
+            "title": "Route20_EventScript_Irene",
+            "id": "Route20_EventScript_Irene",
+            "text": "TODO: Route20_EventScript_Irene"
+        },
+        {
+            "title": "Route20_EventScript_Melissa",
+            "id": "Route20_EventScript_Melissa",
+            "text": "TODO: Route20_EventScript_Melissa"
+        },
+        {
+            "title": "Route20_EventScript_Missy",
+            "id": "Route20_EventScript_Missy",
+            "text": "TODO: Route20_EventScript_Missy"
+        },
+        {
+            "title": "Route20_EventScript_Nora",
+            "id": "Route20_EventScript_Nora",
+            "text": "TODO: Route20_EventScript_Nora"
+        },
+        {
+            "title": "Route20_EventScript_Roger",
+            "id": "Route20_EventScript_Roger",
+            "text": "TODO: Route20_EventScript_Roger"
+        },
+        {
+            "title": "Route20_Text_SeafoamIslands",
+            "id": "Route20_EventScript_SeafoamIslandsSign",
+            "text": "SEAFOAM ISLANDS"
+        },
+        {
+            "title": "Route20_EventScript_Shirley",
+            "id": "Route20_EventScript_Shirley",
+            "text": "TODO: Route20_EventScript_Shirley"
+        },
+        {
+            "title": "Route20_EventScript_Tiffany",
+            "id": "Route20_EventScript_Tiffany",
+            "text": "TODO: Route20_EventScript_Tiffany"
+        }
+    ],
+    "jumps": []
+}

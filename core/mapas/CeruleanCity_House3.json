@@ -1,0 +1,170 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_House3",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE1",
+        "sourceMapId": "MAP_CERULEAN_CITY_HOUSE3",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_House3-0",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_House3_EventScript_Dontae",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_House3-1",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_House3_EventScript_OldWoman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_House3-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 15,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_House3-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 15,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_House3-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 15,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeruleanCity_House3",
+    "dialogs": [
+        {
+            "title": "Trade_Text_DoYouHaveMonWouldYouTradeForMon",
+            "id": "CeruleanCity_House3_EventScript_Dontae",
+            "text": "Hello, there! Do you happen to\nhave a {STR_VAR_1}?\n\nWould you agree to a trade for\nmy {STR_VAR_2}?\n\nThanks!"
+        },
+        {
+            "title": "CeruleanCity_House3_Text_PleaseTradeWithMyHusband",
+            "id": "CeruleanCity_House3_EventScript_OldWoman",
+            "text": "My husband likes trading POKéMON.\n\nYou're collecting POKéMON for your\nPOKéDEX, aren't you?\n\nWould you please trade with him?"
+        }
+    ],
+    "jumps": []
+}

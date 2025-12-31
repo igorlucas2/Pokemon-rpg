@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_FOUR_ISLAND_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_House2-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_STICKER_MAN",
+                "script": "FourIsland_House2_EventScript_StickerMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland",
+                "x": 25,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FourIsland_House2",
+    "dialogs": [
+        {
+            "title": "FourIsland_House2_EventScript_StickerMan",
+            "id": "FourIsland_House2_EventScript_StickerMan",
+            "text": "TODO: FourIsland_House2_EventScript_StickerMan"
+        }
+    ],
+    "jumps": []
+}

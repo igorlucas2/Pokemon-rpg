@@ -1,0 +1,322 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route21_North",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE21_NORTH",
+        "sourceMapId": "MAP_ROUTE21_NORTH",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_PalletTown",
+        "height": 50
+    },
+    "start": {
+        "y": 1,
+        "x": 11
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 11,
+            "h": 26,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 22,
+            "x": 17
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 12,
+            "x": 11
+        },
+        {
+            "y": 23,
+            "w": 5,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 23,
+            "w": 6,
+            "h": 18,
+            "x": 18
+        },
+        {
+            "y": 24,
+            "w": 4,
+            "h": 26,
+            "x": 11
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 15,
+            "x": 17
+        },
+        {
+            "y": 26,
+            "w": 2,
+            "h": 15,
+            "x": 15
+        },
+        {
+            "y": 27,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 27,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 28,
+            "w": 5,
+            "h": 22,
+            "x": 0
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 22,
+            "x": 10
+        },
+        {
+            "y": 31,
+            "w": 3,
+            "h": 19,
+            "x": 5
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 19,
+            "x": 9
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 18,
+            "x": 8
+        },
+        {
+            "y": 41,
+            "w": 1,
+            "h": 9,
+            "x": 15
+        },
+        {
+            "y": 41,
+            "w": 5,
+            "h": 9,
+            "x": 19
+        },
+        {
+            "y": 43,
+            "w": 1,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 44,
+            "w": 2,
+            "h": 6,
+            "x": 16
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route21_North-0",
+            "x": 7,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route21_North_EventScript_Ronald",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route21_North-1",
+            "x": 16,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route21_North_EventScript_Wade",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route21_North-2",
+            "x": 12,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
+            "movementRangeX": 4,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "Route21_North_EventScript_Spencer",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route21_North-3",
+            "x": 14,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route21_North_EventScript_Lil",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route21_North-4",
+            "x": 15,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_TUBER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route21_North_EventScript_Ian",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route21_North-5",
+            "x": 13,
+            "y": -3,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-Route21_North-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_PALLET_TOWN"
+            }
+        },
+        {
+            "id": "conn-Route21_North-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 49,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route21_South",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_ROUTE21_SOUTH"
+            }
+        }
+    ],
+    "name": "Route21_North",
+    "dialogs": [
+        {
+            "title": "Route21_North_EventScript_Ian",
+            "id": "Route21_North_EventScript_Ian",
+            "text": "TODO: Route21_North_EventScript_Ian"
+        },
+        {
+            "title": "Route21_North_EventScript_Lil",
+            "id": "Route21_North_EventScript_Lil",
+            "text": "TODO: Route21_North_EventScript_Lil"
+        },
+        {
+            "title": "Route21_North_EventScript_Ronald",
+            "id": "Route21_North_EventScript_Ronald",
+            "text": "TODO: Route21_North_EventScript_Ronald"
+        },
+        {
+            "title": "Route21_North_EventScript_Spencer",
+            "id": "Route21_North_EventScript_Spencer",
+            "text": "TODO: Route21_North_EventScript_Spencer"
+        },
+        {
+            "title": "Route21_North_EventScript_Wade",
+            "id": "Route21_North_EventScript_Wade",
+            "text": "TODO: Route21_North_EventScript_Wade"
+        }
+    ],
+    "jumps": []
+}

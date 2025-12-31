@@ -1,0 +1,239 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_CopycatsHouse_1F",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_COPYCATS_HOUSE_1F",
+        "sourceMapId": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 12,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_1F-0",
+            "x": 8,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_1F_EventScript_CopycatsDad",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_1F-1",
+            "x": 3,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_1F_EventScript_CopycatsMom",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_1F-2",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CHANSEY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_1F_EventScript_Chansey",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_CopycatsHouse_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 22,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_CopycatsHouse_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 22,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_CopycatsHouse_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 22,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_CopycatsHouse_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_CopycatsHouse_2F",
+                "x": 10,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_CopycatsHouse_1F",
+    "dialogs": [
+        {
+            "title": "SaffronCity_CopycatsHouse_1F_Text_Chansey",
+            "id": "SaffronCity_CopycatsHouse_1F_EventScript_Chansey",
+            "text": "CHANSEY: Chaan! Sii!"
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_1F_Text_DaughterLikesToMimicPeople",
+            "id": "SaffronCity_CopycatsHouse_1F_EventScript_CopycatsDad",
+            "text": "My daughter likes to mimic people.\nIt's rather vexing.\n\nHer mimicry has earned her the\nnickname COPYCAT around here."
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_1F_Text_DaughterIsSelfCentered",
+            "id": "SaffronCity_CopycatsHouse_1F_EventScript_CopycatsMom",
+            "text": "My daughter is so self-centered.\nShe has but a few friends."
+        }
+    ],
+    "jumps": []
+}

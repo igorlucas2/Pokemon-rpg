@@ -1,0 +1,648 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtMoon_1F",
+    "meta": {
+        "layoutId": "LAYOUT_MT_MOON_1F",
+        "sourceMapId": "MAP_MT_MOON_1F",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 40
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 38,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 38,
+            "x": 46
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 41
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 9,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 1,
+            "x": 42
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 42
+        },
+        {
+            "y": 10,
+            "w": 15,
+            "h": 3,
+            "x": 20
+        },
+        {
+            "y": 13,
+            "w": 5,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 18,
+            "x": 39
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 9,
+            "x": 20
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 15,
+            "x": 27
+        },
+        {
+            "y": 19,
+            "w": 9,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 22,
+            "w": 14,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 23,
+            "w": 13,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 24,
+            "w": 12,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 25,
+            "w": 3,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 29,
+            "w": 7,
+            "h": 3,
+            "x": 20
+        },
+        {
+            "y": 29,
+            "w": 3,
+            "h": 6,
+            "x": 33
+        },
+        {
+            "y": 31,
+            "w": 2,
+            "h": 9,
+            "x": 14
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 13
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 16
+        },
+        {
+            "y": 32,
+            "w": 5,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 36,
+            "w": 4,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 38,
+            "w": 11,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 38,
+            "w": 3,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 38,
+            "w": 22,
+            "h": 2,
+            "x": 24
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtMoon_1F-0",
+            "x": 20,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Iris",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-1",
+            "x": 36,
+            "y": 30,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Robby",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-2",
+            "x": 30,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Jovan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-3",
+            "x": 33,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_DOWN_RIGHT_UP",
+            "movementRangeX": 5,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Miriam",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-4",
+            "x": 7,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Kent",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-5",
+            "x": 13,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Josh",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-6",
+            "x": 7,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_Marcos",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-7",
+            "x": 2,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemParalyzeHeal",
+                "flag": "FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-8",
+            "x": 11,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemTM09",
+                "flag": "FLAG_HIDE_MT_MOON_1F_TM09"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-9",
+            "x": 26,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemPotion",
+                "flag": "FLAG_HIDE_MT_MOON_1F_POTION"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-10",
+            "x": 42,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemRareCandy",
+                "flag": "FLAG_HIDE_MT_MOON_1F_RARE_CANDY"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-11",
+            "x": 44,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemEscapeRope",
+                "flag": "FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-12",
+            "x": 3,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_ItemMoonStone",
+                "flag": "FLAG_HIDE_MT_MOON_1F_MOON_STONE"
+            }
+        },
+        {
+            "id": "npc-MtMoon_1F-13",
+            "x": 42,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_1F_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtMoon_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 3,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 25,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 43,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 37,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4",
+                "x": 19,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE4",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "MtMoon_1F",
+    "dialogs": [
+        {
+            "title": "MtMoon_1F_EventScript_BaldingMan",
+            "id": "MtMoon_1F_EventScript_BaldingMan",
+            "text": "TODO: MtMoon_1F_EventScript_BaldingMan"
+        },
+        {
+            "title": "MtMoon_1F_Text_IrisPostBattle",
+            "id": "MtMoon_1F_EventScript_Iris",
+            "text": "I came because I heard there are\nsome very rare fossils here."
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemEscapeRope",
+            "id": "MtMoon_1F_EventScript_ItemEscapeRope",
+            "text": "TODO: MtMoon_1F_EventScript_ItemEscapeRope"
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemMoonStone",
+            "id": "MtMoon_1F_EventScript_ItemMoonStone",
+            "text": "TODO: MtMoon_1F_EventScript_ItemMoonStone"
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemParalyzeHeal",
+            "id": "MtMoon_1F_EventScript_ItemParalyzeHeal",
+            "text": "TODO: MtMoon_1F_EventScript_ItemParalyzeHeal"
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemPotion",
+            "id": "MtMoon_1F_EventScript_ItemPotion",
+            "text": "TODO: MtMoon_1F_EventScript_ItemPotion"
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemRareCandy",
+            "id": "MtMoon_1F_EventScript_ItemRareCandy",
+            "text": "TODO: MtMoon_1F_EventScript_ItemRareCandy"
+        },
+        {
+            "title": "MtMoon_1F_EventScript_ItemTM09",
+            "id": "MtMoon_1F_EventScript_ItemTM09",
+            "text": "TODO: MtMoon_1F_EventScript_ItemTM09"
+        },
+        {
+            "title": "MtMoon_1F_Text_JoshPostBattle",
+            "id": "MtMoon_1F_EventScript_Josh",
+            "text": "I came all the way down here to\nshow off to girls."
+        },
+        {
+            "title": "MtMoon_1F_Text_JovanPostBattle",
+            "id": "MtMoon_1F_EventScript_Jovan",
+            "text": "I have to find stronger POKéMON.\nWhere might they be?"
+        },
+        {
+            "title": "MtMoon_1F_Text_KentPostBattle",
+            "id": "MtMoon_1F_EventScript_Kent",
+            "text": "I saw them!\nI'm sure they're from TEAM ROCKET!"
+        },
+        {
+            "title": "MtMoon_1F_Text_MarcosPostBattle",
+            "id": "MtMoon_1F_EventScript_Marcos",
+            "text": "Kids like you shouldn't be\nwandering around here in the dark."
+        },
+        {
+            "title": "MtMoon_1F_Text_MiriamPostBattle",
+            "id": "MtMoon_1F_EventScript_Miriam",
+            "text": "How do you get out of here?\nIt's so big, I may get lost."
+        },
+        {
+            "title": "MtMoon_1F_Text_RobbyPostBattle",
+            "id": "MtMoon_1F_EventScript_Robby",
+            "text": "ZUBAT is tough!\nBut if you can catch one, you'll\nbe able to count on it."
+        },
+        {
+            "title": "MtMoon_1F_Text_ZubatIsABloodsucker",
+            "id": "MtMoon_1F_EventScript_ZubatSign",
+            "text": "Beware!\nZUBAT is a bloodsucker!"
+        }
+    ],
+    "jumps": []
+}

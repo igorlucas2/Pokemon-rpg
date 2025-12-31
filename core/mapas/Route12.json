@@ -1,0 +1,840 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route12",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE12",
+        "sourceMapId": "MAP_ROUTE12",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_LavenderTown",
+        "height": 120
+    },
+    "start": {
+        "y": 0,
+        "x": 11
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 11,
+            "h": 10,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 59,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 107,
+            "x": 20
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 10,
+            "x": 9
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 10,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 9,
+            "x": 12
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 9,
+            "x": 16
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 13,
+            "x": 7
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 28,
+            "w": 9,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 39,
+            "x": 7
+        },
+        {
+            "y": 31,
+            "w": 3,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 33,
+            "w": 5,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 35,
+            "w": 3,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 38,
+            "w": 5,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 40,
+            "w": 2,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 44,
+            "w": 2,
+            "h": 9,
+            "x": 10
+        },
+        {
+            "y": 44,
+            "w": 6,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 47,
+            "w": 2,
+            "h": 6,
+            "x": 8
+        },
+        {
+            "y": 47,
+            "w": 2,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 49,
+            "w": 4,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 51,
+            "w": 2,
+            "h": 4,
+            "x": 18
+        },
+        {
+            "y": 53,
+            "w": 2,
+            "h": 5,
+            "x": 14
+        },
+        {
+            "y": 55,
+            "w": 2,
+            "h": 8,
+            "x": 10
+        },
+        {
+            "y": 60,
+            "w": 8,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 65,
+            "w": 6,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 65,
+            "w": 4,
+            "h": 14,
+            "x": 16
+        },
+        {
+            "y": 69,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 71,
+            "w": 7,
+            "h": 13,
+            "x": 7
+        },
+        {
+            "y": 72,
+            "w": 7,
+            "h": 48,
+            "x": 0
+        },
+        {
+            "y": 81,
+            "w": 4,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 84,
+            "w": 1,
+            "h": 36,
+            "x": 7
+        },
+        {
+            "y": 85,
+            "w": 5,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 88,
+            "w": 10,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 92,
+            "w": 2,
+            "h": 10,
+            "x": 18
+        },
+        {
+            "y": 94,
+            "w": 6,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 94,
+            "w": 2,
+            "h": 8,
+            "x": 16
+        },
+        {
+            "y": 99,
+            "w": 3,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 101,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 102,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 102,
+            "w": 2,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 104,
+            "w": 4,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 106,
+            "w": 6,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 108,
+            "w": 4,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 112,
+            "w": 4,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 112,
+            "w": 2,
+            "h": 8,
+            "x": 18
+        },
+        {
+            "y": 116,
+            "w": 2,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 118,
+            "w": 2,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 119,
+            "w": 4,
+            "h": 1,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route12-0",
+            "x": 17,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Ned",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-1",
+            "x": 9,
+            "y": 40,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Chip",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-2",
+            "x": 16,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Hank",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-3",
+            "x": 13,
+            "y": 59,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Elliot",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-4",
+            "x": 14,
+            "y": 70,
+            "sprite": "OBJ_EVENT_GFX_SNORLAX",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Snorlax",
+                "flag": "FLAG_HIDE_ROUTE_12_SNORLAX"
+            }
+        },
+        {
+            "id": "npc-Route12-5",
+            "x": 13,
+            "y": 92,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_DOWN_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Luca",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-6",
+            "x": 10,
+            "y": 99,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Justin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-7",
+            "x": 18,
+            "y": 108,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Andrew",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-8",
+            "x": 11,
+            "y": 100,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route12-9",
+            "x": 18,
+            "y": 36,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_ItemTM48",
+                "flag": "FLAG_HIDE_ROUTE12_TM48"
+            }
+        },
+        {
+            "id": "npc-Route12-10",
+            "x": 9,
+            "y": 101,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_ItemIron",
+                "flag": "FLAG_HIDE_ROUTE12_IRON"
+            }
+        },
+        {
+            "id": "npc-Route12-11",
+            "x": 19,
+            "y": 64,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Gia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-12",
+            "x": 19,
+            "y": 63,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_EventScript_Jes",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route12-13",
+            "x": 12,
+            "y": 111,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route12-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 86,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12_FishingHouse",
+                "x": 3,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12_FISHING_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route12-2",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12_NorthEntrance_1F",
+                "x": 5,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12_NORTH_ENTRANCE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route12-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12_NorthEntrance_1F",
+                "x": 6,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12_NORTH_ENTRANCE_1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route12-4",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12_NorthEntrance_1F",
+                "x": 5,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12_NORTH_ENTRANCE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route12-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_LAVENDER_TOWN"
+            }
+        },
+        {
+            "id": "conn-Route12-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 119,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route13",
+                "connection": {
+                    "direction": "down",
+                    "offset": -48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": -48,
+                "destMap": "MAP_ROUTE13"
+            }
+        },
+        {
+            "id": "conn-Route12-left-3",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 60,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11",
+                "connection": {
+                    "direction": "left",
+                    "offset": 60
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 60,
+                "destMap": "MAP_ROUTE11"
+            }
+        }
+    ],
+    "name": "Route12",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route12_EventScript_Andrew",
+            "id": "Route12_EventScript_Andrew",
+            "text": "TODO: Route12_EventScript_Andrew"
+        },
+        {
+            "title": "Route12_EventScript_Chip",
+            "id": "Route12_EventScript_Chip",
+            "text": "TODO: Route12_EventScript_Chip"
+        },
+        {
+            "title": "Route12_EventScript_Elliot",
+            "id": "Route12_EventScript_Elliot",
+            "text": "TODO: Route12_EventScript_Elliot"
+        },
+        {
+            "title": "Route12_Text_SportfishingArea",
+            "id": "Route12_EventScript_FishingSign",
+            "text": "SPORTFISHING AREA"
+        },
+        {
+            "title": "Route12_EventScript_Gia",
+            "id": "Route12_EventScript_Gia",
+            "text": "TODO: Route12_EventScript_Gia"
+        },
+        {
+            "title": "Route12_EventScript_Hank",
+            "id": "Route12_EventScript_Hank",
+            "text": "TODO: Route12_EventScript_Hank"
+        },
+        {
+            "title": "Route12_EventScript_ItemIron",
+            "id": "Route12_EventScript_ItemIron",
+            "text": "TODO: Route12_EventScript_ItemIron"
+        },
+        {
+            "title": "Route12_EventScript_ItemTM48",
+            "id": "Route12_EventScript_ItemTM48",
+            "text": "TODO: Route12_EventScript_ItemTM48"
+        },
+        {
+            "title": "Route12_EventScript_Jes",
+            "id": "Route12_EventScript_Jes",
+            "text": "TODO: Route12_EventScript_Jes"
+        },
+        {
+            "title": "Route12_EventScript_Justin",
+            "id": "Route12_EventScript_Justin",
+            "text": "TODO: Route12_EventScript_Justin"
+        },
+        {
+            "title": "Route12_EventScript_Luca",
+            "id": "Route12_EventScript_Luca",
+            "text": "TODO: Route12_EventScript_Luca"
+        },
+        {
+            "title": "Route12_EventScript_Ned",
+            "id": "Route12_EventScript_Ned",
+            "text": "TODO: Route12_EventScript_Ned"
+        },
+        {
+            "title": "Route12_Text_RouteSign",
+            "id": "Route12_EventScript_RouteSign",
+            "text": "ROUTE 12 \nNorth to LAVENDER"
+        },
+        {
+            "title": "Text_WantToUsePokeFlute",
+            "id": "Route12_EventScript_Snorlax",
+            "text": "Want to use the POKé FLUTE?"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,321 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CITY_GYM",
+        "sourceMapId": "MAP_CERULEAN_CITY_GYM",
+        "width": 17,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CeruleanGym",
+        "height": 20
+    },
+    "start": {
+        "y": 1,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 8,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 8,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 17,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 17,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 11,
+            "x": 2
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 11,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 19,
+            "w": 15,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_Gym-0",
+            "x": 10,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Gym_EventScript_Luis",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_Gym-1",
+            "x": 4,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Gym_EventScript_Diana",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_Gym-2",
+            "x": 8,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_MISTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Gym_EventScript_Misty",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_Gym-3",
+            "x": 7,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 31,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 31,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 31,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeruleanCity_Gym",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_Gym_Text_DianaPostBattle",
+            "id": "CeruleanCity_Gym_EventScript_Diana",
+            "text": "You have to face other TRAINERS\nto see how good you really are."
+        },
+        {
+            "title": "CeruleanCity_Gym_Text_GymGuyAdvice",
+            "id": "CeruleanCity_Gym_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nLet me give you some advice!\n\nThe LEADER, MISTY, is a pro who\nuses WATER-type POKéMON.\n\nYou can drain all their water with\nGRASS-type POKéMON.\n\nOr, you might use ELECTRIC-type\nPOKéMON and zap them!"
+        },
+        {
+            "title": "CeruleanCity_Gym_Text_GymStatue",
+            "id": "CeruleanCity_Gym_EventScript_GymStatue",
+            "text": "CERULEAN POKéMON GYM\nLEADER: MISTY\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "CeruleanCity_Gym_Text_LuisPostBattle",
+            "id": "CeruleanCity_Gym_EventScript_Luis",
+            "text": "MISTY is a TRAINER who's going to\nkeep improving.\n\nShe won't lose to someone like you!"
+        },
+        {
+            "title": "CeruleanCity_Gym_Text_ExplainTM03",
+            "id": "CeruleanCity_Gym_EventScript_Misty",
+            "text": "TM03 teaches WATER PULSE.\n\nUse it on an aquatic POKéMON!"
+        }
+    ],
+    "jumps": []
+}

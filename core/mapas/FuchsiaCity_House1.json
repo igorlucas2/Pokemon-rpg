@@ -1,0 +1,192 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE1",
+        "sourceMapId": "MAP_FUCHSIA_CITY_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity_House1-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_House1_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_House1-1",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_House1_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_House1-2",
+            "x": 2,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_House1_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 14,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_House1-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 14,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_House1-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 14,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FuchsiaCity_House1",
+    "dialogs": [
+        {
+            "title": "FuchsiaCity_House1_Text_BillFilesHisOwnMonData",
+            "id": "FuchsiaCity_House1_EventScript_LittleBoy",
+            "text": "BILL files his own POKéMON data on\nhis PC.\n\nDid he show you?"
+        },
+        {
+            "title": "FuchsiaCity_House1_Text_BillIsMyGrandson",
+            "id": "FuchsiaCity_House1_EventScript_OldMan",
+            "text": "Hmm?\nYou've met BILL?\n\nHe's my grandson!\n\nHe always liked collecting things,\neven as a child!"
+        },
+        {
+            "title": "FuchsiaCity_House1_Text_WardenIsOldHasFalseTeeth",
+            "id": "FuchsiaCity_House1_EventScript_Woman",
+            "text": "The SAFARI ZONE's WARDEN is old, \nbut he's still very much active.\n\nAll his teeth are false, though."
+        }
+    ],
+    "jumps": []
+}

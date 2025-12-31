@@ -1,0 +1,342 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_CERULEAN_CITY_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CERULEAN_NURSE",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-1",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-2",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_Rocker",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-3",
+            "x": 4,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-4",
+            "x": 3,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_Lass",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-5",
+            "x": 2,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_PokemonCenter_1F-6",
+            "x": 3,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "pc-CeruleanCity_PokemonCenter_1F-1",
+            "type": "action",
+            "rect": {
+                "x": 1,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "action": "pcinteraction",
+            "data": {
+                "type": "pokecenter_pc",
+                "location": "Cerulean City PokéCenter"
+            },
+            "meta": {
+                "source": "custom",
+                "description": "Computador do PokéCenter para salvar o jogo"
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 22,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 22,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 22,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "CeruleanCity_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "Have you heard about BILL?\n\nEveryone calls him a POKéMANIAC!\n\nI think people are just jealous of\nBILL, though.\n\nWho wouldn't want to boast about\ntheir POKéMON?"
+        },
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_Text_TryTradingUpstairs",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_Lass",
+            "text": "Why don't you go upstairs and try\ntrading POKéMON with your friends?\n\nYou could get a lot more variety\nby trading.\n\nThe POKéMON you get in trades grow\nquickly, too."
+        },
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_EventScript_Nurse",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: CeruleanCity_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty",
+            "text": "TODO: CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty"
+        },
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_Rocker",
+            "text": "That BILL!\n\nI heard that he'll do whatever it\ntakes to get rare POKéMON.\n\nHe's not above doing all sorts\nof things, I've heard."
+        },
+        {
+            "title": "CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons",
+            "id": "CeruleanCity_PokemonCenter_1F_EventScript_Youngster",
+            "text": "BILL has lots of POKéMON!\nHe collects rare ones, too!"
+        }
+    ],
+    "jumps": []
+}

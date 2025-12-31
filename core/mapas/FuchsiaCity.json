@@ -1,0 +1,1193 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity",
+    "meta": {
+        "layoutId": "LAYOUT_FUCHSIA_CITY",
+        "sourceMapId": "MAP_FUCHSIA_CITY",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_FuchsiaCity",
+        "height": 40
+    },
+    "start": {
+        "y": 4,
+        "x": 26
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 26,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 21,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 15,
+            "x": 46
+        },
+        {
+            "y": 7,
+            "w": 14,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 7,
+            "w": 13,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 8,
+            "w": 8,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 31
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 36
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 43
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 3,
+            "x": 22
+        },
+        {
+            "y": 13,
+            "w": 12,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 4,
+            "x": 26
+        },
+        {
+            "y": 13,
+            "w": 9,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 33
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 41
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 8,
+            "x": 25
+        },
+        {
+            "y": 16,
+            "w": 7,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 17,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 18,
+            "w": 11,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 19,
+            "w": 10,
+            "h": 4,
+            "x": 7
+        },
+        {
+            "y": 19,
+            "w": 14,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 21,
+            "w": 2,
+            "h": 19,
+            "x": 0
+        },
+        {
+            "y": 22,
+            "w": 7,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 23,
+            "w": 12,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 6,
+            "x": 31
+        },
+        {
+            "y": 24,
+            "w": 8,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 16,
+            "x": 46
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 12,
+            "x": 45
+        },
+        {
+            "y": 26,
+            "w": 25,
+            "h": 4,
+            "x": 4
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 4,
+            "x": 42
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 4,
+            "x": 37
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 4,
+            "x": 41
+        },
+        {
+            "y": 29,
+            "w": 5,
+            "h": 3,
+            "x": 32
+        },
+        {
+            "y": 29,
+            "w": 3,
+            "h": 3,
+            "x": 38
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 6,
+            "x": 4
+        },
+        {
+            "y": 30,
+            "w": 23,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 32,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 4,
+            "x": 28
+        },
+        {
+            "y": 33,
+            "w": 5,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 33,
+            "w": 4,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 35,
+            "w": 4,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 35,
+            "w": 7,
+            "h": 5,
+            "x": 12
+        },
+        {
+            "y": 35,
+            "w": 6,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 35,
+            "w": 1,
+            "h": 5,
+            "x": 29
+        },
+        {
+            "y": 36,
+            "w": 15,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 37,
+            "w": 6,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 38,
+            "w": 10,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 38,
+            "w": 10,
+            "h": 2,
+            "x": 36
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity-0",
+            "x": 37,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_Erik",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-1",
+            "x": 36,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_SLOWPOKE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND_SLOWER",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-2",
+            "x": 33,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_VOLTORB",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-3",
+            "x": 33,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-4",
+            "x": 39,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_CHANSEY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 3,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-5",
+            "x": 14,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 3,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-6",
+            "x": 12,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_LAPRAS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-7",
+            "x": 36,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-8",
+            "x": 8,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_VAR_0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-9",
+            "x": 16,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_KANGASKHAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-10",
+            "x": 30,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-11",
+            "x": 21,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-12",
+            "x": 32,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-13",
+            "x": 24,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-14",
+            "x": 15,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_SubstituteTutor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity-15",
+            "x": 40,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_EventScript_Lass",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity-1",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_SafariZone_Entrance",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-2",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_WardensHouse",
+                "x": 6,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_WARDENS_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-3",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-4",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_SafariZone_Office",
+                "x": 6,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_SAFARI_ZONE_OFFICE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-5",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 32,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_Gym",
+                "x": 7,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-6",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_HOUSE1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-7",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-8",
+            "type": "door",
+            "rect": {
+                "x": 38,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_House2",
+                "x": 3,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_HOUSE2",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-9",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_House2",
+                "x": 3,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_HOUSE2",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-10",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 29,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_House2",
+                "x": 3,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_HOUSE2",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity-11",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_House3",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_HOUSE3",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-FuchsiaCity-down-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 39,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route19",
+                "connection": {
+                    "direction": "down",
+                    "offset": 12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 12,
+                "destMap": "MAP_ROUTE19"
+            }
+        },
+        {
+            "id": "conn-FuchsiaCity-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18",
+                "connection": {
+                    "direction": "left",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 10,
+                "destMap": "MAP_ROUTE18"
+            }
+        },
+        {
+            "id": "conn-FuchsiaCity-right-3",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route15",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE15"
+            }
+        }
+    ],
+    "name": "FuchsiaCity",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "FuchsiaCity_Text_ChanseySign",
+            "id": "FuchsiaCity_EventScript_ChanseySign",
+            "text": "Name: CHANSEY\nCatching one is all up to chance."
+        },
+        {
+            "title": "FuchsiaCity_Text_CitySign",
+            "id": "FuchsiaCity_EventScript_CitySign",
+            "text": "FUCHSIA CITY\nBehold! It's Passion Pink!"
+        },
+        {
+            "title": "FuchsiaCity_Text_WheresSara",
+            "id": "FuchsiaCity_EventScript_Erik",
+            "text": "ERIK: Where's SARA?\nI said I'd meet her here."
+        },
+        {
+            "title": "FuchsiaCity_Text_KabutoSign",
+            "id": "FuchsiaCity_EventScript_FossilMonSign",
+            "text": "Name: KABUTO\nAn extremely rare POKéMON that was\nregenerated from a fossil."
+        },
+        {
+            "title": "FuchsiaCity_Text_GymSign",
+            "id": "FuchsiaCity_EventScript_GymSign",
+            "text": "FUCHSIA CITY POKéMON GYM\nLEADER: KOGA\nThe Poisonous Ninja Master"
+        },
+        {
+            "title": "FuchsiaCity_Text_KangaskhanSign",
+            "id": "FuchsiaCity_EventScript_KangaskhanSign",
+            "text": "Name: KANGASKHAN\n\nA maternal POKéMON that raises its\nyoung in a pouch on its belly."
+        },
+        {
+            "title": "FuchsiaCity_Text_LaprasSign",
+            "id": "FuchsiaCity_EventScript_LaprasSign",
+            "text": "Name: LAPRAS\nAKA the king of the seas."
+        },
+        {
+            "title": "FuchsiaCity_Text_MyFatherIsGymLeader",
+            "id": "FuchsiaCity_EventScript_Lass",
+            "text": "My father is the GYM LEADER of\nthis town.\n\nI'm training to use POISON POKéMON\nas well as my father."
+        },
+        {
+            "title": "FuchsiaCity_Text_DidYouTrySafariGame",
+            "id": "FuchsiaCity_EventScript_LittleBoy",
+            "text": "Did you try the SAFARI GAME?\n\nThere are some rare POKéMON that\ncan only be caught there."
+        },
+        {
+            "title": "FuchsiaCity_Text_SafariZoneZooInFront",
+            "id": "FuchsiaCity_EventScript_OldMan",
+            "text": "The SAFARI ZONE has a zoo in front\nof the entrance.\n\nOut back is the SAFARI GAME for\ncatching POKéMON."
+        },
+        {
+            "title": "FuchsiaCity_Text_SafariGameSign",
+            "id": "FuchsiaCity_EventScript_SafariGameSign",
+            "text": "SAFARI GAME\nPOKéMON-U-CATCH!"
+        },
+        {
+            "title": "FuchsiaCity_Text_SafariZoneSign",
+            "id": "FuchsiaCity_EventScript_SafariZoneSign",
+            "text": "POKéMON PARADISE\nSAFARI ZONE"
+        },
+        {
+            "title": "FuchsiaCity_Text_SlowpokeSign",
+            "id": "FuchsiaCity_EventScript_SlowpokeSign",
+            "text": "Name: SLOWPOKE\nFriendly and very slow moving."
+        },
+        {
+            "title": "FuchsiaCity_EventScript_SubstituteTutor",
+            "id": "FuchsiaCity_EventScript_SubstituteTutor",
+            "text": "TODO: FuchsiaCity_EventScript_SubstituteTutor"
+        },
+        {
+            "title": "FuchsiaCity_Text_VoltorbSign",
+            "id": "FuchsiaCity_EventScript_VoltorbSign",
+            "text": "Name: VOLTORB\nThe very image of a POKé BALL."
+        },
+        {
+            "title": "FuchsiaCity_Text_WardensHomeSign",
+            "id": "FuchsiaCity_EventScript_WardensHomeSign",
+            "text": "SAFARI ZONE\nWARDEN'S HOME"
+        },
+        {
+            "title": "FuchsiaCity_Text_ItemBallInThere",
+            "id": "FuchsiaCity_EventScript_Youngster",
+            "text": "That item ball in there…\nWere you wanting that?\n\nMe, too!\n…Huh? That's a POKéMON?"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 4,
+            "y": 30,
+            "dir": "left"
+        },
+        {
+            "x": 28,
+            "y": 30,
+            "dir": "right"
+        },
+        {
+            "x": 4,
+            "y": 31,
+            "dir": "left"
+        },
+        {
+            "x": 28,
+            "y": 31,
+            "dir": "right"
+        },
+        {
+            "x": 4,
+            "y": 32,
+            "dir": "left"
+        },
+        {
+            "x": 28,
+            "y": 32,
+            "dir": "right"
+        },
+        {
+            "x": 4,
+            "y": 33,
+            "dir": "left"
+        },
+        {
+            "x": 28,
+            "y": 33,
+            "dir": "right"
+        },
+        {
+            "x": 4,
+            "y": 34,
+            "dir": "left"
+        },
+        {
+            "x": 28,
+            "y": 34,
+            "dir": "right"
+        },
+        {
+            "x": 5,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 35,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 35,
+            "dir": "down"
+        }
+    ]
+}

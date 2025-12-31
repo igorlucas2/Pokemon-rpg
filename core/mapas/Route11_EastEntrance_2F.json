@@ -1,0 +1,158 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route11_EastEntrance_2F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_2F",
+        "sourceMapId": "MAP_ROUTE11_EAST_ENTRANCE_2F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route11_EastEntrance_2F-0",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EastEntrance_2F_EventScript_Turner",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11_EastEntrance_2F-1",
+            "x": 2,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EastEntrance_2F_EventScript_Aide",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route11_EastEntrance_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11_EastEntrance_1F",
+                "x": 9,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE11_EAST_ENTRANCE_1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route11_EastEntrance_2F",
+    "dialogs": [
+        {
+            "title": "Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30",
+            "id": "Route11_EastEntrance_2F_EventScript_Aide",
+            "text": "Hi! Remember me?\nI'm one of PROF. OAK's AIDES.\n\nIf your POKéDEX has complete data\non {STR_VAR_1} species, I'm supposed to\ngive you a reward.\n\nPROF. OAK entrusted me with the\n{STR_VAR_2} for you.\n\nSo, {PLAYER}, let me ask you.\n\nHave you gathered data on at least\n{STR_VAR_1} kinds of POKéMON?\n\nGreat! You have caught or owned\n{STR_VAR_3} kinds of POKéMON!\n\nCongratulations!\nHere you go!\n\nThere are items on the ground that\nmay be hidden from view.\n\nUse the ITEMFINDER to detect any\nhidden items close to you.\n\nThe machine is a bit limited.\nIt can't pinpoint item locations.\n\nWhat it does is show the direction\nwhere the item is.\n\nUse it to get your bearings, then\nsearch the suspect area by hand."
+        },
+        {
+            "title": "Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad",
+            "id": "Route11_EastEntrance_2F_EventScript_LeftBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nA big POKéMON is asleep on a road!"
+        },
+        {
+            "title": "Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender",
+            "id": "Route11_EastEntrance_2F_EventScript_RightBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nTo get to LAVENDER TOWN from\nCERULEAN CITY…\n\nROCK TUNNEL appears to be a good\nroute to take."
+        },
+        {
+            "title": "Trade_Text_LookingForMonWannaTradeForMon",
+            "id": "Route11_EastEntrance_2F_EventScript_Turner",
+            "text": "I'm looking for the POKéMON\n{STR_VAR_1}!\n\nWanna trade one for my\n{STR_VAR_2}?\n\nHey, thanks!"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,88 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "BattleColosseum_2P",
+    "meta": {
+        "layoutId": "LAYOUT_BATTLE_COLOSSEUM_2P",
+        "sourceMapId": "MAP_BATTLE_COLOSSEUM_2P",
+        "width": 14,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CableClub",
+        "height": 9
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 14,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-BattleColosseum_2P-0",
+            "x": 9,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_UNION_ROOM_RECEPTIONIST",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "BattleColosseum_2P_EventScript_Attendant",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [],
+    "name": "BattleColosseum_2P",
+    "dialogs": [
+        {
+            "title": "BattleColosseum_2P_EventScript_Attendant",
+            "id": "BattleColosseum_2P_EventScript_Attendant",
+            "text": "TODO: BattleColosseum_2P_EventScript_Attendant"
+        },
+        {
+            "title": "BattleColosseum_2P_EventScript_PlayerSpot0",
+            "id": "BattleColosseum_2P_EventScript_PlayerSpot0",
+            "text": "TODO: BattleColosseum_2P_EventScript_PlayerSpot0"
+        },
+        {
+            "title": "BattleColosseum_2P_EventScript_PlayerSpot1",
+            "id": "BattleColosseum_2P_EventScript_PlayerSpot1",
+            "text": "TODO: BattleColosseum_2P_EventScript_PlayerSpot1"
+        }
+    ],
+    "jumps": []
+}

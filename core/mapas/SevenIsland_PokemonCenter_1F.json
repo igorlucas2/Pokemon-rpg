@@ -1,0 +1,254 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_SEVEN_ISLAND_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SEVEN_ISLAND_NURSE",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-1",
+            "x": 11,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-2",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_Sailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-3",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_Beauty",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-4",
+            "x": 3,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_PokemonCenter_1F-5",
+            "x": 2,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SevenIsland_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland",
+                "x": 12,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SevenIsland_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "SevenIsland_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "SevenIsland_PokemonCenter_1F_Text_CheckOutTrainerTower",
+            "id": "SevenIsland_PokemonCenter_1F_EventScript_Beauty",
+            "text": "If you're confident, you should\ncheck out TRAINER TOWER."
+        },
+        {
+            "title": "SevenIsland_PokemonCenter_1F_EventScript_Nurse",
+            "id": "SevenIsland_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: SevenIsland_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "SevenIsland_PokemonCenter_1F_Text_EventsDependingOnConnections",
+            "id": "SevenIsland_PokemonCenter_1F_EventScript_OldMan",
+            "text": "On this island, different events\noccur depending on connections.\n\nWhat are those connections?\n\nThey are for you to discover on\nyour own."
+        },
+        {
+            "title": "SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+            "id": "SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal",
+            "text": "TODO: SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal"
+        },
+        {
+            "title": "SevenIsland_PokemonCenter_1F_Text_DidYouRideSeagallopHere",
+            "id": "SevenIsland_PokemonCenter_1F_EventScript_Sailor",
+            "text": "Did you ride a SEAGALLOP ferry\nto get here?\n\nThere are at least ten of those\nhigh-speed ships.\n\nI don't know where they all go,\nthough."
+        }
+    ],
+    "jumps": []
+}

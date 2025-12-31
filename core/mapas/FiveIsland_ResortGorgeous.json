@@ -1,0 +1,547 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_ResortGorgeous",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_RESORT_GORGEOUS",
+        "sourceMapId": "MAP_FIVE_ISLAND_RESORT_GORGEOUS",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 20
+    },
+    "start": {
+        "y": 3,
+        "x": 29
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 29,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 25,
+            "h": 5,
+            "x": 47
+        },
+        {
+            "y": 4,
+            "w": 27,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 15,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 3,
+            "x": 31
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 7,
+            "w": 10,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 8,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 8,
+            "w": 16,
+            "h": 1,
+            "x": 47
+        },
+        {
+            "y": 8,
+            "w": 6,
+            "h": 1,
+            "x": 66
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 11,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 8,
+            "h": 11,
+            "x": 14
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 9,
+            "w": 4,
+            "h": 1,
+            "x": 42
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 11,
+            "x": 47
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 4,
+            "x": 63
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 1,
+            "x": 67
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 10,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 10,
+            "x": 22
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 10,
+            "x": 62
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 4,
+            "x": 66
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 10,
+            "x": 68
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 9,
+            "x": 12
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 9,
+            "x": 25
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 9,
+            "x": 46
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 8,
+            "x": 27
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 8,
+            "x": 44
+        },
+        {
+            "y": 13,
+            "w": 14,
+            "h": 7,
+            "x": 30
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 63
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 65
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 67
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 5,
+            "x": 63
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-0",
+            "x": 44,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Daisy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-1",
+            "x": 33,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Celina",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-2",
+            "x": 12,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Rayna",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-3",
+            "x": 23,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Jacki",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-4",
+            "x": 33,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Gillian",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-5",
+            "x": 33,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+            "movementRangeX": 10,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Destin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-6",
+            "x": 56,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_ResortGorgeous_EventScript_Toby",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous-7",
+            "x": 39,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_RESORT_GORGEOUS_SELPHY",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_RESORT_GORGEOUS_SELPHY"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland_ResortGorgeous-1",
+            "type": "door",
+            "rect": {
+                "x": 64,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Entrance",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland_ResortGorgeous-2",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_ResortGorgeous_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_RESORT_GORGEOUS_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-FiveIsland_ResortGorgeous-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 19,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_WaterLabyrinth",
+                "connection": {
+                    "direction": "down",
+                    "offset": -48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": -48,
+                "destMap": "MAP_FIVE_ISLAND_WATER_LABYRINTH"
+            }
+        }
+    ],
+    "name": "FiveIsland_ResortGorgeous",
+    "dialogs": [
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Celina",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Celina",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Celina"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Daisy",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Daisy",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Daisy"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Destin",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Destin",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Destin"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Gillian",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Gillian",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Gillian"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Jacki",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Jacki",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Jacki"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Rayna",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Rayna",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Rayna"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_Text_SelphysHouse",
+            "id": "FiveIsland_ResortGorgeous_EventScript_SelphysHouseSign",
+            "text": "SELPHY'S HOUSE"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_EventScript_Toby",
+            "id": "FiveIsland_ResortGorgeous_EventScript_Toby",
+            "text": "TODO: FiveIsland_ResortGorgeous_EventScript_Toby"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 37,
+            "y": 6,
+            "dir": "left"
+        },
+        {
+            "x": 45,
+            "y": 6,
+            "dir": "right"
+        },
+        {
+            "x": 37,
+            "y": 7,
+            "dir": "left"
+        },
+        {
+            "x": 45,
+            "y": 7,
+            "dir": "right"
+        },
+        {
+            "x": 37,
+            "y": 8,
+            "dir": "left"
+        },
+        {
+            "x": 45,
+            "y": 8,
+            "dir": "right"
+        },
+        {
+            "x": 38,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 43,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 44,
+            "y": 9,
+            "dir": "down"
+        }
+    ]
+}

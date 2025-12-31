@@ -1,0 +1,248 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Restaurant",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_RESTAURANT",
+        "sourceMapId": "MAP_CELADON_CITY_RESTAURANT",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_RestaurantHotel",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 5,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Restaurant-0",
+            "x": 12,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Restaurant_EventScript_Chef",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Restaurant-1",
+            "x": 11,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Restaurant_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Restaurant-2",
+            "x": 9,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Restaurant_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Restaurant-3",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Restaurant_EventScript_CoinCaseMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Restaurant-4",
+            "x": 3,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Restaurant_EventScript_WorkerM",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Restaurant-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 37,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "7",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Restaurant-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 37,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "7",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Restaurant-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 37,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "7",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeladonCity_Restaurant",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Restaurant_Text_TakingBreakRightNow",
+            "id": "CeladonCity_Restaurant_EventScript_Chef",
+            "text": "Hi!\n\nSorry, but we're taking a break\nright now."
+        },
+        {
+            "title": "CeladonCity_Restaurant_Text_TakeThisImBusted",
+            "id": "CeladonCity_Restaurant_EventScript_CoinCaseMan",
+            "text": "Go ahead! Laugh!\nI'm flat-out busted!\n\nNo more slots for me!\nI'm going straight!\n\nHere!\nI won't be needing this anymore!"
+        },
+        {
+            "title": "CeladonCity_Restaurant_Text_ManLostItAllAtSlots",
+            "id": "CeladonCity_Restaurant_EventScript_FatMan",
+            "text": "Munch…\n\nThe man at that table lost it all\nat the slots."
+        },
+        {
+            "title": "CeladonCity_Restaurant_Text_OftenGoToDrugstore",
+            "id": "CeladonCity_Restaurant_EventScript_Woman",
+            "text": "My POKéMON are weak, so I often\nhave to go to the DRUGSTORE."
+        },
+        {
+            "title": "CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner",
+            "id": "CeladonCity_Restaurant_EventScript_WorkerM",
+            "text": "Psst! There's a basement under the\nGAME CORNER, I hear."
+        }
+    ],
+    "jumps": []
+}

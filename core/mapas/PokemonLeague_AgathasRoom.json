@@ -1,0 +1,155 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonLeague_AgathasRoom",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_LEAGUE_AGATHAS_ROOM",
+        "sourceMapId": "MAP_POKEMON_LEAGUE_AGATHAS_ROOM",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonLeague",
+        "height": 13
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 10,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 11,
+            "w": 11,
+            "h": 2,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonLeague_AgathasRoom-0",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_AGATHA",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonLeague_AgathasRoom_EventScript_Agatha",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonLeague_AgathasRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_BrunosRoom",
+                "x": 6,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_BRUNOS_ROOM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PokemonLeague_AgathasRoom-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_LancesRoom",
+                "x": 23,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_LANCES_ROOM",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "PokemonLeague_AgathasRoom",
+    "dialogs": [
+        {
+            "title": "PokemonLeague_AgathasRoom_EventScript_Agatha",
+            "id": "PokemonLeague_AgathasRoom_EventScript_Agatha",
+            "text": "TODO: PokemonLeague_AgathasRoom_EventScript_Agatha"
+        }
+    ],
+    "jumps": []
+}

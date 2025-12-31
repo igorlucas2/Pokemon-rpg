@@ -1,0 +1,140 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_1F_Room3",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM1",
+        "sourceMapId": "MAP_SSANNE_1F_ROOM3",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 8
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_1F_Room3-0",
+            "x": 3,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+            "movementRangeX": 2,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Room3_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_1F_Room3-1",
+            "x": 4,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WIGGLYTUFF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Room3_EventScript_Wigglytuff",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_1F_Room3-2",
+            "x": 0,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Room3_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_1F_Room3-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Corridor",
+                "x": 11,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_CORRIDOR",
+                "destWarpId": "8",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SSAnne_1F_Room3",
+    "dialogs": [
+        {
+            "title": "SSAnne_1F_Room3_Text_CruiseIsElegantAndCozy",
+            "id": "SSAnne_1F_Room3_EventScript_BaldingMan",
+            "text": "A world cruise is so elegant yet\ncozy!"
+        },
+        {
+            "title": "SSAnne_1F_Room3_Text_AlwaysTravelWithWigglytuff",
+            "id": "SSAnne_1F_Room3_EventScript_LittleGirl",
+            "text": "I always travel with WIGGLYTUFF.\nI never leave home without it."
+        },
+        {
+            "title": "SSAnne_1F_Room3_Text_Wigglytuff",
+            "id": "SSAnne_1F_Room3_EventScript_Wigglytuff",
+            "text": "WIGGLYTUFF: Puup pupuu!"
+        }
+    ],
+    "jumps": []
+}

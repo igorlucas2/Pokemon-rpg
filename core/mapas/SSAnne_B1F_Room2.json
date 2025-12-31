@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_B1F_Room2",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM2",
+        "sourceMapId": "MAP_SSANNE_B1F_ROOM2",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_B1F_Room2-0",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_B1F_Room2_EventScript_Huey",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_B1F_Room2-1",
+            "x": 3,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_B1F_Room2_EventScript_ItemTM44",
+                "flag": "FLAG_HIDE_SSANNE_B1F_ROOM2_TM44"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_B1F_Room2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Corridor",
+                "x": 6,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_CORRIDOR",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_B1F_Room2",
+    "dialogs": [
+        {
+            "title": "SSAnne_B1F_Room2_Text_HueyPostBattle",
+            "id": "SSAnne_B1F_Room2_EventScript_Huey",
+            "text": "We caught all our POKéMON while\nwe were out at sea."
+        },
+        {
+            "title": "SSAnne_B1F_Room2_EventScript_ItemTM44",
+            "id": "SSAnne_B1F_Room2_EventScript_ItemTM44",
+            "text": "TODO: SSAnne_B1F_Room2_EventScript_ItemTM44"
+        }
+    ],
+    "jumps": []
+}

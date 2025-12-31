@@ -1,0 +1,209 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TwoIsland_JoyfulGameCorner",
+    "meta": {
+        "layoutId": "LAYOUT_TWO_ISLAND_JOYFUL_GAME_CORNER",
+        "sourceMapId": "MAP_TWO_ISLAND_JOYFUL_GAME_CORNER",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GameCorner",
+        "height": 10
+    },
+    "start": {
+        "y": 1,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 6,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 5,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TwoIsland_JoyfulGameCorner-0",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_JOYFUL_GAME_CORNER_DADDY",
+                "script": "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-TwoIsland_JoyfulGameCorner-1",
+            "x": 5,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_JOYFUL_GAME_CORNER_BIKER",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_TWO_ISLAND_GAME_CORNER_BIKER"
+            }
+        },
+        {
+            "id": "npc-TwoIsland_JoyfulGameCorner-2",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "left",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_JOYFUL_GAME_CORNER_LOSTELLE",
+                "script": "TwoIsland_JoyfulGameCorner_EventScript_Lostelle",
+                "flag": "FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE"
+            }
+        },
+        {
+            "id": "npc-TwoIsland_JoyfulGameCorner-3",
+            "x": 4,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_JoyfulGameCorner_EventScript_InfoMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-TwoIsland_JoyfulGameCorner-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland",
+                "x": 39,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "TwoIsland_JoyfulGameCorner",
+    "dialogs": [
+        {
+            "title": "TwoIsland_JoyfulGameCorner_Text_NotRunningAnyGamesToday",
+            "id": "TwoIsland_JoyfulGameCorner_EventScript_InfoMan",
+            "text": "I'm sorry.\nWe're not running any games today."
+        },
+        {
+            "title": "TwoIsland_JoyfulGameCorner_Text_PleaseShowMeYouBeingCool",
+            "id": "TwoIsland_JoyfulGameCorner_EventScript_Lostelle",
+            "text": "Listen, listen!\n\nPlease show me you being cool\nagain!"
+        },
+        {
+            "title": "TwoIsland_JoyfulGameCorner_Text_PleaseGoToThreeIsland",
+            "id": "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy",
+            "text": "Hey, but listen! I'm begging you,\nyou have to go to THREE ISLAND.\n\nIf anything were to happen to my\nLOSTELLE…\n\nMy place is the house with the red\nroof on THREE ISLAND.\n\nShe may just show up late here,\nso I can't run off anywhere.\n\nThat's why I have to get you to do\nme this big favor."
+        },
+        {
+            "title": "TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords",
+            "id": "TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords",
+            "text": "TODO: TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords"
+        },
+        {
+            "title": "TwoIsland_JoyfulGameCorner_EventScript_ShowPokemonJumpRecords",
+            "id": "TwoIsland_JoyfulGameCorner_EventScript_ShowPokemonJumpRecords",
+            "text": "TODO: TwoIsland_JoyfulGameCorner_EventScript_ShowPokemonJumpRecords"
+        }
+    ],
+    "jumps": []
+}

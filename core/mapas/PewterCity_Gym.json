@@ -1,0 +1,305 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_PEWTER_CITY_GYM",
+        "sourceMapId": "MAP_PEWTER_CITY_GYM",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PewterGym",
+        "height": 16
+    },
+    "start": {
+        "y": 1,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 2,
+            "w": 5,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 13,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity_Gym-0",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Gym_EventScript_Brock",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Gym-1",
+            "x": 3,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Gym_EventScript_Liam",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_Gym-2",
+            "x": 7,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PewterCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 15,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 15,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 15,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PewterCity_Gym",
+    "dialogs": [
+        {
+            "title": "PewterCity_Gym_Text_BrockPostBattle",
+            "id": "PewterCity_Gym_EventScript_Brock",
+            "text": "There are all kinds of TRAINERS in\nthis huge world of ours.\n\nYou appear to be very gifted as a\nPOKéMON TRAINER.\n\nSo let me make a suggestion.\n\nGo to the GYM in CERULEAN and test\nyour abilities."
+        },
+        {
+            "title": "PewterCity_Gym_Text_LetMeTakeYouToTheTop",
+            "id": "PewterCity_Gym_EventScript_GymGuy",
+            "text": "Hiya!\nDo you want to dream big?\n\nDo you dare to dream of becoming\nthe POKéMON champ?\n\nI'm no TRAINER, but I can advise\nyou on how to win.\n\nLet me take you to the top!"
+        },
+        {
+            "title": "PewterCity_Gym_Text_GymStatue",
+            "id": "PewterCity_Gym_EventScript_GymStatue",
+            "text": "PEWTER POKéMON GYM\nLEADER: BROCK\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "PewterCity_Gym_Text_LiamPostBattle",
+            "id": "PewterCity_Gym_EventScript_Liam",
+            "text": "You're pretty hot.\n…But not as hot as BROCK!"
+        }
+    ],
+    "jumps": []
+}

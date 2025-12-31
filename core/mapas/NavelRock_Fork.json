@@ -1,0 +1,202 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "NavelRock_Fork",
+    "meta": {
+        "layoutId": "LAYOUT_NAVEL_ROCK_FORK",
+        "sourceMapId": "MAP_NAVEL_ROCK_FORK",
+        "width": 30,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 100
+    },
+    "start": {
+        "y": 1,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 30,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 99,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 99,
+            "x": 28
+        },
+        {
+            "y": 4,
+            "w": 11,
+            "h": 7,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 12,
+            "h": 7,
+            "x": 16
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 46,
+            "x": 13
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 34,
+            "x": 15
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 89,
+            "x": 2
+        },
+        {
+            "y": 11,
+            "w": 9,
+            "h": 40,
+            "x": 4
+        },
+        {
+            "y": 11,
+            "w": 9,
+            "h": 28,
+            "x": 16
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 89,
+            "x": 26
+        },
+        {
+            "y": 40,
+            "w": 10,
+            "h": 60,
+            "x": 16
+        },
+        {
+            "y": 41,
+            "w": 1,
+            "h": 54,
+            "x": 15
+        },
+        {
+            "y": 52,
+            "w": 10,
+            "h": 48,
+            "x": 3
+        },
+        {
+            "y": 53,
+            "w": 1,
+            "h": 42,
+            "x": 13
+        },
+        {
+            "y": 97,
+            "w": 1,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 97,
+            "w": 1,
+            "h": 3,
+            "x": 15
+        },
+        {
+            "y": 98,
+            "w": 1,
+            "h": 2,
+            "x": 14
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-NavelRock_Fork-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 95,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_B1F",
+                "x": 11,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_B1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-NavelRock_Fork-2",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_SummitPath_2F",
+                "x": 4,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_SUMMIT_PATH_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-NavelRock_Fork-3",
+            "type": "door",
+            "rect": {
+                "x": 26,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_BasePath_B1F",
+                "x": 2,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_BASE_PATH_B1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "NavelRock_Fork",
+    "dialogs": [],
+    "jumps": []
+}

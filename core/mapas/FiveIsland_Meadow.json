@@ -1,0 +1,462 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_Meadow",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_MEADOW",
+        "sourceMapId": "MAP_FIVE_ISLAND_MEADOW",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 40
+    },
+    "start": {
+        "y": 3,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 10,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 15,
+            "x": 20
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 12,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 29,
+            "x": 6
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 10,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 10,
+            "x": 15
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 9,
+            "x": 17
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 19,
+            "x": 21
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 18,
+            "x": 0
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 6,
+            "x": 9
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 28,
+            "w": 3,
+            "h": 12,
+            "x": 3
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 32,
+            "w": 2,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 33,
+            "w": 2,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 6,
+            "x": 20
+        },
+        {
+            "y": 35,
+            "w": 6,
+            "h": 5,
+            "x": 9
+        },
+        {
+            "y": 35,
+            "w": 3,
+            "h": 5,
+            "x": 17
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_Meadow-0",
+            "x": 18,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_Meadow_EventScript_Rocket3",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-1",
+            "x": 17,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_Meadow_EventScript_Rocket1",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-2",
+            "x": 11,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_Meadow_EventScript_Rocket2",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-3",
+            "x": 8,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FIVE_ISLAND_MEADOW_BORDER_TREE",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-4",
+            "x": 19,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-5",
+            "x": 12,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_Meadow_EventScript_ItemMaxPotion",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_MEADOW_MAX_POTION"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_Meadow-6",
+            "x": 3,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_Meadow_EventScript_ItemPPUp",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_MEADOW_PP_UP"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland_Meadow-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_RocketWarehouse",
+                "x": 24,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_ROCKET_WAREHOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-FiveIsland_Meadow-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_FIVE_ISLAND"
+            }
+        },
+        {
+            "id": "conn-FiveIsland_Meadow-right-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 20,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_MemorialPillar",
+                "connection": {
+                    "direction": "right",
+                    "offset": 20
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 20,
+                "destMap": "MAP_FIVE_ISLAND_MEMORIAL_PILLAR"
+            }
+        }
+    ],
+    "name": "FiveIsland_Meadow",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "FiveIsland_Meadow_EventScript_ItemMaxPotion",
+            "id": "FiveIsland_Meadow_EventScript_ItemMaxPotion",
+            "text": "TODO: FiveIsland_Meadow_EventScript_ItemMaxPotion"
+        },
+        {
+            "title": "FiveIsland_Meadow_EventScript_ItemPPUp",
+            "id": "FiveIsland_Meadow_EventScript_ItemPPUp",
+            "text": "TODO: FiveIsland_Meadow_EventScript_ItemPPUp"
+        },
+        {
+            "title": "FiveIsland_Meadow_Text_Rocket1PostBattle",
+            "id": "FiveIsland_Meadow_EventScript_Rocket1",
+            "text": "You don't have any business here!\nGo home!"
+        },
+        {
+            "title": "FiveIsland_Meadow_Text_Rocket2PostBattle",
+            "id": "FiveIsland_Meadow_EventScript_Rocket2",
+            "text": "You're wanting to know what's inside\nthis WAREHOUSE?\n\nIt's better you didn't know.\nFor your own sake, I mean."
+        },
+        {
+            "title": "FiveIsland_Meadow_Text_Rocket3PostBattle",
+            "id": "FiveIsland_Meadow_EventScript_Rocket3",
+            "text": "You won't be able to get in without\nthe passwords anyway."
+        },
+        {
+            "title": "FiveIsland_Meadow_Text_EnteredPasswordAnotherNeeded",
+            "id": "FiveIsland_Meadow_EventScript_WarehouseDoor",
+            "text": "{PLAYER} entered a password.\n\n“GOLDEEN need log.”\n\n… …  … …  … …\n\nAnother password is needed to\nopen the door…"
+        }
+    ],
+    "jumps": []
+}

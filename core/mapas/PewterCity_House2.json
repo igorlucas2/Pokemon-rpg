@@ -1,0 +1,170 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE2",
+        "sourceMapId": "MAP_PEWTER_CITY_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity_House2-0",
+            "x": 3,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_House2_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_House2-1",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_House2_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PewterCity_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 9,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "6",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_House2-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 9,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "6",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_House2-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 9,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "6",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "PewterCity_House2",
+    "dialogs": [
+        {
+            "title": "PewterCity_House2_Text_MonsEasierCatchIfStatused",
+            "id": "PewterCity_House2_EventScript_LittleBoy",
+            "text": "A POKéMON becomes easier to \ncatch if it has a status problem.\n\nSleep, poison, burn, or paralysis…\nThose are all effective.\n\nBut catching POKéMON is never\na sure thing!"
+        },
+        {
+            "title": "PewterCity_House2_Text_MonsLearnTechniquesAsTheyGrow",
+            "id": "PewterCity_House2_EventScript_OldMan",
+            "text": "POKéMON learn new techniques as\nthey grow.\n\nBut some moves must be taught to\nthem by people."
+        }
+    ],
+    "jumps": []
+}

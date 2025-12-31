@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PokéRPG — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      overflow:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 45%, rgba(255,255,255,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 82% 80%, rgba(0,0,0,0.20) 0%, transparent 55%);
+      pointer-events:none;
+    }
+
+    .login-container{
+      position:relative;
+      z-index: 2;
+      width:100%;
+      max-width: 460px;
+    }
+
+    .pokeball-icon{
+      display:flex;
+      justify-content:center;
+      margin-bottom: 16px;
+      animation: bobbing 3s ease-in-out infinite;
+    }
+
+    .pokeball-img{
+      width: 66px;
+      height: 66px;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 30px rgba(0,0,0,0.55));
+      animation: pokePulse 1.6s ease-in-out infinite;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    @keyframes bobbing{
+      0%,100%{ transform: translateY(0); }
+      50%{ transform: translateY(-12px); }
+    }
+    @keyframes pokePulse{
+      0%,100%{ filter: brightness(1); }
+      50%{ filter: brightness(1.25); }
+    }
+
+    .card{
+      background: var(--glass);
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      padding: 24px 20px 18px;
+      animation: slideIn .45s ease-out both;
+      position: relative;
+      overflow:hidden;
+      isolation: isolate;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      top:0; left:0;
+      width:100%;
+      height: 4px;
+      background: linear-gradient(90deg, rgba(250,204,21,0.85), rgba(34,197,94,0.55), rgba(250,204,21,0.85));
+      z-index: 0;
+    }
+    .card::after{
+      content:"";
+      position:absolute;
+      inset: -1px;
+      border-radius: calc(var(--radius) + 1px);
+      background:
+        radial-gradient(500px 180px at 20% -20%, rgba(250,204,21,0.18), transparent 60%),
+        radial-gradient(460px 240px at 110% 10%, rgba(34,197,94,0.10), transparent 60%);
+      z-index:-1;
+    }
+
+    @keyframes slideIn{
+      from{ opacity:0; transform: translateY(14px); }
+      to{ opacity:1; transform: translateY(0); }
+    }
+
+    .card h2{
+      margin: 10px 0 6px;
+      font-family:"Press Start 2P", monospace;
+      font-size: 16px;
+      letter-spacing: 0.6px;
+      text-align: center;
+    }
+
+    .subtitle{
+      text-align:center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    #message{
+      font-size: 12px;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      text-align:center;
+      display:none;
+      border: 1px solid var(--stroke2);
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+    }
+    #message.show{
+      display:block;
+      animation: messageSlide .22s ease-out;
+    }
+    #message.message--error{
+      color: #fecaca;
+      background: rgba(239,68,68,0.12);
+      border-color: rgba(239,68,68,0.20);
+    }
+    @keyframes messageSlide{
+      from{ opacity:0; transform: translateY(-8px); }
+      to{ opacity:1; transform: translateY(0); }
+    }
+
+    .row{ margin-bottom: 12px; }
+
+    input{
+      width:100%;
+      padding:12px;
+      border-radius: 14px;
+      border:1px solid var(--stroke);
+      background: var(--glass2);
+      color: var(--text);
+      outline:none;
+      transition: border-color .12s ease, transform .12s ease;
+    }
+    input:focus{
+      border-color: rgba(250,204,21,0.30);
+      transform: translateY(-1px);
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      margin-top: 14px;
+    }
+    .actions .btn{ flex: 1; padding: 12px 14px; border-radius: 12px; }
+
+    .hint{
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align:center;
+    }
+    .hint code{ color: #fde68a; }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="pokeball-icon">
+      <img class="pokeball-img" src="/assets/itens/pokebola.png" alt="Pokébola" />
+    </div>
+
+    <div class="card">
+      <h2>PokéRPG</h2>
+      <div class="subtitle">Treinador, bem-vindo!</div>
+
+      <div id="message" class="<%= error ? 'show message--error' : '' %>"><%= error || '' %></div>
+
+      <form id="loginPanel" method="POST" action="/login" novalidate>
+        <div class="row">
+          <input id="loginIdentifier" name="identifier" placeholder="Usuário ou email" required autocomplete="username" />
+        </div>
+        <div class="row">
+          <input id="loginPassword" name="password" type="password" placeholder="Senha" required autocomplete="current-password" />
+        </div>
+        <div class="actions">
+          <button class="btn" id="btnLogin" type="submit">Entrar</button>
+          <button class="btn btn--ghost" id="btnShowRegister" type="button">Registrar</button>
+        </div>
+      </form>
+
+      <form id="registerPanel" method="POST" action="/register" novalidate style="display:none">
+        <div class="row">
+          <input id="regUsername" name="username" placeholder="Usuário" required minlength="3" maxlength="24" autocomplete="nickname" />
+        </div>
+        <div class="row">
+          <input id="regEmail" name="email" type="email" placeholder="Email" required autocomplete="email" />
+        </div>
+        <div class="row">
+          <input id="regPassword" name="password" type="password" placeholder="Senha" required minlength="4" autocomplete="new-password" />
+        </div>
+        <div class="row">
+          <input id="regPassword2" name="passwordConfirm" type="password" placeholder="Repetir senha" required minlength="4" autocomplete="new-password" />
+        </div>
+        <div class="actions">
+          <button class="btn" id="btnRegister" type="submit">Criar conta</button>
+          <button class="btn btn--ghost" id="btnBack" type="button">Voltar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const mode = <%- JSON.stringify(mode || "login") %>;
+      const loginPanel = document.getElementById("loginPanel");
+      const registerPanel = document.getElementById("registerPanel");
+      const btnShowRegister = document.getElementById("btnShowRegister");
+      const btnBack = document.getElementById("btnBack");
+      const regPassword = document.getElementById("regPassword");
+      const regPassword2 = document.getElementById("regPassword2");
+
+      function show(which){
+        const isLogin = which === "login";
+        if (loginPanel) loginPanel.style.display = isLogin ? "" : "none";
+        if (registerPanel) registerPanel.style.display = isLogin ? "none" : "";
+
+        const focusId = isLogin ? "loginIdentifier" : "regUsername";
+        const el = document.getElementById(focusId);
+        el?.focus?.();
+      }
+
+      btnShowRegister?.addEventListener("click", () => show("register"));
+      btnBack?.addEventListener("click", () => show("login"));
+      show(mode === "register" ? "register" : "login");
+
+      registerPanel?.addEventListener("submit", (e) => {
+        const a = String(regPassword?.value || "");
+        const b = String(regPassword2?.value || "");
+        if (a && b && a !== b) {
+          e.preventDefault();
+          regPassword2?.setCustomValidity?.("As senhas não conferem");
+          regPassword2?.reportValidity?.();
+        } else {
+          regPassword2?.setCustomValidity?.("");
+        }
+      });
+
+      regPassword2?.addEventListener?.("input", () => regPassword2?.setCustomValidity?.(""));
+    })();
+  </script>
+</body>
+</html>

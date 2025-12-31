@@ -1,0 +1,230 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route22_NorthEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE22_NORTH_ENTRANCE",
+        "sourceMapId": "MAP_ROUTE22_NORTH_ENTRANCE",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 12
+    },
+    "start": {
+        "y": 1,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 11,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route22_NorthEntrance-0",
+            "x": 8,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route22_NorthEntrance_EventScript_BoulderBadgeGuard",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route22_NorthEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route23",
+                "x": 8,
+                "y": 153,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE23",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route22_NorthEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route22",
+                "x": 8,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE22",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route22_NorthEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route22",
+                "x": 8,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE22",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route22_NorthEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route22",
+                "x": 8,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE22",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route22_NorthEntrance",
+    "dialogs": [
+        {
+            "title": "Route22_NorthEntrance_EventScript_BoulderBadgeGuard",
+            "id": "Route22_NorthEntrance_EventScript_BoulderBadgeGuard",
+            "text": "TODO: Route22_NorthEntrance_EventScript_BoulderBadgeGuard"
+        },
+        {
+            "title": "Route22_NorthEntrance_EventScript_BoulderBadgeGuardTrigger",
+            "id": "Route22_NorthEntrance_EventScript_BoulderBadgeGuardTrigger",
+            "text": "TODO: Route22_NorthEntrance_EventScript_BoulderBadgeGuardTrigger"
+        }
+    ],
+    "jumps": []
+}

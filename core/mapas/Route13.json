@@ -1,0 +1,530 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route13",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE13",
+        "sourceMapId": "MAP_ROUTE13",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_LavenderTown",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 62
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 62,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 8,
+            "h": 20,
+            "x": 64
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 34
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 6,
+            "x": 60
+        },
+        {
+            "y": 6,
+            "w": 16,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 6,
+            "w": 7,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 4,
+            "x": 44
+        },
+        {
+            "y": 8,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 6,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 17,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 36
+        },
+        {
+            "y": 9,
+            "w": 12,
+            "h": 2,
+            "x": 48
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 14,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 2,
+            "x": 30
+        },
+        {
+            "y": 12,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 15,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 12,
+            "w": 11,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 22
+        },
+        {
+            "y": 13,
+            "w": 18,
+            "h": 7,
+            "x": 46
+        },
+        {
+            "y": 14,
+            "w": 6,
+            "h": 6,
+            "x": 2
+        },
+        {
+            "y": 14,
+            "w": 12,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 22,
+            "h": 6,
+            "x": 24
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 1
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 23
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route13-0",
+            "x": 62,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Alma",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-1",
+            "x": 63,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Sebastian",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-2",
+            "x": 54,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Susie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-3",
+            "x": 42,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Sheila",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-4",
+            "x": 43,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Lola",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-5",
+            "x": 35,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Valerie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-6",
+            "x": 29,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Gwen",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-7",
+            "x": 9,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Robert",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-8",
+            "x": 16,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Perry",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-9",
+            "x": 14,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route13_EventScript_Jared",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route13-10",
+            "x": 44,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-Route13-up-1",
+            "type": "door",
+            "rect": {
+                "x": 48,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12",
+                "connection": {
+                    "direction": "up",
+                    "offset": 48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 48,
+                "destMap": "MAP_ROUTE12"
+            }
+        },
+        {
+            "id": "conn-Route13-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route14",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_ROUTE14"
+            }
+        }
+    ],
+    "name": "Route13",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route13_EventScript_Alma",
+            "id": "Route13_EventScript_Alma",
+            "text": "TODO: Route13_EventScript_Alma"
+        },
+        {
+            "title": "Route13_EventScript_Gwen",
+            "id": "Route13_EventScript_Gwen",
+            "text": "TODO: Route13_EventScript_Gwen"
+        },
+        {
+            "title": "Route13_EventScript_Jared",
+            "id": "Route13_EventScript_Jared",
+            "text": "TODO: Route13_EventScript_Jared"
+        },
+        {
+            "title": "Route13_EventScript_Lola",
+            "id": "Route13_EventScript_Lola",
+            "text": "TODO: Route13_EventScript_Lola"
+        },
+        {
+            "title": "Route13_EventScript_Perry",
+            "id": "Route13_EventScript_Perry",
+            "text": "TODO: Route13_EventScript_Perry"
+        },
+        {
+            "title": "Route13_EventScript_Robert",
+            "id": "Route13_EventScript_Robert",
+            "text": "TODO: Route13_EventScript_Robert"
+        },
+        {
+            "title": "Route13_Text_RouteSign",
+            "id": "Route13_EventScript_RouteSign",
+            "text": "ROUTE 13\nNorth to SILENCE BRIDGE"
+        },
+        {
+            "title": "Route13_EventScript_Sebastian",
+            "id": "Route13_EventScript_Sebastian",
+            "text": "TODO: Route13_EventScript_Sebastian"
+        },
+        {
+            "title": "Route13_EventScript_Sheila",
+            "id": "Route13_EventScript_Sheila",
+            "text": "TODO: Route13_EventScript_Sheila"
+        },
+        {
+            "title": "Route13_EventScript_Susie",
+            "id": "Route13_EventScript_Susie",
+            "text": "TODO: Route13_EventScript_Susie"
+        },
+        {
+            "title": "Route13_Text_LookToLeftOfThatPost",
+            "id": "Route13_EventScript_TrainerTips1",
+            "text": "TRAINER TIPS\n\nLook, look!\nLook to the left of that post!"
+        },
+        {
+            "title": "Route13_Text_SelectToSwitchItems",
+            "id": "Route13_EventScript_TrainerTips2",
+            "text": "TRAINER TIPS\n\nUse SELECT to switch items in the\nITEMS window."
+        },
+        {
+            "title": "Route13_EventScript_Valerie",
+            "id": "Route13_EventScript_Valerie",
+            "text": "TODO: Route13_EventScript_Valerie"
+        }
+    ],
+    "jumps": []
+}

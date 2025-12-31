@@ -1,0 +1,566 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TwoIsland",
+    "meta": {
+        "layoutId": "LAYOUT_TWO_ISLAND",
+        "sourceMapId": "MAP_TWO_ISLAND",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands123",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 36
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 36,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 7,
+            "h": 4,
+            "x": 41
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 2,
+            "x": 38
+        },
+        {
+            "y": 2,
+            "w": 25,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 3,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 13,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 4,
+            "w": 8,
+            "h": 16,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 4,
+            "x": 18
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 6,
+            "x": 39
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 2,
+            "x": 42
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 5,
+            "x": 40
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 7,
+            "w": 7,
+            "h": 3,
+            "x": 32
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 11,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 11,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 10,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 10,
+            "x": 12
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 10,
+            "x": 42
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 9,
+            "x": 41
+        },
+        {
+            "y": 13,
+            "w": 13,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 14,
+            "w": 11,
+            "h": 6,
+            "x": 15
+        },
+        {
+            "y": 14,
+            "w": 11,
+            "h": 2,
+            "x": 30
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 40
+        },
+        {
+            "y": 17,
+            "w": 14,
+            "h": 3,
+            "x": 26
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TwoIsland-0",
+            "x": 28,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-1",
+            "x": 31,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_Woman",
+                "flag": "FLAG_HIDE_TWO_ISLAND_WOMAN"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-2",
+            "x": 30,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_Beauty",
+                "flag": "FLAG_HIDE_TWO_ISLAND_BEAUTY"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-3",
+            "x": 26,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_Sailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-4",
+            "x": 27,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_SuperNerd",
+                "flag": "FLAG_HIDE_TWO_ISLAND_SUPER_NERD"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-5",
+            "x": 30,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-6",
+            "x": 39,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_ItemRevive",
+                "flag": "FLAG_HIDE_TWO_ISLAND_REVIVE"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-7",
+            "x": 37,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-TwoIsland-8",
+            "x": 24,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_EventScript_Boy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-TwoIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_JoyfulGameCorner",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND_JOYFUL_GAME_CORNER",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-TwoIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-TwoIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 21,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-TwoIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_Harbor",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND_HARBOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-TwoIsland-up-1",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_CapeBrink",
+                "connection": {
+                    "direction": "up",
+                    "offset": 24
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 24,
+                "destMap": "MAP_TWO_ISLAND_CAPE_BRINK"
+            }
+        }
+    ],
+    "name": "TwoIsland",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "TwoIsland_Text_BrunoCameToIslandWhileBack",
+            "id": "TwoIsland_EventScript_Beauty",
+            "text": "Listen, listen.\nDid you know?\n\nA famous TRAINER came to the\nISLAND a little while back.\n\nHe's one of the ELITE FOUR.\nHis name is BRUNO.\n\nHe went away disappointed when he\nfound out that they were all sold\nout of Rage Candybars."
+        },
+        {
+            "title": "TwoIsland_Text_OldWomanLivesOutOnCape",
+            "id": "TwoIsland_EventScript_Boy",
+            "text": "There's an old woman who lives in\na cottage out on the cape.\n\nShe gives the eye to POKéMON.\nIt's a bit unnerving."
+        },
+        {
+            "title": "TwoIsland_EventScript_Clerk",
+            "id": "TwoIsland_EventScript_Clerk",
+            "text": "TODO: TwoIsland_EventScript_Clerk"
+        },
+        {
+            "title": "TwoIsland_Text_DangerFastCurrent",
+            "id": "TwoIsland_EventScript_FastCurrentSign",
+            "text": "DANGER! FAST CURRENT!\nFishing and surfing prohibited!"
+        },
+        {
+            "title": "TwoIsland_Text_IslandSign",
+            "id": "TwoIsland_EventScript_IslandSign",
+            "text": "TWO ISLAND\nBoon Island for Two"
+        },
+        {
+            "title": "TwoIsland_EventScript_ItemRevive",
+            "id": "TwoIsland_EventScript_ItemRevive",
+            "text": "TODO: TwoIsland_EventScript_ItemRevive"
+        },
+        {
+            "title": "TwoIsland_Text_JoyfulGameCornerSign",
+            "id": "TwoIsland_EventScript_JoyfulGameCornerSign",
+            "text": "Skip & Chomp!\nJoyful GAME CORNER"
+        },
+        {
+            "title": "TwoIsland_Text_HaveYouTriedJumpingGame",
+            "id": "TwoIsland_EventScript_LittleBoy",
+            "text": "Boing! Boing!\nHave you tried the jumping game?\n\nThe POKéMON you can enter…\nBoing!\n\nSome go boing!\n\nAnd some go boooooooing!\n\nDid you know that?\nBoing!"
+        },
+        {
+            "title": "TwoIsland_Text_FellowMovedFromCeladonCity",
+            "id": "TwoIsland_EventScript_Sailor",
+            "text": "That fellow there, he moved here\nfrom CELADON CITY.\n\nHe started up a shop with his\nyounger brother.\n\nYou have to wonder if he knew what\nhe was getting into."
+        },
+        {
+            "title": "TwoIsland_Text_BuyRareItemsHere",
+            "id": "TwoIsland_EventScript_SuperNerd",
+            "text": "The discerning TRAINER knows to\nbuy rare items here!"
+        },
+        {
+            "title": "TwoIsland_Text_ShopkeepersBrotherWorksGameCorner",
+            "id": "TwoIsland_EventScript_Woman",
+            "text": "The shopkeeper's brother took\na job at the GAME CORNER.\n\nHe's trying to pull together money\nso they can buy more merchandise."
+        }
+    ],
+    "jumps": []
+}

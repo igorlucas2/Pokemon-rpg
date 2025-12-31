@@ -1,0 +1,242 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "UnionRoom",
+    "meta": {
+        "layoutId": "LAYOUT_UNION_ROOM",
+        "sourceMapId": "MAP_UNION_ROOM",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_HallOfFame",
+        "height": 12
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-UnionRoom-0",
+            "x": 3,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_UNION_ROOM_RECEPTIONIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "UnionRoom_EventScript_Attendant",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-1",
+            "x": 1,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_VAR_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_4",
+                "script": "UnionRoom_EventScript_Player4",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_4"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-2",
+            "x": 7,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_VAR_7",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_8",
+                "script": "UnionRoom_EventScript_Player8",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_8"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-3",
+            "x": 1,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_VAR_6",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_7",
+                "script": "UnionRoom_EventScript_Player7",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_7"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-4",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_VAR_5",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_6",
+                "script": "UnionRoom_EventScript_Player6",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_6"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-5",
+            "x": 13,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_VAR_4",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_5",
+                "script": "UnionRoom_EventScript_Player5",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_5"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-6",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_VAR_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_3",
+                "script": "UnionRoom_EventScript_Player3",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_3"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-7",
+            "x": 13,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_VAR_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_2",
+                "script": "UnionRoom_EventScript_Player2",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_2"
+            }
+        },
+        {
+            "id": "npc-UnionRoom-8",
+            "x": 4,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_VAR_0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_UNION_ROOM_PLAYER_1",
+                "script": "UnionRoom_EventScript_Player1",
+                "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_1"
+            }
+        }
+    ],
+    "events": [],
+    "name": "UnionRoom",
+    "dialogs": [
+        {
+            "title": "UnionRoom_EventScript_Attendant",
+            "id": "UnionRoom_EventScript_Attendant",
+            "text": "TODO: UnionRoom_EventScript_Attendant"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player1",
+            "id": "UnionRoom_EventScript_Player1",
+            "text": "TODO: UnionRoom_EventScript_Player1"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player2",
+            "id": "UnionRoom_EventScript_Player2",
+            "text": "TODO: UnionRoom_EventScript_Player2"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player3",
+            "id": "UnionRoom_EventScript_Player3",
+            "text": "TODO: UnionRoom_EventScript_Player3"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player4",
+            "id": "UnionRoom_EventScript_Player4",
+            "text": "TODO: UnionRoom_EventScript_Player4"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player5",
+            "id": "UnionRoom_EventScript_Player5",
+            "text": "TODO: UnionRoom_EventScript_Player5"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player6",
+            "id": "UnionRoom_EventScript_Player6",
+            "text": "TODO: UnionRoom_EventScript_Player6"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player7",
+            "id": "UnionRoom_EventScript_Player7",
+            "text": "TODO: UnionRoom_EventScript_Player7"
+        },
+        {
+            "title": "UnionRoom_EventScript_Player8",
+            "id": "UnionRoom_EventScript_Player8",
+            "text": "TODO: UnionRoom_EventScript_Player8"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,347 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND",
+        "sourceMapId": "MAP_SIX_ISLAND",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 30
+    },
+    "start": {
+        "y": 7,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 9,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 11,
+            "w": 7,
+            "h": 19,
+            "x": 0
+        },
+        {
+            "y": 11,
+            "w": 5,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 7,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 20,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 10,
+            "x": 23
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 9,
+            "x": 7
+        },
+        {
+            "y": 21,
+            "w": 7,
+            "h": 9,
+            "x": 16
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 8,
+            "x": 8
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 8,
+            "x": 13
+        },
+        {
+            "y": 24,
+            "w": 3,
+            "h": 6,
+            "x": 10
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland-0",
+            "x": 10,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland-1",
+            "x": 15,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_EventScript_Hiker",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_Harbor",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_HARBOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SixIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SixIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_MART",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-SixIsland-right-1",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 0,
+                "w": 1,
+                "h": 30
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath",
+                "connection": {
+                    "direction": "right",
+                    "offset": -40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -40,
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH"
+            }
+        }
+    ],
+    "name": "SixIsland",
+    "dialogs": [
+        {
+            "title": "SixIsland_Text_SkyAtNightIsFantastic",
+            "id": "SixIsland_EventScript_Boy",
+            "text": "When you're this far away from the\ncity, the sky at night is fantastic."
+        },
+        {
+            "title": "SixIsland_Text_ThatWayToWaterPathRuinValley",
+            "id": "SixIsland_EventScript_Hiker",
+            "text": "Keep going this way and you'll get\nto the WATER PATH.\n\nStay on that and you'll get to\nthe RUIN VALLEY."
+        },
+        {
+            "title": "SixIsland_Text_IslandSign",
+            "id": "SixIsland_EventScript_IslandSign",
+            "text": "SIX ISLAND\nFortune Island of Aged Wisdom"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 7,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 11,
+            "dir": "down"
+        }
+    ]
+}

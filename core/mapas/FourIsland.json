@@ -1,0 +1,772 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland",
+    "meta": {
+        "layoutId": "LAYOUT_FOUR_ISLAND",
+        "sourceMapId": "MAP_FOUR_ISLAND",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 40
+    },
+    "start": {
+        "y": 6,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 34,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 29,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 8,
+            "w": 25,
+            "h": 4,
+            "x": 23
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 12,
+            "w": 14,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 12,
+            "w": 9,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 13,
+            "w": 12,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 13,
+            "w": 7,
+            "h": 27,
+            "x": 41
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 10,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 12,
+            "h": 4,
+            "x": 29
+        },
+        {
+            "y": 17,
+            "w": 10,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 4,
+            "x": 38
+        },
+        {
+            "y": 20,
+            "w": 6,
+            "h": 4,
+            "x": 32
+        },
+        {
+            "y": 21,
+            "w": 2,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 23,
+            "w": 5,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 7,
+            "x": 16
+        },
+        {
+            "y": 24,
+            "w": 9,
+            "h": 3,
+            "x": 20
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 4,
+            "x": 37
+        },
+        {
+            "y": 27,
+            "w": 4,
+            "h": 13,
+            "x": 5
+        },
+        {
+            "y": 27,
+            "w": 3,
+            "h": 13,
+            "x": 12
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 1,
+            "x": 35
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 12,
+            "x": 31
+        },
+        {
+            "y": 28,
+            "w": 2,
+            "h": 2,
+            "x": 34
+        },
+        {
+            "y": 28,
+            "w": 2,
+            "h": 2,
+            "x": 38
+        },
+        {
+            "y": 29,
+            "w": 3,
+            "h": 11,
+            "x": 9
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 11,
+            "x": 37
+        },
+        {
+            "y": 30,
+            "w": 12,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 10,
+            "x": 38
+        },
+        {
+            "y": 31,
+            "w": 11,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 31,
+            "w": 5,
+            "h": 9,
+            "x": 32
+        },
+        {
+            "y": 31,
+            "w": 2,
+            "h": 9,
+            "x": 39
+        },
+        {
+            "y": 32,
+            "w": 3,
+            "h": 8,
+            "x": 15
+        },
+        {
+            "y": 33,
+            "w": 7,
+            "h": 7,
+            "x": 24
+        },
+        {
+            "y": 35,
+            "w": 3,
+            "h": 5,
+            "x": 18
+        },
+        {
+            "y": 36,
+            "w": 3,
+            "h": 4,
+            "x": 21
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland-0",
+            "x": 16,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FOUR_ISLAND_DAYCARE_MAN",
+                "script": "FourIsland_EventScript_DaycareMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-1",
+            "x": 12,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_DODUO",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-2",
+            "x": 13,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_F",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-3",
+            "x": 14,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-4",
+            "x": 17,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_PSYDUCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-5",
+            "x": 26,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_EventScript_OldWoman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-6",
+            "x": 5,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-FourIsland-7",
+            "x": 5,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_EventScript_ItemStarPiece",
+                "flag": "FLAG_HIDE_FOUR_ISLAND_STAR_PIECE"
+            }
+        },
+        {
+            "id": "npc-FourIsland-8",
+            "x": 32,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_EventScript_ItemStardust",
+                "flag": "FLAG_HIDE_FOUR_ISLAND_STARDUST"
+            }
+        },
+        {
+            "id": "npc-FourIsland-9",
+            "x": 8,
+            "y": 25,
+            "sprite": "OBJ_EVENT_GFX_BLUE",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FOUR_ISLAND_RIVAL",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_FOUR_ISLAND_RIVAL"
+            }
+        },
+        {
+            "id": "npc-FourIsland-10",
+            "x": 36,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland-11",
+            "x": 31,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_PokemonDayCare",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_POKEMON_DAY_CARE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_HOUSE1",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 38,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_IcefallCave_Entrance",
+                "x": 17,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-5",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_LoreleisHouse",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_LORELEIS_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-6",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_HOUSE2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FourIsland-7",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 28,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_Harbor",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_HARBOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FourIsland-8",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_MART",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "FourIsland",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        },
+        {
+            "title": "DayCare_Text_ImDaycareManSpeakToMyWife",
+            "id": "FourIsland_EventScript_DaycareMan",
+            "text": "I'm the DAY-CARE MAN.\n\nI help take care of the precious\nPOKéMON of TRAINERS.\n\nIf you'd like me to raise your\nPOKéMON, have a word with my wife."
+        },
+        {
+            "title": "FourIsland_Text_MadeSlushieUsingIcefallCaveIce",
+            "id": "FourIsland_EventScript_FatMan",
+            "text": "Ooh, chilly!\n\nI made a slushie using ice I\nshaved inside ICEFALL CAVE.\n\nIt's chilly and tasty!"
+        },
+        {
+            "title": "FourIsland_Text_IslandSign",
+            "id": "FourIsland_EventScript_IslandSign",
+            "text": "FOUR ISLAND\nThe Warm, Blue, Floe Island"
+        },
+        {
+            "title": "FourIsland_EventScript_ItemStardust",
+            "id": "FourIsland_EventScript_ItemStardust",
+            "text": "TODO: FourIsland_EventScript_ItemStardust"
+        },
+        {
+            "title": "FourIsland_EventScript_ItemStarPiece",
+            "id": "FourIsland_EventScript_ItemStarPiece",
+            "text": "TODO: FourIsland_EventScript_ItemStarPiece"
+        },
+        {
+            "title": "FourIsland_Text_LoreleiHasLotsOfStuffedDolls",
+            "id": "FourIsland_EventScript_LittleGirl",
+            "text": "Oh, you found me!\nPlease don't tell LORELEI.\n\nDid you know that LORELEI has lots\nand lots of stuffed dolls?\n\nEvery time she comes back to\nFOUR ISLAND, her collection grows!"
+        },
+        {
+            "title": "FourIsland_Text_LoreleisHouse",
+            "id": "FourIsland_EventScript_LoreleisHouseSign",
+            "text": "LORELEI'S HOUSE"
+        },
+        {
+            "title": "FourIsland_Text_LoreleiHasReturned",
+            "id": "FourIsland_EventScript_OldWoman",
+            "text": "LORELEI has returned.\n\nDid she find the city life too\nstressful, I wonder?"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,219 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "UndergroundPath_EastEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_UNDERGROUND_PATH_ENTRANCE",
+        "sourceMapId": "MAP_UNDERGROUND_PATH_EAST_ENTRANCE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-UndergroundPath_EastEntrance-0",
+            "x": 5,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "UndergroundPath_EastEntrance_EventScript_Woman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-UndergroundPath_EastEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8",
+                "x": 13,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE8",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_EastEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8",
+                "x": 13,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE8",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_EastEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8",
+                "x": 13,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE8",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_EastEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_EastWestTunnel",
+                "x": 76,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "UndergroundPath_EastEntrance",
+    "dialogs": [
+        {
+            "title": "UndergroundPath_EastEntrance_Text_DoYouGoToCeladonDeptStore",
+            "id": "UndergroundPath_EastEntrance_EventScript_Woman",
+            "text": "The DEPARTMENT STORE in CELADON\nhas a great selection.\n\nDo you go there very often?"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,206 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtEmber_RubyPath_B4F",
+    "meta": {
+        "layoutId": "LAYOUT_MT_EMBER_RUBY_PATH_B4F",
+        "sourceMapId": "MAP_MT_EMBER_RUBY_PATH_B4F",
+        "width": 18,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_MtEmber",
+        "height": 16
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 18,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 14,
+            "x": 16
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 15,
+            "w": 14,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-MtEmber_RubyPath_B4F-1",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_B5F",
+                "x": 11,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_B5F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtEmber_RubyPath_B4F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_B3F",
+                "x": 5,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_B3F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "MtEmber_RubyPath_B4F",
+    "dialogs": [
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleABC",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleABC",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleABC"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleComma",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleComma",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleComma"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleDEF",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleDEF",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleDEF"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleGHI",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleGHI",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleGHI"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleJKL",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleJKL",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleJKL"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleMNO",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleMNO",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleMNO"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BraillePeriod",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BraillePeriod",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BraillePeriod"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BraillePQRS",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BraillePQRS",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BraillePQRS"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleTUV",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleTUV",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleTUV"
+        },
+        {
+            "title": "MtEmber_RubyPath_B4F_EventScript_BrailleWXYZ",
+            "id": "MtEmber_RubyPath_B4F_EventScript_BrailleWXYZ",
+            "text": "TODO: MtEmber_RubyPath_B4F_EventScript_BrailleWXYZ"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,170 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "LavenderTown_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE5",
+        "sourceMapId": "MAP_LAVENDER_TOWN_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-LavenderTown_House1-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_House1_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_House1-1",
+            "x": 8,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_CUBONE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_House1_EventScript_Cubone",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-LavenderTown_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 5,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_House1-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 5,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_House1-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 5,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "LavenderTown_House1",
+    "dialogs": [
+        {
+            "title": "LavenderTown_House1_Text_RocketsKilledCubonesMother",
+            "id": "LavenderTown_House1_EventScript_CooltrainerF",
+            "text": "Those horrible ROCKETS!\nThey deserve no mercy!\n\nThat poor CUBONE's mother…\n\nIt was killed trying to escape from\nTEAM ROCKET."
+        },
+        {
+            "title": "LavenderTown_House1_Text_Cubone",
+            "id": "LavenderTown_House1_EventScript_Cubone",
+            "text": "CUBONE: Kyarugoo!"
+        }
+    ],
+    "jumps": []
+}

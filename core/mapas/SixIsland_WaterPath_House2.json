@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_WaterPath_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_SIX_ISLAND_WATER_PATH_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_WaterPath_House2-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_House2_EventScript_Man",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_WaterPath_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath",
+                "x": 11,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SixIsland_WaterPath_House2",
+    "dialogs": [
+        {
+            "title": "SixIsland_WaterPath_House2_Text_MyNeighborMeasuredMe",
+            "id": "SixIsland_WaterPath_House2_EventScript_Man",
+            "text": "My height is 67.0 inches on the\nbutton.\n\nI know it is this precisely because\nmy neighbor measured me."
+        }
+    ],
+    "jumps": []
+}

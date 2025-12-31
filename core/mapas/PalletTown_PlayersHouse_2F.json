@@ -1,0 +1,94 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PalletTown_PlayersHouse_2F",
+    "meta": {
+        "layoutId": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_2F",
+        "sourceMapId": "MAP_PALLET_TOWN_PLAYERS_HOUSE_2F",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 6
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-PalletTown_PlayersHouse_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown_PlayersHouse_1F",
+                "x": 10,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PalletTown_PlayersHouse_2F",
+    "dialogs": [
+        {
+            "title": "PalletTown_PlayersHouse_2F_Text_PlayedWithNES",
+            "id": "PalletTown_PlayersHouse_2F_EventScript_NES",
+            "text": "{PLAYER} played with the NES.\n\n…Okay!\nIt's time to go!"
+        },
+        {
+            "title": "Text_PlayerBootedUpPC",
+            "id": "PalletTown_PlayersHouse_2F_EventScript_PC",
+            "text": "TODO: PalletTown_PlayersHouse_2F_EventScript_PC"
+        },
+        {
+            "title": "PalletTown_PlayersHouse_2F_Text_PressLRForHelp",
+            "id": "PalletTown_PlayersHouse_2F_EventScript_Sign",
+            "text": "It's a posted notice…\n\nIf you're confused, ask for HELP!\nPress the L or R Button!"
+        }
+    ],
+    "jumps": []
+}

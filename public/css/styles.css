@@ -1,0 +1,2534 @@
+:root {
+  --bg0: #070b16;
+  --bg1: #0b1224;
+  --glass: rgba(15, 23, 42, 0.72);
+  --glass2: rgba(2, 6, 23, 0.55);
+  --stroke: rgba(255, 255, 255, 0.10);
+  --stroke2: rgba(255, 255, 255, 0.06);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #facc15;
+  --ok: #22c55e;
+  --danger: #ef4444;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  --radius: 16px;
+}
+
+/* Scrollbars no tema (global) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) rgba(255, 255, 255, 0.05);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(900px 600px at 20% 10%, rgba(250, 204, 21, 0.10), transparent 60%),
+    radial-gradient(900px 700px at 80% 30%, rgba(34, 197, 94, 0.08), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  overflow: hidden;
+}
+
+.app-shell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 14px 24px;
+  border-bottom: 1px solid var(--stroke2);
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.35));
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.brand__logo img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+}
+
+/* Dashboard: pokébola maior na menubar */
+.page-dashboard .brand__logo img {
+  width: 52px;
+  height: 52px;
+}
+
+.brand__title {
+  font-family: "Press Start 2P", monospace;
+  font-size: 16px;
+  letter-spacing: 0.45px;
+  line-height: 1.15;
+}
+
+.brand__subtitle {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.topbar__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Dashboard: toggles dos painéis na menubar */
+.dash-panel-toggles {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dash-panel-toggles--topbar {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+/* Dashboard: espacinho entre o nome e os ícones */
+.page-dashboard .brand .dash-panel-toggles--topbar {
+  margin-left: 20px;
+}
+
+/* Dashboard: ícones (pc/engrenagem) maiores na menubar */
+.page-dashboard .dash-panel-toggles--topbar .btn__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/* Topbar (dashboard): ícones sem quadrado/fundo */
+.page-dashboard .dash-panel-toggles--topbar .btn {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 6px;
+}
+
+.page-dashboard .dash-panel-toggles--topbar .btn:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
+.page-dashboard .dash-panel-toggles--topbar .btn:active {
+  transform: translateY(0);
+}
+
+.btn--icon {
+  padding: 8px 10px;
+}
+
+.btn__icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Botão Pokédex (ícone maior, sem fundo) */
+.btn--pokedex {
+  background: transparent;
+  border-color: transparent;
+  padding: 6px;
+}
+
+.btn--pokedex:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
+.btn--pokedex .btn__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+/* Ícones fixos (Treinador) */
+.trainer-actions {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--stroke2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn--itemicon {
+  background: transparent;
+  border-color: transparent;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.btn--itemicon:hover {
+  background: transparent;
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+.btn--itemicon:active {
+  transform: translateY(0);
+}
+
+.btn--itemicon .btn__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* Compensação: PNG da Pokédex costuma ter mais “margem” interna */
+.btn--itemicon-pokedex .btn__icon {
+  transform: scale(2.10);
+  transform-origin: center;
+}
+
+/* Modal Mochila */
+.bag-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.bag-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.bag-item__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.04);
+  object-fit: contain;
+}
+
+.bag-item__name {
+  font-weight: 900;
+}
+
+.bag-item__sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Modal Loja */
+.shop-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.shop-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.shop-item__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.04);
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.shop-item__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.shop-item__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.shop-item__name {
+  font-weight: 900;
+}
+
+.shop-item__price {
+  font-weight: 900;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.shop-item__desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+  line-height: 1.35;
+}
+
+/* GRID PRINCIPAL */
+.main-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  gap: 12px;
+  padding: 12px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  overflow: auto;
+}
+
+.center {
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Dashboard: painéis laterais sob demanda (mais espaço para o mapa) */
+.page-dashboard .side.left,
+.page-dashboard .side.right {
+  display: none;
+}
+
+/* Dashboard: manter Treinador/Time sempre visíveis.
+   Quando as listas crescerem, rolar apenas dentro do widget (sem rolar a página nem interferir no mapa). */
+.page-dashboard .side.left {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.page-dashboard .side.left #trainerWidget,
+.page-dashboard .side.left #teamWidget {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.page-dashboard .side.left #trainerWidget {
+  flex: 2 1 0;
+}
+
+.page-dashboard .side.left #teamWidget {
+  flex: 1 1 0;
+}
+
+.page-dashboard .side.left #trainerWidget .widget__body,
+.page-dashboard .side.left #teamWidget .widget__body {
+  overflow: auto;
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+
+/* Dashboard: Time como vitrine fixa (6 slots) */
+.page-dashboard #teamWidget .poke-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.page-dashboard #teamWidget .poke-slot {
+  border-radius: 12px;
+  border: 1px solid var(--stroke2);
+  background: rgba(2, 6, 23, 0.45);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  text-align: center;
+  min-width: 0;
+}
+
+.page-dashboard #teamWidget .poke-slot--filled {
+  cursor: pointer;
+}
+
+.page-dashboard #teamWidget .poke-slot--empty {
+  opacity: 0.85;
+}
+
+.page-dashboard #teamWidget .poke-slot__badge {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+}
+
+.page-dashboard #teamWidget .poke-slot__badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.page-dashboard #teamWidget .poke-slot__name {
+  font-weight: 900;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.page-dashboard #teamWidget .poke-slot__sub {
+  font-size: 11px;
+  color: var(--muted);
+  width: 100%;
+}
+
+.page-dashboard #teamWidget .poke-slot__emptylabel {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.page-dashboard:not(.dash-left-open):not(.dash-right-open) .main-grid {
+  grid-template-columns: 1fr;
+}
+
+.page-dashboard.dash-left-open:not(.dash-right-open) .main-grid {
+  grid-template-columns: 320px 1fr;
+}
+
+.page-dashboard.dash-left-open .side.left {
+  display: flex;
+}
+
+.page-dashboard.dash-right-open:not(.dash-left-open) .main-grid {
+  grid-template-columns: 1fr 320px;
+}
+
+.page-dashboard.dash-right-open .side.right {
+  display: flex;
+}
+
+.page-dashboard.dash-left-open.dash-right-open .main-grid {
+  grid-template-columns: 320px 1fr 320px;
+}
+
+.page-dashboard.dash-left-open.dash-right-open .side.left,
+.page-dashboard.dash-left-open.dash-right-open .side.right {
+  display: flex;
+}
+
+@media (max-width: 980px) {
+  .page-dashboard .dash-panel-toggles {
+    display: none !important;
+  }
+}
+
+/* WIDGETS */
+.widget {
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.widget__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--stroke2);
+}
+
+.widget__title {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.widget__body {
+  padding: 12px;
+  transition: opacity 0.2s ease, max-height 0.2s ease;
+}
+
+/* Colapso */
+.widget--collapsed .widget__body {
+  display: none;
+}
+
+.widget--collapsed .widget__header {
+  border-bottom: none;
+}
+
+.widget-toggle span {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.widget--collapsed .widget-toggle span {
+  transform: rotate(-90deg);
+}
+
+.pill {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #bbf7d0;
+}
+
+.pill--muted {
+  background: rgba(148, 163, 184, 0.10);
+  border-color: rgba(148, 163, 184, 0.20);
+  color: #cbd5e1;
+}
+
+/* BOTÕES */
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(250, 204, 21, 0.18);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(250, 204, 21, 0.22);
+  border-color: rgba(250, 204, 21, 0.25);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.btn--danger {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.22);
+}
+
+.btn--danger:hover {
+  background: rgba(239, 68, 68, 0.20);
+}
+
+.btn--small {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.btn--wide {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Atalhos do Treinador: mostrar só os ícones (sem quadrado do btn--ghost) */
+.trainer-actions .btn--itemicon.btn--ghost {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.trainer-actions .btn--itemicon.btn--ghost:hover {
+  background: transparent;
+  border: 0;
+}
+
+.trainer-actions .btn--itemicon:focus {
+  outline: none;
+}
+
+/* STATS */
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.stat {
+  background: rgba(2, 6, 23, 0.45);
+  border: 1px solid var(--stroke2);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.stat__label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.stat__value {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bar {
+  margin-top: 8px;
+}
+
+.bar__label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.bar__track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(34, 197, 94, 0.85), rgba(250, 204, 21, 0.75));
+}
+
+/* LISTA POKÉMON */
+.poke-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poke-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke2);
+  background: rgba(2, 6, 23, 0.45);
+}
+
+.poke-item__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.poke-badge {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  overflow: visible;
+}
+
+.poke-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.poke-item__mid {
+  flex: 1;
+  min-width: 0;
+}
+
+.poke-name {
+  font-weight: 800;
+}
+
+.poke-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(250, 204, 21, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.22);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Perfil do treinador (avatar + nome + HP) */
+.trainer-profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke2);
+  background: rgba(2, 6, 23, 0.45);
+  margin-bottom: 12px;
+}
+
+.trainer-avatar {
+  width: 74px;
+  height: 74px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  flex: 0 0 auto;
+}
+
+.trainer-profile__meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.trainer-name-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.trainer-name {
+  font-size: 16px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trainer-level {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(250, 204, 21, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.22);
+  white-space: nowrap;
+}
+
+/* Barra de vida (HP) */
+.hpbar {
+  margin-top: 8px;
+}
+
+.hpbar__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hpbar__label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.hpbar__value {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hpbar__track {
+  margin-top: 6px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.hpbar__fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(34, 197, 94, 0.90), rgba(250, 204, 21, 0.80));
+  transition: width .45s ease;
+}
+
+.hpbar__fill.is-low {
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.92), rgba(250, 204, 21, 0.72));
+}
+
+/* Barra compacta (para o card do Pokémon no time) */
+.hpbar--compact {
+  margin-top: 6px;
+}
+
+.hpbar--compact .hpbar__track {
+  height: 8px;
+}
+
+.err {
+  font-size: 12px;
+  color: #fecaca;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.20);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Seletores (modal treinador): avatar e inicial */
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pick-grid--avatars {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.pick-grid__option {
+  display: block;
+  cursor: pointer;
+}
+
+.pick-grid__option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pick-grid__tile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  border-radius: 14px;
+  border: none;
+  background: transparent;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+  height: 100%;
+}
+
+.pick-grid__tile:hover {
+  transform: translateY(-1px);
+  background: transparent;
+}
+
+.pick-grid__option input:checked+.pick-grid__tile {
+  background: transparent;
+}
+
+.pick-grid__imgwrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pick-grid__imgwrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .45));
+}
+
+.pick-grid__option input:checked+.pick-grid__tile .pick-grid__imgwrap {
+  outline: 2px solid rgba(250, 204, 21, 0.28);
+  outline-offset: 2px;
+}
+
+.pick-grid__meta {
+  padding: 0 2px;
+}
+
+.pick-grid__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pick-grid__name {
+  font-weight: 900;
+}
+
+.pick-grid__sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@media (max-width: 520px) {
+  .pick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pick-grid--avatars {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* MAPA */
+.map-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: rgba(2, 6, 23, 0.35);
+  border: 1px solid var(--stroke2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--stroke2);
+  background: rgba(2, 6, 23, 0.45);
+}
+
+.map-toolbar__left,
+.map-toolbar__right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.room-pill {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.20);
+}
+
+.mini {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ✅ agora a map-stage é uma "janela" rolável */
+.map-stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  /* <- rolagem */
+  padding: 12px;
+  /* <- espaço interno */
+  background: rgba(2, 6, 23, 0.20);
+
+  /* scroll mais bonito */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) rgba(255, 255, 255, 0.05);
+}
+
+.map-stage::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.map-stage::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.map-stage::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+
+.page-dashboard .map-stage {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ o canvas define o tamanho real do mapa */
+.map-canvas {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  box-sizing: border-box;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ✅ mapa em tamanho grande (rolável no desktop) */
+.map-img {
+  display: block;
+  width: 1600px;
+  /* ajuste se quiser: 1400, 1800, 2200... */
+  height: auto;
+  max-width: none;
+  max-height: none;
+}
+
+/* Dashboard: o mapa ocupa todo o espaço disponível da coluna central.
+   - Se a coluna central for menor que 1600px: mantém 1600px e rola.
+   - Se a coluna central for maior que 1600px: expande e preenche (sem "buracos"). */
+.page-dashboard .map-canvas {
+  width: 100%;
+  min-width: 1600px;
+}
+
+/* Core runtime (tiles) */
+.page-dashboard .core-map-canvas {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-game-wrap {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+#game {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: pixelated;
+  background: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+#editor-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#message {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  padding: 12px 14px;
+  background: rgba(9, 14, 22, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: pre-line;
+  z-index: 3;
+}
+
+#menu-overlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  min-width: 210px;
+  padding: 12px 14px;
+  background: rgba(9, 14, 22, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-line;
+  z-index: 4;
+}
+
+.page-dashboard .map-img {
+  width: 100%;
+}
+
+/* tokens cobrem exatamente o canvas */
+.tokens-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Overlays do mapa (eventos/regiões) */
+.map-overlay__shape {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.map-overlay__region {
+  border: 2px solid var(--stroke);
+  background: transparent;
+  border-radius: 999px;
+}
+
+.map-overlay__region--rect {
+  border-radius: 12px;
+}
+
+.map-overlay__region--circle {
+  border-radius: 999px;
+}
+
+.map-overlay__event {
+  border: 2px solid var(--accent);
+  background: transparent;
+}
+
+.map-overlay__event--circle {
+  border-radius: 999px;
+}
+
+.map-overlay__event--rect {
+  border-radius: 12px;
+}
+
+/* Tokens */
+.token {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+  user-select: none;
+  transition: left .18s linear, top .18s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.token__icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.token__icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.token__name {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.token--self .token__icon {
+  border-color: rgba(250, 204, 21, 0.35);
+  background: rgba(250, 204, 21, 0.14);
+}
+
+.token--other .token__icon {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.12);
+}
+
+/* vinheta no canvas */
+.map-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.45));
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--stroke2);
+  background: rgba(2, 6, 23, 0.45);
+}
+
+/* LOG */
+.log {
+  height: 180px;
+  overflow: auto;
+  font-size: 12px;
+  color: #cbd5e1;
+  padding-right: 6px;
+}
+
+.log .line {
+  padding: 6px 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.log .time {
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+/* TOGGLES */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(2, 6, 23, 0.45);
+  border: 1px solid var(--stroke2);
+  margin-bottom: 10px;
+}
+
+.toggle-title {
+  font-weight: 800;
+}
+
+.toggle-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 10px 0;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  display: inline-block;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  transition: .15s ease;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  transition: .15s ease;
+}
+
+.switch input:checked+.slider {
+  background: rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.25);
+}
+
+.switch input:checked+.slider:before {
+  left: 24px;
+  background: rgba(250, 204, 21, 0.95);
+}
+
+/* MOBILE */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 60;
+  gap: 10px;
+  background: rgba(2, 6, 23, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+
+.mobile-nav__btn {
+  flex: 1;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mobile-panel {
+  display: none;
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 70px;
+  max-height: 62vh;
+  transform: translateY(120%);
+  transition: transform .18s ease;
+  z-index: 55;
+  pointer-events: none;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.mobile-panel.is-open {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mobile-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--stroke2);
+}
+
+.mobile-panel__title {
+  font-weight: 900;
+}
+
+.mobile-panel__content {
+  padding: 12px;
+  overflow: auto;
+}
+
+/* MODAL (Eventos) */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 50;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--glass2);
+}
+
+.modal__panel {
+  position: absolute;
+  left: 50%;
+  top: 76px;
+  transform: translateX(-50%);
+  width: min(720px, calc(100% - 24px));
+  max-height: calc(100% - 110px);
+  overflow: auto;
+
+  /* scrollbar no tema */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) rgba(255, 255, 255, 0.05);
+}
+
+.modal__panel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.modal__panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.modal__panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+
+/* Modal: Encontro */
+.encounter-modal__body {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.encounter-modal__sprite {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .45));
+}
+
+.encounter-modal__meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.encounter-modal__name {
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+/* Modal: Batalha (estilo GBA) */
+.battle-modal__panel {
+  width: min(860px, calc(100% - 24px));
+}
+
+.battle-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.battle-ui__arena {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px;
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+
+  /* ===== AJUSTES DE SPRITES (BATALHA) =====
+    Dica: mexa só nesses valores para ajustar posição/tamanho.
+
+    --arena-height: altura fixa da arena (se o sprite aumentar, o background NÃO muda de tamanho/enquadramento).
+
+    --hud-bg-alpha: opacidade do fundo da caixa (HUD). (0 = transparente, 1 = sólido)
+
+    --enemy-hud-shift-x / --enemy-hud-shift-y: move a caixa do HUD do inimigo.
+    --player-hud-shift-x / --player-hud-shift-y: move a caixa do HUD do jogador.
+
+    --enemy-size: tamanho (largura/altura) do sprite do inimigo.
+    --enemy-shift-x: move o inimigo no eixo X (negativo = vai para esquerda, positivo = direita).
+    --enemy-shift-y: move o inimigo no eixo Y (negativo = sobe, positivo = desce).
+
+    --player-size: tamanho (largura/altura) do seu sprite.
+    --player-shift-x: move seu sprite no eixo X (negativo = esquerda, positivo = direita).
+    --player-shift-y: move seu sprite no eixo Y (negativo = sobe, positivo = desce).
+  */
+  --arena-height: 420px;
+  height: var(--arena-height);
+
+  --hud-bg-alpha: 0.32;
+
+  --enemy-hud-shift-x: 0px;
+  --enemy-hud-shift-y: 0px;
+  --player-hud-shift-x: 0px;
+  /* Desce a caixa do HUD do jogador (vida/nome/level) */
+  --player-hud-shift-y: 50px;
+
+  --enemy-size: 120px;
+  --enemy-shift-x: -120px;
+  --enemy-shift-y: 90px;
+  --player-size: 228px;
+  --player-shift-x: 15px;
+  --player-shift-y: 20px;
+
+  border-radius: var(--radius);
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.04);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.battle-ui__side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.battle-ui__side--enemy {
+  flex-direction: row;
+}
+
+.battle-ui__side--player {
+  flex-direction: row;
+}
+
+.battle-ui__sprite {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, .40));
+}
+
+/* Inimigo ~2/3 menor que o player (player ~66% maior) */
+.battle-ui__sprite--enemy {
+  width: var(--enemy-size);
+  height: var(--enemy-size);
+  transform: translate(var(--enemy-shift-x), var(--enemy-shift-y));
+}
+
+.battle-ui__sprite--player {
+  width: var(--player-size);
+  height: var(--player-size);
+  transform: translate(var(--player-shift-x), var(--player-shift-y));
+}
+
+.battle-ui__hud {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke2);
+  /* Fundo do HUD (mais opaco). Ajuste em --hud-bg-alpha dentro de .battle-ui__arena */
+  background: rgba(255, 255, 255, var(--hud-bg-alpha));
+  /* Texto escuro no HUD para contrastar com o fundo claro */
+  color: var(--bg0);
+  width: min(340px, 60%);
+}
+
+/* No HUD, a classe .mini vira texto escuro também (por padrão ela é cinza claro do tema) */
+.battle-ui__hud .mini {
+  color: var(--bg0);
+  opacity: 0.8;
+}
+
+/* Ajuste fino de posição dos HUDs (caixa de nome/vida/level) */
+.battle-ui__side--enemy .battle-ui__hud {
+  transform: translate(var(--enemy-hud-shift-x), var(--enemy-hud-shift-y));
+}
+
+.battle-ui__side--player .battle-ui__hud {
+  transform: translate(var(--player-hud-shift-x), var(--player-hud-shift-y));
+}
+
+.battle-ui__hudname {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.battle-ui__hudhp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.battle-ui__hpbar {
+  flex: 1;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.battle-ui__hpfill {
+  height: 100%;
+  width: 100%;
+  background: var(--ok);
+}
+
+.battle-ui__console {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.battle-ui__log {
+  white-space: pre-line;
+  min-height: 46px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.battle-ui__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.battle-ui__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.battle-ui__moves,
+.battle-ui__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.battle-ui__submenuhead {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.battle-ui__submenutitle {
+  font-weight: 900;
+}
+
+@media (max-width: 520px) {
+  .battle-ui__arena {
+    min-height: 360px;
+  }
+
+  /* Ajustes de sprite no mobile (tudo mais compacto) */
+  .battle-ui__arena {
+    --arena-height: 360px;
+    --hud-bg-alpha: 0.34;
+    --enemy-size: 80px;
+    --enemy-shift-x: -16px;
+    --enemy-shift-y: 0px;
+    --player-size: 240px;
+    --player-shift-x: -10px;
+    --player-shift-y: 22px;
+
+    /* Se quiser reposicionar os HUDs no mobile, mexa aqui */
+    --enemy-hud-shift-x: 0px;
+    --enemy-hud-shift-y: 0px;
+    --player-hud-shift-x: 0px;
+    --player-hud-shift-y: 20px;
+  }
+
+  .battle-ui__sprite {
+    width: 150px;
+    height: 150px;
+  }
+
+  .battle-ui__hud {
+    width: min(280px, 66%);
+  }
+
+  .battle-ui__moves,
+  .battle-ui__items {
+    grid-template-columns: 1fr;
+  }
+
+  .battle-ui__log {
+    font-size: 11px;
+  }
+}
+
+/* Modal Pokédex */
+.pokedex-modal__bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pokedex-modal__input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  background: var(--glass2);
+  color: var(--text);
+  outline: none;
+}
+
+.pokedex-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.pokedex-card {
+  position: relative;
+  padding: 14px;
+  border-radius: var(--radius);
+  --typeColor: var(--muted);
+  border: 1px solid color-mix(in oklab, var(--typeColor) 34%, var(--stroke2));
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Cores por tipo (apenas tokens do tema) */
+.pokedex-card.type-normal {
+  --typeColor: var(--muted);
+}
+
+.pokedex-card.type-fire {
+  --typeColor: var(--danger);
+}
+
+.pokedex-card.type-water {
+  --typeColor: color-mix(in oklab, var(--accent) 55%, var(--muted));
+}
+
+.pokedex-card.type-electric {
+  --typeColor: var(--accent);
+}
+
+.pokedex-card.type-grass {
+  --typeColor: var(--ok);
+}
+
+.pokedex-card.type-ice {
+  --typeColor: color-mix(in oklab, var(--text) 55%, var(--accent));
+}
+
+.pokedex-card.type-fighting {
+  --typeColor: color-mix(in oklab, var(--danger) 70%, var(--accent));
+}
+
+.pokedex-card.type-poison {
+  --typeColor: color-mix(in oklab, var(--danger) 55%, var(--muted));
+}
+
+.pokedex-card.type-ground {
+  --typeColor: color-mix(in oklab, var(--accent) 65%, var(--muted));
+}
+
+/* Modal Pokédex (Detalhes) */
+.pokedex-details__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.pokedex-details__art {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .45));
+  flex: 0 0 auto;
+}
+
+.pokedex-details__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.pokedex-details__meta {
+  align-items: center;
+}
+
+.pokedex-details__name {
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.pokedex-details__sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pokedex-details__list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokedex-details__section {
+  margin-top: 12px;
+}
+
+.pokedex-details__label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.pokedex-details__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.pokedex-details__stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--stroke2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pokedex-details__statname {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pokedex-details__statvalue {
+  font-weight: 800;
+}
+
+.pokedex-card.type-flying {
+  --typeColor: color-mix(in oklab, var(--text) 65%, var(--ok));
+}
+
+.pokedex-card.type-psychic {
+  --typeColor: color-mix(in oklab, var(--accent) 65%, var(--danger));
+}
+
+.pokedex-card.type-bug {
+  --typeColor: color-mix(in oklab, var(--ok) 65%, var(--accent));
+}
+
+.pokedex-card.type-rock {
+  --typeColor: color-mix(in oklab, var(--muted) 70%, var(--accent));
+}
+
+.pokedex-card.type-ghost {
+  --typeColor: color-mix(in oklab, var(--muted) 65%, var(--danger));
+}
+
+.pokedex-card.type-dragon {
+  --typeColor: color-mix(in oklab, var(--danger) 55%, var(--ok));
+}
+
+.pokedex-card.type-dark {
+  --typeColor: color-mix(in oklab, var(--muted) 85%, var(--stroke));
+}
+
+.pokedex-card.type-steel {
+  --typeColor: color-mix(in oklab, var(--text) 40%, var(--muted));
+}
+
+.pokedex-card.type-fairy {
+  --typeColor: color-mix(in oklab, var(--accent) 55%, var(--text));
+}
+
+.pokedex-card__number {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--stroke2);
+  color: var(--text);
+  opacity: .9;
+  font-weight: 800;
+}
+
+.pokedex-card__imgwrap {
+  width: 140px;
+  height: 140px;
+  margin: 16px auto 0;
+  border-radius: 999px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokedex-card__imgwrap img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.pokedex-card__name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.pokedex-card__types {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokedex-badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke2);
+  background: rgba(255, 255, 255, 0.06);
+  opacity: .95;
+}
+
+/* NEARBY POKEMON (Pokémon Avistados) */
+.nearby-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.nearby-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--stroke2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  animation: slideInRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nearby-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent);
+  transform: translateX(-2px);
+}
+
+.nearby-card__sprite {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+.nearby-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nearby-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.nearby-card__meta {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nearby-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(250, 204, 21, 0.15);
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.nearby-card__time {
+  font-size: 10px;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.nearby-card__remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 50%;
+  color: var(--danger);
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nearby-card:hover .nearby-card__remove {
+  opacity: 1;
+}
+
+.nearby-card__remove:hover {
+  background: rgba(239, 68, 68, 0.4);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1120px) {
+  .main-grid {
+    grid-template-columns: 300px 1fr 300px;
+  }
+}
+
+/* ✅ no mobile: mapa volta a “caber” (sem precisar rolar muito) */
+@media (max-width: 980px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-panel {
+    display: flex;
+  }
+
+  .center {
+    min-height: calc(100vh - 70px - 60px);
+  }
+
+  .map-stage {
+    padding: 6px;
+  }
+
+  .map-img {
+    width: 100vw;
+    /* encaixa */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ================================================
+   BATTLE MODAL - ESTILO POKÉMON FIRERED (GBA)
+   ================================================ */
+
+.battle-firered {
+  width: 68vw !important;
+  /* reduzir um pouco mais a largura */
+  max-width: 900px !important;
+  /* manter limite menor para desktops */
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  padding: 0;
+  font-family: "Press Start 2P", monospace;
+  max-height: 85vh;
+  /* dar um pouco mais de altura útil */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Arena de Batalha */
+.battle-firered__arena {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  /* aumentar altura da arena */
+  background: linear-gradient(180deg, #c8f0ff 0%, #88d0f0 40%, #50b080 70%, #30a050 100%);
+  background-size: cover;
+  /* preencher toda a arena */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 2px solid #000;
+  gap: 20px;
+}
+
+/* Pokémon Inimigo (topo esquerdo) */
+.battle-firered__enemy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* info box à esquerda, sprite à direita */
+  gap: 12px;
+  position: relative;
+  height: 50%;
+  /* reservar metade superior da arena */
+  overflow: visible;
+}
+
+/* Pokémon do Jogador (embaixo direita) */
+.battle-firered__player {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  /* jogador no canto esquerdo */
+  gap: 12px;
+  flex-direction: row;
+  /* sprite à esquerda, info à direita */
+  position: relative;
+  height: 50%;
+  /* reservar metade inferior da arena */
+  overflow: visible;
+}
+
+.battle-firered__sprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.battle-firered__platform {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 60%, rgba(0, 0, 0, 0.0) 100%);
+  border-radius: 50% / 45%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.battle-firered__platform--enemy {
+  right: 24px;
+  /* plataforma do inimigo à direita */
+  bottom: -2px;
+  /* descer mais 6px */
+}
+
+.battle-firered__platform--player {
+  left: 24px;
+  /* plataforma do jogador à esquerda */
+  bottom: 16px;
+}
+
+.battle-firered__sprite--enemy {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  position: absolute;
+  right: 42px;
+  /* mover mais 4px à esquerda (total 8px) */
+  bottom: 38px;
+  /* descer mais 6px (total 12px) */
+}
+
+.battle-firered__sprite--player {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
+  left: 34px;
+  /* mover mais 4px para a direita (total 8px) */
+  bottom: 48px;
+}
+
+/* Caixa de Info do Pokémon */
+.battle-firered__info-box {
+  background: linear-gradient(180deg, #f8f8f8 0%, #e8e8e8 100%);
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 8px 12px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6), 0 3px 0 rgba(0, 0, 0, 0.3);
+  min-width: 150px;
+  position: absolute;
+  /* posicionamento oposto ao sprite */
+  z-index: 3;
+  /* acima de plataformas e sprites */
+}
+
+/* HP box em lados opostos aos sprites */
+.battle-firered__enemy .battle-firered__info-box {
+  left: 16px;
+  top: 8px;
+}
+
+.battle-firered__player .battle-firered__info-box {
+  right: 16px;
+  bottom: 8px;
+}
+
+.battle-firered__name {
+  font-size: 10px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.battle-firered__level {
+  font-size: 9px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.battle-firered__hpbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.battle-firered__hplabel {
+  font-size: 8px;
+  color: #f87820;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  min-width: 20px;
+}
+
+.battle-firered__hptrack {
+  flex: 1;
+  height: 6px;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.battle-firered__hpfill {
+  height: 100%;
+  background: linear-gradient(180deg, #50d850 0%, #00b800 100%);
+  transition: width 0.4s ease-out, background 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.battle-firered__hpfill[data-percent="mid"] {
+  background: linear-gradient(180deg, #f8d030 0%, #f0a000 100%);
+}
+
+.battle-firered__hpfill[data-percent="low"] {
+  background: linear-gradient(180deg, #f84040 0%, #c00000 100%);
+}
+
+.battle-firered__hptext {
+  font-size: 8px;
+  color: #000;
+  margin-top: 2px;
+}
+
+/* UI Box (Texto + Menu) */
+.battle-firered__ui {
+  position: relative;
+  background: var(--glass2);
+  /* integrar com tema da aplicação */
+  border-top: 2px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  flex: 1;
+  overflow: visible;
+  z-index: 10;
+}
+
+.battle-firered__textbox {
+  background: color-mix(in oklab, var(--glass2) 80%, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  min-height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.battle-firered__textbox p {
+  margin: 0;
+  color: var(--text);
+  text-shadow: none;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Menu Dinâmico */
+.battle-firered__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-height: auto;
+}
+
+.battle-firered__menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+  flex: 1;
+}
+
+.battle-firered__menu--moves {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.battle-firered__btn {
+  background: rgba(34, 197, 94, 0.18);
+  /* verde do tema */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 8px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  color: var(--text);
+  text-shadow: none;
+  cursor: pointer;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+  box-shadow: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.battle-firered__btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: rgba(34, 197, 94, 0.22);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.battle-firered__btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.battle-firered__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.battle-firered__btn--back {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.22);
+  grid-column: 1 / -1;
+  flex-shrink: 0;
+}
+
+.battle-firered__btn--back:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.20);
+}
+
+/* Grid de ataques */
+.battle-firered__moves-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  grid-column: 1 / -1;
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .battle-firered {
+    width: 95vw !important;
+  }
+
+  .battle-firered__arena {
+    height: 240px;
+    padding: 15px;
+  }
+
+  .battle-firered__sprite--enemy {
+    width: 60px;
+    height: 60px;
+  }
+
+  .battle-firered__sprite--player {
+    width: 80px;
+    height: 80px;
+  }
+
+  .battle-firered__info-box {
+    min-width: 120px;
+    padding: 6px 10px;
+  }
+
+  .battle-firered__name {
+    font-size: 9px;
+  }
+
+  .battle-firered__btn {
+    font-size: 8px;
+    padding: 8px 6px;
+  }
+}
+
+
+
+
+/* CHAT STYLES */
+.chat-msg {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.chat-msg--npc {
+  align-self: flex-start;
+  background: var(--surface2);
+  color: var(--text);
+  border-bottom-left-radius: 2px;
+}
+
+.chat-msg--player {
+  align-self: flex-end;
+  background: var(--accent);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.chat-msg--system {
+  align-self: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  background: transparent;
+  padding: 4px;
+}

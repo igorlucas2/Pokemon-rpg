@@ -1,0 +1,143 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TrainerTower_Roof",
+    "meta": {
+        "layoutId": "LAYOUT_TRAINER_TOWER_ROOF",
+        "sourceMapId": "MAP_TRAINER_TOWER_ROOF",
+        "width": 18,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_TrainerTower",
+        "height": 16
+    },
+    "start": {
+        "y": 6,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 18,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 10,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 7,
+            "x": 2
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 10,
+            "w": 12,
+            "h": 6,
+            "x": 3
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TrainerTower_Roof-0",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_TRAINER_TOWER_DUDE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TrainerTower_EventScript_Owner",
+                "flag": "FLAG_TEMP_6"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-TrainerTower_Roof-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TrainerTower_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRAINER_TOWER_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-TrainerTower_Roof-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TrainerTower_8F",
+                "x": 15,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRAINER_TOWER_8F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "TrainerTower_Roof",
+    "dialogs": [
+        {
+            "title": "TrainerTower_EventScript_Owner",
+            "id": "TrainerTower_EventScript_Owner",
+            "text": "TODO: TrainerTower_EventScript_Owner"
+        }
+    ],
+    "jumps": []
+}

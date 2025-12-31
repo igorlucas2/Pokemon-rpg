@@ -1,0 +1,717 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_WaterPath",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_WATER_PATH",
+        "sourceMapId": "MAP_SIX_ISLAND_WATER_PATH",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 100
+    },
+    "start": {
+        "y": 4,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 10,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 8,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 8,
+            "x": 17
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 12,
+            "w": 5,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 33,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 32,
+            "x": 1
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 31,
+            "x": 2
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 3,
+            "x": 6
+        },
+        {
+            "y": 18,
+            "w": 5,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 21,
+            "w": 4,
+            "h": 79,
+            "x": 20
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 24,
+            "w": 3,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 24,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 25,
+            "w": 2,
+            "h": 25,
+            "x": 5
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 26,
+            "x": 12
+        },
+        {
+            "y": 25,
+            "w": 3,
+            "h": 41,
+            "x": 17
+        },
+        {
+            "y": 26,
+            "w": 4,
+            "h": 35,
+            "x": 13
+        },
+        {
+            "y": 27,
+            "w": 5,
+            "h": 23,
+            "x": 7
+        },
+        {
+            "y": 48,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 49,
+            "w": 2,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 50,
+            "w": 2,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 51,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 51,
+            "w": 1,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 54,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 54,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 55,
+            "w": 7,
+            "h": 34,
+            "x": 0
+        },
+        {
+            "y": 59,
+            "w": 1,
+            "h": 26,
+            "x": 7
+        },
+        {
+            "y": 63,
+            "w": 1,
+            "h": 22,
+            "x": 8
+        },
+        {
+            "y": 66,
+            "w": 2,
+            "h": 34,
+            "x": 18
+        },
+        {
+            "y": 68,
+            "w": 6,
+            "h": 5,
+            "x": 9
+        },
+        {
+            "y": 69,
+            "w": 1,
+            "h": 5,
+            "x": 15
+        },
+        {
+            "y": 73,
+            "w": 4,
+            "h": 27,
+            "x": 9
+        },
+        {
+            "y": 77,
+            "w": 1,
+            "h": 8,
+            "x": 17
+        },
+        {
+            "y": 78,
+            "w": 4,
+            "h": 22,
+            "x": 13
+        },
+        {
+            "y": 88,
+            "w": 1,
+            "h": 12,
+            "x": 17
+        },
+        {
+            "y": 92,
+            "w": 9,
+            "h": 8,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_WaterPath-0",
+            "x": 12,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Rose",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-1",
+            "x": 11,
+            "y": 52,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Edward",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-2",
+            "x": 13,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Samir",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-3",
+            "x": 15,
+            "y": 45,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Denise",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-4",
+            "x": 6,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Miu",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-5",
+            "x": 7,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Mia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-6",
+            "x": 11,
+            "y": 76,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_Earl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-7",
+            "x": 17,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_ItemElixir",
+                "flag": "FLAG_HIDE_SIX_ISLAND_WATER_PATH_ELIXIR"
+            }
+        },
+        {
+            "id": "npc-SixIsland_WaterPath-8",
+            "x": 17,
+            "y": 87,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_WaterPath_EventScript_ItemDragonScale",
+                "flag": "FLAG_HIDE_SIX_ISLAND_WATER_PATH_DRAGON_SCALE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_WaterPath-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath_House1",
+                "x": 3,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH_HOUSE1",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SixIsland_WaterPath-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH_HOUSE2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-SixIsland_WaterPath-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH"
+            }
+        },
+        {
+            "id": "conn-SixIsland_WaterPath-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 40,
+                "w": 1,
+                "h": 30
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland",
+                "connection": {
+                    "direction": "left",
+                    "offset": 40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 40,
+                "destMap": "MAP_SIX_ISLAND"
+            }
+        },
+        {
+            "id": "conn-SixIsland_WaterPath-left-3",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 80,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_RuinValley",
+                "connection": {
+                    "direction": "left",
+                    "offset": 80
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 80,
+                "destMap": "MAP_SIX_ISLAND_RUIN_VALLEY"
+            }
+        }
+    ],
+    "name": "SixIsland_WaterPath",
+    "dialogs": [
+        {
+            "title": "SixIsland_WaterPath_EventScript_Denise",
+            "id": "SixIsland_WaterPath_EventScript_Denise",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Denise"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Earl",
+            "id": "SixIsland_WaterPath_EventScript_Earl",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Earl"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Edward",
+            "id": "SixIsland_WaterPath_EventScript_Edward",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Edward"
+        },
+        {
+            "title": "SixIsland_WaterPath_Text_WantedUltimateHorn",
+            "id": "SixIsland_WaterPath_EventScript_HornWantedSign",
+            "text": "Wanted!\nThe Ultimate Horn!"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_ItemDragonScale",
+            "id": "SixIsland_WaterPath_EventScript_ItemDragonScale",
+            "text": "TODO: SixIsland_WaterPath_EventScript_ItemDragonScale"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_ItemElixir",
+            "id": "SixIsland_WaterPath_EventScript_ItemElixir",
+            "text": "TODO: SixIsland_WaterPath_EventScript_ItemElixir"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Mia",
+            "id": "SixIsland_WaterPath_EventScript_Mia",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Mia"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Miu",
+            "id": "SixIsland_WaterPath_EventScript_Miu",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Miu"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Rose",
+            "id": "SixIsland_WaterPath_EventScript_Rose",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Rose"
+        },
+        {
+            "title": "SixIsland_WaterPath_Text_RouteSign",
+            "id": "SixIsland_WaterPath_EventScript_RouteSign",
+            "text": "WATER PATH\nLeads to RUIN VALLEY"
+        },
+        {
+            "title": "SixIsland_WaterPath_EventScript_Samir",
+            "id": "SixIsland_WaterPath_EventScript_Samir",
+            "text": "TODO: SixIsland_WaterPath_EventScript_Samir"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 0,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 1,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 51,
+            "dir": "down"
+        }
+    ]
+}

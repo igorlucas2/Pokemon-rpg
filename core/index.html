@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor RPG</title>
+  <link rel="stylesheet" href="/core/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <section id="game-panel" class="panel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span class="badge">JOGO</span>
+          <div>
+            <div class="title">Mundo RPG</div>
+            <div class="subtitle">Tela do mapa</div>
+          </div>
+        </div>
+        <div class="panel-actions">
+          <a href="/admin/npcs" class="button"
+            style="text-decoration:none; padding:4px 8px; font-size:12px; background:#3b82f6; color:white; border-radius:4px; margin-right:8px;">🤖
+            Configurar NPCs</a>
+          <a href="/dashboard" class="button"
+            style="text-decoration:none; padding:4px 8px; font-size:12px; background:#64748b; color:white; border-radius:4px;">Voltar</a>
+          <span class="chip">1400x800</span>
+        </div>
+      </div>
+      <div id="game-wrap">
+        <canvas id="game" width="640" height="480"></canvas>
+        <div id="editor-overlay" aria-hidden="true"></div>
+        <div id="message" class="hidden" role="dialog" aria-live="polite"></div>
+      </div>
+      <div id="help">Mover: WASD ou setas. A: Z/Espaco. B: X/Esc. Start: Enter/M. Select: Tab. L/R: Q/E. Correr: Shift.
+        Clique ou arraste no mapa para selecionar areas.</div>
+    </section>
+
+    <aside id="admin-panel" class="panel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span class="badge">ADM</span>
+          <div>
+            <div class="title">Editor de Jogo</div>
+            <div class="subtitle">Editar colisores, eventos, NPCs, dialogos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <section class="card">
+          <div class="card-head">
+            <h3>Mundo</h3>
+            <div class="button-row">
+              <button id="save-map" type="button">Salvar alteracoes</button>
+            </div>
+          </div>
+          <div class="field-row">
+            <label>Mapa ativo
+              <select id="map-select"></select>
+            </label>
+            <label>Quadrado selecionado
+              <input id="selected-tile" type="text" readonly value="-">
+            </label>
+          </div>
+          <div class="status">Na primeira vez, selecione a pasta mapas.</div>
+          <div id="io-status" class="status"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>Ferramentas do Editor</h3>
+          </div>
+          <div class="field-row">
+            <label>Modo de insercao
+              <select id="placement-mode">
+                <option value="select">Selecionar</option>
+                <option value="collider">Adicionar colisor</option>
+                <option value="event">Adicionar evento</option>
+                <option value="npc">Adicionar NPC</option>
+              </select>
+            </label>
+            <label class="checkbox">
+              <input id="toggle-grid" type="checkbox" checked>
+              Mostrar grade
+            </label>
+          </div>
+          <div class="field-row">
+            <label class="checkbox">
+              <input id="toggle-colliders" type="checkbox">
+              Mostrar colisores
+            </label>
+            <label class="checkbox">
+              <input id="toggle-events" type="checkbox" checked>
+              Mostrar eventos
+            </label>
+            <label class="checkbox">
+              <input id="toggle-npcs" type="checkbox" checked>
+              Mostrar NPCs
+            </label>
+          </div>
+          <div class="status">Clique no mapa para posicionar quando um modo estiver ativo.</div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>Dialogos</h3>
+          </div>
+          <form id="dialog-form" class="field-grid">
+            <label>Nome <input id="dialog-title" type="text" placeholder="Introducao"></label>
+            <label class="full">Texto <textarea id="dialog-text" rows="3"
+                placeholder="Texto do dialogo"></textarea></label>
+            <button class="full" type="submit">Adicionar dialogo</button>
+          </form>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>Colisores</h3>
+          </div>
+          <form id="collider-form" class="field-grid">
+            <div class="status full">Use a selecao do mapa para definir a area do colisor.</div>
+            <button class="full" type="submit">Adicionar colisor na selecao</button>
+          </form>
+          <div id="collider-list" class="list"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>Eventos</h3>
+          </div>
+          <form id="event-form" class="field-grid">
+            <label>Tipo
+              <select id="event-type">
+                <option value="message">mensagem</option>
+                <option value="door">teleporte (porta/escada)</option>
+                <option value="dialog">dialogo</option>
+                <option value="pokecenter">pokecenter (server)</option>
+                <option value="pokemon_hunt">caçar pokemon (server)</option>
+                <option value="battle">batalha (server)</option>
+              </select>
+            </label>
+            <label class="full">Nome (opcional)
+              <input id="event-name" type="text" placeholder="Nome do evento">
+            </label>
+            <label class="checkbox">
+              <input id="event-once" type="checkbox" checked>
+              Disparar uma vez
+            </label>
+            <label class="full" id="event-trigger-wrap">Disparo
+              <select id="event-trigger">
+                <option value="enter">Ao entrar na area</option>
+                <option value="interact">Interagir (Z/Espaco)</option>
+                <option value="dblclick">Duplo clique</option>
+              </select>
+            </label>
+            <label class="full" id="event-message-wrap">Mensagem
+              <textarea id="event-text" rows="2" placeholder="Texto para mostrar"></textarea>
+            </label>
+            <label class="full" id="event-dialog-wrap">Nome do dialogo
+              <input id="event-dialog-name" type="text" placeholder="Introducao">
+            </label>
+            <label class="full" id="event-dialog-text-wrap">Texto do dialogo
+              <textarea id="event-dialog-text" rows="3" placeholder="Texto do dialogo"></textarea>
+            </label>
+            <label class="full" id="event-server-wrap">Payload (JSON)
+              <textarea id="event-payload" rows="4"
+                placeholder='{"hunt":{"pool":[{"pokemonId":1,"level":5,"rarity":"common"}]}}'></textarea>
+            </label>
+            <div class="field-row full" id="event-door-wrap">
+              <label>Mapa destino
+                <input id="event-target-map" type="text" list="map-ids" placeholder="overworld">
+              </label>
+              <label>X destino
+                <input id="event-target-x" type="number" step="1" value="0">
+              </label>
+              <label>Y destino
+                <input id="event-target-y" type="number" step="1" value="0">
+              </label>
+              <label>Direcao
+                <select id="event-target-facing">
+                  <option value="">manter</option>
+                  <option value="down">baixo</option>
+                  <option value="up">cima</option>
+                  <option value="left">esquerda</option>
+                  <option value="right">direita</option>
+                </select>
+              </label>
+              <div class="button-row full">
+                <button id="event-target-use-selection" class="ghost" type="button">Usar selecao atual</button>
+                <button id="event-target-use-saved" type="button">Usar destino salvo</button>
+              </div>
+              <div id="event-target-status" class="status full">Destino salvo: -</div>
+            </div>
+            <div class="status full">Use a selecao do mapa para definir a area do evento.</div>
+            <button class="full" type="submit">Adicionar evento na selecao</button>
+          </form>
+          <div class="status">Para editar um evento existente, de duplo clique na area dele.</div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>NPCs</h3>
+          </div>
+          <form id="npc-form" class="field-grid">
+            <label>ID <input id="npc-id" type="text" placeholder="npc-1"></label>
+            <label>Nome <input id="npc-name" type="text" placeholder="Guia"></label>
+            <label>Dialogo
+              <select id="npc-dialog"></select>
+            </label>
+            <label>Disparo
+              <select id="npc-trigger">
+                <option value="touch">Ao encostar</option>
+                <option value="dblclick">Duplo clique</option>
+              </select>
+            </label>
+            <label class="checkbox full">
+              <input id="npc-solid" type="checkbox">
+              Solido (bloqueia movimento)
+            </label>
+            <div class="status full">Use a selecao do mapa para posicionar o NPC.</div>
+            <button class="full" type="submit">Adicionar NPC</button>
+          </form>
+          <div id="npc-list" class="list"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h3>Itens</h3>
+          </div>
+          <form id="item-form" class="field-grid">
+            <label>ID <input id="item-id" type="text" placeholder="pocao"></label>
+            <label>Nome <input id="item-name" type="text" placeholder="Pocao"></label>
+            <label class="full">Descricao <textarea id="item-desc" rows="2"
+                placeholder="Descricao curta"></textarea></label>
+            <button class="full" type="submit">Adicionar item</button>
+          </form>
+          <div id="item-list" class="list"></div>
+        </section>
+      </div>
+    </aside>
+  </div>
+  <datalist id="map-ids"></datalist>
+  <div id="event-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="event-modal-title">Editar evento</h3>
+        <button id="event-modal-close" class="ghost" type="button">Fechar</button>
+      </div>
+      <div class="modal-body">
+        <div id="event-modal-area" class="status">Area: -</div>
+        <div class="button-row">
+          <button id="event-modal-apply-area" class="ghost" type="button">Aplicar selecao atual</button>
+        </div>
+        <div class="field-grid">
+          <label>Tipo
+            <select id="modal-event-type">
+              <option value="message">mensagem</option>
+              <option value="door">teleporte (porta/escada)</option>
+              <option value="dialog">dialogo</option>
+              <option value="pokecenter">pokecenter (server)</option>
+              <option value="pokemon_hunt">caçar pokemon (server)</option>
+              <option value="battle">batalha (server)</option>
+            </select>
+          </label>
+          <label class="full">Nome (opcional)
+            <input id="modal-event-name" type="text">
+          </label>
+          <label class="checkbox full">
+            <input id="modal-event-once" type="checkbox">
+            Disparar uma vez
+          </label>
+          <label class="full" id="modal-event-trigger-wrap">Disparo
+            <select id="modal-event-trigger">
+              <option value="enter">Ao entrar na area</option>
+              <option value="interact">Interagir (Z/Espaco)</option>
+              <option value="dblclick">Duplo clique</option>
+            </select>
+          </label>
+          <label class="full" id="modal-event-message-wrap">Mensagem
+            <textarea id="modal-event-text" rows="3"></textarea>
+          </label>
+          <label class="full" id="modal-event-dialog-wrap">Nome do dialogo
+            <input id="modal-event-dialog-name" type="text">
+          </label>
+          <label class="full" id="modal-event-dialog-text-wrap">Texto do dialogo
+            <textarea id="modal-event-dialog-text" rows="3"></textarea>
+          </label>
+          <label class="full" id="modal-event-server-wrap">Payload (JSON)
+            <textarea id="modal-event-payload" rows="4"></textarea>
+          </label>
+          <div class="field-row full" id="modal-event-door-wrap">
+            <label>Mapa destino
+              <input id="modal-event-target-map" type="text" list="map-ids">
+            </label>
+            <label>X destino
+              <input id="modal-event-target-x" type="number" step="1" value="0">
+            </label>
+            <label>Y destino
+              <input id="modal-event-target-y" type="number" step="1" value="0">
+            </label>
+            <label>Direcao
+              <select id="modal-event-target-facing">
+                <option value="">manter</option>
+                <option value="down">baixo</option>
+                <option value="up">cima</option>
+                <option value="left">esquerda</option>
+                <option value="right">direita</option>
+              </select>
+            </label>
+            <div class="button-row full">
+              <button id="modal-event-target-use-selection" class="ghost" type="button">Usar selecao atual</button>
+              <button id="modal-event-target-use-saved" type="button">Usar destino salvo</button>
+            </div>
+            <div id="modal-event-target-status" class="status full">Destino salvo: -</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="event-modal-delete" class="danger" type="button">Remover evento</button>
+        <button id="event-modal-save" type="button">Salvar alteracoes</button>
+      </div>
+    </div>
+  </div>
+  <script src="/core/world.js"></script>
+  <script src="/core/world.pokefirered.js"></script>
+  <script>
+    window.CORE_SAVE_ENDPOINT = "/admin/map/save";
+  </script>
+  <script src="/js/core-config.js"></script>
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  <script src="/core/game.js"></script>
+  <script>
+    // 🗺️ Carregar mapeamento de sprites de NPCs durante a inicialização
+    if (window.gameAPI && window.gameAPI.loadWorld) {
+      const originalLoadWorld = window.gameAPI.loadWorld;
+      window.gameAPI.loadWorld = function (...args) {
+        // Carregar mapeamento primeiro, depois carregar o mundo
+        return window.gameAPI.loadNpcSpriteMapping().then(() => {
+          return originalLoadWorld.apply(this, args);
+        });
+      };
+    }
+  </script>
+  <script src="/core/admin.js"></script>
+</body>
+
+</html>

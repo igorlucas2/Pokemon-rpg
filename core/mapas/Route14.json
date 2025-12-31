@@ -1,0 +1,569 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route14",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE14",
+        "sourceMapId": "MAP_ROUTE14",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_LavenderTown",
+        "height": 60
+    },
+    "start": {
+        "y": 5,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 7,
+            "h": 40,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 15,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 10,
+            "w": 13,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 14,
+            "w": 7,
+            "h": 16,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 6,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 16,
+            "x": 12
+        },
+        {
+            "y": 26,
+            "w": 4,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 30,
+            "x": 22
+        },
+        {
+            "y": 31,
+            "w": 4,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 24,
+            "x": 21
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 10,
+            "x": 12
+        },
+        {
+            "y": 45,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 48,
+            "w": 1,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 49,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 55,
+            "w": 21,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 57,
+            "w": 22,
+            "h": 3,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route14-0",
+            "x": 7,
+            "y": 37,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Gerald",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-1",
+            "x": 18,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Donald",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-2",
+            "x": 10,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Beck",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-3",
+            "x": 16,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Marlon",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-4",
+            "x": 7,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Isaac",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-5",
+            "x": 7,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Malik",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-6",
+            "x": 8,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Mitch",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-7",
+            "x": 7,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Carter",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-8",
+            "x": 10,
+            "y": 37,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 6,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Lukas",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-9",
+            "x": 18,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Benny",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-10",
+            "x": 7,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route14-11",
+            "x": 12,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-Route14-12",
+            "x": 1,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ROUTE14_BORDER_TREE",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-Route14-13",
+            "x": 13,
+            "y": 51,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Jan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route14-14",
+            "x": 12,
+            "y": 51,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route14_EventScript_Kiri",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-Route14-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 40,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route15",
+                "connection": {
+                    "direction": "left",
+                    "offset": 40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 40,
+                "destMap": "MAP_ROUTE15"
+            }
+        },
+        {
+            "id": "conn-Route14-right-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route13",
+                "connection": {
+                    "direction": "right",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 0,
+                "destMap": "MAP_ROUTE13"
+            }
+        }
+    ],
+    "name": "Route14",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route14_EventScript_Beck",
+            "id": "Route14_EventScript_Beck",
+            "text": "TODO: Route14_EventScript_Beck"
+        },
+        {
+            "title": "Route14_EventScript_Benny",
+            "id": "Route14_EventScript_Benny",
+            "text": "TODO: Route14_EventScript_Benny"
+        },
+        {
+            "title": "Route14_EventScript_Carter",
+            "id": "Route14_EventScript_Carter",
+            "text": "TODO: Route14_EventScript_Carter"
+        },
+        {
+            "title": "Route14_EventScript_Donald",
+            "id": "Route14_EventScript_Donald",
+            "text": "TODO: Route14_EventScript_Donald"
+        },
+        {
+            "title": "Route14_EventScript_Gerald",
+            "id": "Route14_EventScript_Gerald",
+            "text": "TODO: Route14_EventScript_Gerald"
+        },
+        {
+            "title": "Route14_EventScript_Isaac",
+            "id": "Route14_EventScript_Isaac",
+            "text": "TODO: Route14_EventScript_Isaac"
+        },
+        {
+            "title": "Route14_EventScript_Jan",
+            "id": "Route14_EventScript_Jan",
+            "text": "TODO: Route14_EventScript_Jan"
+        },
+        {
+            "title": "Route14_EventScript_Kiri",
+            "id": "Route14_EventScript_Kiri",
+            "text": "TODO: Route14_EventScript_Kiri"
+        },
+        {
+            "title": "Route14_EventScript_Lukas",
+            "id": "Route14_EventScript_Lukas",
+            "text": "TODO: Route14_EventScript_Lukas"
+        },
+        {
+            "title": "Route14_EventScript_Malik",
+            "id": "Route14_EventScript_Malik",
+            "text": "TODO: Route14_EventScript_Malik"
+        },
+        {
+            "title": "Route14_EventScript_Marlon",
+            "id": "Route14_EventScript_Marlon",
+            "text": "TODO: Route14_EventScript_Marlon"
+        },
+        {
+            "title": "Route14_EventScript_Mitch",
+            "id": "Route14_EventScript_Mitch",
+            "text": "TODO: Route14_EventScript_Mitch"
+        },
+        {
+            "title": "Route14_Text_RouteSign",
+            "id": "Route14_EventScript_RouteSign",
+            "text": "ROUTE 14\nWest to FUCHSIA CITY"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 8,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 1,
+            "y": 48,
+            "dir": "right"
+        },
+        {
+            "x": 0,
+            "y": 49,
+            "dir": "down"
+        }
+    ]
+}

@@ -1,0 +1,263 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_BikeShop",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CITY_BIKE_SHOP",
+        "sourceMapId": "MAP_CERULEAN_CITY_BIKE_SHOP",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_BikeShop",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_BikeShop-0",
+            "x": 9,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_BikeShop_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_BikeShop-1",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_BikeShop_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_BikeShop-2",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_BikeShop_EventScript_Woman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_BikeShop-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 13,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_BikeShop-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 13,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_BikeShop-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 13,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeruleanCity_BikeShop",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_BikeShop_Text_ShinyNewBicycle",
+            "id": "CeruleanCity_BikeShop_EventScript_Bicycle",
+            "text": "A shiny new BICYCLE!"
+        },
+        {
+            "title": "CeruleanCity_BikeShop_Text_WelcomeToBikeShop",
+            "id": "CeruleanCity_BikeShop_EventScript_Clerk",
+            "text": "Hi!\nWelcome to our BIKE SHOP.\n\nHave we got just the BIKE for\nyou!"
+        },
+        {
+            "title": "CeruleanCity_BikeShop_Text_CityBikeGoodEnoughForMe",
+            "id": "CeruleanCity_BikeShop_EventScript_Woman",
+            "text": "A plain city bike is good enough\nfor me.\n\nAfter all, you can't put a shopping\nbasket on a mountain bike."
+        },
+        {
+            "title": "CeruleanCity_BikeShop_Text_BikesCoolButExpensive",
+            "id": "CeruleanCity_BikeShop_EventScript_Youngster",
+            "text": "These bikes are cool, but they're\nway expensive!"
+        }
+    ],
+    "jumps": []
+}

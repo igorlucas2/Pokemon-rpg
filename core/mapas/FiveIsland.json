@@ -1,0 +1,323 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND",
+        "sourceMapId": "MAP_FIVE_ISLAND",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 20
+    },
+    "start": {
+        "y": 3,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 17,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 14,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 12,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 6,
+            "x": 23
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 3,
+            "x": 21
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 11,
+            "w": 7,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 8,
+            "x": 8
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 7,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 10,
+            "h": 7,
+            "x": 14
+        },
+        {
+            "y": 15,
+            "w": 3,
+            "h": 5,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland-0",
+            "x": 8,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_EventScript_Fisher",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland-1",
+            "x": 16,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_EventScript_BugCatcher",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland-2",
+            "x": 32,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_Harbor",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_HARBOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FiveIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_HOUSE1",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FiveIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_HOUSE2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-FiveIsland-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_WaterLabyrinth",
+                "connection": {
+                    "direction": "up",
+                    "offset": -48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": -48,
+                "destMap": "MAP_FIVE_ISLAND_WATER_LABYRINTH"
+            }
+        },
+        {
+            "id": "conn-FiveIsland-right-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_Meadow",
+                "connection": {
+                    "direction": "right",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 0,
+                "destMap": "MAP_FIVE_ISLAND_MEADOW"
+            }
+        }
+    ],
+    "name": "FiveIsland",
+    "dialogs": [
+        {
+            "title": "FiveIsland_Text_WeirdBuildingInMeadow",
+            "id": "FiveIsland_EventScript_BugCatcher",
+            "text": "Oh, this stinks. I wanted to play in\nthe MEADOW.\n\nBut they put up a weird building\non it, so I can't play there."
+        },
+        {
+            "title": "FiveIsland_Text_BeenGettingBusierAroundHere",
+            "id": "FiveIsland_EventScript_Fisher",
+            "text": "It's been getting busier around\nthese parts lately.\n\nI haven't been catching many good\nfish lately, either."
+        },
+        {
+            "title": "FiveIsland_Text_IslandSign",
+            "id": "FiveIsland_EventScript_IslandSign",
+            "text": "FIVE ISLAND\nChrono Island: Where Time Goes"
+        }
+    ],
+    "jumps": []
+}

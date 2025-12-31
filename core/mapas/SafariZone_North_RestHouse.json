@@ -1,0 +1,238 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SafariZone_North_RestHouse",
+    "meta": {
+        "layoutId": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
+        "sourceMapId": "MAP_SAFARI_ZONE_NORTH_REST_HOUSE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SafariZoneBuilding",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SafariZone_North_RestHouse-0",
+            "x": 3,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_North_RestHouse_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_North_RestHouse-1",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_North_RestHouse_EventScript_Scientist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_North_RestHouse-2",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_North_RestHouse_EventScript_Fisher",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_North_RestHouse-3",
+            "x": 11,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_North_RestHouse_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SafariZone_North_RestHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 43,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_North_RestHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 43,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_North_RestHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 43,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SafariZone_North_RestHouse",
+    "dialogs": [
+        {
+            "title": "SafariZone_North_RestHouse_EventScript_BaldingMan",
+            "id": "SafariZone_North_RestHouse_EventScript_BaldingMan",
+            "text": "TODO: SafariZone_North_RestHouse_EventScript_BaldingMan"
+        },
+        {
+            "title": "SafariZone_East_Text_PrizeInDeepestPartOfSafariZone",
+            "id": "SafariZone_North_RestHouse_EventScript_Fisher",
+            "text": "Go to the deepest part of the\nSAFARI ZONE. You will win a prize!"
+        },
+        {
+            "title": "SafariZone_East_Text_MyEeveeEvolvedIntoFlareon",
+            "id": "SafariZone_North_RestHouse_EventScript_Gentleman",
+            "text": "My EEVEE evolved into FLAREON.\n\nBut, a friend's EEVEE turned into a\nVAPOREON. I wonder why?"
+        },
+        {
+            "title": "SafariZone_East_Text_KeepAnyItemFoundOnSafari",
+            "id": "SafariZone_North_RestHouse_EventScript_Scientist",
+            "text": "You can keep any item you find in\nthe SAFARI ZONE.\n\nBut, you'll run out of time if you\ntry for all of them at once."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,701 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SeafoamIslands_B2F",
+    "meta": {
+        "layoutId": "LAYOUT_SEAFOAM_ISLANDS_B2F",
+        "sourceMapId": "MAP_SEAFOAM_ISLANDS_B2F",
+        "width": 38,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeafoamIslands",
+        "height": 24
+    },
+    "start": {
+        "y": 0,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 0,
+            "w": 10,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 2,
+            "x": 26
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 19,
+            "x": 2
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 5,
+            "x": 27
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 5,
+            "x": 34
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 5,
+            "x": 1
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 6,
+            "x": 35
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 7,
+            "x": 27
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 9,
+            "x": 28
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 9,
+            "x": 34
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 14,
+            "w": 10,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 2,
+            "x": 37
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 5,
+            "x": 35
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 19,
+            "w": 5,
+            "h": 3,
+            "x": 29
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 20,
+            "w": 16,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 20,
+            "w": 7,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 21,
+            "w": 2,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 21,
+            "w": 2,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 22,
+            "w": 4,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 22,
+            "w": 5,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 35
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SeafoamIslands_B2F-0",
+            "x": 22,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "FLAG_HIDE_SEAFOAM_B2F_BOULDER_1"
+            }
+        },
+        {
+            "id": "npc-SeafoamIslands_B2F-1",
+            "x": 30,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "FLAG_HIDE_SEAFOAM_B2F_BOULDER_2"
+            }
+        },
+        {
+            "id": "npc-SeafoamIslands_B2F-2",
+            "x": 18,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SeafoamIslands_B2F_EventScript_ItemBigPearl",
+                "flag": "FLAG_HIDE_SEAFOAM_ISLANDS_B2F_BIG_PEARL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SeafoamIslands_B2F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B3F",
+                "x": 8,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B3F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-2",
+            "type": "door",
+            "rect": {
+                "x": 32,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B3F",
+                "x": 31,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B3F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-3",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B3F",
+                "x": 31,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B3F",
+                "destWarpId": "2",
+                "elevation": 4
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-4",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 7,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-5",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 17,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "4",
+                "elevation": 4
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-6",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 25,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-7",
+            "type": "door",
+            "rect": {
+                "x": 32,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 32,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "6",
+                "elevation": 4
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-8",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 23,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-9",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B1F",
+                "x": 28,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B1F",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-10",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B3F",
+                "x": 23,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B3F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SeafoamIslands_B2F-11",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SeafoamIslands_B3F",
+                "x": 24,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEAFOAM_ISLANDS_B3F",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SeafoamIslands_B2F",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "SeafoamIslands_B2F_EventScript_ItemBigPearl",
+            "id": "SeafoamIslands_B2F_EventScript_ItemBigPearl",
+            "text": "TODO: SeafoamIslands_B2F_EventScript_ItemBigPearl"
+        }
+    ],
+    "jumps": []
+}

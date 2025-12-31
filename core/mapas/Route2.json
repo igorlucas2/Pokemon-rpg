@@ -1,0 +1,982 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route2",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE2",
+        "sourceMapId": "MAP_ROUTE2",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_ViridianCity",
+        "height": 80
+    },
+    "start": {
+        "y": 0,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 8,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 12,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 78,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 11,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 77,
+            "x": 22
+        },
+        {
+            "y": 6,
+            "w": 8,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 32,
+            "x": 2
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 31,
+            "x": 4
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 30,
+            "x": 8
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 37,
+            "x": 10
+        },
+        {
+            "y": 21,
+            "w": 5,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 38,
+            "x": 14
+        },
+        {
+            "y": 26,
+            "w": 2,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 26,
+            "w": 3,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 32,
+            "w": 3,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 32,
+            "w": 2,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 37,
+            "w": 3,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 37,
+            "w": 2,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 41,
+            "w": 1,
+            "h": 7,
+            "x": 16
+        },
+        {
+            "y": 41,
+            "w": 1,
+            "h": 7,
+            "x": 21
+        },
+        {
+            "y": 42,
+            "w": 4,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 46,
+            "w": 8,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 46,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 46,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 50,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 50,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 50,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 51,
+            "w": 2,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 51,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 51,
+            "w": 3,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 51,
+            "w": 2,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 55,
+            "w": 9,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 57,
+            "w": 2,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 57,
+            "w": 3,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 63,
+            "w": 10,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 67,
+            "w": 2,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 70,
+            "w": 7,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 70,
+            "w": 3,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 70,
+            "w": 2,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 70,
+            "w": 3,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 71,
+            "w": 2,
+            "h": 9,
+            "x": 14
+        },
+        {
+            "y": 72,
+            "w": 2,
+            "h": 8,
+            "x": 2
+        },
+        {
+            "y": 73,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 78,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 78,
+            "w": 6,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 79,
+            "w": 2,
+            "h": 1,
+            "x": 12
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route2-0",
+            "x": 16,
+            "y": 62,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-Route2-1",
+            "x": 15,
+            "y": 69,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-Route2-2",
+            "x": 11,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-Route2-3",
+            "x": 18,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_16"
+            }
+        },
+        {
+            "id": "npc-Route2-4",
+            "x": 17,
+            "y": 54,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route2_EventScript_ItemEther",
+                "flag": "FLAG_HIDE_ROUTE2_ETHER"
+            }
+        },
+        {
+            "id": "npc-Route2-5",
+            "x": 17,
+            "y": 64,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route2_EventScript_ItemParalyzeHeal",
+                "flag": "FLAG_HIDE_ROUTE2_PARALYZE_HEAL"
+            }
+        },
+        {
+            "id": "npc-Route2-6",
+            "x": 6,
+            "y": 85,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route2-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_NorthEntrance",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_NorthEntrance",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 51,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_SouthEntrance",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-4",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "DiglettsCave_NorthEntrance",
+                "x": 4,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_DIGLETTS_CAVE_NORTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-5",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 22,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route2-6",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 46,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_EastBuilding",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_EAST_BUILDING",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-7",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 41,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_EastBuilding",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_EAST_BUILDING",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-8",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 41,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_EastBuilding",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_EAST_BUILDING",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-9",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 46,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_EastBuilding",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_EAST_BUILDING",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2-10",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 51,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_SouthEntrance",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route2-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "connection": {
+                    "direction": "up",
+                    "offset": -12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": -12,
+                "destMap": "MAP_PEWTER_CITY"
+            }
+        },
+        {
+            "id": "conn-Route2-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 79,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "connection": {
+                    "direction": "down",
+                    "offset": -12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": -12,
+                "destMap": "MAP_VIRIDIAN_CITY"
+            }
+        }
+    ],
+    "name": "Route2",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route2_Text_DiglettsCave",
+            "id": "Route2_EventScript_DiglettsCaveSign",
+            "text": "DIGLETT'S CAVE"
+        },
+        {
+            "title": "Route2_EventScript_ItemEther",
+            "id": "Route2_EventScript_ItemEther",
+            "text": "TODO: Route2_EventScript_ItemEther"
+        },
+        {
+            "title": "Route2_EventScript_ItemParalyzeHeal",
+            "id": "Route2_EventScript_ItemParalyzeHeal",
+            "text": "TODO: Route2_EventScript_ItemParalyzeHeal"
+        },
+        {
+            "title": "Route2_Text_RouteSign",
+            "id": "Route2_EventScript_RouteSign",
+            "text": "ROUTE 2\nVIRIDIAN CITY - PEWTER CITY"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 16,
+            "y": 32,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 32,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 32,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 32,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 32,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 37,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 37,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 37,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 37,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 37,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 51,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 55,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 57,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 57,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 57,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 57,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 57,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 70,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 70,
+            "dir": "down"
+        }
+    ]
+}

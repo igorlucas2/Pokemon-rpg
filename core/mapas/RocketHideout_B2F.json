@@ -1,0 +1,588 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "RocketHideout_B2F",
+    "meta": {
+        "layoutId": "LAYOUT_ROCKET_HIDEOUT_B2F",
+        "sourceMapId": "MAP_ROCKET_HIDEOUT_B2F",
+        "width": 32,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 22
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 32,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 18,
+            "x": 31
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 6,
+            "x": 16
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 14,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 7,
+            "x": 6
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 14
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 3,
+            "x": 4
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 19,
+            "w": 4,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 19,
+            "w": 12,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 21,
+            "w": 7,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-RocketHideout_B2F-0",
+            "x": 20,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B2F_EventScript_Grunt",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B2F-1",
+            "x": 15,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B2F_EventScript_ItemXSpeed",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B2F-2",
+            "x": 2,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B2F_EventScript_ItemMoonStone",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B2F_MOON_STONE"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B2F-3",
+            "x": 5,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B2F_EventScript_ItemTM12",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B2F_TM12"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B2F-4",
+            "x": 0,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B2F_EventScript_ItemSuperPotion",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B2F_SUPER_POTION"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-RocketHideout_B2F-1",
+            "type": "door",
+            "rect": {
+                "x": 21,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_B3F",
+                "x": 18,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_B3F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B2F-2",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_B1F",
+                "x": 17,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_B1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B2F-3",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_B1F",
+                "x": 15,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_B1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B2F-4",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_ELEVATOR",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B2F-5",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_ELEVATOR",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "RocketHideout_B2F",
+    "dialogs": [
+        {
+            "title": "RocketHideout_B2F_Text_GruntPostBattle",
+            "id": "RocketHideout_B2F_EventScript_Grunt",
+            "text": "The TEAM ROCKET HQ has four\nunderground floors.\n\nThink you can reach the BOSS?"
+        },
+        {
+            "title": "RocketHideout_B2F_EventScript_ItemMoonStone",
+            "id": "RocketHideout_B2F_EventScript_ItemMoonStone",
+            "text": "TODO: RocketHideout_B2F_EventScript_ItemMoonStone"
+        },
+        {
+            "title": "RocketHideout_B2F_EventScript_ItemSuperPotion",
+            "id": "RocketHideout_B2F_EventScript_ItemSuperPotion",
+            "text": "TODO: RocketHideout_B2F_EventScript_ItemSuperPotion"
+        },
+        {
+            "title": "RocketHideout_B2F_EventScript_ItemTM12",
+            "id": "RocketHideout_B2F_EventScript_ItemTM12",
+            "text": "TODO: RocketHideout_B2F_EventScript_ItemTM12"
+        },
+        {
+            "title": "RocketHideout_B2F_EventScript_ItemXSpeed",
+            "id": "RocketHideout_B2F_EventScript_ItemXSpeed",
+            "text": "TODO: RocketHideout_B2F_EventScript_ItemXSpeed"
+        }
+    ],
+    "jumps": []
+}

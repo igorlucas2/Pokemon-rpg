@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_2F_Room6",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM2",
+        "sourceMapId": "MAP_SSANNE_2F_ROOM6",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_2F_Room6-0",
+            "x": 1,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_3",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room6_EventScript_Woman2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_2F_Room6-1",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room6_EventScript_Woman1",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_2F_Room6-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_2F_Corridor",
+                "x": 26,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_2F_CORRIDOR",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_2F_Room6",
+    "dialogs": [
+        {
+            "title": "SSAnne_2F_Room6_Text_CaptainIsAwfullySick",
+            "id": "SSAnne_2F_Room6_EventScript_Woman1",
+            "text": "The CAPTAIN said he's awfully sick.\nHe was all pale."
+        },
+        {
+            "title": "SSAnne_2F_Room6_Text_ManyPeopleGetSeasick",
+            "id": "SSAnne_2F_Room6_EventScript_Woman2",
+            "text": "I hear many people get seasick."
+        }
+    ],
+    "jumps": []
+}

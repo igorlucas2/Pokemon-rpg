@@ -1,0 +1,286 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_Kitchen",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_KITCHEN",
+        "sourceMapId": "MAP_SSANNE_KITCHEN",
+        "width": 16,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 14
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 16,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 11,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 11,
+            "x": 15
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 5,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 5,
+            "x": 11
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 11,
+            "w": 14,
+            "h": 2,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_Kitchen-0",
+            "x": 1,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-1",
+            "x": 6,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-2",
+            "x": 10,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef3",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-3",
+            "x": 8,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef4",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-4",
+            "x": 14,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef5",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-5",
+            "x": 14,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef6",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-6",
+            "x": 14,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CHEF",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_Chef7",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_Kitchen-7",
+            "x": 1,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_Kitchen_EventScript_ItemGreatBall",
+                "flag": "FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_Kitchen-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Corridor",
+                "x": 2,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_CORRIDOR",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SSAnne_Kitchen",
+    "dialogs": [
+        {
+            "title": "SSAnne_Kitchen_Text_BusyOutOfTheWay",
+            "id": "SSAnne_Kitchen_EventScript_Chef1",
+            "text": "You, mon petit!\nWe're busy here!\nOut of the way!"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_SawOddBerryInTrash",
+            "id": "SSAnne_Kitchen_EventScript_Chef2",
+            "text": "I saw an odd BERRY in the trash.\nI wonder what that was?"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_SoBusyImDizzy",
+            "id": "SSAnne_Kitchen_EventScript_Chef3",
+            "text": "I'm so busy I'm getting dizzy!\nYou have to give me room here!"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_IAmLeChefMainCourseIs",
+            "id": "SSAnne_Kitchen_EventScript_Chef4",
+            "text": "Er-hem!\nIndeed I am le CHEF!\n\nLe main course is"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_PeelSpudsEveryDay",
+            "id": "SSAnne_Kitchen_EventScript_Chef5",
+            "text": "Hum-de-hum-de-ho…\n\nI peel spuds every day!\nHum-hum…"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_HearAboutSnorlaxItsAGlutton",
+            "id": "SSAnne_Kitchen_EventScript_Chef6",
+            "text": "Did you hear about SNORLAX?\nIt's a glutton.\n\nNo other POKéMON eats and sleeps\nthe way SNORLAX can and does!"
+        },
+        {
+            "title": "SSAnne_Kitchen_Text_OnlyGetToPeelOnions",
+            "id": "SSAnne_Kitchen_EventScript_Chef7",
+            "text": "Snivel… Sniff…\n\nI only get to peel onions…\nSnivel…"
+        },
+        {
+            "title": "SSAnne_Kitchen_EventScript_ItemGreatBall",
+            "id": "SSAnne_Kitchen_EventScript_ItemGreatBall",
+            "text": "TODO: SSAnne_Kitchen_EventScript_ItemGreatBall"
+        }
+    ],
+    "jumps": []
+}

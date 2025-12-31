@@ -1,0 +1,192 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_Mart",
+    "meta": {
+        "layoutId": "LAYOUT_MART",
+        "sourceMapId": "MAP_THREE_ISLAND_MART",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Mart",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_Mart-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_Mart_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_Mart-1",
+            "x": 2,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_Mart_EventScript_Picnicker",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_Mart-2",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_Mart_EventScript_BugCatcher",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_Mart-3",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_Mart_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_Mart-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "x": 18,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ThreeIsland_Mart",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_Mart_Text_PeopleHealWithBerriesFromForest",
+            "id": "ThreeIsland_Mart_EventScript_BugCatcher",
+            "text": "I sometimes buy medicine here.\n\nBut a lot of people heal POKéMON\nwith BERRIES from BERRY FOREST.\n\nAfter all, BERRIES are free and\nthey never run out."
+        },
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "ThreeIsland_Mart_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "ThreeIsland_Mart_Text_TrueThatCeldadonDeptStoreBigger",
+            "id": "ThreeIsland_Mart_EventScript_Picnicker",
+            "text": "Is it true?\n\nCELADON DEPT. STORE is several\ntimes bigger than this shop?"
+        },
+        {
+            "title": "ThreeIsland_Mart_Text_BikersWereAboutToTrashMart",
+            "id": "ThreeIsland_Mart_EventScript_Youngster",
+            "text": "Those BIKERS were about to trash\nthis POKéMON MART.\n\nAm I glad they decided to leave!"
+        }
+    ],
+    "jumps": []
+}

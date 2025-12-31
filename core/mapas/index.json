@@ -1,0 +1,2981 @@
+{
+    "generatedAt":  "2025-12-28T00:00:44",
+    "maps":  [
+                 {
+                     "width":  14,
+                     "name":  "BattleColosseum_2P",
+                     "id":  "BattleColosseum_2P",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  14,
+                     "name":  "BattleColosseum_4P",
+                     "id":  "BattleColosseum_4P",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  30,
+                     "name":  "BirthIsland_Exterior",
+                     "id":  "BirthIsland_Exterior",
+                     "height":  30,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "BirthIsland_Harbor",
+                     "id":  "BirthIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  60,
+                     "name":  "CeladonCity",
+                     "id":  "CeladonCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_Condominiums_1F",
+                     "id":  "CeladonCity_Condominiums_1F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_Condominiums_2F",
+                     "id":  "CeladonCity_Condominiums_2F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_Condominiums_3F",
+                     "id":  "CeladonCity_Condominiums_3F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  14,
+                     "name":  "CeladonCity_Condominiums_Roof",
+                     "id":  "CeladonCity_Condominiums_Roof",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "CeladonCity_Condominiums_RoofRoom",
+                     "id":  "CeladonCity_Condominiums_RoofRoom",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_DepartmentStore_1F",
+                     "id":  "CeladonCity_DepartmentStore_1F",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_DepartmentStore_2F",
+                     "id":  "CeladonCity_DepartmentStore_2F",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_DepartmentStore_3F",
+                     "id":  "CeladonCity_DepartmentStore_3F",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_DepartmentStore_4F",
+                     "id":  "CeladonCity_DepartmentStore_4F",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_DepartmentStore_5F",
+                     "id":  "CeladonCity_DepartmentStore_5F",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  5,
+                     "name":  "CeladonCity_DepartmentStore_Elevator",
+                     "id":  "CeladonCity_DepartmentStore_Elevator",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "CeladonCity_DepartmentStore_Roof",
+                     "id":  "CeladonCity_DepartmentStore_Roof",
+                     "height":  14,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "CeladonCity_GameCorner",
+                     "id":  "CeladonCity_GameCorner",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  9,
+                     "name":  "CeladonCity_GameCorner_PrizeRoom",
+                     "id":  "CeladonCity_GameCorner_PrizeRoom",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "CeladonCity_Gym",
+                     "id":  "CeladonCity_Gym",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "CeladonCity_Hotel",
+                     "id":  "CeladonCity_Hotel",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeladonCity_House1",
+                     "id":  "CeladonCity_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_PokemonCenter_1F",
+                     "id":  "CeladonCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_PokemonCenter_2F",
+                     "id":  "CeladonCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeladonCity_Restaurant",
+                     "id":  "CeladonCity_Restaurant",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  40,
+                     "name":  "CeruleanCave_1F",
+                     "id":  "CeruleanCave_1F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  40,
+                     "name":  "CeruleanCave_2F",
+                     "id":  "CeruleanCave_2F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  40,
+                     "name":  "CeruleanCave_B1F",
+                     "id":  "CeruleanCave_B1F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "CeruleanCity",
+                     "id":  "CeruleanCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeruleanCity_BikeShop",
+                     "id":  "CeruleanCity_BikeShop",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "CeruleanCity_Gym",
+                     "id":  "CeruleanCity_Gym",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "CeruleanCity_House1",
+                     "id":  "CeruleanCity_House1",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "CeruleanCity_House2",
+                     "id":  "CeruleanCity_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeruleanCity_House3",
+                     "id":  "CeruleanCity_House3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeruleanCity_House4",
+                     "id":  "CeruleanCity_House4",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeruleanCity_House5",
+                     "id":  "CeruleanCity_House5",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CeruleanCity_Mart",
+                     "id":  "CeruleanCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeruleanCity_PokemonCenter_1F",
+                     "id":  "CeruleanCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CeruleanCity_PokemonCenter_2F",
+                     "id":  "CeruleanCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "CinnabarIsland",
+                     "id":  "CinnabarIsland",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  30,
+                     "name":  "CinnabarIsland_Gym",
+                     "id":  "CinnabarIsland_Gym",
+                     "height":  25,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "CinnabarIsland_Mart",
+                     "id":  "CinnabarIsland_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CinnabarIsland_PokemonCenter_1F",
+                     "id":  "CinnabarIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CinnabarIsland_PokemonCenter_2F",
+                     "id":  "CinnabarIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  28,
+                     "name":  "CinnabarIsland_PokemonLab_Entrance",
+                     "id":  "CinnabarIsland_PokemonLab_Entrance",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CinnabarIsland_PokemonLab_ExperimentRoom",
+                     "id":  "CinnabarIsland_PokemonLab_ExperimentRoom",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CinnabarIsland_PokemonLab_Lounge",
+                     "id":  "CinnabarIsland_PokemonLab_Lounge",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "CinnabarIsland_PokemonLab_ResearchRoom",
+                     "id":  "CinnabarIsland_PokemonLab_ResearchRoom",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  85,
+                     "name":  "DiglettsCave_B1F",
+                     "id":  "DiglettsCave_B1F",
+                     "height":  80,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "DiglettsCave_NorthEntrance",
+                     "id":  "DiglettsCave_NorthEntrance",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "DiglettsCave_SouthEntrance",
+                     "id":  "DiglettsCave_SouthEntrance",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "FiveIsland",
+                     "id":  "FiveIsland",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "FiveIsland_Harbor",
+                     "id":  "FiveIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_House1",
+                     "id":  "FiveIsland_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_House2",
+                     "id":  "FiveIsland_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Entrance",
+                     "id":  "FiveIsland_LostCave_Entrance",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room1",
+                     "id":  "FiveIsland_LostCave_Room1",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room10",
+                     "id":  "FiveIsland_LostCave_Room10",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room11",
+                     "id":  "FiveIsland_LostCave_Room11",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room12",
+                     "id":  "FiveIsland_LostCave_Room12",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room13",
+                     "id":  "FiveIsland_LostCave_Room13",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room14",
+                     "id":  "FiveIsland_LostCave_Room14",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room2",
+                     "id":  "FiveIsland_LostCave_Room2",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room3",
+                     "id":  "FiveIsland_LostCave_Room3",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room4",
+                     "id":  "FiveIsland_LostCave_Room4",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room5",
+                     "id":  "FiveIsland_LostCave_Room5",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room6",
+                     "id":  "FiveIsland_LostCave_Room6",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room7",
+                     "id":  "FiveIsland_LostCave_Room7",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room8",
+                     "id":  "FiveIsland_LostCave_Room8",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_LostCave_Room9",
+                     "id":  "FiveIsland_LostCave_Room9",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "FiveIsland_Meadow",
+                     "id":  "FiveIsland_Meadow",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "FiveIsland_MemorialPillar",
+                     "id":  "FiveIsland_MemorialPillar",
+                     "height":  60,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FiveIsland_PokemonCenter_1F",
+                     "id":  "FiveIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FiveIsland_PokemonCenter_2F",
+                     "id":  "FiveIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "FiveIsland_ResortGorgeous",
+                     "id":  "FiveIsland_ResortGorgeous",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FiveIsland_ResortGorgeous_House",
+                     "id":  "FiveIsland_ResortGorgeous_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  29,
+                     "name":  "FiveIsland_RocketWarehouse",
+                     "id":  "FiveIsland_RocketWarehouse",
+                     "height":  27,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "FiveIsland_WaterLabyrinth",
+                     "id":  "FiveIsland_WaterLabyrinth",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "FourIsland",
+                     "id":  "FourIsland",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "FourIsland_Harbor",
+                     "id":  "FourIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FourIsland_House1",
+                     "id":  "FourIsland_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FourIsland_House2",
+                     "id":  "FourIsland_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  20,
+                     "name":  "FourIsland_IcefallCave_1F",
+                     "id":  "FourIsland_IcefallCave_1F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "FourIsland_IcefallCave_B1F",
+                     "id":  "FourIsland_IcefallCave_B1F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  25,
+                     "name":  "FourIsland_IcefallCave_Back",
+                     "id":  "FourIsland_IcefallCave_Back",
+                     "height":  26,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  30,
+                     "name":  "FourIsland_IcefallCave_Entrance",
+                     "id":  "FourIsland_IcefallCave_Entrance",
+                     "height":  36,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FourIsland_LoreleisHouse",
+                     "id":  "FourIsland_LoreleisHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FourIsland_Mart",
+                     "id":  "FourIsland_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FourIsland_PokemonCenter_1F",
+                     "id":  "FourIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FourIsland_PokemonCenter_2F",
+                     "id":  "FourIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "FourIsland_PokemonDayCare",
+                     "id":  "FourIsland_PokemonDayCare",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "FuchsiaCity",
+                     "id":  "FuchsiaCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FuchsiaCity_Gym",
+                     "id":  "FuchsiaCity_Gym",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FuchsiaCity_House1",
+                     "id":  "FuchsiaCity_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "FuchsiaCity_House2",
+                     "id":  "FuchsiaCity_House2",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FuchsiaCity_House3",
+                     "id":  "FuchsiaCity_House3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "FuchsiaCity_Mart",
+                     "id":  "FuchsiaCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FuchsiaCity_PokemonCenter_1F",
+                     "id":  "FuchsiaCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "FuchsiaCity_PokemonCenter_2F",
+                     "id":  "FuchsiaCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  9,
+                     "name":  "FuchsiaCity_SafariZone_Entrance",
+                     "id":  "FuchsiaCity_SafariZone_Entrance",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  20,
+                     "name":  "FuchsiaCity_SafariZone_Office",
+                     "id":  "FuchsiaCity_SafariZone_Office",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "FuchsiaCity_WardensHouse",
+                     "id":  "FuchsiaCity_WardensHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "IndigoPlateau_Exterior",
+                     "id":  "IndigoPlateau_Exterior",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  25,
+                     "name":  "IndigoPlateau_PokemonCenter_1F",
+                     "id":  "IndigoPlateau_PokemonCenter_1F",
+                     "height":  18,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "IndigoPlateau_PokemonCenter_2F",
+                     "id":  "IndigoPlateau_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "LavenderTown",
+                     "id":  "LavenderTown",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "LavenderTown_House1",
+                     "id":  "LavenderTown_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "LavenderTown_House2",
+                     "id":  "LavenderTown_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "LavenderTown_Mart",
+                     "id":  "LavenderTown_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "LavenderTown_PokemonCenter_1F",
+                     "id":  "LavenderTown_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "LavenderTown_PokemonCenter_2F",
+                     "id":  "LavenderTown_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "LavenderTown_VolunteerPokemonHouse",
+                     "id":  "LavenderTown_VolunteerPokemonHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  57,
+                     "name":  "MtEmber_Exterior",
+                     "id":  "MtEmber_Exterior",
+                     "height":  54,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  27,
+                     "name":  "MtEmber_RubyPath_1F",
+                     "id":  "MtEmber_RubyPath_1F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "MtEmber_RubyPath_B1F",
+                     "id":  "MtEmber_RubyPath_B1F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "MtEmber_RubyPath_B1F_Stairs",
+                     "id":  "MtEmber_RubyPath_B1F_Stairs",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  16,
+                     "name":  "MtEmber_RubyPath_B2F",
+                     "id":  "MtEmber_RubyPath_B2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  8,
+                     "name":  "MtEmber_RubyPath_B2F_Stairs",
+                     "id":  "MtEmber_RubyPath_B2F_Stairs",
+                     "height":  6,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "MtEmber_RubyPath_B3F",
+                     "id":  "MtEmber_RubyPath_B3F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "MtEmber_RubyPath_B4F",
+                     "id":  "MtEmber_RubyPath_B4F",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  16,
+                     "name":  "MtEmber_RubyPath_B5F",
+                     "id":  "MtEmber_RubyPath_B5F",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "MtEmber_Summit",
+                     "id":  "MtEmber_Summit",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "MtEmber_SummitPath_1F",
+                     "id":  "MtEmber_SummitPath_1F",
+                     "height":  18,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "MtEmber_SummitPath_2F",
+                     "id":  "MtEmber_SummitPath_2F",
+                     "height":  46,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "MtEmber_SummitPath_3F",
+                     "id":  "MtEmber_SummitPath_3F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "MtMoon_1F",
+                     "id":  "MtMoon_1F",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  49,
+                     "name":  "MtMoon_B1F",
+                     "id":  "MtMoon_B1F",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "MtMoon_B2F",
+                     "id":  "MtMoon_B2F",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "NavelRock_1F",
+                     "id":  "NavelRock_1F",
+                     "height":  26,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "NavelRock_B1F",
+                     "id":  "NavelRock_B1F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  21,
+                     "name":  "NavelRock_Base",
+                     "id":  "NavelRock_Base",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B10F",
+                     "id":  "NavelRock_BasePath_B10F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B11F",
+                     "id":  "NavelRock_BasePath_B11F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B1F",
+                     "id":  "NavelRock_BasePath_B1F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B2F",
+                     "id":  "NavelRock_BasePath_B2F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B3F",
+                     "id":  "NavelRock_BasePath_B3F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B4F",
+                     "id":  "NavelRock_BasePath_B4F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B5F",
+                     "id":  "NavelRock_BasePath_B5F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B6F",
+                     "id":  "NavelRock_BasePath_B6F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B7F",
+                     "id":  "NavelRock_BasePath_B7F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B8F",
+                     "id":  "NavelRock_BasePath_B8F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_BasePath_B9F",
+                     "id":  "NavelRock_BasePath_B9F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  20,
+                     "name":  "NavelRock_Exterior",
+                     "id":  "NavelRock_Exterior",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  30,
+                     "name":  "NavelRock_Fork",
+                     "id":  "NavelRock_Fork",
+                     "height":  100,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "NavelRock_Harbor",
+                     "id":  "NavelRock_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "NavelRock_Summit",
+                     "id":  "NavelRock_Summit",
+                     "height":  25,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_SummitPath_2F",
+                     "id":  "NavelRock_SummitPath_2F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_SummitPath_3F",
+                     "id":  "NavelRock_SummitPath_3F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_SummitPath_4F",
+                     "id":  "NavelRock_SummitPath_4F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  7,
+                     "name":  "NavelRock_SummitPath_5F",
+                     "id":  "NavelRock_SummitPath_5F",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "OneIsland",
+                     "id":  "OneIsland",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "OneIsland_Harbor",
+                     "id":  "OneIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "OneIsland_House1",
+                     "id":  "OneIsland_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "OneIsland_House2",
+                     "id":  "OneIsland_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "OneIsland_KindleRoad",
+                     "id":  "OneIsland_KindleRoad",
+                     "height":  140,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  27,
+                     "name":  "OneIsland_KindleRoad_EmberSpa",
+                     "id":  "OneIsland_KindleRoad_EmberSpa",
+                     "height":  39,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "OneIsland_PokemonCenter_1F",
+                     "id":  "OneIsland_PokemonCenter_1F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "OneIsland_PokemonCenter_2F",
+                     "id":  "OneIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "OneIsland_TreasureBeach",
+                     "id":  "OneIsland_TreasureBeach",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PalletTown",
+                     "id":  "PalletTown",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PalletTown_PlayersHouse_1F",
+                     "id":  "PalletTown_PlayersHouse_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "PalletTown_PlayersHouse_2F",
+                     "id":  "PalletTown_PlayersHouse_2F",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PalletTown_ProfessorOaksLab",
+                     "id":  "PalletTown_ProfessorOaksLab",
+                     "height":  14,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PalletTown_RivalsHouse",
+                     "id":  "PalletTown_RivalsHouse",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "PewterCity",
+                     "id":  "PewterCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PewterCity_Gym",
+                     "id":  "PewterCity_Gym",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "PewterCity_House1",
+                     "id":  "PewterCity_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "PewterCity_House2",
+                     "id":  "PewterCity_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "PewterCity_Mart",
+                     "id":  "PewterCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  28,
+                     "name":  "PewterCity_Museum_1F",
+                     "id":  "PewterCity_Museum_1F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "PewterCity_Museum_2F",
+                     "id":  "PewterCity_Museum_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "PewterCity_PokemonCenter_1F",
+                     "id":  "PewterCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "PewterCity_PokemonCenter_2F",
+                     "id":  "PewterCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PokemonLeague_AgathasRoom",
+                     "id":  "PokemonLeague_AgathasRoom",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PokemonLeague_BrunosRoom",
+                     "id":  "PokemonLeague_BrunosRoom",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PokemonLeague_ChampionsRoom",
+                     "id":  "PokemonLeague_ChampionsRoom",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "PokemonLeague_HallOfFame",
+                     "id":  "PokemonLeague_HallOfFame",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  28,
+                     "name":  "PokemonLeague_LancesRoom",
+                     "id":  "PokemonLeague_LancesRoom",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "PokemonLeague_LoreleisRoom",
+                     "id":  "PokemonLeague_LoreleisRoom",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "PokemonMansion_1F",
+                     "id":  "PokemonMansion_1F",
+                     "height":  35,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "PokemonMansion_2F",
+                     "id":  "PokemonMansion_2F",
+                     "height":  38,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "PokemonMansion_3F",
+                     "id":  "PokemonMansion_3F",
+                     "height":  35,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "PokemonMansion_B1F",
+                     "id":  "PokemonMansion_B1F",
+                     "height":  35,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_1F",
+                     "id":  "PokemonTower_1F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_2F",
+                     "id":  "PokemonTower_2F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_3F",
+                     "id":  "PokemonTower_3F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_4F",
+                     "id":  "PokemonTower_4F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_5F",
+                     "id":  "PokemonTower_5F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_6F",
+                     "id":  "PokemonTower_6F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "PokemonTower_7F",
+                     "id":  "PokemonTower_7F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  49,
+                     "name":  "PowerPlant",
+                     "id":  "PowerPlant",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  1,
+                     "name":  "Prototype_SeviiIsle_6",
+                     "id":  "Prototype_SeviiIsle_6",
+                     "height":  1,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  1,
+                     "name":  "Prototype_SeviiIsle_7",
+                     "id":  "Prototype_SeviiIsle_7",
+                     "height":  1,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  84,
+                     "name":  "Prototype_SeviiIsle_8",
+                     "id":  "Prototype_SeviiIsle_8",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Prototype_SeviiIsle_9",
+                     "id":  "Prototype_SeviiIsle_9",
+                     "height":  60,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  20,
+                     "name":  "RecordCorner",
+                     "id":  "RecordCorner",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  28,
+                     "name":  "RocketHideout_B1F",
+                     "id":  "RocketHideout_B1F",
+                     "height":  34,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  32,
+                     "name":  "RocketHideout_B2F",
+                     "id":  "RocketHideout_B2F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  22,
+                     "name":  "RocketHideout_B3F",
+                     "id":  "RocketHideout_B3F",
+                     "height":  27,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "RocketHideout_B4F",
+                     "id":  "RocketHideout_B4F",
+                     "height":  26,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  5,
+                     "name":  "RocketHideout_Elevator",
+                     "id":  "RocketHideout_Elevator",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "RockTunnel_1F",
+                     "id":  "RockTunnel_1F",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "RockTunnel_B1F",
+                     "id":  "RockTunnel_B1F",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route1",
+                     "id":  "Route1",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route10",
+                     "id":  "Route10",
+                     "height":  80,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route10_PokemonCenter_1F",
+                     "id":  "Route10_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route10_PokemonCenter_2F",
+                     "id":  "Route10_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route11",
+                     "id":  "Route11",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route11_EastEntrance_1F",
+                     "id":  "Route11_EastEntrance_1F",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route11_EastEntrance_2F",
+                     "id":  "Route11_EastEntrance_2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route12",
+                     "id":  "Route12",
+                     "height":  120,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route12_FishingHouse",
+                     "id":  "Route12_FishingHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route12_NorthEntrance_1F",
+                     "id":  "Route12_NorthEntrance_1F",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route12_NorthEntrance_2F",
+                     "id":  "Route12_NorthEntrance_2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route13",
+                     "id":  "Route13",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route14",
+                     "id":  "Route14",
+                     "height":  60,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route15",
+                     "id":  "Route15",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route15_WestEntrance_1F",
+                     "id":  "Route15_WestEntrance_1F",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route15_WestEntrance_2F",
+                     "id":  "Route15_WestEntrance_2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "Route16",
+                     "id":  "Route16",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route16_House",
+                     "id":  "Route16_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route16_NorthEntrance_1F",
+                     "id":  "Route16_NorthEntrance_1F",
+                     "height":  18,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route16_NorthEntrance_2F",
+                     "id":  "Route16_NorthEntrance_2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route17",
+                     "id":  "Route17",
+                     "height":  160,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  60,
+                     "name":  "Route18",
+                     "id":  "Route18",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route18_EastEntrance_1F",
+                     "id":  "Route18_EastEntrance_1F",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route18_EastEntrance_2F",
+                     "id":  "Route18_EastEntrance_2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route19",
+                     "id":  "Route19",
+                     "height":  60,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route19_UnusedHouse",
+                     "id":  "Route19_UnusedHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route2",
+                     "id":  "Route2",
+                     "height":  80,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  120,
+                     "name":  "Route20",
+                     "id":  "Route20",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route21_North",
+                     "id":  "Route21_North",
+                     "height":  50,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route21_South",
+                     "id":  "Route21_South",
+                     "height":  50,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "Route22",
+                     "id":  "Route22",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route22_NorthEntrance",
+                     "id":  "Route22_NorthEntrance",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route23",
+                     "id":  "Route23",
+                     "height":  160,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route23_UnusedHouse",
+                     "id":  "Route23_UnusedHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route24",
+                     "id":  "Route24",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route25",
+                     "id":  "Route25",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route25_SeaCottage",
+                     "id":  "Route25_SeaCottage",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route2_EastBuilding",
+                     "id":  "Route2_EastBuilding",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route2_House",
+                     "id":  "Route2_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route2_ViridianForest_NorthEntrance",
+                     "id":  "Route2_ViridianForest_NorthEntrance",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route2_ViridianForest_SouthEntrance",
+                     "id":  "Route2_ViridianForest_SouthEntrance",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  84,
+                     "name":  "Route3",
+                     "id":  "Route3",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  108,
+                     "name":  "Route4",
+                     "id":  "Route4",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route4_PokemonCenter_1F",
+                     "id":  "Route4_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "Route4_PokemonCenter_2F",
+                     "id":  "Route4_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "Route5",
+                     "id":  "Route5",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "Route5_PokemonDayCare",
+                     "id":  "Route5_PokemonDayCare",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  9,
+                     "name":  "Route5_SouthEntrance",
+                     "id":  "Route5_SouthEntrance",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route6",
+                     "id":  "Route6",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  9,
+                     "name":  "Route6_NorthEntrance",
+                     "id":  "Route6_NorthEntrance",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "Route6_UnusedHouse",
+                     "id":  "Route6_UnusedHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "Route7",
+                     "id":  "Route7",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route7_EastEntrance",
+                     "id":  "Route7_EastEntrance",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route8",
+                     "id":  "Route8",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "Route8_WestEntrance",
+                     "id":  "Route8_WestEntrance",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "Route9",
+                     "id":  "Route9",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  51,
+                     "name":  "SafariZone_Center",
+                     "id":  "SafariZone_Center",
+                     "height":  36,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SafariZone_Center_RestHouse",
+                     "id":  "SafariZone_Center_RestHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  54,
+                     "name":  "SafariZone_East",
+                     "id":  "SafariZone_East",
+                     "height":  35,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SafariZone_East_RestHouse",
+                     "id":  "SafariZone_East_RestHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  57,
+                     "name":  "SafariZone_North",
+                     "id":  "SafariZone_North",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SafariZone_North_RestHouse",
+                     "id":  "SafariZone_North_RestHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SafariZone_SecretHouse",
+                     "id":  "SafariZone_SecretHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "SafariZone_West",
+                     "id":  "SafariZone_West",
+                     "height":  36,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SafariZone_West_RestHouse",
+                     "id":  "SafariZone_West_RestHouse",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  66,
+                     "name":  "SaffronCity",
+                     "id":  "SaffronCity",
+                     "height":  55,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "SaffronCity_Connection",
+                     "id":  "SaffronCity_Connection",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SaffronCity_CopycatsHouse_1F",
+                     "id":  "SaffronCity_CopycatsHouse_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "SaffronCity_CopycatsHouse_2F",
+                     "id":  "SaffronCity_CopycatsHouse_2F",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SaffronCity_Dojo",
+                     "id":  "SaffronCity_Dojo",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  29,
+                     "name":  "SaffronCity_Gym",
+                     "id":  "SaffronCity_Gym",
+                     "height":  25,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SaffronCity_House",
+                     "id":  "SaffronCity_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SaffronCity_Mart",
+                     "id":  "SaffronCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SaffronCity_MrPsychicsHouse",
+                     "id":  "SaffronCity_MrPsychicsHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SaffronCity_PokemonCenter_1F",
+                     "id":  "SaffronCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SaffronCity_PokemonCenter_2F",
+                     "id":  "SaffronCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SaffronCity_PokemonTrainerFanClub",
+                     "id":  "SaffronCity_PokemonTrainerFanClub",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "SeafoamIslands_1F",
+                     "id":  "SeafoamIslands_1F",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "SeafoamIslands_B1F",
+                     "id":  "SeafoamIslands_B1F",
+                     "height":  23,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "SeafoamIslands_B2F",
+                     "id":  "SeafoamIslands_B2F",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "SeafoamIslands_B3F",
+                     "id":  "SeafoamIslands_B3F",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  38,
+                     "name":  "SeafoamIslands_B4F",
+                     "id":  "SeafoamIslands_B4F",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SevenIsland",
+                     "id":  "SevenIsland",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "SevenIsland_Harbor",
+                     "id":  "SevenIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SevenIsland_House_Room1",
+                     "id":  "SevenIsland_House_Room1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "SevenIsland_House_Room2",
+                     "id":  "SevenIsland_House_Room2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SevenIsland_Mart",
+                     "id":  "SevenIsland_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SevenIsland_PokemonCenter_1F",
+                     "id":  "SevenIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SevenIsland_PokemonCenter_2F",
+                     "id":  "SevenIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SevenIsland_SevaultCanyon",
+                     "id":  "SevenIsland_SevaultCanyon",
+                     "height":  80,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SevenIsland_SevaultCanyon_Entrance",
+                     "id":  "SevenIsland_SevaultCanyon_Entrance",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SevenIsland_SevaultCanyon_House",
+                     "id":  "SevenIsland_SevaultCanyon_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SevenIsland_SevaultCanyon_TanobyKey",
+                     "id":  "SevenIsland_SevaultCanyon_TanobyKey",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  144,
+                     "name":  "SevenIsland_TanobyRuins",
+                     "id":  "SevenIsland_TanobyRuins",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_DilfordChamber",
+                     "id":  "SevenIsland_TanobyRuins_DilfordChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_LiptooChamber",
+                     "id":  "SevenIsland_TanobyRuins_LiptooChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_MoneanChamber",
+                     "id":  "SevenIsland_TanobyRuins_MoneanChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_RixyChamber",
+                     "id":  "SevenIsland_TanobyRuins_RixyChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_ScufibChamber",
+                     "id":  "SevenIsland_TanobyRuins_ScufibChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_ViapoisChamber",
+                     "id":  "SevenIsland_TanobyRuins_ViapoisChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SevenIsland_TanobyRuins_WeepthChamber",
+                     "id":  "SevenIsland_TanobyRuins_WeepthChamber",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  120,
+                     "name":  "SevenIsland_TrainerTower",
+                     "id":  "SevenIsland_TrainerTower",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SevenIsland_UnusedHouse",
+                     "id":  "SevenIsland_UnusedHouse",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "SilphCo_10F",
+                     "id":  "SilphCo_10F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "SilphCo_11F",
+                     "id":  "SilphCo_11F",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  36,
+                     "name":  "SilphCo_1F",
+                     "id":  "SilphCo_1F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  36,
+                     "name":  "SilphCo_2F",
+                     "id":  "SilphCo_2F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  36,
+                     "name":  "SilphCo_3F",
+                     "id":  "SilphCo_3F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  36,
+                     "name":  "SilphCo_4F",
+                     "id":  "SilphCo_4F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  36,
+                     "name":  "SilphCo_5F",
+                     "id":  "SilphCo_5F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "SilphCo_6F",
+                     "id":  "SilphCo_6F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "SilphCo_7F",
+                     "id":  "SilphCo_7F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "SilphCo_8F",
+                     "id":  "SilphCo_8F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "SilphCo_9F",
+                     "id":  "SilphCo_9F",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  5,
+                     "name":  "SilphCo_Elevator",
+                     "id":  "SilphCo_Elevator",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SixIsland",
+                     "id":  "SixIsland",
+                     "height":  30,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  32,
+                     "name":  "SixIsland_AlteringCave",
+                     "id":  "SixIsland_AlteringCave",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  16,
+                     "name":  "SixIsland_DottedHole_1F",
+                     "id":  "SixIsland_DottedHole_1F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SixIsland_DottedHole_B1F",
+                     "id":  "SixIsland_DottedHole_B1F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SixIsland_DottedHole_B2F",
+                     "id":  "SixIsland_DottedHole_B2F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SixIsland_DottedHole_B3F",
+                     "id":  "SixIsland_DottedHole_B3F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "SixIsland_DottedHole_B4F",
+                     "id":  "SixIsland_DottedHole_B4F",
+                     "height":  11,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  16,
+                     "name":  "SixIsland_DottedHole_SapphireRoom",
+                     "id":  "SixIsland_DottedHole_SapphireRoom",
+                     "height":  15,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  72,
+                     "name":  "SixIsland_GreenPath",
+                     "id":  "SixIsland_GreenPath",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "SixIsland_Harbor",
+                     "id":  "SixIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SixIsland_House",
+                     "id":  "SixIsland_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SixIsland_Mart",
+                     "id":  "SixIsland_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SixIsland_OutcastIsland",
+                     "id":  "SixIsland_OutcastIsland",
+                     "height":  80,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  60,
+                     "name":  "SixIsland_PatternBush",
+                     "id":  "SixIsland_PatternBush",
+                     "height":  32,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SixIsland_PokemonCenter_1F",
+                     "id":  "SixIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "SixIsland_PokemonCenter_2F",
+                     "id":  "SixIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "SixIsland_RuinValley",
+                     "id":  "SixIsland_RuinValley",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SixIsland_WaterPath",
+                     "id":  "SixIsland_WaterPath",
+                     "height":  100,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SixIsland_WaterPath_House1",
+                     "id":  "SixIsland_WaterPath_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "SixIsland_WaterPath_House2",
+                     "id":  "SixIsland_WaterPath_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  31,
+                     "name":  "SSAnne_1F_Corridor",
+                     "id":  "SSAnne_1F_Corridor",
+                     "height":  21,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room1",
+                     "id":  "SSAnne_1F_Room1",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room2",
+                     "id":  "SSAnne_1F_Room2",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room3",
+                     "id":  "SSAnne_1F_Room3",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room4",
+                     "id":  "SSAnne_1F_Room4",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room5",
+                     "id":  "SSAnne_1F_Room5",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room6",
+                     "id":  "SSAnne_1F_Room6",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_1F_Room7",
+                     "id":  "SSAnne_1F_Room7",
+                     "height":  8,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  34,
+                     "name":  "SSAnne_2F_Corridor",
+                     "id":  "SSAnne_2F_Corridor",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room1",
+                     "id":  "SSAnne_2F_Room1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room2",
+                     "id":  "SSAnne_2F_Room2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room3",
+                     "id":  "SSAnne_2F_Room3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room4",
+                     "id":  "SSAnne_2F_Room4",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room5",
+                     "id":  "SSAnne_2F_Room5",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_2F_Room6",
+                     "id":  "SSAnne_2F_Room6",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  22,
+                     "name":  "SSAnne_3F_Corridor",
+                     "id":  "SSAnne_3F_Corridor",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  23,
+                     "name":  "SSAnne_B1F_Corridor",
+                     "id":  "SSAnne_B1F_Corridor",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_B1F_Room1",
+                     "id":  "SSAnne_B1F_Room1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_B1F_Room2",
+                     "id":  "SSAnne_B1F_Room2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_B1F_Room3",
+                     "id":  "SSAnne_B1F_Room3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_B1F_Room4",
+                     "id":  "SSAnne_B1F_Room4",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  6,
+                     "name":  "SSAnne_B1F_Room5",
+                     "id":  "SSAnne_B1F_Room5",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  9,
+                     "name":  "SSAnne_CaptainsOffice",
+                     "id":  "SSAnne_CaptainsOffice",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "SSAnne_Deck",
+                     "id":  "SSAnne_Deck",
+                     "height":  19,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  70,
+                     "name":  "SSAnne_Exterior",
+                     "id":  "SSAnne_Exterior",
+                     "height":  32,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  16,
+                     "name":  "SSAnne_Kitchen",
+                     "id":  "SSAnne_Kitchen",
+                     "height":  14,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "ThreeIsland",
+                     "id":  "ThreeIsland",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  57,
+                     "name":  "ThreeIsland_BerryForest",
+                     "id":  "ThreeIsland_BerryForest",
+                     "height":  47,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  96,
+                     "name":  "ThreeIsland_BondBridge",
+                     "id":  "ThreeIsland_BondBridge",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  30,
+                     "name":  "ThreeIsland_DunsparceTunnel",
+                     "id":  "ThreeIsland_DunsparceTunnel",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "ThreeIsland_Harbor",
+                     "id":  "ThreeIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_House1",
+                     "id":  "ThreeIsland_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_House2",
+                     "id":  "ThreeIsland_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_House3",
+                     "id":  "ThreeIsland_House3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_House4",
+                     "id":  "ThreeIsland_House4",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_House5",
+                     "id":  "ThreeIsland_House5",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ThreeIsland_Mart",
+                     "id":  "ThreeIsland_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "ThreeIsland_PokemonCenter_1F",
+                     "id":  "ThreeIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "ThreeIsland_PokemonCenter_2F",
+                     "id":  "ThreeIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "ThreeIsland_Port",
+                     "id":  "ThreeIsland_Port",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "TradeCenter",
+                     "id":  "TradeCenter",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_1F",
+                     "id":  "TrainerTower_1F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_2F",
+                     "id":  "TrainerTower_2F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_3F",
+                     "id":  "TrainerTower_3F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_4F",
+                     "id":  "TrainerTower_4F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_5F",
+                     "id":  "TrainerTower_5F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_6F",
+                     "id":  "TrainerTower_6F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_7F",
+                     "id":  "TrainerTower_7F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_8F",
+                     "id":  "TrainerTower_8F",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  5,
+                     "name":  "TrainerTower_Elevator",
+                     "id":  "TrainerTower_Elevator",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  19,
+                     "name":  "TrainerTower_Lobby",
+                     "id":  "TrainerTower_Lobby",
+                     "height":  17,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  18,
+                     "name":  "TrainerTower_Roof",
+                     "id":  "TrainerTower_Roof",
+                     "height":  16,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "TwoIsland",
+                     "id":  "TwoIsland",
+                     "height":  20,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  24,
+                     "name":  "TwoIsland_CapeBrink",
+                     "id":  "TwoIsland_CapeBrink",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "TwoIsland_CapeBrink_House",
+                     "id":  "TwoIsland_CapeBrink_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  17,
+                     "name":  "TwoIsland_Harbor",
+                     "id":  "TwoIsland_Harbor",
+                     "height":  13,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "TwoIsland_House",
+                     "id":  "TwoIsland_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "TwoIsland_JoyfulGameCorner",
+                     "id":  "TwoIsland_JoyfulGameCorner",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "TwoIsland_PokemonCenter_1F",
+                     "id":  "TwoIsland_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "TwoIsland_PokemonCenter_2F",
+                     "id":  "TwoIsland_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "UndergroundPath_EastEntrance",
+                     "id":  "UndergroundPath_EastEntrance",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  80,
+                     "name":  "UndergroundPath_EastWestTunnel",
+                     "id":  "UndergroundPath_EastWestTunnel",
+                     "height":  7,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "UndergroundPath_NorthEntrance",
+                     "id":  "UndergroundPath_NorthEntrance",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  8,
+                     "name":  "UndergroundPath_NorthSouthTunnel",
+                     "id":  "UndergroundPath_NorthSouthTunnel",
+                     "height":  63,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "UndergroundPath_SouthEntrance",
+                     "id":  "UndergroundPath_SouthEntrance",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  13,
+                     "name":  "UndergroundPath_WestEntrance",
+                     "id":  "UndergroundPath_WestEntrance",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "UnionRoom",
+                     "id":  "UnionRoom",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "VermilionCity",
+                     "id":  "VermilionCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "VermilionCity_Gym",
+                     "id":  "VermilionCity_Gym",
+                     "height":  21,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "VermilionCity_House1",
+                     "id":  "VermilionCity_House1",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "VermilionCity_House2",
+                     "id":  "VermilionCity_House2",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "VermilionCity_House3",
+                     "id":  "VermilionCity_House3",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "VermilionCity_Mart",
+                     "id":  "VermilionCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "VermilionCity_PokemonCenter_1F",
+                     "id":  "VermilionCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "VermilionCity_PokemonCenter_2F",
+                     "id":  "VermilionCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  12,
+                     "name":  "VermilionCity_PokemonFanClub",
+                     "id":  "VermilionCity_PokemonFanClub",
+                     "height":  12,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "VictoryRoad_1F",
+                     "id":  "VictoryRoad_1F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  51,
+                     "name":  "VictoryRoad_2F",
+                     "id":  "VictoryRoad_2F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  45,
+                     "name":  "VictoryRoad_3F",
+                     "id":  "VictoryRoad_3F",
+                     "height":  22,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  48,
+                     "name":  "ViridianCity",
+                     "id":  "ViridianCity",
+                     "height":  40,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  20,
+                     "name":  "ViridianCity_Gym",
+                     "id":  "ViridianCity_Gym",
+                     "height":  24,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ViridianCity_House",
+                     "id":  "ViridianCity_House",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  11,
+                     "name":  "ViridianCity_Mart",
+                     "id":  "ViridianCity_Mart",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "ViridianCity_PokemonCenter_1F",
+                     "id":  "ViridianCity_PokemonCenter_1F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  15,
+                     "name":  "ViridianCity_PokemonCenter_2F",
+                     "id":  "ViridianCity_PokemonCenter_2F",
+                     "height":  10,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  10,
+                     "name":  "ViridianCity_School",
+                     "id":  "ViridianCity_School",
+                     "height":  9,
+                     "image":  "mapa.png"
+                 },
+                 {
+                     "width":  54,
+                     "name":  "ViridianForest",
+                     "id":  "ViridianForest",
+                     "height":  69,
+                     "image":  "mapa.png"
+                 }
+             ],
+    "count":  425
+}

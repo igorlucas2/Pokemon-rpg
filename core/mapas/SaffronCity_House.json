@@ -1,0 +1,214 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_House",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE5",
+        "sourceMapId": "MAP_SAFFRON_CITY_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_House-0",
+            "x": 0,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_PIDGEY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_House_EventScript_Pidgey",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_House-1",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_House_EventScript_Lass",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_House-2",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_House_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_House-3",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CLIPBOARD",
+            "facing": "up",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_House-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 27,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_House-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 27,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_House-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 27,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_House",
+    "dialogs": [
+        {
+            "title": "SaffronCity_House_Text_DontLookAtMyLetter",
+            "id": "SaffronCity_House_EventScript_Lass",
+            "text": "…Thank you for writing.\nI hope to see you soon!\n\n…Hey!\nDon't look at my letter!"
+        },
+        {
+            "title": "SaffronCity_House_Text_ExplainPPUp",
+            "id": "SaffronCity_House_EventScript_Letter",
+            "text": "I was given a PP UP as a gift.\n\nIt's used to increase the PP of\na POKéMON's move.\n\nI should use it on a powerful move\nwith only a few PP."
+        },
+        {
+            "title": "SaffronCity_House_Text_Pidgey",
+            "id": "SaffronCity_House_EventScript_Pidgey",
+            "text": "PIDGEY: Kurukkoo!"
+        },
+        {
+            "title": "SaffronCity_House_Text_GettingCopycatPokeDoll",
+            "id": "SaffronCity_House_EventScript_Youngster",
+            "text": "The COPYCAT is cute!\nI'm getting her a POKé DOLL."
+        }
+    ],
+    "jumps": []
+}

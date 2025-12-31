@@ -1,0 +1,574 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route1",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE1",
+        "sourceMapId": "MAP_ROUTE1",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_PalletTown",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 10
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 38,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 38,
+            "x": 22
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 8,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 15,
+            "w": 14,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 16,
+            "w": 6,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 20,
+            "w": 11,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 25,
+            "w": 10,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 26,
+            "w": 4,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 31,
+            "w": 4,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 31,
+            "w": 13,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 36,
+            "w": 10,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 36,
+            "w": 8,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 38,
+            "w": 9,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 38,
+            "w": 7,
+            "h": 2,
+            "x": 15
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route1-0",
+            "x": 6,
+            "y": 28,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route1_EventScript_MartClerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route1-1",
+            "x": 19,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route1_EventScript_Boy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-Route1-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "connection": {
+                    "direction": "up",
+                    "offset": -12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": -12,
+                "destMap": "MAP_VIRIDIAN_CITY"
+            }
+        },
+        {
+            "id": "conn-Route1-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 39,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_PALLET_TOWN"
+            }
+        }
+    ],
+    "name": "Route1",
+    "dialogs": [
+        {
+            "title": "Route1_Text_CanJumpFromLedges",
+            "id": "Route1_EventScript_Boy",
+            "text": "See those ledges along the road?\n\nIt's a bit scary, but you can jump\nfrom them.\n\nYou can get back to PALLET TOWN\nquicker that way."
+        },
+        {
+            "title": "Route1_Text_WorkAtPokeMartTakeSample",
+            "id": "Route1_EventScript_MartClerk",
+            "text": "Hi!\nI work at a POKéMON MART.\n\nIt's part of a convenient chain\nselling all sorts of items.\n\nPlease, visit us in VIRIDIAN CITY.\n\nI know, I'll give you a sample.\nHere you go!\n\nObtained the {STR_VAR_2}!\n\n{PLAYER} put the POTION away in\nthe BAG's ITEMS POCKET."
+        },
+        {
+            "title": "Route1_Text_RouteSign",
+            "id": "Route1_EventScript_RouteSign",
+            "text": "ROUTE 1\nPALLET TOWN - VIRIDIAN CITY"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 2,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 15,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 20,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 26,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 31,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 31,
+            "dir": "down"
+        }
+    ]
+}

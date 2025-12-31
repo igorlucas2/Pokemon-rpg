@@ -1,0 +1,774 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "RockTunnel_1F",
+    "meta": {
+        "layoutId": "LAYOUT_ROCK_TUNNEL_1F",
+        "sourceMapId": "MAP_ROCK_TUNNEL_1F",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_RockTunnel",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 21,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 0,
+            "w": 6,
+            "h": 1,
+            "x": 41
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 5,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 16,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 1,
+            "x": 41
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 39,
+            "x": 46
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 10,
+            "x": 41
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 18,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 8,
+            "x": 39
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 34,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 5,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 6,
+            "x": 40
+        },
+        {
+            "y": 9,
+            "w": 8,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 9,
+            "w": 11,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 11,
+            "x": 6
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 7,
+            "x": 21
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 5,
+            "x": 24
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 6,
+            "x": 45
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 13,
+            "x": 27
+        },
+        {
+            "y": 15,
+            "w": 3,
+            "h": 4,
+            "x": 42
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 12,
+            "x": 26
+        },
+        {
+            "y": 16,
+            "w": 14,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 9,
+            "x": 25
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 19,
+            "w": 5,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 44
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 11,
+            "x": 36
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 5,
+            "x": 24
+        },
+        {
+            "y": 24,
+            "w": 5,
+            "h": 4,
+            "x": 19
+        },
+        {
+            "y": 25,
+            "w": 18,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 1,
+            "x": 45
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 3,
+            "x": 44
+        },
+        {
+            "y": 32,
+            "w": 11,
+            "h": 8,
+            "x": 1
+        },
+        {
+            "y": 32,
+            "w": 8,
+            "h": 8,
+            "x": 23
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 2,
+            "x": 43
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 1,
+            "x": 45
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 34,
+            "w": 2,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 35,
+            "w": 3,
+            "h": 5,
+            "x": 32
+        },
+        {
+            "y": 36,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 36,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 36,
+            "w": 1,
+            "h": 4,
+            "x": 31
+        },
+        {
+            "y": 36,
+            "w": 11,
+            "h": 4,
+            "x": 35
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 3,
+            "x": 15
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 3,
+            "x": 21
+        },
+        {
+            "y": 38,
+            "w": 3,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 38,
+            "w": 5,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 38,
+            "w": 1,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 39,
+            "w": 1,
+            "h": 1,
+            "x": 47
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-RockTunnel_1F-0",
+            "x": 26,
+            "y": 28,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Dana",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-1",
+            "x": 39,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Ariana",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-2",
+            "x": 45,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Leah",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-3",
+            "x": 20,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Lucas",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-4",
+            "x": 5,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Oliver",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-5",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Lenny",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-6",
+            "x": 27,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_Ashton",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-7",
+            "x": 37,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_ItemRepel",
+                "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_REPEL"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-8",
+            "x": 33,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_ItemPearl",
+                "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_PEARL"
+            }
+        },
+        {
+            "id": "npc-RockTunnel_1F-9",
+            "x": 22,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RockTunnel_1F_EventScript_ItemEscapeRope",
+                "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-RockTunnel_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 8,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RockTunnel_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 45,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_B1F",
+                "x": 38,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_B1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RockTunnel_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_B1F",
+                "x": 33,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_B1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RockTunnel_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_B1F",
+                "x": 27,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_B1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RockTunnel_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 45,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_B1F",
+                "x": 2,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_B1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RockTunnel_1F-6",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 37,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 8,
+                "y": 57,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "RockTunnel_1F",
+    "dialogs": [
+        {
+            "title": "RockTunnel_1F_Text_ArianaPostBattle",
+            "id": "RockTunnel_1F_EventScript_Ariana",
+            "text": "Whew!\nI'm all sweaty now."
+        },
+        {
+            "title": "RockTunnel_1F_Text_AshtonPostBattle",
+            "id": "RockTunnel_1F_EventScript_Ashton",
+            "text": "Oh well, I'll get a ZUBAT as I go!"
+        },
+        {
+            "title": "RockTunnel_1F_Text_DanaPostBattle",
+            "id": "RockTunnel_1F_EventScript_Dana",
+            "text": "You looked cute and harmless.\nWas I ever wrong!"
+        },
+        {
+            "title": "RockTunnel_1F_EventScript_ItemEscapeRope",
+            "id": "RockTunnel_1F_EventScript_ItemEscapeRope",
+            "text": "TODO: RockTunnel_1F_EventScript_ItemEscapeRope"
+        },
+        {
+            "title": "RockTunnel_1F_EventScript_ItemPearl",
+            "id": "RockTunnel_1F_EventScript_ItemPearl",
+            "text": "TODO: RockTunnel_1F_EventScript_ItemPearl"
+        },
+        {
+            "title": "RockTunnel_1F_EventScript_ItemRepel",
+            "id": "RockTunnel_1F_EventScript_ItemRepel",
+            "text": "TODO: RockTunnel_1F_EventScript_ItemRepel"
+        },
+        {
+            "title": "RockTunnel_1F_Text_LeahPostBattle",
+            "id": "RockTunnel_1F_EventScript_Leah",
+            "text": "I saw a MACHOP in this tunnel."
+        },
+        {
+            "title": "RockTunnel_1F_Text_LennyPostBattle",
+            "id": "RockTunnel_1F_EventScript_Lenny",
+            "text": "Watch for ONIX.\nThey appear only occasionally.\n\nHigh-level ones can put the\nsqueeze on you!"
+        },
+        {
+            "title": "RockTunnel_1F_Text_LucasPostBattle",
+            "id": "RockTunnel_1F_EventScript_Lucas",
+            "text": "You're talented enough to hike!"
+        },
+        {
+            "title": "RockTunnel_1F_Text_OliverPostBattle",
+            "id": "RockTunnel_1F_EventScript_Oliver",
+            "text": "That sleeping POKéMON on ROUTE 12\nforced me to take this detour."
+        },
+        {
+            "title": "RockTunnel_1F_Text_RouteSign",
+            "id": "RockTunnel_1F_EventScript_RouteSign",
+            "text": "ROCK TUNNEL\nCERULEAN CITY - LAVENDER TOWN"
+        }
+    ],
+    "jumps": []
+}

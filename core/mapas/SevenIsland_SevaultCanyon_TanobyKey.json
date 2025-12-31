@@ -1,0 +1,315 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_SevaultCanyon_TanobyKey",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY",
+        "sourceMapId": "MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY",
+        "width": 15,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_DiglettsCave",
+        "height": 16
+    },
+    "start": {
+        "y": 2,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 7,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 6,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 12,
+            "x": 11
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 11,
+            "x": 4
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 11,
+            "x": 10
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 2,
+            "x": 5
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-0",
+            "x": 7,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER1",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-1",
+            "x": 8,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER2",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-2",
+            "x": 8,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER3",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-3",
+            "x": 6,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER4",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-4",
+            "x": 8,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER5",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-5",
+            "x": 6,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER6",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SevenIsland_SevaultCanyon_TanobyKey-6",
+            "x": 6,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_TANOBY_KEY_BOULDER7",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SevenIsland_SevaultCanyon_TanobyKey-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_SevaultCanyon",
+                "x": 7,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_SEVAULT_CANYON",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SevenIsland_SevaultCanyon_TanobyKey",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch1",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch1",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch1"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch2",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch2",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch2"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch3",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch3",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch3"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch4",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch4",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch4"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch5",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch5",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch5"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch6",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch6",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch6"
+        },
+        {
+            "title": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch7",
+            "id": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch7",
+            "text": "TODO: SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch7"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 6,
+            "y": 11,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 11,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "dir": "down"
+        }
+    ]
+}

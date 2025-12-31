@@ -1,0 +1,108 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "NavelRock_Summit",
+    "meta": {
+        "layoutId": "LAYOUT_NAVEL_ROCK_SUMMIT",
+        "sourceMapId": "MAP_NAVEL_ROCK_SUMMIT",
+        "width": 19,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 25
+    },
+    "start": {
+        "y": 12,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 19,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 9,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 9,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 16,
+            "w": 7,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 7,
+            "h": 9,
+            "x": 12
+        },
+        {
+            "y": 20,
+            "w": 5,
+            "h": 5,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-NavelRock_Summit-0",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_HO_OH",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_NAVEL_ROCK_HO_OH",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_HO_OH"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-NavelRock_Summit-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_SummitPath_5F",
+                "x": 4,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_SUMMIT_PATH_5F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "NavelRock_Summit",
+    "dialogs": [
+        {
+            "title": "NavelRock_Summit_EventScript_HoOh",
+            "id": "NavelRock_Summit_EventScript_HoOh",
+            "text": "TODO: NavelRock_Summit_EventScript_HoOh"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,540 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route16",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE16",
+        "sourceMapId": "MAP_ROUTE16",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeladonCity",
+        "height": 20
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 17,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 34,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 16,
+            "x": 1
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 8,
+            "x": 21
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 7,
+            "x": 42
+        },
+        {
+            "y": 10,
+            "w": 19,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 11,
+            "w": 12,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 21
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 26
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 6,
+            "x": 22
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 6,
+            "x": 30
+        },
+        {
+            "y": 15,
+            "w": 6,
+            "h": 5,
+            "x": 15
+        },
+        {
+            "y": 15,
+            "w": 3,
+            "h": 5,
+            "x": 27
+        },
+        {
+            "y": 15,
+            "w": 15,
+            "h": 5,
+            "x": 33
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route16-0",
+            "x": 16,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Lao",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-1",
+            "x": 14,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Koji",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-2",
+            "x": 12,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Luke",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-3",
+            "x": 8,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Ruben",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-4",
+            "x": 10,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Hideo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-5",
+            "x": 6,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Camron",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-6",
+            "x": 41,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ROUTE16_CUT_TREE",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route16-7",
+            "x": 30,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Lea",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-8",
+            "x": 31,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Jed",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16-9",
+            "x": 31,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_SNORLAX",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_EventScript_Snorlax",
+                "flag": "FLAG_HIDE_ROUTE_16_SNORLAX"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route16-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route16-2",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_1F",
+                "x": 1,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16-3",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_1F",
+                "x": 11,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16-4",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_1F",
+                "x": 1,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16-5",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_1F",
+                "x": 11,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route16-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 19,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route17",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_ROUTE17"
+            }
+        },
+        {
+            "id": "conn-Route16-right-2",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "connection": {
+                    "direction": "right",
+                    "offset": -10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -10,
+                "destMap": "MAP_CELADON_CITY"
+            }
+        }
+    ],
+    "name": "Route16",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route16_EventScript_Camron",
+            "id": "Route16_EventScript_Camron",
+            "text": "TODO: Route16_EventScript_Camron"
+        },
+        {
+            "title": "Route16_Text_CyclingRoadSign",
+            "id": "Route16_EventScript_CyclingRoadSign",
+            "text": "Enjoy the slope!\nCYCLING ROAD"
+        },
+        {
+            "title": "Route16_EventScript_Hideo",
+            "id": "Route16_EventScript_Hideo",
+            "text": "TODO: Route16_EventScript_Hideo"
+        },
+        {
+            "title": "Route16_EventScript_Jed",
+            "id": "Route16_EventScript_Jed",
+            "text": "TODO: Route16_EventScript_Jed"
+        },
+        {
+            "title": "Route16_EventScript_Koji",
+            "id": "Route16_EventScript_Koji",
+            "text": "TODO: Route16_EventScript_Koji"
+        },
+        {
+            "title": "Route16_EventScript_Lao",
+            "id": "Route16_EventScript_Lao",
+            "text": "TODO: Route16_EventScript_Lao"
+        },
+        {
+            "title": "Route16_EventScript_Lea",
+            "id": "Route16_EventScript_Lea",
+            "text": "TODO: Route16_EventScript_Lea"
+        },
+        {
+            "title": "Route16_EventScript_Luke",
+            "id": "Route16_EventScript_Luke",
+            "text": "TODO: Route16_EventScript_Luke"
+        },
+        {
+            "title": "Route16_Text_RouteSign",
+            "id": "Route16_EventScript_RouteSign",
+            "text": "ROUTE 16\nCELADON CITY - FUCHSIA CITY"
+        },
+        {
+            "title": "Route16_EventScript_Ruben",
+            "id": "Route16_EventScript_Ruben",
+            "text": "TODO: Route16_EventScript_Ruben"
+        },
+        {
+            "title": "Text_WantToUsePokeFlute",
+            "id": "Route16_EventScript_Snorlax",
+            "text": "TODO: Route16_EventScript_Snorlax"
+        }
+    ],
+    "jumps": []
+}

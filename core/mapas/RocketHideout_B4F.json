@@ -1,0 +1,486 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "RocketHideout_B4F",
+    "meta": {
+        "layoutId": "LAYOUT_ROCKET_HIDEOUT_B4F",
+        "sourceMapId": "MAP_ROCKET_HIDEOUT_B4F",
+        "width": 24,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 26
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 24,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 24,
+            "x": 23
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 14,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 18,
+            "w": 13,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 19,
+            "w": 5,
+            "h": 5,
+            "x": 18
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 22,
+            "w": 6,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 1,
+            "x": 12
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-RocketHideout_B4F-0",
+            "x": 19,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GIOVANNI",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_HIDEOUT_GIOVANNI",
+                "script": "RocketHideout_B4F_EventScript_Giovanni",
+                "flag": "FLAG_HIDE_HIDEOUT_GIOVANNI"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-1",
+            "x": 20,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SILPH_SCOPE",
+                "script": "RocketHideout_B4F_EventScript_SilphScope",
+                "flag": "FLAG_HIDE_SILPH_SCOPE"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-2",
+            "x": 4,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-3",
+            "x": 3,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_LIFT_KEY",
+                "script": "RocketHideout_B4F_EventScript_LiftKey",
+                "flag": "FLAG_HIDE_LIFT_KEY"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-4",
+            "x": 19,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_Grunt3",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-5",
+            "x": 16,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-6",
+            "x": 1,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_ItemTM49",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_TM49"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-7",
+            "x": 4,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_ItemMaxEther",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER"
+            }
+        },
+        {
+            "id": "npc-RocketHideout_B4F-8",
+            "x": 6,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "RocketHideout_B4F_EventScript_ItemCalcium",
+                "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-RocketHideout_B4F-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_B3F",
+                "x": 15,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_B3F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B4F-2",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_ELEVATOR",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-RocketHideout_B4F-3",
+            "type": "door",
+            "rect": {
+                "x": 21,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RocketHideout_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCKET_HIDEOUT_ELEVATOR",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "RocketHideout_B4F",
+    "dialogs": [
+        {
+            "title": "RocketHideout_B4F_Text_GiovanniIntro",
+            "id": "RocketHideout_B4F_EventScript_Giovanni",
+            "text": "So! I must say, I am impressed you\ngot here.\n\nTEAM ROCKET captures POKéMON from\naround the world.\n\nThey're important tools for keeping\nour criminal enterprise going.\n\nI am the leader, GIOVANNI!\n\nFor your insolence, you will feel a\nworld of pain!\n\nI see that you raise POKéMON with\nutmost care.\n\nA child like you would never\nunderstand what I hope to achieve.\n\nI shall step aside this time!\n\nI hope we meet again…"
+        },
+        {
+            "title": "RocketHideout_B4F_Text_Grunt1PostBattle",
+            "id": "RocketHideout_B4F_EventScript_Grunt1",
+            "text": "Oh, no!\nI dropped the LIFT KEY!"
+        },
+        {
+            "title": "RocketHideout_B4F_Text_Grunt2PostBattle",
+            "id": "RocketHideout_B4F_EventScript_Grunt2",
+            "text": "Do you have something against TEAM\nROCKET?"
+        },
+        {
+            "title": "RocketHideout_B4F_Text_Grunt3PostBattle",
+            "id": "RocketHideout_B4F_EventScript_Grunt3",
+            "text": "BOSS!\nI'm sorry I failed you!"
+        },
+        {
+            "title": "RocketHideout_B4F_EventScript_ItemCalcium",
+            "id": "RocketHideout_B4F_EventScript_ItemCalcium",
+            "text": "TODO: RocketHideout_B4F_EventScript_ItemCalcium"
+        },
+        {
+            "title": "RocketHideout_B4F_EventScript_ItemMaxEther",
+            "id": "RocketHideout_B4F_EventScript_ItemMaxEther",
+            "text": "TODO: RocketHideout_B4F_EventScript_ItemMaxEther"
+        },
+        {
+            "title": "RocketHideout_B4F_EventScript_ItemTM49",
+            "id": "RocketHideout_B4F_EventScript_ItemTM49",
+            "text": "TODO: RocketHideout_B4F_EventScript_ItemTM49"
+        },
+        {
+            "title": "RocketHideout_B4F_EventScript_LiftKey",
+            "id": "RocketHideout_B4F_EventScript_LiftKey",
+            "text": "TODO: RocketHideout_B4F_EventScript_LiftKey"
+        },
+        {
+            "title": "RocketHideout_B4F_EventScript_SilphScope",
+            "id": "RocketHideout_B4F_EventScript_SilphScope",
+            "text": "TODO: RocketHideout_B4F_EventScript_SilphScope"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,101 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "NavelRock_BasePath_B8F",
+    "meta": {
+        "layoutId": "LAYOUT_NAVEL_ROCK_BASE_PATH_B8F",
+        "sourceMapId": "MAP_NAVEL_ROCK_BASE_PATH_B8F",
+        "width": 7,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 7
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 7,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 2,
+            "x": 2
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-NavelRock_BasePath_B8F-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_BasePath_B7F",
+                "x": 4,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_BASE_PATH_B7F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-NavelRock_BasePath_B8F-2",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_BasePath_B9F",
+                "x": 2,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_BASE_PATH_B9F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "NavelRock_BasePath_B8F",
+    "dialogs": [],
+    "jumps": []
+}

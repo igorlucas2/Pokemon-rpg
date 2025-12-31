@@ -1,0 +1,400 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PalletTown_ProfessorOaksLab",
+    "meta": {
+        "layoutId": "LAYOUT_PALLET_TOWN_PROFESSOR_OAKS_LAB",
+        "sourceMapId": "MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Lab",
+        "height": 14
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 13,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-0",
+            "x": 3,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Aide1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-1",
+            "x": 2,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Aide3",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-2",
+            "x": 11,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Aide2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-3",
+            "x": 6,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_PROF_OAK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_OAKS_LAB_PROF_OAK",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_ProfOak",
+                "flag": "FLAG_HIDE_OAK_IN_HIS_LAB"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-4",
+            "x": 8,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_BULBASAUR_BALL",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall",
+                "flag": "FLAG_HIDE_BULBASAUR_BALL"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-5",
+            "x": 9,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SQUIRTLE_BALL",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_SquirtleBall",
+                "flag": "FLAG_HIDE_SQUIRTLE_BALL"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-6",
+            "x": 10,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CHARMANDER_BALL",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_CharmanderBall",
+                "flag": "FLAG_HIDE_CHARMANDER_BALL"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-7",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BLUE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_OAKS_LAB_RIVAL",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Rival",
+                "flag": "FLAG_HIDE_RIVAL_IN_LAB"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-8",
+            "x": 4,
+            "y": 1,
+            "sprite": "OBJ_EVENT_GFX_POKEDEX",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEDEX_1",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Pokedex",
+                "flag": "FLAG_HIDE_POKEDEX"
+            }
+        },
+        {
+            "id": "npc-PalletTown_ProfessorOaksLab-9",
+            "x": 5,
+            "y": 1,
+            "sprite": "OBJ_EVENT_GFX_POKEDEX",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEDEX_2",
+                "script": "PalletTown_ProfessorOaksLab_EventScript_Pokedex",
+                "flag": "FLAG_HIDE_POKEDEX"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PalletTown_ProfessorOaksLab-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 16,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_ProfessorOaksLab-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 16,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_ProfessorOaksLab-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 16,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PalletTown_ProfessorOaksLab",
+    "dialogs": [
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Aide1",
+            "text": "I study POKéMON as PROF. OAK's\nAIDE."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Aide2",
+            "text": "I study POKéMON as PROF. OAK's\nAIDE."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Aide3",
+            "text": "PROF. OAK may not look like much,\nbut he's the authority on POKéMON.\n\nMany POKéMON TRAINERS hold him in\nhigh regard."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall",
+            "text": "Those are POKé BALLS.\nThey contain POKéMON!"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_CharmanderBall",
+            "text": "Those are POKé BALLS.\nThey contain POKéMON!"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_EmailMessage",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Computer",
+            "text": "There's an e-mail message here.\n\n…\n\nFinally!\nThe ultimate TRAINERS of the\nPOKéMON LEAGUE are ready to\ntake on all comers!\n\nBring your best POKéMON and see\nhow you rate as a TRAINER!\n\nPOKéMON LEAGUE HQ\nINDIGO PLATEAU\n\nPROF. OAK, please visit us!\n…"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_LeaveStarterSceneTrigger",
+            "text": "OAK: Hey!\nDon't go away yet!"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_LeftSign",
+            "text": "Press START to open the MENU!"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Pokedex",
+            "text": "It's like an encyclopedia, but the\npages are blank."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_ProfOak",
+            "text": "OAK: Now, {PLAYER}.\n\nInside those three POKé BALLS are\nPOKéMON.\n\nWhich one will you choose for\nyourself?"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_RightSign",
+            "text": "The SAVE option is on the MENU.\nUse it regularly."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_Rival",
+            "text": "{RIVAL}: What, it's only {PLAYER}?\nGramps isn't around."
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerLeft",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerLeft",
+            "text": "TODO: PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerLeft"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerMid",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerMid",
+            "text": "TODO: PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerMid"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerRight",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerRight",
+            "text": "TODO: PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerRight"
+        },
+        {
+            "title": "PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls",
+            "id": "PalletTown_ProfessorOaksLab_EventScript_SquirtleBall",
+            "text": "Those are POKé BALLS.\nThey contain POKéMON!"
+        }
+    ],
+    "jumps": []
+}

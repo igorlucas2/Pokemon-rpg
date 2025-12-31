@@ -1,0 +1,259 @@
+{
+  "regions": [
+    {
+      "id": "reg_mjlkmyfn_kw6m77",
+      "name": "Nova Região",
+      "type": "route",
+      "shape": "rect",
+      "description": "",
+      "data": {
+        "x": 0.205686,
+        "y": 0.639161,
+        "w": 0.118003,
+        "h": 0.076727
+      },
+      "style": {
+        "color": "#3b82f6",
+        "opacity": 0.2
+      },
+      "createdAt": "2025-12-25T15:02:07.571Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "reg_mjllmm0c_k0d60e",
+      "name": "Viridian",
+      "type": "city",
+      "shape": "rect",
+      "description": "",
+      "data": {
+        "x": 0.246548,
+        "y": 0.476987,
+        "w": 0.080654,
+        "h": 0.074024
+      },
+      "style": {
+        "color": "#3b82f6",
+        "opacity": 0.2
+      },
+      "createdAt": "2025-12-25T15:29:51.085Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "reg_mjlvq74i_37o8oe",
+      "name": "Nova Região",
+      "type": "route",
+      "shape": "rect",
+      "description": "",
+      "data": {
+        "x": 0.194842,
+        "y": 0.160153,
+        "w": 0.105941,
+        "h": 0.09684
+      },
+      "style": {
+        "color": "#30521e",
+        "opacity": 0.46
+      },
+      "createdAt": "2025-12-25T20:12:34.578Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "reg_mjn84b97_mucc5r",
+      "name": "Celadon",
+      "type": "city",
+      "shape": "rect",
+      "description": "",
+      "data": {
+        "x": 0.48036,
+        "y": 0.281275,
+        "w": 0.088655,
+        "h": 0.118578
+      },
+      "style": {
+        "color": "#234780",
+        "opacity": 0.25
+      },
+      "createdAt": "2025-12-26T18:47:14.683Z",
+      "createdBy": "Admin",
+      "updatedAt": "2025-12-26T18:47:26.591Z"
+    }
+  ],
+  "edges": [],
+  "events": [
+    {
+      "id": "ev_mjlknkaj_2u9426",
+      "regionId": "reg_mjlkmyfn_kw6m77",
+      "name": "Centro Pokémon",
+      "eventType": "pokecenter",
+      "payload": {
+        "icon": "/assets/edificios/pokecenter.png"
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T15:02:35.899Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjlkob8u_dmufno",
+      "regionId": "reg_mjlkmyfn_kw6m77",
+      "name": "Caçar Pokémon",
+      "eventType": "pokemon_hunt",
+      "payload": {
+        "hunt": {
+          "pool": [
+            {
+              "pokemonId": 1,
+              "name": "bulbasaur",
+              "level": 5,
+              "rarity": "common"
+            }
+          ]
+        }
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T15:03:10.830Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjllmxy4_g1zafj",
+      "regionId": "reg_mjllmm0c_k0d60e",
+      "name": "Centro Pokémon",
+      "eventType": "pokecenter",
+      "payload": {
+        "icon": "/assets/edificios/pokecenter.png"
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T15:30:06.556Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjlln5d0_ha1c5k",
+      "regionId": "reg_mjllmm0c_k0d60e",
+      "name": "Caçar Pokémon",
+      "eventType": "pokemon_hunt",
+      "payload": {
+        "icon": "/assets/itens/pokebola.png",
+        "hunt": {
+          "pool": [
+            {
+              "pokemonId": 2,
+              "name": "ivysaur",
+              "level": 5,
+              "rarity": "common"
+            }
+          ]
+        }
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T15:30:16.164Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjlvty5i_9yozwi",
+      "regionId": "reg_mjlvq74i_37o8oe",
+      "name": "Caçar Pokémon",
+      "eventType": "pokemon_hunt",
+      "payload": {
+        "icon": "/assets/itens/pokebola.png",
+        "hunt": {
+          "pool": [
+            {
+              "pokemonId": 1,
+              "name": "bulbasaur",
+              "level": 10,
+              "rarity": "uncommon"
+            },
+            {
+              "pokemonId": 8,
+              "name": "wartortle",
+              "level": 10,
+              "rarity": "common"
+            },
+            {
+              "pokemonId": 130,
+              "name": "gyarados",
+              "level": 20,
+              "rarity": "epic"
+            }
+          ]
+        }
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T20:15:29.574Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjlvu1me_3g0qqo",
+      "regionId": "reg_mjlvq74i_37o8oe",
+      "name": "Caçar Pokémon",
+      "eventType": "pokemon_hunt",
+      "payload": {
+        "icon": "/assets/itens/pokebola.png",
+        "hunt": {
+          "pool": [
+            {
+              "pokemonId": 1,
+              "name": "bulbasaur",
+              "level": 10,
+              "rarity": "uncommon"
+            },
+            {
+              "pokemonId": 8,
+              "name": "wartortle",
+              "level": 10,
+              "rarity": "common"
+            },
+            {
+              "pokemonId": 130,
+              "name": "gyarados",
+              "level": 20,
+              "rarity": "epic"
+            }
+          ]
+        }
+      },
+      "isActive": true,
+      "createdAt": "2025-12-25T20:15:34.070Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjn85dmc_nejv0x",
+      "regionId": "reg_mjn84b97_mucc5r",
+      "name": "Centro Pokémon",
+      "eventType": "pokecenter",
+      "payload": {
+        "icon": "/assets/edificios/pokecenter.png"
+      },
+      "isActive": true,
+      "createdAt": "2025-12-26T18:48:04.404Z",
+      "createdBy": "Admin"
+    },
+    {
+      "id": "ev_mjn88xg5_zr37db",
+      "regionId": "reg_mjn84b97_mucc5r",
+      "name": "Caçar Pokémon",
+      "eventType": "pokemon_hunt",
+      "payload": {
+        "icon": "/assets/itens/pokebola.png",
+        "hunt": {
+          "pool": [
+            {
+              "pokemonId": 1,
+              "name": "bulbasaur",
+              "level": 10,
+              "rarity": "common"
+            },
+            {
+              "pokemonId": 130,
+              "name": "gyarados",
+              "level": 60,
+              "rarity": "epic"
+            }
+          ]
+        }
+      },
+      "isActive": true,
+      "createdAt": "2025-12-26T18:50:50.069Z",
+      "createdBy": "Admin"
+    }
+  ]
+}

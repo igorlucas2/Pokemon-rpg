@@ -1,0 +1,520 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route5",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE5",
+        "sourceMapId": "MAP_ROUTE5",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeruleanCity",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 15
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 35,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 1,
+            "h": 28,
+            "x": 19
+        },
+        {
+            "y": 0,
+            "w": 1,
+            "h": 28,
+            "x": 28
+        },
+        {
+            "y": 0,
+            "w": 15,
+            "h": 35,
+            "x": 33
+        },
+        {
+            "y": 4,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 9,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 14,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 19,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 22,
+            "w": 5,
+            "h": 4,
+            "x": 21
+        },
+        {
+            "y": 27,
+            "w": 8,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 29,
+            "w": 3,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 22
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 8,
+            "x": 27
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 33,
+            "w": 4,
+            "h": 5,
+            "x": 23
+        },
+        {
+            "y": 34,
+            "w": 7,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 34,
+            "w": 5,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 35,
+            "w": 14,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 35,
+            "w": 14,
+            "h": 5,
+            "x": 34
+        },
+        {
+            "y": 36,
+            "w": 8,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 36,
+            "w": 6,
+            "h": 4,
+            "x": 28
+        },
+        {
+            "y": 38,
+            "w": 1,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 38,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-Route5-1",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_NorthEntrance",
+                "x": 6,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route5-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 25,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5_PokemonDayCare",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5_POKEMON_DAY_CARE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route5-3",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 32,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5_SouthEntrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5_SOUTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route5-4",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 32,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5_SouthEntrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5_SOUTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route5-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 48,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_CERULEAN_CITY"
+            }
+        },
+        {
+            "id": "conn-Route5-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 39,
+                "w": 48,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_Connection",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_SAFFRON_CITY_CONNECTION"
+            }
+        }
+    ],
+    "name": "Route5",
+    "dialogs": [
+        {
+            "title": "Route5_Text_UndergroundPathSign",
+            "id": "Route5_EventScript_UndergroundPathSign",
+            "text": "UNDERGROUND PATH\nCERULEAN CITY - VERMILION CITY"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 20,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 4,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 19,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 27,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 27,
+            "dir": "down"
+        }
+    ]
+}

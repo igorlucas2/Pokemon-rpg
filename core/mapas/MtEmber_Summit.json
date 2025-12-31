@@ -1,0 +1,169 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtEmber_Summit",
+    "meta": {
+        "layoutId": "LAYOUT_MT_EMBER_SUMMIT",
+        "sourceMapId": "MAP_MT_EMBER_SUMMIT",
+        "width": 19,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands123",
+        "height": 22
+    },
+    "start": {
+        "y": 15,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 19,
+            "h": 15,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 9,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 9,
+            "h": 7,
+            "x": 10
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 6,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtEmber_Summit-0",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_MOLTRES",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "MtEmber_Summit_EventScript_Moltres",
+                "flag": "FLAG_HIDE_MOLTRES"
+            }
+        },
+        {
+            "id": "npc-MtEmber_Summit-1",
+            "x": 10,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtEmber_Summit-2",
+            "x": 9,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtEmber_Summit-3",
+            "x": 8,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtEmber_Summit-4",
+            "x": 8,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtEmber_Summit-1",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_Exterior",
+                "x": 29,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_EXTERIOR",
+                "destWarpId": "4",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "MtEmber_Summit",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "Text_Gyaoo",
+            "id": "MtEmber_Summit_EventScript_Moltres",
+            "text": "TODO: MtEmber_Summit_EventScript_Moltres"
+        }
+    ],
+    "jumps": []
+}

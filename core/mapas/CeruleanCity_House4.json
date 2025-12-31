@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_House4",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE1",
+        "sourceMapId": "MAP_CERULEAN_CITY_HOUSE4",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_House4-0",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_WONDER_NEWS_BERRY_MAN",
+                "script": "CeruleanCity_House4_EventScript_WonderNewsBerryMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_House4-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 23,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "12",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeruleanCity_House4",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_House4_EventScript_WonderNewsBerryMan",
+            "id": "CeruleanCity_House4_EventScript_WonderNewsBerryMan",
+            "text": "TODO: CeruleanCity_House4_EventScript_WonderNewsBerryMan"
+        }
+    ],
+    "jumps": []
+}

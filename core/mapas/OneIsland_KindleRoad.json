@@ -1,0 +1,1155 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "OneIsland_KindleRoad",
+    "meta": {
+        "layoutId": "LAYOUT_ONE_ISLAND_KINDLE_ROAD",
+        "sourceMapId": "MAP_ONE_ISLAND_KINDLE_ROAD",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands123",
+        "height": 140
+    },
+    "start": {
+        "y": 6,
+        "x": 11
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 9,
+            "x": 13
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 5,
+            "x": 11
+        },
+        {
+            "y": 15,
+            "w": 8,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 15,
+            "w": 7,
+            "h": 9,
+            "x": 17
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 8,
+            "x": 16
+        },
+        {
+            "y": 18,
+            "w": 5,
+            "h": 112,
+            "x": 0
+        },
+        {
+            "y": 19,
+            "w": 11,
+            "h": 32,
+            "x": 5
+        },
+        {
+            "y": 24,
+            "w": 6,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 35,
+            "x": 16
+        },
+        {
+            "y": 26,
+            "w": 5,
+            "h": 114,
+            "x": 19
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 43,
+            "x": 17
+        },
+        {
+            "y": 51,
+            "w": 9,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 51,
+            "w": 1,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 52,
+            "w": 6,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 7,
+            "x": 14
+        },
+        {
+            "y": 53,
+            "w": 5,
+            "h": 6,
+            "x": 5
+        },
+        {
+            "y": 53,
+            "w": 1,
+            "h": 7,
+            "x": 13
+        },
+        {
+            "y": 57,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 59,
+            "w": 4,
+            "h": 9,
+            "x": 5
+        },
+        {
+            "y": 61,
+            "w": 2,
+            "h": 6,
+            "x": 9
+        },
+        {
+            "y": 62,
+            "w": 2,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 65,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 67,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 67,
+            "w": 2,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 68,
+            "w": 3,
+            "h": 10,
+            "x": 5
+        },
+        {
+            "y": 68,
+            "w": 1,
+            "h": 8,
+            "x": 13
+        },
+        {
+            "y": 69,
+            "w": 1,
+            "h": 7,
+            "x": 12
+        },
+        {
+            "y": 70,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 70,
+            "w": 1,
+            "h": 6,
+            "x": 18
+        },
+        {
+            "y": 71,
+            "w": 2,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 71,
+            "w": 1,
+            "h": 5,
+            "x": 17
+        },
+        {
+            "y": 73,
+            "w": 1,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 73,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 78,
+            "w": 2,
+            "h": 62,
+            "x": 5
+        },
+        {
+            "y": 79,
+            "w": 3,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 80,
+            "w": 2,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 80,
+            "w": 1,
+            "h": 51,
+            "x": 18
+        },
+        {
+            "y": 81,
+            "w": 3,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 81,
+            "w": 3,
+            "h": 21,
+            "x": 15
+        },
+        {
+            "y": 83,
+            "w": 2,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 83,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 84,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 85,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 85,
+            "w": 1,
+            "h": 20,
+            "x": 14
+        },
+        {
+            "y": 88,
+            "w": 1,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 93,
+            "w": 1,
+            "h": 18,
+            "x": 13
+        },
+        {
+            "y": 98,
+            "w": 1,
+            "h": 6,
+            "x": 7
+        },
+        {
+            "y": 102,
+            "w": 1,
+            "h": 6,
+            "x": 12
+        },
+        {
+            "y": 102,
+            "w": 2,
+            "h": 4,
+            "x": 15
+        },
+        {
+            "y": 104,
+            "w": 1,
+            "h": 27,
+            "x": 17
+        },
+        {
+            "y": 106,
+            "w": 1,
+            "h": 7,
+            "x": 16
+        },
+        {
+            "y": 108,
+            "w": 1,
+            "h": 10,
+            "x": 7
+        },
+        {
+            "y": 110,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 115,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 119,
+            "w": 1,
+            "h": 13,
+            "x": 16
+        },
+        {
+            "y": 121,
+            "w": 1,
+            "h": 19,
+            "x": 7
+        },
+        {
+            "y": 121,
+            "w": 1,
+            "h": 19,
+            "x": 15
+        },
+        {
+            "y": 122,
+            "w": 1,
+            "h": 18,
+            "x": 8
+        },
+        {
+            "y": 122,
+            "w": 5,
+            "h": 18,
+            "x": 10
+        },
+        {
+            "y": 123,
+            "w": 1,
+            "h": 17,
+            "x": 9
+        },
+        {
+            "y": 130,
+            "w": 3,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 131,
+            "w": 2,
+            "h": 9,
+            "x": 3
+        },
+        {
+            "y": 133,
+            "w": 1,
+            "h": 7,
+            "x": 16
+        },
+        {
+            "y": 133,
+            "w": 1,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 134,
+            "w": 3,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 134,
+            "w": 1,
+            "h": 6,
+            "x": 17
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-OneIsland_KindleRoad-0",
+            "x": 11,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Maria",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-1",
+            "x": 17,
+            "y": 132,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_LAND",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Abigail",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-2",
+            "x": 7,
+            "y": 39,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+            "movementRangeX": 6,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Finn",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-3",
+            "x": 19,
+            "y": 79,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_LAND",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Garrett",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-4",
+            "x": 15,
+            "y": 25,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Tommy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-5",
+            "x": 9,
+            "y": 53,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 7,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Sharon",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-6",
+            "x": 18,
+            "y": 105,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Tanya",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-7",
+            "x": 16,
+            "y": 64,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Shea",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-8",
+            "x": 11,
+            "y": 64,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Hugh",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-9",
+            "x": 11,
+            "y": 89,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Bryce",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-10",
+            "x": 9,
+            "y": 108,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Claire",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-11",
+            "x": 8,
+            "y": 68,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Mik",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-12",
+            "x": 9,
+            "y": 68,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_Kia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-13",
+            "x": 8,
+            "y": 104,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-14",
+            "x": 11,
+            "y": 95,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-15",
+            "x": 12,
+            "y": 96,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_16"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-16",
+            "x": 10,
+            "y": 95,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_17"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-17",
+            "x": 9,
+            "y": 105,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_18"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-18",
+            "x": 15,
+            "y": 75,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_19"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-19",
+            "x": 9,
+            "y": 84,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1A"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-20",
+            "x": 15,
+            "y": 74,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1B"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-21",
+            "x": 15,
+            "y": 73,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1C"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-22",
+            "x": 18,
+            "y": 111,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1D"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-23",
+            "x": 10,
+            "y": 86,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1E"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-24",
+            "x": 9,
+            "y": 110,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1F"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-25",
+            "x": 18,
+            "y": 112,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_11"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-26",
+            "x": 15,
+            "y": 70,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_ItemEther",
+                "flag": "FLAG_HIDE_ONE_ISLAND_KINDLE_ROAD_ETHER"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-27",
+            "x": 17,
+            "y": 103,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_ItemMaxRepel",
+                "flag": "FLAG_HIDE_ONE_ISLAND_KINDLE_ROAD_MAX_REPEL"
+            }
+        },
+        {
+            "id": "npc-OneIsland_KindleRoad-28",
+            "x": 18,
+            "y": 114,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "OneIsland_KindleRoad_EventScript_ItemCarbos",
+                "flag": "FLAG_HIDE_ONE_ISLAND_KINDLE_ROAD_CARBOS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-OneIsland_KindleRoad-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_Exterior",
+                "x": 28,
+                "y": 48,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_EXTERIOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-OneIsland_KindleRoad-2",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_Exterior",
+                "x": 29,
+                "y": 48,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_EXTERIOR",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-OneIsland_KindleRoad-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 58,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "OneIsland_KindleRoad_EmberSpa",
+                "x": 13,
+                "y": 36,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-OneIsland_KindleRoad-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 120,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "OneIsland",
+                "connection": {
+                    "direction": "left",
+                    "offset": 120
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 120,
+                "destMap": "MAP_ONE_ISLAND"
+            }
+        }
+    ],
+    "name": "OneIsland_KindleRoad",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Abigail",
+            "id": "OneIsland_KindleRoad_EventScript_Abigail",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Abigail"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Bryce",
+            "id": "OneIsland_KindleRoad_EventScript_Bryce",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Bryce"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Claire",
+            "id": "OneIsland_KindleRoad_EventScript_Claire",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Claire"
+        },
+        {
+            "title": "OneIsland_KindleRoad_Text_EmberSpaSign",
+            "id": "OneIsland_KindleRoad_EventScript_EmberSpaSign",
+            "text": "Light the Fire in Your Heart!\nEMBER SPA"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Finn",
+            "id": "OneIsland_KindleRoad_EventScript_Finn",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Finn"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Garrett",
+            "id": "OneIsland_KindleRoad_EventScript_Garrett",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Garrett"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Hugh",
+            "id": "OneIsland_KindleRoad_EventScript_Hugh",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Hugh"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_ItemCarbos",
+            "id": "OneIsland_KindleRoad_EventScript_ItemCarbos",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_ItemCarbos"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_ItemEther",
+            "id": "OneIsland_KindleRoad_EventScript_ItemEther",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_ItemEther"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_ItemMaxRepel",
+            "id": "OneIsland_KindleRoad_EventScript_ItemMaxRepel",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_ItemMaxRepel"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Kia",
+            "id": "OneIsland_KindleRoad_EventScript_Kia",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Kia"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Maria",
+            "id": "OneIsland_KindleRoad_EventScript_Maria",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Maria"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Mik",
+            "id": "OneIsland_KindleRoad_EventScript_Mik",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Mik"
+        },
+        {
+            "title": "OneIsland_KindleRoad_Text_RouteSign",
+            "id": "OneIsland_KindleRoad_EventScript_RouteSign",
+            "text": "This is KINDLE ROAD.\n\nGo straight for MT. EMBER."
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Sharon",
+            "id": "OneIsland_KindleRoad_EventScript_Sharon",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Sharon"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Shea",
+            "id": "OneIsland_KindleRoad_EventScript_Shea",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Shea"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Tanya",
+            "id": "OneIsland_KindleRoad_EventScript_Tanya",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Tanya"
+        },
+        {
+            "title": "OneIsland_KindleRoad_EventScript_Tommy",
+            "id": "OneIsland_KindleRoad_EventScript_Tommy",
+            "text": "TODO: OneIsland_KindleRoad_EventScript_Tommy"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 13,
+            "y": 108,
+            "dir": "left"
+        },
+        {
+            "x": 13,
+            "y": 109,
+            "dir": "left"
+        },
+        {
+            "x": 14,
+            "y": 110,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 110,
+            "dir": "down"
+        }
+    ]
+}

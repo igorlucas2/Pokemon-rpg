@@ -1,0 +1,714 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCave_1F",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CAVE_1F",
+        "sourceMapId": "MAP_CERULEAN_CAVE_1F",
+        "width": 40,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeruleanCave",
+        "height": 23
+    },
+    "start": {
+        "y": 1,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 40,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 1,
+            "w": 19,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 12,
+            "x": 38
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 12,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 4,
+            "x": 28
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 4,
+            "x": 34
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 6,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 3,
+            "x": 33
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 17,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 10,
+            "x": 8
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 9,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 5,
+            "x": 35
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 7,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 13,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 10,
+            "x": 39
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 9,
+            "x": 31
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 8,
+            "x": 37
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 7,
+            "x": 35
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 5,
+            "x": 2
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 5,
+            "x": 15
+        },
+        {
+            "y": 21,
+            "w": 15,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 22,
+            "w": 10,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 1,
+            "x": 32
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCave_1F-0",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCave_1F_EventScript_ItemNugget",
+                "flag": "FLAG_HIDE_CERULEAN_CAVE_1F_NUGGET"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-1",
+            "x": 11,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCave_1F_EventScript_ItemFullRestore",
+                "flag": "FLAG_HIDE_CERULEAN_CAVE_1F_FULL_RESTORE"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-2",
+            "x": 25,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCave_1F_EventScript_ItemMaxElixir",
+                "flag": "FLAG_HIDE_CERULEAN_CAVE_1F_MAX_ELIXIR"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-3",
+            "x": 7,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-4",
+            "x": 13,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-5",
+            "x": 5,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-6",
+            "x": 14,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-7",
+            "x": 11,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_16"
+            }
+        },
+        {
+            "id": "npc-CeruleanCave_1F-8",
+            "x": 9,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_17"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCave_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 1,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 34,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 33,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_B1F",
+                "x": 5,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_B1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 13,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 7,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-6",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 26,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "3",
+                "elevation": 4
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-7",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 23,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCave_1F-8",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCave_2F",
+                "x": 5,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CAVE_2F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeruleanCave_1F",
+    "dialogs": [
+        {
+            "title": "CeruleanCave_1F_EventScript_ItemFullRestore",
+            "id": "CeruleanCave_1F_EventScript_ItemFullRestore",
+            "text": "TODO: CeruleanCave_1F_EventScript_ItemFullRestore"
+        },
+        {
+            "title": "CeruleanCave_1F_EventScript_ItemMaxElixir",
+            "id": "CeruleanCave_1F_EventScript_ItemMaxElixir",
+            "text": "TODO: CeruleanCave_1F_EventScript_ItemMaxElixir"
+        },
+        {
+            "title": "CeruleanCave_1F_EventScript_ItemNugget",
+            "id": "CeruleanCave_1F_EventScript_ItemNugget",
+            "text": "TODO: CeruleanCave_1F_EventScript_ItemNugget"
+        },
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,53 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Prototype_SeviiIsle_7",
+    "meta": {
+        "layoutId": "LAYOUT_PROTOTYPE_SEVII_ISLE_7",
+        "sourceMapId": "MAP_PROTOTYPE_SEVII_ISLE_7",
+        "width": 1,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeladonCity",
+        "height": 1
+    },
+    "start": {
+        "y": 0,
+        "x": 0
+    },
+    "colliders": {
+        "y": 0,
+        "w": 1,
+        "h": 1,
+        "x": 0
+    },
+    "npcs": [],
+    "events": [
+        {
+            "id": "conn-Prototype_SeviiIsle_7-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_THREE_ISLAND"
+            }
+        }
+    ],
+    "name": "Prototype_SeviiIsle_7",
+    "dialogs": [],
+    "jumps": []
+}

@@ -1,0 +1,960 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PowerPlant",
+    "meta": {
+        "layoutId": "LAYOUT_POWER_PLANT",
+        "sourceMapId": "MAP_POWER_PLANT",
+        "width": 49,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PowerPlant",
+        "height": 40
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 49,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 37,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 5,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 3,
+            "w": 5,
+            "h": 2,
+            "x": 33
+        },
+        {
+            "y": 3,
+            "w": 5,
+            "h": 1,
+            "x": 44
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 2,
+            "x": 38
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 46
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 6,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 4,
+            "x": 47
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 4,
+            "x": 33
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 39
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 2,
+            "x": 42
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 31,
+            "x": 48
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 6,
+            "x": 33
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 6,
+            "x": 45
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 10,
+            "x": 30
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 1,
+            "x": 43
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 4,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 9,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 14,
+            "w": 9,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 2,
+            "x": 34
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 2,
+            "x": 41
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 16,
+            "w": 5,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 19,
+            "w": 9,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 19,
+            "w": 14,
+            "h": 2,
+            "x": 31
+        },
+        {
+            "y": 20,
+            "w": 3,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 9,
+            "x": 44
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 22,
+            "w": 13,
+            "h": 2,
+            "x": 27
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 17,
+            "x": 10
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 24,
+            "w": 6,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 24,
+            "w": 7,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 25,
+            "w": 16,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 26,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 5,
+            "x": 20
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 28,
+            "w": 23,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 29,
+            "w": 5,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 29,
+            "w": 6,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 8,
+            "x": 47
+        },
+        {
+            "y": 30,
+            "w": 4,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 31,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 31,
+            "w": 2,
+            "h": 5,
+            "x": 24
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 31,
+            "w": 2,
+            "h": 3,
+            "x": 35
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 6,
+            "x": 46
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 4,
+            "x": 34
+        },
+        {
+            "y": 32,
+            "w": 7,
+            "h": 4,
+            "x": 39
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 33,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 2,
+            "x": 37
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 34,
+            "w": 3,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 34,
+            "w": 8,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 34,
+            "w": 8,
+            "h": 2,
+            "x": 26
+        },
+        {
+            "y": 34,
+            "w": 1,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 36,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 36,
+            "w": 4,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 36,
+            "w": 5,
+            "h": 2,
+            "x": 28
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 2,
+            "x": 44
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 37,
+            "w": 4,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 37,
+            "w": 2,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 37,
+            "w": 3,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 38,
+            "w": 1,
+            "h": 2,
+            "x": 32
+        },
+        {
+            "y": 39,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 39,
+            "w": 21,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 39,
+            "w": 15,
+            "h": 1,
+            "x": 33
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PowerPlant-0",
+            "x": 7,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_ItemMaxPotion",
+                "flag": "FLAG_HIDE_POWER_PLANT_MAX_POTION"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-1",
+            "x": 40,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_ItemTM17",
+                "flag": "FLAG_HIDE_POWER_PLANT_TM17"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-2",
+            "x": 46,
+            "y": 37,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_ItemTM25",
+                "flag": "FLAG_HIDE_POWER_PLANT_TM25"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-3",
+            "x": 45,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_ItemThunderStone",
+                "flag": "FLAG_HIDE_POWER_PLANT_THUNDER_STONE"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-4",
+            "x": 26,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_ItemElixir",
+                "flag": "FLAG_HIDE_POWER_PLANT_ELIXIR"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-5",
+            "x": 5,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ZAPDOS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_Zapdos",
+                "flag": "FLAG_HIDE_ZAPDOS"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-6",
+            "x": 36,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_Electrode2",
+                "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_2"
+            }
+        },
+        {
+            "id": "npc-PowerPlant-7",
+            "x": 30,
+            "y": 38,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PowerPlant_EventScript_Electrode1",
+                "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_1"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PowerPlant-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 39,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 7,
+                "y": 40,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PowerPlant-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 38,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 7,
+                "y": 40,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PowerPlant-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 39,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 7,
+                "y": 40,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PowerPlant-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 2,
+                "y": 37,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PowerPlant-5",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 7,
+                "y": 40,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PowerPlant",
+    "dialogs": [
+        {
+            "title": "PowerPlant_EventScript_Electrode1",
+            "id": "PowerPlant_EventScript_Electrode1",
+            "text": "TODO: PowerPlant_EventScript_Electrode1"
+        },
+        {
+            "title": "PowerPlant_EventScript_Electrode2",
+            "id": "PowerPlant_EventScript_Electrode2",
+            "text": "TODO: PowerPlant_EventScript_Electrode2"
+        },
+        {
+            "title": "PowerPlant_EventScript_ItemElixir",
+            "id": "PowerPlant_EventScript_ItemElixir",
+            "text": "TODO: PowerPlant_EventScript_ItemElixir"
+        },
+        {
+            "title": "PowerPlant_EventScript_ItemMaxPotion",
+            "id": "PowerPlant_EventScript_ItemMaxPotion",
+            "text": "TODO: PowerPlant_EventScript_ItemMaxPotion"
+        },
+        {
+            "title": "PowerPlant_EventScript_ItemThunderStone",
+            "id": "PowerPlant_EventScript_ItemThunderStone",
+            "text": "TODO: PowerPlant_EventScript_ItemThunderStone"
+        },
+        {
+            "title": "PowerPlant_EventScript_ItemTM17",
+            "id": "PowerPlant_EventScript_ItemTM17",
+            "text": "TODO: PowerPlant_EventScript_ItemTM17"
+        },
+        {
+            "title": "PowerPlant_EventScript_ItemTM25",
+            "id": "PowerPlant_EventScript_ItemTM25",
+            "text": "TODO: PowerPlant_EventScript_ItemTM25"
+        },
+        {
+            "title": "Text_Gyaoo",
+            "id": "PowerPlant_EventScript_Zapdos",
+            "text": "TODO: PowerPlant_EventScript_Zapdos"
+        }
+    ],
+    "jumps": []
+}

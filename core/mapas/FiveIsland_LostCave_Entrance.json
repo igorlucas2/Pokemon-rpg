@@ -1,0 +1,95 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_LostCave_Entrance",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_LOST_CAVE_ENTRANCE",
+        "sourceMapId": "MAP_FIVE_ISLAND_LOST_CAVE_ENTRANCE",
+        "width": 11,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 9,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 7,
+            "h": 2,
+            "x": 2
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-FiveIsland_LostCave_Entrance-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_ResortGorgeous",
+                "x": 64,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_RESORT_GORGEOUS",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland_LostCave_Entrance-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room1",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FiveIsland_LostCave_Entrance",
+    "dialogs": [],
+    "jumps": []
+}

@@ -1,0 +1,216 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VermilionCity_Mart",
+    "meta": {
+        "layoutId": "LAYOUT_MART",
+        "sourceMapId": "MAP_VERMILION_CITY_MART",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Mart",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VermilionCity_Mart-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Mart_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Mart-1",
+            "x": 4,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Mart_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Mart-2",
+            "x": 9,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Mart_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VermilionCity_Mart-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 29,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_Mart-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 29,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_Mart-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 29,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "VermilionCity_Mart",
+    "dialogs": [
+        {
+            "title": "VermilionCity_Mart_Text_TeamRocketAreWickedPeople",
+            "id": "VermilionCity_Mart_EventScript_BaldingMan",
+            "text": "There are wicked people who will\nuse POKéMON for criminal acts.\n\nTEAM ROCKET traffics in rare\nPOKéMON, for example.\n\nThey also abandon POKéMON that\nthey consider unpopular or useless.\n\nThat's the sort of horrid people\nthey are, TEAM ROCKET."
+        },
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "VermilionCity_Mart_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "VermilionCity_Mart_Text_MonsGoodOrBadDependingOnTrainer",
+            "id": "VermilionCity_Mart_EventScript_CooltrainerF",
+            "text": "I think POKéMON can be good or\nbad. It depends on the TRAINER."
+        }
+    ],
+    "jumps": []
+}

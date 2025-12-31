@@ -1,0 +1,397 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonTower_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_TOWER_1F",
+        "sourceMapId": "MAP_POKEMON_TOWER_1F",
+        "width": 24,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonTower",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 10,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 5,
+            "x": 20
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 9,
+            "x": 21
+        },
+        {
+            "y": 12,
+            "w": 6,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 2
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 15
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 20
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 19
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 4,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 3,
+            "x": 6
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonTower_1F-0",
+            "x": 18,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_1F_EventScript_WorkerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_1F-1",
+            "x": 18,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CHANNELER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_1F_EventScript_Channeler",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_1F-2",
+            "x": 15,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_1F_EventScript_Woman1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_1F-3",
+            "x": 7,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_1F_EventScript_Woman2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_1F-4",
+            "x": 8,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_1F_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonTower_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 18,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonTower_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 18,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonTower_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 18,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonTower_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonTower_2F",
+                "x": 18,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_TOWER_2F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonTower_1F",
+    "dialogs": [
+        {
+            "title": "PokemonTower_1F_Text_CameToPrayForDepartedClefairy",
+            "id": "PokemonTower_1F_EventScript_BaldingMan",
+            "text": "I came to pray for my dearly\ndeparted CLEFAIRY.\n\nSniff!\nI'm awash in tears…"
+        },
+        {
+            "title": "PokemonTower_1F_Text_SenseSpiritsUpToMischief",
+            "id": "PokemonTower_1F_EventScript_Channeler",
+            "text": "I am a CHANNELER.\n\nThere are spirits up to mischief.\nI sense them high in the TOWER."
+        },
+        {
+            "title": "PokemonTower_1F_Text_GrowlitheWhyDidYouDie",
+            "id": "PokemonTower_1F_EventScript_Woman1",
+            "text": "My GROWLITHE…\nWhy did you die?"
+        },
+        {
+            "title": "PokemonTower_1F_Text_ComeToPayRespectsGirl",
+            "id": "PokemonTower_1F_EventScript_Woman2",
+            "text": "Did you come to pay respects?\n\nBless your POKéMON-loving heart,\ngirl."
+        },
+        {
+            "title": "PokemonTower_1F_Text_ErectedInMemoryOfDeadMons",
+            "id": "PokemonTower_1F_EventScript_WorkerF",
+            "text": "POKéMON TOWER was erected in the\nmemory of POKéMON that died."
+        }
+    ],
+    "jumps": []
+}

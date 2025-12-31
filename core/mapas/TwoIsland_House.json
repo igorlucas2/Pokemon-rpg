@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TwoIsland_House",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_TWO_ISLAND_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TwoIsland_House-0",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TwoIsland_House_EventScript_MoveManiac",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-TwoIsland_House-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland",
+                "x": 33,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "TwoIsland_House",
+    "dialogs": [
+        {
+            "title": "TwoIsland_House_Text_TeachMonMoveForMushroom",
+            "id": "TwoIsland_House_EventScript_MoveManiac",
+            "text": "I'm the POKéMON MOVE MANIAC.\n\nI know every single move that\nPOKéMON learn growing up.\n\nI'm also a mushroom maniac.\n\nBring me two TINYMUSHROOMS,\nor one BIG MUSHROOM.\n\nIf you do that for me, I'll teach\na move to one POKéMON."
+        }
+    ],
+    "jumps": []
+}

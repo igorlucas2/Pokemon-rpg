@@ -1,0 +1,551 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonMansion_2F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_MANSION_2F",
+        "sourceMapId": "MAP_POKEMON_MANSION_2F",
+        "width": 38,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonMansion",
+        "height": 38
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 38,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 35,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 21
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 35,
+            "x": 37
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 4,
+            "x": 32
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 22
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 31
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 35
+        },
+        {
+            "y": 11,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 12,
+            "w": 10,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 13,
+            "w": 10,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 6,
+            "x": 18
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 19,
+            "w": 6,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 19,
+            "w": 7,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 2,
+            "x": 27
+        },
+        {
+            "y": 19,
+            "w": 4,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 18,
+            "x": 10
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 20,
+            "w": 3,
+            "h": 2,
+            "x": 33
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 17,
+            "x": 36
+        },
+        {
+            "y": 22,
+            "w": 2,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 8,
+            "x": 16
+        },
+        {
+            "y": 22,
+            "w": 6,
+            "h": 16,
+            "x": 19
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 16,
+            "x": 35
+        },
+        {
+            "y": 24,
+            "w": 10,
+            "h": 14,
+            "x": 25
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 26,
+            "w": 9,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 31,
+            "w": 6,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 33,
+            "w": 3,
+            "h": 5,
+            "x": 16
+        },
+        {
+            "y": 35,
+            "w": 9,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 35,
+            "w": 5,
+            "h": 3,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonMansion_2F-0",
+            "x": 5,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonMansion_2F_EventScript_Arnie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonMansion_2F-1",
+            "x": 36,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonMansion_2F_EventScript_ItemCalcium",
+                "flag": "FLAG_HIDE_POKEMON_MANSION_2F_CALCIUM"
+            }
+        },
+        {
+            "id": "npc-PokemonMansion_2F-2",
+            "x": 18,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonMansion_2F_EventScript_ItemZinc",
+                "flag": "FLAG_HIDE_POKEMON_MANSION_2F_ZINC"
+            }
+        },
+        {
+            "id": "npc-PokemonMansion_2F-3",
+            "x": 35,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonMansion_2F_EventScript_ItemHPUp",
+                "flag": "FLAG_HIDE_POKEMON_MANSION_2F_HP_UP"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonMansion_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_3F",
+                "x": 8,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_3F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonMansion_2F-2",
+            "type": "door",
+            "rect": {
+                "x": 34,
+                "y": 22,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_3F",
+                "x": 34,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_3F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonMansion_2F-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_1F",
+                "x": 10,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonMansion_2F-4",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_3F",
+                "x": 11,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_3F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonMansion_2F-5",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_3F",
+                "x": 23,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_3F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonMansion_2F",
+    "dialogs": [
+        {
+            "title": "PokemonMansion_1F_Text_ArniePostBattle",
+            "id": "PokemonMansion_2F_EventScript_Arnie",
+            "text": "The switches here open and close\nalternating sets of doors."
+        },
+        {
+            "title": "PokemonMansion_1F_Text_ChristenedDiscoveredMonMew",
+            "id": "PokemonMansion_2F_EventScript_DiaryJuly10th",
+            "text": "Diary: July 10\nWe christened the newly discovered\nPOKéMON, MEW."
+        },
+        {
+            "title": "PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle",
+            "id": "PokemonMansion_2F_EventScript_DiaryJuly5th",
+            "text": "Diary: July 5\nGuyana, South America\n\nA new POKéMON was discovered deep\nin the jungle."
+        },
+        {
+            "title": "PokemonMansion_2F_EventScript_ItemCalcium",
+            "id": "PokemonMansion_2F_EventScript_ItemCalcium",
+            "text": "TODO: PokemonMansion_2F_EventScript_ItemCalcium"
+        },
+        {
+            "title": "PokemonMansion_2F_EventScript_ItemHPUp",
+            "id": "PokemonMansion_2F_EventScript_ItemHPUp",
+            "text": "TODO: PokemonMansion_2F_EventScript_ItemHPUp"
+        },
+        {
+            "title": "PokemonMansion_2F_EventScript_ItemZinc",
+            "id": "PokemonMansion_2F_EventScript_ItemZinc",
+            "text": "TODO: PokemonMansion_2F_EventScript_ItemZinc"
+        },
+        {
+            "title": "PokemonMansion_2F_EventScript_Statue",
+            "id": "PokemonMansion_2F_EventScript_Statue",
+            "text": "TODO: PokemonMansion_2F_EventScript_Statue"
+        }
+    ],
+    "jumps": []
+}

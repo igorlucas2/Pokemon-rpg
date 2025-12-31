@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PokéRPG — Pokédex</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    body{ overflow:auto; }
+
+    .dex-wrap{ padding:16px; max-width: 1200px; margin: 0 auto; }
+    .dex-bar{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      padding:12px; border-radius:16px;
+      background: var(--glass);
+      border: 1px solid var(--stroke);
+    }
+
+    /* Sem paginação: todos os 151 na mesma página */
+    #btnPrev, #btnNext{ display:none; }
+    .dex-input{
+      flex:1; min-width:220px;
+      padding:10px 12px; border-radius:12px;
+      border: 1px solid var(--stroke);
+      background: var(--glass2);
+      color: var(--text);
+      outline:none;
+    }
+    .dex-grid{
+      margin-top:12px;
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap:16px;
+    }
+    .dex-card{
+      position:relative;
+      padding:14px;
+      border-radius:16px;
+      background: var(--glass);
+      border: 1px solid var(--stroke);
+      overflow:hidden;
+      min-height:0;
+      cursor:pointer;
+      box-shadow: var(--shadow);
+    }
+
+    /* Cor por tipo (apenas tokens do tema, via color-mix) */
+    .dex-card{
+      --typeColor: var(--muted);
+      border-color: color-mix(in oklab, var(--typeColor) 34%, var(--stroke));
+    }
+    .dex-typeblob{
+      background: color-mix(in oklab, var(--typeColor) 22%, transparent);
+      border-color: color-mix(in oklab, var(--typeColor) 38%, var(--stroke2));
+    }
+    .type-normal{ --typeColor: var(--muted); }
+    .type-fire{ --typeColor: var(--danger); }
+    .type-water{ --typeColor: color-mix(in oklab, var(--accent) 55%, var(--muted)); }
+    .type-electric{ --typeColor: var(--accent); }
+    .type-grass{ --typeColor: var(--ok); }
+    .type-ice{ --typeColor: color-mix(in oklab, var(--text) 55%, var(--accent)); }
+    .type-fighting{ --typeColor: color-mix(in oklab, var(--danger) 70%, var(--accent)); }
+    .type-poison{ --typeColor: color-mix(in oklab, var(--danger) 55%, var(--muted)); }
+    .type-ground{ --typeColor: color-mix(in oklab, var(--accent) 65%, var(--muted)); }
+    .type-flying{ --typeColor: color-mix(in oklab, var(--text) 65%, var(--ok)); }
+    .type-psychic{ --typeColor: color-mix(in oklab, var(--accent) 65%, var(--danger)); }
+    .type-bug{ --typeColor: color-mix(in oklab, var(--ok) 65%, var(--accent)); }
+    .type-rock{ --typeColor: color-mix(in oklab, var(--muted) 70%, var(--accent)); }
+    .type-ghost{ --typeColor: color-mix(in oklab, var(--muted) 65%, var(--danger)); }
+    .type-dragon{ --typeColor: color-mix(in oklab, var(--danger) 55%, var(--ok)); }
+    .type-dark{ --typeColor: color-mix(in oklab, var(--muted) 85%, var(--stroke)); }
+    .type-steel{ --typeColor: color-mix(in oklab, var(--text) 40%, var(--muted)); }
+    .type-fairy{ --typeColor: color-mix(in oklab, var(--accent) 55%, var(--text)); }
+
+    /* Card inspirado no layout do repo: número (canto), bolha de tipo e img em círculo */
+    .dex-number{
+      position:absolute;
+      left:10px;
+      top:10px;
+      font-size:12px;
+      padding:3px 8px;
+      border-radius:999px;
+      background: rgba(255,255,255,0.06);
+      border:1px solid var(--stroke2);
+      color: var(--text);
+      opacity:.9;
+      font-weight:800;
+    }
+    .dex-typeblob{
+      position:absolute;
+      right:10px;
+      top:10px;
+      height:14px;
+      width:26px;
+      border-radius:999px;
+      border:1px solid var(--stroke2);
+      cursor: help;
+    }
+    .dex-img-container{
+      width:140px;
+      height:140px;
+      margin: 16px auto 0;
+      border-radius:999px;
+      border: 1px solid var(--stroke2);
+      background: rgba(255,255,255,0.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .dex-img-container img{
+      width:85%;
+      height:85%;
+      object-fit:contain;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
+    }
+    .dex-info{ margin-top:10px; text-align:center; }
+    .dex-name{ font-weight:900; text-transform:capitalize; margin: 6px 0 2px; }
+    .dex-basic{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      margin-top:10px;
+    }
+    .dex-chip{
+      flex:1;
+      font-size:12px;
+      border-radius:999px;
+      padding:4px 8px;
+      border:1px solid var(--stroke2);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      text-align:center;
+    }
+    .dex-types{ margin-top:10px; display:flex; gap:6px; flex-wrap:wrap; justify-content:center; }
+    .badge{
+      font-size:11px;
+      padding:4px 8px;
+      border-radius:999px;
+      border: 1px solid var(--stroke2);
+      background: rgba(255,255,255,0.06);
+      opacity: .95;
+    }
+    .dex-footer{
+      margin-top:12px;
+      display:flex; gap:10px; justify-content:flex-end;
+    }
+
+    @media (max-width: 420px){
+      .dex-wrap{ padding:12px; }
+      .dex-grid{ grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap:12px; }
+      .dex-img-container{ width:130px; height:130px; }
+      .dex-basic{ flex-direction:column; }
+    }
+
+    .dex-modal__hero{
+      display:flex;
+      gap:12px;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+    .dex-modal__art{
+      width:96px;
+      height:96px;
+      object-fit:contain;
+      filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
+      image-rendering:auto;
+      flex:0 0 auto;
+    }
+    .dex-modal__meta{ display:flex; flex-direction:column; gap:6px; min-width:0; align-items:center; }
+    .dex-modal__name{ font-weight:900; text-transform:capitalize; }
+    .dex-modal__sub{ font-size:12px; color: var(--muted); }
+    .dex-modal__section{ margin-top:12px; }
+    .dex-modal__label{ font-size:12px; color: var(--muted); margin-bottom:6px; }
+    .dex-modal__list{ display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+    .dex-modal__stats{ display:grid; grid-template-columns: 1fr 1fr; gap:8px; }
+    .dex-stat{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      padding:8px 10px;
+      border:1px solid var(--stroke2);
+      border-radius:12px;
+      background: rgba(255,255,255,0.05);
+    }
+    .dex-stat__name{ font-size:12px; color: var(--muted); }
+    .dex-stat__value{ font-weight:800; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__logo"><img src="/assets/itens/pokebola.png" alt="" /></span>
+      <div class="brand__text">
+        <div class="brand__title">PokéRPG</div>
+        <div class="brand__subtitle">Pokédex</div>
+      </div>
+    </div>
+    <div class="topbar__actions">
+      <a class="btn btn--ghost" href="/dashboard">Voltar</a>
+      <a class="btn btn--danger" href="/logout">Sair</a>
+    </div>
+  </header>
+
+  <main class="dex-wrap">
+    <div class="dex-bar">
+      <input class="dex-input" id="q" placeholder="Buscar por nome (ex: pikachu)" />
+      <button class="btn btn--ghost" id="btnPrev">Anterior</button>
+      <button class="btn" id="btnNext">Próximo</button>
+    </div>
+
+    <div class="dex-grid" id="grid"></div>
+
+    <div class="dex-footer">
+      <span id="status" style="opacity:.8;"></span>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById("grid");
+      const q = document.getElementById("q");
+      const btnPrev = document.getElementById("btnPrev");
+      const btnNext = document.getElementById("btnNext");
+      const status = document.getElementById("status");
+
+      const dexModal = document.getElementById("dexModal");
+      const dexModalClose = document.getElementById("dexModalClose");
+      const dexModalTitle = document.getElementById("dexModalTitle");
+      const dexModalBody = document.getElementById("dexModalBody");
+
+      let offset = 0;
+      const limit = 151;
+      let lastData = null;
+
+      const MAX = 151;
+
+      function cap(s){ return (s||"").slice(0,1).toUpperCase() + (s||"").slice(1); }
+
+      function escapeHtml(s){
+        return String(s ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function typeClass(type){
+        const t = String(type || "normal").toLowerCase();
+        const known = new Set([
+          "normal","fire","water","electric","grass","ice","fighting","poison","ground","flying",
+          "psychic","bug","rock","ghost","dragon","dark","steel","fairy",
+        ]);
+        return `type-${known.has(t) ? t : "normal"}`;
+      }
+
+      function openDexModal(){
+        if (!dexModal) return;
+        dexModal.classList.add("is-open");
+        dexModal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeDexModal(){
+        if (!dexModal) return;
+        dexModal.classList.remove("is-open");
+        dexModal.setAttribute("aria-hidden", "true");
+      }
+
+      function renderPokemonDetails(p){
+        if (!dexModalBody || !dexModalTitle) return;
+
+        dexModalTitle.textContent = `${cap(p.name)} (#${p.id})`;
+
+        const types = (p.types || []).map(t => `<span class="badge">${escapeHtml(t)}</span>`).join("");
+        const abilities = (p.abilities || []).map(a => `<span class="badge">${escapeHtml(a)}</span>`).join("");
+        const stats = (p.stats || []).map(s => {
+          const n = escapeHtml(s.name);
+          const v = Number(s.value ?? 0);
+          return `
+            <div class="dex-stat">
+              <div class="dex-stat__name">${n}</div>
+              <div class="dex-stat__value">${Number.isFinite(v) ? v : "-"}</div>
+            </div>
+          `;
+        }).join("");
+
+        const art = p.artwork || p.gif;
+
+        dexModalBody.innerHTML = `
+          <div class="dex-modal__hero">
+            ${art ? `<img class="dex-modal__art" src="${escapeHtml(art)}" alt="${escapeHtml(p.name)}" onerror="this.style.display='none'">` : ""}
+            <div class="dex-modal__meta">
+              <div class="dex-modal__name">${escapeHtml(p.name)}</div>
+              <div class="dex-modal__sub">Altura: ${escapeHtml(p.height)} • Peso: ${escapeHtml(p.weight)}</div>
+              <div class="dex-modal__list">${types}</div>
+            </div>
+          </div>
+
+          <div class="dex-modal__section">
+            <div class="dex-modal__label">Habilidades</div>
+            <div class="dex-modal__list">${abilities || `<span class="dex-modal__sub">—</span>`}</div>
+          </div>
+
+          <div class="dex-modal__section">
+            <div class="dex-modal__label">Status base</div>
+            <div class="dex-modal__stats">${stats || ""}</div>
+          </div>
+        `;
+      }
+
+      function render(list){
+        const term = q.value.trim().toLowerCase();
+        const filtered = term
+          ? list.filter(p => p.name.includes(term))
+          : list;
+
+        grid.innerHTML = filtered.map(p => `
+          <div class="dex-card ${typeClass((p.types||[])[0])}" data-id="${p.id}" title="Clique para ver detalhes">
+            <div class="dex-number">#${p.id}</div>
+            <div class="dex-typeblob" title="${(p.types && p.types[0]) ? p.types[0] : ""}"></div>
+
+            <div class="dex-img-container">
+              <img src="${p.gif}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
+            </div>
+
+            <div class="dex-info">
+              <div class="dex-name">${p.name}</div>
+
+              <div class="dex-basic">
+                <span class="dex-chip">Peso: ${p.weight ?? "-"}</span>
+                <span class="dex-chip">Altura: ${p.height ?? "-"}</span>
+              </div>
+
+              <div class="dex-types">
+                ${(p.types || []).map(t => `<span class="badge">${t}</span>`).join("")}
+              </div>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      grid.addEventListener("click", async (e) => {
+        const target = e.target;
+        const card = target && target.closest ? target.closest(".dex-card") : null;
+        if (!card) return;
+        const id = card.getAttribute("data-id");
+        if (!id) return;
+
+        if (dexModalTitle) dexModalTitle.textContent = "Carregando...";
+        if (dexModalBody) dexModalBody.innerHTML = `<div class="dex-modal__sub">Buscando dados do Pokémon...</div>`;
+        openDexModal();
+
+        try {
+          const res = await fetch(`/api/pokedex/pokemon/${encodeURIComponent(id)}`);
+          const data = await res.json();
+          if (!res.ok) throw new Error(data?.error || "failed");
+          renderPokemonDetails(data);
+        } catch {
+          if (dexModalBody) dexModalBody.innerHTML = `<div class="dex-modal__sub">Não foi possível carregar os detalhes.</div>`;
+        }
+      });
+
+      dexModalClose?.addEventListener("click", closeDexModal);
+      dexModal?.querySelector("[data-dex-modal-close]")?.addEventListener("click", closeDexModal);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeDexModal();
+      });
+
+      async function load(){
+        status.textContent = "Carregando...";
+        const res = await fetch(`/api/pokedex/list?limit=${limit}&offset=${offset}`);
+        const data = await res.json();
+        lastData = data;
+
+        render(data.results);
+        const start = 1;
+        const end = Math.min(MAX, data.count ?? MAX);
+        status.textContent = `Mostrando ${start}–${end} de ${Math.min(data.count ?? MAX, MAX)}`;
+
+        btnPrev.disabled = true;
+        btnNext.disabled = true;
+      }
+
+      q.addEventListener("input", () => {
+        if (!lastData) return;
+        render(lastData.results);
+      });
+
+      // Paginação desativada: tudo em uma única página.
+
+      load();
+    });
+  </script>
+
+  <div class="modal" id="dexModal" aria-hidden="true">
+    <div class="modal__backdrop" data-dex-modal-close></div>
+    <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="dexModalTitle">
+      <div class="widget__header">
+        <div class="widget__title" id="dexModalTitle">Pokémon</div>
+        <button class="btn btn--small btn--ghost" id="dexModalClose" type="button">✕</button>
+      </div>
+      <div class="widget__body" id="dexModalBody"></div>
+    </div>
+  </div>
+</body>
+</html>

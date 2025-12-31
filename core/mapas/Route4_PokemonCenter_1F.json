@@ -1,0 +1,305 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route4_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_ROUTE4_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route4_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ROUTE4_NURSE",
+                "script": "Route4_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route4_PokemonCenter_1F-1",
+            "x": 1,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route4_PokemonCenter_1F_EventScript_MagikarpSalesman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route4_PokemonCenter_1F-2",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route4_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route4_PokemonCenter_1F-3",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route4_PokemonCenter_1F_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route4_PokemonCenter_1F-4",
+            "x": 14,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route4_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route4_PokemonCenter_1F-5",
+            "x": 12,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_CLIPBOARD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route4_PokemonCenter_1F_EventScript_Newspaper",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route4_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4",
+                "x": 12,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE4",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route4_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4",
+                "x": 12,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE4",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route4_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4",
+                "x": 12,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE4",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route4_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route4_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE4_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "Route4_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "Route4_PokemonCenter_1F_Text_CanHaveSixMonsWithYou",
+            "id": "Route4_PokemonCenter_1F_EventScript_Boy",
+            "text": "Okay, set six POKé BALLS in my\nbelt…\n\nYeah, that'll do it. At most, you\ncan have six POKéMON with you."
+        },
+        {
+            "title": "Route4_PokemonCenter_1F_Text_TeamRocketAttacksCerulean",
+            "id": "Route4_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "TEAM ROCKET attacks CERULEAN\ncitizens…\n\nNot a day goes by without TEAM\nROCKET being in the news."
+        },
+        {
+            "title": "Route4_PokemonCenter_1F_EventScript_MagikarpSalesman",
+            "id": "Route4_PokemonCenter_1F_EventScript_MagikarpSalesman",
+            "text": "TODO: Route4_PokemonCenter_1F_EventScript_MagikarpSalesman"
+        },
+        {
+            "title": "Route4_PokemonCenter_1F_Text_ItsANewspaper",
+            "id": "Route4_PokemonCenter_1F_EventScript_Newspaper",
+            "text": "It's a newspaper."
+        },
+        {
+            "title": "Route4_PokemonCenter_1F_EventScript_Nurse",
+            "id": "Route4_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: Route4_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC",
+            "id": "Route4_PokemonCenter_1F_EventScript_Youngster",
+            "text": "Sometimes, you'll have too many\nPOKéMON with you to add any more.\n\nIn that case, you should just\nstore some using any PC."
+        }
+    ],
+    "jumps": []
+}

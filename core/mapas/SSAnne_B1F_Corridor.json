@@ -1,0 +1,205 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_B1F_Corridor",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_B1F_CORRIDOR",
+        "sourceMapId": "MAP_SSANNE_B1F_CORRIDOR",
+        "width": 23,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 7
+    },
+    "start": {
+        "y": 1,
+        "x": 21
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 23,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 21,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 6,
+            "x": 22
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 5,
+            "x": 21
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 6,
+            "w": 20,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-SSAnne_B1F_Corridor-1",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Corridor",
+                "x": 28,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_CORRIDOR",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_B1F_Corridor-2",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Room1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_ROOM1",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_B1F_Corridor-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Room2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_ROOM2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_B1F_Corridor-4",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Room3",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_ROOM3",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_B1F_Corridor-5",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Room4",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_ROOM4",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_B1F_Corridor-6",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Room5",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_ROOM5",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SSAnne_B1F_Corridor",
+    "dialogs": [],
+    "jumps": []
+}

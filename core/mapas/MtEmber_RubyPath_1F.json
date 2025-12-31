@@ -1,0 +1,313 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtEmber_RubyPath_1F",
+    "meta": {
+        "layoutId": "LAYOUT_MT_EMBER_RUBY_PATH_1F",
+        "sourceMapId": "MAP_MT_EMBER_RUBY_PATH_1F",
+        "width": 27,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_MtEmber",
+        "height": 19
+    },
+    "start": {
+        "y": 1,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 27,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 18,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 24,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 18,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 15,
+            "x": 26
+        },
+        {
+            "y": 5,
+            "w": 14,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 12,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 5,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 11,
+            "x": 24
+        },
+        {
+            "y": 9,
+            "w": 12,
+            "h": 10,
+            "x": 5
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 23
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 9,
+            "x": 25
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 8,
+            "x": 17
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 6,
+            "x": 20
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 1,
+            "x": 21
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtEmber_RubyPath_1F-0",
+            "x": 18,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-MtEmber_RubyPath_1F-1",
+            "x": 23,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-MtEmber_RubyPath_1F-2",
+            "x": 20,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-MtEmber_RubyPath_1F-3",
+            "x": 19,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-MtEmber_RubyPath_1F-4",
+            "x": 21,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_16"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtEmber_RubyPath_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_Exterior",
+                "x": 42,
+                "y": 39,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_EXTERIOR",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtEmber_RubyPath_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_B1F",
+                "x": 9,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_B1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-MtEmber_RubyPath_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_RubyPath_B2F_Stairs",
+                "x": 1,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "MtEmber_RubyPath_1F",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 20,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 8,
+            "dir": "left"
+        },
+        {
+            "x": 24,
+            "y": 9,
+            "dir": "left"
+        }
+    ]
+}

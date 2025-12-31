@@ -1,0 +1,122 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "RecordCorner",
+    "meta": {
+        "layoutId": "LAYOUT_RECORD_CORNER",
+        "sourceMapId": "MAP_RECORD_CORNER",
+        "width": 20,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CableClub",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 20,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 8,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 4,
+            "h": 1,
+            "x": 12
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-RecordCorner-0",
+            "x": 10,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_UNION_ROOM_RECEPTIONIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "RecordCorner_EventScript_Attendant",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [],
+    "name": "RecordCorner",
+    "dialogs": [
+        {
+            "title": "RecordCorner_EventScript_Attendant",
+            "id": "RecordCorner_EventScript_Attendant",
+            "text": "TODO: RecordCorner_EventScript_Attendant"
+        },
+        {
+            "title": "RecordCorner_EventScript_Spot0",
+            "id": "RecordCorner_EventScript_Spot0",
+            "text": "TODO: RecordCorner_EventScript_Spot0"
+        },
+        {
+            "title": "RecordCorner_EventScript_Spot1",
+            "id": "RecordCorner_EventScript_Spot1",
+            "text": "TODO: RecordCorner_EventScript_Spot1"
+        },
+        {
+            "title": "RecordCorner_EventScript_Spot2",
+            "id": "RecordCorner_EventScript_Spot2",
+            "text": "TODO: RecordCorner_EventScript_Spot2"
+        },
+        {
+            "title": "RecordCorner_EventScript_Spot3",
+            "id": "RecordCorner_EventScript_Spot3",
+            "text": "TODO: RecordCorner_EventScript_Spot3"
+        }
+    ],
+    "jumps": []
+}

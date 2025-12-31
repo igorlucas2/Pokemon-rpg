@@ -1,0 +1,466 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_1F_Corridor",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_1F_CORRIDOR",
+        "sourceMapId": "MAP_SSANNE_1F_CORRIDOR",
+        "width": 31,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 21
+    },
+    "start": {
+        "y": 0,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 5,
+            "h": 2,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 21
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 15,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 13,
+            "x": 30
+        },
+        {
+            "y": 11,
+            "w": 22,
+            "h": 8,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 5,
+            "x": 26
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 19,
+            "w": 21,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 2,
+            "x": 28
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_1F_Corridor-0",
+            "x": 18,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Corridor_EventScript_Sailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_1F_Corridor-1",
+            "x": 12,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Corridor_EventScript_WorkerM",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_1F_Corridor-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_2F_Corridor",
+                "x": 2,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_2F_CORRIDOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-2",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Kitchen",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_KITCHEN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-3",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Exterior",
+                "x": 32,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_EXTERIOR",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-4",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 0,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Exterior",
+                "x": 33,
+                "y": 15,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_EXTERIOR",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-5",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Kitchen",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_KITCHEN",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-6",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_B1F_Corridor",
+                "x": 19,
+                "y": 3,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_B1F_CORRIDOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-7",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room1",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM1",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-8",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room2",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM2",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-9",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room3",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM3",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-10",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room4",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM4",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-11",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room5",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM5",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-12",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room7",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM7",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SSAnne_1F_Corridor-13",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Room6",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_ROOM6",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_1F_Corridor",
+    "dialogs": [
+        {
+            "title": "SSAnne_1F_Corridor_Text_PassengersAreRestless",
+            "id": "SSAnne_1F_Corridor_EventScript_Sailor",
+            "text": "The passengers are restless from\nthis long voyage.\n\nYou might be challenged by the\nmore bored ones!"
+        },
+        {
+            "title": "SSAnne_1F_Corridor_Text_LeStrongSilentType",
+            "id": "SSAnne_1F_Corridor_EventScript_WorkerM",
+            "text": "Bonjour!\nI am le waiter on this ship!\n\nI will be happy to serve you\nanything you please!\n\n… … …\nAh! Le strong silent type!"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,322 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CINNABAR_NURSE",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-1",
+            "x": 2,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-2",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-3",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-4",
+            "x": 2,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-5",
+            "x": 3,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonCenter_1F-6",
+            "x": 11,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BILL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CINNABAR_POKEMON_CENTER_BILL",
+                "script": "CinnabarIsland_PokemonCenter_1F_EventScript_Bill",
+                "flag": "FLAG_HIDE_CINNABAR_POKECENTER_BILL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 14,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 14,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 14,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "CinnabarIsland_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_Bill",
+            "text": "BILL: Hey, you kept me waiting!\nReady to set sail to ONE ISLAND?\n\nWell, that's it.\nLet's go!"
+        },
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_CooltrainerF",
+            "text": "I came to visit the CINNABAR GYM,\nbut the door is locked tight.\n\nThere should be a key for it\nsomewhere.\n\nCould it be in that burned-out\nmansion?\n\nThe GYM LEADER's friend used to\nlive there, they say."
+        },
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "Do you have lots of friends?\n\nLinking up with the usual friends\nis fun, of course.\n\nBut how about visiting the\nUNION ROOM every so often?\n\nWho knows, you may end up making\nnew friends.\n\nI think it would be worth your time\nto check the UNION ROOM."
+        },
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_EventScript_Nurse",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: CinnabarIsland_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji",
+            "text": "TODO: CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji"
+        },
+        {
+            "title": "CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves",
+            "id": "CinnabarIsland_PokemonCenter_1F_EventScript_Youngster",
+            "text": "POKéMON can still learn techniques\nafter canceling evolution.\n\nEvolution can wait until new moves\nhave been learned."
+        }
+    ],
+    "jumps": []
+}

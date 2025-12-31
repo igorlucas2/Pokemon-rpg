@@ -1,0 +1,406 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_MemorialPillar",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_MEMORIAL_PILLAR",
+        "sourceMapId": "MAP_FIVE_ISLAND_MEMORIAL_PILLAR",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 60
+    },
+    "start": {
+        "y": 4,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 9,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 8,
+            "h": 16,
+            "x": 16
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 8,
+            "h": 30,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 31,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 29,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 27,
+            "x": 9
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 15
+        },
+        {
+            "y": 20,
+            "w": 7,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 21,
+            "w": 5,
+            "h": 39,
+            "x": 19
+        },
+        {
+            "y": 27,
+            "w": 4,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 30,
+            "w": 3,
+            "h": 9,
+            "x": 13
+        },
+        {
+            "y": 32,
+            "w": 3,
+            "h": 11,
+            "x": 16
+        },
+        {
+            "y": 38,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 39,
+            "w": 4,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 39,
+            "w": 2,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 40,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 40,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 41,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 43,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 43,
+            "w": 2,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 44,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 44,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 46,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 46,
+            "w": 1,
+            "h": 5,
+            "x": 7
+        },
+        {
+            "y": 46,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 46,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 47,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 47,
+            "w": 1,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 48,
+            "w": 1,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 48,
+            "w": 3,
+            "h": 12,
+            "x": 2
+        },
+        {
+            "y": 48,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 49,
+            "w": 1,
+            "h": 11,
+            "x": 1
+        },
+        {
+            "y": 49,
+            "w": 1,
+            "h": 11,
+            "x": 14
+        },
+        {
+            "y": 50,
+            "w": 6,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 51,
+            "w": 3,
+            "h": 9,
+            "x": 11
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 8,
+            "x": 5
+        },
+        {
+            "y": 52,
+            "w": 4,
+            "h": 8,
+            "x": 15
+        },
+        {
+            "y": 53,
+            "w": 5,
+            "h": 7,
+            "x": 6
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_MemorialPillar-0",
+            "x": 8,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_MEMORIAL_MAN",
+                "script": "FiveIsland_MemorialPillar_EventScript_MemorialMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_MemorialPillar-1",
+            "x": 12,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_MemorialPillar_EventScript_Milo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_MemorialPillar-2",
+            "x": 14,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_MemorialPillar_EventScript_Chaz",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_MemorialPillar-3",
+            "x": 17,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_MemorialPillar_EventScript_Harold",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_MemorialPillar-4",
+            "x": 4,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_MemorialPillar_EventScript_ItemMetalCoat",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_METAL_COAT"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-FiveIsland_MemorialPillar-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_Meadow",
+                "connection": {
+                    "direction": "left",
+                    "offset": -20
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": -20,
+                "destMap": "MAP_FIVE_ISLAND_MEADOW"
+            }
+        }
+    ],
+    "name": "FiveIsland_MemorialPillar",
+    "dialogs": [
+        {
+            "title": "FiveIsland_MemorialPillar_EventScript_Chaz",
+            "id": "FiveIsland_MemorialPillar_EventScript_Chaz",
+            "text": "TODO: FiveIsland_MemorialPillar_EventScript_Chaz"
+        },
+        {
+            "title": "FiveIsland_MemorialPillar_EventScript_Harold",
+            "id": "FiveIsland_MemorialPillar_EventScript_Harold",
+            "text": "TODO: FiveIsland_MemorialPillar_EventScript_Harold"
+        },
+        {
+            "title": "FiveIsland_MemorialPillar_EventScript_ItemMetalCoat",
+            "id": "FiveIsland_MemorialPillar_EventScript_ItemMetalCoat",
+            "text": "TODO: FiveIsland_MemorialPillar_EventScript_ItemMetalCoat"
+        },
+        {
+            "title": "FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering",
+            "id": "FiveIsland_MemorialPillar_EventScript_Memorial",
+            "text": "“Here lies TECTONIX” is engraved\non a boulder.\n\nThere is a LEMONADE placed as an\noffering in front of the grave."
+        },
+        {
+            "title": "FiveIsland_MemorialPillar_Text_ScrubScrub",
+            "id": "FiveIsland_MemorialPillar_EventScript_MemorialMan",
+            "text": "Scrub, scrub…\n\nHello…\nYour POKéMON look healthy…\n\nThis is where I buried my ONIX…\nIt was named TECTONIX…"
+        },
+        {
+            "title": "FiveIsland_MemorialPillar_EventScript_Milo",
+            "id": "FiveIsland_MemorialPillar_EventScript_Milo",
+            "text": "TODO: FiveIsland_MemorialPillar_EventScript_Milo"
+        }
+    ],
+    "jumps": []
+}

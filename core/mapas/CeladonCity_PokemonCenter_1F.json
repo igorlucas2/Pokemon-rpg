@@ -1,0 +1,261 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_CELADON_CITY_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CELADON_NURSE",
+                "script": "CeladonCity_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_PokemonCenter_1F-1",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_PokemonCenter_1F-2",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_PokemonCenter_1F_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_PokemonCenter_1F-3",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 48,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 48,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 48,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "CeladonCity_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "CeladonCity_PokemonCenter_1F_Text_RodeHereFromFuchsia",
+            "id": "CeladonCity_PokemonCenter_1F_EventScript_CooltrainerF",
+            "text": "I rode here from FUCHSIA.\n\nIt's an uphill ride on CYCLING\nROAD, so I'm exhausted."
+        },
+        {
+            "title": "CeladonCity_PokemonCenter_1F_Text_PokeFluteAwakensSleepingMons",
+            "id": "CeladonCity_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "A POKé FLUTE awakens sleeping\nPOKéMON. You know that.\n\nIt does so with a sound that only\nthey can hear."
+        },
+        {
+            "title": "CeladonCity_PokemonCenter_1F_EventScript_Nurse",
+            "id": "CeladonCity_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: CeladonCity_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "CeladonCity_PokemonCenter_1F_Text_GoToCyclingRoadIfIHadBike",
+            "id": "CeladonCity_PokemonCenter_1F_EventScript_Youngster",
+            "text": "If I had a BIKE, I would go to\nCYCLING ROAD!"
+        }
+    ],
+    "jumps": []
+}

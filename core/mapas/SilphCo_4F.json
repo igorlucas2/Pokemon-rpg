@@ -1,0 +1,553 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SilphCo_4F",
+    "meta": {
+        "layoutId": "LAYOUT_SILPH_CO_4F",
+        "sourceMapId": "MAP_SILPH_CO_4F",
+        "width": 36,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 22
+    },
+    "start": {
+        "y": 2,
+        "x": 28
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 36,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 28,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 5,
+            "h": 2,
+            "x": 31
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 15,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 14,
+            "x": 19
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 6,
+            "x": 1
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 8,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 8,
+            "x": 5
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 2,
+            "x": 31
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 11,
+            "x": 24
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 35
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 35
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 35
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SilphCo_4F-0",
+            "x": 33,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-1",
+            "x": 10,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-2",
+            "x": 14,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_Rodney",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-3",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_WorkerM",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-4",
+            "x": 3,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_ItemMaxRevive",
+                "flag": "FLAG_HIDE_SILPH_CO_4F_MAX_REVIVE"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-5",
+            "x": 4,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_ItemEscapeRope",
+                "flag": "FLAG_HIDE_SILPH_CO_4F_ESCAPE_ROPE"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-6",
+            "x": 2,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_ItemFullHeal",
+                "flag": "FLAG_HIDE_SILPH_CO_4F_FULL_HEAL"
+            }
+        },
+        {
+            "id": "npc-SilphCo_4F-7",
+            "x": 30,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_4F_EventScript_ItemTM41",
+                "flag": "FLAG_HIDE_SILPH_CO_4F_TM41"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SilphCo_4F-1",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_5F",
+                "x": 28,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_5F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-2",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_6F",
+                "x": 2,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_6F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-3",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_3F",
+                "x": 30,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_3F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-4",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_10F",
+                "x": 10,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_10F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-5",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_10F",
+                "x": 14,
+                "y": 17,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_10F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-6",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_10F",
+                "x": 14,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_10F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_4F-7",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SilphCo_4F",
+    "dialogs": [
+        {
+            "title": "SilphCo_4F_EventScript_Door1",
+            "id": "SilphCo_4F_EventScript_Door1",
+            "text": "TODO: SilphCo_4F_EventScript_Door1"
+        },
+        {
+            "title": "SilphCo_4F_EventScript_Door2",
+            "id": "SilphCo_4F_EventScript_Door2",
+            "text": "TODO: SilphCo_4F_EventScript_Door2"
+        },
+        {
+            "title": "SilphCo_4F_Text_FloorSign",
+            "id": "SilphCo_4F_EventScript_FloorSign",
+            "text": "SILPH CO. HEAD OFFICE\n4F"
+        },
+        {
+            "title": "SilphCo_4F_Text_Grunt1PostBattle",
+            "id": "SilphCo_4F_EventScript_Grunt1",
+            "text": "Fwahahaha!\nMy BOSS has been after this place!"
+        },
+        {
+            "title": "SilphCo_4F_Text_Grunt2PostBattle",
+            "id": "SilphCo_4F_EventScript_Grunt2",
+            "text": "I better tell the BOSS on 11F!"
+        },
+        {
+            "title": "SilphCo_4F_EventScript_ItemEscapeRope",
+            "id": "SilphCo_4F_EventScript_ItemEscapeRope",
+            "text": "TODO: SilphCo_4F_EventScript_ItemEscapeRope"
+        },
+        {
+            "title": "SilphCo_4F_EventScript_ItemFullHeal",
+            "id": "SilphCo_4F_EventScript_ItemFullHeal",
+            "text": "TODO: SilphCo_4F_EventScript_ItemFullHeal"
+        },
+        {
+            "title": "SilphCo_4F_EventScript_ItemMaxRevive",
+            "id": "SilphCo_4F_EventScript_ItemMaxRevive",
+            "text": "TODO: SilphCo_4F_EventScript_ItemMaxRevive"
+        },
+        {
+            "title": "SilphCo_4F_EventScript_ItemTM41",
+            "id": "SilphCo_4F_EventScript_ItemTM41",
+            "text": "TODO: SilphCo_4F_EventScript_ItemTM41"
+        },
+        {
+            "title": "SilphCo_4F_Text_RodneyPostBattle",
+            "id": "SilphCo_4F_EventScript_Rodney",
+            "text": "The doors are electronically\nlocked.\n\nIt takes a CARD KEY to open the\ndoors here."
+        },
+        {
+            "title": "SilphCo_4F_Text_CantYouSeeImHiding",
+            "id": "SilphCo_4F_EventScript_WorkerM",
+            "text": "Sssh!\nCan't you see I'm hiding?"
+        }
+    ],
+    "jumps": []
+}

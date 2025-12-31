@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokéRPG — Dashboard</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Scripts do Jogo (Configuração e Mundo) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="/js/core-config.js"></script>
+  <script defer src="/core/world.js"></script>
+  <script defer src="/core/world.pokefirered.js"></script>
+  <script defer src="/js/core-player-bootstrap.js"></script>
+
+  <!-- Sistema de Modais e UI -->
+  <script defer src="/js/ui.js?v=<%= Date.now() %>"></script>
+  <script defer src="/js/chat.js?v=<%= Date.now() %>"></script>
+  <script defer src="/js/nearby-pokemon.js"></script>
+  <script defer src="/js/battle-modal.js"></script>
+  <script defer src="/js/pokedex-modal.js"></script>
+  <script defer src="/js/bag-modal.js"></script>
+  <script defer src="/js/shop-modal.js"></script>
+  <script defer src="/js/oak-modal.js"></script>
+  <script defer src="/js/trainer-modal.js?v=<%= Date.now() %>"></script>
+  <script defer src="/js/save-game-modal.js"></script>
+
+  <!-- Core Engine e Comunicação -->
+  <script defer src="/js/core-fit.js"></script>
+  <script defer src="/js/core-socket.js"></script>
+  <script defer src="/core/game.js"></script>
+</head>
+
+<body class="page-dashboard" data-has-trainer="<%= (typeof trainer !== 'undefined' && trainer) ? '1' : '0' %>"
+  data-starter="<%= (typeof trainer !== 'undefined' && trainer) ? trainer.starterPokemonId : '' %>"
+  data-trainer-modal-open="<%= (typeof trainerError !== 'undefined' && trainerError) ? '1' : '0' %>"
+  data-player-name="<%= (typeof trainer !== 'undefined' && trainer && trainer.name) ? trainer.name : ((typeof user !== 'undefined' && user && user.name) ? user.name : 'Jogador') %>"
+  data-overworld-sprite="<%= (typeof trainer !== 'undefined' && trainer && trainer.overworldSprite) ? trainer.overworldSprite : 'boy' %>">
+  <script id="overworldSpritesData"
+    type="application/json"><%- JSON.stringify(Array.isArray(overworldSprites) ? overworldSprites : []) %></script>
+  <div class="app-shell">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand__logo"><img src="/assets/itens/pokebola.png" alt="" /></span>
+        <div class="brand__text">
+          <div class="brand__title">PokéRPG</div>
+          <div class="brand__subtitle">Multiplayer • Tempo real</div>
+        </div>
+        <div class="dash-panel-toggles dash-panel-toggles--topbar" aria-label="Abrir painéis">
+          <button class="btn btn--icon btn--ghost" id="btnToggleLeftPanel" type="button"
+            title="Abrir/fechar painel esquerdo">
+            <img class="btn__icon" src="/assets/itens/pc.png" alt="" />
+          </button>
+          <button class="btn btn--icon btn--ghost" id="btnToggleRightPanel" type="button"
+            title="Abrir/fechar painel direito">
+            <img class="btn__icon" src="/assets/itens/engrenagem.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <% if (user && user.role==='admin' ) { %>
+          <a class="btn btn--primary" href="/admin/map" title="Painel Admin">🛠️ Admin</a>
+          <% } %>
+            <button class="btn btn--icon btn--ghost" id="btnFullScreen" title="Tela cheia">⛶</button>
+            <a class="btn btn--danger" href="/logout" title="Sair">Sair</a>
+      </div>
+    </header>
+
+
+
+    <!-- Layout principal -->
+    <main class="main-grid">
+
+      <!-- Coluna esquerda -->
+      <aside class="side left">
+
+        <section class="widget" id="trainerWidget">
+          <div class="widget__header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <button class="btn btn--icon btn--ghost widget-toggle" type="button" aria-label="Alternar painel"
+                style="width:28px; height:28px; padding:0; display:grid; place-items:center;">
+                <span style="font-size:10px; pointer-events:none;">▼</span>
+              </button>
+              <div class="widget__title">Treinador</div>
+            </div>
+            <div class="pill">online</div>
+          </div>
+
+          <div class="widget__body">
+            <% if (typeof trainer==='undefined' || !trainer) { %>
+              <div class="hint" style="margin-bottom:12px;">
+                Crie seu treinador para começar. Você inicia com <b>10</b> pokébolas, <b>1000</b> dinheiros, nível
+                <b>1</b> e <b>0</b> XP.
+              </div>
+
+              <button class="btn btn--wide" id="btnCreateTrainer" type="button">Criar treinador</button>
+              <% } %>
+
+                <% if (typeof trainer !=='undefined' && trainer) { %>
+                  <% const activePokemon=(typeof party !=='undefined' && Array.isArray(party) && party.length) ?
+                    party[0] : null; %>
+                    <% const hpMax=activePokemon ? Number(activePokemon.maxHp ?? 0) : 0; %>
+                      <% const hpCur=activePokemon ? Number(activePokemon.currentHp ?? 0) : 0; %>
+                        <% const hpRatio=(hpMax> 0) ? (hpCur / hpMax) : 0; %>
+
+                          <div class="trainer-profile">
+                            <img class="trainer-avatar" src="/assets/personages/<%= trainer.avatar %>" alt="Avatar" />
+                            <div class="trainer-profile__meta">
+                              <div class="trainer-name-row">
+                                <div class="trainer-name" id="playerName">
+                                  <%= trainer?.name || ((typeof user !=="undefined" && user?.name) ? user.name
+                                    : "Treinador(a)" ) %>
+                                </div>
+                                <div class="trainer-level">Lv <span id="playerLevel">
+                                    <%= trainer?.level ?? 1 %>
+                                  </span></div>
+                              </div>
+
+                              <div class="hpbar" aria-label="Vida atual do Pokémon">
+                                <div class="hpbar__top">
+                                  <span class="hpbar__label">HP</span>
+                                  <span class="hpbar__value">
+                                    <%= activePokemon ? `${hpCur}/${hpMax}` : "—" %>
+                                  </span>
+                                </div>
+                                <div class="hpbar__track">
+                                  <div class="hpbar__fill <%= (hpRatio <= 0.25) ? 'is-low' : '' %>"
+                                    style="width:<%= Math.max(0, Math.min(100, Math.round(hpRatio * 100))) %>%;">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="stat-row">
+                            <div class="stat">
+                              <div class="stat__label">💰 Dinheiro</div>
+                              <div class="stat__value" id="playerGold">₽ <%= Number(trainer?.money ??
+                                  0).toLocaleString('pt-BR') %>
+                              </div>
+                            </div>
+                            <div class="stat">
+                              <div class="stat__label">⭐ XP</div>
+                              <div class="stat__value" id="playerXP">
+                                <%= Number(trainer?.xp ?? 0).toLocaleString('pt-BR') %>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="stat-row">
+                            <div class="stat">
+                              <div class="stat__label">🎒 Pokébolas</div>
+                              <div class="stat__value" id="playerPokeballs">
+                                <%= Number(trainer?.pokeballs ?? 0).toLocaleString('pt-BR') %>
+                              </div>
+                            </div>
+                            <div class="stat">
+                              <div class="stat__label">Inicial</div>
+                              <div class="stat__value" style="display:flex; align-items:center; gap:10px;">
+                                <span style="font-size:12px; color: var(--muted);">#<%= trainer.starterPokemonId %>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bar">
+                            <div class="bar__label">❤️ Energia</div>
+                            <div class="bar__track">
+                              <div class="bar__fill" style="width: 72%"></div>
+                            </div>
+                          </div>
+
+                          <div class="trainer-actions" aria-label="Atalhos do treinador">
+                            <button class="btn btn--ghost btn--icon btn--itemicon" id="btnBag" type="button"
+                              title="Mochila">
+                              <img class="btn__icon" src="/assets/itens/mochila.png" alt="Mochila">
+                            </button>
+                            <button class="btn btn--ghost btn--icon btn--itemicon btn--itemicon-pokedex" id="btnPokedex"
+                              type="button" title="Pokédex">
+                              <img class="btn__icon" src="/assets/itens/pokedex-icon.PNG" alt="Pokédex">
+                            </button>
+                            <button class="btn btn--ghost btn--icon btn--itemicon" id="btnShop" type="button"
+                              title="Loja">
+                              <img class="btn__icon" src="/assets/itens/moeda.png" alt="Loja">
+                            </button>
+                            <button class="btn btn--ghost btn--icon btn--itemicon" id="btnOak" type="button"
+                              title="Professor Carvalho">
+                              <img class="btn__icon" src="/assets/itens/pasta.png" alt="Professor Carvalho">
+                            </button>
+                          </div>
+
+                          <button class="btn btn--wide btn--ghost" id="btnRecreateTrainer" type="button"
+                            style="margin-top:12px;">Recriar treinador (reseta)</button>
+                          <% } %>
+          </div>
+        </section>
+
+        <section class="widget" id="teamWidget">
+          <div class="widget__header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <button class="btn btn--icon btn--ghost widget-toggle" type="button" aria-label="Alternar painel"
+                style="width:28px; height:28px; padding:0; display:grid; place-items:center;">
+                <span style="font-size:10px; pointer-events:none;">▼</span>
+              </button>
+              <div class="widget__title">Time Pokémon</div>
+            </div>
+            <button class="btn btn--small btn--ghost" id="btnTeam">Ver</button>
+          </div>
+
+          <div class="widget__body">
+            <ul class="poke-list" id="pokeList">
+            </ul>
+
+            <% if (typeof trainer==='undefined' || !trainer) { %>
+              <div class="hint" id="teamHint">Crie um treinador para montar seu time inicial.</div>
+              <% } else { %>
+                <div class="hint" id="teamHint">Seu Pokémon inicial aparecerá aqui.</div>
+                <% } %>
+          </div>
+        </section>
+
+        <!-- Widget de Pokémon Avistados -->
+        <section class="widget" id="nearbyWidget">
+          <div class="widget__header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <button class="btn btn--icon btn--ghost widget-toggle" type="button" aria-label="Alternar painel"
+                style="width:28px; height:28px; padding:0; display:grid; place-items:center;">
+                <span style="font-size:10px; pointer-events:none;">▼</span>
+              </button>
+              <div class="widget__title">🔍 Pokémon Avistados</div>
+            </div>
+            <button class="btn btn--small btn--ghost" id="btnClearNearby" type="button">Limpar</button>
+          </div>
+
+          <div class="widget__body">
+            <div id="nearbyList" class="nearby-list">
+              <div class="hint">Ande pela grama para encontrar Pokémon selvagens...</div>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- Centro (mapa rolável) -->
+      <section class="center">
+        <div class="map-card">
+
+          <div class="map-toolbar">
+            <div class="map-toolbar__left">
+              <span class="room-pill" id="roomName">Sala: kanto-01</span>
+              <span class="mini">Ping: <b id="pingValue">—</b></span>
+            </div>
+            <div class="map-toolbar__right">
+              <button class="btn btn--small btn--ghost" id="btnZoomIn" type="button">Zoom +</button>
+              <button class="btn btn--small btn--ghost" id="btnZoomOut" type="button">Zoom -</button>
+              <button class="btn btn--small btn--ghost" id="btnCenter">Centralizar</button>
+              <button class="btn btn--small" id="btnHelp">Ajuda</button>
+            </div>
+          </div>
+
+          <!-- ? Stage rol?vel -->
+          <div class="map-stage" id="mapStage">
+
+            <!-- ? Canvas com tamanho do mapa -->
+            <div class="map-canvas core-map-canvas" id="mapCanvas">
+              <div id="game-wrap" class="core-game-wrap">
+                <canvas id="game" width="640" height="480"></canvas>
+                <div id="editor-overlay" aria-hidden="true"></div>
+                <div id="message" class="hidden" role="dialog" aria-live="polite"></div>
+              </div>
+
+              <div class="map-vignette"></div>
+            </div>
+          </div>
+          <div class="map-footer">
+            <div class="mini">Tile: <span id="coordsText">-</span></div>
+            <div class="mini" id="playersCount">Players na sala: 1</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Coluna direita -->
+      <aside class="side right">
+
+        <section class="widget" id="settingsWidget">
+          <div class="widget__header">
+            <div class="widget__title">Configurações</div>
+            <button class="btn btn--small btn--ghost" id="btnCloseSettings">✕</button>
+          </div>
+
+          <div class="widget__body">
+            <div class="toggle-row">
+              <div>
+                <div class="toggle-title">Som</div>
+                <div class="toggle-sub">Efeitos e cliques</div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="toggleSound" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <div>
+                <div class="toggle-title">Notificações</div>
+                <div class="toggle-sub">Entradas/saídas</div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="toggleNotif" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="divider"></div>
+
+            <button class="btn btn--wide" id="btnOpenChat">Abrir Chat (futuro)</button>
+            <button class="btn btn--wide btn--ghost" id="btnKeybinds">Atalhos</button>
+          </div>
+        </section>
+
+        <section class="widget">
+          <div class="widget__header">
+            <div class="widget__title">Log</div>
+            <div class="pill pill--muted">tempo real</div>
+          </div>
+          <div class="widget__body">
+            <div class="log" id="logBox"></div>
+          </div>
+        </section>
+
+      </aside>
+
+    </main>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav">
+      <button class="mobile-nav__btn" data-panel="trainer">🧑‍🚀</button>
+      <button class="mobile-nav__btn" data-panel="team">⚪</button>
+      <button class="mobile-nav__btn" data-panel="settings">⚙️</button>
+    </nav>
+
+    <!-- Mobile panels -->
+    <div class="mobile-panel" id="panelTrainer">
+      <div class="mobile-panel__head">
+        <div class="mobile-panel__title">Treinador</div>
+        <button class="btn btn--small btn--ghost" data-close-panel>✕</button>
+      </div>
+      <div class="mobile-panel__content" id="mobileTrainerClone"></div>
+    </div>
+
+    <div class="mobile-panel" id="panelTeam">
+      <div class="mobile-panel__head">
+        <div class="mobile-panel__title">Time</div>
+        <button class="btn btn--small btn--ghost" data-close-panel>✕</button>
+      </div>
+      <div class="mobile-panel__content" id="mobileTeamClone"></div>
+    </div>
+
+    <div class="mobile-panel" id="panelSettings">
+      <div class="mobile-panel__head">
+        <div class="mobile-panel__title">Configurações</div>
+        <button class="btn btn--small btn--ghost" data-close-panel>✕</button>
+      </div>
+      <div class="mobile-panel__content" id="mobileSettingsClone"></div>
+    </div>
+
+    <!-- Modal: Eventos da Região -->
+    <div class="modal" id="eventsModal" aria-hidden="true">
+      <div class="modal__backdrop" data-events-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="eventsModalTitle">
+        <div class="widget__header">
+          <div class="widget__title" id="eventsModalTitle">Eventos</div>
+          <button class="btn btn--small btn--ghost" id="eventsModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="mini" id="eventsModalSubtitle">—</div>
+          <div style="margin-top:10px" id="eventsModalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Salvar Jogo (PC do PokéCenter) -->
+    <div class="modal" id="saveGameModal" aria-hidden="true">
+      <div class="modal__backdrop"></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="saveGameModalTitle">
+        <div class="widget__header">
+          <div class="widget__title" id="saveGameModalTitle">💾 Computador do PokéCenter</div>
+          <button class="btn btn--small btn--ghost" id="saveGameModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="mini" style="margin-bottom:16px;">Deseja salvar o seu progresso?</div>
+
+          <div id="saveGameInfo"
+            style="background: var(--bg-secondary); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <div class="mini" style="margin-bottom: 8px;">📍 Localização: <span id="saveCurrentMap">—</span></div>
+            <div class="mini" style="margin-bottom: 8px;">⏰ Tempo de Jogo: <span id="savePlayTime">—</span></div>
+            <div class="mini">🎒 Pokémon: <span id="savePokemonCount">—</span></div>
+          </div>
+
+          <div class="actions">
+            <button class="btn" id="saveGameBtn" type="button">✅ Salvar Jogo</button>
+            <button class="btn btn--ghost" id="saveGameCancelBtn" type="button">Cancelar</button>
+          </div>
+
+          <div class="mini" id="saveGameStatus" style="margin-top:12px; text-align:center;">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Encontro (Caçar Pokémon) -->
+    <div class="modal" id="encounterModal" aria-hidden="true">
+      <div class="modal__backdrop" data-encounter-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="encounterModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="encounterModalTitle">Encontro!</div>
+            <div class="mini" id="encounterModalSubtitle">—</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="encounterModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="encounter-modal__body">
+            <img class="encounter-modal__sprite" id="encounterSprite" alt="Pokémon" />
+            <div class="encounter-modal__meta">
+              <div class="encounter-modal__name" id="encounterName">—</div>
+              <div class="mini" id="encounterInfo">—</div>
+            </div>
+          </div>
+
+          <div class="actions" style="margin-top:12px;">
+            <button class="btn" id="encounterFightBtn" type="button">Batalhar</button>
+            <button class="btn btn--ghost" id="encounterRunBtn" type="button">Fugir</button>
+          </div>
+
+          <div class="mini" id="encounterStatus" style="margin-top:10px;">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Batalha (estilo FireRed/GBA) -->
+    <div class="modal" id="battleModal" aria-hidden="true">
+      <div class="modal__backdrop" data-battle-modal-close></div>
+      <div class="modal__panel battle-firered" role="dialog" aria-modal="true" aria-labelledby="battleModalTitle">
+
+        <!-- Arena de Batalha -->
+        <div class="battle-firered__arena">
+          <!-- Pokémon Inimigo -->
+          <div class="battle-firered__enemy">
+            <div class="battle-firered__platform battle-firered__platform--enemy"></div>
+            <div class="battle-firered__info-box">
+              <div class="battle-firered__name" id="battleEnemyName">—</div>
+              <div class="battle-firered__level">Lv<span id="battleEnemyLevel">?</span></div>
+              <div class="battle-firered__hpbar">
+                <div class="battle-firered__hplabel">HP:</div>
+                <div class="battle-firered__hptrack">
+                  <div class="battle-firered__hpfill" id="battleEnemyHpFill" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+            <img class="battle-firered__sprite battle-firered__sprite--enemy" id="battleEnemySprite" alt="Inimigo" />
+          </div>
+
+          <!-- Pokémon do Jogador -->
+          <div class="battle-firered__player">
+            <img class="battle-firered__sprite battle-firered__sprite--player" id="battlePlayerSprite" alt="Jogador" />
+            <div class="battle-firered__platform battle-firered__platform--player"></div>
+            <div class="battle-firered__info-box">
+              <div class="battle-firered__name" id="battlePlayerName">—</div>
+              <div class="battle-firered__level">Lv<span id="battlePlayerLevel">?</span></div>
+              <div class="battle-firered__hpbar">
+                <div class="battle-firered__hplabel">HP:</div>
+                <div class="battle-firered__hptrack">
+                  <div class="battle-firered__hpfill" id="battlePlayerHpFill" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="battle-firered__hptext" id="battlePlayerHpText">0/0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caixa de Mensagem e Menu -->
+        <div class="battle-firered__ui">
+          <div class="battle-firered__textbox" id="battleTextbox">
+            <p id="battleMessage">—</p>
+          </div>
+
+          <!-- Menu dinâmico (muda conforme ações) -->
+          <div class="battle-firered__actions" id="battleActionsContainer">
+            <!-- Menu principal (4 botões) -->
+            <div id="battleMainMenu" class="battle-firered__menu">
+              <button class="battle-firered__btn" id="battleActionFight" type="button">⚔️ LUTA</button>
+              <button class="battle-firered__btn" id="battleActionBag" type="button">🎒 MOCHILA</button>
+              <button class="battle-firered__btn" id="battleActionPokemon" type="button">🔴 POKÉMON</button>
+              <button class="battle-firered__btn" id="battleActionRun" type="button">🏃 FUGIR</button>
+            </div>
+
+            <!-- Menu de ataques (grid 2x2 + voltar) -->
+            <div id="battleMovesMenu" class="battle-firered__menu battle-firered__menu--moves" hidden>
+              <div class="battle-firered__moves-grid" id="battleMovesGrid">
+                <!-- Gerado dinamicamente -->
+              </div>
+              <button class="battle-firered__btn battle-firered__btn--back" id="battleMovesBack" type="button">←
+                VOLTAR</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal" id="bagModal" aria-hidden="true">
+      <div class="modal__backdrop" data-bag-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="bagModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="bagModalTitle">Mochila</div>
+            <div class="mini" id="bagModalSubtitle">Itens</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="bagModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="bag-modal__grid" id="bagGrid"></div>
+          <div class="mini" id="bagStatus" style="margin-top:10px">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="pokedexModal" aria-hidden="true">
+      <div class="modal__backdrop" data-pokedex-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="pokedexModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="pokedexModalTitle">Pokédex</div>
+            <div class="mini" id="pokedexModalSubtitle">151 Pokémon</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="pokedexModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="pokedex-modal__bar">
+            <input class="pokedex-modal__input" id="pokedexSearch" placeholder="Buscar por nome (ex: pikachu)" />
+            <div class="mini" id="pokedexStatus">Carregando…</div>
+          </div>
+          <div class="pokedex-modal__grid" id="pokedexGrid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="pokedexDetailsModal" aria-hidden="true">
+      <div class="modal__backdrop" data-pokedex-details-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="pokedexDetailsTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="pokedexDetailsTitle">Pokémon</div>
+            <div class="mini" id="pokedexDetailsSubtitle">Detalhes</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="pokedexDetailsModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body" id="pokedexDetailsBody"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="shopModal" aria-hidden="true">
+      <div class="modal__backdrop" data-shop-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="shopModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="shopModalTitle">Loja</div>
+            <div class="mini" id="shopModalSubtitle">Itens</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="shopModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="shop-modal__grid" id="shopGrid"></div>
+          <div class="mini" id="shopStatus" style="margin-top:10px">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="oakModal" aria-hidden="true">
+      <div class="modal__backdrop" data-oak-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="oakModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="oakModalTitle">Professor Carvalho</div>
+            <div class="mini" id="oakModalSubtitle">Pokémon guardados</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="oakModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="bag-modal__grid" id="oakList"></div>
+          <div class="mini" id="oakStatus" style="margin-top:10px">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="trainerModal" aria-hidden="true">
+      <!-- ... (trainer modal content) ... -->
+    </div>
+
+    <!-- CHAT MODAL (Estilo RPG) -->
+    <div class="modal" id="chatModal" aria-hidden="true" style="align-items: flex-end; padding-bottom: 2rem;">
+      <div class="modal__backdrop" data-chat-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true"
+        style="max-width: 600px; height: 400px; display: flex; flex-direction: column;">
+
+        <!-- Header: Nome do NPC -->
+        <div class="widget__header" style="background: var(--surface2);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div class="widget__title" id="chatNpcName">NPC</div>
+            <div class="mini" style="color:var(--accent);">Conversando...</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="chatModalClose">✕</button>
+        </div>
+
+        <!-- Área de Mensagens -->
+        <div class="widget__body" id="chatHistory"
+          style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding: 16px;">
+          <!-- Mensagens são injetadas via JS -->
+          <div class="chat-msg chat-msg--npc">
+            Olȧ viajante!
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div
+          style="padding: 12px; border-top: 1px solid var(--stroke); background: var(--surface); display: flex; gap: 8px;">
+          <input type="text" id="chatInput" placeholder="Diga algo..."
+            style="flex:1; padding:10px; border-radius:6px; border:1px solid var(--stroke); background:var(--bg); color:var(--text);">
+          <button class="btn btn--primary" id="chatSendBtn">Enviar</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Trainer Modal Wrapper -->
+    <div class="modal" id="trainerModal" aria-hidden="true">
+      <div class="modal__backdrop" data-trainer-modal-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="trainerModalTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="trainerModalTitle">Criar treinador</div>
+            <div class="mini">Criar um novo treinador irá resetar o atual.</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="trainerModalClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <% if (typeof trainerError !=='undefined' && trainerError) { %>
+            <div class="err" style="margin-bottom:12px;">
+              <%= trainerError %>
+            </div>
+            <% } %>
+
+              <form method="POST" action="/trainer/create" id="trainerForm" novalidate>
+                <label class="mini" style="display:block; margin-bottom:6px;">Nome do treinador</label>
+                <input name="name" type="text" placeholder="Digite seu nome" required maxlength="40" />
+
+                <div style="margin-top:12px;">
+                  <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                    <label class="mini" style="display:block;">Pokémon inicial</label>
+                    <div class="mini" id="starterStatus">—</div>
+                  </div>
+                  <div class="pick-grid" id="starterGrid" style="margin-top:10px;">
+                    <label class="pick-grid__option" title="Bulbasaur">
+                      <input type="radio" name="starterPokemonId" value="1" required checked />
+                      <span class="pick-grid__tile">
+                        <span class="pick-grid__imgwrap">
+                          <img src="/assets/gen1_assets/normal-sprite/bulbasaur.gif" alt="Bulbasaur"
+                            style="width:48px;height:48px;object-fit:contain;" onerror="this.style.display='none'" />
+                        </span>
+                        <span class="pick-grid__meta">
+                          <span class="pick-grid__name">Bulbasaur</span>
+                          <span class="pick-grid__sub">Grass</span>
+                        </span>
+                      </span>
+                    </label>
+
+                    <label class="pick-grid__option" title="Charmander">
+                      <input type="radio" name="starterPokemonId" value="4" required />
+                      <span class="pick-grid__tile">
+                        <span class="pick-grid__imgwrap">
+                          <img src="/assets/gen1_assets/normal-sprite/charmander.gif" alt="Charmander"
+                            style="width:48px;height:48px;object-fit:contain;" onerror="this.style.display='none'" />
+                        </span>
+                        <span class="pick-grid__meta">
+                          <span class="pick-grid__name">Charmander</span>
+                          <span class="pick-grid__sub">Fire</span>
+                        </span>
+                      </span>
+                    </label>
+
+                    <label class="pick-grid__option" title="Squirtle">
+                      <input type="radio" name="starterPokemonId" value="7" required />
+                      <span class="pick-grid__tile">
+                        <span class="pick-grid__imgwrap">
+                          <img src="/assets/gen1_assets/normal-sprite/squirtle.gif" alt="Squirtle"
+                            style="width:48px;height:48px;object-fit:contain;" onerror="this.style.display='none'" />
+                        </span>
+                        <span class="pick-grid__meta">
+                          <span class="pick-grid__name">Squirtle</span>
+                          <span class="pick-grid__sub">Water</span>
+                        </span>
+                      </span>
+                    </label>
+
+                    <label class="pick-grid__option" title="Pikachu">
+                      <input type="radio" name="starterPokemonId" value="25" required />
+                      <span class="pick-grid__tile">
+                        <span class="pick-grid__imgwrap">
+                          <img src="/assets/gen1_assets/normal-sprite/pikachu.gif" alt="Pikachu"
+                            style="width:48px;height:48px;object-fit:contain;" onerror="this.style.display='none'" />
+                        </span>
+                        <span class="pick-grid__meta">
+                          <span class="pick-grid__name">Pikachu</span>
+                          <span class="pick-grid__sub">Electric</span>
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div style="margin-top:12px;">
+                  <label class="mini" style="display:block; margin-bottom:6px;">Personagem no mapa</label>
+                  <div class="pick-grid pick-grid--avatars">
+                    <% (Array.isArray(overworldSprites) ? overworldSprites : []).forEach(function(s, idx){ %>
+                      <label class="pick-grid__option" title="Personagem">
+                        <input type="radio" name="overworldSprite" value="<%= s.id %>" <%=idx===0 ? 'checked' : '' %>
+                        required />
+                        <span class="pick-grid__tile">
+                          <span class="pick-grid__imgwrap">
+                            <img
+                              src="/core/pokefirered-master/pokefirered-master/graphics/object_events/pics/people/<%= s.file %>"
+                              alt="Personagem" loading="lazy" onerror="this.style.display='none'" />
+                          </span>
+                          <span class="pick-grid__meta">
+                            <span class="pick-grid__name">
+                              <%= s.label %>
+                            </span>
+                          </span>
+                        </span>
+                      </label>
+                      <% }); %>
+                  </div>
+                </div>
+
+                <div style="margin-top:12px;">
+                  <label class="mini" style="display:block; margin-bottom:6px;">Avatar (menu)</label>
+                  <div class="pick-grid pick-grid--avatars">
+                    <% (Array.isArray(avatars) ? avatars : []).slice(0, 24).forEach(function(file, idx){ %>
+                      <label class="pick-grid__option" title="Avatar">
+                        <input type="radio" name="avatar" value="<%= file %>" <%=idx===0 ? 'checked' : '' %>
+                        required
+                        />
+                        <span class="pick-grid__tile">
+                          <span class="pick-grid__imgwrap">
+                            <img src="/assets/personages/<%= file %>" alt="Avatar" loading="lazy"
+                              onerror="this.style.display='none'" />
+                          </span>
+                          <span class="pick-grid__meta">
+                            <span class="pick-grid__name">#<%= file.replace(/\..*$/, '' ) %></span>
+                          </span>
+                        </span>
+                      </label>
+                      <% }); %>
+                  </div>
+                </div>
+
+                <div class="actions" style="margin-top:12px;">
+                  <button class="btn" type="submit">Confirmar</button>
+                  <button class="btn btn--ghost" type="button" data-trainer-modal-close>Cancelar</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

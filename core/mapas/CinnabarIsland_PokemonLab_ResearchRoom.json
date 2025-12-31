@@ -1,0 +1,140 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_PokemonLab_ResearchRoom",
+    "meta": {
+        "layoutId": "LAYOUT_CINNABAR_ISLAND_POKEMON_LAB_RESEARCH_ROOM",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_POKEMON_LAB_RESEARCH_ROOM",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Lab",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_ResearchRoom-0",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_ResearchRoom-1",
+            "x": 10,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_Scientist",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_PokemonLab_ResearchRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonLab_Entrance",
+                "x": 19,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CinnabarIsland_PokemonLab_ResearchRoom",
+    "dialogs": [
+        {
+            "title": "CinnabarIsland_PokemonLab_ResearchRoom_Text_AnAmberPipe",
+            "id": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_AmberPipe",
+            "text": "An amber pipe!"
+        },
+        {
+            "title": "CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail",
+            "id": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_Computer",
+            "text": "There's an e-mail message.\n\n… … …\n\nThere are three legendary bird\nPOKéMON.\n\nThey are ARTICUNO, ZAPDOS, and\nMOLTRES.\n\nTheir whereabouts are unknown.\n\nWe plan to explore the cavern\nclose to CERULEAN.\n\nFrom: POKéMON RESEARCH TEAM…"
+        },
+        {
+            "title": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor",
+            "id": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor",
+            "text": "TODO: CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor"
+        },
+        {
+            "title": "CinnabarIsland_PokemonLab_ResearchRoom_Text_EeveeCanEvolveIntroThreeMons",
+            "id": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_Scientist",
+            "text": "EEVEE can evolve into one of three\nkinds of POKéMON."
+        }
+    ],
+    "jumps": []
+}

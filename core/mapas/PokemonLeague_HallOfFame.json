@@ -1,0 +1,84 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonLeague_HallOfFame",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_LEAGUE_HALL_OF_FAME",
+        "sourceMapId": "MAP_POKEMON_LEAGUE_HALL_OF_FAME",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_HallOfFame",
+        "height": 13
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 1,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonLeague_HallOfFame-0",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_PROF_OAK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_HALL_OF_FAME_PROF_OAK",
+                "script": "0x0",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonLeague_HallOfFame-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_ChampionsRoom",
+                "x": 6,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonLeague_HallOfFame",
+    "dialogs": [],
+    "jumps": []
+}

@@ -1,0 +1,256 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Hotel",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_HOTEL",
+        "sourceMapId": "MAP_CELADON_CITY_HOTEL",
+        "width": 17,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_RestaurantHotel",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 5,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Hotel-0",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Hotel_EventScript_Receptionist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Hotel-1",
+            "x": 3,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Hotel_EventScript_Beauty",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Hotel-2",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Hotel_EventScript_BeautyBoyfriend",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Hotel-3",
+            "x": 2,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Hotel_EventScript_BeautyBrother",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Hotel-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 49,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "9",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Hotel-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 49,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "9",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Hotel-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 49,
+                "y": 29,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "9",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeladonCity_Hotel",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Hotel_Text_OnVacationWithBrotherAndBoyfriend",
+            "id": "CeladonCity_Hotel_EventScript_Beauty",
+            "text": "I'm on vacation with my brother and\nboyfriend.\n\nCELADON is such a pretty city!"
+        },
+        {
+            "title": "CeladonCity_Hotel_Text_WhyDidSheBringBrother",
+            "id": "CeladonCity_Hotel_EventScript_BeautyBoyfriend",
+            "text": "Why?\nWhy did she bring her brother?"
+        },
+        {
+            "title": "CeladonCity_Hotel_Text_SisBroughtMeOnVacation",
+            "id": "CeladonCity_Hotel_EventScript_BeautyBrother",
+            "text": "Yippee! I'm on vacation!\nMy sis brought me along! Awesome!"
+        },
+        {
+            "title": "CeladonCity_Hotel_Text_ThisHotelIsForPeople",
+            "id": "CeladonCity_Hotel_EventScript_Receptionist",
+            "text": "POKéMON?\nNo, this is a hotel for people.\n\nWe're full up, unfortunately."
+        }
+    ],
+    "jumps": []
+}

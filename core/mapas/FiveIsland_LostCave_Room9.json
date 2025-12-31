@@ -1,0 +1,207 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_LostCave_Room9",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_LOST_CAVE_ROOM9",
+        "sourceMapId": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM9",
+        "width": 11,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 11
+    },
+    "start": {
+        "y": 1,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 8,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-FiveIsland_LostCave_Room9-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room10",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM10",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland_LostCave_Room9-2",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room1",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland_LostCave_Room9-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room1",
+                "x": 5,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FiveIsland_LostCave_Room9-4",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room1",
+                "x": 8,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FiveIsland_LostCave_Room9",
+    "dialogs": [],
+    "jumps": []
+}

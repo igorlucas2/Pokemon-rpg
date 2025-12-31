@@ -1,0 +1,200 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_DottedHole_B4F",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_B4F",
+        "sourceMapId": "MAP_SIX_ISLAND_DOTTED_HOLE_B4F",
+        "width": 13,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 11
+    },
+    "start": {
+        "y": 1,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 10,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 10,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-SixIsland_DottedHole_B4F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_B3F",
+                "x": 11,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_B3F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_DottedHole_B4F-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_1F",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_DottedHole_B4F-3",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_1F",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_DottedHole_B4F-4",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_SapphireRoom",
+                "x": 5,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_DottedHole_B4F-5",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_DottedHole_1F",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_DOTTED_HOLE_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SixIsland_DottedHole_B4F",
+    "dialogs": [
+        {
+            "title": "SixIsland_DottedHole_B4F_EventScript_BrailleDown",
+            "id": "SixIsland_DottedHole_B4F_EventScript_BrailleDown",
+            "text": "TODO: SixIsland_DottedHole_B4F_EventScript_BrailleDown"
+        }
+    ],
+    "jumps": []
+}

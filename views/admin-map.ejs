@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PokéRPG — Admin Map Editor (Konva)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Se você já usa seu styles.css, pode manter -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    /* Mantém o visual do mapa igual ao dashboard (map-card/map-stage/map-canvas).
+       O editor Konva fica dentro do map-canvas e usa o mesmo tamanho do mapa (1600px). */
+    #konvaContainer {
+      width: 1600px;
+      height: 900px;
+      /* fallback; ajustado no JS ao carregar a imagem */
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .input,
+    .select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--stroke);
+      background: rgba(2, 6, 23, 0.45);
+      color: var(--text);
+      outline: none;
+    }
+
+    .toast {
+      position: fixed;
+      left: 12px;
+      bottom: 12px;
+      background: rgba(2, 6, 23, 0.80);
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 12px;
+      max-width: 520px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity .12s ease, transform .12s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .controls-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .controls-grid .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .region-list__row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .region-card {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--stroke2);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      cursor: pointer;
+      transition: transform .12s ease, border-color .12s ease;
+    }
+
+    .region-card:hover {
+      transform: translateY(-1px);
+      border-color: var(--stroke);
+    }
+
+    .region-card__main {
+      min-width: 0;
+    }
+
+    .region-card__title {
+      font-weight: 900;
+    }
+
+    .region-card__meta {
+      margin-top: 4px;
+    }
+
+    .region-card__actions {
+      flex: 0 0 auto;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* Layout do admin-map: mais fluido conforme a tela diminui */
+    .main-grid {
+      /* sobrescreve o fixo do styles.css para ficar responsivo e gradual */
+      grid-template-columns: clamp(240px, 22vw, 320px) 1fr clamp(240px, 22vw, 320px);
+      /* No desktop: não deixa nada "vazar"; cada coluna rola por dentro */
+      overflow: hidden;
+    }
+
+    /* Colunas laterais com scroll interno (mantém tudo dentro da tela) */
+    .side {
+      overflow: auto;
+    }
+
+    .center {
+      overflow: hidden;
+    }
+
+    @media (max-width: 1320px) {
+      .main-grid {
+        grid-template-columns: clamp(220px, 24vw, 280px) 1fr clamp(220px, 24vw, 280px);
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .main-grid {
+        grid-template-columns: clamp(200px, 26vw, 260px) 1fr clamp(200px, 26vw, 260px);
+      }
+    }
+
+    @media (max-width: 1080px) {
+
+      /* quando começar a apertar, empilha para tudo caber dentro da tela */
+      .side {
+        display: block !important;
+      }
+
+      .main-grid {
+        display: flex !important;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        overflow: auto;
+      }
+
+      .map-stage {
+        overflow: auto !important;
+      }
+    }
+
+    /* Responsividade do editor (não esconder sidebars; não reescalar mapa) */
+    @media (max-width: 980px) {
+
+      /* no styles.css global: .side{display:none} e ajustes no mapa do dashboard.
+         aqui só garantimos que admin-map continue visível */
+      .side {
+        display: block !important;
+      }
+    }
+  </style>
+
+  <!-- Konva via node_modules (instalado) -->
+  <!-- Se você está servindo node_modules, normalmente NÃO está.
+       Então é melhor usar CDN. Se preferir local, eu te digo como servir. -->
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand__logo"><img src="/assets/itens/pokebola.png" alt="" /></span>
+        <div class="brand__text">
+          <div class="brand__title">PokéRPG</div>
+          <div class="brand__subtitle">Admin • Editor do mapa (Konva)</div>
+        </div>
+      </div>
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="/dashboard">Voltar</a>
+        <a class="btn btn--danger" href="/logout">Sair</a>
+      </div>
+    </header>
+
+    <!-- main-grid -->
+    <main class="main-grid">
+      <aside class="side left">
+        <section class="widget" style="min-height:0;">
+          <div class="widget__header">
+            <div class="widget__title">Editor</div>
+            <span class="room-pill">Admin</span>
+          </div>
+          <div class="widget__body">
+            <div class="mini">Logado: <b>
+                <%= user?.name || "Admin" %>
+              </b></div>
+            <div class="hint" id="tipText" style="margin-top:10px;">Clique no mapa para criar uma região (círculo).
+              Selecione para editar (arrastar/redimensionar).</div>
+            <div style="margin-top:12px;">
+              <a href="/admin/npcs" class="btn btn--wide btn--primary"
+                style="text-decoration:none; display:flex; justify-content:center;">🤖 Configurar NPCs (IA)</a>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="center">
+        <div class="map-card">
+          <div class="map-toolbar">
+            <div class="map-toolbar__left">
+              <span class="room-pill">Editor</span>
+              <span class="mini">Salvar em: <b>data/map.json</b></span>
+            </div>
+            <div class="map-toolbar__right">
+              <span class="mini" id="selStatus">Nada selecionado</span>
+            </div>
+          </div>
+
+          <div class="map-stage">
+            <div class="map-canvas" id="mapCanvas">
+              <div id="konvaContainer"></div>
+              <div class="map-vignette"></div>
+            </div>
+          </div>
+
+          <div class="map-footer">
+            <div class="mini">Seleção: <span id="regionMeta">—</span></div>
+            <div class="mini" id="eventMeta">—</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side right">
+        <section class="widget" style="min-height:0; display:flex; flex-direction:column; flex:1;">
+          <div class="widget__header">
+            <div class="widget__title">Detalhes</div>
+            <div class="pill pill--muted">editor</div>
+          </div>
+          <div class="widget__body" style="overflow:auto; min-height:0; flex:1;">
+            <div class="stat" style="margin-bottom:12px;">
+              <div class="stat__label">Região</div>
+              <div class="muted">Selecione um círculo no mapa para editar/salvar.</div>
+
+              <div class="row">
+                <input class="input" id="regionName" placeholder="Nome (ex: Route 3 / Pewter City)" />
+              </div>
+              <div class="row">
+                <select class="select" id="regionType">
+                  <option value="route">route</option>
+                  <option value="city">city</option>
+                  <option value="dungeon">dungeon</option>
+                </select>
+              </div>
+              <div class="row">
+                <input class="input" id="regionDesc" placeholder="Descrição (opcional)" />
+              </div>
+
+              <div class="row">
+                <select class="select" id="regionShape">
+                  <option value="circle">shape: circle</option>
+                  <option value="rect">shape: rect</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <input class="input" id="regionColor" type="color" value="#3b82f6" title="Cor da região" />
+              </div>
+
+              <div class="row">
+                <input class="input" id="regionOpacity" type="range" min="0" max="100" value="20" />
+                <input class="input" id="regionOpacityNum" type="number" min="0" max="100" value="20"
+                  title="Opacidade (0-100)" />
+              </div>
+
+              <div class="row">
+                <button class="btn btn--small" id="btnSaveRegion" type="button">Salvar Região</button>
+                <button class="btn btn--small btn--danger" id="btnDeleteRegion" type="button">Excluir (local)</button>
+              </div>
+            </div>
+
+            <div class="stat" style="margin-bottom:12px;">
+              <div class="stat__label">Controles</div>
+              <div class="muted">O modo <b>Evento</b> abre o modal ao clicar numa região salva.</div>
+
+              <div class="controls-grid">
+                <button class="btn btn--small" id="btnModeRegion" type="button">Modo: Região</button>
+                <button class="btn btn--small btn--ghost" id="btnModeEvent" type="button">Modo: Evento</button>
+                <button class="btn btn--small btn--ghost" id="btnCenter" type="button">Centralizar</button>
+                <button class="btn btn--small btn--ghost" id="btnReload" type="button">Recarregar</button>
+                <button class="btn btn--small btn--ghost" id="btnZoomIn" type="button">Zoom +</button>
+                <button class="btn btn--small btn--ghost" id="btnZoomOut" type="button">Zoom -</button>
+              </div>
+            </div>
+
+            <div class="stat" style="margin-bottom:12px;">
+              <div class="stat__label">Regiões salvas</div>
+              <div id="regionsList"></div>
+            </div>
+
+            <div class="stat">
+              <div class="stat__label">Eventos ativos</div>
+              <div id="eventsList"></div>
+            </div>
+
+            <div class="stat" style="margin-top:12px;">
+              <div class="stat__label">Configurar Eventos (novo)</div>
+              <div class="muted">Em <b>Modo: Evento</b>, clique numa região <b>salva</b> para abrir o modal e configurar
+                <b>Pokécenter</b> e <b>Caçar Pokémon</b>.</div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <!-- Modal: Eventos da Região (Admin) -->
+    <div class="modal" id="regionEventsModal" aria-hidden="true">
+      <div class="modal__backdrop" data-region-events-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="regionEventsTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="regionEventsTitle">Eventos da Região</div>
+            <div class="mini" id="regionEventsSubtitle">—</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="regionEventsClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="stat" style="margin-bottom:12px;">
+            <div class="stat__label">Eventos configurados</div>
+            <div id="regionEventsList" class="muted">—</div>
+          </div>
+
+          <div class="stat" style="margin-bottom:12px;">
+            <div class="stat__label">Editar / Criar</div>
+            <div class="row">
+              <select class="select" id="regionEventType">
+                <option value="pokecenter">pokecenter</option>
+                <option value="pokemon_hunt">pokemon_hunt</option>
+              </select>
+            </div>
+            <div class="row">
+              <input class="input" id="regionEventName" placeholder="Nome do evento" />
+            </div>
+            <div class="row">
+              <label class="mini" style="display:flex; gap:8px; align-items:center;">
+                <input type="checkbox" id="regionEventActive" checked>
+                Ativo
+              </label>
+            </div>
+
+            <div class="stat" id="huntFields" style="margin-top:12px; display:none;">
+              <div class="stat__label">Caçar Pokémon</div>
+              <div class="muted">Adicione pokémons com nível e raridade para o sorteio.</div>
+              <div class="row">
+                <button class="btn btn--small" id="btnAddHuntPokemon" type="button">Adicionar Pokémon</button>
+                <button class="btn btn--small btn--ghost" id="btnClearHuntPool" type="button">Limpar</button>
+              </div>
+              <div id="huntPoolList" style="margin-top:10px;"></div>
+            </div>
+
+            <div class="row" style="margin-top:12px;">
+              <button class="btn btn--small" id="btnSaveRegionEvent" type="button">Salvar Evento</button>
+              <button class="btn btn--small btn--ghost" id="btnNewRegionEvent" type="button">Novo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Seletor estilo Pokédex (Admin) -->
+    <div class="modal" id="adminPokedexPickerModal" aria-hidden="true">
+      <div class="modal__backdrop" data-admin-pokedex-close></div>
+      <div class="modal__panel widget" role="dialog" aria-modal="true" aria-labelledby="adminPokedexPickerTitle">
+        <div class="widget__header">
+          <div>
+            <div class="widget__title" id="adminPokedexPickerTitle">Selecionar Pokémon</div>
+            <div class="mini">Escolha o Pokémon, nível e raridade</div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="adminPokedexPickerClose" type="button">✕</button>
+        </div>
+        <div class="widget__body">
+          <div class="pokedex-modal__bar">
+            <input class="pokedex-modal__input" id="adminPokedexSearch" placeholder="Buscar por nome (ex: pikachu)" />
+            <div class="mini" id="adminPokedexStatus">Carregando…</div>
+          </div>
+          <div class="row" style="margin-top:10px;">
+            <input class="input" id="adminPickLevel" type="number" min="1" max="100" value="5" title="Nível" />
+            <select class="select" id="adminPickRarity" title="Raridade">
+              <option value="common">common</option>
+              <option value="uncommon">uncommon</option>
+              <option value="rare">rare</option>
+              <option value="epic">epic</option>
+              <option value="legendary">legendary</option>
+            </select>
+          </div>
+          <div class="pokedex-modal__grid" id="adminPokedexGrid" style="margin-top:10px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script>
+    // ========= Helpers UI =========
+    const toastEl = document.getElementById("toast");
+    function toast(msg) {
+      toastEl.textContent = msg;
+      toastEl.classList.add("show");
+      clearTimeout(toast._t);
+      toast._t = setTimeout(() => toastEl.classList.remove("show"), 1400);
+    }
+
+    const tipText = document.getElementById("tipText");
+    const selStatus = document.getElementById("selStatus");
+
+    const regionName = document.getElementById("regionName");
+    const regionType = document.getElementById("regionType");
+    const regionDesc = document.getElementById("regionDesc");
+    const regionShape = document.getElementById("regionShape");
+    const regionColor = document.getElementById("regionColor");
+    const regionOpacity = document.getElementById("regionOpacity");
+    const regionOpacityNum = document.getElementById("regionOpacityNum");
+    const regionMeta = document.getElementById("regionMeta");
+    const eventMeta = document.getElementById("eventMeta");
+
+    function getRegionStyleFromInputs() {
+      const color = (regionColor?.value || "#3b82f6").trim() || "#3b82f6";
+      const pct = clamp(toInt(regionOpacityNum?.value ?? regionOpacity?.value ?? 20) ?? 20, 0, 100);
+      return { color, opacity: Number((pct / 100).toFixed(3)) };
+    }
+
+    function syncOpacityInputs(from) {
+      const pct = clamp(toInt(from?.value ?? 20) ?? 20, 0, 100);
+      if (regionOpacity) regionOpacity.value = String(pct);
+      if (regionOpacityNum) regionOpacityNum.value = String(pct);
+
+      if (selectedNode && isRegionNode(selectedNode)) {
+        const meta = selectedNode.getAttr("meta") || {};
+        const style = getRegionStyleFromInputs();
+        meta.style = style;
+        selectedNode.setAttr("meta", meta);
+        applyStyleToNode(selectedNode, style);
+        layerShapes.draw();
+      }
+    }
+
+    regionOpacity?.addEventListener("input", (e) => syncOpacityInputs(e.target));
+    regionOpacityNum?.addEventListener("input", (e) => syncOpacityInputs(e.target));
+    regionColor?.addEventListener("input", () => {
+      if (selectedNode && isRegionNode(selectedNode)) {
+        const meta = selectedNode.getAttr("meta") || {};
+        const style = getRegionStyleFromInputs();
+        meta.style = style;
+        selectedNode.setAttr("meta", meta);
+        applyStyleToNode(selectedNode, style);
+        layerShapes.draw();
+      }
+    });
+
+    function toInt(v) {
+      const n = Number(String(v ?? "").trim());
+      if (!Number.isFinite(n)) return null;
+      return Math.trunc(n);
+    }
+
+    function clamp(n, a, b) {
+      const x = Number(n);
+      if (!Number.isFinite(x)) return a;
+      return Math.max(a, Math.min(b, x));
+    }
+
+    function hexToRgba(hex, alpha) {
+      const h = String(hex || "").trim();
+      const m = /^#?([0-9a-f]{6})$/i.exec(h);
+      const a = clamp(alpha, 0, 1);
+      if (!m) return `rgba(250,204,21,${a})`;
+      const v = m[1];
+      const r = parseInt(v.slice(0, 2), 16);
+      const g = parseInt(v.slice(2, 4), 16);
+      const b = parseInt(v.slice(4, 6), 16);
+      return `rgba(${r},${g},${b},${a})`;
+    }
+
+    function applyStyleToNode(node, style) {
+      if (!node || !style) return;
+      const color = style.color || "#facc15";
+      const opacity = clamp(style.opacity ?? 0.2, 0, 1);
+
+      node.fill(hexToRgba(color, Math.max(0.05, opacity)));
+      node.stroke(hexToRgba(color, Math.max(0.35, Math.min(0.9, opacity + 0.35))));
+      node.strokeWidth(2);
+    }
+
+    const regionsList = document.getElementById("regionsList");
+    const eventsList = document.getElementById("eventsList");
+
+    // ========= Konva Setup =========
+    const container = document.getElementById("konvaContainer");
+
+    function getContainerSize() {
+      return { w: container.clientWidth, h: container.clientHeight };
+    }
+
+    let mapState = { regions: [], edges: [], events: [] };
+
+    let stage, layerBg, layerShapes, layerUI;
+    let kImage;
+    let bgImageW = 0, bgImageH = 0;
+
+    // Zoom (baseScale * zoomFactor)
+    let baseScale = 1;
+    let zoomFactor = 1;
+
+    // Modo: region | event
+    let MODE = "region";
+
+    // selection
+    let selectedNode = null; // pode ser região OU evento
+    const transformer = new Konva.Transformer({
+      rotateEnabled: false,
+      keepRatio: false,
+      enabledAnchors: ["top-left", "top-right", "bottom-left", "bottom-right"],
+      boundBoxFunc: (oldBox, newBox) => {
+        // evita ficar minúsculo
+        if (newBox.width < 18 || newBox.height < 18) return oldBox;
+        return newBox;
+      }
+    });
+
+    // ========= Normalização 0..1 =========
+    function circleToNormalized(circle) {
+      // circle.x/y estão em coords do stage.
+      // precisamos converter para coords relativas à imagem.
+      const imgPos = kImage.position();
+      const imgScaleX = kImage.scaleX();
+      const imgScaleY = kImage.scaleY();
+
+      const xInImg = (circle.x() - imgPos.x) / imgScaleX;
+      const yInImg = (circle.y() - imgPos.y) / imgScaleY;
+      const rInImg = circle.radius() / imgScaleX;
+
+      const nx = xInImg / bgImageW;
+      const ny = yInImg / bgImageH;
+      const nr = rInImg / bgImageW; // normaliza pelo width
+
+      return {
+        x: Number(nx.toFixed(6)),
+        y: Number(ny.toFixed(6)),
+        r: Number(nr.toFixed(6))
+      };
+    }
+
+    function normalizedToCircle(data) {
+      const imgPos = kImage.position();
+      const imgScaleX = kImage.scaleX();
+      const imgScaleY = kImage.scaleY();
+
+      const xInImg = data.x * bgImageW;
+      const yInImg = data.y * bgImageH;
+      const rInImg = data.r * bgImageW;
+
+      return {
+        x: imgPos.x + xInImg * imgScaleX,
+        y: imgPos.y + yInImg * imgScaleY,
+        radius: rInImg * imgScaleX
+      };
+    }
+
+    function rectToNormalized(rect) {
+      const imgPos = kImage.position();
+      const imgScaleX = kImage.scaleX();
+      const imgScaleY = kImage.scaleY();
+
+      const width = rect.width();
+      const height = rect.height();
+
+      const xInImg = (rect.x() - imgPos.x) / imgScaleX;
+      const yInImg = (rect.y() - imgPos.y) / imgScaleY;
+
+      const wInImg = width / imgScaleX;
+      const hInImg = height / imgScaleY;
+
+      return {
+        x: Number((xInImg / bgImageW).toFixed(6)),
+        y: Number((yInImg / bgImageH).toFixed(6)),
+        w: Number((wInImg / bgImageW).toFixed(6)),
+        h: Number((hInImg / bgImageH).toFixed(6)),
+      };
+    }
+
+    function normalizedToRect(data) {
+      const imgPos = kImage.position();
+      const imgScaleX = kImage.scaleX();
+      const imgScaleY = kImage.scaleY();
+
+      const xInImg = data.x * bgImageW;
+      const yInImg = data.y * bgImageH;
+      const wInImg = data.w * bgImageW;
+      const hInImg = data.h * bgImageH;
+
+      return {
+        x: imgPos.x + xInImg * imgScaleX,
+        y: imgPos.y + yInImg * imgScaleY,
+        width: wInImg * imgScaleX,
+        height: hInImg * imgScaleY,
+      };
+    }
+
+    function isRegionNode(node) {
+      const meta = node?.getAttr?.("meta") || {};
+      return (meta.kind || "region") === "region";
+    }
+
+    function isEventNode(node) {
+      const meta = node?.getAttr?.("meta") || {};
+      return meta.kind === "event";
+    }
+
+    function attachResizeFixes(node) {
+      // Quando usa Transformer, Konva aplica scaleX/scaleY.
+      // Para persistir corretamente, convertemos para radius/width/height e zeramos scale.
+      node.on("transformend", () => {
+        if (node.className === "Circle") {
+          const scaleX = node.scaleX();
+          const scaleY = node.scaleY();
+          const scale = Math.max(scaleX, scaleY);
+          node.radius(Math.max(10, node.radius() * scale));
+          node.scale({ x: 1, y: 1 });
+        }
+
+        if (node.className === "Rect") {
+          const scaleX = node.scaleX();
+          const scaleY = node.scaleY();
+          node.width(Math.max(18, node.width() * scaleX));
+          node.height(Math.max(18, node.height() * scaleY));
+          node.scale({ x: 1, y: 1 });
+        }
+      });
+    }
+
+    function clearSelection() {
+      selectedNode = null;
+      transformer.nodes([]);
+      selStatus.textContent = "Nada selecionado";
+      regionMeta.textContent = "—";
+      eventMeta.textContent = "—";
+      regionName.value = "";
+      regionDesc.value = "";
+      regionType.value = "route";
+      if (regionShape) regionShape.value = "circle";
+      layerUI.draw();
+    }
+
+    function selectNode(node) {
+      selectedNode = node;
+      transformer.nodes([node]);
+      selStatus.textContent = "Selecionado ✓";
+      layerUI.draw();
+
+      const meta = node.getAttr("meta") || {};
+
+      if ((meta.kind || "region") === "region") {
+        // preenche inputs de região
+        regionName.value = meta.name || "";
+        regionType.value = meta.type || "route";
+        regionDesc.value = meta.description || "";
+
+        const shapeType = meta.shapeType || (node.className === "Rect" ? "rect" : "circle");
+        if (regionShape) regionShape.value = shapeType;
+
+        const style = meta.style && typeof meta.style === "object" ? meta.style : null;
+        if (style?.color && regionColor) regionColor.value = style.color;
+        if (typeof style?.opacity === "number") {
+          const pct = clamp(Math.round(style.opacity * 100), 0, 100);
+          if (regionOpacity) regionOpacity.value = String(pct);
+          if (regionOpacityNum) regionOpacityNum.value = String(pct);
+        }
+
+        if (node.className === "Rect") {
+          const norm = rectToNormalized(node);
+          regionMeta.textContent = `id: ${meta.id || "(novo)"} • rect x:${norm.x} y:${norm.y} w:${norm.w} h:${norm.h}`;
+        } else {
+          const norm = circleToNormalized(node);
+          regionMeta.textContent = `id: ${meta.id || "(novo)"} • circle x:${norm.x} y:${norm.y} r:${norm.r}`;
+        }
+        eventMeta.textContent = "—";
+        return;
+      }
+
+      if (meta.kind === "event") {
+        if (node.className === "Circle") {
+          const norm = circleToNormalized(node);
+          eventMeta.textContent = `evento: ${meta.id || "(novo)"} • região: ${meta.regionId || "?"} • circle x:${norm.x} y:${norm.y} r:${norm.r}`;
+        } else if (node.className === "Rect") {
+          const norm = rectToNormalized(node);
+          eventMeta.textContent = `evento: ${meta.id || "(novo)"} • região: ${meta.regionId || "?"} • rect x:${norm.x} y:${norm.y} w:${norm.w} h:${norm.h}`;
+        } else {
+          eventMeta.textContent = `evento: ${meta.id || "(novo)"}`;
+        }
+
+        regionMeta.textContent = "—";
+      }
+    }
+
+    function setMode(mode) {
+      MODE = mode;
+      document.getElementById("btnModeRegion").classList.toggle("btn--ghost", mode !== "region");
+      document.getElementById("btnModeEvent").classList.toggle("btn--ghost", mode !== "event");
+
+      if (mode === "region") tipText.textContent = "Clique no mapa para criar uma região (círculo/retângulo). Selecione para editar (arrastar/redimensionar).";
+      if (mode === "event") tipText.textContent = "Clique numa região salva para configurar eventos (Pokécenter / Caçar Pokémon).";
+    }
+
+    // ========= API =========
+    async function apiGetMap() {
+      const res = await fetch("/api/map");
+      mapState = await res.json();
+      return mapState;
+    }
+
+    async function apiCreateRegion(payload) {
+      const res = await fetch("/admin/regions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      return res.json();
+    }
+
+    async function apiUpdateRegion(id, payload) {
+      const res = await fetch(`/admin/regions/${encodeURIComponent(String(id))}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      return res.json();
+    }
+
+    async function apiDeleteRegion(id) {
+      const res = await fetch(`/admin/regions/${encodeURIComponent(String(id))}`, {
+        method: "DELETE",
+      });
+      return res.json();
+    }
+
+    async function apiCreateEvent(payload) {
+      const res = await fetch("/admin/events", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      return res.json();
+    }
+
+    async function apiUpdateEvent(id, payload) {
+      const res = await fetch(`/admin/events/${encodeURIComponent(String(id))}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      return res.json();
+    }
+
+    // ========= Modal: Região -> Eventos =========
+    const regionEventsModal = document.getElementById("regionEventsModal");
+    const regionEventsClose = document.getElementById("regionEventsClose");
+    const regionEventsSubtitle = document.getElementById("regionEventsSubtitle");
+    const regionEventsList = document.getElementById("regionEventsList");
+    const regionEventType = document.getElementById("regionEventType");
+    const regionEventName = document.getElementById("regionEventName");
+    const regionEventActive = document.getElementById("regionEventActive");
+    const huntFields = document.getElementById("huntFields");
+    const huntPoolList = document.getElementById("huntPoolList");
+    const btnAddHuntPokemon = document.getElementById("btnAddHuntPokemon");
+    const btnClearHuntPool = document.getElementById("btnClearHuntPool");
+    const btnSaveRegionEvent = document.getElementById("btnSaveRegionEvent");
+    const btnNewRegionEvent = document.getElementById("btnNewRegionEvent");
+
+    let regionEventsRegionId = null;
+    let editingEventId = null;
+    let huntPool = [];
+
+    function openRegionEventsModal(region) {
+      if (!regionEventsModal) return;
+      regionEventsRegionId = region?.id || null;
+      editingEventId = null;
+      huntPool = [];
+
+      const name = region?.name || "Região";
+      regionEventsSubtitle.textContent = `${name} • id: ${regionEventsRegionId}`;
+
+      regionEventType.value = "pokecenter";
+      regionEventName.value = "Centro Pokémon";
+      if (regionEventActive) regionEventActive.checked = true;
+      updateRegionEventFields();
+      renderRegionEventsList();
+
+      regionEventsModal.classList.add("is-open");
+      regionEventsModal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeRegionEventsModal() {
+      if (!regionEventsModal) return;
+      regionEventsModal.classList.remove("is-open");
+      regionEventsModal.setAttribute("aria-hidden", "true");
+    }
+
+    regionEventsClose?.addEventListener("click", closeRegionEventsModal);
+    regionEventsModal?.querySelector("[data-region-events-close]")?.addEventListener("click", closeRegionEventsModal);
+
+    function updateRegionEventFields() {
+      const t = regionEventType?.value || "pokecenter";
+      const isHunt = t === "pokemon_hunt";
+      if (huntFields) huntFields.style.display = isHunt ? "block" : "none";
+      if (!editingEventId) {
+        regionEventName.value = isHunt ? "Caçar Pokémon" : "Centro Pokémon";
+      }
+      renderHuntPool();
+    }
+
+    regionEventType?.addEventListener("change", updateRegionEventFields);
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderRegionEventsList() {
+      if (!regionEventsList) return;
+      const list = (Array.isArray(mapState.events) ? mapState.events : []).filter(ev => ev.regionId === regionEventsRegionId);
+      if (!list.length) {
+        regionEventsList.textContent = "Nenhum evento configurado.";
+        return;
+      }
+
+      regionEventsList.innerHTML = "";
+      list.forEach(ev => {
+        const icon =
+          (ev?.payload && typeof ev.payload === "object" && typeof ev.payload.icon === "string" ? ev.payload.icon : null) ||
+          (ev?.eventType === "pokemon_hunt" ? "/assets/itens/pokebola.png" : null) ||
+          (ev?.eventType === "pokecenter" ? "/assets/edificios/pokecenter.png" : null);
+
+        const div = document.createElement("div");
+        div.className = "item";
+        div.style.cursor = "pointer";
+        div.innerHTML = `
+          <div style="display:flex; align-items:center; gap:10px;">
+            ${icon ? `<img src="${escapeHtml(icon)}" alt="" style="width:66px; height:66px; object-fit:contain;" onerror="this.style.display='none'" />` : ""}
+            <div style="min-width:0;">
+              <b>${escapeHtml(ev.name)}</b>
+              <div class="muted">tipo: ${escapeHtml(ev.eventType)} • ativo: ${ev.isActive ? "sim" : "não"}</div>
+            </div>
+          </div>
+        `;
+        div.onclick = () => loadEventIntoForm(ev);
+        regionEventsList.appendChild(div);
+      });
+    }
+
+    function loadEventIntoForm(ev) {
+      editingEventId = ev.id;
+      regionEventType.value = ev.eventType || "pokecenter";
+      regionEventName.value = ev.name || "";
+      if (regionEventActive) regionEventActive.checked = !!ev.isActive;
+
+      const payload = ev.payload && typeof ev.payload === "object" ? ev.payload : {};
+      const pool =
+        (Array.isArray(payload?.hunt?.pool) ? payload.hunt.pool : null) ||
+        (Array.isArray(payload?.encounter?.pool) ? payload.encounter.pool : []) ||
+        [];
+      huntPool = pool
+        .map(x => ({
+          pokemonId: Number(x?.pokemonId),
+          name: x?.name ? String(x.name) : null,
+          level: Number(x?.level),
+          rarity: String(x?.rarity || "common"),
+        }))
+        .filter(x => Number.isFinite(x.pokemonId));
+
+      updateRegionEventFields();
+      toast("Evento carregado para edição");
+    }
+
+    btnNewRegionEvent?.addEventListener("click", () => {
+      editingEventId = null;
+      huntPool = [];
+      regionEventType.value = "pokecenter";
+      regionEventName.value = "Centro Pokémon";
+      if (regionEventActive) regionEventActive.checked = true;
+      updateRegionEventFields();
+    });
+
+    function renderHuntPool() {
+      if (!huntPoolList) return;
+      huntPoolList.innerHTML = "";
+      if (!huntPool.length) {
+        const p = document.createElement("div");
+        p.className = "muted";
+        p.textContent = "Nenhum Pokémon adicionado.";
+        huntPoolList.appendChild(p);
+        return;
+      }
+
+      huntPool.forEach((it, idx) => {
+        const div = document.createElement("div");
+        div.className = "item";
+        const nm = it.name ? it.name : `#${it.pokemonId}`;
+        div.innerHTML = `
+          <b>${escapeHtml(nm)}</b>
+          <div class="muted">id: ${it.pokemonId} • nível: ${Number(it.level || 1)} • raridade: ${escapeHtml(it.rarity)}</div>
+        `;
+
+        const btn = document.createElement("button");
+        btn.className = "btn btn--small btn--danger";
+        btn.type = "button";
+        btn.textContent = "Remover";
+        btn.style.marginTop = "8px";
+        btn.onclick = () => {
+          huntPool.splice(idx, 1);
+          renderHuntPool();
+        };
+        div.appendChild(btn);
+        huntPoolList.appendChild(div);
+      });
+    }
+
+    btnClearHuntPool?.addEventListener("click", () => {
+      huntPool = [];
+      renderHuntPool();
+    });
+
+    // ========= Admin Pokédex Picker =========
+    const adminPokedexPickerModal = document.getElementById("adminPokedexPickerModal");
+    const adminPokedexPickerClose = document.getElementById("adminPokedexPickerClose");
+    const adminPokedexSearch = document.getElementById("adminPokedexSearch");
+    const adminPokedexStatus = document.getElementById("adminPokedexStatus");
+    const adminPokedexGrid = document.getElementById("adminPokedexGrid");
+    const adminPickLevel = document.getElementById("adminPickLevel");
+    const adminPickRarity = document.getElementById("adminPickRarity");
+
+    let adminPokedexAll = [];
+    let adminPokedexLoaded = false;
+    let onPickPokemon = null;
+
+    function openAdminPokedexPicker(onPick) {
+      onPickPokemon = typeof onPick === "function" ? onPick : null;
+      adminPokedexPickerModal.classList.add("is-open");
+      adminPokedexPickerModal.setAttribute("aria-hidden", "false");
+      adminPokedexSearch?.focus();
+      if (!adminPokedexLoaded) void loadAdminPokedex();
+      else applyAdminPokedexFilter();
+    }
+
+    function closeAdminPokedexPicker() {
+      adminPokedexPickerModal.classList.remove("is-open");
+      adminPokedexPickerModal.setAttribute("aria-hidden", "true");
+    }
+
+    adminPokedexPickerClose?.addEventListener("click", closeAdminPokedexPicker);
+    adminPokedexPickerModal?.querySelector("[data-admin-pokedex-close]")?.addEventListener("click", closeAdminPokedexPicker);
+
+    function typeClass(type) {
+      const t = String(type || "normal").toLowerCase();
+      const known = new Set([
+        "normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying",
+        "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy",
+      ]);
+      return `type-${known.has(t) ? t : "normal"}`;
+    }
+
+    function renderAdminPokedex(list) {
+      adminPokedexGrid.innerHTML = list
+        .map((p) => `
+          <div class="pokedex-card ${typeClass((p.types || [])[0])}" data-id="${p.id}" data-name="${escapeHtml(p.name)}" title="${escapeHtml(p.name)}">
+            <div class="pokedex-card__number">#${p.id}</div>
+            <div class="pokedex-card__imgwrap">
+              <img src="${escapeHtml(p.gif)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <div class="pokedex-card__name">${escapeHtml(p.name)}</div>
+            <div class="pokedex-card__types">
+              ${(p.types || []).map((t) => `<span class="pokedex-badge">${escapeHtml(t)}</span>`).join("")}
+            </div>
+          </div>
+        `)
+        .join("");
+    }
+
+    function applyAdminPokedexFilter() {
+      const term = (adminPokedexSearch?.value || "").trim().toLowerCase();
+      const filtered = term ? adminPokedexAll.filter(p => String(p.name || "").includes(term)) : adminPokedexAll;
+      renderAdminPokedex(filtered);
+      if (adminPokedexStatus) adminPokedexStatus.textContent = term ? `${filtered.length} resultado(s)` : `${adminPokedexAll.length} Pokémon`;
+    }
+
+    adminPokedexSearch?.addEventListener("input", applyAdminPokedexFilter);
+
+    async function loadAdminPokedex() {
+      if (!adminPokedexStatus) return;
+      adminPokedexStatus.textContent = "Carregando…";
+      try {
+        const res = await fetch("/api/pokedex/list?limit=151&offset=0");
+        const data = await res.json();
+        if (!res.ok) throw new Error(data?.error || "failed");
+        adminPokedexAll = Array.isArray(data.results) ? data.results : [];
+        adminPokedexLoaded = true;
+        applyAdminPokedexFilter();
+      } catch {
+        adminPokedexStatus.textContent = "Falha ao carregar.";
+        adminPokedexGrid.innerHTML = "";
+      }
+    }
+
+    adminPokedexGrid?.addEventListener("click", (e) => {
+      const card = e.target && e.target.closest ? e.target.closest(".pokedex-card") : null;
+      if (!card) return;
+      const id = Number(card.getAttribute("data-id"));
+      const name = card.getAttribute("data-name") || null;
+      if (!Number.isFinite(id)) return;
+
+      const level = Number(adminPickLevel?.value || 1);
+      const rarity = String(adminPickRarity?.value || "common");
+      const entry = {
+        pokemonId: id,
+        name,
+        level: Number.isFinite(level) ? Math.max(1, Math.min(100, Math.trunc(level))) : 1,
+        rarity,
+      };
+
+      if (onPickPokemon) onPickPokemon(entry);
+      closeAdminPokedexPicker();
+    });
+
+    btnAddHuntPokemon?.addEventListener("click", () => {
+      openAdminPokedexPicker((entry) => {
+        huntPool.push(entry);
+        renderHuntPool();
+      });
+    });
+
+    btnSaveRegionEvent?.addEventListener("click", async () => {
+      if (!regionEventsRegionId) return toast("Região inválida.");
+      const type = regionEventType?.value || "pokecenter";
+      const name = (regionEventName?.value || "").trim() || (type === "pokemon_hunt" ? "Caçar Pokémon" : "Centro Pokémon");
+      const isActive = !!regionEventActive?.checked;
+
+      let payload = {};
+      if (type === "pokecenter") {
+        payload = { icon: "/assets/edificios/pokecenter.png" };
+      }
+      if (type === "pokemon_hunt") {
+        if (!huntPool.length) return toast("Adicione pelo menos 1 Pokémon ao pool.");
+        payload = {
+          icon: "/assets/itens/pokebola.png",
+          hunt: {
+            pool: huntPool.map((it) => ({
+              pokemonId: it.pokemonId,
+              name: it.name || null,
+              level: it.level,
+              rarity: it.rarity,
+            })),
+          },
+        };
+      }
+
+      let out;
+      if (editingEventId) {
+        out = await apiUpdateEvent(editingEventId, { name, eventType: type, isActive, payload, regionId: regionEventsRegionId });
+      } else {
+        out = await apiCreateEvent({ regionId: regionEventsRegionId, name, eventType: type, payload, isActive });
+      }
+
+      if (!out?.ok) return toast("Erro ao salvar evento.");
+      toast("Evento salvo ✓");
+
+      await apiGetMap();
+      renderRegionEventsList();
+    });
+
+    // ========= Render Sidebar Lists =========
+    function renderLists() {
+      regionsList.innerHTML = "";
+      mapState.regions.forEach(r => {
+        const card = document.createElement("div");
+        card.className = "region-card";
+        card.innerHTML = `
+          <div class="region-card__main">
+            <div class="region-card__title">${escapeHtml(r.name)}</div>
+            <div class="muted region-card__meta">tipo: ${escapeHtml(r.type)} • id: ${escapeHtml(r.id)}</div>
+          </div>
+          <div class="region-card__actions">
+            <button class="btn btn--small btn--danger" type="button" data-action="delete" data-id="${escapeHtml(r.id)}">Excluir</button>
+          </div>
+        `;
+
+        card.addEventListener("click", () => {
+          const node = layerShapes.findOne(n => n.getAttr("meta")?.id === r.id);
+          if (node) {
+            selectNode(node);
+            toast("Região selecionada no mapa");
+          }
+        });
+
+        card.querySelector('[data-action="delete"]')?.addEventListener("click", async (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (!confirm(`Excluir a região “${r.name}” do JSON? (isso também remove eventos/ligacões dela)`)) return;
+          const out = await apiDeleteRegion(r.id);
+          if (!out?.ok) return toast("Erro ao excluir região.");
+          toast("Região excluída ✓");
+
+          await apiGetMap();
+          rebuildFromState();
+        });
+
+        regionsList.appendChild(card);
+      });
+
+      eventsList.innerHTML = "";
+      mapState.events.filter(e => e.isActive).forEach(ev => {
+        const div = document.createElement("div");
+        div.className = "item";
+        div.innerHTML = `
+          <b>${ev.name}</b>
+          <div class="muted">tipo: ${ev.eventType} • região: ${ev.regionId}</div>
+        `;
+        div.style.cursor = "pointer";
+        div.onclick = () => {
+          const node = layerShapes.findOne(n => n.getAttr("meta")?.id === ev.id);
+          if (node) {
+            selectNode(node);
+            toast("Evento selecionado no mapa");
+          }
+        };
+        eventsList.appendChild(div);
+      });
+    }
+
+    // ========= Build canvas from saved state =========
+    function rebuildFromState() {
+      layerShapes.destroyChildren();
+      layerUI.destroyChildren();
+
+      // transformer in UI layer
+      layerUI.add(transformer);
+
+      function updateRegionLabelPosition(node, label) {
+        if (!node || !label) return;
+        if (node.className === "Rect") {
+          label.position({ x: node.x() + node.width() / 2, y: node.y() + node.height() + 6 });
+        } else {
+          const rad = node.radius();
+          label.position({ x: node.x(), y: node.y() + rad + 6 });
+        }
+        label.offsetX(label.width() / 2);
+      }
+
+      mapState.regions.forEach((r) => {
+        const shapeType = r.shape === "rect" ? "rect" : "circle";
+        const style = r?.style && typeof r.style === "object" ? r.style : null;
+
+        let node;
+        if (shapeType === "rect") {
+          const cfg = normalizedToRect(r.data);
+          node = new Konva.Rect({
+            x: cfg.x,
+            y: cfg.y,
+            width: cfg.width,
+            height: cfg.height,
+            fill: "rgba(59,130,246,0.18)",
+            stroke: "rgba(59,130,246,0.75)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+        } else {
+          const cfg = normalizedToCircle(r.data);
+          node = new Konva.Circle({
+            x: cfg.x,
+            y: cfg.y,
+            radius: cfg.radius,
+            fill: "rgba(59,130,246,0.18)",
+            stroke: "rgba(59,130,246,0.75)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+        }
+
+        if (style) applyStyleToNode(node, style);
+
+        node.setAttr("meta", {
+          kind: "region",
+          id: r.id,
+          name: r.name,
+          type: r.type,
+          description: r.description || "",
+          shapeType,
+          style: style || undefined,
+        });
+
+        attachResizeFixes(node);
+
+        const label = new Konva.Text({
+          x: 0,
+          y: 0,
+          text: r.name,
+          fontFamily: "Inter",
+          fontSize: 14,
+          fill: "rgba(229,231,235,0.92)",
+        });
+        updateRegionLabelPosition(node, label);
+
+        node.on("click", (evt) => {
+          evt.cancelBubble = true;
+          selectNode(node);
+          const meta = node.getAttr("meta") || {};
+          if (MODE === "event" && meta.id) {
+            openRegionEventsModal({ id: meta.id, name: meta.name, type: meta.type });
+          }
+        });
+
+        node.on("dragmove transform", () => {
+          updateRegionLabelPosition(node, label);
+          layerShapes.batchDraw();
+        });
+
+        layerShapes.add(node);
+        layerShapes.add(label);
+      });
+
+      // Eventos (desenha somente os que possuem shape salvo)
+      mapState.events.filter(e => e.isActive).forEach((ev) => {
+        const shp = ev?.payload?.shape;
+        const style = ev?.payload?.style || null;
+        if (!shp || !shp.type || !shp.data) return;
+
+        if (shp.type === "circle" && typeof shp.data.x === "number") {
+          const cfg = normalizedToCircle(shp.data);
+          const node = new Konva.Circle({
+            x: cfg.x,
+            y: cfg.y,
+            radius: cfg.radius,
+            fill: "rgba(250,204,21,0.14)",
+            stroke: "rgba(250,204,21,0.65)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+
+          if (style) applyStyleToNode(node, style);
+
+          node.setAttr("meta", {
+            kind: "event",
+            id: ev.id,
+            regionId: ev.regionId,
+            name: ev.name,
+            eventType: ev.eventType,
+            shapeType: "circle",
+            style: style || undefined,
+            // metadados opcionais (para preencher inputs)
+            trainerName: ev?.payload?.battle?.trainer?.name,
+            moneyWin: ev?.payload?.battle?.moneyWin,
+            moneyLose: ev?.payload?.battle?.moneyLose,
+            badge: ev?.payload?.gym?.badge,
+            items: ev?.payload?.house?.items,
+          });
+
+          attachResizeFixes(node);
+
+          node.on("click", (evt) => {
+            evt.cancelBubble = true;
+            selectNode(node);
+          });
+
+          layerShapes.add(node);
+          return;
+        }
+
+        if (shp.type === "rect" && typeof shp.data.x === "number") {
+          const cfg = normalizedToRect(shp.data);
+          const node = new Konva.Rect({
+            x: cfg.x,
+            y: cfg.y,
+            width: cfg.width,
+            height: cfg.height,
+            fill: "rgba(250,204,21,0.10)",
+            stroke: "rgba(250,204,21,0.65)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+
+          if (style) applyStyleToNode(node, style);
+
+          node.setAttr("meta", {
+            kind: "event",
+            id: ev.id,
+            regionId: ev.regionId,
+            name: ev.name,
+            eventType: ev.eventType,
+            shapeType: "rect",
+            style: style || undefined,
+            trainerName: ev?.payload?.battle?.trainer?.name,
+            moneyWin: ev?.payload?.battle?.moneyWin,
+            moneyLose: ev?.payload?.battle?.moneyLose,
+            badge: ev?.payload?.gym?.badge,
+            items: ev?.payload?.house?.items,
+          });
+
+          attachResizeFixes(node);
+
+          node.on("click", (evt) => {
+            evt.cancelBubble = true;
+            selectNode(node);
+          });
+
+          layerShapes.add(node);
+        }
+      });
+
+      layerShapes.draw();
+      layerUI.draw();
+      renderLists();
+    }
+
+    function clampZoom(z) {
+      const n = Number(z);
+      if (!Number.isFinite(n)) return zoomFactor;
+      return Math.max(0.5, Math.min(2.5, n));
+    }
+
+    function captureDraftRegions() {
+      const drafts = [];
+      if (!layerShapes) return drafts;
+      layerShapes.getChildren().forEach((n) => {
+        if (!n || n.className === "Text") return;
+        if (!isRegionNode(n)) return;
+        const meta = n.getAttr("meta") || {};
+        if (meta.id) return; // só rascunhos
+
+        const shape = n.className === "Rect" ? "rect" : "circle";
+        const data = shape === "rect" ? rectToNormalized(n) : circleToNormalized(n);
+        drafts.push({
+          shape,
+          data,
+          meta: {
+            ...meta,
+            kind: "region",
+            id: null,
+            shapeType: meta.shapeType || shape,
+          },
+        });
+      });
+      return drafts;
+    }
+
+    function restoreDraftRegions(drafts) {
+      const restored = [];
+      if (!Array.isArray(drafts) || !drafts.length) return restored;
+
+      drafts.forEach((d) => {
+        const shape = d?.shape === "rect" ? "rect" : "circle";
+        const meta = d?.meta && typeof d.meta === "object" ? d.meta : { kind: "region", id: null };
+        const style = meta?.style && typeof meta.style === "object" ? meta.style : null;
+        const cfg = shape === "rect" ? normalizedToRect(d.data) : normalizedToCircle(d.data);
+
+        let node;
+        if (shape === "rect") {
+          node = new Konva.Rect({
+            x: cfg.x,
+            y: cfg.y,
+            width: cfg.width,
+            height: cfg.height,
+            fill: "rgba(59,130,246,0.18)",
+            stroke: "rgba(59,130,246,0.75)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+        } else {
+          node = new Konva.Circle({
+            x: cfg.x,
+            y: cfg.y,
+            radius: cfg.radius,
+            fill: "rgba(59,130,246,0.18)",
+            stroke: "rgba(59,130,246,0.75)",
+            strokeWidth: 2,
+            draggable: true,
+          });
+        }
+
+        if (style) applyStyleToNode(node, style);
+
+        node.setAttr("meta", {
+          ...meta,
+          kind: "region",
+          id: null,
+          shapeType: shape,
+        });
+
+        attachResizeFixes(node);
+        node.on("click", (evt) => {
+          evt.cancelBubble = true;
+          selectNode(node);
+        });
+
+        layerShapes.add(node);
+        restored.push(node);
+      });
+
+      layerShapes.draw();
+      return restored;
+    }
+
+    function applyZoom(nextZoom) {
+      if (!kImage || !stage) return;
+
+      // captura rascunhos e seleção antes de mexer na escala
+      const drafts = captureDraftRegions();
+      const selMeta = selectedNode?.getAttr?.("meta") || null;
+      const selKind = selMeta?.kind || (selMeta ? "region" : null);
+      const selId = selMeta?.id || null;
+      const selWasDraftRegion = selKind === "region" && !selId;
+
+      zoomFactor = clampZoom(nextZoom);
+      const scale = baseScale * zoomFactor;
+      const targetW = Math.round(bgImageW * scale);
+      const targetH = Math.round(bgImageH * scale);
+
+      container.style.width = `${targetW}px`;
+      container.style.height = `${targetH}px`;
+      stage.width(targetW);
+      stage.height(targetH);
+
+      kImage.scale({ x: scale, y: scale });
+      kImage.position({ x: 0, y: 0 });
+      layerBg.batchDraw();
+
+      // redesenha do JSON e restaura rascunhos
+      rebuildFromState();
+      const restoredDrafts = restoreDraftRegions(drafts);
+
+      // tenta restaurar seleção
+      if (selId) {
+        const node = layerShapes.findOne(n => n.getAttr("meta")?.id === selId);
+        if (node) selectNode(node);
+      } else if (selWasDraftRegion && restoredDrafts.length) {
+        selectNode(restoredDrafts[restoredDrafts.length - 1]);
+      }
+
+      toast(`Zoom: ${Math.round(zoomFactor * 100)}%`);
+    }
+
+    // ========= Init Konva =========
+    function initKonva() {
+      const { w, h } = getContainerSize();
+
+      stage = new Konva.Stage({ container: "konvaContainer", width: w, height: h });
+      layerBg = new Konva.Layer();
+      layerShapes = new Konva.Layer();
+      layerUI = new Konva.Layer();
+
+      stage.add(layerBg);
+      stage.add(layerShapes);
+      stage.add(layerUI);
+
+      // bg image
+      const img = new Image();
+      img.src = "/assets/mapa.png";
+      img.onload = async () => {
+        bgImageW = img.width;
+        bgImageH = img.height;
+
+        kImage = new Konva.Image({ image: img, x: 0, y: 0 });
+
+        // Base: mapa com largura fixa 1600px (rolável); zoom altera essa escala.
+        const baseW = 1600;
+        baseScale = baseW / bgImageW;
+        zoomFactor = 1;
+
+        // aplica escala inicial
+        const scale = baseScale * zoomFactor;
+        const targetW = Math.round(bgImageW * scale);
+        const targetH = Math.round(bgImageH * scale);
+
+        container.style.width = `${targetW}px`;
+        container.style.height = `${targetH}px`;
+        stage.width(targetW);
+        stage.height(targetH);
+
+        kImage.scale({ x: scale, y: scale });
+        kImage.position({ x: 0, y: 0 });
+
+        layerBg.add(kImage);
+        layerBg.draw();
+
+        // carregar mapa salvo e desenhar
+        await apiGetMap();
+        rebuildFromState();
+
+        toast("Mapa carregado ✓");
+      };
+
+      // click no stage (criar região)
+      stage.on("click", (e) => {
+        if (!kImage) return;
+
+        // se clicou em shape, o handler do shape já pega
+        if (e.target && e.target !== stage && e.target !== kImage) return;
+
+        if (MODE === "region") {
+          const pos = stage.getPointerPosition();
+          if (!pos) return;
+
+          // não cria fora da imagem: checagem simples
+          const imgBox = {
+            x: kImage.x(),
+            y: kImage.y(),
+            w: bgImageW * kImage.scaleX(),
+            h: bgImageH * kImage.scaleY(),
+          };
+          if (pos.x < imgBox.x || pos.x > imgBox.x + imgBox.w || pos.y < imgBox.y || pos.y > imgBox.y + imgBox.h) {
+            toast("Clique dentro do mapa.");
+            return;
+          }
+
+          const shp = (regionShape?.value || "circle") === "rect" ? "rect" : "circle";
+          const style = getRegionStyleFromInputs();
+
+          let node;
+          if (shp === "rect") {
+            const w = 90;
+            const h = 60;
+            node = new Konva.Rect({
+              x: pos.x - w / 2,
+              y: pos.y - h / 2,
+              width: w,
+              height: h,
+              fill: "rgba(59,130,246,0.18)",
+              stroke: "rgba(59,130,246,0.75)",
+              strokeWidth: 2,
+              draggable: true,
+            });
+          } else {
+            node = new Konva.Circle({
+              x: pos.x,
+              y: pos.y,
+              radius: 28,
+              fill: "rgba(59,130,246,0.18)",
+              stroke: "rgba(59,130,246,0.75)",
+              strokeWidth: 2,
+              draggable: true,
+            });
+          }
+
+          applyStyleToNode(node, style);
+
+          node.setAttr("meta", {
+            kind: "region",
+            id: null,
+            name: "Nova Região",
+            type: "route",
+            description: "",
+            shapeType: shp,
+            style,
+          });
+
+          attachResizeFixes(node);
+
+          node.on("click", (evt) => {
+            evt.cancelBubble = true;
+            selectNode(node);
+          });
+
+          layerShapes.add(node);
+          layerShapes.draw();
+
+          selectNode(node);
+          toast("Região nova criada (ainda não salva)");
+        }
+      });
+
+      // Zoom: via botões (+/-), mantendo coordenadas normalizadas.
+
+      // resize
+      window.addEventListener("resize", () => {
+        const { w, h } = getContainerSize();
+        stage.width(w);
+        stage.height(h);
+        stage.draw();
+      });
+    }
+
+    // ========= Buttons =========
+    document.getElementById("btnModeRegion").addEventListener("click", () => setMode("region"));
+    document.getElementById("btnModeEvent").addEventListener("click", () => setMode("event"));
+
+    document.getElementById("btnCenter").addEventListener("click", () => {
+      // Como a navegação é via scroll, centralizar vira "voltar pro topo/esquerda".
+      const stageEl = document.querySelector('.map-stage');
+      if (stageEl) {
+        stageEl.scrollLeft = 0;
+        stageEl.scrollTop = 0;
+      }
+      toast("Centralizado");
+    });
+
+    document.getElementById("btnReload").addEventListener("click", async () => {
+      await apiGetMap();
+      rebuildFromState();
+      toast("Recarregado do JSON");
+    });
+
+    document.getElementById("btnZoomIn")?.addEventListener("click", () => {
+      applyZoom(zoomFactor + 0.15);
+    });
+
+    document.getElementById("btnZoomOut")?.addEventListener("click", () => {
+      applyZoom(zoomFactor - 0.15);
+    });
+
+    // Save region
+    document.getElementById("btnSaveRegion").addEventListener("click", async () => {
+      if (!selectedNode || !isRegionNode(selectedNode)) return toast("Selecione uma região no mapa.");
+
+      const meta = selectedNode.getAttr("meta") || {};
+      const name = (regionName.value || "").trim();
+      if (!name) return toast("Informe um nome.");
+
+      meta.name = name;
+      meta.type = regionType.value || "route";
+      meta.description = regionDesc.value || "";
+
+      selectedNode.setAttr("meta", meta);
+
+      // normaliza
+      const shape = selectedNode.className === "Rect" ? "rect" : "circle";
+      const style = getRegionStyleFromInputs();
+      meta.shapeType = shape;
+      meta.style = style;
+      selectedNode.setAttr("meta", meta);
+      applyStyleToNode(selectedNode, style);
+
+      const data = shape === "rect" ? rectToNormalized(selectedNode) : circleToNormalized(selectedNode);
+
+      let out;
+      if (meta.id) {
+        out = await apiUpdateRegion(meta.id, {
+          name: meta.name,
+          type: meta.type,
+          description: meta.description,
+          shape,
+          style,
+          data,
+        });
+      } else {
+        out = await apiCreateRegion({
+          name: meta.name,
+          type: meta.type,
+          description: meta.description,
+          shape,
+          style,
+          data,
+        });
+      }
+
+      if (!out.ok) return toast("Erro ao salvar região.");
+
+      // atualiza meta com id retornado
+      if (out?.region?.id) meta.id = out.region.id;
+      selectedNode.setAttr("meta", meta);
+
+      toast("Região salva ✓");
+      await apiGetMap();
+      rebuildFromState();
+    });
+
+    // Delete local (remove do canvas - sem deletar no JSON por enquanto)
+    document.getElementById("btnDeleteRegion").addEventListener("click", () => {
+      if (!selectedNode) return toast("Selecione uma forma.");
+      selectedNode.destroy();
+      transformer.nodes([]);
+      layerShapes.draw();
+      clearSelection();
+      toast("Removido do canvas (local).");
+    });
+
+    // Init
+    setMode("region");
+    initKonva();
+  </script>
+</body>
+
+</html>

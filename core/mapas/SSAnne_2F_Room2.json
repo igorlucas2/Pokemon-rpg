@@ -1,0 +1,146 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_2F_Room2",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM2",
+        "sourceMapId": "MAP_SSANNE_2F_ROOM2",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_2F_Room2-0",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room2_EventScript_Dale",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_2F_Room2-1",
+            "x": 1,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room2_EventScript_Brooks",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_2F_Room2-2",
+            "x": 3,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room2_EventScript_ItemStardust",
+                "flag": "FLAG_HIDE_SSANNE_2F_ROOM2_STARDUST"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_2F_Room2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_2F_Corridor",
+                "x": 10,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_2F_CORRIDOR",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_2F_Room2",
+    "dialogs": [
+        {
+            "title": "SSAnne_2F_Room2_Text_BrooksPostBattle",
+            "id": "SSAnne_2F_Room2_EventScript_Brooks",
+            "text": "Fifteen years ago, I would\nhave won!"
+        },
+        {
+            "title": "SSAnne_2F_Room2_Text_DalePostBattle",
+            "id": "SSAnne_2F_Room2_EventScript_Dale",
+            "text": "Party?\n\nThe cruise ship's party should be\nover by now."
+        },
+        {
+            "title": "SSAnne_2F_Room2_EventScript_ItemStardust",
+            "id": "SSAnne_2F_Room2_EventScript_ItemStardust",
+            "text": "TODO: SSAnne_2F_Room2_EventScript_ItemStardust"
+        }
+    ],
+    "jumps": []
+}

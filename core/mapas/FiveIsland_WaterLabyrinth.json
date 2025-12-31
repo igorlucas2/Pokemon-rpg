@@ -1,0 +1,167 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_WaterLabyrinth",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_WATER_LABYRINTH",
+        "sourceMapId": "MAP_FIVE_ISLAND_WATER_LABYRINTH",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands45",
+        "height": 20
+    },
+    "start": {
+        "y": 6,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 7,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 56,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 11,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 54,
+            "h": 11,
+            "x": 18
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 10,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 9,
+            "x": 10
+        },
+        {
+            "y": 14,
+            "w": 7,
+            "h": 6,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_WaterLabyrinth-0",
+            "x": 14,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_WaterLabyrinth_EventScript_EggGentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_WaterLabyrinth-1",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_WaterLabyrinth_EventScript_Alize",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-FiveIsland_WaterLabyrinth-up-1",
+            "type": "door",
+            "rect": {
+                "x": 48,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_ResortGorgeous",
+                "connection": {
+                    "direction": "up",
+                    "offset": 48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 48,
+                "destMap": "MAP_FIVE_ISLAND_RESORT_GORGEOUS"
+            }
+        },
+        {
+            "id": "conn-FiveIsland_WaterLabyrinth-down-2",
+            "type": "door",
+            "rect": {
+                "x": 48,
+                "y": 19,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland",
+                "connection": {
+                    "direction": "down",
+                    "offset": 48
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 48,
+                "destMap": "MAP_FIVE_ISLAND"
+            }
+        }
+    ],
+    "name": "FiveIsland_WaterLabyrinth",
+    "dialogs": [
+        {
+            "title": "FiveIsland_WaterLabyrinth_EventScript_Alize",
+            "id": "FiveIsland_WaterLabyrinth_EventScript_Alize",
+            "text": "TODO: FiveIsland_WaterLabyrinth_EventScript_Alize"
+        },
+        {
+            "title": "FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons",
+            "id": "FiveIsland_WaterLabyrinth_EventScript_EggGentleman",
+            "text": "You travel all over the place,\ndon't you?\n\nYou're not driving your POKéMON\ntoo harshly, are you?\n\nLet me take a look.\n… … …   … … …\n\nAh, hmm…\nI see, I see…"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,286 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "LavenderTown_VolunteerPokemonHouse",
+    "meta": {
+        "layoutId": "LAYOUT_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE",
+        "sourceMapId": "MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FanClubDaycare",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-0",
+            "x": 3,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_MR_FUJI",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji",
+                "flag": "FLAG_HIDE_POKEHOUSE_FUJI"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-1",
+            "x": 1,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_NIDORINO",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-2",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PSYDUCK",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-3",
+            "x": 9,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-4",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-LavenderTown_VolunteerPokemonHouse-5",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_VolunteerPokemonHouse_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-LavenderTown_VolunteerPokemonHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_VolunteerPokemonHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_VolunteerPokemonHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "LavenderTown_VolunteerPokemonHouse",
+    "dialogs": [
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_Bookshelf",
+            "text": "POKéMON magazines line the shelf.\n\nPOKéMON INSIDER…\n\nPOKéMON FAN…"
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_MonsNiceToHug",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_LittleBoy",
+            "text": "It's so warm!\nPOKéMON are so nice to hug."
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_LittleGirl",
+            "text": "This is really MR. FUJI's house.\n\nHe's really kind.\n\nHe looks after abandoned and\norphaned POKéMON."
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji",
+            "text": "MR. FUJI: {PLAYER}…\n\nYour POKéDEX quest is one that\nrequires strong dedication.\n\nWithout deep love for POKéMON,\nyour quest may fail.\n\nI'm not sure if this will help you,\nbut I'd like you to have it.\n\nUpon hearing the POKé FLUTE,\nsleeping POKéMON will spring awake.\n\nTry using it on POKéMON that are\nsleeping obstacles."
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_Nidorino",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino",
+            "text": "NIDORINO: Gaoo!"
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_PokemonFanMagazine",
+            "text": "POKéMON FAN MAGAZINE\nMonthly Grand Prize Drawing!\n\nThe application form is…\n\nGone! It's been clipped out.\nSomeone must have applied already."
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_Psyduck",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck",
+            "text": "PSYDUCK: Gwappa!"
+        },
+        {
+            "title": "LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo",
+            "id": "LavenderTown_VolunteerPokemonHouse_EventScript_Youngster",
+            "text": "That's odd, MR. FUJI isn't here.\nWhere'd he go?"
+        }
+    ],
+    "jumps": []
+}

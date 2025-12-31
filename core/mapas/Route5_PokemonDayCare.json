@@ -1,0 +1,154 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route5_PokemonDayCare",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE5_POKEMON_DAY_CARE",
+        "sourceMapId": "MAP_ROUTE5_POKEMON_DAY_CARE",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FanClubDaycare",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route5_PokemonDayCare-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route5_PokemonDayCare_EventScript_DaycareMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route5_PokemonDayCare-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5",
+                "x": 23,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route5_PokemonDayCare-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5",
+                "x": 23,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route5_PokemonDayCare-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5",
+                "x": 23,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "Route5_PokemonDayCare",
+    "dialogs": [
+        {
+            "title": "Route5_PokemonDayCare_EventScript_DaycareMan",
+            "id": "Route5_PokemonDayCare_EventScript_DaycareMan",
+            "text": "TODO: Route5_PokemonDayCare_EventScript_DaycareMan"
+        }
+    ],
+    "jumps": []
+}

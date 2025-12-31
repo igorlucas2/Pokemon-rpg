@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_House5",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_THREE_ISLAND_HOUSE5",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_House5-0",
+            "x": 2,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_House5_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_House5-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "x": 13,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ThreeIsland_House5",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_House5_Text_ImNotLostelle",
+            "id": "ThreeIsland_House5_EventScript_LittleGirl",
+            "text": "Me?\nI'm not LOSTELLE.\n\nShe's probably gone to the\nBERRY FOREST, I think.\n\nShe picks BERRIES there for making\nlunch."
+        }
+    ],
+    "jumps": []
+}

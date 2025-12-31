@@ -1,0 +1,393 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "IndigoPlateau_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_INDIGO_PLATEAU_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F",
+        "width": 25,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 18
+    },
+    "start": {
+        "y": 1,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 25,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 20,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 16,
+            "h": 7,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 2,
+            "x": 21
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 17,
+            "w": 25,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-0",
+            "x": 0,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-1",
+            "x": 13,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_LEAGUE_NURSE",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-2",
+            "x": 7,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-3",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_LEAGUE_DOOR_GUARD",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_DoorGuard",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-4",
+            "x": 23,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-5",
+            "x": 22,
+            "y": 9,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-6",
+            "x": 16,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-IndigoPlateau_PokemonCenter_1F-7",
+            "x": 23,
+            "y": 9,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-IndigoPlateau_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "IndigoPlateau_Exterior",
+                "x": 11,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_INDIGO_PLATEAU_EXTERIOR",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-IndigoPlateau_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_LoreleisRoom",
+                "x": 6,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_LORELEIS_ROOM",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-IndigoPlateau_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "IndigoPlateau_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "IndigoPlateau_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt",
+            "text": "TODO: IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt"
+        },
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM",
+            "text": "TODO: IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM"
+        },
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_DoorGuard",
+            "text": "From here on, you face the\nELITE FOUR one by one.\n\nIf you win, a door opens to the\nnext TRAINER. Good luck!"
+        },
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nAt the POKéMON LEAGUE, you will\nface the ELITE FOUR all in a row.\n\nIf you lose, you have to start all\nover again!\n\nThis is it!\nGo for it!"
+        },
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_EventScript_Nurse",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: IndigoPlateau_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal",
+            "id": "IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal",
+            "text": "TODO: IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,315 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_DepartmentStore_1F",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_DEPARTMENT_STORE_1F",
+        "sourceMapId": "MAP_CELADON_CITY_DEPARTMENT_STORE_1F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_DepartmentStore",
+        "height": 16
+    },
+    "start": {
+        "y": 2,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 7,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 11,
+            "w": 5,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 15,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_DepartmentStore_1F-0",
+            "x": 6,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_DepartmentStore_1F_EventScript_Receptionist",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 15,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 15,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-6",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 15,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "2",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-7",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_DepartmentStore_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_DEPARTMENT_STORE_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_DepartmentStore_1F-8",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_DepartmentStore_2F",
+                "x": 3,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_DEPARTMENT_STORE_2F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeladonCity_DepartmentStore_1F",
+    "dialogs": [
+        {
+            "title": "CeladonCity_DepartmentStore_1F_Text_ServiceCounter",
+            "id": "CeladonCity_DepartmentStore_1F_EventScript_FloorSign",
+            "text": "1F: SERVICE COUNTER"
+        },
+        {
+            "title": "CeladonCity_DepartmentStore_1F_Text_FloorDescriptions",
+            "id": "CeladonCity_DepartmentStore_1F_EventScript_LayoutSign",
+            "text": "1F: SERVICE COUNTER\n\n2F: TRAINER'S MARKET\n\n3F: TV GAME SHOP\n\n4F: WISE MAN GIFTS\n\n5F: DRUGSTORE\n\nROOFTOP SQUARE: VENDING MACHINES"
+        },
+        {
+            "title": "CeladonCity_DepartmentStore_1F_Text_WelcomeToDeptStore",
+            "id": "CeladonCity_DepartmentStore_1F_EventScript_Receptionist",
+            "text": "Hello!\nWelcome to CELADON DEPT. STORE.\n\nThe board on the right describes\nthe store layout."
+        }
+    ],
+    "jumps": []
+}

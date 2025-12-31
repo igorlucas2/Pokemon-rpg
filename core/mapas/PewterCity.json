@@ -1,0 +1,872 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity",
+    "meta": {
+        "layoutId": "LAYOUT_PEWTER_CITY",
+        "sourceMapId": "MAP_PEWTER_CITY",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_PewterCity",
+        "height": 40
+    },
+    "start": {
+        "y": 1,
+        "x": 23
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 23,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 21,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 38,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 17,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 2,
+            "w": 10,
+            "h": 4,
+            "x": 38
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 5,
+            "w": 11,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 6,
+            "w": 7,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 6,
+            "w": 8,
+            "h": 14,
+            "x": 40
+        },
+        {
+            "y": 7,
+            "w": 7,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 7,
+            "w": 5,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 3,
+            "x": 32
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 30,
+            "x": 4
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 7,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 4,
+            "x": 21
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 2,
+            "x": 30
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 20,
+            "w": 15,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 22,
+            "w": 9,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 23,
+            "w": 10,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 24,
+            "w": 8,
+            "h": 16,
+            "x": 40
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 6,
+            "x": 36
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 5,
+            "x": 26
+        },
+        {
+            "y": 28,
+            "w": 5,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 30,
+            "w": 4,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 30,
+            "w": 4,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 36,
+            "w": 14,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 36,
+            "w": 16,
+            "h": 4,
+            "x": 24
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity-0",
+            "x": 6,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_EventScript_Lass",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity-1",
+            "x": 33,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PEWTER_MUSEUM_GUIDE",
+                "script": "PewterCity_EventScript_MuseumGuide",
+                "flag": "FLAG_HIDE_PEWTER_MUSEUM_GUIDE"
+            }
+        },
+        {
+            "id": "npc-PewterCity-2",
+            "x": 21,
+            "y": 28,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity-3",
+            "x": 33,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_EventScript_BugCatcher",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity-4",
+            "x": 42,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PEWTER_GYM_GUIDE",
+                "script": "PewterCity_EventScript_GymGuide",
+                "flag": "FLAG_HIDE_PEWTER_CITY_GYM_GUIDE"
+            }
+        },
+        {
+            "id": "npc-PewterCity-5",
+            "x": 30,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-PewterCity-6",
+            "x": 46,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PEWTER_AIDE",
+                "script": "PewterCity_EventScript_RunningShoesAide",
+                "flag": "FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PewterCity-1",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_Museum_1F",
+                "x": 14,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_MUSEUM_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-2",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_Museum_1F",
+                "x": 21,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_MUSEUM_1F",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_Gym",
+                "x": 6,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-4",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-5",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_HOUSE1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-6",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 25,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity-7",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_HOUSE2",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-PewterCity-down-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 39,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2",
+                "connection": {
+                    "direction": "down",
+                    "offset": 12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 12,
+                "destMap": "MAP_ROUTE2"
+            }
+        },
+        {
+            "id": "conn-PewterCity-right-2",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route3",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE3"
+            }
+        }
+    ],
+    "name": "PewterCity",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "PewterCity_Text_DoYouKnowWhatImDoing",
+            "id": "PewterCity_EventScript_BugCatcher",
+            "text": "Psssst!\nDo you know what I'm doing?\n\nI'm spraying REPEL to keep wild\nPOKéMON out of my garden!"
+        },
+        {
+            "title": "PewterCity_Text_CitySign",
+            "id": "PewterCity_EventScript_CitySign",
+            "text": "PEWTER CITY\nA Stone Gray City"
+        },
+        {
+            "title": "PewterCity_Text_BrockOnlySeriousTrainerHere",
+            "id": "PewterCity_EventScript_FatMan",
+            "text": "There aren't many serious POKéMON\nTRAINERS here.\n\nThey're all like BUG CATCHERS,\nyou know, just hobbyists.\n\nBut PEWTER GYM's BROCK isn't like\nthat, not one bit."
+        },
+        {
+            "title": "PewterCity_Text_BrocksLookingForChallengersFollowMe",
+            "id": "PewterCity_EventScript_GymGuide",
+            "text": "You're a TRAINER, right?\n\nBROCK's looking for new\nchallengers. Follow me!\n\nIf you have the right stuff,\ngo take on BROCK!"
+        },
+        {
+            "title": "PewterCity_EventScript_GymGuideTriggerBottom",
+            "id": "PewterCity_EventScript_GymGuideTriggerBottom",
+            "text": "TODO: PewterCity_EventScript_GymGuideTriggerBottom"
+        },
+        {
+            "title": "PewterCity_EventScript_GymGuideTriggerMid",
+            "id": "PewterCity_EventScript_GymGuideTriggerMid",
+            "text": "TODO: PewterCity_EventScript_GymGuideTriggerMid"
+        },
+        {
+            "title": "PewterCity_EventScript_GymGuideTriggerRight",
+            "id": "PewterCity_EventScript_GymGuideTriggerRight",
+            "text": "TODO: PewterCity_EventScript_GymGuideTriggerRight"
+        },
+        {
+            "title": "PewterCity_EventScript_GymGuideTriggerTop",
+            "id": "PewterCity_EventScript_GymGuideTriggerTop",
+            "text": "TODO: PewterCity_EventScript_GymGuideTriggerTop"
+        },
+        {
+            "title": "PewterCity_Text_GymSign",
+            "id": "PewterCity_EventScript_GymSign",
+            "text": "PEWTER CITY POKéMON GYM\nLEADER: BROCK\nThe Rock-Solid POKéMON TRAINER!"
+        },
+        {
+            "title": "PewterCity_Text_ClefairyCameFromMoon",
+            "id": "PewterCity_EventScript_Lass",
+            "text": "CLEFAIRY came from the moon.\nThat's what the rumor is.\n\nThey appeared after MOON STONES\nfell on MT. MOON."
+        },
+        {
+            "title": "PewterCity_Text_DidYouCheckOutMuseum",
+            "id": "PewterCity_EventScript_MuseumGuide",
+            "text": "Did you check out the MUSEUM?\n\nReally?\nYou absolutely have to go!\n\nThis is it, the MUSEUM.\n\nYou have to pay to get in, but it's\nworth it. See you around!"
+        },
+        {
+            "title": "PewterCity_Text_MuseumOfScience",
+            "id": "PewterCity_EventScript_MuseumSign",
+            "text": "PEWTER MUSEUM OF SCIENCE"
+        },
+        {
+            "title": "PewterCity_Text_CallPoliceIfInfoOnThieves",
+            "id": "PewterCity_EventScript_PoliceNotice",
+            "text": "NOTICE!\n\nThieves have been stealing POKéMON\nfossils from MT. MOON.\n\nPlease call the PEWTER POLICE if\nyou have any information."
+        },
+        {
+            "title": "PewterCity_EventScript_RunningShoesAide",
+            "id": "PewterCity_EventScript_RunningShoesAide",
+            "text": "TODO: PewterCity_EventScript_RunningShoesAide"
+        },
+        {
+            "title": "PewterCity_EventScript_RunningShoesAideTriggerBottom",
+            "id": "PewterCity_EventScript_RunningShoesAideTriggerBottom",
+            "text": "TODO: PewterCity_EventScript_RunningShoesAideTriggerBottom"
+        },
+        {
+            "title": "PewterCity_EventScript_RunningShoesAideTriggerMid",
+            "id": "PewterCity_EventScript_RunningShoesAideTriggerMid",
+            "text": "TODO: PewterCity_EventScript_RunningShoesAideTriggerMid"
+        },
+        {
+            "title": "PewterCity_EventScript_RunningShoesAideTriggerTop",
+            "id": "PewterCity_EventScript_RunningShoesAideTriggerTop",
+            "text": "TODO: PewterCity_EventScript_RunningShoesAideTriggerTop"
+        },
+        {
+            "title": "PewterCity_Text_TrainerTipsEarningEXP",
+            "id": "PewterCity_EventScript_TrainerTips",
+            "text": "TRAINER TIPS\n\nAll POKéMON that appear in battle,\nhowever briefly, earn EXP Points."
+        }
+    ],
+    "jumps": [
+        {
+            "x": 4,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 29,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 30,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 31,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 32,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 33,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 34,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 36,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 29,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 30,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 32,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 33,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 34,
+            "y": 30,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 30,
+            "dir": "down"
+        }
+    ]
+}

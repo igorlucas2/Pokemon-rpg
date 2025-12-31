@@ -1,0 +1,248 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity_WardensHouse",
+    "meta": {
+        "layoutId": "LAYOUT_FUCHSIA_CITY_WARDENS_HOUSE",
+        "sourceMapId": "MAP_FUCHSIA_CITY_WARDENS_HOUSE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Museum",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 10,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity_WardensHouse-0",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_WardensHouse_EventScript_Warden",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_WardensHouse-1",
+            "x": 11,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_WardensHouse-2",
+            "x": 11,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_WardensHouse_EventScript_ItemRareCandy",
+                "flag": "FLAG_HIDE_FUCHSIA_CITY_WARDENS_HOUSE_RARE_CANDY"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_WardensHouse-3",
+            "x": 4,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga",
+                "flag": "FLAG_HIDE_FAME_CHECKER_KOGA_JOURNAL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity_WardensHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 33,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_WardensHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 33,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_WardensHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 33,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "FuchsiaCity_WardensHouse",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "FuchsiaCity_WardensHouse_Text_MonPhotosFossilsOnDisplay",
+            "id": "FuchsiaCity_WardensHouse_EventScript_DisplaySign1",
+            "text": "POKéMON photos and fossils are on\ndisplay."
+        },
+        {
+            "title": "FuchsiaCity_WardensHouse_Text_OldMonMerchandiseOnDisplay",
+            "id": "FuchsiaCity_WardensHouse_EventScript_DisplaySign2",
+            "text": "Old POKéMON merchandise is on\ndisplay."
+        },
+        {
+            "title": "FuchsiaCity_WardensHouse_EventScript_ItemRareCandy",
+            "id": "FuchsiaCity_WardensHouse_EventScript_ItemRareCandy",
+            "text": "TODO: FuchsiaCity_WardensHouse_EventScript_ItemRareCandy"
+        },
+        {
+            "title": "FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga",
+            "id": "FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga",
+            "text": "TODO: FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga"
+        },
+        {
+            "title": "FuchsiaCity_WardensHouse_Text_HifFuffHefifoo",
+            "id": "FuchsiaCity_WardensHouse_EventScript_Warden",
+            "text": "WARDEN: Hif fuff hefifoo!\n\nHa lof ha feef ee hafahi ho.\nHeff hee fwee!"
+        }
+    ],
+    "jumps": []
+}

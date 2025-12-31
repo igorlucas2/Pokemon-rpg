@@ -1,0 +1,439 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SilphCo_10F",
+    "meta": {
+        "layoutId": "LAYOUT_SILPH_CO_10F",
+        "sourceMapId": "MAP_SILPH_CO_10F",
+        "width": 17,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 19
+    },
+    "start": {
+        "y": 2,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 8,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 11,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SilphCo_10F-0",
+            "x": 2,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_Travis",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_10F-1",
+            "x": 10,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_WorkerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SilphCo_10F-2",
+            "x": 0,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_Grunt",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_10F-3",
+            "x": 5,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_ItemCarbos",
+                "flag": "FLAG_HIDE_SILPH_CO_10F_CARBOS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_10F-4",
+            "x": 2,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_ItemUltraBall",
+                "flag": "FLAG_HIDE_SILPH_CO_10F_ULTRA_BALL"
+            }
+        },
+        {
+            "id": "npc-SilphCo_10F-5",
+            "x": 3,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_10F_EventScript_ItemRareCandy",
+                "flag": "FLAG_HIDE_SILPH_CO_10F_RARE_CANDY"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SilphCo_10F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_11F",
+                "x": 7,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_11F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_10F-2",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_4F",
+                "x": 12,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_4F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_10F-3",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_4F",
+                "x": 18,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_4F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_10F-4",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_9F",
+                "x": 18,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_9F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_10F-5",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_4F",
+                "x": 2,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_4F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_10F-6",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SilphCo_10F",
+    "dialogs": [
+        {
+            "title": "SilphCo_10F_EventScript_Door",
+            "id": "SilphCo_10F_EventScript_Door",
+            "text": "TODO: SilphCo_10F_EventScript_Door"
+        },
+        {
+            "title": "SilphCo_10F_Text_FloorSign",
+            "id": "SilphCo_10F_EventScript_FloorSign",
+            "text": "SILPH CO. HEAD OFFICE\n10F"
+        },
+        {
+            "title": "SilphCo_10F_Text_GruntPostBattle",
+            "id": "SilphCo_10F_EventScript_Grunt",
+            "text": "Nice try, but the boardroom is up\none more floor."
+        },
+        {
+            "title": "SilphCo_10F_EventScript_ItemCarbos",
+            "id": "SilphCo_10F_EventScript_ItemCarbos",
+            "text": "TODO: SilphCo_10F_EventScript_ItemCarbos"
+        },
+        {
+            "title": "SilphCo_10F_EventScript_ItemRareCandy",
+            "id": "SilphCo_10F_EventScript_ItemRareCandy",
+            "text": "TODO: SilphCo_10F_EventScript_ItemRareCandy"
+        },
+        {
+            "title": "SilphCo_10F_EventScript_ItemUltraBall",
+            "id": "SilphCo_10F_EventScript_ItemUltraBall",
+            "text": "TODO: SilphCo_10F_EventScript_ItemUltraBall"
+        },
+        {
+            "title": "SilphCo_10F_Text_TravisPostBattle",
+            "id": "SilphCo_10F_EventScript_Travis",
+            "text": "Are you satisfied with beating me?\nThen go on home!"
+        },
+        {
+            "title": "SilphCo_10F_Text_WaaaImScared",
+            "id": "SilphCo_10F_EventScript_WorkerF",
+            "text": "Waaaaa!\nI'm scared!"
+        }
+    ],
+    "jumps": []
+}

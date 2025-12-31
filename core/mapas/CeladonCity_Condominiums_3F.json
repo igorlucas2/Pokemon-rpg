@@ -1,0 +1,359 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Condominiums_3F",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_CONDOMINIUMS_3F",
+        "sourceMapId": "MAP_CELADON_CITY_CONDOMINIUMS_3F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Condominiums",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 6,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 9,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 7,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 15,
+            "w": 9,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 19,
+            "w": 14,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Condominiums_3F-0",
+            "x": 0,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_3F_EventScript_Programmer",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_3F-1",
+            "x": 3,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_3F_EventScript_Designer",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_3F-2",
+            "x": 4,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_3F_EventScript_GraphicArtist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_3F-3",
+            "x": 0,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_3F_EventScript_Writer",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Condominiums_3F-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_2F",
+                "x": 2,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_2F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_3F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_Roof",
+                "x": 4,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_3F-3",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_Roof",
+                "x": 10,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_ROOF",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_3F-4",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_2F",
+                "x": 11,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_2F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeladonCity_Condominiums_3F",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_ItsTheGameProgram",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Computer1",
+            "text": "It's the game program! Messing with\nit could bug out the game!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_SomeonesPlayingGame",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Computer2",
+            "text": "Someone's playing a game instead of\nworking!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_ItsScriptBetterNotLookAtEnding",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Computer3",
+            "text": "It's the script!\nBetter not look at the ending!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Designer",
+            "text": "Is that right?\n\nI'm the game designer!\n\nFilling up your POKéDEX is tough,\nbut don't quit!\n\nWhen you finish, come tell me!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_GameFreakDevelopmentRoom",
+            "id": "CeladonCity_Condominiums_3F_EventScript_DevelopmentRoomSign",
+            "text": "GAME FREAK Development Room"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_ImTheGraphicArtist",
+            "id": "CeladonCity_Condominiums_3F_EventScript_GraphicArtist",
+            "text": "I'm the graphic artist!\nI drew you!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_ImTheProgrammer",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Programmer",
+            "text": "Me?\nI'm the programmer!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_3F_Text_IWroteTheStory",
+            "id": "CeladonCity_Condominiums_3F_EventScript_Writer",
+            "text": "I wrote the story!\nIsn't ERIKA cute?\n\nI like MISTY a lot, too!\nOh, and SABRINA, I like her!"
+        }
+    ],
+    "jumps": []
+}

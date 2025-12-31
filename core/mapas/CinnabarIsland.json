@@ -1,0 +1,372 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland",
+    "meta": {
+        "layoutId": "LAYOUT_CINNABAR_ISLAND",
+        "sourceMapId": "MAP_CINNABAR_ISLAND",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CinnabarIsland",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 8,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 16,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 14,
+            "x": 23
+        },
+        {
+            "y": 7,
+            "w": 7,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 4,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 8,
+            "x": 5
+        },
+        {
+            "y": 15,
+            "w": 15,
+            "h": 5,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland-0",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland-1",
+            "x": 11,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_EventScript_OldMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland-2",
+            "x": 20,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BILL",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CINNABAR_BILL",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_CINNABAR_BILL"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland-3",
+            "x": 23,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SEAGALLOP",
+            "facing": "left",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CINNABAR_SEAGALLOP",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_CINNABAR_SEAGALLOP"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonMansion_1F",
+                "x": 8,
+                "y": 33,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_MANSION_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 20,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_Gym",
+                "x": 25,
+                "y": 23,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonLab_Entrance",
+                "x": 4,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland-5",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-CinnabarIsland-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route21_South",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_ROUTE21_SOUTH"
+            }
+        },
+        {
+            "id": "conn-CinnabarIsland-right-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route20",
+                "connection": {
+                    "direction": "right",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 0,
+                "destMap": "MAP_ROUTE20"
+            }
+        }
+    ],
+    "name": "CinnabarIsland",
+    "dialogs": [
+        {
+            "title": "CinnabarIsland_Text_DoorIsLocked",
+            "id": "CinnabarIsland_EventScript_GymDoorLocked",
+            "text": "The door is locked…"
+        },
+        {
+            "title": "CinnabarIsland_Text_GymSign",
+            "id": "CinnabarIsland_EventScript_GymSign",
+            "text": "CINNABAR ISLAND POKéMON GYM\nLEADER: BLAINE\nThe Hotheaded Quiz Master!"
+        },
+        {
+            "title": "CinnabarIsland_Text_IslandSign",
+            "id": "CinnabarIsland_EventScript_IslandSign",
+            "text": "CINNABAR ISLAND\nThe Fiery Town of Burning Desire"
+        },
+        {
+            "title": "CinnabarIsland_Text_ScientistsExperimentInMansion",
+            "id": "CinnabarIsland_EventScript_OldMan",
+            "text": "Scientists conduct experiments \nin the burned-out building.\n\nYou know, the one they call the\nPOKéMON MANSION."
+        },
+        {
+            "title": "CinnabarIsland_Text_PokemonLab",
+            "id": "CinnabarIsland_EventScript_PokemonLabSign",
+            "text": "POKéMON LAB"
+        },
+        {
+            "title": "CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab",
+            "id": "CinnabarIsland_EventScript_Woman",
+            "text": "CINNABAR GYM's BLAINE is quite the\nodd fellow.\n\nHe's lived on the island since way\nbefore the LAB was built."
+        }
+    ],
+    "jumps": []
+}

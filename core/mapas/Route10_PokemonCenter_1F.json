@@ -1,0 +1,283 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route10_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_ROUTE10_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route10_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ROUTE10_NURSE",
+                "script": "Route10_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10_PokemonCenter_1F-1",
+            "x": 9,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10_PokemonCenter_1F-2",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_PokemonCenter_1F_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10_PokemonCenter_1F-3",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10_PokemonCenter_1F-4",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_PokemonCenter_1F_EventScript_Aide",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route10_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 13,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 13,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10",
+                "x": 13,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "Route10_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons",
+            "id": "Route10_PokemonCenter_1F_EventScript_Aide",
+            "text": "Oh… {PLAYER}!\nI've been looking for you!\n\nIt's me, one of the ever-present\nAIDES to PROF. OAK.\n\nIf your POKéDEX has complete data\non twenty species, I'm supposed to\ngive you a reward from PROF. OAK.\n\nHe entrusted me with this\nEVERSTONE.\n\nSo, {PLAYER}, let me ask you.\n\nHave you gathered data on at least\ntwenty kinds of POKéMON?\n\nGreat! You have caught or owned\n{STR_VAR_3} kinds of POKéMON!\n\nCongratulations!\nHere you go!\n\nMaking POKéMON evolve certainly\ncan add to the POKéDEX.\n\nHowever, at times, you may not\nwant a certain POKéMON to evolve.\n\nIn that case, give the EVERSTONE\nto that POKéMON.\n\nIt will prevent evolution according\nto the PROFESSOR."
+        },
+        {
+            "title": "Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000",
+            "id": "Route10_PokemonCenter_1F_EventScript_FatMan",
+            "text": "A NUGGET is totally useless.\nSo I sold it for ¥5000."
+        },
+        {
+            "title": "Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers",
+            "id": "Route10_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "The types of POKéMON match up\ndifferently with each other.\n\nEvery type is stronger than some\ntypes and weaker than others."
+        },
+        {
+            "title": "Route10_PokemonCenter_1F_EventScript_Nurse",
+            "id": "Route10_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: Route10_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender",
+            "id": "Route10_PokemonCenter_1F_EventScript_Youngster",
+            "text": "I heard that ghosts haunt\nLAVENDER TOWN."
+        }
+    ],
+    "jumps": []
+}

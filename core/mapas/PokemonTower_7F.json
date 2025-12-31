@@ -1,0 +1,348 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonTower_7F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_TOWER_7F",
+        "sourceMapId": "MAP_POKEMON_TOWER_7F",
+        "width": 24,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonTower",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 2,
+            "w": 10,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 16,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 16,
+            "x": 14
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 15,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 15,
+            "x": 16
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 9,
+            "x": 4
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 9,
+            "x": 18
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 7,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 7,
+            "x": 19
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 12,
+            "x": 21
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 11,
+            "x": 2
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 3,
+            "x": 20
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 8,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 20
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 19
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 18
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 2,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonTower_7F-0",
+            "x": 11,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MR_FUJI",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_7F_EventScript_MrFuji",
+                "flag": "FLAG_HIDE_TOWER_FUJI"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_7F-1",
+            "x": 9,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEMON_TOWER_GRUNT1",
+                "script": "PokemonTower_7F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_TOWER_ROCKET_1"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_7F-2",
+            "x": 13,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEMON_TOWER_GRUNT2",
+                "script": "PokemonTower_7F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_TOWER_ROCKET_2"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_7F-3",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_POKEMON_TOWER_GRUNT3",
+                "script": "PokemonTower_7F_EventScript_Grunt3",
+                "flag": "FLAG_HIDE_TOWER_ROCKET_3"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonTower_7F-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonTower_6F",
+                "x": 11,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_TOWER_6F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonTower_7F",
+    "dialogs": [
+        {
+            "title": "PokemonTower_7F_Text_Grunt1PostBattle",
+            "id": "PokemonTower_7F_EventScript_Grunt1",
+            "text": "I'm not going to forget this!"
+        },
+        {
+            "title": "PokemonTower_7F_Text_Grunt2PostBattle",
+            "id": "PokemonTower_7F_EventScript_Grunt2",
+            "text": "POKéMON are only good for making\nmoney. Why not use them?\n\nYou stay out of our business!"
+        },
+        {
+            "title": "PokemonTower_7F_Text_Grunt3PostBattle",
+            "id": "PokemonTower_7F_EventScript_Grunt3",
+            "text": "You're not getting away with this!"
+        },
+        {
+            "title": "PokemonTower_7F_Text_MrFujiThankYouFollowMe",
+            "id": "PokemonTower_7F_EventScript_MrFuji",
+            "text": "MR. FUJI: Heh?\nYou came to save me?\n\nThank you. But, I came here of my\nown free will.\n\nI came to calm the spirit of\nCUBONE's mother.\n\nI think MAROWAK's spirit has\nfinally left us.\n\nI must thank you for your kind\nconcern.\n\nFollow me to my home, POKéMON\nHOUSE, at the foot of this tower."
+        }
+    ],
+    "jumps": []
+}

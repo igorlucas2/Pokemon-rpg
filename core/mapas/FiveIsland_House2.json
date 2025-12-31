@@ -1,0 +1,102 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_FIVE_ISLAND_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_House2-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_House2_EventScript_OldMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland",
+                "x": 22,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FiveIsland_House2",
+    "dialogs": [
+        {
+            "title": "FiveIsland_House2_Text_MeadowBelongedToFamily",
+            "id": "FiveIsland_House2_EventScript_OldMan",
+            "text": "That MEADOW has belonged to our\nfamily for generations.\n\nI should have had a giant mansion\nbuilt on it.\n\nIt would be preferable to having\nthose thugs run wild on it!"
+        }
+    ],
+    "jumps": []
+}

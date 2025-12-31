@@ -1,0 +1,153 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route12_FishingHouse",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE4",
+        "sourceMapId": "MAP_ROUTE12_FISHING_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route12_FishingHouse-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_FishingHouse_EventScript_FishingGuruBrother",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route12_FishingHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12",
+                "x": 12,
+                "y": 86,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route12_FishingHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12",
+                "x": 12,
+                "y": 86,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route12_FishingHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12",
+                "x": 12,
+                "y": 86,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "Route12_FishingHouse",
+    "dialogs": [
+        {
+            "title": "Route12_FishingHouse_Text_DoYouLikeToFish",
+            "id": "Route12_FishingHouse_EventScript_FishingGuruBrother",
+            "text": "I'm the FISHING GURU's younger\nbrother.\n\nI simply looove fishing!\nI can't bear to go without.\n\nTell me, do you like to fish?\n\nOh…\nThat's so disappointing…"
+        },
+        {
+            "title": "Route12_FishingHouse_Text_BlankChartOfSomeSort",
+            "id": "Route12_FishingHouse_EventScript_MagikarpRecordSign",
+            "text": "It's a blank chart of some sort.\n\nIt has spaces for writing in\nrecords of some kind."
+        }
+    ],
+    "jumps": []
+}

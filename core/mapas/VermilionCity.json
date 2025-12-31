@@ -1,0 +1,725 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VermilionCity",
+    "meta": {
+        "layoutId": "LAYOUT_VERMILION_CITY",
+        "sourceMapId": "MAP_VERMILION_CITY",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_VermilionCity",
+        "height": 40
+    },
+    "start": {
+        "y": 0,
+        "x": 22
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 22,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 23,
+            "h": 7,
+            "x": 25
+        },
+        {
+            "y": 7,
+            "w": 8,
+            "h": 33,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 7,
+            "h": 9,
+            "x": 41
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 12,
+            "w": 6,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 15,
+            "w": 5,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 2,
+            "x": 41
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 17,
+            "w": 10,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 1,
+            "x": 43
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 7,
+            "x": 31
+        },
+        {
+            "y": 21,
+            "w": 9,
+            "h": 19,
+            "x": 39
+        },
+        {
+            "y": 22,
+            "w": 7,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 22,
+            "w": 4,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 23,
+            "w": 4,
+            "h": 5,
+            "x": 20
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 24,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 25,
+            "w": 3,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 3,
+            "x": 34
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 15,
+            "x": 38
+        },
+        {
+            "y": 26,
+            "w": 7,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 28,
+            "w": 2,
+            "h": 12,
+            "x": 20
+        },
+        {
+            "y": 29,
+            "w": 12,
+            "h": 11,
+            "x": 8
+        },
+        {
+            "y": 31,
+            "w": 13,
+            "h": 9,
+            "x": 25
+        },
+        {
+            "y": 35,
+            "w": 3,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 37,
+            "w": 1,
+            "h": 3,
+            "x": 23
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VermilionCity-0",
+            "x": 22,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-1",
+            "x": 17,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_OldMan1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-2",
+            "x": 36,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_OldMan2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-3",
+            "x": 35,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_MACHOP",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_Machop",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-4",
+            "x": 31,
+            "y": 30,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_Sailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-5",
+            "x": 24,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_VERMILION_FERRY_SAILOR",
+                "script": "VermilionCity_EventScript_FerrySailor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-6",
+            "x": 19,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-VermilionCity-7",
+            "x": 25,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_EventScript_OaksAide",
+                "flag": "FLAG_HIDE_VERMILION_CITY_OAKS_AIDE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VermilionCity-1",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 34,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Exterior",
+                "x": 32,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_EXTERIOR",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity-2",
+            "type": "door",
+            "rect": {
+                "x": 23,
+                "y": 34,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Exterior",
+                "x": 32,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_EXTERIOR",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity-3",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 34,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_Exterior",
+                "x": 32,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_EXTERIOR",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity-4",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_HOUSE1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-VermilionCity-5",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity-6",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_PokemonFanClub",
+                "x": 5,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_POKEMON_FAN_CLUB",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-VermilionCity-7",
+            "type": "door",
+            "rect": {
+                "x": 19,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_HOUSE2",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-VermilionCity-8",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-VermilionCity-9",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 24,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_House3",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_HOUSE3",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-VermilionCity-10",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 25,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity_Gym",
+                "x": 5,
+                "y": 19,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-VermilionCity-up-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6",
+                "connection": {
+                    "direction": "up",
+                    "offset": 12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 12,
+                "destMap": "MAP_ROUTE6"
+            }
+        },
+        {
+            "id": "conn-VermilionCity-right-2",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE11"
+            }
+        }
+    ],
+    "name": "VermilionCity",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "VermilionCity_EventScript_CheckTicketLeft",
+            "id": "VermilionCity_EventScript_CheckTicketLeft",
+            "text": "TODO: VermilionCity_EventScript_CheckTicketLeft"
+        },
+        {
+            "title": "VermilionCity_EventScript_CheckTicketRight",
+            "id": "VermilionCity_EventScript_CheckTicketRight",
+            "text": "TODO: VermilionCity_EventScript_CheckTicketRight"
+        },
+        {
+            "title": "VermilionCity_Text_CitySign",
+            "id": "VermilionCity_EventScript_CitySign",
+            "text": "VERMILION CITY\nThe Port of Exquisite Sunsets"
+        },
+        {
+            "title": "VermilionCity_EventScript_ExitedTicketCheck",
+            "id": "VermilionCity_EventScript_ExitedTicketCheck",
+            "text": "TODO: VermilionCity_EventScript_ExitedTicketCheck"
+        },
+        {
+            "title": "VermilionCity_Text_WelcomeToTheSSAnne",
+            "id": "VermilionCity_EventScript_FerrySailor",
+            "text": "Welcome to the S.S. ANNE!"
+        },
+        {
+            "title": "VermilionCity_Text_GymSign",
+            "id": "VermilionCity_EventScript_GymSign",
+            "text": "VERMILION CITY POKéMON GYM\nLEADER: LT. SURGE\nThe Lightning American!"
+        },
+        {
+            "title": "VermilionCity_Text_VermilionHarbor",
+            "id": "VermilionCity_EventScript_HarborSign",
+            "text": "VERMILION HARBOR"
+        },
+        {
+            "title": "VermilionCity_Text_Machop",
+            "id": "VermilionCity_EventScript_Machop",
+            "text": "MACHOP: Guoh! Gogogoh!\n\nA MACHOP is stomping the land flat."
+        },
+        {
+            "title": "VermilionCity_Text_Route2AideHasPackageForYou",
+            "id": "VermilionCity_EventScript_OaksAide",
+            "text": "Oh, hello, {PLAYER}!\nHow are you doing?\n\nIt's me, one of PROF. OAK's AIDES.\n\nDid you meet the other AIDE?\n\nHe had a package from PROF. OAK\nfor you, {PLAYER}.\n\nHe said he'd look for you around\nROUTE 2, {PLAYER}.\n\nIf you're in the ROUTE 2 area,\nplease look for him."
+        },
+        {
+            "title": "VermilionCity_Text_DidYouSeeSSAnneInHarbor",
+            "id": "VermilionCity_EventScript_OldMan1",
+            "text": "Did you see the S.S. ANNE moored\nin the harbor?"
+        },
+        {
+            "title": "VermilionCity_Text_BuildingOnThisLand",
+            "id": "VermilionCity_EventScript_OldMan2",
+            "text": "I'm putting up a building on this\nplot of land. I own it all.\n\nMy POKéMON is tamping the land\nto lay the foundation."
+        },
+        {
+            "title": "VermilionCity_Text_PokemonFanClubSign",
+            "id": "VermilionCity_EventScript_PokemonFanClubSign",
+            "text": "POKéMON FAN CLUB\nAll POKéMON fans welcome!"
+        },
+        {
+            "title": "VermilionCity_Text_SSAnneVisitsOnceAYear",
+            "id": "VermilionCity_EventScript_Sailor",
+            "text": "The S.S. ANNE is a famous luxury\ncruise ship.\n\nIt visits VERMILION once a year."
+        },
+        {
+            "title": "VermilionCity_Text_SnorlaxBlockingRoute12",
+            "id": "VermilionCity_EventScript_SnorlaxNotice",
+            "text": "NOTICE!\n\nROUTE 12 may be blocked off by a\nsleeping POKéMON.\n\nDetour through ROCK TUNNEL to\nLAVENDER TOWN.\n\nVERMILION POLICE"
+        },
+        {
+            "title": "VermilionCity_Text_GrimerMultipliesInSludge",
+            "id": "VermilionCity_EventScript_Woman",
+            "text": "We're careful about pollution here.\n\nWe've heard GRIMER multiplies in\ntoxic sludge."
+        }
+    ],
+    "jumps": []
+}

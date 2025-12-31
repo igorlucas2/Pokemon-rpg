@@ -1,0 +1,119 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "DiglettsCave_SouthEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_DIGLETTS_CAVE_SOUTH_ENTRANCE",
+        "sourceMapId": "MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE",
+        "width": 10,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_DiglettsCave",
+        "height": 8
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 6,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-DiglettsCave_SouthEntrance-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "DiglettsCave_SouthEntrance_EventScript_OldMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-DiglettsCave_SouthEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE11",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-DiglettsCave_SouthEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "DiglettsCave_B1F",
+                "x": 82,
+                "y": 71,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_DIGLETTS_CAVE_B1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "DiglettsCave_SouthEntrance",
+    "dialogs": [
+        {
+            "title": "DiglettsCave_SouthEntrance_Text_DiglettDugThisTunnel",
+            "id": "DiglettsCave_SouthEntrance_EventScript_OldMan",
+            "text": "Well, isn't this a surprise!\nDIGLETT dug this long tunnel!\n\nIt goes right to VIRIDIAN CITY,\nthey tell me."
+        }
+    ],
+    "jumps": []
+}

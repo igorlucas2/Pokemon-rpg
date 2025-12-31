@@ -1,0 +1,158 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_PokemonLab_Lounge",
+    "meta": {
+        "layoutId": "LAYOUT_CINNABAR_ISLAND_POKEMON_LAB_LOUNGE",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_POKEMON_LAB_LOUNGE",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Lab",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 3,
+            "x": 6
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 11,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_Lounge-0",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_Lounge_EventScript_Scientist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_Lounge-1",
+            "x": 4,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_Lounge_EventScript_Clifton",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_Lounge-2",
+            "x": 10,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_Lounge_EventScript_Norma",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_PokemonLab_Lounge-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonLab_Entrance",
+                "x": 13,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CinnabarIsland_PokemonLab_Lounge",
+    "dialogs": [
+        {
+            "title": "Trade_Text_DoYouHaveMonWouldYouTradeForMon",
+            "id": "CinnabarIsland_PokemonLab_Lounge_EventScript_Clifton",
+            "text": "Hello, there! Do you happen to\nhave a {STR_VAR_1}?\n\nWould you agree to a trade for\nmy {STR_VAR_2}?\n\nThanks!"
+        },
+        {
+            "title": "Trade_Text_DoYouHaveMonWantToTradeForMon",
+            "id": "CinnabarIsland_PokemonLab_Lounge_EventScript_Norma",
+            "text": "Hi!\nDo you have a {STR_VAR_1}?\n\nWant to trade it for my\n{STR_VAR_2}?\n\nThanks, you're a pal!"
+        },
+        {
+            "title": "CinnabarIsland_PokemonLab_Lounge_Text_FoundFossilInMtMoon",
+            "id": "CinnabarIsland_PokemonLab_Lounge_EventScript_Scientist",
+            "text": "I found this most remarkable fossil\ninside MT. MOON.\n\nI think it's of a rare, prehistoric\nPOKéMON."
+        }
+    ],
+    "jumps": []
+}

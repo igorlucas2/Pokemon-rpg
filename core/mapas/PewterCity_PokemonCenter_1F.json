@@ -1,0 +1,347 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_PEWTER_CITY_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-0",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_JIGGLYPUFF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_Jigglypuff",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-1",
+            "x": 4,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-2",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PEWTER_NURSE",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-3",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-4",
+            "x": 13,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MysteryEventClub_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-5",
+            "x": 10,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_GBA_KID",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_GBAKid1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_PokemonCenter_1F-6",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_GBA_KID",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_PokemonCenter_1F_EventScript_GBAKid2",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "pc-PewterCity_PokemonCenter_1F-1",
+            "type": "action",
+            "rect": {
+                "x": 1,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "action": "pcinteraction",
+            "data": {
+                "type": "pokecenter_pc",
+                "location": "Pewter City PokéCenter"
+            },
+            "meta": {
+                "source": "custom",
+                "description": "Computador do PokéCenter para salvar o jogo"
+            }
+        },
+        {
+            "id": "warp-PewterCity_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PewterCity_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 17,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "PewterCity_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "MysteryEventClub_EventScript_Woman",
+            "id": "MysteryEventClub_EventScript_Woman",
+            "text": "TODO: MysteryEventClub_EventScript_Woman"
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_Text_TradingMyClefairyForPikachu",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_GBAKid1",
+            "text": "I really want a PIKACHU, so I'm\ntrading my CLEFAIRY for one."
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_GBAKid2",
+            "text": "I'm trading POKéMON with that kid\nthere.\n\nI had two PIKACHU, so I figured\nI might as well trade one."
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_Text_TeamRocketMtMoonImOnPhone",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "What!?\n\nTEAM ROCKET is at MT. MOON?\nHuh?\n\nI'm on the phone!\nScram!"
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_Text_Jigglypuff",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_Jigglypuff",
+            "text": "JIGGLYPUFF: Puu pupuu!"
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_EventScript_Nurse",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: PewterCity_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy",
+            "id": "PewterCity_PokemonCenter_1F_EventScript_Youngster",
+            "text": "Yawn!\n\nWhen JIGGLYPUFF sings, POKéMON get\ndrowsy…\n\n…Me, too…\nSnore…"
+        }
+    ],
+    "jumps": []
+}

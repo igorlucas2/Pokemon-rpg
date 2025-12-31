@@ -1,0 +1,477 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_PatternBush",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_PATTERN_BUSH",
+        "sourceMapId": "MAP_SIX_ISLAND_PATTERN_BUSH",
+        "width": 60,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_ViridianForest",
+        "height": 32
+    },
+    "start": {
+        "y": 4,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 60,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 2,
+            "x": 54
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 26,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 26,
+            "x": 57
+        },
+        {
+            "y": 25,
+            "w": 48,
+            "h": 7,
+            "x": 6
+        },
+        {
+            "y": 27,
+            "w": 3,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 27,
+            "w": 3,
+            "h": 5,
+            "x": 54
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_PatternBush-0",
+            "x": 48,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Bethany",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-1",
+            "x": 10,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Allison",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-2",
+            "x": 51,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Garret",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-3",
+            "x": 12,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Jonah",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-4",
+            "x": 37,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
+            "movementRangeX": 2,
+            "movementRangeY": 5,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Vance",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-5",
+            "x": 32,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Nash",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-6",
+            "x": 52,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Cordell",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-7",
+            "x": 8,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Dalia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-8",
+            "x": 39,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Joana",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-9",
+            "x": 3,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Riley",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-10",
+            "x": 19,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+            "movementRangeX": 5,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Marcy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_PatternBush-11",
+            "x": 30,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_PatternBush_EventScript_Layton",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_PatternBush-1",
+            "type": "door",
+            "rect": {
+                "x": 54,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 63,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_PatternBush-2",
+            "type": "door",
+            "rect": {
+                "x": 55,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 63,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_PatternBush-3",
+            "type": "door",
+            "rect": {
+                "x": 56,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 64,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_PatternBush-4",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 45,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_PatternBush-5",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 45,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_PatternBush-6",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 26,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "x": 46,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SixIsland_PatternBush",
+    "dialogs": [
+        {
+            "title": "SixIsland_PatternBush_Text_AllisonPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Allison",
+            "text": "I'm not saying that you shouldn't\ncatch POKéMON.\n\nI just want people to raise their\nPOKéMON responsibly."
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_BethanyPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Bethany",
+            "text": "In the same way your mother raised\nyou full of love, you should raise\nyour POKéMON."
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_CordellPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Cordell",
+            "text": "Ayup, you townies come around all\nso dandy with a hat that flashy…\n\nHow about giving me that?"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_DaliaPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Dalia",
+            "text": "First, exhale.\nBlow everything out.\n\nWhen you can't exhale anymore,\ninhale the clean air!\n\nIsn't it refreshing?"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_GarretPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Garret",
+            "text": "There's a girl near the BUSH who\nmeasures HERACROSS for TRAINERS."
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_JoanaPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Joana",
+            "text": "I'm going to keep on collecting\nBUG POKéMON.\n\nAm I the only girl like that?"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_JonahPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Jonah",
+            "text": "By the way, “appeal” is a weird\nword, if you think about it.\n\nLike, is it like an orange peel?\nOr like a ringing bell?"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_LaytonPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Layton",
+            "text": "There are places here in PATTERN\nBUSH where grass won't grow.\n\nWhat could be the cause of such\na phenomenon?"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_MarcyPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Marcy",
+            "text": "A little cut like that…\nA little spit's enough to cure it!"
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_NashPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Nash",
+            "text": "The funny patterns on the ground…\n\nThey look like the patterns on my\ngrandpa's clothes."
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_RileyPostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Riley",
+            "text": "I'm going to observe the night sky\nhere."
+        },
+        {
+            "title": "SixIsland_PatternBush_Text_VancePostBattle",
+            "id": "SixIsland_PatternBush_EventScript_Vance",
+            "text": "I'm going to bring my little brother\nhere next time."
+        }
+    ],
+    "jumps": []
+}

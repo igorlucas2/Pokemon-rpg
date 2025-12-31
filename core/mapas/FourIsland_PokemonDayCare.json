@@ -1,0 +1,108 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_PokemonDayCare",
+    "meta": {
+        "layoutId": "LAYOUT_FOUR_ISLAND_POKEMON_DAY_CARE",
+        "sourceMapId": "MAP_FOUR_ISLAND_POKEMON_DAY_CARE",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FanClubDaycare",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_PokemonDayCare-0",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FOUR_ISLAND_DAYCARE_WOMAN",
+                "script": "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_PokemonDayCare-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland",
+                "x": 12,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FourIsland_PokemonDayCare",
+    "dialogs": [
+        {
+            "title": "DayCare_Text_WouldYouLikeUsToRaiseMon",
+            "id": "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
+            "text": "I'm the DAY-CARE LADY.\n\nWe can raise POKéMON for you.\n\nWould you like us to raise one?\n\nOh, fine, then.\nCome again."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,281 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ViridianCity_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ViridianCity_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_VIRIDIAN_NURSE",
+                "script": "ViridianCity_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_PokemonCenter_1F-1",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_PokemonCenter_1F_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_PokemonCenter_1F-2",
+            "x": 4,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_PokemonCenter_1F_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_PokemonCenter_1F-3",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "pc-ViridianCity_PokemonCenter_1F-1",
+            "type": "action",
+            "rect": {
+                "x": 1,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "action": "pcinteraction",
+            "data": {
+                "type": "pokecenter_pc",
+                "location": "Viridian City PokéCenter"
+            },
+            "meta": {
+                "source": "custom",
+                "description": "Computador do PokéCenter para salvar o jogo"
+            }
+        },
+        {
+            "id": "warp-ViridianCity_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 26,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianCity_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 26,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianCity_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 26,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianCity_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "ViridianCity_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown",
+            "id": "ViridianCity_PokemonCenter_1F_EventScript_Boy",
+            "text": "There's a POKéMON CENTER in every\ntown ahead.\n\nThey charge no money, so don't\nbe shy about healing POKéMON."
+        },
+        {
+            "title": "ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC",
+            "id": "ViridianCity_PokemonCenter_1F_EventScript_Gentleman",
+            "text": "Please feel free to use that PC in\nthe corner.\n\nThe receptionist told me so.\nIt's so kind of her!"
+        },
+        {
+            "title": "ViridianCity_PokemonCenter_1F_EventScript_Nurse",
+            "id": "ViridianCity_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: ViridianCity_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons",
+            "id": "ViridianCity_PokemonCenter_1F_EventScript_Youngster",
+            "text": "POKéMON CENTERS heal your tired,\nhurt, or fainted POKéMON.\n\nThey make all POKéMON completely\nhealthy."
+        }
+    ],
+    "jumps": []
+}

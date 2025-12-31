@@ -1,0 +1,168 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_TanobyRuins_ScufibChamber",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER",
+        "sourceMapId": "MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER",
+        "width": 23,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_TanobyRuins",
+        "height": 17
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 23,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 15,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 15,
+            "x": 22
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 3,
+            "x": 19
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 4,
+            "x": 3
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 4,
+            "x": 19
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 13,
+            "w": 5,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 16,
+            "w": 21,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-SevenIsland_TanobyRuins_ScufibChamber-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_TanobyRuins",
+                "x": 32,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_TANOBY_RUINS",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SevenIsland_TanobyRuins_ScufibChamber",
+    "dialogs": [],
+    "jumps": []
+}

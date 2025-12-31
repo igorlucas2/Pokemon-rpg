@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_2F_Room5",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM2",
+        "sourceMapId": "MAP_SSANNE_2F_ROOM5",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_2F_Room5-0",
+            "x": 5,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room5_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SSAnne_2F_Room5-1",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_2F_Room5_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_2F_Room5-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_2F_Corridor",
+                "x": 22,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_2F_CORRIDOR",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SSAnne_2F_Room5",
+    "dialogs": [
+        {
+            "title": "SSAnne_2F_Room5_Text_HaveYouGoneToSafariZone",
+            "id": "SSAnne_2F_Room5_EventScript_Gentleman",
+            "text": "Have you gone to the SAFARI ZONE\nin FUCHSIA CITY?\n\nThere are many kinds of rare\nPOKéMON."
+        },
+        {
+            "title": "SSAnne_2F_Room5_Text_WeThinkSafariZoneIsAwesome",
+            "id": "SSAnne_2F_Room5_EventScript_LittleBoy",
+            "text": "Me and my daddy think the SAFARI\nZONE is awesome!\nI wish we could go there again."
+        }
+    ],
+    "jumps": []
+}

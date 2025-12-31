@@ -1,0 +1,299 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonTower_3F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_TOWER_3F",
+        "sourceMapId": "MAP_POKEMON_TOWER_3F",
+        "width": 24,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonTower",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 9
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 9,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 10,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 13,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 14,
+            "x": 20
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 7,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 12,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 6,
+            "x": 19
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 5,
+            "x": 16
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 2
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 15,
+            "w": 3,
+            "h": 5,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 10,
+            "h": 3,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonTower_3F-0",
+            "x": 10,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_CHANNELER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_3F_EventScript_Patricia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_3F-1",
+            "x": 9,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_CHANNELER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_3F_EventScript_Carly",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_3F-2",
+            "x": 12,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CHANNELER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_3F_EventScript_Hope",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonTower_3F-3",
+            "x": 13,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PokemonTower_3F_EventScript_ItemEscapeRope",
+                "flag": "FLAG_HIDE_POKEMON_TOWER_3F_ESCAPE_ROPE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonTower_3F-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonTower_2F",
+                "x": 4,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_TOWER_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonTower_3F-2",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonTower_4F",
+                "x": 18,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_TOWER_4F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonTower_3F",
+    "dialogs": [
+        {
+            "title": "PokemonTower_3F_Text_CarlyPostBattle",
+            "id": "PokemonTower_3F_EventScript_Carly",
+            "text": "Sorry!\nI was possessed!"
+        },
+        {
+            "title": "PokemonTower_3F_Text_HopePostBattle",
+            "id": "PokemonTower_3F_EventScript_Hope",
+            "text": "The ghosts can be identified by\nthe SILPH SCOPE."
+        },
+        {
+            "title": "PokemonTower_3F_EventScript_ItemEscapeRope",
+            "id": "PokemonTower_3F_EventScript_ItemEscapeRope",
+            "text": "TODO: PokemonTower_3F_EventScript_ItemEscapeRope"
+        },
+        {
+            "title": "PokemonTower_3F_Text_PatriciaPostBattle",
+            "id": "PokemonTower_3F_EventScript_Patricia",
+            "text": "The others above…\nThey must have been possessed."
+        }
+    ],
+    "jumps": []
+}

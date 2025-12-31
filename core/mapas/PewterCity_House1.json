@@ -1,0 +1,192 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PewterCity_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE2",
+        "sourceMapId": "MAP_PEWTER_CITY_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PewterCity_House1-0",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_House1_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_House1-1",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "PewterCity_House1_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PewterCity_House1-2",
+            "x": 6,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PEWTER_HOUSE_NIDORAN",
+                "script": "PewterCity_House1_EventScript_Nidoran",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PewterCity_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 33,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "4",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_House1-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 33,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "4",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PewterCity_House1-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PewterCity",
+                "x": 33,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PEWTER_CITY",
+                "destWarpId": "4",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "PewterCity_House1",
+    "dialogs": [
+        {
+            "title": "PewterCity_House1_Text_TradeMonsAreFinicky",
+            "id": "PewterCity_House1_EventScript_BaldingMan",
+            "text": "Our POKéMON's an outsider, so it's\nfinicky and hard to handle.\n\nAn outsider is a POKéMON that you\nget in a trade.\n\nIt grows fast, but it may ignore an\nunskilled TRAINER in battle.\n\nIf only we had some BADGES…"
+        },
+        {
+            "title": "PewterCity_House1_Text_NidoranSit",
+            "id": "PewterCity_House1_EventScript_LittleBoy",
+            "text": "NIDORAN, sit!"
+        },
+        {
+            "title": "PewterCity_House1_EventScript_Nidoran",
+            "id": "PewterCity_House1_EventScript_Nidoran",
+            "text": "TODO: PewterCity_House1_EventScript_Nidoran"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,251 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity_SafariZone_Entrance",
+    "meta": {
+        "layoutId": "LAYOUT_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+        "sourceMapId": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+        "width": 9,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SafariZoneBuilding",
+        "height": 9
+    },
+    "start": {
+        "y": 1,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 6
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity_SafariZone_Entrance-0",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_SafariZone_Entrance-1",
+            "x": 1,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_SafariZone_Entrance_EventScript_InfoAttendant",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity_SafariZone_Entrance-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_Center",
+                "x": 26,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_CENTER",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_SafariZone_Entrance-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 24,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_SafariZone_Entrance-3",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 24,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_SafariZone_Entrance-4",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 24,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FuchsiaCity_SafariZone_Entrance",
+    "dialogs": [
+        {
+            "title": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerLeft",
+            "id": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerLeft",
+            "text": "TODO: FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerLeft"
+        },
+        {
+            "title": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerMid",
+            "id": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerMid",
+            "text": "TODO: FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerMid"
+        },
+        {
+            "title": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerRight",
+            "id": "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerRight",
+            "text": "TODO: FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerRight"
+        },
+        {
+            "title": "FuchsiaCity_SafariZone_Entrance_Text_FirstTimeAtSafariZone",
+            "id": "FuchsiaCity_SafariZone_Entrance_EventScript_InfoAttendant",
+            "text": "Hi! Is it your first time here at\nthe SAFARI ZONE?\n\nSorry, you're a regular here!"
+        }
+    ],
+    "jumps": []
+}

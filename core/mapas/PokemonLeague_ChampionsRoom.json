@@ -1,0 +1,148 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PokemonLeague_ChampionsRoom",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_LEAGUE_CHAMPIONS_ROOM",
+        "sourceMapId": "MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonLeague",
+        "height": 20
+    },
+    "start": {
+        "y": 1,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 6,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 12
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 6,
+            "x": 1
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 6,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PokemonLeague_ChampionsRoom-0",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BLUE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CHAMPIONS_ROOM_RIVAL",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PokemonLeague_ChampionsRoom-1",
+            "x": 6,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_PROF_OAK",
+            "facing": "up",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CHAMPIONS_ROOM_PROF_OAK",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_OAK_IN_CHAMP_ROOM"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PokemonLeague_ChampionsRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_LancesRoom",
+                "x": 6,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_LANCES_ROOM",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PokemonLeague_ChampionsRoom-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PokemonLeague_HallOfFame",
+                "x": 5,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POKEMON_LEAGUE_HALL_OF_FAME",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PokemonLeague_ChampionsRoom",
+    "dialogs": [],
+    "jumps": []
+}

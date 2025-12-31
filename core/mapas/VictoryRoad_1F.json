@@ -1,0 +1,522 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VictoryRoad_1F",
+    "meta": {
+        "layoutId": "LAYOUT_VICTORY_ROAD_1F",
+        "sourceMapId": "MAP_VICTORY_ROAD_1F",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 22
+    },
+    "start": {
+        "y": 1,
+        "x": 14
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 14,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 1,
+            "w": 29,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 8,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 28,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 3,
+            "w": 6,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 3,
+            "w": 27,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 4,
+            "w": 26,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 5,
+            "x": 6
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 5,
+            "w": 4,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 5,
+            "w": 25,
+            "h": 17,
+            "x": 23
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 20
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 7,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 6,
+            "x": 16
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 3,
+            "x": 18
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 11,
+            "x": 22
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 4,
+            "x": 6
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 8,
+            "x": 21
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 16,
+            "w": 8,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 5,
+            "x": 20
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 21,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VictoryRoad_1F-0",
+            "x": 5,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VictoryRoad_1F_EventScript_Rolando",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-1",
+            "x": 14,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 4,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VictoryRoad_1F_EventScript_Naomi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-2",
+            "x": 12,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VictoryRoad_1F_EventScript_ItemRareCandy",
+                "flag": "FLAG_HIDE_VICTORY_ROAD_1F_RARE_CANDY"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-3",
+            "x": 14,
+            "y": 1,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VictoryRoad_1F_EventScript_ItemTM02",
+                "flag": "FLAG_HIDE_VICTORY_ROAD_1F_TM02"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-4",
+            "x": 7,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_VICTORY_ROAD_1F_BOULDER",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-5",
+            "x": 4,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VictoryRoad_1F-6",
+            "x": 16,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_StrengthBoulder",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VictoryRoad_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VictoryRoad_2F",
+                "x": 1,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VICTORY_ROAD_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VictoryRoad_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route23",
+                "x": 5,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE23",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "VictoryRoad_1F",
+    "dialogs": [
+        {
+            "title": "EventScript_StrengthBoulder",
+            "id": "EventScript_StrengthBoulder",
+            "text": "TODO: EventScript_StrengthBoulder"
+        },
+        {
+            "title": "VictoryRoad_1F_EventScript_FloorSwitch",
+            "id": "VictoryRoad_1F_EventScript_FloorSwitch",
+            "text": "TODO: VictoryRoad_1F_EventScript_FloorSwitch"
+        },
+        {
+            "title": "VictoryRoad_1F_EventScript_ItemRareCandy",
+            "id": "VictoryRoad_1F_EventScript_ItemRareCandy",
+            "text": "TODO: VictoryRoad_1F_EventScript_ItemRareCandy"
+        },
+        {
+            "title": "VictoryRoad_1F_EventScript_ItemTM02",
+            "id": "VictoryRoad_1F_EventScript_ItemTM02",
+            "text": "TODO: VictoryRoad_1F_EventScript_ItemTM02"
+        },
+        {
+            "title": "VictoryRoad_1F_Text_NaomiPostBattle",
+            "id": "VictoryRoad_1F_EventScript_Naomi",
+            "text": "I never wanted to lose to anybody,\nespecially to a younger kid…"
+        },
+        {
+            "title": "VictoryRoad_1F_Text_RolandoPostBattle",
+            "id": "VictoryRoad_1F_EventScript_Rolando",
+            "text": "Tch!\nI concede, you are better than I!"
+        }
+    ],
+    "jumps": []
+}

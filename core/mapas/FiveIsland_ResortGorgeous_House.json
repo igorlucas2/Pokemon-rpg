@@ -1,0 +1,141 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_ResortGorgeous_House",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_RESORT_GORGEOUS_HOUSE",
+        "sourceMapId": "MAP_FIVE_ISLAND_RESORT_GORGEOUS_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Museum",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 7,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_ResortGorgeous_House-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_RESORT_GORGEOUS_HOUSE_SELPHY",
+                "script": "FiveIsland_ResortGorgeous_House_EventScript_Selphy",
+                "flag": "FLAG_HIDE_RESORT_GORGEOUS_INSIDE_SELPHY"
+            }
+        },
+        {
+            "id": "npc-FiveIsland_ResortGorgeous_House-1",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_RESORT_GORGEOUS_HOUSE_BUTLER",
+                "script": "FiveIsland_ResortGorgeous_House_EventScript_Butler",
+                "flag": "FLAG_HIDE_SELPHYS_BUTLER"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland_ResortGorgeous_House-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_ResortGorgeous",
+                "x": 39,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_RESORT_GORGEOUS",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FiveIsland_ResortGorgeous_House",
+    "dialogs": [
+        {
+            "title": "FiveIsland_ResortGorgeous_House_Text_LadySelphySmileHasBrillianceOfSun",
+            "id": "FiveIsland_ResortGorgeous_House_EventScript_Butler",
+            "text": "Butler: The smile of Lady SELPHY\nhas the brilliance of the sun.\n\nPlease, I beg you to bring joy\nto Lady SELPHY."
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_House_EventScript_PokemonJournal",
+            "id": "FiveIsland_ResortGorgeous_House_EventScript_PokemonJournal",
+            "text": "TODO: FiveIsland_ResortGorgeous_House_EventScript_PokemonJournal"
+        },
+        {
+            "title": "FiveIsland_ResortGorgeous_House_Text_PleaseHearMyWish",
+            "id": "FiveIsland_ResortGorgeous_House_EventScript_Selphy",
+            "text": "SELPHY: Oh?\nDo I know you from somewhere?\n\nOh, but that doesn't matter.\n\nI am exquisitely bored.\nPlease, hear my wish."
+        }
+    ],
+    "jumps": []
+}

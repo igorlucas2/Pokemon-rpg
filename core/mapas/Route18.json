@@ -1,0 +1,257 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route18",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE18",
+        "sourceMapId": "MAP_ROUTE18",
+        "width": 60,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeladonCity",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 8,
+            "h": 20,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 43,
+            "h": 7,
+            "x": 17
+        },
+        {
+            "y": 7,
+            "w": 9,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 5,
+            "x": 42
+        },
+        {
+            "y": 7,
+            "w": 8,
+            "h": 1,
+            "x": 52
+        },
+        {
+            "y": 11,
+            "w": 34,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 10,
+            "h": 9,
+            "x": 50
+        },
+        {
+            "y": 12,
+            "w": 31,
+            "h": 8,
+            "x": 8
+        },
+        {
+            "y": 14,
+            "w": 3,
+            "h": 6,
+            "x": 47
+        },
+        {
+            "y": 18,
+            "w": 8,
+            "h": 2,
+            "x": 39
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route18-0",
+            "x": 46,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route18_EventScript_Jacob",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route18-1",
+            "x": 41,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route18_EventScript_Ramiro",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route18-2",
+            "x": 39,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route18_EventScript_Wilton",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route18-1",
+            "type": "door",
+            "rect": {
+                "x": 41,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18_EastEntrance_1F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18_EAST_ENTRANCE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route18-2",
+            "type": "door",
+            "rect": {
+                "x": 48,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18_EastEntrance_1F",
+                "x": 11,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18_EAST_ENTRANCE_1F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route18-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route17",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_ROUTE17"
+            }
+        },
+        {
+            "id": "conn-Route18-right-2",
+            "type": "door",
+            "rect": {
+                "x": 59,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "connection": {
+                    "direction": "right",
+                    "offset": -10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -10,
+                "destMap": "MAP_FUCHSIA_CITY"
+            }
+        }
+    ],
+    "name": "Route18",
+    "dialogs": [
+        {
+            "title": "Route18_Text_CyclingRoadSign",
+            "id": "Route18_EventScript_CyclingRoadSign",
+            "text": "CYCLING ROAD\nNo pedestrians permitted!"
+        },
+        {
+            "title": "Route18_EventScript_Jacob",
+            "id": "Route18_EventScript_Jacob",
+            "text": "TODO: Route18_EventScript_Jacob"
+        },
+        {
+            "title": "Route18_EventScript_Ramiro",
+            "id": "Route18_EventScript_Ramiro",
+            "text": "TODO: Route18_EventScript_Ramiro"
+        },
+        {
+            "title": "Route18_Text_RouteSign",
+            "id": "Route18_EventScript_RouteSign",
+            "text": "ROUTE 18\nCELADON CITY - FUCHSIA CITY"
+        },
+        {
+            "title": "Route18_EventScript_Wilton",
+            "id": "Route18_EventScript_Wilton",
+            "text": "TODO: Route18_EventScript_Wilton"
+        }
+    ],
+    "jumps": []
+}

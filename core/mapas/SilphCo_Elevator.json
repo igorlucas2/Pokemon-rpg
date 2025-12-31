@@ -1,0 +1,42 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SilphCo_Elevator",
+    "meta": {
+        "layoutId": "LAYOUT_SILPH_CO_ELEVATOR",
+        "sourceMapId": "MAP_SILPH_CO_ELEVATOR",
+        "width": 5,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 7
+    },
+    "start": {
+        "y": 3,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 5,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [],
+    "events": [],
+    "name": "SilphCo_Elevator",
+    "dialogs": [
+        {
+            "title": "Text_WantWhichFloor",
+            "id": "SilphCo_Elevator_EventScript_FloorSelect",
+            "text": "TODO: SilphCo_Elevator_EventScript_FloorSelect"
+        }
+    ],
+    "jumps": []
+}

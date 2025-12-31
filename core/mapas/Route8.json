@@ -1,0 +1,706 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route8",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE8",
+        "sourceMapId": "MAP_ROUTE8",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_LavenderTown",
+        "height": 20
+    },
+    "start": {
+        "y": 1,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 12,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 56,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 9,
+            "x": 25
+        },
+        {
+            "y": 2,
+            "w": 16,
+            "h": 4,
+            "x": 56
+        },
+        {
+            "y": 5,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 8,
+            "x": 19
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 8,
+            "x": 56
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 3,
+            "x": 68
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 6,
+            "h": 5,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 13,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 46
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 5,
+            "x": 33
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 2,
+            "x": 47
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 8,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 8,
+            "x": 68
+        },
+        {
+            "y": 13,
+            "w": 3,
+            "h": 7,
+            "x": 4
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 7,
+            "x": 8
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 7,
+            "x": 47
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 33
+        },
+        {
+            "y": 19,
+            "w": 21,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 19,
+            "w": 13,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 19,
+            "w": 20,
+            "h": 1,
+            "x": 48
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route8-0",
+            "x": 62,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Julia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-1",
+            "x": 55,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Rich",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-2",
+            "x": 51,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Glenn",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-3",
+            "x": 29,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Paige",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-4",
+            "x": 29,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Leslie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-5",
+            "x": 29,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Andrea",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-6",
+            "x": 29,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Megan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-7",
+            "x": 21,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Stan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-8",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Aidan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-9",
+            "x": 33,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route8-10",
+            "x": 47,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-Route8-11",
+            "x": 40,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Eli",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-12",
+            "x": 41,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Anne",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-13",
+            "x": 14,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+            "movementRangeX": 5,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Ricardo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route8-14",
+            "x": 24,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_UP_DOWN_LEFT",
+            "movementRangeX": 5,
+            "movementRangeY": 5,
+            "meta": {
+                "localId": "",
+                "script": "Route8_EventScript_Jaren",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route8-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_EastEntrance",
+                "x": 6,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_EAST_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route8-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8_WestEntrance",
+                "x": 11,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE8_WEST_ENTRANCE",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route8-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_Connection",
+                "connection": {
+                    "direction": "left",
+                    "offset": -10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": -10,
+                "destMap": "MAP_SAFFRON_CITY_CONNECTION"
+            }
+        },
+        {
+            "id": "conn-Route8-right-2",
+            "type": "door",
+            "rect": {
+                "x": 71,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "connection": {
+                    "direction": "right",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 0,
+                "destMap": "MAP_LAVENDER_TOWN"
+            }
+        }
+    ],
+    "name": "Route8",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route8_EventScript_Aidan",
+            "id": "Route8_EventScript_Aidan",
+            "text": "TODO: Route8_EventScript_Aidan"
+        },
+        {
+            "title": "Route8_EventScript_Andrea",
+            "id": "Route8_EventScript_Andrea",
+            "text": "TODO: Route8_EventScript_Andrea"
+        },
+        {
+            "title": "Route8_EventScript_Anne",
+            "id": "Route8_EventScript_Anne",
+            "text": "TODO: Route8_EventScript_Anne"
+        },
+        {
+            "title": "Route8_EventScript_Eli",
+            "id": "Route8_EventScript_Eli",
+            "text": "TODO: Route8_EventScript_Eli"
+        },
+        {
+            "title": "Route8_EventScript_Glenn",
+            "id": "Route8_EventScript_Glenn",
+            "text": "TODO: Route8_EventScript_Glenn"
+        },
+        {
+            "title": "Route8_EventScript_Jaren",
+            "id": "Route8_EventScript_Jaren",
+            "text": "TODO: Route8_EventScript_Jaren"
+        },
+        {
+            "title": "Route8_EventScript_Julia",
+            "id": "Route8_EventScript_Julia",
+            "text": "TODO: Route8_EventScript_Julia"
+        },
+        {
+            "title": "Route8_EventScript_Leslie",
+            "id": "Route8_EventScript_Leslie",
+            "text": "TODO: Route8_EventScript_Leslie"
+        },
+        {
+            "title": "Route8_EventScript_Megan",
+            "id": "Route8_EventScript_Megan",
+            "text": "TODO: Route8_EventScript_Megan"
+        },
+        {
+            "title": "Route8_EventScript_Paige",
+            "id": "Route8_EventScript_Paige",
+            "text": "TODO: Route8_EventScript_Paige"
+        },
+        {
+            "title": "Route8_EventScript_Ricardo",
+            "id": "Route8_EventScript_Ricardo",
+            "text": "TODO: Route8_EventScript_Ricardo"
+        },
+        {
+            "title": "Route8_EventScript_Rich",
+            "id": "Route8_EventScript_Rich",
+            "text": "TODO: Route8_EventScript_Rich"
+        },
+        {
+            "title": "Route8_EventScript_Stan",
+            "id": "Route8_EventScript_Stan",
+            "text": "TODO: Route8_EventScript_Stan"
+        },
+        {
+            "title": "Route8_Text_UndergroundPathSign",
+            "id": "Route8_EventScript_UndergroundPathSign",
+            "text": "UNDERGROUND PATH\nCELADON CITY - LAVENDER TOWN"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 20,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 9,
+            "dir": "down"
+        }
+    ]
+}

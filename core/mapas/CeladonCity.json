@@ -1,0 +1,1111 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY",
+        "sourceMapId": "MAP_CELADON_CITY",
+        "width": 60,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeladonCity",
+        "height": 40
+    },
+    "start": {
+        "y": 2,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 60,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 20,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 10,
+            "x": 56
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 2,
+            "x": 25
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 2,
+            "x": 32
+        },
+        {
+            "y": 4,
+            "w": 14,
+            "h": 2,
+            "x": 40
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 7,
+            "x": 4
+        },
+        {
+            "y": 5,
+            "w": 7,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 7,
+            "x": 29
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 9,
+            "x": 9
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 6,
+            "x": 27
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 6,
+            "x": 32
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 6,
+            "x": 52
+        },
+        {
+            "y": 8,
+            "w": 17,
+            "h": 4,
+            "x": 34
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 2,
+            "x": 54
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 6,
+            "x": 33
+        },
+        {
+            "y": 16,
+            "w": 8,
+            "h": 4,
+            "x": 52
+        },
+        {
+            "y": 17,
+            "w": 10,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 17,
+            "w": 7,
+            "h": 4,
+            "x": 34
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 18,
+            "w": 8,
+            "h": 4,
+            "x": 44
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 5,
+            "x": 23
+        },
+        {
+            "y": 19,
+            "w": 3,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 20,
+            "w": 2,
+            "h": 2,
+            "x": 52
+        },
+        {
+            "y": 20,
+            "w": 4,
+            "h": 20,
+            "x": 56
+        },
+        {
+            "y": 21,
+            "w": 6,
+            "h": 3,
+            "x": 24
+        },
+        {
+            "y": 21,
+            "w": 5,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 2,
+            "x": 30
+        },
+        {
+            "y": 23,
+            "w": 10,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 23,
+            "w": 10,
+            "h": 1,
+            "x": 44
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 6,
+            "x": 52
+        },
+        {
+            "y": 25,
+            "w": 8,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 26,
+            "w": 4,
+            "h": 4,
+            "x": 16
+        },
+        {
+            "y": 26,
+            "w": 20,
+            "h": 4,
+            "x": 32
+        },
+        {
+            "y": 27,
+            "w": 8,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 27,
+            "w": 4,
+            "h": 8,
+            "x": 20
+        },
+        {
+            "y": 30,
+            "w": 4,
+            "h": 10,
+            "x": 0
+        },
+        {
+            "y": 30,
+            "w": 3,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 33,
+            "w": 6,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 33,
+            "w": 8,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 34,
+            "w": 16,
+            "h": 2,
+            "x": 24
+        },
+        {
+            "y": 34,
+            "w": 10,
+            "h": 2,
+            "x": 41
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 4,
+            "x": 42
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 4,
+            "x": 54
+        },
+        {
+            "y": 37,
+            "w": 10,
+            "h": 3,
+            "x": 44
+        },
+        {
+            "y": 38,
+            "w": 38,
+            "h": 2,
+            "x": 4
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity-0",
+            "x": 48,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_RocketGrunt1",
+                "flag": "FLAG_HIDE_CELADON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-1",
+            "x": 38,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CELADON_FAT_MAN",
+                "script": "CeladonCity_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-2",
+            "x": 36,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_POLIWRATH",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CELADON_POLIWRATH",
+                "script": "CeladonCity_EventScript_Poliwrath",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-3",
+            "x": 11,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+            "movementRangeX": 4,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-4",
+            "x": 18,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 5,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-5",
+            "x": 30,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_OldMan2",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-6",
+            "x": 26,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_SoftboiledTutor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-7",
+            "x": 38,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 5,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_RocketGrunt2",
+                "flag": "FLAG_HIDE_CELADON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-8",
+            "x": 9,
+            "y": 30,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_OldMan1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-9",
+            "x": 52,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_CELADON_BORDER_TREE",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-10",
+            "x": 40,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-11",
+            "x": 25,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-12",
+            "x": -7,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-13",
+            "x": 5,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_ItemEther",
+                "flag": "FLAG_HIDE_CELADON_CITY_ETHER"
+            }
+        },
+        {
+            "id": "npc-CeladonCity-14",
+            "x": 47,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_EventScript_SilphCoScientist",
+                "flag": "FLAG_HIDE_CELADON_ROCKETS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity-1",
+            "type": "door",
+            "rect": {
+                "x": 34,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_GameCorner",
+                "x": 9,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_GAME_CORNER",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_DepartmentStore_1F",
+                "x": 2,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_DEPARTMENT_STORE_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-3",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_DepartmentStore_1F",
+                "x": 10,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_DEPARTMENT_STORE_1F",
+                "destWarpId": "4",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-4",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_1F",
+                "x": 12,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-5",
+            "type": "door",
+            "rect": {
+                "x": 48,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-6",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_GameCorner_PrizeRoom",
+                "x": 4,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_GAME_CORNER_PRIZE_ROOM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-7",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Gym",
+                "x": 6,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-8",
+            "type": "door",
+            "rect": {
+                "x": 37,
+                "y": 29,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Restaurant",
+                "x": 6,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_RESTAURANT",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-9",
+            "type": "door",
+            "rect": {
+                "x": 41,
+                "y": 29,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_HOUSE1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-10",
+            "type": "door",
+            "rect": {
+                "x": 49,
+                "y": 29,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Hotel",
+                "x": 4,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_HOTEL",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-11",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_1F",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity-12",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_1F",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity-13",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_1F",
+                "x": 2,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-CeladonCity-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16",
+                "connection": {
+                    "direction": "left",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 10,
+                "destMap": "MAP_ROUTE16"
+            }
+        },
+        {
+            "id": "conn-CeladonCity-right-2",
+            "type": "door",
+            "rect": {
+                "x": 59,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE7"
+            }
+        }
+    ],
+    "name": "CeladonCity",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Text_ScaldedTongueOnTea",
+            "id": "CeladonCity_EventScript_Boy",
+            "text": "Aaaagh, ow…\nI scalded my tongue!\n\nThis nice old lady in the MANSION\ngave me some TEA.\n\nBut it was boiling hot!\nGotta cool it to drink it."
+        },
+        {
+            "title": "CeladonCity_Text_CitySign",
+            "id": "CeladonCity_EventScript_CitySign",
+            "text": "CELADON CITY\nThe City of Rainbow Dreams"
+        },
+        {
+            "title": "CeladonCity_Text_DeptStoreSign",
+            "id": "CeladonCity_EventScript_DeptStoreSign",
+            "text": "Find what you need at the\nCELADON DEPT. STORE!"
+        },
+        {
+            "title": "CeladonCity_Text_MyTrustedPalPoliwrath",
+            "id": "CeladonCity_EventScript_FatMan",
+            "text": "This is my trusted pal, POLIWRATH.\n\nIt evolved from a POLIWHIRL when\nI used a WATER STONE."
+        },
+        {
+            "title": "CeladonCity_Text_GameCornerSign",
+            "id": "CeladonCity_EventScript_GameCornerSign",
+            "text": "ROCKET GAME CORNER\nThe playground for grown-ups!"
+        },
+        {
+            "title": "CeladonCity_Text_GymSign",
+            "id": "CeladonCity_EventScript_GymSign",
+            "text": "CELADON CITY POKéMON GYM\nLEADER: ERIKA\nThe Nature-Loving Princess!"
+        },
+        {
+            "title": "CeladonCity_EventScript_ItemEther",
+            "id": "CeladonCity_EventScript_ItemEther",
+            "text": "TODO: CeladonCity_EventScript_ItemEther"
+        },
+        {
+            "title": "CeladonCity_Text_GotMyKoffingInCinnabar",
+            "id": "CeladonCity_EventScript_LittleGirl",
+            "text": "I got my KOFFING in CINNABAR.\n\nIt's usually nice, but it breathes\npoison when it's angry."
+        },
+        {
+            "title": "CeladonCity_Text_MansionSign",
+            "id": "CeladonCity_EventScript_MansionSign",
+            "text": "CELADON MANSION"
+        },
+        {
+            "title": "CeladonCity_Text_GymIsGreatFullOfWomen",
+            "id": "CeladonCity_EventScript_OldMan1",
+            "text": "Heheh! This GYM is great!\nIt's full of women!"
+        },
+        {
+            "title": "CeladonCity_Text_BlewItAllAtSlots",
+            "id": "CeladonCity_EventScript_OldMan2",
+            "text": "Moan…\nI blew it all at the slots!\n\nI knew I should have cashed in my\nCOINS for prizes!"
+        },
+        {
+            "title": "CeladonCity_Text_Poliwrath",
+            "id": "CeladonCity_EventScript_Poliwrath",
+            "text": "POLIWRATH: Ribi ribit!"
+        },
+        {
+            "title": "CeladonCity_Text_PrizeExchangeSign",
+            "id": "CeladonCity_EventScript_PrizeExchangeSign",
+            "text": "COINS exchanged for prizes!\nPRIZE EXCHANGE"
+        },
+        {
+            "title": "CeladonCity_Text_KeepOutOfTeamRocketsWay",
+            "id": "CeladonCity_EventScript_RocketGrunt1",
+            "text": "Keep out of TEAM ROCKET's way!"
+        },
+        {
+            "title": "CeladonCity_Text_GetLostOrIllPunchYou",
+            "id": "CeladonCity_EventScript_RocketGrunt2",
+            "text": "What are you staring at?\nGet lost, or I'll punch you."
+        },
+        {
+            "title": "CeladonCity_Text_SomeoneStoleSilphScope",
+            "id": "CeladonCity_EventScript_SilphCoScientist",
+            "text": "Oh, what am I to do…\n\nSomeone stole our SILPH SCOPE.\n\nThe thief came running this way,\nI'm sure of it.\n\nBut I lost sight of him!\nWhere'd he go?"
+        },
+        {
+            "title": "CeladonCity_EventScript_SoftboiledTutor",
+            "id": "CeladonCity_EventScript_SoftboiledTutor",
+            "text": "TODO: CeladonCity_EventScript_SoftboiledTutor"
+        },
+        {
+            "title": "CeladonCity_Text_ExplainXAccuracyDireHit",
+            "id": "CeladonCity_EventScript_TrainerTips1",
+            "text": "TRAINER TIPS\n\nX ACCURACY boosts the accuracy of\ntechniques.\n\nDIRE HIT jacks up the likelihood\nof critical hits.\n\nGet your items at the CELADON\nDEPT. STORE!"
+        },
+        {
+            "title": "CeladonCity_Text_GuardSpecProtectsFromStatus",
+            "id": "CeladonCity_EventScript_TrainerTips2",
+            "text": "TRAINER TIPS\n\nGUARD SPEC. protects POKéMON\nfrom status-reduction moves during\nbattle.\n\nGet your items at the\nCELADON DEPT. STORE!"
+        },
+        {
+            "title": "CeladonCity_Text_GameCornerIsBadForCitysImage",
+            "id": "CeladonCity_EventScript_Woman",
+            "text": "CELADON takes pride in its efforts\nto keep the city beautiful.\n\nThat's why the new GAME CORNER is\nbad for our city's image."
+        },
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 4,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 33,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 33,
+            "dir": "down"
+        }
+    ]
+}

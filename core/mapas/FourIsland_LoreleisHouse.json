@@ -1,0 +1,345 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_LoreleisHouse",
+    "meta": {
+        "layoutId": "LAYOUT_FOUR_ISLAND_LORELEIS_HOUSE",
+        "sourceMapId": "MAP_FOUR_ISLAND_LORELEIS_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SafariZoneBuilding",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_LoreleisHouse-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LORELEI",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Lorelei",
+                "flag": "FLAG_HIDE_LORELEI_IN_HER_HOUSE"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-1",
+            "x": 0,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WIGGLYTUFF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-2",
+            "x": 10,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_SEEL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-3",
+            "x": 9,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_PIKACHU",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-4",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_SLOWPOKE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-5",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_SLOWBRO",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-6",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_PSYDUCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-7",
+            "x": 9,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MEOWTH",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEI_HOUSE_MEOWTH_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-8",
+            "x": 10,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CHANSEY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEI_HOUSE_CHANSEY_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-9",
+            "x": 0,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_JIGGLYPUFF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEI_HOUSE_JIGGLYPUFF_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-10",
+            "x": 0,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEIS_HOUSE_NIDORAN_F_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-11",
+            "x": 1,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEIS_HOUSE_NIDORAN_M_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-12",
+            "x": 9,
+            "y": 0,
+            "sprite": "OBJ_EVENT_GFX_PIDGEOT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEIS_HOUSE_PIDGEOT_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-13",
+            "x": 10,
+            "y": 0,
+            "sprite": "OBJ_EVENT_GFX_FEAROW",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEIS_HOUSE_FEAROW_DOLL"
+            }
+        },
+        {
+            "id": "npc-FourIsland_LoreleisHouse-14",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LAPRAS_DOLL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_LoreleisHouse_EventScript_Doll",
+                "flag": "FLAG_HIDE_LORELEIS_HOUSE_LAPRAS_DOLL"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_LoreleisHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland",
+                "x": 33,
+                "y": 23,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FourIsland_LoreleisHouse",
+    "dialogs": [
+        {
+            "title": "FourIsland_LoreleisHouse_Text_StuffedMonDollsGalore",
+            "id": "FourIsland_LoreleisHouse_EventScript_Doll",
+            "text": "Stuffed POKéMON dolls galore!"
+        },
+        {
+            "title": "FourIsland_LoreleisHouse_Text_IfAnythingWereToHappenToIsland",
+            "id": "FourIsland_LoreleisHouse_EventScript_Lorelei",
+            "text": "LORELEI: There's something weighing\nheavily on my mind.\n\nIf anything were to happen on\nthe island where I was born…\n\nI wouldn't know about it if I were\nin the POKéMON LEAGUE.\n\nI wonder if that would make me\nirresponsible to my home…"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,215 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_THREE_ISLAND_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_NURSE",
+                "script": "ThreeIsland_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_1F-1",
+            "x": 12,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_PokemonCenter_1F_EventScript_Rocker",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_1F-2",
+            "x": 3,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_PokemonCenter_1F_EventScript_Lass",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_PokemonCenter_1F-3",
+            "x": 11,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_PokemonCenter_1F_EventScript_Sailor",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "x": 14,
+                "y": 27,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ThreeIsland_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "ThreeIsland_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_PokemonCenter_1F_Text_AlwaysBerriesInBerryForest",
+            "id": "ThreeIsland_PokemonCenter_1F_EventScript_Lass",
+            "text": "Let's crush BERRIES!\n…That'd be wasting BERRIES?\n\nYou can always find some BERRIES\non the ground in BERRY FOREST."
+        },
+        {
+            "title": "ThreeIsland_PokemonCenter_1F_EventScript_Nurse",
+            "id": "ThreeIsland_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: ThreeIsland_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "ThreeIsland_PokemonCenter_1F_Text_PCNetworkCanLinkWithKanto",
+            "id": "ThreeIsland_PokemonCenter_1F_EventScript_Rocker",
+            "text": "Hey, did you hear the news?\n\nThe PC network here can now link\nwith PCs in KANTO.\n\nI don't know how that came about,\nbut it's fantastic!"
+        },
+        {
+            "title": "ThreeIsland_PokemonCenter_1F_Text_ImpossibleToSurfBetweenIslands",
+            "id": "ThreeIsland_PokemonCenter_1F_EventScript_Sailor",
+            "text": "It's impossible to SURF between the\nislands around these parts.\n\nThe tides are too fast and\ntreacherous."
+        }
+    ],
+    "jumps": []
+}

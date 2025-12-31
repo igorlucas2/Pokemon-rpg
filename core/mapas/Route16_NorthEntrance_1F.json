@@ -1,0 +1,269 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route16_NorthEntrance_1F",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE16_NORTH_ENTRANCE_1F",
+        "sourceMapId": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 18
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 16,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 16,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 11,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 9,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 15,
+            "w": 7,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route16_NorthEntrance_1F-0",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_NorthEntrance_1F_EventScript_Guard",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16_NorthEntrance_1F-1",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_NorthEntrance_1F_EventScript_OldMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route16_NorthEntrance_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16",
+                "x": 20,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16_NorthEntrance_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16",
+                "x": 27,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16_NorthEntrance_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16",
+                "x": 20,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16_NorthEntrance_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16",
+                "x": 27,
+                "y": 13,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route16_NorthEntrance_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_2F",
+                "x": 10,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route16_NorthEntrance_1F",
+    "dialogs": [
+        {
+            "title": "EventScript_SetEnteringCyclingRoad",
+            "id": "EventScript_SetEnteringCyclingRoad",
+            "text": "TODO: EventScript_SetEnteringCyclingRoad"
+        },
+        {
+            "title": "EventScript_SetExitingCyclingRoad",
+            "id": "EventScript_SetExitingCyclingRoad",
+            "text": "TODO: EventScript_SetExitingCyclingRoad"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_Text_CyclingRoadIsDownhillCourse",
+            "id": "Route16_NorthEntrance_1F_EventScript_Guard",
+            "text": "CYCLING ROAD is a downhill course\nby the sea. It's a great ride."
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerBottom",
+            "id": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerBottom",
+            "text": "TODO: Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerBottom"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMid",
+            "id": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMid",
+            "text": "TODO: Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMid"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidBottom",
+            "id": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidBottom",
+            "text": "TODO: Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidBottom"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidTop",
+            "id": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidTop",
+            "text": "TODO: Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerMidTop"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerTop",
+            "id": "Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerTop",
+            "text": "TODO: Route16_NorthEntrance_1F_EventScript_NeedBikeTriggerTop"
+        },
+        {
+            "title": "Route16_NorthEntrance_1F_Text_HowdYouGetInGoodEffort",
+            "id": "Route16_NorthEntrance_1F_EventScript_OldMan",
+            "text": "How'd you get in?\nGood effort!"
+        }
+    ],
+    "jumps": []
+}

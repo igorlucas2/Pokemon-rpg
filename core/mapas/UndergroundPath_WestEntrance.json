@@ -1,0 +1,219 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "UndergroundPath_WestEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_UNDERGROUND_PATH_ENTRANCE",
+        "sourceMapId": "MAP_UNDERGROUND_PATH_WEST_ENTRANCE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-UndergroundPath_WestEntrance-0",
+            "x": 5,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "UndergroundPath_WestEntrance_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-UndergroundPath_WestEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "x": 7,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_WestEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "x": 7,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_WestEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "x": 7,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_WestEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_EastWestTunnel",
+                "x": 3,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "UndergroundPath_WestEntrance",
+    "dialogs": [
+        {
+            "title": "UndergroundPath_WestEntrance_Text_SleepyMonNearCeladon",
+            "id": "UndergroundPath_WestEntrance_EventScript_BaldingMan",
+            "text": "I heard a sleepy POKéMON appeared\nout near CELADON CITY, too."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,323 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PalletTown",
+    "meta": {
+        "layoutId": "LAYOUT_PALLET_TOWN",
+        "sourceMapId": "MAP_PALLET_TOWN",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_PalletTown",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 10,
+            "h": 2,
+            "x": 14
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 18,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 18,
+            "x": 22
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 4,
+            "x": 5
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 7,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 11,
+            "w": 5,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 16,
+            "w": 6,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 3,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PalletTown-0",
+            "x": 3,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "LOCALID_PALLET_SIGN_LADY",
+                "script": "PalletTown_EventScript_SignLady",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown-1",
+            "x": 13,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 6,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "LOCALID_PALLET_FAT_MAN",
+                "script": "PalletTown_EventScript_FatMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown-2",
+            "x": 10,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_PROF_OAK",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PALLET_PROF_OAK",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_OAK_IN_PALLET_TOWN"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PalletTown-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown_PlayersHouse_1F",
+                "x": 4,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PalletTown-2",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown_RivalsHouse",
+                "x": 4,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN_RIVALS_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-PalletTown-3",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 13,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown_ProfessorOaksLab",
+                "x": 6,
+                "y": 12,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-PalletTown-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route1",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_ROUTE1"
+            }
+        },
+        {
+            "id": "conn-PalletTown-down-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 19,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route21_North",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_ROUTE21_NORTH"
+            }
+        }
+    ],
+    "name": "PalletTown",
+    "dialogs": [
+        {
+            "title": "PalletTown_Text_CanStoreItemsAndMonsInPC",
+            "id": "PalletTown_EventScript_FatMan",
+            "text": "Technology is incredible!\n\nYou can now store and recall items\nand POKéMON as data via PC."
+        },
+        {
+            "title": "PalletTown_Text_OakPokemonResearchLab",
+            "id": "PalletTown_EventScript_OaksLabSign",
+            "text": "OAK POKéMON RESEARCH LAB"
+        },
+        {
+            "title": "PalletTown_EventScript_OakTriggerLeft",
+            "id": "PalletTown_EventScript_OakTriggerLeft",
+            "text": "TODO: PalletTown_EventScript_OakTriggerLeft"
+        },
+        {
+            "title": "PalletTown_EventScript_OakTriggerRight",
+            "id": "PalletTown_EventScript_OakTriggerRight",
+            "text": "TODO: PalletTown_EventScript_OakTriggerRight"
+        },
+        {
+            "title": "PalletTown_Text_PlayersHouse",
+            "id": "PalletTown_EventScript_PlayersHouseSign",
+            "text": "{PLAYER}'s house"
+        },
+        {
+            "title": "PalletTown_Text_RivalsHouse",
+            "id": "PalletTown_EventScript_RivalsHouseSign",
+            "text": "{RIVAL}'s house"
+        },
+        {
+            "title": "PalletTown_Text_HmmIsThatRight",
+            "id": "PalletTown_EventScript_SignLady",
+            "text": "Hmm…\nIs that right…\n\nOh!\nLook, look!"
+        },
+        {
+            "title": "PalletTown_EventScript_SignLadyTrigger",
+            "id": "PalletTown_EventScript_SignLadyTrigger",
+            "text": "TODO: PalletTown_EventScript_SignLadyTrigger"
+        },
+        {
+            "title": "PalletTown_Text_TownSign",
+            "id": "PalletTown_EventScript_TownSign",
+            "text": "PALLET TOWN\nShades of your journey await!"
+        },
+        {
+            "title": "PalletTown_Text_PressStartToOpenMenu",
+            "id": "PalletTown_EventScript_TrainerTips",
+            "text": "TRAINER TIPS\n\nPress START to open the MENU!"
+        }
+    ],
+    "jumps": []
+}

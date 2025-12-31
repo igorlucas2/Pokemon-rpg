@@ -1,0 +1,137 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_DunsparceTunnel",
+    "meta": {
+        "layoutId": "LAYOUT_THREE_ISLAND_DUNSPARCE_TUNNEL",
+        "sourceMapId": "MAP_THREE_ISLAND_DUNSPARCE_TUNNEL",
+        "width": 30,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 7
+    },
+    "start": {
+        "y": 2,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 30,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 25,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 23,
+            "h": 4,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 2,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_DunsparceTunnel-0",
+            "x": 23,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PROSPECTOR",
+                "script": "ThreeIsland_DunsparceTunnel_EventScript_Prospector",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_DunsparceTunnel-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_Port",
+                "x": 16,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_PORT",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ThreeIsland_DunsparceTunnel-2",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_Port",
+                "x": 38,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_PORT",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ThreeIsland_DunsparceTunnel",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_DunsparceTunnel_Text_ProspectingForGold",
+            "id": "ThreeIsland_DunsparceTunnel_EventScript_Prospector",
+            "text": "Hey, there!\nHow's it going?\n\nWhat am I doing here, you ask?\nWhy, I'm prospecting for gold!\n\nWhen I strike it rich, I'm buying\na house in KANTO."
+        }
+    ],
+    "jumps": []
+}

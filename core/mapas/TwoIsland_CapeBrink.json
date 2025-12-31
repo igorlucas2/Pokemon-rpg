@@ -1,0 +1,186 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TwoIsland_CapeBrink",
+    "meta": {
+        "layoutId": "LAYOUT_TWO_ISLAND_CAPE_BRINK",
+        "sourceMapId": "MAP_TWO_ISLAND_CAPE_BRINK",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands123",
+        "height": 40
+    },
+    "start": {
+        "y": 13,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 8,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 16,
+            "w": 7,
+            "h": 24,
+            "x": 17
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 6,
+            "x": 8
+        },
+        {
+            "y": 19,
+            "w": 5,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 20,
+            "w": 5,
+            "h": 20,
+            "x": 0
+        },
+        {
+            "y": 22,
+            "w": 3,
+            "h": 13,
+            "x": 11
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 12,
+            "x": 9
+        },
+        {
+            "y": 23,
+            "w": 3,
+            "h": 5,
+            "x": 14
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 16,
+            "x": 5
+        },
+        {
+            "y": 28,
+            "w": 2,
+            "h": 7,
+            "x": 14
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 11,
+            "x": 6
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 6,
+            "x": 16
+        },
+        {
+            "y": 33,
+            "w": 2,
+            "h": 7,
+            "x": 7
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 4,
+            "x": 9
+        },
+        {
+            "y": 36,
+            "w": 3,
+            "h": 4,
+            "x": 14
+        },
+        {
+            "y": 37,
+            "w": 3,
+            "h": 3,
+            "x": 11
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-TwoIsland_CapeBrink-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland_CapeBrink_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TWO_ISLAND_CAPE_BRINK_HOUSE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-TwoIsland_CapeBrink-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 39,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TwoIsland",
+                "connection": {
+                    "direction": "down",
+                    "offset": -24
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": -24,
+                "destMap": "MAP_TWO_ISLAND"
+            }
+        }
+    ],
+    "name": "TwoIsland_CapeBrink",
+    "dialogs": [],
+    "jumps": []
+}

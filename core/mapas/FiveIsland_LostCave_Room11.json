@@ -1,0 +1,108 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FiveIsland_LostCave_Room11",
+    "meta": {
+        "layoutId": "LAYOUT_FIVE_ISLAND_LOST_CAVE_ROOM11",
+        "sourceMapId": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM11",
+        "width": 11,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 11
+    },
+    "start": {
+        "y": 1,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 9,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 7,
+            "h": 2,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FiveIsland_LostCave_Room11-0",
+            "x": 5,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_LOST_CAVE_ROOM11_LAX_INCENSE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FiveIsland_LostCave_Room11-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FiveIsland_LostCave_Room1",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FiveIsland_LostCave_Room11",
+    "dialogs": [
+        {
+            "title": "FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense",
+            "id": "FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense",
+            "text": "TODO: FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense"
+        }
+    ],
+    "jumps": []
+}

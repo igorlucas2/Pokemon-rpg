@@ -1,0 +1,148 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "LavenderTown_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE5",
+        "sourceMapId": "MAP_LAVENDER_TOWN_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-LavenderTown_House2-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "LavenderTown_House2_EventScript_NameRater",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-LavenderTown_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_House2-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-LavenderTown_House2-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "x": 10,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_LAVENDER_TOWN",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "LavenderTown_House2",
+    "dialogs": [
+        {
+            "title": "LavenderTown_House2_Text_WantMeToRateNicknames",
+            "id": "LavenderTown_House2_EventScript_NameRater",
+            "text": "Hello, hello!\nI am the official NAME RATER!\n\nWant me to rate the nicknames of\nyour POKéMON?"
+        }
+    ],
+    "jumps": []
+}

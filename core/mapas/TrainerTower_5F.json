@@ -1,0 +1,299 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TrainerTower_5F",
+    "meta": {
+        "layoutId": "LAYOUT_TRAINER_TOWER_5F",
+        "sourceMapId": "MAP_TRAINER_TOWER_5F",
+        "width": 18,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_TrainerTower",
+        "height": 17
+    },
+    "start": {
+        "y": 6,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 18,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 11,
+            "x": 17
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 7,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 3,
+            "x": 15
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 15
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TrainerTower_5F-0",
+            "x": 9,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_TRAINER_TOWER_DUDE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "TrainerTower_EventScript_Owner",
+                "flag": "FLAG_TEMP_6"
+            }
+        },
+        {
+            "id": "npc-TrainerTower_5F-1",
+            "x": 10,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_VAR_0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TOWER_TRAINER_DOUBLES1",
+                "script": "TrainerTower_EventScript_DoublesTrainer1",
+                "flag": "FLAG_TEMP_2"
+            }
+        },
+        {
+            "id": "npc-TrainerTower_5F-2",
+            "x": 15,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_VAR_1",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TOWER_TRAINER_SINGLES",
+                "script": "TrainerTower_EventScript_SinglesTrainer",
+                "flag": "FLAG_TEMP_3"
+            }
+        },
+        {
+            "id": "npc-TrainerTower_5F-3",
+            "x": 10,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_VAR_2",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TOWER_TRAINER_KNOCKOUT",
+                "script": "TrainerTower_EventScript_KnockoutTrainer",
+                "flag": "FLAG_TEMP_4"
+            }
+        },
+        {
+            "id": "npc-TrainerTower_5F-4",
+            "x": 11,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_VAR_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TOWER_TRAINER_DOUBLES2",
+                "script": "TrainerTower_EventScript_DoublesTrainer2",
+                "flag": "FLAG_TEMP_5"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-TrainerTower_5F-1",
+            "type": "door",
+            "rect": {
+                "x": 15,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TrainerTower_6F",
+                "x": 4,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRAINER_TOWER_6F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-TrainerTower_5F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TrainerTower_4F",
+                "x": 15,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRAINER_TOWER_4F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-TrainerTower_5F-3",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "TrainerTower_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_TRAINER_TOWER_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "TrainerTower_5F",
+    "dialogs": [
+        {
+            "title": "TrainerTower_EventScript_DoubleBattleTriggerBottom",
+            "id": "TrainerTower_EventScript_DoubleBattleTriggerBottom",
+            "text": "TODO: TrainerTower_EventScript_DoubleBattleTriggerBottom"
+        },
+        {
+            "title": "TrainerTower_EventScript_DoubleBattleTriggerTop",
+            "id": "TrainerTower_EventScript_DoubleBattleTriggerTop",
+            "text": "TODO: TrainerTower_EventScript_DoubleBattleTriggerTop"
+        },
+        {
+            "title": "TrainerTower_EventScript_DoublesTrainer1",
+            "id": "TrainerTower_EventScript_DoublesTrainer1",
+            "text": "TODO: TrainerTower_EventScript_DoublesTrainer1"
+        },
+        {
+            "title": "TrainerTower_EventScript_DoublesTrainer2",
+            "id": "TrainerTower_EventScript_DoublesTrainer2",
+            "text": "TODO: TrainerTower_EventScript_DoublesTrainer2"
+        },
+        {
+            "title": "TrainerTower_EventScript_KnockoutTrainer",
+            "id": "TrainerTower_EventScript_KnockoutTrainer",
+            "text": "TODO: TrainerTower_EventScript_KnockoutTrainer"
+        },
+        {
+            "title": "TrainerTower_EventScript_Owner",
+            "id": "TrainerTower_EventScript_Owner",
+            "text": "TODO: TrainerTower_EventScript_Owner"
+        },
+        {
+            "title": "TrainerTower_EventScript_SingleBattleTrigger",
+            "id": "TrainerTower_EventScript_SingleBattleTrigger",
+            "text": "TODO: TrainerTower_EventScript_SingleBattleTrigger"
+        },
+        {
+            "title": "TrainerTower_EventScript_SinglesTrainer",
+            "id": "TrainerTower_EventScript_SinglesTrainer",
+            "text": "TODO: TrainerTower_EventScript_SinglesTrainer"
+        }
+    ],
+    "jumps": []
+}

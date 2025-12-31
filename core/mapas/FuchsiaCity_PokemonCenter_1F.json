@@ -1,0 +1,261 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FuchsiaCity_PokemonCenter_1F",
+    "meta": {
+        "layoutId": "LAYOUT_POKEMON_CENTER_1F",
+        "sourceMapId": "MAP_FUCHSIA_CITY_POKEMON_CENTER_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_PokemonCenter",
+        "height": 10
+    },
+    "start": {
+        "y": 0,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FuchsiaCity_PokemonCenter_1F-0",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_NURSE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_FUCHSIA_NURSE",
+                "script": "FuchsiaCity_PokemonCenter_1F_EventScript_Nurse",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_PokemonCenter_1F-1",
+            "x": 12,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_PokemonCenter_1F_EventScript_Man",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_PokemonCenter_1F-2",
+            "x": 13,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_PokemonCenter_1F_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FuchsiaCity_PokemonCenter_1F-3",
+            "x": 4,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FuchsiaCity_PokemonCenter_1F_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FuchsiaCity_PokemonCenter_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 25,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_PokemonCenter_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 25,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_PokemonCenter_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "x": 25,
+                "y": 31,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-FuchsiaCity_PokemonCenter_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_PokemonCenter_2F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_POKEMON_CENTER_2F",
+                "destWarpId": "0",
+                "elevation": 4
+            }
+        }
+    ],
+    "name": "FuchsiaCity_PokemonCenter_1F",
+    "dialogs": [
+        {
+            "title": "FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian",
+            "id": "FuchsiaCity_PokemonCenter_1F_EventScript_CooltrainerF",
+            "text": "There's a narrow trail west of\nVIRIDIAN CITY.\n\nIt goes to the POKéMON LEAGUE HQ.\nThe HQ governs all TRAINERS."
+        },
+        {
+            "title": "FuchsiaCity_PokemonCenter_1F_Text_CantBecomeGoodTrainerWithOneMon",
+            "id": "FuchsiaCity_PokemonCenter_1F_EventScript_Man",
+            "text": "You can't become a good TRAINER\nwith just one strong POKéMON.\n\nBut raising many POKéMON evenly\nis no easy task, either."
+        },
+        {
+            "title": "FuchsiaCity_PokemonCenter_1F_EventScript_Nurse",
+            "id": "FuchsiaCity_PokemonCenter_1F_EventScript_Nurse",
+            "text": "TODO: FuchsiaCity_PokemonCenter_1F_EventScript_Nurse"
+        },
+        {
+            "title": "FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex",
+            "id": "FuchsiaCity_PokemonCenter_1F_EventScript_Youngster",
+            "text": "If you're working on a POKéDEX,\nvisit the SAFARI ZONE.\n\nAll sorts of rare POKéMON breed\nthere."
+        }
+    ],
+    "jumps": []
+}

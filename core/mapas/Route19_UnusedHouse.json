@@ -1,0 +1,54 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route19_UnusedHouse",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE2",
+        "sourceMapId": "MAP_ROUTE19_UNUSED_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [],
+    "events": [],
+    "name": "Route19_UnusedHouse",
+    "dialogs": [],
+    "jumps": []
+}

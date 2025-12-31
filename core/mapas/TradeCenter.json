@@ -1,0 +1,94 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "TradeCenter",
+    "meta": {
+        "layoutId": "LAYOUT_TRADE_CENTER",
+        "sourceMapId": "MAP_TRADE_CENTER",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CableClub",
+        "height": 9
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 11
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-TradeCenter-0",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_UNION_ROOM_RECEPTIONIST",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "",
+                "script": "TradeCenter_EventScript_Attendant",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [],
+    "name": "TradeCenter",
+    "dialogs": [
+        {
+            "title": "TradeCenter_EventScript_Attendant",
+            "id": "TradeCenter_EventScript_Attendant",
+            "text": "TODO: TradeCenter_EventScript_Attendant"
+        },
+        {
+            "title": "TradeCenter_EventScript_Chair0",
+            "id": "TradeCenter_EventScript_Chair0",
+            "text": "TODO: TradeCenter_EventScript_Chair0"
+        },
+        {
+            "title": "TradeCenter_EventScript_Chair1",
+            "id": "TradeCenter_EventScript_Chair1",
+            "text": "TODO: TradeCenter_EventScript_Chair1"
+        }
+    ],
+    "jumps": []
+}

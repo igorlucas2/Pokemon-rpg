@@ -1,0 +1,144 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "NavelRock_Base",
+    "meta": {
+        "layoutId": "LAYOUT_NAVEL_ROCK_BASE",
+        "sourceMapId": "MAP_NAVEL_ROCK_BASE",
+        "width": 21,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 23
+    },
+    "start": {
+        "y": 14,
+        "x": 8
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 21,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 14,
+            "w": 8,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 14,
+            "w": 8,
+            "h": 6,
+            "x": 13
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 12
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 20,
+            "w": 7,
+            "h": 3,
+            "x": 14
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 22,
+            "w": 4,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-NavelRock_Base-0",
+            "x": 10,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_LUGIA",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_NAVEL_ROCK_LUGIA",
+                "script": "NavelRock_Base_EventScript_Lugia",
+                "flag": "FLAG_HIDE_LUGIA"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-NavelRock_Base-1",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_BasePath_B11F",
+                "x": 4,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_BASE_PATH_B11F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "NavelRock_Base",
+    "dialogs": [
+        {
+            "title": "NavelRock_Base_EventScript_Lugia",
+            "id": "NavelRock_Base_EventScript_Lugia",
+            "text": "TODO: NavelRock_Base_EventScript_Lugia"
+        }
+    ],
+    "jumps": []
+}

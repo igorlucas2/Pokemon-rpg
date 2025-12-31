@@ -1,0 +1,216 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_Mart",
+    "meta": {
+        "layoutId": "LAYOUT_MART",
+        "sourceMapId": "MAP_SAFFRON_CITY_MART",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Mart",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_Mart-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Mart_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Mart-1",
+            "x": 1,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Mart_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_Mart-2",
+            "x": 9,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_Mart_EventScript_Lass",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_Mart-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_Mart-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity_Mart-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 40,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_Mart",
+    "dialogs": [
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "SaffronCity_Mart_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "SaffronCity_Mart_Text_ReviveIsCostly",
+            "id": "SaffronCity_Mart_EventScript_Lass",
+            "text": "REVIVE is costly, but it revives\nfainted POKéMON!"
+        },
+        {
+            "title": "SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper",
+            "id": "SaffronCity_Mart_EventScript_Youngster",
+            "text": "MAX REPEL keeps weaker POKéMON\nfrom appearing.\n\nMAX REPEL stays effective longer\nthan SUPER REPEL."
+        }
+    ],
+    "jumps": []
+}

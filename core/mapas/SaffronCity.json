@@ -1,0 +1,1350 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY",
+        "sourceMapId": "MAP_SAFFRON_CITY",
+        "width": 66,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SaffronCity",
+        "height": 55
+    },
+    "start": {
+        "y": 0,
+        "x": 25
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 25,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 6,
+            "h": 5,
+            "x": 32
+        },
+        {
+            "y": 0,
+            "w": 23,
+            "h": 2,
+            "x": 43
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 2,
+            "w": 24,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 22,
+            "h": 10,
+            "x": 44
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 7,
+            "x": 24
+        },
+        {
+            "y": 3,
+            "w": 6,
+            "h": 9,
+            "x": 38
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 32
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 6,
+            "x": 37
+        },
+        {
+            "y": 10,
+            "w": 15,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 11,
+            "w": 12,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 41
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 1,
+            "x": 45
+        },
+        {
+            "y": 12,
+            "w": 12,
+            "h": 11,
+            "x": 54
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 14,
+            "w": 8,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 14,
+            "w": 6,
+            "h": 1,
+            "x": 48
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 10,
+            "x": 53
+        },
+        {
+            "y": 17,
+            "w": 9,
+            "h": 14,
+            "x": 29
+        },
+        {
+            "y": 18,
+            "w": 4,
+            "h": 4,
+            "x": 18
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 4,
+            "x": 26
+        },
+        {
+            "y": 18,
+            "w": 4,
+            "h": 4,
+            "x": 46
+        },
+        {
+            "y": 19,
+            "w": 10,
+            "h": 4,
+            "x": 5
+        },
+        {
+            "y": 19,
+            "w": 4,
+            "h": 3,
+            "x": 22
+        },
+        {
+            "y": 19,
+            "w": 8,
+            "h": 3,
+            "x": 38
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 10,
+            "x": 28
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 10,
+            "x": 38
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 1,
+            "x": 49
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 11,
+            "x": 5
+        },
+        {
+            "y": 23,
+            "w": 5,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 23,
+            "w": 4,
+            "h": 2,
+            "x": 62
+        },
+        {
+            "y": 24,
+            "w": 4,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 24,
+            "w": 8,
+            "h": 1,
+            "x": 54
+        },
+        {
+            "y": 25,
+            "w": 3,
+            "h": 5,
+            "x": 2
+        },
+        {
+            "y": 25,
+            "w": 2,
+            "h": 5,
+            "x": 6
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 1,
+            "x": 54
+        },
+        {
+            "y": 25,
+            "w": 6,
+            "h": 5,
+            "x": 59
+        },
+        {
+            "y": 26,
+            "w": 9,
+            "h": 6,
+            "x": 19
+        },
+        {
+            "y": 26,
+            "w": 9,
+            "h": 6,
+            "x": 39
+        },
+        {
+            "y": 29,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 29,
+            "w": 7,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 29,
+            "w": 6,
+            "h": 1,
+            "x": 53
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 26,
+            "x": 65
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 25,
+            "x": 7
+        },
+        {
+            "y": 30,
+            "w": 2,
+            "h": 14,
+            "x": 13
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 14,
+            "x": 53
+        },
+        {
+            "y": 30,
+            "w": 3,
+            "h": 25,
+            "x": 62
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 24,
+            "x": 6
+        },
+        {
+            "y": 31,
+            "w": 5,
+            "h": 24,
+            "x": 8
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 31,
+            "w": 8,
+            "h": 24,
+            "x": 54
+        },
+        {
+            "y": 35,
+            "w": 6,
+            "h": 20,
+            "x": 0
+        },
+        {
+            "y": 35,
+            "w": 9,
+            "h": 4,
+            "x": 18
+        },
+        {
+            "y": 35,
+            "w": 8,
+            "h": 4,
+            "x": 31
+        },
+        {
+            "y": 35,
+            "w": 9,
+            "h": 4,
+            "x": 41
+        },
+        {
+            "y": 36,
+            "w": 4,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 36,
+            "w": 2,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 38,
+            "w": 1,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 42,
+            "w": 12,
+            "h": 12,
+            "x": 19
+        },
+        {
+            "y": 42,
+            "w": 12,
+            "h": 12,
+            "x": 39
+        },
+        {
+            "y": 43,
+            "w": 4,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 43,
+            "w": 2,
+            "h": 1,
+            "x": 51
+        },
+        {
+            "y": 44,
+            "w": 1,
+            "h": 11,
+            "x": 13
+        },
+        {
+            "y": 45,
+            "w": 5,
+            "h": 10,
+            "x": 14
+        },
+        {
+            "y": 45,
+            "w": 2,
+            "h": 9,
+            "x": 31
+        },
+        {
+            "y": 45,
+            "w": 2,
+            "h": 9,
+            "x": 37
+        },
+        {
+            "y": 45,
+            "w": 3,
+            "h": 10,
+            "x": 51
+        },
+        {
+            "y": 47,
+            "w": 4,
+            "h": 5,
+            "x": 33
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 52,
+            "w": 1,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 54,
+            "w": 5,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 54,
+            "w": 1,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 54,
+            "w": 1,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 54,
+            "w": 7,
+            "h": 1,
+            "x": 44
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity-0",
+            "x": 22,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt1",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-1",
+            "x": 26,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt2",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-2",
+            "x": 46,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt3",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-3",
+            "x": 27,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt4",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-4",
+            "x": 25,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 7,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt5",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-5",
+            "x": 34,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SAFFRON_DOOR_GUARD_GRUNT",
+                "script": "SaffronCity_EventScript_DoorGuardGrunt",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-6",
+            "x": 30,
+            "y": 39,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 5,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt7",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-7",
+            "x": 48,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_RocketGrunt6",
+                "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-8",
+            "x": 37,
+            "y": 32,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_Youngster",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-9",
+            "x": 21,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_WORKER_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_WorkerM",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-10",
+            "x": 39,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_Man",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-11",
+            "x": 44,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_Boy",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-12",
+            "x": 45,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_PIDGEOT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_Pidgeot",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-13",
+            "x": 32,
+            "y": 39,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 5,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_Lass",
+                "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity-14",
+            "x": 47,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_EventScript_BattleGirl",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity-1",
+            "type": "door",
+            "rect": {
+                "x": 33,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_1F",
+                "x": 8,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-2",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 14,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_CopycatsHouse_1F",
+                "x": 4,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-3",
+            "type": "door",
+            "rect": {
+                "x": 40,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_Dojo",
+                "x": 6,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_DOJO",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-4",
+            "type": "door",
+            "rect": {
+                "x": 46,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_Gym",
+                "x": 14,
+                "y": 23,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_GYM",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-5",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_House",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-6",
+            "type": "door",
+            "rect": {
+                "x": 40,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_MART",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-7",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 38,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-8",
+            "type": "door",
+            "rect": {
+                "x": 43,
+                "y": 38,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_MrPsychicsHouse",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_MR_PSYCHICS_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SaffronCity-9",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 27,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7_EastEntrance",
+                "x": 11,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE7_EAST_ENTRANCE",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-10",
+            "type": "door",
+            "rect": {
+                "x": 34,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5_SouthEntrance",
+                "x": 4,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5_SOUTH_ENTRANCE",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-11",
+            "type": "door",
+            "rect": {
+                "x": 58,
+                "y": 27,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8_WestEntrance",
+                "x": 1,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE8_WEST_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-12",
+            "type": "door",
+            "rect": {
+                "x": 34,
+                "y": 46,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6_NorthEntrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE6_NORTH_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-13",
+            "type": "door",
+            "rect": {
+                "x": 35,
+                "y": 46,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6_NorthEntrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE6_NORTH_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-14",
+            "type": "door",
+            "rect": {
+                "x": 35,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5_SouthEntrance",
+                "x": 4,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE5_SOUTH_ENTRANCE",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SaffronCity-15",
+            "type": "door",
+            "rect": {
+                "x": 47,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_PokemonTrainerFanClub",
+                "x": 5,
+                "y": 15,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-SaffronCity-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 48,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route5",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_ROUTE5"
+            }
+        },
+        {
+            "id": "conn-SaffronCity-down-2",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 54,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6",
+                "connection": {
+                    "direction": "down",
+                    "offset": 12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 12,
+                "destMap": "MAP_ROUTE6"
+            }
+        },
+        {
+            "id": "conn-SaffronCity-left-3",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route7",
+                "connection": {
+                    "direction": "left",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 10,
+                "destMap": "MAP_ROUTE7"
+            }
+        },
+        {
+            "id": "conn-SaffronCity-right-4",
+            "type": "door",
+            "rect": {
+                "x": 65,
+                "y": 10,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route8",
+                "connection": {
+                    "direction": "right",
+                    "offset": 10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 10,
+                "destMap": "MAP_ROUTE8"
+            }
+        }
+    ],
+    "name": "SaffronCity",
+    "dialogs": [
+        {
+            "title": "SaffronCity_EventScript_BattleGirl",
+            "id": "SaffronCity_EventScript_BattleGirl",
+            "text": "TODO: SaffronCity_EventScript_BattleGirl"
+        },
+        {
+            "title": "SaffronCity_Text_FlewHereOnPidgeot",
+            "id": "SaffronCity_EventScript_Boy",
+            "text": "I flew here on my PIDGEOT when\nI read about SILPH.\n\nIt's already over?\nI missed the media action…"
+        },
+        {
+            "title": "SaffronCity_Text_CitySign",
+            "id": "SaffronCity_EventScript_CitySign",
+            "text": "SAFFRON CITY\nShining, Golden Land of Commerce"
+        },
+        {
+            "title": "SaffronCity_Text_FightingDojo",
+            "id": "SaffronCity_EventScript_DojoSign",
+            "text": "FIGHTING DOJO"
+        },
+        {
+            "title": "SaffronCity_Text_ImASecurityGuard",
+            "id": "SaffronCity_EventScript_DoorGuardGrunt",
+            "text": "I'm a security guard.\n\nSuspicious kids I don't allow in!"
+        },
+        {
+            "title": "SaffronCity_Text_GymSign",
+            "id": "SaffronCity_EventScript_GymSign",
+            "text": "SAFFRON CITY POKéMON GYM\nLEADER: SABRINA\nThe Master of PSYCHIC POKéMON!"
+        },
+        {
+            "title": "SaffronCity_Text_PeopleComingBackToSaffron",
+            "id": "SaffronCity_EventScript_Lass",
+            "text": "People fled from here in droves\nwhen those ROCKETS came.\n\nThey should be flocking back to\nSAFFRON now."
+        },
+        {
+            "title": "SaffronCity_Text_SawRocketBossEscaping",
+            "id": "SaffronCity_EventScript_Man",
+            "text": "I saw the ROCKET BOSS escaping\nSILPH's building."
+        },
+        {
+            "title": "SaffronCity_Text_MrPsychicsHouse",
+            "id": "SaffronCity_EventScript_MrPsychicsHouseSign",
+            "text": "MR. PSYCHIC'S HOUSE"
+        },
+        {
+            "title": "SaffronCity_Text_Pidgeot",
+            "id": "SaffronCity_EventScript_Pidgeot",
+            "text": "PIDGEOT: Bi bibii!"
+        },
+        {
+            "title": "SaffronCity_Text_WhatDoYouWantGetLost",
+            "id": "SaffronCity_EventScript_RocketGrunt1",
+            "text": "What do you want?\nGet lost!"
+        },
+        {
+            "title": "SaffronCity_Text_BossTakeTownForTeamRocket",
+            "id": "SaffronCity_EventScript_RocketGrunt2",
+            "text": "BOSS said he'll take this town\nin the name of TEAM ROCKET!"
+        },
+        {
+            "title": "SaffronCity_Text_DontGetDefiantOrIllHurtYou",
+            "id": "SaffronCity_EventScript_RocketGrunt3",
+            "text": "Don't get defiant!\nOr I'll have to hurt you!"
+        },
+        {
+            "title": "SaffronCity_Text_SaffronBelongsToTeamRocket",
+            "id": "SaffronCity_EventScript_RocketGrunt4",
+            "text": "SAFFRON belongs to TEAM ROCKET!"
+        },
+        {
+            "title": "SaffronCity_Text_CriminalLifeMakesMeFeelAlive",
+            "id": "SaffronCity_EventScript_RocketGrunt5",
+            "text": "My life as a criminal makes me feel\nso alive!"
+        },
+        {
+            "title": "SaffronCity_Text_WatchWhereYoureWalking",
+            "id": "SaffronCity_EventScript_RocketGrunt6",
+            "text": "Ow!\nWatch where you're walking!"
+        },
+        {
+            "title": "SaffronCity_Text_WeCanExploitMonsAroundWorld",
+            "id": "SaffronCity_EventScript_RocketGrunt7",
+            "text": "With SILPH under control, we can\nexploit POKéMON around the world!\n\nWe'll get stinking rich, yeahah!"
+        },
+        {
+            "title": "SaffronCity_Text_SilphCoSign",
+            "id": "SaffronCity_EventScript_SilphCoSign",
+            "text": "SILPH CO. OFFICE BUILDING"
+        },
+        {
+            "title": "SaffronCity_Text_SilphsLatestProduct",
+            "id": "SaffronCity_EventScript_SilphProductSign",
+            "text": "SILPH's latest product!\nRelease to be determined…"
+        },
+        {
+            "title": "SaffronCity_Text_TrainerFanClubSign",
+            "id": "SaffronCity_EventScript_TrainerFanClubSign",
+            "text": "POKéMON TRAINER FAN CLUB\n\nMany TRAINERS have scribbled their\nnames on this sign."
+        },
+        {
+            "title": "SaffronCity_Text_FullHealCuresStatus",
+            "id": "SaffronCity_EventScript_TrainerTips1",
+            "text": "TRAINER TIPS\n\nFULL HEAL cures all ailments like\nburns, paralysis, poisoning,\nfreezing, and sleep.\n\nIt costs a bit more, but it's more\nconvenient than buying other items."
+        },
+        {
+            "title": "SaffronCity_Text_GreatBallImprovedCatchRate",
+            "id": "SaffronCity_EventScript_TrainerTips2",
+            "text": "TRAINER TIPS\n\nThe new GREAT BALL offers improved\ncatching rates.\n\nTry it on those hard-to-catch\nPOKéMON."
+        },
+        {
+            "title": "SaffronCity_Text_YouBeatTeamRocket",
+            "id": "SaffronCity_EventScript_WorkerM",
+            "text": "You beat TEAM ROCKET all alone?\nThat's amazing!"
+        },
+        {
+            "title": "SaffronCity_Text_SafeToGoOutAgain",
+            "id": "SaffronCity_EventScript_Youngster",
+            "text": "Yeah! TEAM ROCKET is gone!\nIt's safe to go out again!"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 0,
+            "y": 29,
+            "dir": "down"
+        },
+        {
+            "x": 1,
+            "y": 29,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 29,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 29,
+            "dir": "down"
+        }
+    ]
+}

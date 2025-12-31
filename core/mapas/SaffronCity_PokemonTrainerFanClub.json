@@ -1,0 +1,325 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_PokemonTrainerFanClub",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB",
+        "sourceMapId": "MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_FanClubDaycare",
+        "height": 17
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 7,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 5,
+            "x": 10
+        },
+        {
+            "y": 16,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-0",
+            "x": 7,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_BATTLE_GIRL",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_BATTLE_GIRL",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-1",
+            "x": 6,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_LITTLE_GIRL",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-2",
+            "x": 3,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_YOUNGSTER",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-3",
+            "x": 3,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_GENTLEMAN",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_Gentleman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-4",
+            "x": 9,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_3",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_WOMAN",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_Woman",
+                "flag": "FLAG_HIDE_SAFFRON_FAN_CLUB_WOMAN"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-5",
+            "x": 7,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_ROCKER",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_Rocker",
+                "flag": "FLAG_HIDE_SAFFRON_FAN_CLUB_ROCKER"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-6",
+            "x": 9,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_BEAUTY",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_Beauty",
+                "flag": "FLAG_HIDE_SAFFRON_FAN_CLUB_BEAUTY"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-7",
+            "x": 5,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BLACKBELT",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TRAINER_FAN_CLUB_BLACK_BELT",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt",
+                "flag": "FLAG_HIDE_SAFFRON_FAN_CLUB_BLACKBELT"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-8",
+            "x": 2,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_PokemonTrainerFanClub-9",
+            "x": 3,
+            "y": 1,
+            "sprite": "0",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_INVISIBLE",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno",
+                "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_PokemonTrainerFanClub-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 47,
+                "y": 21,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "14",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_PokemonTrainerFanClub",
+    "dialogs": [
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_WasYourFanNotAnymore",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirl",
+            "text": "I'm sorry.\nI was your fan before.\n\nBut now, you seem to have lost\nthe drive you had before.\n\nLately, I think {STR_VAR_1} has been\na lot cooler."
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_WhyCantOthersSeeMastersDignity",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_Beauty",
+            "text": "Master {STR_VAR_1} is so dignified…\nHe is so my type.\n\nWhy can't the others see the\ndignity he simply oozes?"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_OnlyMasterHasMyRespect",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt",
+            "text": "Hiyah! There is but one TRAINER\nwho has my respect.\n\nAnd that is none other than my\nMASTER at the FIGHTING DOJO.\n\nYou should become a fan of my\nMASTER like me! Hiyah!"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_HmmAndYouAre",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_Gentleman",
+            "text": "Hmm…\nAnd you are?\n\nWere you hoping to sign up for\na membership in our FAN CLUB?"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_WantToBeLikeSabrina",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirl",
+            "text": "Do you know what?\nI want to be like SABRINA!\n\nI want to be a psychic girl just\nlike her!"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno",
+            "text": "TODO: SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_LoveWayTrainerTalks",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_Rocker",
+            "text": "{STR_VAR_1}'s cool, huh?\nI love the way he talks.\n\nI'd really relish a chance to meet\nhim in person once."
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_TrainerHasBeenOnFire",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_Woman",
+            "text": "Recently, {STR_VAR_1} has been on\nfire.\n\nThe way he battles… It's just \nthe way that I like it!"
+        },
+        {
+            "title": "SaffronCity_PokemonTrainerFanClub_Text_BrocksMyHero",
+            "id": "SaffronCity_PokemonTrainerFanClub_EventScript_Youngster",
+            "text": "BROCK's my hero!\nHe's a man among men!\n\nHeheh, I got my mom to do\nsomething for me.\n\nI got her to embroider “BROCK”\non my shorts!"
+        }
+    ],
+    "jumps": []
+}

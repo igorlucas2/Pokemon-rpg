@@ -1,0 +1,608 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route25",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE25",
+        "sourceMapId": "MAP_ROUTE25",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeruleanCity",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 12,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 25
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 2,
+            "x": 31
+        },
+        {
+            "y": 2,
+            "w": 30,
+            "h": 3,
+            "x": 42
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 29
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 6,
+            "x": 20
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 35
+        },
+        {
+            "y": 5,
+            "w": 11,
+            "h": 15,
+            "x": 61
+        },
+        {
+            "y": 6,
+            "w": 12,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 32
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 3,
+            "x": 43
+        },
+        {
+            "y": 9,
+            "w": 6,
+            "h": 3,
+            "x": 54
+        },
+        {
+            "y": 10,
+            "w": 13,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 6,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 21
+        },
+        {
+            "y": 10,
+            "w": 9,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 10,
+            "w": 10,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 12,
+            "w": 41,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 20,
+            "h": 7,
+            "x": 41
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route25-0",
+            "x": 11,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Franklin",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-1",
+            "x": 18,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Joey",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-2",
+            "x": 17,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Wayne",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-3",
+            "x": 22,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Dan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-4",
+            "x": 22,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Kelsey",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-5",
+            "x": 27,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Nob",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-6",
+            "x": 28,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CAMPER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Flint",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-7",
+            "x": 36,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Chad",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-8",
+            "x": 42,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Haley",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-9",
+            "x": 26,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_ItemTM43",
+                "flag": "FLAG_HIDE_ROUTE25_TM43"
+            }
+        },
+        {
+            "id": "npc-Route25-10",
+            "x": 30,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route25-11",
+            "x": 49,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Beauty",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route25-12",
+            "x": 49,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route25_EventScript_Man",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route25-1",
+            "type": "door",
+            "rect": {
+                "x": 51,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route25_SeaCottage",
+                "x": 7,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE25_SEA_COTTAGE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-Route25-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route24",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_ROUTE24"
+            }
+        }
+    ],
+    "name": "Route25",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route25_EventScript_Beauty",
+            "id": "Route25_EventScript_Beauty",
+            "text": "TODO: Route25_EventScript_Beauty"
+        },
+        {
+            "title": "Route25_EventScript_Chad",
+            "id": "Route25_EventScript_Chad",
+            "text": "TODO: Route25_EventScript_Chad"
+        },
+        {
+            "title": "Route25_EventScript_Dan",
+            "id": "Route25_EventScript_Dan",
+            "text": "TODO: Route25_EventScript_Dan"
+        },
+        {
+            "title": "Route25_EventScript_Flint",
+            "id": "Route25_EventScript_Flint",
+            "text": "TODO: Route25_EventScript_Flint"
+        },
+        {
+            "title": "Route25_EventScript_Franklin",
+            "id": "Route25_EventScript_Franklin",
+            "text": "TODO: Route25_EventScript_Franklin"
+        },
+        {
+            "title": "Route25_EventScript_Haley",
+            "id": "Route25_EventScript_Haley",
+            "text": "TODO: Route25_EventScript_Haley"
+        },
+        {
+            "title": "Route25_EventScript_ItemTM43",
+            "id": "Route25_EventScript_ItemTM43",
+            "text": "TODO: Route25_EventScript_ItemTM43"
+        },
+        {
+            "title": "Route25_EventScript_Joey",
+            "id": "Route25_EventScript_Joey",
+            "text": "TODO: Route25_EventScript_Joey"
+        },
+        {
+            "title": "Route25_EventScript_Kelsey",
+            "id": "Route25_EventScript_Kelsey",
+            "text": "TODO: Route25_EventScript_Kelsey"
+        },
+        {
+            "title": "Route25_Text_AreYouHereAlone",
+            "id": "Route25_EventScript_Man",
+            "text": "Hello, are you here alone?\n\nIf you're out at CERULEAN's cape…\nWell, it should be as a couple."
+        },
+        {
+            "title": "Route25_EventScript_Nob",
+            "id": "Route25_EventScript_Nob",
+            "text": "TODO: Route25_EventScript_Nob"
+        },
+        {
+            "title": "Route25_Text_SeaCottageSign",
+            "id": "Route25_EventScript_SeaCottageSign",
+            "text": "SEA COTTAGE\nBILL lives here!"
+        },
+        {
+            "title": "Route25_EventScript_Wayne",
+            "id": "Route25_EventScript_Wayne",
+            "text": "TODO: Route25_EventScript_Wayne"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 0,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "dir": "down"
+        }
+    ]
+}

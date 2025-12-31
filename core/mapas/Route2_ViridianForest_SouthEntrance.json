@@ -1,0 +1,247 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route2_ViridianForest_SouthEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE2_ENTRANCE",
+        "sourceMapId": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 12
+    },
+    "start": {
+        "y": 1,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 7,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 9,
+            "x": 14
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 11,
+            "w": 13,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route2_ViridianForest_SouthEntrance-0",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route2_ViridianForest_SouthEntrance_EventScript_Woman1",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route2_ViridianForest_SouthEntrance-1",
+            "x": 4,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route2_ViridianForest_SouthEntrance_EventScript_Woman2",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route2_ViridianForest_SouthEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2",
+                "x": 5,
+                "y": 51,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2_ViridianForest_SouthEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2",
+                "x": 5,
+                "y": 51,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2_ViridianForest_SouthEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2",
+                "x": 5,
+                "y": 51,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route2_ViridianForest_SouthEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianForest",
+                "x": 29,
+                "y": 62,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_FOREST",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route2_ViridianForest_SouthEntrance",
+    "dialogs": [
+        {
+            "title": "Route2_ViridianForest_SouthEntrance_Text_ForestIsMaze",
+            "id": "Route2_ViridianForest_SouthEntrance_EventScript_Woman1",
+            "text": "Are you going to VIRIDIAN FOREST?\nIt's a natural maze in there.\nBe careful you don't get lost."
+        },
+        {
+            "title": "Route2_ViridianForest_SouthEntrance_Text_RattataHasWickedBite",
+            "id": "Route2_ViridianForest_SouthEntrance_EventScript_Woman2",
+            "text": "RATTATA may be small, but don't\nunderestimate its wicked bite.\n\nHave you caught one already?"
+        }
+    ],
+    "jumps": []
+}

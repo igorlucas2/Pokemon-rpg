@@ -1,0 +1,430 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VermilionCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_VERMILION_CITY_GYM",
+        "sourceMapId": "MAP_VERMILION_CITY_GYM",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_VermilionGym",
+        "height": 21
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 20,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VermilionCity_Gym-0",
+            "x": 5,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_LT_SURGE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Gym_EventScript_LtSurge",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Gym-1",
+            "x": 2,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Gym_EventScript_Baily",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Gym-2",
+            "x": 8,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_SAILOR",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Gym_EventScript_Dwayne",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Gym-3",
+            "x": 4,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_Gym-4",
+            "x": 7,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_Gym_EventScript_Tucker",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VermilionCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 14,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "9",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 14,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "9",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 14,
+                "y": 25,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "9",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "VermilionCity_Gym",
+    "dialogs": [
+        {
+            "title": "VermilionCity_Gym_Text_BailyPostBattle",
+            "id": "VermilionCity_Gym_EventScript_Baily",
+            "text": "Okay, I'll talk!\n\nLT. SURGE said he hid door\nswitches inside something."
+        },
+        {
+            "title": "VermilionCity_Gym_Text_DwaynePostBattle",
+            "id": "VermilionCity_Gym_EventScript_Dwayne",
+            "text": "LT. SURGE installed the traps in\nthe GYM himself.\n\nHe set up double locks everywhere.\nLet me give you a hint.\n\nWhen you open the first lock, the\nsecond lock is right next to it."
+        },
+        {
+            "title": "VermilionCity_Gym_Text_GymGuyAdvice",
+            "id": "VermilionCity_Gym_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nLT. SURGE has a nickname.\n\nPeople refer to him as the\nLightning American!\n\nHe's an expert on electric\nPOKéMON.\n\nBIRD/WATER-type POKéMON match\npoorly against the ELECTRIC type.\n\nBeware of paralysis, too.\n\nLT. SURGE is very cautious.\n\nHe's locked himself in, so it won't\nbe easy getting to him."
+        },
+        {
+            "title": "VermilionCity_Gym_Text_GymStatue",
+            "id": "VermilionCity_Gym_EventScript_GymStatue",
+            "text": "VERMILION POKéMON GYM\nLEADER: LT. SURGE\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "VermilionCity_Gym_Text_LtSurgePostBattle",
+            "id": "VermilionCity_Gym_EventScript_LtSurge",
+            "text": "A little word of advice, kid!\n\nElectricity is sure powerful!\n\nBut, it's useless against GROUND-\ntype POKéMON!"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan1",
+            "id": "VermilionCity_Gym_EventScript_TrashCan1",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan1"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan10",
+            "id": "VermilionCity_Gym_EventScript_TrashCan10",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan10"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan11",
+            "id": "VermilionCity_Gym_EventScript_TrashCan11",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan11"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan12",
+            "id": "VermilionCity_Gym_EventScript_TrashCan12",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan12"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan13",
+            "id": "VermilionCity_Gym_EventScript_TrashCan13",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan13"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan14",
+            "id": "VermilionCity_Gym_EventScript_TrashCan14",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan14"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan15",
+            "id": "VermilionCity_Gym_EventScript_TrashCan15",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan15"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan2",
+            "id": "VermilionCity_Gym_EventScript_TrashCan2",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan2"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan3",
+            "id": "VermilionCity_Gym_EventScript_TrashCan3",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan3"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan4",
+            "id": "VermilionCity_Gym_EventScript_TrashCan4",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan4"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan5",
+            "id": "VermilionCity_Gym_EventScript_TrashCan5",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan5"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan6",
+            "id": "VermilionCity_Gym_EventScript_TrashCan6",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan6"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan7",
+            "id": "VermilionCity_Gym_EventScript_TrashCan7",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan7"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan8",
+            "id": "VermilionCity_Gym_EventScript_TrashCan8",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan8"
+        },
+        {
+            "title": "VermilionCity_Gym_EventScript_TrashCan9",
+            "id": "VermilionCity_Gym_EventScript_TrashCan9",
+            "text": "TODO: VermilionCity_Gym_EventScript_TrashCan9"
+        },
+        {
+            "title": "VermilionCity_Gym_Text_TuckerPostBattle",
+            "id": "VermilionCity_Gym_EventScript_Tucker",
+            "text": "It's not easy opening that door.\n\nLT. SURGE was always famous for\nhis cautious nature in the Army."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,312 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_OutcastIsland",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_OUTCAST_ISLAND",
+        "sourceMapId": "MAP_SIX_ISLAND_OUTCAST_ISLAND",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 80
+    },
+    "start": {
+        "y": 15,
+        "x": 11
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 15,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 11,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 11,
+            "h": 7,
+            "x": 13
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 5,
+            "x": 11
+        },
+        {
+            "y": 21,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 21,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 22,
+            "w": 6,
+            "h": 58,
+            "x": 0
+        },
+        {
+            "y": 22,
+            "w": 4,
+            "h": 58,
+            "x": 12
+        },
+        {
+            "y": 22,
+            "w": 7,
+            "h": 58,
+            "x": 17
+        },
+        {
+            "y": 25,
+            "w": 2,
+            "h": 55,
+            "x": 6
+        },
+        {
+            "y": 26,
+            "w": 4,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 54,
+            "x": 16
+        },
+        {
+            "y": 30,
+            "w": 3,
+            "h": 50,
+            "x": 8
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 49,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_OutcastIsland-0",
+            "x": 9,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Rocket",
+                "flag": "FLAG_HIDE_FIVE_ISLAND_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-1",
+            "x": 12,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_FISHER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Tylor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-2",
+            "x": 13,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Mymo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-3",
+            "x": 14,
+            "y": 61,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Nicole",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-4",
+            "x": 10,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Ava",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-5",
+            "x": 11,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_TUBER_M_WATER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_Geb",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SixIsland_OutcastIsland-6",
+            "x": 11,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_OutcastIsland_EventScript_ItemPPUp",
+                "flag": "FLAG_HIDE_SIX_ISLAND_OUTCAST_ISLAND_PP_UP"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_OutcastIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_AlteringCave",
+                "x": 18,
+                "y": 22,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_ALTERING_CAVE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-SixIsland_OutcastIsland-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 79,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_GreenPath",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_SIX_ISLAND_GREEN_PATH"
+            }
+        }
+    ],
+    "name": "SixIsland_OutcastIsland",
+    "dialogs": [
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_Ava",
+            "id": "SixIsland_OutcastIsland_EventScript_Ava",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_Ava"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_Geb",
+            "id": "SixIsland_OutcastIsland_EventScript_Geb",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_Geb"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_ItemPPUp",
+            "id": "SixIsland_OutcastIsland_EventScript_ItemPPUp",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_ItemPPUp"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_Mymo",
+            "id": "SixIsland_OutcastIsland_EventScript_Mymo",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_Mymo"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_Nicole",
+            "id": "SixIsland_OutcastIsland_EventScript_Nicole",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_Nicole"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_Text_RocketPostBattle",
+            "id": "SixIsland_OutcastIsland_EventScript_Rocket",
+            "text": "So listen, you haven't seen any\nrare POKéMON, have you?"
+        },
+        {
+            "title": "SixIsland_OutcastIsland_EventScript_Tylor",
+            "id": "SixIsland_OutcastIsland_EventScript_Tylor",
+            "text": "TODO: SixIsland_OutcastIsland_EventScript_Tylor"
+        }
+    ],
+    "jumps": []
+}

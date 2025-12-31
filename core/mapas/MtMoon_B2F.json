@@ -1,0 +1,1069 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtMoon_B2F",
+    "meta": {
+        "layoutId": "LAYOUT_MT_MOON_B2F",
+        "sourceMapId": "MAP_MT_MOON_B2F",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_Cave",
+        "height": 40
+    },
+    "start": {
+        "y": 3,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 28,
+            "h": 2,
+            "x": 20
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 16,
+            "x": 20
+        },
+        {
+            "y": 5,
+            "w": 6,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 5,
+            "w": 11,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 9,
+            "x": 27
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 2,
+            "x": 32
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 2,
+            "x": 37
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 9,
+            "x": 42
+        },
+        {
+            "y": 7,
+            "w": 8,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 5,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 32,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 5,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 28,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 13,
+            "w": 5,
+            "h": 27,
+            "x": 2
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 3,
+            "x": 17
+        },
+        {
+            "y": 14,
+            "w": 14,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 4,
+            "x": 35
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 25,
+            "x": 47
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 4,
+            "x": 15
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 1,
+            "x": 37
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 7,
+            "x": 29
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 8,
+            "x": 41
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 21,
+            "w": 2,
+            "h": 6,
+            "x": 21
+        },
+        {
+            "y": 21,
+            "w": 1,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 5,
+            "x": 26
+        },
+        {
+            "y": 23,
+            "w": 8,
+            "h": 4,
+            "x": 13
+        },
+        {
+            "y": 23,
+            "w": 3,
+            "h": 4,
+            "x": 23
+        },
+        {
+            "y": 23,
+            "w": 2,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 23,
+            "w": 11,
+            "h": 3,
+            "x": 30
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 4,
+            "x": 42
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 3,
+            "x": 27
+        },
+        {
+            "y": 26,
+            "w": 9,
+            "h": 1,
+            "x": 32
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 10,
+            "x": 13
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 2,
+            "x": 32
+        },
+        {
+            "y": 27,
+            "w": 2,
+            "h": 10,
+            "x": 35
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 28,
+            "w": 1,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 29,
+            "w": 5,
+            "h": 11,
+            "x": 42
+        },
+        {
+            "y": 30,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 6,
+            "x": 16
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 5,
+            "x": 15
+        },
+        {
+            "y": 33,
+            "w": 18,
+            "h": 4,
+            "x": 17
+        },
+        {
+            "y": 39,
+            "w": 34,
+            "h": 1,
+            "x": 8
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtMoon_B2F-0",
+            "x": 13,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_FOSSIL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_DOME_FOSSIL",
+                "script": "MtMoon_B2F_EventScript_DomeFossil",
+                "flag": "FLAG_HIDE_DOME_FOSSIL"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-1",
+            "x": 14,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_FOSSIL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_HELIX_FOSSIL",
+                "script": "MtMoon_B2F_EventScript_HelixFossil",
+                "flag": "FLAG_HIDE_HELIX_FOSSIL"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-2",
+            "x": 13,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_MIGUEL",
+                "script": "MtMoon_B2F_EventScript_Miguel",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-3",
+            "x": 37,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_Grunt4",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-4",
+            "x": 12,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-5",
+            "x": 35,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_Grunt3",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-6",
+            "x": 18,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-7",
+            "x": 30,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_ItemStarPiece",
+                "flag": "FLAG_HIDE_MT_MOON_B2F_STAR_PIECE"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-8",
+            "x": 35,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_ItemTM46",
+                "flag": "FLAG_HIDE_MT_MOON_B2F_TM46"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-9",
+            "x": 24,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_ItemRevive",
+                "flag": "FLAG_HIDE_MT_MOON_B2F_REVIVE"
+            }
+        },
+        {
+            "id": "npc-MtMoon_B2F-10",
+            "x": 3,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "MtMoon_B2F_EventScript_ItemAntidote",
+                "flag": "FLAG_HIDE_MT_MOON_B2F_ANTIDOTE"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtMoon_B2F-1",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 21,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 22,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_B2F-2",
+            "type": "door",
+            "rect": {
+                "x": 31,
+                "y": 11,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 17,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_B2F-3",
+            "type": "door",
+            "rect": {
+                "x": 17,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 26,
+                "y": 36,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-MtMoon_B2F-4",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtMoon_B1F",
+                "x": 39,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_MOON_B1F",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "MtMoon_B2F",
+    "dialogs": [
+        {
+            "title": "MtMoon_B2F_Text_YouWantDomeFossil",
+            "id": "MtMoon_B2F_EventScript_DomeFossil",
+            "text": "Do you want the DOME FOSSIL?\n\nAll right.\nThen this fossil is mine!"
+        },
+        {
+            "title": "MtMoon_B2F_Text_Grunt1PostBattle",
+            "id": "MtMoon_B2F_EventScript_Grunt1",
+            "text": "You made me mad!\nTEAM ROCKET will blacklist you!"
+        },
+        {
+            "title": "MtMoon_B2F_Text_Grunt2PostBattle",
+            "id": "MtMoon_B2F_EventScript_Grunt2",
+            "text": "Darn it all!\nMy associates won't stand for this!"
+        },
+        {
+            "title": "MtMoon_B2F_Text_Grunt3PostBattle",
+            "id": "MtMoon_B2F_EventScript_Grunt3",
+            "text": "If you find a fossil, give it to me\nand scram!"
+        },
+        {
+            "title": "MtMoon_B2F_Text_Grunt4PostBattle",
+            "id": "MtMoon_B2F_EventScript_Grunt4",
+            "text": "POKéMON lived here long before\npeople came."
+        },
+        {
+            "title": "MtMoon_B2F_Text_YouWantHelixFossil",
+            "id": "MtMoon_B2F_EventScript_HelixFossil",
+            "text": "Do you want the HELIX FOSSIL?\n\nAll right.\nThen this fossil is mine!"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_ItemAntidote",
+            "id": "MtMoon_B2F_EventScript_ItemAntidote",
+            "text": "TODO: MtMoon_B2F_EventScript_ItemAntidote"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_ItemRevive",
+            "id": "MtMoon_B2F_EventScript_ItemRevive",
+            "text": "TODO: MtMoon_B2F_EventScript_ItemRevive"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_ItemStarPiece",
+            "id": "MtMoon_B2F_EventScript_ItemStarPiece",
+            "text": "TODO: MtMoon_B2F_EventScript_ItemStarPiece"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_ItemTM46",
+            "id": "MtMoon_B2F_EventScript_ItemTM46",
+            "text": "TODO: MtMoon_B2F_EventScript_ItemTM46"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_Miguel",
+            "id": "MtMoon_B2F_EventScript_Miguel",
+            "text": "TODO: MtMoon_B2F_EventScript_Miguel"
+        },
+        {
+            "title": "MtMoon_B2F_EventScript_MiguelTrigger",
+            "id": "MtMoon_B2F_EventScript_MiguelTrigger",
+            "text": "TODO: MtMoon_B2F_EventScript_MiguelTrigger"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 1,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 14,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 18,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 29,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 30,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 31,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 32,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 33,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 34,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 36,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 37,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 38,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 39,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 40,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 41,
+            "y": 24,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 15,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 16,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 22,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 23,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 24,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 25,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 26,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 27,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 28,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 29,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 30,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 31,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 32,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 33,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 34,
+            "y": 34,
+            "dir": "down"
+        },
+        {
+            "x": 35,
+            "y": 34,
+            "dir": "down"
+        }
+    ]
+}

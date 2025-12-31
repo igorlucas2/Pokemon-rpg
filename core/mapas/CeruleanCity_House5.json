@@ -1,0 +1,107 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_House5",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CITY_HOUSE5",
+        "sourceMapId": "MAP_CERULEAN_CITY_HOUSE5",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 2
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_House5-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_House5_EventScript_BerryPowderMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_House5-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 17,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "13",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeruleanCity_House5",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_House5_EventScript_BerryCrushRankings",
+            "id": "CeruleanCity_House5_EventScript_BerryCrushRankings",
+            "text": "TODO: CeruleanCity_House5_EventScript_BerryCrushRankings"
+        },
+        {
+            "title": "CeruleanCity_House1_Text_AnyInterestInBerries",
+            "id": "CeruleanCity_House5_EventScript_BerryPowderMan",
+            "text": "I concoct a variety of medicine\nfrom BERRY POWDER.\n\nUsing good BERRY POWDER, I can\nmake any kind of medicine.\n\nNow tell me, have you any interest\nin BERRIES?\n\nAh, good! For you, then, I have\njust the thing.\n\nThere's something new on the second\nfloor of POKéMON CENTERS, at the\nDIRECT CORNER.\n\nThey installed a Wireless Adapter\nmachine for crushing BERRIES.\n\nThis is where you come in.\n\nI have a favor to ask, one that\nI can entrust only to you.\n\nCould you make BERRY POWDER for\nme using that machine?\n\nDon't forget, the machine is at the\nDIRECT CORNER of POKéMON CENTERS.\n\nI'll concoct medicine for you if\nyou bring me some BERRY POWDER.\n\nDon't forget, crush BERRIES into\nBERRY POWDER and bring it to me."
+        }
+    ],
+    "jumps": []
+}

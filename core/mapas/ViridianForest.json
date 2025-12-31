@@ -1,0 +1,647 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ViridianForest",
+    "meta": {
+        "layoutId": "LAYOUT_VIRIDIAN_FOREST",
+        "sourceMapId": "MAP_VIRIDIAN_FOREST",
+        "width": 54,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_ViridianForest",
+        "height": 69
+    },
+    "start": {
+        "y": 5,
+        "x": 11
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 54,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 11,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 18,
+            "x": 24
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 64,
+            "x": 51
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 61,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 19,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 15,
+            "h": 7,
+            "x": 32
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 4,
+            "x": 7
+        },
+        {
+            "y": 11,
+            "w": 3,
+            "h": 15,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 56,
+            "x": 1
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 14,
+            "x": 8
+        },
+        {
+            "y": 18,
+            "w": 6,
+            "h": 7,
+            "x": 45
+        },
+        {
+            "y": 20,
+            "w": 6,
+            "h": 35,
+            "x": 33
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 7,
+            "x": 19
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 5,
+            "x": 18
+        },
+        {
+            "y": 26,
+            "w": 12,
+            "h": 5,
+            "x": 21
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 1,
+            "x": 43
+        },
+        {
+            "y": 29,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 30,
+            "w": 3,
+            "h": 13,
+            "x": 44
+        },
+        {
+            "y": 31,
+            "w": 9,
+            "h": 12,
+            "x": 24
+        },
+        {
+            "y": 34,
+            "w": 15,
+            "h": 5,
+            "x": 3
+        },
+        {
+            "y": 36,
+            "w": 6,
+            "h": 7,
+            "x": 18
+        },
+        {
+            "y": 44,
+            "w": 9,
+            "h": 11,
+            "x": 3
+        },
+        {
+            "y": 44,
+            "w": 1,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 46,
+            "w": 9,
+            "h": 9,
+            "x": 17
+        },
+        {
+            "y": 46,
+            "w": 6,
+            "h": 9,
+            "x": 45
+        },
+        {
+            "y": 55,
+            "w": 3,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 59,
+            "w": 1,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 60,
+            "w": 1,
+            "h": 1,
+            "x": 31
+        },
+        {
+            "y": 62,
+            "w": 24,
+            "h": 7,
+            "x": 3
+        },
+        {
+            "y": 62,
+            "w": 18,
+            "h": 7,
+            "x": 33
+        },
+        {
+            "y": 63,
+            "w": 6,
+            "h": 6,
+            "x": 27
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ViridianForest-0",
+            "x": 29,
+            "y": 58,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Youngster",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-1",
+            "x": 45,
+            "y": 58,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-2",
+            "x": 47,
+            "y": 45,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Rick",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-3",
+            "x": 47,
+            "y": 29,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Doug",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-4",
+            "x": 7,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Sammy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-5",
+            "x": 5,
+            "y": 41,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_ItemPokeBall",
+                "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-6",
+            "x": 40,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_ItemAntidote",
+                "flag": "FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-7",
+            "x": 21,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_ItemPotion",
+                "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-8",
+            "x": 43,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Anthony",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-9",
+            "x": 16,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_BUG_CATCHER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_Charlie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianForest-10",
+            "x": 49,
+            "y": 60,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianForest_EventScript_ItemPotion2",
+                "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION_2"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ViridianForest-1",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 62,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_SouthEntrance",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianForest-2",
+            "type": "door",
+            "rect": {
+                "x": 28,
+                "y": 62,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_SouthEntrance",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianForest-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_NorthEntrance",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianForest-4",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_NorthEntrance",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianForest-5",
+            "type": "door",
+            "rect": {
+                "x": 30,
+                "y": 62,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_SouthEntrance",
+                "x": 7,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-ViridianForest-6",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route2_ViridianForest_NorthEntrance",
+                "x": 7,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ViridianForest",
+    "dialogs": [
+        {
+            "title": "ViridianForest_Text_AnthonyPostBattle",
+            "id": "ViridianForest_EventScript_Anthony",
+            "text": "I lost some of my allowance…"
+        },
+        {
+            "title": "ViridianForest_Text_RanOutOfPokeBalls",
+            "id": "ViridianForest_EventScript_Boy",
+            "text": "I was throwing POKé BALLS to\ncatch POKéMON, and I ran out.\n\nThat's why you can never have too\nmany POKé BALLS."
+        },
+        {
+            "title": "ViridianForest_Text_CharliePostBattle",
+            "id": "ViridianForest_EventScript_Charlie",
+            "text": "BUG POKéMON evolve quickly.\nThey're a lot of fun!"
+        },
+        {
+            "title": "ViridianForest_Text_DougPostBattle",
+            "id": "ViridianForest_EventScript_Doug",
+            "text": "That totally stinks! I'm going to\ncatch some stronger ones!"
+        },
+        {
+            "title": "ViridianForest_Text_LeavingViridianForest",
+            "id": "ViridianForest_EventScript_ExitSign",
+            "text": "LEAVING VIRIDIAN FOREST\nPEWTER CITY AHEAD"
+        },
+        {
+            "title": "ViridianForest_EventScript_ItemAntidote",
+            "id": "ViridianForest_EventScript_ItemAntidote",
+            "text": "TODO: ViridianForest_EventScript_ItemAntidote"
+        },
+        {
+            "title": "ViridianForest_EventScript_ItemPokeBall",
+            "id": "ViridianForest_EventScript_ItemPokeBall",
+            "text": "TODO: ViridianForest_EventScript_ItemPokeBall"
+        },
+        {
+            "title": "ViridianForest_EventScript_ItemPotion",
+            "id": "ViridianForest_EventScript_ItemPotion",
+            "text": "TODO: ViridianForest_EventScript_ItemPotion"
+        },
+        {
+            "title": "ViridianForest_EventScript_ItemPotion2",
+            "id": "ViridianForest_EventScript_ItemPotion2",
+            "text": "TODO: ViridianForest_EventScript_ItemPotion2"
+        },
+        {
+            "title": "ViridianForest_Text_RickPostBattle",
+            "id": "ViridianForest_EventScript_Rick",
+            "text": "Ssh! You'll scare the bugs away.\nAnother time, okay?"
+        },
+        {
+            "title": "ViridianForest_Text_SammyPostBattle",
+            "id": "ViridianForest_EventScript_Sammy",
+            "text": "Sometimes, you can find stuff on\nthe ground.\n\nI'm looking for the stuff I\ndropped. Can you help me?"
+        },
+        {
+            "title": "ViridianForest_Text_AvoidGrassyAreasWhenWeak",
+            "id": "ViridianForest_EventScript_TrainerTips1",
+            "text": "TRAINER TIPS\n\nIf your POKéMON are weak and you\nwant to avoid battles, stay away\nfrom grassy areas!"
+        },
+        {
+            "title": "ViridianForest_Text_UseAntidoteForPoison",
+            "id": "ViridianForest_EventScript_TrainerTips2",
+            "text": "For poison, use ANTIDOTE!\nGet it at POKéMON MARTS!"
+        },
+        {
+            "title": "ViridianForest_Text_ContactOakViaPCToRatePokedex",
+            "id": "ViridianForest_EventScript_TrainerTips3",
+            "text": "TRAINER TIPS\n\nContact PROF. OAK via a PC to\nget your POKéDEX evaluated!"
+        },
+        {
+            "title": "ViridianForest_Text_CantCatchOwnedMons",
+            "id": "ViridianForest_EventScript_TrainerTips4",
+            "text": "TRAINER TIPS\n\nYou can't catch a POKéMON that\nbelongs to someone else.\n\nThrow POKé BALLS only at wild\nPOKéMON to catch them!"
+        },
+        {
+            "title": "ViridianForest_Text_WeakenMonsBeforeCapture",
+            "id": "ViridianForest_EventScript_TrainerTips5",
+            "text": "TRAINER TIPS\n\nWeaken POKéMON before attempting\ncapture!\n\nWhen healthy, they may escape!"
+        },
+        {
+            "title": "ViridianForest_Text_FriendsItchingToBattle",
+            "id": "ViridianForest_EventScript_Youngster",
+            "text": "I came here with some friends to\ncatch us some BUG POKéMON!\n\nThey're all itching to get into\nsome POKéMON battles!"
+        }
+    ],
+    "jumps": []
+}

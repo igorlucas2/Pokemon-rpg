@@ -1,0 +1,216 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SafariZone_West_RestHouse",
+    "meta": {
+        "layoutId": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
+        "sourceMapId": "MAP_SAFARI_ZONE_WEST_REST_HOUSE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SafariZoneBuilding",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 8,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SafariZone_West_RestHouse-0",
+            "x": 3,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_West_RestHouse_EventScript_Scientist",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_West_RestHouse-1",
+            "x": 2,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_West_RestHouse_EventScript_Man",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SafariZone_West_RestHouse-2",
+            "x": 7,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_West_RestHouse_EventScript_CooltrainerF",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SafariZone_West_RestHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 19,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "10",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_West_RestHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 19,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "10",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_West_RestHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 19,
+                "y": 18,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "10",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SafariZone_West_RestHouse",
+    "dialogs": [
+        {
+            "title": "SafariZone_West_Text_HikedLotsDidntSeeMonIWanted",
+            "id": "SafariZone_West_RestHouse_EventScript_CooltrainerF",
+            "text": "I hiked a lot, but I didn't see any\nPOKéMON I wanted."
+        },
+        {
+            "title": "SafariZone_West_Text_BaitMakesMonStickAround",
+            "id": "SafariZone_West_RestHouse_EventScript_Man",
+            "text": "Using BAIT will make POKéMON more\nlikely to stick around if they get\nbusy eating."
+        },
+        {
+            "title": "SafariZone_West_Text_RocksMakeMonRunButEasierCatch",
+            "id": "SafariZone_West_RestHouse_EventScript_Scientist",
+            "text": "Tossing ROCKS at POKéMON might\nmake them run, but they'll be\neasier to catch."
+        }
+    ],
+    "jumps": []
+}

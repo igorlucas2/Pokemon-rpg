@@ -1,0 +1,573 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "MtEmber_SummitPath_2F",
+    "meta": {
+        "layoutId": "LAYOUT_MT_EMBER_SUMMIT_PATH_2F",
+        "sourceMapId": "MAP_MT_EMBER_SUMMIT_PATH_2F",
+        "width": 48,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_MtEmber",
+        "height": 46
+    },
+    "start": {
+        "y": 2,
+        "x": 24
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 48,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 24,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 23,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 24
+        },
+        {
+            "y": 3,
+            "w": 21,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 4,
+            "w": 21,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 47
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 5,
+            "x": 24
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 4,
+            "x": 28
+        },
+        {
+            "y": 5,
+            "w": 12,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 4,
+            "x": 26
+        },
+        {
+            "y": 6,
+            "w": 3,
+            "h": 1,
+            "x": 36
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 5,
+            "x": 30
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 4,
+            "x": 41
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 38,
+            "x": 34
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 38
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 37,
+            "x": 47
+        },
+        {
+            "y": 10,
+            "w": 23,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 39
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 5,
+            "x": 26
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 2,
+            "x": 40
+        },
+        {
+            "y": 11,
+            "w": 4,
+            "h": 35,
+            "x": 43
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 34,
+            "x": 24
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 4,
+            "x": 30
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 34,
+            "x": 33
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 3,
+            "x": 38
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 34,
+            "x": 42
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 33,
+            "x": 32
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 33,
+            "x": 40
+        },
+        {
+            "y": 14,
+            "w": 18,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 32,
+            "x": 39
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 32,
+            "x": 41
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 15,
+            "w": 3,
+            "h": 31,
+            "x": 21
+        },
+        {
+            "y": 16,
+            "w": 16,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 3,
+            "x": 26
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 1,
+            "x": 28
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 30,
+            "x": 38
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 29,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 3,
+            "h": 2,
+            "x": 27
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 19,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 27,
+            "x": 31
+        },
+        {
+            "y": 20,
+            "w": 13,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 20,
+            "w": 5,
+            "h": 26,
+            "x": 26
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 24,
+            "x": 16
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 24,
+            "w": 1,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 26,
+            "w": 10,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 28,
+            "w": 4,
+            "h": 18,
+            "x": 12
+        },
+        {
+            "y": 32,
+            "w": 6,
+            "h": 14,
+            "x": 0
+        },
+        {
+            "y": 32,
+            "w": 1,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 33,
+            "w": 1,
+            "h": 13,
+            "x": 6
+        },
+        {
+            "y": 34,
+            "w": 2,
+            "h": 12,
+            "x": 10
+        },
+        {
+            "y": 40,
+            "w": 3,
+            "h": 6,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-MtEmber_SummitPath_2F-0",
+            "x": 40,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-1",
+            "x": 33,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-2",
+            "x": 15,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-3",
+            "x": 13,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_15"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-4",
+            "x": 13,
+            "y": 21,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_16"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-5",
+            "x": 7,
+            "y": 38,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_17"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-6",
+            "x": 9,
+            "y": 35,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_18"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-7",
+            "x": 7,
+            "y": 34,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_19"
+            }
+        },
+        {
+            "id": "npc-MtEmber_SummitPath_2F-8",
+            "x": 15,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_RockSmash",
+                "flag": "FLAG_TEMP_1A"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-MtEmber_SummitPath_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 39,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_SummitPath_1F",
+                "x": 11,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_SUMMIT_PATH_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-MtEmber_SummitPath_2F-2",
+            "type": "door",
+            "rect": {
+                "x": 39,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "MtEmber_SummitPath_3F",
+                "x": 2,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_MT_EMBER_SUMMIT_PATH_3F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "MtEmber_SummitPath_2F",
+    "dialogs": [
+        {
+            "title": "EventScript_RockSmash",
+            "id": "EventScript_RockSmash",
+            "text": "TODO: EventScript_RockSmash"
+        }
+    ],
+    "jumps": []
+}

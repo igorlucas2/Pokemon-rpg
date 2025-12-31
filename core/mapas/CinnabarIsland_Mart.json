@@ -1,0 +1,216 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_Mart",
+    "meta": {
+        "layoutId": "LAYOUT_MART",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_MART",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Mart",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_Mart-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Mart_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Mart-1",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Mart_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Mart-2",
+            "x": 8,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Mart_EventScript_Scientist",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_Mart-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 19,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_Mart-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 19,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_Mart-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 19,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CinnabarIsland_Mart",
+    "dialogs": [
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "CinnabarIsland_Mart_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "CinnabarIsland_Mart_Text_ExtraItemsNeverHurt",
+            "id": "CinnabarIsland_Mart_EventScript_Scientist",
+            "text": "It never hurts to have extra items.\nYou never know what might happen."
+        },
+        {
+            "title": "CinnabarIsland_Mart_Text_DontTheyHaveXAttack",
+            "id": "CinnabarIsland_Mart_EventScript_Woman",
+            "text": "Don't they have X ATTACK?\n\nI like it because it raises the\nATTACK stat in battle."
+        }
+    ],
+    "jumps": []
+}

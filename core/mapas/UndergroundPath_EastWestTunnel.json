@@ -1,0 +1,107 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "UndergroundPath_EastWestTunnel",
+    "meta": {
+        "layoutId": "LAYOUT_UNDERGROUND_PATH_EAST_WEST_TUNNEL",
+        "sourceMapId": "MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL",
+        "width": 80,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_UndergroundPath",
+        "height": 7
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 80,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 3,
+            "x": 77
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 4,
+            "x": 1
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 79
+        },
+        {
+            "y": 6,
+            "w": 76,
+            "h": 1,
+            "x": 3
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-UndergroundPath_EastWestTunnel-1",
+            "type": "door",
+            "rect": {
+                "x": 76,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_EastEntrance",
+                "x": 7,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_EAST_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-UndergroundPath_EastWestTunnel-2",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "UndergroundPath_WestEntrance",
+                "x": 7,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_UNDERGROUND_PATH_WEST_ENTRANCE",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "UndergroundPath_EastWestTunnel",
+    "dialogs": [],
+    "jumps": []
+}

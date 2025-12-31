@@ -1,0 +1,319 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SixIsland_GreenPath",
+    "meta": {
+        "layoutId": "LAYOUT_SIX_ISLAND_GREEN_PATH",
+        "sourceMapId": "MAP_SIX_ISLAND_GREEN_PATH",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands67",
+        "height": 20
+    },
+    "start": {
+        "y": 5,
+        "x": 67
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 67,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 12,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 56,
+            "h": 2,
+            "x": 15
+        },
+        {
+            "y": 7,
+            "w": 11,
+            "h": 13,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 27,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 28,
+            "h": 2,
+            "x": 42
+        },
+        {
+            "y": 10,
+            "w": 27,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 10,
+            "w": 16,
+            "h": 10,
+            "x": 47
+        },
+        {
+            "y": 10,
+            "w": 5,
+            "h": 1,
+            "x": 65
+        },
+        {
+            "y": 13,
+            "w": 7,
+            "h": 1,
+            "x": 40
+        },
+        {
+            "y": 13,
+            "w": 6,
+            "h": 1,
+            "x": 63
+        },
+        {
+            "y": 14,
+            "w": 26,
+            "h": 6,
+            "x": 11
+        },
+        {
+            "y": 14,
+            "w": 6,
+            "h": 6,
+            "x": 41
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 6,
+            "x": 63
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 5,
+            "x": 71
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 4,
+            "x": 70
+        },
+        {
+            "y": 17,
+            "w": 4,
+            "h": 3,
+            "x": 37
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 3,
+            "x": 68
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SixIsland_GreenPath-0",
+            "x": 11,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SixIsland_GreenPath_EventScript_Jaclyn",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SixIsland_GreenPath-1",
+            "type": "door",
+            "rect": {
+                "x": 63,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_PatternBush",
+                "x": 55,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_PATTERN_BUSH",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_GreenPath-2",
+            "type": "door",
+            "rect": {
+                "x": 64,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_PatternBush",
+                "x": 55,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_PATTERN_BUSH",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_GreenPath-3",
+            "type": "door",
+            "rect": {
+                "x": 45,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_PatternBush",
+                "x": 4,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_PATTERN_BUSH",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SixIsland_GreenPath-4",
+            "type": "door",
+            "rect": {
+                "x": 46,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_PatternBush",
+                "x": 4,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SIX_ISLAND_PATTERN_BUSH",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-SixIsland_GreenPath-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_OutcastIsland",
+                "connection": {
+                    "direction": "up",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": 0,
+                "destMap": "MAP_SIX_ISLAND_OUTCAST_ISLAND"
+            }
+        },
+        {
+            "id": "conn-SixIsland_GreenPath-right-2",
+            "type": "door",
+            "rect": {
+                "x": 71,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "SixIsland_WaterPath",
+                "connection": {
+                    "direction": "right",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": 0,
+                "destMap": "MAP_SIX_ISLAND_WATER_PATH"
+            }
+        }
+    ],
+    "name": "SixIsland_GreenPath",
+    "dialogs": [
+        {
+            "title": "SixIsland_GreenPath_EventScript_Jaclyn",
+            "id": "SixIsland_GreenPath_EventScript_Jaclyn",
+            "text": "TODO: SixIsland_GreenPath_EventScript_Jaclyn"
+        },
+        {
+            "title": "SixIsland_GreenPath_Text_RightRouteSign",
+            "id": "SixIsland_GreenPath_EventScript_LeftRouteSign",
+            "text": "GREEN PATH\nThink Green, Keep Nature Clean!"
+        },
+        {
+            "title": "SixIsland_GreenPath_Text_LeftRouteSign",
+            "id": "SixIsland_GreenPath_EventScript_RightRouteSign",
+            "text": "GREEN PATH\nPATTERN BUSH AHEAD"
+        }
+    ],
+    "jumps": []
+}

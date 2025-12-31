@@ -1,0 +1,96 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_1F_Room6",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM1",
+        "sourceMapId": "MAP_SSANNE_1F_ROOM6",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 8
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_1F_Room6-0",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Room6_EventScript_Woman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_1F_Room6-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Corridor",
+                "x": 20,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_CORRIDOR",
+                "destWarpId": "12",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SSAnne_1F_Room6",
+    "dialogs": [
+        {
+            "title": "SSAnne_1F_Room6_Text_TakeAShortRest",
+            "id": "SSAnne_1F_Room6_EventScript_Woman",
+            "text": "You look tired. Would you like to\ntake a short rest?\n\nI'm glad to see that everyone is\nlooking refreshed and chipper."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,471 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_GYM",
+        "sourceMapId": "MAP_CELADON_CITY_GYM",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CeladonGym",
+        "height": 20
+    },
+    "start": {
+        "y": 0,
+        "x": 6
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 18,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 18,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 4,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 3,
+            "x": 9
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 19,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Gym-0",
+            "x": 3,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Kay",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-1",
+            "x": 9,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Bridget",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-2",
+            "x": 10,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Tina",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-3",
+            "x": 2,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Tamia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-4",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BEAUTY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Lori",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-5",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Lisa",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-6",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ERIKA",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Erika",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-7",
+            "x": 8,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_COOLTRAINER_F",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Gym_EventScript_Mary",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-8",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-9",
+            "x": 3,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Gym-10",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 11,
+                "y": 30,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeladonCity_Gym",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Gym_Text_BridgetPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Bridget",
+            "text": "GRASS-type POKéMON are tough\nagainst the WATER type.\n\nThey also have an edge on ROCK-\nand GROUND-type POKéMON."
+        },
+        {
+            "title": "CeladonCity_Gym_Text_ErikaPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Erika",
+            "text": "You are cataloging POKéMON?\nI must say I'm impressed.\n\nI would never collect POKéMON if\nthey were unattractive."
+        },
+        {
+            "title": "CeladonCity_Gym_Text_GymStatue",
+            "id": "CeladonCity_Gym_EventScript_GymStatue",
+            "text": "CELADON POKéMON GYM\nLEADER: ERIKA\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "CeladonCity_Gym_Text_KayPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Kay",
+            "text": "Bleaah!\nI hope ERIKA wipes you out!"
+        },
+        {
+            "title": "CeladonCity_Gym_Text_LisaPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Lisa",
+            "text": "Our LEADER ERIKA might be quiet,\nbut she's famous around here."
+        },
+        {
+            "title": "CeladonCity_Gym_Text_LoriPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Lori",
+            "text": "I have a blind date coming up.\nI have to learn to be polite,\nespecially if I have to battle."
+        },
+        {
+            "title": "CeladonCity_Gym_Text_MaryPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Mary",
+            "text": "I didn't bring my best POKéMON.\nWait until next time!"
+        },
+        {
+            "title": "CeladonCity_Gym_Text_TamiaPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Tamia",
+            "text": "We only use GRASS-type POKéMON at\nour GYM.\n\nWhy? We also use them for making\nflower arrangements!"
+        },
+        {
+            "title": "CeladonCity_Gym_Text_TinaPostBattle",
+            "id": "CeladonCity_Gym_EventScript_Tina",
+            "text": "Oh, you were looking at ERIKA…\nYou weren't looking at me…"
+        },
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,240 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route6_NorthEntrance",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_NORTH_SOUTH_ENTRANCE",
+        "sourceMapId": "MAP_ROUTE6_NORTH_ENTRANCE",
+        "width": 9,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 1,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 9,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 9,
+            "x": 2
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 9,
+            "x": 6
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 3,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route6_NorthEntrance-0",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route6_NorthEntrance_EventScript_Guard",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route6_NorthEntrance-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 34,
+                "y": 46,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "11",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route6_NorthEntrance-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity",
+                "x": 34,
+                "y": 46,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY",
+                "destWarpId": "11",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route6_NorthEntrance-3",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6",
+                "x": 12,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE6",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route6_NorthEntrance-4",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route6",
+                "x": 12,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE6",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route6_NorthEntrance",
+    "dialogs": [
+        {
+            "title": "Route6_NorthEntrance_Text_HiHowsItGoing",
+            "id": "Route6_NorthEntrance_EventScript_Guard",
+            "text": "Hi, how's it going?"
+        },
+        {
+            "title": "Route6_NorthEntrance_EventScript_GuardTriggerLeft",
+            "id": "Route6_NorthEntrance_EventScript_GuardTriggerLeft",
+            "text": "TODO: Route6_NorthEntrance_EventScript_GuardTriggerLeft"
+        },
+        {
+            "title": "Route6_NorthEntrance_EventScript_GuardTriggerMid",
+            "id": "Route6_NorthEntrance_EventScript_GuardTriggerMid",
+            "text": "TODO: Route6_NorthEntrance_EventScript_GuardTriggerMid"
+        },
+        {
+            "title": "Route6_NorthEntrance_EventScript_GuardTriggerRight",
+            "id": "Route6_NorthEntrance_EventScript_GuardTriggerRight",
+            "text": "TODO: Route6_NorthEntrance_EventScript_GuardTriggerRight"
+        }
+    ],
+    "jumps": []
+}

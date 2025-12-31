@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland_House2",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_THREE_ISLAND_HOUSE2",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland_House2-0",
+            "x": 4,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_ROCKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_House2_EventScript_Rocker",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland_House2-1",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_House2_EventScript_Man",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland",
+                "x": 4,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ThreeIsland_House2",
+    "dialogs": [
+        {
+            "title": "ThreeIsland_House2_Text_IAdmireSabrina",
+            "id": "ThreeIsland_House2_EventScript_Man",
+            "text": "You know about a girl GYM LEADER\nin SAFFRON CITY?\n\nShe uses PSYCHIC-type POKéMON,\nright?\n\nI admire her, I really do.\n\nI've heard that she's one cool\ncustomer and beautiful, too."
+        },
+        {
+            "title": "ThreeIsland_House2_Text_CantMakeThisSpoonBend",
+            "id": "ThreeIsland_House2_EventScript_Rocker",
+            "text": "Urrrrrrrrgggghhhh…\nKwaaaaah!\n\n…It's useless! I can't make this\nspoon bend with my mind.\n\nMaybe I really don't have any\npsychic powers."
+        }
+    ],
+    "jumps": []
+}

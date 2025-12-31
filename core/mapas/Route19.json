@@ -1,0 +1,522 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route19",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE19",
+        "sourceMapId": "MAP_ROUTE19",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_FuchsiaCity",
+        "height": 60
+    },
+    "start": {
+        "y": 0,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 7,
+            "h": 60,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 7,
+            "h": 60,
+            "x": 17
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 6,
+            "x": 14
+        },
+        {
+            "y": 3,
+            "w": 7,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 7,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 7,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 51,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 51,
+            "x": 16
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 48,
+            "x": 8
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 13,
+            "w": 2,
+            "h": 47,
+            "x": 9
+        },
+        {
+            "y": 14,
+            "w": 5,
+            "h": 46,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route19-0",
+            "x": 15,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_LAND",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 6,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Reece",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-1",
+            "x": 10,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_LAND",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Richard",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-2",
+            "x": 12,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Tony",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-3",
+            "x": 18,
+            "y": 33,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
+            "movementRangeX": 5,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Matthew",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-4",
+            "x": 8,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Douglas",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-5",
+            "x": 16,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_David",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-6",
+            "x": 11,
+            "y": 47,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Axle",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-7",
+            "x": 14,
+            "y": 48,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Alice",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-8",
+            "x": 12,
+            "y": 49,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Connie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-9",
+            "x": 9,
+            "y": 48,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Anya",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-10",
+            "x": 8,
+            "y": 41,
+            "sprite": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Lia",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route19-11",
+            "x": 9,
+            "y": 41,
+            "sprite": "OBJ_EVENT_GFX_TUBER_M_WATER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 1,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route19_EventScript_Luc",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "conn-Route19-up-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity",
+                "connection": {
+                    "direction": "up",
+                    "offset": -12
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "up",
+                "offset": -12,
+                "destMap": "MAP_FUCHSIA_CITY"
+            }
+        },
+        {
+            "id": "conn-Route19-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 40,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route20",
+                "connection": {
+                    "direction": "left",
+                    "offset": 40
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 40,
+                "destMap": "MAP_ROUTE20"
+            }
+        }
+    ],
+    "name": "Route19",
+    "dialogs": [
+        {
+            "title": "Route19_EventScript_Alice",
+            "id": "Route19_EventScript_Alice",
+            "text": "TODO: Route19_EventScript_Alice"
+        },
+        {
+            "title": "Route19_EventScript_Anya",
+            "id": "Route19_EventScript_Anya",
+            "text": "TODO: Route19_EventScript_Anya"
+        },
+        {
+            "title": "Route19_EventScript_Axle",
+            "id": "Route19_EventScript_Axle",
+            "text": "TODO: Route19_EventScript_Axle"
+        },
+        {
+            "title": "Route19_EventScript_Connie",
+            "id": "Route19_EventScript_Connie",
+            "text": "TODO: Route19_EventScript_Connie"
+        },
+        {
+            "title": "Route19_EventScript_David",
+            "id": "Route19_EventScript_David",
+            "text": "TODO: Route19_EventScript_David"
+        },
+        {
+            "title": "Route19_EventScript_Douglas",
+            "id": "Route19_EventScript_Douglas",
+            "text": "TODO: Route19_EventScript_Douglas"
+        },
+        {
+            "title": "Route19_EventScript_Lia",
+            "id": "Route19_EventScript_Lia",
+            "text": "TODO: Route19_EventScript_Lia"
+        },
+        {
+            "title": "Route19_EventScript_Luc",
+            "id": "Route19_EventScript_Luc",
+            "text": "TODO: Route19_EventScript_Luc"
+        },
+        {
+            "title": "Route19_EventScript_Matthew",
+            "id": "Route19_EventScript_Matthew",
+            "text": "TODO: Route19_EventScript_Matthew"
+        },
+        {
+            "title": "Route19_EventScript_Reece",
+            "id": "Route19_EventScript_Reece",
+            "text": "TODO: Route19_EventScript_Reece"
+        },
+        {
+            "title": "Route19_EventScript_Richard",
+            "id": "Route19_EventScript_Richard",
+            "text": "TODO: Route19_EventScript_Richard"
+        },
+        {
+            "title": "Route19_Text_RouteSign",
+            "id": "Route19_EventScript_RouteSign",
+            "text": "SEA ROUTE 19\nFUCHSIA CITY - SEAFOAM ISLANDS"
+        },
+        {
+            "title": "Route19_EventScript_Tony",
+            "id": "Route19_EventScript_Tony",
+            "text": "TODO: Route19_EventScript_Tony"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 7,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 3,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 7,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 7,
+            "dir": "down"
+        }
+    ]
+}

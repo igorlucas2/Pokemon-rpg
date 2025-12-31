@@ -1,0 +1,197 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ViridianCity_House",
+    "meta": {
+        "layoutId": "LAYOUT_VIRIDIAN_CITY_HOUSE",
+        "sourceMapId": "MAP_VIRIDIAN_CITY_HOUSE",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ViridianCity_House-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_House_EventScript_BaldingMan",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_House-1",
+            "x": 2,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 2,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_House_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ViridianCity_House-2",
+            "x": 6,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SPEAROW",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ViridianCity_House_EventScript_Speary",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ViridianCity_House-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ViridianCity_House-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ViridianCity_House-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ViridianCity",
+                "x": 25,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VIRIDIAN_CITY",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "ViridianCity_House",
+    "dialogs": [
+        {
+            "title": "ViridianCity_House_Text_NicknamingIsFun",
+            "id": "ViridianCity_House_EventScript_BaldingMan",
+            "text": "Coming up with nicknames is fun,\nbut it's not so easy to do.\n\nClever names are nice, but simple\nnames are easier to remember."
+        },
+        {
+            "title": "ViridianCity_House_Text_MyDaddyLovesMonsToo",
+            "id": "ViridianCity_House_EventScript_LittleGirl",
+            "text": "My daddy loves POKéMON, too."
+        },
+        {
+            "title": "ViridianCity_House_Text_SpearowNameSpeary",
+            "id": "ViridianCity_House_EventScript_NicknameSign",
+            "text": "SPEAROW\nName: SPEARY"
+        },
+        {
+            "title": "ViridianCity_House_Text_Speary",
+            "id": "ViridianCity_House_EventScript_Speary",
+            "text": "SPEARY: Tetweet!"
+        }
+    ],
+    "jumps": []
+}

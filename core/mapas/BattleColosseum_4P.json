@@ -1,0 +1,75 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "BattleColosseum_4P",
+    "meta": {
+        "layoutId": "LAYOUT_BATTLE_COLOSSEUM_4P",
+        "sourceMapId": "MAP_BATTLE_COLOSSEUM_4P",
+        "width": 14,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CableClub",
+        "height": 9
+    },
+    "start": {
+        "y": 3,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 14,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 6,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [],
+    "events": [],
+    "name": "BattleColosseum_4P",
+    "dialogs": [
+        {
+            "title": "BattleColosseum_4P_EventScript_PlayerSpot0",
+            "id": "BattleColosseum_4P_EventScript_PlayerSpot0",
+            "text": "TODO: BattleColosseum_4P_EventScript_PlayerSpot0"
+        },
+        {
+            "title": "BattleColosseum_4P_EventScript_PlayerSpot1",
+            "id": "BattleColosseum_4P_EventScript_PlayerSpot1",
+            "text": "TODO: BattleColosseum_4P_EventScript_PlayerSpot1"
+        },
+        {
+            "title": "BattleColosseum_4P_EventScript_PlayerSpot2",
+            "id": "BattleColosseum_4P_EventScript_PlayerSpot2",
+            "text": "TODO: BattleColosseum_4P_EventScript_PlayerSpot2"
+        },
+        {
+            "title": "BattleColosseum_4P_EventScript_PlayerSpot3",
+            "id": "BattleColosseum_4P_EventScript_PlayerSpot3",
+            "text": "TODO: BattleColosseum_4P_EventScript_PlayerSpot3"
+        }
+    ],
+    "jumps": []
+}

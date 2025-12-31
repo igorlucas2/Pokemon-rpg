@@ -1,0 +1,216 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_Mart",
+    "meta": {
+        "layoutId": "LAYOUT_MART",
+        "sourceMapId": "MAP_CERULEAN_CITY_MART",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Mart",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 11,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_Mart-0",
+            "x": 2,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_CLERK",
+            "facing": "right",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Mart_EventScript_Clerk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_Mart-1",
+            "x": 9,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 4,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Mart_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_Mart-2",
+            "x": 1,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_Mart_EventScript_Youngster",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_Mart-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 29,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_Mart-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 29,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_Mart-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 29,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeruleanCity_Mart",
+    "dialogs": [
+        {
+            "title": "Text_MayIHelpYou",
+            "id": "CeruleanCity_Mart_EventScript_Clerk",
+            "text": "Hi, there!\nMay I help you?"
+        },
+        {
+            "title": "CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy",
+            "id": "CeruleanCity_Mart_EventScript_Woman",
+            "text": "Do you know about RARE CANDY?\nThey don't sell it in shops.\n\nI think it makes POKéMON grow\nvery quickly all of a sudden."
+        },
+        {
+            "title": "CeruleanCity_Mart_Text_RepelWorksOnWeakMons",
+            "id": "CeruleanCity_Mart_EventScript_Youngster",
+            "text": "REPEL not only keeps bugs away,\nit also works on weak POKéMON.\n\nPut your strongest POKéMON at the\nleft of the POKéMON LIST.\n\nIf your first POKéMON is strong,\nREPEL's effect is boosted."
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,124 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_House1",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE3",
+        "sourceMapId": "MAP_FOUR_ISLAND_HOUSE1",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_House1-0",
+            "x": 8,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_House1_EventScript_BodySlamTutor",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-FourIsland_House1-1",
+            "x": 9,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_FAT_MAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "FourIsland_House1_EventScript_FatMan",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_House1-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland",
+                "x": 25,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "FourIsland_House1",
+    "dialogs": [
+        {
+            "title": "FourIsland_House1_EventScript_BodySlamTutor",
+            "id": "FourIsland_House1_EventScript_BodySlamTutor",
+            "text": "TODO: FourIsland_House1_EventScript_BodySlamTutor"
+        },
+        {
+            "title": "FourIsland_House1_Text_YoureAwfullyHeavy",
+            "id": "FourIsland_House1_EventScript_FatMan",
+            "text": "There! Boing!\nYou're awfully heavy!"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,309 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SilphCo_11F",
+    "meta": {
+        "layoutId": "LAYOUT_SILPH_CO_11F",
+        "sourceMapId": "MAP_SILPH_CO_11F",
+        "width": 17,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 7
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 7,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 7,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 14,
+            "x": 3
+        },
+        {
+            "y": 6,
+            "w": 10,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 8,
+            "w": 5,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 12,
+            "x": 13
+        },
+        {
+            "y": 9,
+            "w": 3,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 11,
+            "w": 5,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 16,
+            "w": 6,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 1,
+            "x": 9
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SilphCo_11F-0",
+            "x": 9,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_11F_EventScript_President",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SilphCo_11F-1",
+            "x": 11,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_WORKER_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_11F_EventScript_Secretary",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SilphCo_11F-2",
+            "x": 6,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_GIOVANNI",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SILPH_CO_GIOVANNI",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_11F-3",
+            "x": 16,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SILPH_CO_11F_GRUNT1",
+                "script": "SilphCo_11F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_11F-4",
+            "x": 16,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_11F_EventScript_ItemZinc",
+                "flag": "FLAG_HIDE_SILPH_CO_11F_ZINC"
+            }
+        },
+        {
+            "id": "npc-SilphCo_11F-5",
+            "x": 2,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_SILPH_CO_11F_GRUNT2",
+                "script": "SilphCo_11F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SilphCo_11F-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_10F",
+                "x": 6,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_10F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_11F-2",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_7F",
+                "x": 5,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_7F",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_11F-3",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SilphCo_11F",
+    "dialogs": [
+        {
+            "title": "SilphCo_11F_EventScript_Door",
+            "id": "SilphCo_11F_EventScript_Door",
+            "text": "TODO: SilphCo_11F_EventScript_Door"
+        },
+        {
+            "title": "SilphCo_11F_Text_FloorSign",
+            "id": "SilphCo_11F_EventScript_FloorSign",
+            "text": "SILPH CO. HEAD OFFICE\n11F"
+        },
+        {
+            "title": "SilphCo_11F_EventScript_GiovanniTriggerLeft",
+            "id": "SilphCo_11F_EventScript_GiovanniTriggerLeft",
+            "text": "TODO: SilphCo_11F_EventScript_GiovanniTriggerLeft"
+        },
+        {
+            "title": "SilphCo_11F_EventScript_GiovanniTriggerRight",
+            "id": "SilphCo_11F_EventScript_GiovanniTriggerRight",
+            "text": "TODO: SilphCo_11F_EventScript_GiovanniTriggerRight"
+        },
+        {
+            "title": "SilphCo_11F_Text_Grunt1PostBattle",
+            "id": "SilphCo_11F_EventScript_Grunt1",
+            "text": "Watch your step…\nMy BOSS likes his POKéMON tough!"
+        },
+        {
+            "title": "SilphCo_11F_Text_Grunt2PostBattle",
+            "id": "SilphCo_11F_EventScript_Grunt2",
+            "text": "So, you want to see my BOSS?"
+        },
+        {
+            "title": "SilphCo_11F_EventScript_ItemZinc",
+            "id": "SilphCo_11F_EventScript_ItemZinc",
+            "text": "TODO: SilphCo_11F_EventScript_ItemZinc"
+        },
+        {
+            "title": "SilphCo_11F_Text_ThatsOurSecretPrototype",
+            "id": "SilphCo_11F_EventScript_President",
+            "text": "PRESIDENT: You can't buy that\nanywhere.\n\nIt's our secret prototype MASTER\nBALL.\n\nIt will catch any POKéMON without\nfail!\n\nYou should be quiet about using it,\nthough."
+        },
+        {
+            "title": "SilphCo_11F_Text_ThanksForRescuingUs",
+            "id": "SilphCo_11F_EventScript_Secretary",
+            "text": "SECRETARY: Thank you for rescuing\nall of us.\n\nWe, from the PRESIDENT down,\nare indebted to you."
+        }
+    ],
+    "jumps": []
+}

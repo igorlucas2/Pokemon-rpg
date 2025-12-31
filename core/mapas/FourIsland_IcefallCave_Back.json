@@ -1,0 +1,272 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "FourIsland_IcefallCave_Back",
+    "meta": {
+        "layoutId": "LAYOUT_FOUR_ISLAND_ICEFALL_CAVE_BACK",
+        "sourceMapId": "MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK",
+        "width": 25,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeafoamIslands",
+        "height": 26
+    },
+    "start": {
+        "y": 3,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 25,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 23,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 17,
+            "h": 3,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 23,
+            "x": 22
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 4,
+            "x": 3
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 4,
+            "x": 21
+        },
+        {
+            "y": 6,
+            "w": 16,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 16,
+            "h": 2,
+            "x": 4
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 20
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 17,
+            "x": 3
+        },
+        {
+            "y": 9,
+            "w": 15,
+            "h": 5,
+            "x": 5
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 17,
+            "x": 21
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 16,
+            "x": 4
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 16,
+            "x": 20
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 12,
+            "x": 5
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 12,
+            "x": 16
+        },
+        {
+            "y": 16,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 9,
+            "x": 15
+        },
+        {
+            "y": 18,
+            "w": 3,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 18,
+            "w": 1,
+            "h": 8,
+            "x": 14
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 7,
+            "x": 9
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 24,
+            "w": 2,
+            "h": 2,
+            "x": 12
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-FourIsland_IcefallCave_Back-0",
+            "x": 11,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ICEFALL_ROCKET1",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_ICEFALL_CAVE_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-FourIsland_IcefallCave_Back-1",
+            "x": 13,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ICEFALL_ROCKET2",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_ICEFALL_CAVE_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-FourIsland_IcefallCave_Back-2",
+            "x": 12,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_LORELEI",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ICEFALL_LORELEI",
+                "script": "FourIsland_IcefallCave_Back_EventScript_Lorelei",
+                "flag": "FLAG_HIDE_ICEFALL_CAVE_LORELEI"
+            }
+        },
+        {
+            "id": "npc-FourIsland_IcefallCave_Back-3",
+            "x": 10,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ICEFALL_ROCKET3",
+                "script": "0x0",
+                "flag": "FLAG_HIDE_ICEFALL_CAVE_ROCKETS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-FourIsland_IcefallCave_Back-1",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FourIsland_IcefallCave_1F",
+                "x": 3,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "FourIsland_IcefallCave_Back",
+    "dialogs": [
+        {
+            "title": "FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful",
+            "id": "FourIsland_IcefallCave_Back_EventScript_Lorelei",
+            "text": "{PLAYER}, thank you.\nBut this is awful…\n\nI was born and raised here on\nthese islands.\n\nI had no idea that those horrible\ncriminals were loose here…"
+        },
+        {
+            "title": "FourIsland_IcefallCave_Back_Text_LoreleiKeepHandsOffMons",
+            "id": "FourIsland_IcefallCave_Back_EventScript_LoreleiRocketsScene",
+            "text": "LORELEI: Keep your filthy hands\noff the POKéMON in the cave!\n\nDo as I say, or you'll have me to\nanswer to!\n\nAww, shut it, lady, and leave\nus be.\n\nDon't let your glasses get all\nsteamed up!\n\nLORELEI: {PLAYER}?!\nWhat are you doing here?\n\nNo, we can catch up later.\nRight now, I need your help.\n\nHelp me kick these poachers out\nbefore they do anything else.\n\nThey've been catching POKéMON\nhere, then selling them off!\n\nAre you ready?\nYou take that one, please!\n\nW-what?!\n\nWho says we can't do what we want\nwith the POKéMON we catch?\n\nLORELEI: Humph.\nSo despicably weak.\n\nYou!\nTell me!\n\nWhere have you taken the captured\nPOKéMON?\n\nI'm smashing your ring once and\nfor all!\n\nN-no way!\nI'm not telling you that!\n\nLORELEI: If you won't confess,\nwe'll deep-freeze you.\n\nMy LAPRAS is furious for what\nyou've done to its friends.\n\nGo, LAPRAS!\nICE BEAM…\n\nWawaah! Okay!\nI'll talk!\n\nThe POKéMON are in the ROCKET\nWAREHOUSE on FIVE ISLAND.\n\nThere! I said it!\nWe'll be going now!\n\n…But I doubt you'll ever make it\ninto the ROCKET WAREHOUSE!\n\nHeheheheh!\n\n{PLAYER}, thank you.\nBut this is awful…\n\nI was born and raised here on\nthese islands.\n\nI had no idea that those horrible\ncriminals were loose here…"
+        }
+    ],
+    "jumps": []
+}

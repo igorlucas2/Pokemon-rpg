@@ -1,0 +1,180 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route16_NorthEntrance_2F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_2F",
+        "sourceMapId": "MAP_ROUTE16_NORTH_ENTRANCE_2F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route16_NorthEntrance_2F-0",
+            "x": 6,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_NorthEntrance_2F_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16_NorthEntrance_2F-1",
+            "x": 4,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_NorthEntrance_2F_EventScript_LittleGirl",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route16_NorthEntrance_2F-2",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "left",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route16_NorthEntrance_2F_EventScript_Aide",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route16_NorthEntrance_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route16_NorthEntrance_1F",
+                "x": 9,
+                "y": 16,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route16_NorthEntrance_2F",
+    "dialogs": [
+        {
+            "title": "Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40",
+            "id": "Route16_NorthEntrance_2F_EventScript_Aide",
+            "text": "Hi! Remember me?\nI'm one of PROF. OAK's AIDES.\n\nIf your POKéDEX has complete data\non 40 species, I'm supposed to\ngive you a reward.\n\nPROF. OAK entrusted me with an\nAMULET COIN for you.\n\nSo, {PLAYER}, let me ask you.\n\nHave you gathered data on at least\n40 kinds of POKéMON?\n\nGreat! You have caught or owned\n{STR_VAR_3} kinds of POKéMON!\n\nCongratulations!\nHere you go!\n\nAn AMULET COIN is an item to be\nheld by a POKéMON.\n\nIf the POKéMON appears in a winning\nbattle, you will earn more money."
+        },
+        {
+            "title": "Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore",
+            "id": "Route16_NorthEntrance_2F_EventScript_LeftBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nIt's the CELADON DEPT. STORE!"
+        },
+        {
+            "title": "Route16_NorthEntrance_2F_Text_OnBikeRideWithGirlfriend",
+            "id": "Route16_NorthEntrance_2F_EventScript_LittleBoy",
+            "text": "I'm on a relaxing ride on my new\nbike with my girlfriend."
+        },
+        {
+            "title": "Route16_NorthEntrance_2F_Text_RidingTogetherOnNewBikes",
+            "id": "Route16_NorthEntrance_2F_EventScript_LittleGirl",
+            "text": "We're going riding together on our\nnew bikes."
+        },
+        {
+            "title": "Route16_NorthEntrance_2F_Text_LongPathOverWater",
+            "id": "Route16_NorthEntrance_2F_EventScript_RightBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nThere's a long path over water far\naway."
+        }
+    ],
+    "jumps": []
+}

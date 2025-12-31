@@ -1,0 +1,453 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SilphCo_9F",
+    "meta": {
+        "layoutId": "LAYOUT_SILPH_CO_9F",
+        "sourceMapId": "MAP_SILPH_CO_9F",
+        "width": 31,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_SilphCo",
+        "height": 19
+    },
+    "start": {
+        "y": 2,
+        "x": 16
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 31,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 16,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 12,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 12,
+            "x": 12
+        },
+        {
+            "y": 6,
+            "w": 10,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 2,
+            "x": 16
+        },
+        {
+            "y": 6,
+            "w": 6,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 11,
+            "x": 16
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 5,
+            "x": 27
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 29
+        },
+        {
+            "y": 11,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 12,
+            "w": 2,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 12,
+            "w": 5,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 2,
+            "x": 18
+        },
+        {
+            "y": 12,
+            "w": 4,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 5,
+            "x": 29
+        },
+        {
+            "y": 14,
+            "w": 2,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 3,
+            "x": 21
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 23
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SilphCo_9F-0",
+            "x": 26,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_9F_EventScript_Ed",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_9F-1",
+            "x": 15,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_9F_EventScript_Grunt2",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        },
+        {
+            "id": "npc-SilphCo_9F-2",
+            "x": 2,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_2",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_9F_EventScript_HealWoman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SilphCo_9F-3",
+            "x": 1,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_ROCKET_M",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SilphCo_9F_EventScript_Grunt1",
+                "flag": "FLAG_HIDE_SILPH_ROCKETS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SilphCo_9F-1",
+            "type": "door",
+            "rect": {
+                "x": 16,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_8F",
+                "x": 16,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_8F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SilphCo_9F-2",
+            "type": "door",
+            "rect": {
+                "x": 22,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_5F",
+                "x": 10,
+                "y": 20,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_5F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_9F-3",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 4,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_3F",
+                "x": 2,
+                "y": 14,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_3F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_9F-4",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_10F",
+                "x": 8,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_10F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SilphCo_9F-5",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 3,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SilphCo_Elevator",
+                "x": 2,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SILPH_CO_ELEVATOR",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SilphCo_9F",
+    "dialogs": [
+        {
+            "title": "SilphCo_9F_EventScript_Door1",
+            "id": "SilphCo_9F_EventScript_Door1",
+            "text": "TODO: SilphCo_9F_EventScript_Door1"
+        },
+        {
+            "title": "SilphCo_9F_EventScript_Door2",
+            "id": "SilphCo_9F_EventScript_Door2",
+            "text": "TODO: SilphCo_9F_EventScript_Door2"
+        },
+        {
+            "title": "SilphCo_9F_EventScript_Door3",
+            "id": "SilphCo_9F_EventScript_Door3",
+            "text": "TODO: SilphCo_9F_EventScript_Door3"
+        },
+        {
+            "title": "SilphCo_9F_EventScript_Door4",
+            "id": "SilphCo_9F_EventScript_Door4",
+            "text": "TODO: SilphCo_9F_EventScript_Door4"
+        },
+        {
+            "title": "SilphCo_9F_Text_EdPostBattle",
+            "id": "SilphCo_9F_EventScript_Ed",
+            "text": "Exploiting weak spots does work.\nThink about type advantages."
+        },
+        {
+            "title": "SilphCo_9F_Text_FloorSign",
+            "id": "SilphCo_9F_EventScript_FloorSign",
+            "text": "SILPH CO. HEAD OFFICE\n9F"
+        },
+        {
+            "title": "SilphCo_9F_Text_Grunt1PostBattle",
+            "id": "SilphCo_9F_EventScript_Grunt1",
+            "text": "If I had started as a TRAINER at\nyour age…"
+        },
+        {
+            "title": "SilphCo_9F_Text_Grunt2PostBattle",
+            "id": "SilphCo_9F_EventScript_Grunt2",
+            "text": "My brothers will avenge me!"
+        },
+        {
+            "title": "SilphCo_9F_Text_YouShouldTakeQuickNap",
+            "id": "SilphCo_9F_EventScript_HealWoman",
+            "text": "You look tired.\nYou should take a quick nap.\n\nDon't give up!"
+        }
+    ],
+    "jumps": []
+}

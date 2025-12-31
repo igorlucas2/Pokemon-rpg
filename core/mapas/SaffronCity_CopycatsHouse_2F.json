@@ -1,0 +1,179 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SaffronCity_CopycatsHouse_2F",
+    "meta": {
+        "layoutId": "LAYOUT_SAFFRON_CITY_COPYCATS_HOUSE_2F",
+        "sourceMapId": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_2F",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 7,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 4,
+            "w": 1,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_2F-0",
+            "x": 6,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_DODUO",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_2F_EventScript_Doduo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_2F-1",
+            "x": 4,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_PIKACHU",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_2F_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_2F-2",
+            "x": 7,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_JIGGLYPUFF",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_2F_EventScript_Doll",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-SaffronCity_CopycatsHouse_2F-3",
+            "x": 9,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SaffronCity_CopycatsHouse_2F_EventScript_Copycat",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SaffronCity_CopycatsHouse_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SaffronCity_CopycatsHouse_1F",
+                "x": 10,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "SaffronCity_CopycatsHouse_2F",
+    "dialogs": [
+        {
+            "title": "SaffronCity_CopycatsHouse_2F_Text_MySecrets",
+            "id": "SaffronCity_CopycatsHouse_2F_EventScript_Computer",
+            "text": "…\n\nMy Secrets!\n\nSkill: Mimicry!\nHobby: Collecting dolls!\nFavorite POKéMON: CLEFAIRY!"
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_2F_EventScript_Copycat",
+            "id": "SaffronCity_CopycatsHouse_2F_EventScript_Copycat",
+            "text": "TODO: SaffronCity_CopycatsHouse_2F_EventScript_Copycat"
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_2F_Text_Doduo",
+            "id": "SaffronCity_CopycatsHouse_2F_EventScript_Doduo",
+            "text": "DODUO: Giiih!\n\nPRETTY MIRROR LOOK AT ME,\nSEE HOW PRETTY I CAN BE?"
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll",
+            "id": "SaffronCity_CopycatsHouse_2F_EventScript_Doll",
+            "text": "This is a rare POKéMON!\nHuh? It's only a doll!"
+        },
+        {
+            "title": "SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket",
+            "id": "SaffronCity_CopycatsHouse_2F_EventScript_Game",
+            "text": "A game with MARIO wearing a bucket\non his head!"
+        }
+    ],
+    "jumps": []
+}

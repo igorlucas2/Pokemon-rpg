@@ -1,0 +1,148 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_PokemonLab_ExperimentRoom",
+    "meta": {
+        "layoutId": "LAYOUT_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Lab",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 4,
+            "w": 3,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 3,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 3,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 7,
+            "w": 3,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 10,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_ExperimentRoom-0",
+            "x": 11,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "up",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_Garett",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_PokemonLab_ExperimentRoom-1",
+            "x": 12,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_FossilScientist",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_PokemonLab_ExperimentRoom-1",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland_PokemonLab_Entrance",
+                "x": 25,
+                "y": 5,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CinnabarIsland_PokemonLab_ExperimentRoom",
+    "dialogs": [
+        {
+            "title": "CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe",
+            "id": "CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_FossilScientist",
+            "text": "Hiya!\n\nI am important doctor.\nYes, very much so, indeed.\n\nHere, I study rare POKéMON fossils.\nAll the time, I study.\n\nYou!\nHave you a fossil for me?"
+        },
+        {
+            "title": "Trade_Text_LookingForMonWannaTradeForMon",
+            "id": "CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_Garett",
+            "text": "I'm looking for the POKéMON\n{STR_VAR_1}!\n\nWanna trade one for my\n{STR_VAR_2}?\n\nHey, thanks!"
+        }
+    ],
+    "jumps": []
+}

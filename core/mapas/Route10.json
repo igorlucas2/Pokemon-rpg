@@ -1,0 +1,833 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route10",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE10",
+        "sourceMapId": "MAP_ROUTE10",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_LavenderTown",
+        "height": 80
+    },
+    "start": {
+        "y": 4,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 5,
+            "h": 52,
+            "x": 19
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 5,
+            "w": 13,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 25,
+            "x": 18
+        },
+        {
+            "y": 11,
+            "w": 2,
+            "h": 25,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 13,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 15,
+            "w": 9,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 17,
+            "w": 5,
+            "h": 4,
+            "x": 11
+        },
+        {
+            "y": 19,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 21,
+            "w": 6,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 23,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 25,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 1,
+            "x": 10
+        },
+        {
+            "y": 30,
+            "w": 16,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 31,
+            "w": 15,
+            "h": 6,
+            "x": 2
+        },
+        {
+            "y": 36,
+            "w": 1,
+            "h": 44,
+            "x": 0
+        },
+        {
+            "y": 37,
+            "w": 14,
+            "h": 3,
+            "x": 3
+        },
+        {
+            "y": 39,
+            "w": 1,
+            "h": 2,
+            "x": 2
+        },
+        {
+            "y": 40,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 40,
+            "w": 4,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 40,
+            "w": 4,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 40,
+            "w": 4,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 41,
+            "w": 3,
+            "h": 3,
+            "x": 13
+        },
+        {
+            "y": 42,
+            "w": 1,
+            "h": 38,
+            "x": 1
+        },
+        {
+            "y": 42,
+            "w": 1,
+            "h": 1,
+            "x": 6
+        },
+        {
+            "y": 46,
+            "w": 2,
+            "h": 10,
+            "x": 17
+        },
+        {
+            "y": 47,
+            "w": 15,
+            "h": 10,
+            "x": 2
+        },
+        {
+            "y": 56,
+            "w": 2,
+            "h": 24,
+            "x": 22
+        },
+        {
+            "y": 57,
+            "w": 6,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 57,
+            "w": 8,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 58,
+            "w": 1,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 59,
+            "w": 1,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 61,
+            "w": 5,
+            "h": 7,
+            "x": 12
+        },
+        {
+            "y": 62,
+            "w": 1,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 62,
+            "w": 3,
+            "h": 1,
+            "x": 19
+        },
+        {
+            "y": 63,
+            "w": 7,
+            "h": 5,
+            "x": 5
+        },
+        {
+            "y": 65,
+            "w": 3,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 66,
+            "w": 4,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 71,
+            "w": 9,
+            "h": 5,
+            "x": 2
+        },
+        {
+            "y": 74,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 74,
+            "w": 8,
+            "h": 6,
+            "x": 14
+        },
+        {
+            "y": 76,
+            "w": 6,
+            "h": 4,
+            "x": 2
+        },
+        {
+            "y": 78,
+            "w": 1,
+            "h": 2,
+            "x": 13
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route10-0",
+            "x": 7,
+            "y": 60,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Carol",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-1",
+            "x": 4,
+            "y": 62,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Clark",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-2",
+            "x": 15,
+            "y": 70,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Herman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-3",
+            "x": 4,
+            "y": 68,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Trent",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-4",
+            "x": 13,
+            "y": 44,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Mark",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-5",
+            "x": 9,
+            "y": 27,
+            "sprite": "OBJ_EVENT_GFX_PICNICKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route10_EventScript_Heidi",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route10-6",
+            "x": 10,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-Route10-7",
+            "x": 10,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_13"
+            }
+        },
+        {
+            "id": "npc-Route10-8",
+            "x": 10,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_14"
+            }
+        },
+        {
+            "id": "npc-Route10-9",
+            "x": 10,
+            "y": 26,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_15"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route10-1",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_1F",
+                "x": 17,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10-2",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 57,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "RockTunnel_1F",
+                "x": 18,
+                "y": 37,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROCK_TUNNEL_1F",
+                "destWarpId": "5",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10-3",
+            "type": "door",
+            "rect": {
+                "x": 7,
+                "y": 40,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PowerPlant",
+                "x": 5,
+                "y": 38,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POWER_PLANT",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route10-4",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 20,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route10_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE10_POKEMON_CENTER_1F",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route10-5",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 37,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PowerPlant",
+                "x": 1,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_POWER_PLANT",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route10-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 79,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "LavenderTown",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_LAVENDER_TOWN"
+            }
+        },
+        {
+            "id": "conn-Route10-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route9",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_ROUTE9"
+            }
+        }
+    ],
+    "name": "Route10",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "Route10_EventScript_Carol",
+            "id": "Route10_EventScript_Carol",
+            "text": "TODO: Route10_EventScript_Carol"
+        },
+        {
+            "title": "Route10_EventScript_Clark",
+            "id": "Route10_EventScript_Clark",
+            "text": "TODO: Route10_EventScript_Clark"
+        },
+        {
+            "title": "Route10_EventScript_Heidi",
+            "id": "Route10_EventScript_Heidi",
+            "text": "TODO: Route10_EventScript_Heidi"
+        },
+        {
+            "title": "Route10_EventScript_Herman",
+            "id": "Route10_EventScript_Herman",
+            "text": "TODO: Route10_EventScript_Herman"
+        },
+        {
+            "title": "Route10_EventScript_Mark",
+            "id": "Route10_EventScript_Mark",
+            "text": "TODO: Route10_EventScript_Mark"
+        },
+        {
+            "title": "Route10_Text_RockTunnelDetourToLavender",
+            "id": "Route10_EventScript_NorthRockTunnelSign",
+            "text": "ROCK TUNNEL\nDetour to LAVENDER TOWN"
+        },
+        {
+            "title": "Route10_Text_PowerPlant",
+            "id": "Route10_EventScript_PowerPlantSign",
+            "text": "POWER PLANT"
+        },
+        {
+            "title": "Route10_Text_RockTunnel",
+            "id": "Route10_EventScript_SouthRockTunnelSign",
+            "text": "ROCK TUNNEL"
+        },
+        {
+            "title": "Route10_EventScript_Trent",
+            "id": "Route10_EventScript_Trent",
+            "text": "TODO: Route10_EventScript_Trent"
+        }
+    ],
+    "jumps": [
+        {
+            "x": 2,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 5,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 6,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 7,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 8,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 9,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 10,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 14,
+            "y": 12,
+            "dir": "down"
+        },
+        {
+            "x": 1,
+            "y": 40,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 40,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 62,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 62,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 62,
+            "dir": "down"
+        },
+        {
+            "x": 21,
+            "y": 62,
+            "dir": "down"
+        },
+        {
+            "x": 2,
+            "y": 65,
+            "dir": "down"
+        },
+        {
+            "x": 3,
+            "y": 65,
+            "dir": "down"
+        },
+        {
+            "x": 4,
+            "y": 65,
+            "dir": "down"
+        },
+        {
+            "x": 17,
+            "y": 66,
+            "dir": "down"
+        },
+        {
+            "x": 18,
+            "y": 66,
+            "dir": "down"
+        },
+        {
+            "x": 19,
+            "y": 66,
+            "dir": "down"
+        },
+        {
+            "x": 20,
+            "y": 66,
+            "dir": "down"
+        },
+        {
+            "x": 11,
+            "y": 74,
+            "dir": "down"
+        },
+        {
+            "x": 12,
+            "y": 74,
+            "dir": "down"
+        }
+    ]
+}

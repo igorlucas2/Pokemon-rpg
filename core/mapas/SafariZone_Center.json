@@ -1,0 +1,531 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SafariZone_Center",
+    "meta": {
+        "layoutId": "LAYOUT_SAFARI_ZONE_CENTER",
+        "sourceMapId": "MAP_SAFARI_ZONE_CENTER",
+        "width": 51,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_FuchsiaCity",
+        "height": 36
+    },
+    "start": {
+        "y": 1,
+        "x": 28
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 51,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 28,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 22,
+            "h": 5,
+            "x": 29
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 4,
+            "x": 28
+        },
+        {
+            "y": 5,
+            "w": 25,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 6,
+            "w": 9,
+            "h": 11,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 9,
+            "x": 22
+        },
+        {
+            "y": 6,
+            "w": 8,
+            "h": 9,
+            "x": 43
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 6,
+            "x": 18
+        },
+        {
+            "y": 13,
+            "w": 11,
+            "h": 2,
+            "x": 23
+        },
+        {
+            "y": 14,
+            "w": 9,
+            "h": 1,
+            "x": 34
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 4,
+            "x": 30
+        },
+        {
+            "y": 15,
+            "w": 7,
+            "h": 21,
+            "x": 44
+        },
+        {
+            "y": 17,
+            "w": 8,
+            "h": 19,
+            "x": 0
+        },
+        {
+            "y": 17,
+            "w": 8,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 19,
+            "x": 43
+        },
+        {
+            "y": 19,
+            "w": 1,
+            "h": 17,
+            "x": 8
+        },
+        {
+            "y": 19,
+            "w": 2,
+            "h": 2,
+            "x": 30
+        },
+        {
+            "y": 20,
+            "w": 12,
+            "h": 1,
+            "x": 18
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 33
+        },
+        {
+            "y": 21,
+            "w": 9,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 23,
+            "w": 5,
+            "h": 3,
+            "x": 28
+        },
+        {
+            "y": 26,
+            "w": 1,
+            "h": 1,
+            "x": 30
+        },
+        {
+            "y": 27,
+            "w": 1,
+            "h": 1,
+            "x": 25
+        },
+        {
+            "y": 30,
+            "w": 15,
+            "h": 6,
+            "x": 9
+        },
+        {
+            "y": 30,
+            "w": 15,
+            "h": 6,
+            "x": 28
+        },
+        {
+            "y": 31,
+            "w": 4,
+            "h": 5,
+            "x": 24
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SafariZone_Center-0",
+            "x": 24,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SafariZone_Center_EventScript_ItemNugget",
+                "flag": "FLAG_HIDE_SAFARI_ZONE_CENTER_NUGGET"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SafariZone_Center-1",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_SafariZone_Entrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-2",
+            "type": "door",
+            "rect": {
+                "x": 26,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_SafariZone_Entrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-3",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 30,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "FuchsiaCity_SafariZone_Entrance",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-4",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 30,
+                "y": 34,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "9",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-5",
+            "type": "door",
+            "rect": {
+                "x": 26,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 31,
+                "y": 34,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "10",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-6",
+            "type": "door",
+            "rect": {
+                "x": 27,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_North",
+                "x": 32,
+                "y": 34,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_NORTH",
+                "destWarpId": "11",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-7",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 40,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "6",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-8",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 40,
+                "y": 27,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "7",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-9",
+            "type": "door",
+            "rect": {
+                "x": 8,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_West",
+                "x": 40,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_WEST",
+                "destWarpId": "8",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-10",
+            "type": "door",
+            "rect": {
+                "x": 43,
+                "y": 15,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_East",
+                "x": 8,
+                "y": 26,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_EAST",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-11",
+            "type": "door",
+            "rect": {
+                "x": 43,
+                "y": 16,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_East",
+                "x": 8,
+                "y": 27,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_EAST",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-12",
+            "type": "door",
+            "rect": {
+                "x": 43,
+                "y": 17,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_East",
+                "x": 8,
+                "y": 28,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_EAST",
+                "destWarpId": "5",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-SafariZone_Center-13",
+            "type": "door",
+            "rect": {
+                "x": 29,
+                "y": 25,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SafariZone_Center_RestHouse",
+                "x": 4,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SAFARI_ZONE_CENTER_REST_HOUSE",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SafariZone_Center",
+    "dialogs": [
+        {
+            "title": "SafariZone_Center_Text_CenterArea",
+            "id": "SafariZone_Center_EventScript_AreaSign",
+            "text": "CENTER AREA"
+        },
+        {
+            "title": "SafariZone_Center_EventScript_ItemNugget",
+            "id": "SafariZone_Center_EventScript_ItemNugget",
+            "text": "TODO: SafariZone_Center_EventScript_ItemNugget"
+        },
+        {
+            "title": "SafariZone_Center_Text_RestHouse",
+            "id": "SafariZone_Center_EventScript_RestHouseSign",
+            "text": "REST HOUSE"
+        },
+        {
+            "title": "SafariZone_Center_Text_PressStartToCheckTime",
+            "id": "SafariZone_Center_EventScript_TrainerTips",
+            "text": "TRAINER TIPS\n\nPress START to check\nremaining time."
+        }
+    ],
+    "jumps": []
+}

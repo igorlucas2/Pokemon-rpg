@@ -1,0 +1,222 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeruleanCity_House2",
+    "meta": {
+        "layoutId": "LAYOUT_CERULEAN_CITY_HOUSE2",
+        "sourceMapId": "MAP_CERULEAN_CITY_HOUSE2",
+        "width": 10,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_BurgledHouse",
+        "height": 9
+    },
+    "start": {
+        "y": 1,
+        "x": 4
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 10,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 5,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 7,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeruleanCity_House2-0",
+            "x": 1,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_HIKER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_House2_EventScript_Hiker",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeruleanCity_House2-1",
+            "x": 7,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeruleanCity_House2_EventScript_Lass",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeruleanCity_House2-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_House2-2",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_House2-3",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "1",
+                "elevation": 1
+            }
+        },
+        {
+            "id": "warp-CeruleanCity_House2-4",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeruleanCity",
+                "x": 31,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CERULEAN_CITY",
+                "destWarpId": "9",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "CeruleanCity_House2",
+    "dialogs": [
+        {
+            "title": "CeruleanCity_House2_Text_RocketsStoleTMForDig",
+            "id": "CeruleanCity_House2_EventScript_Hiker",
+            "text": "Those miserable ROCKETS!\n\nLook what they've done to my\nhouse!\n\nThey stole a TM for teaching\nPOKéMON how to DIG holes!\n\nI was going to use it on a\nMANKEY or a SANDSHREW…\n\nThat cost me a bundle, it did!"
+        },
+        {
+            "title": "CeruleanCity_House2_Text_TeamRocketTryingToDigIntoNoGood",
+            "id": "CeruleanCity_House2_EventScript_Lass",
+            "text": "TEAM ROCKET must be trying to DIG\ntheir way into no good!"
+        },
+        {
+            "title": "CeruleanCity_House2_Text_TeamRocketLeftWayOut",
+            "id": "CeruleanCity_House2_EventScript_WallHole",
+            "text": "TEAM ROCKET left a way out!"
+        }
+    ],
+    "jumps": []
+}

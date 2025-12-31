@@ -1,0 +1,686 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "ThreeIsland",
+    "meta": {
+        "layoutId": "LAYOUT_THREE_ISLAND",
+        "sourceMapId": "MAP_THREE_ISLAND",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SeviiIslands123",
+        "height": 40
+    },
+    "start": {
+        "y": 3,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 24,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 3,
+            "w": 8,
+            "h": 3,
+            "x": 16
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 5,
+            "h": 2,
+            "x": 11
+        },
+        {
+            "y": 6,
+            "w": 5,
+            "h": 1,
+            "x": 16
+        },
+        {
+            "y": 6,
+            "w": 2,
+            "h": 34,
+            "x": 22
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 9,
+            "x": 20
+        },
+        {
+            "y": 10,
+            "w": 9,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 13,
+            "w": 1,
+            "h": 19,
+            "x": 6
+        },
+        {
+            "y": 14,
+            "w": 6,
+            "h": 18,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 6,
+            "h": 3,
+            "x": 12
+        },
+        {
+            "y": 18,
+            "w": 4,
+            "h": 22,
+            "x": 18
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 20,
+            "x": 17
+        },
+        {
+            "y": 24,
+            "w": 5,
+            "h": 4,
+            "x": 12
+        },
+        {
+            "y": 31,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 32,
+            "w": 2,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 34,
+            "w": 8,
+            "h": 6,
+            "x": 2
+        },
+        {
+            "y": 34,
+            "w": 4,
+            "h": 6,
+            "x": 13
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-ThreeIsland-0",
+            "x": 7,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_ANTIBIKER1",
+                "script": "ThreeIsland_EventScript_AntiBiker1",
+                "flag": "FLAG_HIDE_THREE_ISLAND_ANTIBIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-1",
+            "x": 8,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_MAN",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_ANTIBIKER2",
+                "script": "ThreeIsland_EventScript_AntiBiker2",
+                "flag": "FLAG_HIDE_THREE_ISLAND_ANTIBIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-2",
+            "x": 8,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_PAXTON",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_LONE_BIKER"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-3",
+            "x": 9,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER3",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-4",
+            "x": 9,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER1",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-5",
+            "x": 10,
+            "y": 22,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER4",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-6",
+            "x": 10,
+            "y": 24,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER2",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-7",
+            "x": 11,
+            "y": 23,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER5",
+                "script": "ThreeIsland_EventScript_Biker",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-8",
+            "x": 20,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_CUT_TREE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "EventScript_CutTree",
+                "flag": "FLAG_TEMP_12"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-9",
+            "x": 18,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_EventScript_ItemZinc",
+                "flag": "FLAG_HIDE_THREE_ISLAND_ZINC"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-10",
+            "x": 15,
+            "y": 7,
+            "sprite": "OBJ_EVENT_GFX_WOMAN_1",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_EventScript_Woman",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-11",
+            "x": 14,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_EventScript_LittleBoy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-12",
+            "x": 15,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_DODUO",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "ThreeIsland_EventScript_Doduo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-ThreeIsland-13",
+            "x": 15,
+            "y": 31,
+            "sprite": "OBJ_EVENT_GFX_BIKER",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_THREE_ISLAND_BIKER6",
+                "script": "ThreeIsland_EventScript_Biker6",
+                "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-ThreeIsland-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 31,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_House1",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_HOUSE1",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-2",
+            "type": "door",
+            "rect": {
+                "x": 14,
+                "y": 27,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_PokemonCenter_1F",
+                "x": 7,
+                "y": 8,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_POKEMON_CENTER_1F",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-3",
+            "type": "door",
+            "rect": {
+                "x": 18,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_Mart",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_MART",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-4",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_House2",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_HOUSE2",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-5",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_House3",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_HOUSE3",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-6",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 12,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_House4",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_HOUSE4",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-ThreeIsland-7",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_House5",
+                "x": 4,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_THREE_ISLAND_HOUSE5",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "conn-ThreeIsland-down-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 39,
+                "w": 24,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_Port",
+                "connection": {
+                    "direction": "down",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "down",
+                "offset": 0,
+                "destMap": "MAP_THREE_ISLAND_PORT"
+            }
+        },
+        {
+            "id": "conn-ThreeIsland-left-2",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "ThreeIsland_BondBridge",
+                "connection": {
+                    "direction": "left",
+                    "offset": 0
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": 0,
+                "destMap": "MAP_THREE_ISLAND_BOND_BRIDGE"
+            }
+        }
+    ],
+    "name": "ThreeIsland",
+    "dialogs": [
+        {
+            "title": "EventScript_CutTree",
+            "id": "EventScript_CutTree",
+            "text": "TODO: EventScript_CutTree"
+        },
+        {
+            "title": "ThreeIsland_EventScript_AntiBiker1",
+            "id": "ThreeIsland_EventScript_AntiBiker1",
+            "text": "TODO: ThreeIsland_EventScript_AntiBiker1"
+        },
+        {
+            "title": "ThreeIsland_EventScript_AntiBiker2",
+            "id": "ThreeIsland_EventScript_AntiBiker2",
+            "text": "TODO: ThreeIsland_EventScript_AntiBiker2"
+        },
+        {
+            "title": "ThreeIsland_EventScript_BattleBikersTriggerLeft",
+            "id": "ThreeIsland_EventScript_BattleBikersTriggerLeft",
+            "text": "TODO: ThreeIsland_EventScript_BattleBikersTriggerLeft"
+        },
+        {
+            "title": "ThreeIsland_EventScript_BattleBikersTriggerMid",
+            "id": "ThreeIsland_EventScript_BattleBikersTriggerMid",
+            "text": "TODO: ThreeIsland_EventScript_BattleBikersTriggerMid"
+        },
+        {
+            "title": "ThreeIsland_EventScript_BattleBikersTriggerMidLeft",
+            "id": "ThreeIsland_EventScript_BattleBikersTriggerMidLeft",
+            "text": "TODO: ThreeIsland_EventScript_BattleBikersTriggerMidLeft"
+        },
+        {
+            "title": "ThreeIsland_EventScript_BattleBikersTriggerMidRight",
+            "id": "ThreeIsland_EventScript_BattleBikersTriggerMidRight",
+            "text": "TODO: ThreeIsland_EventScript_BattleBikersTriggerMidRight"
+        },
+        {
+            "title": "ThreeIsland_EventScript_BattleBikersTriggerRight",
+            "id": "ThreeIsland_EventScript_BattleBikersTriggerRight",
+            "text": "TODO: ThreeIsland_EventScript_BattleBikersTriggerRight"
+        },
+        {
+            "title": "ThreeIsland_EventScript_Biker",
+            "id": "ThreeIsland_EventScript_Biker",
+            "text": "TODO: ThreeIsland_EventScript_Biker"
+        },
+        {
+            "title": "ThreeIsland_Text_IslandBelongsToUs",
+            "id": "ThreeIsland_EventScript_Biker6",
+            "text": "Hyahoo!\n\nFrom this day on, this island\nbelongs to us!"
+        },
+        {
+            "title": "ThreeIsland_Text_AreYouBossGoBackToKanto",
+            "id": "ThreeIsland_EventScript_BikerBossIntroTrigger",
+            "text": "Are you the boss?\nGo back to KANTO right now!\n\nHah?\n\nI just got here, pal.\n\nWhat's with the hostile attitude?\nIt's mighty cold of you!\n\nYour gang of followers have been\nraising havoc on their bikes.\n\nDo you have any idea how much\ntrouble they've caused us on the\nisland?\n\nNo, man, I don't get it at all.\n\nLook at this place.\nWhat do you do for entertainment?\n\nYou ought to be thanking us for\nlivening up this sleepy village.\n\nBut hey, if you insist, you can try\nmaking us leave.\n\nGrr… You cowards…\nSo tough in a pack…"
+        },
+        {
+            "title": "ThreeIsland_Text_Doduo",
+            "id": "ThreeIsland_EventScript_Doduo",
+            "text": "DODUO: Gigiih!"
+        },
+        {
+            "title": "ThreeIsland_Text_IslandSign",
+            "id": "ThreeIsland_EventScript_IslandSign",
+            "text": "THREE ISLAND\nKin Island of Family Bonding"
+        },
+        {
+            "title": "ThreeIsland_EventScript_ItemZinc",
+            "id": "ThreeIsland_EventScript_ItemZinc",
+            "text": "TODO: ThreeIsland_EventScript_ItemZinc"
+        },
+        {
+            "title": "ThreeIsland_Text_WhenDodouEvolvesGoingToPlayGame",
+            "id": "ThreeIsland_EventScript_LittleBoy",
+            "text": "I'm going to train my DODUO in the\nBERRY FOREST.\n\nWhen it evolves, I'm going to play\na game on TWO ISLAND."
+        },
+        {
+            "title": "ThreeIsland_Text_WouldntWantToSeeBikersHereAgain",
+            "id": "ThreeIsland_EventScript_Woman",
+            "text": "THREE ISLAND is actually the most\npopulous of the islands here.\n\nStill, it could be less sleepy.\n\nBut I wouldn't want to see goons\nlike those BIKERS here again."
+        }
+    ],
+    "jumps": []
+}

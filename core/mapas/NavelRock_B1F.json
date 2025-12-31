@@ -1,0 +1,95 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "NavelRock_B1F",
+    "meta": {
+        "layoutId": "LAYOUT_NAVEL_ROCK_B1F",
+        "sourceMapId": "MAP_NAVEL_ROCK_B1F",
+        "width": 17,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_NavelRock",
+        "height": 7
+    },
+    "start": {
+        "y": 2,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 17,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 5,
+            "x": 13
+        },
+        {
+            "y": 6,
+            "w": 10,
+            "h": 1,
+            "x": 3
+        }
+    ],
+    "npcs": [],
+    "events": [
+        {
+            "id": "warp-NavelRock_B1F-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_1F",
+                "x": 8,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-NavelRock_B1F-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 5,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "NavelRock_Fork",
+                "x": 13,
+                "y": 95,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_NAVEL_ROCK_FORK",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "NavelRock_B1F",
+    "dialogs": [],
+    "jumps": []
+}

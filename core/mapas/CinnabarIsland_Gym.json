@@ -1,0 +1,586 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CinnabarIsland_Gym",
+    "meta": {
+        "layoutId": "LAYOUT_CINNABAR_ISLAND_GYM",
+        "sourceMapId": "MAP_CINNABAR_ISLAND_GYM",
+        "width": 30,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_CinnabarGym",
+        "height": 25
+    },
+    "start": {
+        "y": 0,
+        "x": 5
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 5,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 0,
+            "w": 24,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 1,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 5,
+            "h": 1,
+            "x": 8
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 15
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 23,
+            "x": 29
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 22,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 3,
+            "h": 19,
+            "x": 10
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 20,
+            "x": 21
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 8,
+            "w": 3,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 8,
+            "w": 4,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 28
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 1,
+            "x": 26
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 10,
+            "w": 2,
+            "h": 1,
+            "x": 22
+        },
+        {
+            "y": 14,
+            "w": 4,
+            "h": 2,
+            "x": 22
+        },
+        {
+            "y": 15,
+            "w": 4,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 15,
+            "w": 2,
+            "h": 2,
+            "x": 19
+        },
+        {
+            "y": 16,
+            "w": 4,
+            "h": 2,
+            "x": 1
+        },
+        {
+            "y": 16,
+            "w": 3,
+            "h": 2,
+            "x": 7
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 1,
+            "x": 17
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 17,
+            "w": 2,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 18,
+            "w": 2,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 23
+        },
+        {
+            "y": 20,
+            "w": 1,
+            "h": 1,
+            "x": 27
+        },
+        {
+            "y": 22,
+            "w": 1,
+            "h": 3,
+            "x": 11
+        },
+        {
+            "y": 24,
+            "w": 10,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 24,
+            "w": 9,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 24,
+            "w": 7,
+            "h": 1,
+            "x": 22
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CinnabarIsland_Gym-0",
+            "x": 25,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_QUINN",
+                "script": "CinnabarIsland_Gym_EventScript_Quinn",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-1",
+            "x": 25,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Gym_EventScript_Erik",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-2",
+            "x": 17,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_AVERY",
+                "script": "CinnabarIsland_Gym_EventScript_Avery",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-3",
+            "x": 16,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_RAMON",
+                "script": "CinnabarIsland_Gym_EventScript_Ramon",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-4",
+            "x": 16,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_DEREK",
+                "script": "CinnabarIsland_Gym_EventScript_Derek",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-5",
+            "x": 4,
+            "y": 19,
+            "sprite": "OBJ_EVENT_GFX_SUPER_NERD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_DUSTY",
+                "script": "CinnabarIsland_Gym_EventScript_Dusty",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-6",
+            "x": 4,
+            "y": 11,
+            "sprite": "OBJ_EVENT_GFX_SCIENTIST",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_ZAC",
+                "script": "CinnabarIsland_Gym_EventScript_Zac",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-7",
+            "x": 5,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BLAINE",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Gym_EventScript_Blaine",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CinnabarIsland_Gym-8",
+            "x": 24,
+            "y": 20,
+            "sprite": "OBJ_EVENT_GFX_GYM_GUY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CinnabarIsland_Gym_EventScript_GymGuy",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CinnabarIsland_Gym-1",
+            "type": "door",
+            "rect": {
+                "x": 24,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 20,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_Gym-2",
+            "type": "door",
+            "rect": {
+                "x": 25,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 20,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CinnabarIsland_Gym-3",
+            "type": "door",
+            "rect": {
+                "x": 26,
+                "y": 23,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CinnabarIsland",
+                "x": 20,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CINNABAR_ISLAND",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CinnabarIsland_Gym",
+    "dialogs": [
+        {
+            "title": "CinnabarIsland_Gym_Text_AveryPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Avery",
+            "text": "My theories are too complicated\nfor you to understand."
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_BlainePostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Blaine",
+            "text": "TM38 contains FIRE BLAST.\nTeach it to FIRE-type POKéMON.\n\nVULPIX or CHARMELEON would be\nideal for that move."
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_BlaineFujiPhoto",
+            "id": "CinnabarIsland_Gym_EventScript_BlaineFujiPhoto",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_BlaineFujiPhoto"
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_DerekPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Derek",
+            "text": "Our LEADER, BLAINE, became lost\nin the mountains but good.\n\nNight fell when a fiery bird\nPOKéMON appeared.\n\nIts light allowed BLAINE to find\nhis way down safely."
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_DustyPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Dusty",
+            "text": "PONYTA, NINETALES…\nThose are popular FIRE POKéMON."
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_ErikPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Erik",
+            "text": "Fire, or to be more precise,\ncombustion…\n\n…Oxygen in the air…\nBlah, blah, blah, blah…"
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_GymGuyAdvice",
+            "id": "CinnabarIsland_Gym_EventScript_GymGuy",
+            "text": "Yo!\nChamp in the making!\n\nThe hotheaded BLAINE is a FIRE\nPOKéMON pro.\n\nDouse his spirits with water!\n\nYou'd better take some\nBURN HEALS, too."
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_GymStatue",
+            "id": "CinnabarIsland_Gym_EventScript_GymStatue",
+            "text": "CINNABAR POKéMON GYM\nLEADER: BLAINE\n\nWINNING TRAINERS:\n{RIVAL}"
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_QuinnPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Quinn",
+            "text": "I get this uncontrollable urge to\nsteal other people's POKéMON."
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz2Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz2Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz2Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz2Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz2Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz2Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz3Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz3Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz3Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz3Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz3Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz3Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz4Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz4Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz4Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz4Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz4Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz4Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz5Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz5Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz5Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz5Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz5Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz5Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz6Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz6Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz6Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quiz6Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quiz6Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quiz6Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quz1Left",
+            "id": "CinnabarIsland_Gym_EventScript_Quz1Left",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quz1Left"
+        },
+        {
+            "title": "CinnabarIsland_Gym_EventScript_Quz1Right",
+            "id": "CinnabarIsland_Gym_EventScript_Quz1Right",
+            "text": "TODO: CinnabarIsland_Gym_EventScript_Quz1Right"
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_RamonPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Ramon",
+            "text": "I wish there were a thief POKéMON.\nI'd use that!"
+        },
+        {
+            "title": "CinnabarIsland_Gym_Text_ZacPostBattle",
+            "id": "CinnabarIsland_Gym_EventScript_Zac",
+            "text": "Water beats fire, of course.\n\nBut fire melts ice, so the FIRE\ntype beats ICE-type POKéMON."
+        }
+    ],
+    "jumps": []
+}

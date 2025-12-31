@@ -1,0 +1,188 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PalletTown_PlayersHouse_1F",
+    "meta": {
+        "layoutId": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_1F",
+        "sourceMapId": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 1
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 12,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PalletTown_PlayersHouse_1F-0",
+            "x": 8,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_MOM",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 0,
+            "movementRangeY": 0,
+            "meta": {
+                "localId": "LOCALID_MOM",
+                "script": "PalletTown_PlayersHouse_1F_EventScript_Mom",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PalletTown_PlayersHouse_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_PlayersHouse_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_PlayersHouse_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown_PlayersHouse_2F",
+                "x": 10,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN_PLAYERS_HOUSE_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_PlayersHouse_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 6,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "PalletTown_PlayersHouse_1F",
+    "dialogs": [
+        {
+            "title": "PalletTown_PlayersHouse_1F_EventScript_Mom",
+            "id": "PalletTown_PlayersHouse_1F_EventScript_Mom",
+            "text": "TODO: PalletTown_PlayersHouse_1F_EventScript_Mom"
+        },
+        {
+            "title": "PalletTown_PlayersHouse_1F_Text_OopsWrongSide",
+            "id": "PalletTown_PlayersHouse_1F_EventScript_TV",
+            "text": "Oops, wrong side…"
+        }
+    ],
+    "jumps": []
+}

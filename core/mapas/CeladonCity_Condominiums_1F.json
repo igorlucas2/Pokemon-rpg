@@ -1,0 +1,384 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "CeladonCity_Condominiums_1F",
+    "meta": {
+        "layoutId": "LAYOUT_CELADON_CITY_CONDOMINIUMS_1F",
+        "sourceMapId": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
+        "width": 15,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_Condominiums",
+        "height": 20
+    },
+    "start": {
+        "y": 1,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 12,
+            "h": 1,
+            "x": 3
+        },
+        {
+            "y": 2,
+            "w": 4,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 2,
+            "x": 13
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 9,
+            "x": 7
+        },
+        {
+            "y": 5,
+            "w": 7,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 6,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 9,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 10,
+            "w": 4,
+            "h": 3,
+            "x": 1
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 9
+        },
+        {
+            "y": 12,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 15,
+            "w": 9,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 15,
+            "w": 1,
+            "h": 1,
+            "x": 14
+        },
+        {
+            "y": 17,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 19,
+            "w": 15,
+            "h": 1,
+            "x": 0
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-CeladonCity_Condominiums_1F-0",
+            "x": 1,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_MEOWTH",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_1F_EventScript_Meowth",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_1F-1",
+            "x": 5,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_CLEFAIRY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_1F_EventScript_Clefairy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_1F-2",
+            "x": 5,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_NIDORAN_F",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_1F_EventScript_Nidoran",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-CeladonCity_Condominiums_1F-3",
+            "x": 2,
+            "y": 9,
+            "sprite": "OBJ_EVENT_GFX_OLD_WOMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "CeladonCity_Condominiums_1F_EventScript_TeaWoman",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 18,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 13,
+                "y": 19,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 30,
+                "y": 11,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "3",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-4",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_2F",
+                "x": 4,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-5",
+            "type": "door",
+            "rect": {
+                "x": 12,
+                "y": 2,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity_Condominiums_2F",
+                "x": 12,
+                "y": 2,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY_CONDOMINIUMS_2F",
+                "destWarpId": "3",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-CeladonCity_Condominiums_1F-6",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "CeladonCity",
+                "x": 30,
+                "y": 4,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_CELADON_CITY",
+                "destWarpId": "11",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "CeladonCity_Condominiums_1F",
+    "dialogs": [
+        {
+            "title": "CeladonCity_Condominiums_1F_Text_Clefairy",
+            "id": "CeladonCity_Condominiums_1F_EventScript_Clefairy",
+            "text": "CLEFAIRY: Pi pippippi!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_1F_Text_Meowth",
+            "id": "CeladonCity_Condominiums_1F_EventScript_Meowth",
+            "text": "MEOWTH: Meow!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_1F_Text_Nidoran",
+            "id": "CeladonCity_Condominiums_1F_EventScript_Nidoran",
+            "text": "NIDORAN♀: Kya kyaoo!"
+        },
+        {
+            "title": "CeladonCity_Condominiums_1F_Text_ManagersSuite",
+            "id": "CeladonCity_Condominiums_1F_EventScript_SuiteSign",
+            "text": "CELADON MANSION\nManager's Suite"
+        },
+        {
+            "title": "CeladonCity_Condominiums_1F_Text_TryThisDrinkInstead",
+            "id": "CeladonCity_Condominiums_1F_EventScript_TeaWoman",
+            "text": "You shouldn't spend all your money\non drinks.\n\nTry this instead.\n\nNothing beats thirst like some hot\nTEA.\n\nIt really is the best."
+        }
+    ],
+    "jumps": []
+}

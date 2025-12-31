@@ -1,0 +1,207 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route18_EastEntrance_1F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_1F",
+        "sourceMapId": "MAP_ROUTE18_EAST_ENTRANCE_1F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 12
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 9,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 9,
+            "h": 1,
+            "x": 2
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 9,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 7,
+            "h": 1,
+            "x": 1
+        },
+        {
+            "y": 9,
+            "w": 2,
+            "h": 3,
+            "x": 10
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 2,
+            "x": 7
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route18_EastEntrance_1F-0",
+            "x": 6,
+            "y": 2,
+            "sprite": "OBJ_EVENT_GFX_POLICEMAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route18_EastEntrance_1F_EventScript_Guard",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route18_EastEntrance_1F-1",
+            "type": "door",
+            "rect": {
+                "x": 1,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18",
+                "x": 41,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route18_EastEntrance_1F-2",
+            "type": "door",
+            "rect": {
+                "x": 11,
+                "y": 6,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18",
+                "x": 48,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route18_EastEntrance_1F-3",
+            "type": "door",
+            "rect": {
+                "x": 9,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route18_EastEntrance_2F",
+                "x": 10,
+                "y": 9,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE18_EAST_ENTRANCE_2F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route18_EastEntrance_1F",
+    "dialogs": [
+        {
+            "title": "EventScript_SetEnteringCyclingRoad",
+            "id": "EventScript_SetEnteringCyclingRoad",
+            "text": "TODO: EventScript_SetEnteringCyclingRoad"
+        },
+        {
+            "title": "EventScript_SetExitingCyclingRoad",
+            "id": "EventScript_SetExitingCyclingRoad",
+            "text": "TODO: EventScript_SetExitingCyclingRoad"
+        },
+        {
+            "title": "Route18_EastEntrance_1F_Text_CyclingRoadAllUphillFromHere",
+            "id": "Route18_EastEntrance_1F_EventScript_Guard",
+            "text": "CYCLING ROAD is all uphill from\nhere."
+        },
+        {
+            "title": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerBottom",
+            "id": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerBottom",
+            "text": "TODO: Route18_EastEntrance_1F_EventScript_NeedBikeTriggerBottom"
+        },
+        {
+            "title": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMid",
+            "id": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMid",
+            "text": "TODO: Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMid"
+        },
+        {
+            "title": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidBottom",
+            "id": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidBottom",
+            "text": "TODO: Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidBottom"
+        },
+        {
+            "title": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidTop",
+            "id": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidTop",
+            "text": "TODO: Route18_EastEntrance_1F_EventScript_NeedBikeTriggerMidTop"
+        },
+        {
+            "title": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerTop",
+            "id": "Route18_EastEntrance_1F_EventScript_NeedBikeTriggerTop",
+            "text": "TODO: Route18_EastEntrance_1F_EventScript_NeedBikeTriggerTop"
+        }
+    ],
+    "jumps": []
+}

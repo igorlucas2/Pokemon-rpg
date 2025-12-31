@@ -1,0 +1,136 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route12_NorthEntrance_2F",
+    "meta": {
+        "layoutId": "LAYOUT_ENTRANCE_2F",
+        "sourceMapId": "MAP_ROUTE12_NORTH_ENTRANCE_2F",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 11
+    },
+    "start": {
+        "y": 2,
+        "x": 2
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 2,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 8,
+            "x": 12
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 3
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 2,
+            "x": 8
+        },
+        {
+            "y": 8,
+            "w": 2,
+            "h": 3,
+            "x": 8
+        },
+        {
+            "y": 10,
+            "w": 1,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route12_NorthEntrance_2F-0",
+            "x": 7,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route12_NorthEntrance_2F_EventScript_Lass",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route12_NorthEntrance_2F-1",
+            "type": "door",
+            "rect": {
+                "x": 10,
+                "y": 9,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12_NorthEntrance_1F",
+                "x": 8,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE12_NORTH_ENTRANCE_1F",
+                "destWarpId": "4",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "Route12_NorthEntrance_2F",
+    "dialogs": [
+        {
+            "title": "Route12_NorthEntrance_2F_Text_ExplainTM27",
+            "id": "Route12_NorthEntrance_2F_EventScript_Lass",
+            "text": "TM27 is a move called RETURN…\n\nIf you treat your POKéMON good,\nit will return your love by working\nits hardest in battle."
+        },
+        {
+            "title": "Route12_NorthEntrance_2F_Text_TheresManFishing",
+            "id": "Route12_NorthEntrance_2F_EventScript_LeftBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nThere's a man fishing!"
+        },
+        {
+            "title": "Route12_NorthEntrance_2F_Text_ItsPokemonTower",
+            "id": "Route12_NorthEntrance_2F_EventScript_RightBinoculars",
+            "text": "Let's see what the binoculars have\nto show…\n\nIt's POKéMON TOWER!"
+        }
+    ],
+    "jumps": []
+}

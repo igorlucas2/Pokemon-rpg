@@ -1,0 +1,108 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SevenIsland_House_Room2",
+    "meta": {
+        "layoutId": "LAYOUT_SEVEN_ISLAND_HOUSE_ROOM2",
+        "sourceMapId": "MAP_SEVEN_ISLAND_HOUSE_ROOM2",
+        "width": 12,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 9
+    },
+    "start": {
+        "y": 1,
+        "x": 3
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 12,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 3,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 1,
+            "w": 8,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 3,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 11
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SevenIsland_House_Room2-0",
+            "x": 6,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_VAR_0",
+            "facing": "left",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SevenIsland_House_Room2-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SevenIsland_House_Room1",
+                "x": 4,
+                "y": 1,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SEVEN_ISLAND_HOUSE_ROOM1",
+                "destWarpId": "1",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SevenIsland_House_Room2",
+    "dialogs": [],
+    "jumps": []
+}

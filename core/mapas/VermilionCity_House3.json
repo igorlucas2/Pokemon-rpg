@@ -1,0 +1,214 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "VermilionCity_House3",
+    "meta": {
+        "layoutId": "LAYOUT_HOUSE1",
+        "sourceMapId": "MAP_VERMILION_CITY_HOUSE3",
+        "width": 11,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding1",
+        "height": 9
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 11,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 5
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 2,
+            "x": 10
+        },
+        {
+            "y": 8,
+            "w": 9,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-VermilionCity_House3-0",
+            "x": 7,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_BOY",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_House3_EventScript_Boy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_House3-1",
+            "x": 2,
+            "y": 5,
+            "sprite": "OBJ_EVENT_GFX_PIDGEY",
+            "facing": "right",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "movementRangeX": 2,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_House3_EventScript_Pidgey",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_House3-2",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_CLIPBOARD",
+            "facing": "down",
+            "solid": true,
+            "elevation": 0,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "0x0",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-VermilionCity_House3-3",
+            "x": 2,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_LASS",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "VermilionCity_House3_EventScript_Lass",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-VermilionCity_House3-1",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 28,
+                "y": 24,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_House3-2",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 28,
+                "y": 24,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-VermilionCity_House3-3",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "x": 28,
+                "y": 24,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_VERMILION_CITY",
+                "destWarpId": "8",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "VermilionCity_House3",
+    "dialogs": [
+        {
+            "title": "VermilionCity_House3_Text_PidgeyFlyLetterToSaffron",
+            "id": "VermilionCity_House3_EventScript_Boy",
+            "text": "I'm getting my PIDGEY to fly a\nletter to SAFFRON in the north."
+        },
+        {
+            "title": "VermilionCity_House3_Text_SendMyPidgeyToUnionRoom",
+            "id": "VermilionCity_House3_EventScript_Lass",
+            "text": "I want to exchange MAIL with all\nsorts of people.\n\nI send my PIDGEY to a UNION ROOM\nto exchange MAIL for me."
+        },
+        {
+            "title": "VermilionCity_House3_Text_DearPippiLetter",
+            "id": "VermilionCity_House3_EventScript_Letter",
+            "text": "Dear PIPPI,\nI hope to see you soon.\n\nI heard SAFFRON has problems with\nTEAM ROCKET.\n\nVERMILION appears to be safe."
+        },
+        {
+            "title": "VermilionCity_House3_Text_Pidgey",
+            "id": "VermilionCity_House3_EventScript_Pidgey",
+            "text": "PIDGEY: Kurukkoo!"
+        }
+    ],
+    "jumps": []
+}

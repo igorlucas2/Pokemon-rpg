@@ -1,0 +1,28 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Prototype_SeviiIsle_9",
+    "meta": {
+        "layoutId": "LAYOUT_PROTOTYPE_SEVII_ISLE_9",
+        "sourceMapId": "MAP_PROTOTYPE_SEVII_ISLE_9",
+        "width": 24,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_CeladonCity",
+        "height": 60
+    },
+    "start": {
+        "y": 0,
+        "x": 0
+    },
+    "colliders": {
+        "y": 0,
+        "w": 24,
+        "h": 60,
+        "x": 0
+    },
+    "npcs": [],
+    "events": [],
+    "name": "Prototype_SeviiIsle_9",
+    "dialogs": [],
+    "jumps": []
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - NPCs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --text: #e2e8f0;
+            --accent: #3b82f6;
+            --border: #334155;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: var(--surface);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        input,
+        select {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        /* Table */
+        .table-container {
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #0f172a;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        tr:hover {
+            background: #263345;
+        }
+
+        .role-badge {
+            background: #334155;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .btn-edit {
+            background: var(--accent);
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .btn-edit:hover {
+            opacity: 0.9;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            place-items: center;
+            z-index: 1000;
+        }
+
+        .modal-overlay.open {
+            display: grid;
+        }
+
+        .modal {
+            background: var(--surface);
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
+        }
+
+        .modal-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .modal-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #94a3b8;
+        }
+
+        textarea {
+            width: 100%;
+            background: #0f172a;
+            border: 1px solid var(--border);
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: #94a3b8;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Configuração de NPCs</h1>
+        <a href="/admin/map" class="back-btn">← Voltar para Mapa</a>
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="filterSearch" placeholder="Nome ou Role..." onkeyup="filterTable()">
+            <select id="filterRegion" onchange="filterTable()">
+                <option value="">Todas as Regiões</option>
+                <% const regions=[...new Set(npcs.map(n=> n.region_id))].sort(); %>
+                    <% regions.forEach(r=> { %>
+                        <option value="<%= r %>">
+                            <%= r %>
+                        </option>
+                        <% }) %>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Região</th>
+                        <th>Nome</th>
+                        <th>Role</th>
+                        <th>Persona (Resumo)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="npcTable">
+                    <% npcs.forEach(npc=> { %>
+                        <tr data-region="<%= npc.region_id %>" data-role="<%= npc.role %>"
+                            data-name="<%= npc.name.toLowerCase() %>">
+                            <td style="color:#94a3b8; font-size:0.9rem;">
+                                <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px;">
+                                    <span>
+                                        <%= npc.region_id %>
+                                    </span>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <% let spriteUrl=npc.sprite; if (spriteUrl && !spriteUrl.startsWith('/')) { if
+                                        (typeof spriteMapping !=='undefined' && spriteMapping[spriteUrl]) { const
+                                        file=spriteMapping[spriteUrl];
+                                        spriteUrl="/core/graphics/object_events/pics/people/" + file; } else if
+                                        (!spriteUrl.startsWith('http')) { spriteUrl="/core/" + spriteUrl; } } %>
+                                        <img src="<%= spriteUrl %>" alt=""
+                                            style="width:32px; height:32px; object-fit:contain; background:rgba(255,255,255,0.05); border-radius:4px;"
+                                            onerror="this.style.display='none'" />
+                                        <strong>
+                                            <%= npc.name %>
+                                        </strong>
+                                </div>
+                            </td>
+                            <td><span class="role-badge">
+                                    <%= npc.role %>
+                                </span></td>
+                            <td
+                                style="max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color:#94a3b8;">
+                                <%= npc.persona_prompt || "(Padrão)" %>
+                            </td>
+                            <td>
+                                <button class="btn-edit" onclick='openEditModal(<%= JSON.stringify(npc) %>)'>
+                                    Editar
+                                </button>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- EDIT MODAL -->
+    <div class="modal-overlay" id="editModal" onclick="if(event.target === this) closeEditModal()">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 style="margin:0">Editar NPC</h3>
+                <button class="btn-ghost" onclick="closeEditModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="editName">
+                </div>
+                <div class="form-group">
+                    <label>Role (Função)</label>
+                    <input type="text" id="editRole" placeholder="ex: merchant, guard, citizen...">
+                </div>
+                <div class="form-group">
+                    <label>Persona Prompt (IA)</label>
+                    <textarea id="editPersona"
+                        placeholder="Descreva como este NPC deve se comportar, falar, e o que ele sabe..."></textarea>
+                    <small style="color:#64748b">Instrução 'System' enviada ao Ollama.</small>
+                </div>
+                <div class="form-group">
+                    <label>Traits JSON</label>
+                    <input type="text" id="editTraits" placeholder='{"mood":"happy"}'>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" onclick="closeEditModal()">Cancelar</button>
+                <button class="btn btn-primary" onclick="saveNpc()">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterTable() {
+            const search = document.getElementById('filterSearch').value.toLowerCase();
+            const region = document.getElementById('filterRegion').value;
+            const rows = document.querySelectorAll('#npcTable tr');
+
+            rows.forEach(row => {
+                const rRegion = row.getAttribute('data-region');
+                const rName = row.getAttribute('data-name');
+                const rRole = row.getAttribute('data-role').toLowerCase();
+
+                const matchSearch = rName.includes(search) || rRole.includes(search);
+                const matchRegion = region === "" || rRegion === region;
+
+                row.style.display = (matchSearch && matchRegion) ? '' : 'none';
+            });
+        }
+
+        function openEditModal(npc) {
+            document.getElementById('editId').value = npc.npc_id;
+            document.getElementById('editName').value = npc.name;
+            document.getElementById('editRole').value = npc.role;
+            document.getElementById('editPersona').value = npc.persona_prompt;
+            document.getElementById('editTraits').value = npc.traits_json;
+
+            document.getElementById('editModal').classList.add('open');
+        }
+
+        function closeEditModal() {
+            document.getElementById('editModal').classList.remove('open');
+        }
+
+        async function saveNpc() {
+            const id = document.getElementById('editId').value;
+            const data = {
+                name: document.getElementById('editName').value,
+                role: document.getElementById('editRole').value,
+                persona_prompt: document.getElementById('editPersona').value,
+                traits_json: document.getElementById('editTraits').value
+            };
+
+            try {
+                const res = await fetch(`/api/admin/npcs/${id}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (res.ok) {
+                    alert('NPC Atualizado!');
+                    location.reload();
+                } else {
+                    alert('Erro ao salvar');
+                }
+            } catch (e) {
+                console.error(e);
+                alert('Erro de conexão');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

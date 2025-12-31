@@ -1,0 +1,555 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "Route11",
+    "meta": {
+        "layoutId": "LAYOUT_ROUTE11",
+        "sourceMapId": "MAP_ROUTE11",
+        "width": 72,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_VermilionCity",
+        "height": 20
+    },
+    "start": {
+        "y": 2,
+        "x": 12
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 72,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 12,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 12,
+            "h": 7,
+            "x": 60
+        },
+        {
+            "y": 4,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 4,
+            "h": 4,
+            "x": 8
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 1,
+            "x": 58
+        },
+        {
+            "y": 6,
+            "w": 4,
+            "h": 1,
+            "x": 4
+        },
+        {
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "x": 0
+        },
+        {
+            "y": 7,
+            "w": 1,
+            "h": 1,
+            "x": 7
+        },
+        {
+            "y": 7,
+            "w": 4,
+            "h": 1,
+            "x": 56
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 5,
+            "x": 59
+        },
+        {
+            "y": 9,
+            "w": 5,
+            "h": 4,
+            "x": 60
+        },
+        {
+            "y": 11,
+            "w": 13,
+            "h": 4,
+            "x": 0
+        },
+        {
+            "y": 12,
+            "w": 3,
+            "h": 1,
+            "x": 56
+        },
+        {
+            "y": 12,
+            "w": 7,
+            "h": 1,
+            "x": 65
+        },
+        {
+            "y": 13,
+            "w": 4,
+            "h": 7,
+            "x": 68
+        },
+        {
+            "y": 14,
+            "w": 1,
+            "h": 1,
+            "x": 13
+        },
+        {
+            "y": 14,
+            "w": 8,
+            "h": 6,
+            "x": 60
+        },
+        {
+            "y": 15,
+            "w": 12,
+            "h": 5,
+            "x": 0
+        },
+        {
+            "y": 16,
+            "w": 2,
+            "h": 4,
+            "x": 12
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-Route11-0",
+            "x": 19,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Eddie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-1",
+            "x": 16,
+            "y": 17,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Hugo",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-2",
+            "x": 31,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Dillon",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-3",
+            "x": 28,
+            "y": 10,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_LEFT_UP",
+            "movementRangeX": 8,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Dave",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-4",
+            "x": 38,
+            "y": 15,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Jasper",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-5",
+            "x": 50,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Darian",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-6",
+            "x": 42,
+            "y": 8,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Braxton",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-7",
+            "x": 50,
+            "y": 14,
+            "sprite": "OBJ_EVENT_GFX_YOUNGSTER",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 4,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Yasu",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-8",
+            "x": 57,
+            "y": 16,
+            "sprite": "OBJ_EVENT_GFX_OLD_MAN_1",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Dirk",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-9",
+            "x": 32,
+            "y": 18,
+            "sprite": "OBJ_EVENT_GFX_BALDING_MAN",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_Bernie",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-Route11-10",
+            "x": 42,
+            "y": 12,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_ItemXDefend",
+                "flag": "FLAG_HIDE_ROUTE11_X_DEFEND"
+            }
+        },
+        {
+            "id": "npc-Route11-11",
+            "x": 63,
+            "y": 13,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_ItemGreatBall",
+                "flag": "FLAG_HIDE_ROUTE11_GREAT_BALL"
+            }
+        },
+        {
+            "id": "npc-Route11-12",
+            "x": 13,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_ITEM_BALL",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "Route11_EventScript_ItemAwakening",
+                "flag": "FLAG_HIDE_ROUTE11_AWAKENING"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-Route11-1",
+            "type": "door",
+            "rect": {
+                "x": 6,
+                "y": 7,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "DiglettsCave_SouthEntrance",
+                "x": 4,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE",
+                "destWarpId": "0",
+                "elevation": 0
+            }
+        },
+        {
+            "id": "warp-Route11-2",
+            "type": "door",
+            "rect": {
+                "x": 58,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11_EastEntrance_1F",
+                "x": 1,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE11_EAST_ENTRANCE_1F",
+                "destWarpId": "0",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-Route11-3",
+            "type": "door",
+            "rect": {
+                "x": 65,
+                "y": 10,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route11_EastEntrance_1F",
+                "x": 11,
+                "y": 6,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_ROUTE11_EAST_ENTRANCE_1F",
+                "destWarpId": "2",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "conn-Route11-left-1",
+            "type": "door",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "VermilionCity",
+                "connection": {
+                    "direction": "left",
+                    "offset": -10
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "left",
+                "offset": -10,
+                "destMap": "MAP_VERMILION_CITY"
+            }
+        },
+        {
+            "id": "conn-Route11-right-2",
+            "type": "door",
+            "rect": {
+                "x": 71,
+                "y": 0,
+                "w": 1,
+                "h": 20
+            },
+            "once": false,
+            "target": {
+                "mapId": "Route12",
+                "connection": {
+                    "direction": "right",
+                    "offset": -60
+                }
+            },
+            "meta": {
+                "source": "connection",
+                "direction": "right",
+                "offset": -60,
+                "destMap": "MAP_ROUTE12"
+            }
+        }
+    ],
+    "name": "Route11",
+    "dialogs": [
+        {
+            "title": "Route11_EventScript_Bernie",
+            "id": "Route11_EventScript_Bernie",
+            "text": "TODO: Route11_EventScript_Bernie"
+        },
+        {
+            "title": "Route11_EventScript_Braxton",
+            "id": "Route11_EventScript_Braxton",
+            "text": "TODO: Route11_EventScript_Braxton"
+        },
+        {
+            "title": "Route11_EventScript_Darian",
+            "id": "Route11_EventScript_Darian",
+            "text": "TODO: Route11_EventScript_Darian"
+        },
+        {
+            "title": "Route11_EventScript_Dave",
+            "id": "Route11_EventScript_Dave",
+            "text": "TODO: Route11_EventScript_Dave"
+        },
+        {
+            "title": "Route11_Text_DiglettsCave",
+            "id": "Route11_EventScript_DiglettsCaveSign",
+            "text": "DIGLETT'S CAVE"
+        },
+        {
+            "title": "Route11_EventScript_Dillon",
+            "id": "Route11_EventScript_Dillon",
+            "text": "TODO: Route11_EventScript_Dillon"
+        },
+        {
+            "title": "Route11_EventScript_Dirk",
+            "id": "Route11_EventScript_Dirk",
+            "text": "TODO: Route11_EventScript_Dirk"
+        },
+        {
+            "title": "Route11_EventScript_Eddie",
+            "id": "Route11_EventScript_Eddie",
+            "text": "TODO: Route11_EventScript_Eddie"
+        },
+        {
+            "title": "Route11_EventScript_Hugo",
+            "id": "Route11_EventScript_Hugo",
+            "text": "TODO: Route11_EventScript_Hugo"
+        },
+        {
+            "title": "Route11_EventScript_ItemAwakening",
+            "id": "Route11_EventScript_ItemAwakening",
+            "text": "TODO: Route11_EventScript_ItemAwakening"
+        },
+        {
+            "title": "Route11_EventScript_ItemGreatBall",
+            "id": "Route11_EventScript_ItemGreatBall",
+            "text": "TODO: Route11_EventScript_ItemGreatBall"
+        },
+        {
+            "title": "Route11_EventScript_ItemXDefend",
+            "id": "Route11_EventScript_ItemXDefend",
+            "text": "TODO: Route11_EventScript_ItemXDefend"
+        },
+        {
+            "title": "Route11_EventScript_Jasper",
+            "id": "Route11_EventScript_Jasper",
+            "text": "TODO: Route11_EventScript_Jasper"
+        },
+        {
+            "title": "Route11_EventScript_Yasu",
+            "id": "Route11_EventScript_Yasu",
+            "text": "TODO: Route11_EventScript_Yasu"
+        }
+    ],
+    "jumps": []
+}

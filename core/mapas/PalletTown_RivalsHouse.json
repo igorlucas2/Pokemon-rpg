@@ -1,0 +1,180 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "PalletTown_RivalsHouse",
+    "meta": {
+        "layoutId": "LAYOUT_PALLET_TOWN_RIVALS_HOUSE",
+        "sourceMapId": "MAP_PALLET_TOWN_RIVALS_HOUSE",
+        "width": 13,
+        "primaryTileset": "gTileset_Building",
+        "secondaryTileset": "gTileset_GenericBuilding2",
+        "height": 10
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 13,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 4,
+            "w": 2,
+            "h": 2,
+            "x": 6
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 8,
+            "w": 1,
+            "h": 2,
+            "x": 12
+        },
+        {
+            "y": 9,
+            "w": 11,
+            "h": 1,
+            "x": 1
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-PalletTown_RivalsHouse-0",
+            "x": 10,
+            "y": 6,
+            "sprite": "OBJ_EVENT_GFX_DAISY",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movementRangeX": 1,
+            "movementRangeY": 3,
+            "meta": {
+                "localId": "LOCALID_DAISY",
+                "script": "PalletTown_RivalsHouse_EventScript_Daisy",
+                "flag": "0"
+            }
+        },
+        {
+            "id": "npc-PalletTown_RivalsHouse-1",
+            "x": 6,
+            "y": 4,
+            "sprite": "OBJ_EVENT_GFX_TOWN_MAP",
+            "facing": "down",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_DOWN",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "LOCALID_TOWN_MAP",
+                "script": "PalletTown_RivalsHouse_EventScript_TownMap",
+                "flag": "FLAG_HIDE_TOWN_MAP"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-PalletTown_RivalsHouse-1",
+            "type": "door",
+            "rect": {
+                "x": 4,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 15,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_RivalsHouse-2",
+            "type": "door",
+            "rect": {
+                "x": 5,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 15,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        },
+        {
+            "id": "warp-PalletTown_RivalsHouse-3",
+            "type": "door",
+            "rect": {
+                "x": 3,
+                "y": 8,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "PalletTown",
+                "x": 15,
+                "y": 7,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_PALLET_TOWN",
+                "destWarpId": "1",
+                "elevation": 3
+            }
+        }
+    ],
+    "name": "PalletTown_RivalsHouse",
+    "dialogs": [
+        {
+            "title": "PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks",
+            "id": "PalletTown_RivalsHouse_EventScript_Bookshelf",
+            "text": "The shelves are crammed full of\nbooks on POKéMON."
+        },
+        {
+            "title": "PalletTown_RivalsHouse_Text_HiBrothersAtLab",
+            "id": "PalletTown_RivalsHouse_EventScript_Daisy",
+            "text": "DAISY: Hi, {PLAYER}!\n\nMy brother, {RIVAL}, is out at\nGrandpa's LAB."
+        },
+        {
+            "title": "PalletTown_RivalsHouse_Text_LovelyAndSweetClefairy",
+            "id": "PalletTown_RivalsHouse_EventScript_Picture",
+            "text": "“The lovely and sweet\nCLEFAIRY”"
+        },
+        {
+            "title": "PalletTown_RivalsHouse_Text_ItsBigMapOfKanto",
+            "id": "PalletTown_RivalsHouse_EventScript_TownMap",
+            "text": "It's a big map of the KANTO region.\nNow this would be useful!"
+        }
+    ],
+    "jumps": []
+}

@@ -1,0 +1,96 @@
+{
+    "image": "mapa.png",
+    "tileSize": 16,
+    "id": "SSAnne_1F_Room7",
+    "meta": {
+        "layoutId": "LAYOUT_SSANNE_ROOM1",
+        "sourceMapId": "MAP_SSANNE_1F_ROOM7",
+        "width": 6,
+        "primaryTileset": "gTileset_General",
+        "secondaryTileset": "gTileset_SSAnne",
+        "height": 8
+    },
+    "start": {
+        "y": 2,
+        "x": 0
+    },
+    "colliders": [
+        {
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "x": 0
+        },
+        {
+            "y": 2,
+            "w": 1,
+            "h": 1,
+            "x": 5
+        },
+        {
+            "y": 5,
+            "w": 2,
+            "h": 3,
+            "x": 0
+        },
+        {
+            "y": 5,
+            "w": 1,
+            "h": 2,
+            "x": 4
+        }
+    ],
+    "npcs": [
+        {
+            "id": "npc-SSAnne_1F_Room7-0",
+            "x": 4,
+            "y": 3,
+            "sprite": "OBJ_EVENT_GFX_GENTLEMAN",
+            "facing": "left",
+            "solid": true,
+            "elevation": 3,
+            "movementType": "MOVEMENT_TYPE_FACE_LEFT",
+            "movementRangeX": 1,
+            "movementRangeY": 1,
+            "meta": {
+                "localId": "",
+                "script": "SSAnne_1F_Room7_EventScript_Thomas",
+                "flag": "0"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "warp-SSAnne_1F_Room7-1",
+            "type": "door",
+            "rect": {
+                "x": 2,
+                "y": 1,
+                "w": 1,
+                "h": 1
+            },
+            "once": false,
+            "target": {
+                "mapId": "SSAnne_1F_Corridor",
+                "x": 23,
+                "y": 10,
+                "facing": "down"
+            },
+            "meta": {
+                "source": "warp",
+                "destMap": "MAP_SSANNE_1F_CORRIDOR",
+                "destWarpId": "11",
+                "elevation": 0
+            }
+        }
+    ],
+    "name": "SSAnne_1F_Room7",
+    "dialogs": [
+        {
+            "title": "SSAnne_1F_Room7_Text_ThomasPostBattle",
+            "id": "SSAnne_1F_Room7_EventScript_Thomas",
+            "text": "You should be nice to friends!"
+        }
+    ],
+    "jumps": []
+}
